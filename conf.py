@@ -310,18 +310,18 @@ TIMEZONE = "Europe/Amsterdam"
 # 'markdown' is Markdown
 # 'html' assumes the file is HTML and just copies it
 COMPILERS = {
-    "rest": ('.rst', '.txt'),
+    # "rest": ('.rst', '.txt'),
     "markdown": ('.md', '.mdown', '.markdown'),
-    "textile": ('.textile',),
-    "txt2tags": ('.t2t',),
-    "bbcode": ('.bb',),
-    "wiki": ('.wiki',),
+    # "textile": ('.textile',),
+    # "txt2tags": ('.t2t',),
+    # "bbcode": ('.bb',),
+    # "wiki": ('.wiki',),
     "ipynb": ('.ipynb',),
     "html": ('.html', '.htm'),
     # PHP files are rendered the usual way (i.e. with the full templates).
     # The resulting files have .php extensions, making it possible to run
     # them without reconfiguring your server to recognize them.
-    "php": ('.php',),
+    # "php": ('.php',),
     # Pandoc detects the input from the source filename
     # but is disabled by default as it would conflict
     # with many of the others.
@@ -943,7 +943,11 @@ FEED_LINKS_APPEND_QUERY = False
 
 # A HTML fragment describing the license, for the sidebar.
 # (translatable)
-LICENSE = ""
+LICENSE = """
+<a href="http://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+</a>
+"""
 # I recommend using the Creative Commons' wizard:
 # https://creativecommons.org/choose/
 # LICENSE = """
@@ -954,7 +958,7 @@ LICENSE = ""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = 'Contents &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         {license}'
+CONTENT_FOOTER = 'Contents &copy; {date}     {license}    <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
@@ -1133,7 +1137,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # """
 
 # Show link to source for the posts?
-# SHOW_SOURCELINK = True
+SHOW_SOURCELINK = False
 # Copy the source files for your pages?
 # Setting it to False implies SHOW_SOURCELINK = False
 # COPY_SOURCES = True

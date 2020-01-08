@@ -1,6 +1,6 @@
 # README
 
-site built with [Nikola](https://getnikola.com/) hosted on (j19sch.github.io)
+site built with [Nikola](https://getnikola.com/) hosted on <j19sch.github.io>
 
 ## Useful commands
 - `nikola auto --browser`
