@@ -9,15 +9,17 @@ hidetitle: false
 
 # My projects
 
-<div markdown="1" class="indent-left">
+<div markdown="1">
 
 ## TestCraftCamp
 With some other fine people I organise an annual testing unconference in the Netherlands.
 
+<div style='margin-bottom: 1.8rem' markdown="1"></div>
 
 ## The four-hour tester
 [Helena Jeret-Mäe](https://twitter.com/helenaj_m) and I created the [four-hour tester](https://www.fourhourtester.net/), five exercises teaching five basic testing skills in four hours.
 
+<div style='margin-bottom: 1.8rem' markdown="1"></div>
 
 ## Pytest plugins
 
@@ -25,6 +27,7 @@ Pytest-instrument ([PiPy](https://pypi.org/project/pytest-instrument/), [GitHub]
 
 Pytest-logfest ([PiPy](https://pypi.org/project/pytest-logfest/), [GitHub](https://github.com/j19sch/pytest-logfest)) is a plugin that provides three logger fixtures which can write all log records or only those of failed tests to file.
 
+<div style='margin-bottom: 1.8rem' markdown="1"></div>
 
 ## Session-noter
 Session-noter ([GitHub](https://github.com/j19sch/session-noter)) is a small suite of note-taking tools for session-based test management (SBTM).

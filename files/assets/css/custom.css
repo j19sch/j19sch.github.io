@@ -1,3 +1,10 @@
+
+body,
+h1, h2, h3, h4, h5, h6,
+p {
+  font-family: 'News Cycle'
+}
+
 div .flex {
   display:flex;
   flex-wrap:nowrap;
@@ -31,15 +38,70 @@ div .smaller {
 }
 
 .body-content h2 {
-  margin-bottom: 0.8rem;
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
 }
 
 .body-content h3 {
-  font-size:1.6rem;
-  margin-top: 0.6rem;
+  font-size:1.7rem;
+  margin-top: 1.0rem;
 }
 
 .body-content h4 {
-  font-size:1.3rem;
+  font-size:1.4rem;
+}
+
+.body-content h5 {
+  font-size:1.2rem;
+}
+
+.body-content h6 {
+  font-size:1.0rem;
+}
+
+
+/* indexstyle.css from old site */
+
+
+h3.year {
+  margin-top: 1.8rem;
+  margin-left: 0.3rem;
+  margin-bottom: -0.8rem;
   font-style: italic;
+}
+
+
+div.presentation {
+  margin-top:1.5rem;
+  margin-bottom:1.5rem;
+  padding-left:1rem;
+  display:block;
+}
+
+h4.title {
+  display: block;
+  padding-bottom:0.2rem;
+  font-weight: bold;
+}
+
+h5.co-presenter {
+  font-style: italic;
+}
+
+h5.talk {
+  padding-left:2rem;
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+}
+
+span.note {
+  font-style: oblique;
+}
+
+h6.note {
+  font-style: oblique;
+  margin-left: 1rem;
+  padding-bottom: 0.1rem;
+  display: block;
 }
