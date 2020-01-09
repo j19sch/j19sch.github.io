@@ -12,7 +12,7 @@ hidetitle: false
 <div markdown="1">
 
 ## TestCraftCamp
-With some other fine people I organise an annual testing unconference in the Netherlands.
+With some other fine people I organise an annual testing unconference in the Netherlands: [TestCraftCamp](https://testcraftcamp.nl/).
 
 <div style='margin-bottom: 1.8rem' markdown="1"></div>
 

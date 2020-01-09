@@ -1,4 +1,4 @@
-title: Welcome to the site of Joep Schuurkes
+title: site of Joep Schuurkes
 slug: index
 date: 2020-01-06 22:00:18 UTC+01:00
 link: 
