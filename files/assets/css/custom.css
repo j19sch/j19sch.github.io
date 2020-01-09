@@ -66,7 +66,7 @@ div .smaller {
 
 
 h3.year {
-  margin-top: 1.8rem;
+  margin-top: 2.0rem;
   margin-left: 0.3rem;
   margin-bottom: -0.8rem;
   font-style: italic;
@@ -74,27 +74,23 @@ h3.year {
 
 
 div.presentation {
-  margin-top: 1.5rem;
+  margin-top: 1.3rem;
   margin-bottom: 1.5rem;
   padding-left: 1rem;
-  /*display:block;*/
 }
 
 h4.title, h5.title, p.title {
-  /*display: block;*/
-  /*padding-bottom: 0.2rem;*/
   margin-bottom: 0rem;
   font-weight: bold;
 }
 
 h5.co-presenter, p.co-presenter {
   font-style: italic;
-  margin-bottom: 0.1rem;
+  margin-bottom: -0.1rem;
 }
 
 h5.talk, p.talk {
-  padding-left:2rem;
-  /*display: block;*/
+  padding-left: 2rem;
   font-style: normal;
   font-weight: normal;
 }
@@ -107,5 +103,4 @@ h6.note {
   font-style: oblique;
   margin-left: 1rem;
   padding-bottom: 0.1rem;
-  /*display: block;*/
 }
