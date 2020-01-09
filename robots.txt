@@ -1,0 +1,4 @@
+Sitemap: https://j19sch.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: j19sch.github.io
