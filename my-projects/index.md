@@ -29,7 +29,7 @@ Pytest-logfest ([PiPy](https://pypi.org/project/pytest-logfest/), [GitHub](https
 
 <div style='margin-bottom: 1.8rem' markdown="1"></div>
 
-## Session-noter
-Session-noter ([GitHub](https://github.com/j19sch/session-noter)) is a small suite of note-taking tools for session-based test management (SBTM).
+## Session-tools
+Session-tools ([GitHub](https://github.com/j19sch/session-tools)) is a small suite of note-taking tools for session-based test management (SBTM).
 
 </div>
