@@ -1113,6 +1113,10 @@ p + ul {
    margin-top: -1rem;
 }
 
+h5 + ul {
+  margin-top: -0.3rem;
+}
+
 div .smaller {
 	font-size: 0.8rem;
 	padding-left: 0px;
