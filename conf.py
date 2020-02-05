@@ -142,6 +142,13 @@ NAVIGATION_LINKS = {
         ("/index.html", "Home"),
         ("/my-projects", "My projects"),
         ("/my-talks", "My talks"),
+        (
+            (
+                ("/my-lists/fountain-pens", "Fountain pens"),
+                ("/my-lists/reading-list", "Reading list"),
+            ),
+            "My lists"
+        ),
         ("https://testingcurve.wordpress.com", "My blog")
         # ("/archive.html", "Archive"),
         # ("/categories/", "Tags"),
