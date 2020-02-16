@@ -14,6 +14,7 @@ hidetitle: false
 - How to think like a Roman emperor: The Stoic philosophy of Marcus Aurelius - Donald Robertson
 - Leadership strategy and tactics: Field manual - Jocko Willink
 - No more feedback: Cultivate consciousness at work - Carol Sanford
+- Practical Ways to Manage Yourself: Modern Management Made Easy, Book 1 - Johanna Rothman
 
 ### 2019
 - Host: Six new roles of engagement for teams, organizations, communities, movements - Mark McKergow & Helen Bailey
