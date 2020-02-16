@@ -18,6 +18,7 @@ hidetitle: false
 - Extreme ownership: How U.S. Navy SEALs lead and win - Jocko Willink, Leif Babin
 - Good strategy, Bad strategy: The difference and why it matters - Richard Rumelt
 - Host: Six new roles of engagement for teams, organizations, communities, movements - Mark McKergow & Helen Bailey
+- No more feedback: Cultivate consciousness at work - Carol Sanford
 - Nobody ever gets credit for fixing problems that never happened: Creating and sustaining process improvement - Nelson Repenning, John Sterman
 - Perfect software and other illusions about testing - Jerry Weinberg
 - Reinventing organizations: A guide to creating organizations inspired by the next stage in human consciousness - Frederic Laloux

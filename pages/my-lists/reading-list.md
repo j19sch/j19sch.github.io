@@ -13,6 +13,7 @@ hidetitle: false
 - Good strategy, Bad strategy: The difference and why it matters - Richard Rumelt
 - How to think like a Roman emperor: The Stoic philosophy of Marcus Aurelius - Donald Robertson
 - Leadership strategy and tactics: Field manual - Jocko Willink
+- No more feedback: Cultivate consciousness at work - Carol Sanford
 
 ### 2019
 - Host: Six new roles of engagement for teams, organizations, communities, movements - Mark McKergow & Helen Bailey
