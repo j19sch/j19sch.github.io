@@ -15,6 +15,7 @@ hidetitle: false
 - Leadership strategy and tactics: Field manual - Jocko Willink
 - No more feedback: Cultivate consciousness at work - Carol Sanford
 - Practical Ways to Manage Yourself: Modern Management Made Easy, Book 1 - Johanna Rothman
+- The ETTO Principle: Efficiency-Thoroughness Trade-Off, Why things that go right sometimes go wrong - Erik Hollnagel
 
 ### 2019
 - Host: Six new roles of engagement for teams, organizations, communities, movements - Mark McKergow & Helen Bailey
