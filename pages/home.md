@@ -21,6 +21,7 @@ Other online places you can find me at:
 - [my blog](https://testingcurve.wordpress.com)
 - [my GitHub page](https://github.com/j19sch)
 - [twitter](https://twitter.com/j19sch)
+- [mastodon](https://mstdn.io/@j19sch)
 </div>
 
 ![Joep drinking coffee](/images/joep-coffee.jpg)
