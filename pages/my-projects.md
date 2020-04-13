@@ -29,6 +29,14 @@ Pytest-logfest ([PiPy](https://pypi.org/project/pytest-logfest/), [GitHub](https
 
 <div style='margin-bottom: 1.8rem' markdown="1"></div>
 
+## Building an API testing framework
+
+Full-day workshop in which you build an API testing framework from scratch using Python, pytest, and the requsts library. All materials can be found
+[here](https://github.com/j19sch/building-an-api-testing-framework). These also include examples of next steps and a single test implemented
+in using different Python libraries, such as tavern, robot and behave.
+
+<div style='margin-bottom: 1.8rem' markdown="1"></div>
+
 ## Session-tools
 Session-tools ([GitHub](https://github.com/j19sch/session-tools)) is a small suite of note-taking tools for session-based test management (SBTM).
 
