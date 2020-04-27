@@ -6,11 +6,19 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>https://j19sch.github.io/categories/cat_clojure.xml</loc>
+  <lastmod>2020-04-27T18:53:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/clojure.xml</loc>
+  <lastmod>2020-04-27T18:53:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://j19sch.github.io/rss.xml</loc>
-  <lastmod>2020-01-12T17:56:00Z</lastmod>
+  <lastmod>2020-04-27T18:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/sitemap.xml</loc>
-  <lastmod>2020-02-16T08:04:00Z</lastmod>
+  <lastmod>2020-04-27T18:53:00Z</lastmod>
  </sitemap>
 </sitemapindex>

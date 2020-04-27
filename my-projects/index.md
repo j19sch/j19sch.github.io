@@ -40,4 +40,9 @@ in using different Python libraries, such as tavern, robot and behave.
 ## Session-tools
 Session-tools ([GitHub](https://github.com/j19sch/session-tools)) is a small suite of note-taking tools for session-based test management (SBTM).
 
+<div style='margin-bottom: 1.8rem' markdown="1"></div>
+
+## Learning Clojure
+In April 2020 I decided I wanted to learn [Clojure](https://clojure.org/) (because functional programming and Lisp) and write about the process. You can find an overview page of what I've written so far [here](/my-projects/learning-clojure).
+
 </div>
