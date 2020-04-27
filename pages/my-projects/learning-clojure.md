@@ -9,7 +9,7 @@ hidetitle: false
 # Learning Clojure
 
 ## Blog posts
-- [clj0](/blog/clj0-diving-straight-in/) - Diving straight in with some koans
+- [(clj 0)](/blog/clj0-diving-straight-in/) Diving straight in with some koans
 
 
 ## My Clojure repos
