@@ -10,6 +10,7 @@ hidetitle: false
 
 ## Blog posts
 - [(clj 0)](/blog/clj0-diving-straight-in/) Diving straight in with some koans
+- [(clj 1)](/blog/clj1-deciding-on-an-ide) Deciding on a Clojure IDE
 
 
 ## My Clojure repos
