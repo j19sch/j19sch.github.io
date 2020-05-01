@@ -165,7 +165,7 @@ NAVIGATION_ALT_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "bootblog4"
+THEME = "bootblog4"  # uses mako, bootblog4-jinja also available
 # THEME = "bootstrap4" supports bootswatch themes
 
 # Primary color of your theme. This will be used to customize your theme.

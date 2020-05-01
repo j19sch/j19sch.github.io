@@ -1,11 +1,11 @@
 <!--
-.. title: (clj 1) Deciding on a Clojure IDE
-.. slug: clj1-deciding-on-an-ide
+.. title: (clj 1) Deciding on a Clojure editor
+.. slug: clj1-deciding-on-an-editor
 .. date: 2020-04-29 20:00:15 UTC+02:00
 .. tags: clojure
 .. category: clojure
 .. link: 
-.. description: 
+.. description:
 .. type: text
 -->
 
@@ -25,11 +25,21 @@ Since the Brave and True book recommends Emacs, I decided I should give Emacs a 
 
 ## Visual Studio Code
 like it as an editor, don't use it because PyCharm and Sublime, so good to set up specifically for Clojure
-plugin 1, couldn't get it to load code from file into the REPL
 
-plugin 2, Calva
+plugin 1 "Clojure" https://marketplace.visualstudio.com/items?itemName=avli.clojure
+- do `code .` in the dir with `project.clj` so that it loads the project and creates `.nrepl-port` where you expect it
+- `lein repl` does not read to `nrepl-port` but does (over)write to it, so need to `lein repl :connect <port>`, I prefer running this way, having a terminal / repl client to interact with over VS code panels, i3wm helps with it virtual workspaces and speed and keyboard shortcuts
 
-updated Leiningen from Ubuntu 18.04 repo to later Ubuntu repo somewhere along the way
+plugin 2, "Calva" https://marketplace.visualstudio.com/items?itemName=betterthantomorrow.calva
+- fancier, separate repl pane, allowing working side-by-side code-repl
+- lot more commands
+- includes [paredit](https://calva.io/paredit/)
+- same issue with the repl, need `:connect`
+
+somewhere along the way updated Leiningen from Ubuntu 18.04 repo to later Ubuntu repo
+did another round of testing to be able to write this blog post, turns out I mis-interpreted/mis-remembered some stuff
+
+
 
 ## Vim
 always liked vim, never got around to learning it beyond rudimentary because no reason to climb the steep initial learning curve
@@ -40,3 +50,5 @@ works slightly different, but fine, also because i3wm
 Keybindings feel like home. (yay for no mouse, trackpoint, i3wm, on the couch) feeling of clarity
 not sure if learning Clojure and vim s such a great idea, creating a cheat sheet (needs link!)
 So after spending several hours trying out different editors, for now I'm going with Vim with VS Code as a backup.
+
+more on vim setup next time

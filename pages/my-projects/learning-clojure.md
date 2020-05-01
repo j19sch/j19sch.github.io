@@ -9,8 +9,8 @@ hidetitle: false
 # Learning Clojure
 
 ## Blog posts
-- [(clj 0)](/blog/clj0-diving-straight-in/) Diving straight in with some koans
-- [(clj 1)](/blog/clj1-deciding-on-an-ide) Deciding on a Clojure IDE
+
+{{% post-list tags=clojure categories=clojure reverse=True template=post_list_directive_jsc.tmpl %}}{{% /post-list %}}
 
 
 ## My Clojure repos
