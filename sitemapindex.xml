@@ -6,19 +6,47 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>https://j19sch.github.io/categories/brave-true.xml</loc>
+  <lastmod>2020-05-02T14:18:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/cat_clojure-koans.xml</loc>
+  <lastmod>2020-05-02T14:18:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://j19sch.github.io/categories/cat_clojure.xml</loc>
-  <lastmod>2020-04-27T19:00:00Z</lastmod>
+  <lastmod>2020-05-02T16:05:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/clojure.xml</loc>
-  <lastmod>2020-04-27T19:00:00Z</lastmod>
+  <lastmod>2020-05-02T16:05:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/emacs.xml</loc>
+  <lastmod>2020-05-02T16:05:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/koans.xml</loc>
+  <lastmod>2020-05-02T14:18:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/vim.xml</loc>
+  <lastmod>2020-05-02T16:05:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/vs-code.xml</loc>
+  <lastmod>2020-05-02T16:02:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/vscode.xml</loc>
+  <lastmod>2020-05-02T16:05:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/rss.xml</loc>
-  <lastmod>2020-04-27T19:00:00Z</lastmod>
+  <lastmod>2020-05-02T16:05:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/sitemap.xml</loc>
-  <lastmod>2020-04-27T19:07:00Z</lastmod>
+  <lastmod>2020-05-02T16:05:00Z</lastmod>
  </sitemap>
 </sitemapindex>

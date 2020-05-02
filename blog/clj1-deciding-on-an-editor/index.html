@@ -4,16 +4,26 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 " lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="site of Joep Schuurkes">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Joep Schuurkes</title>
-<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<title>(clj 1) Deciding on a Clojure editor | Joep Schuurkes</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
-<link rel="canonical" href="https://j19sch.github.io/blog/">
-<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]-->
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="https://j19sch.github.io/blog/clj1-deciding-on-an-editor/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../clj0-diving-straight-in/" title="(clj 0) Diving straight in with some koans" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="(clj 1) Deciding on a Clojure editor">
+<meta property="og:url" content="https://j19sch.github.io/blog/clj1-deciding-on-an-editor/">
+<meta property="og:description" content="The second chapter of &quot;Clojure for the Brave and True&quot; is all about Emacs, &quot;an excellent Clojure editor&quot;. Now you might wonder: does your choice of editor really matter that much? You're learning the ">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-05-01T18:00:15+02:00">
+<meta property="article:tag" content="clojure">
+<meta property="article:tag" content="emacs">
+<meta property="article:tag" content="vim">
+<meta property="article:tag" content="vscode">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -42,20 +52,20 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 </header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
             <ul class="navbar-nav nav-fill d-flex w-100">
 <li class="nav-item">
-<a href="../index.html" class="nav-link">Home</a>
+<a href="../../index.html" class="nav-link">Home</a>
                 </li>
 <li class="nav-item">
-<a href="../my-projects" class="nav-link">My projects</a>
+<a href="../../my-projects" class="nav-link">My projects</a>
                 </li>
 <li class="nav-item">
-<a href="../my-talks" class="nav-link">My talks</a>
+<a href="../../my-talks" class="nav-link">My talks</a>
             </li>
 <li class="nav-item dropdown">
 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My lists</a>
             <div class="dropdown-menu">
-                    <a href="../my-lists/fountain-pens" class="dropdown-item">Fountain pens</a>
-                    <a href="../my-lists/reading-list" class="dropdown-item">Reading list</a>
-                    <a href="../my-lists/recommended-reading" class="dropdown-item">Recommended reading</a>
+                    <a href="../../my-lists/fountain-pens" class="dropdown-item">Fountain pens</a>
+                    <a href="../../my-lists/reading-list" class="dropdown-item">Reading list</a>
+                    <a href="../../my-lists/recommended-reading" class="dropdown-item">Recommended reading</a>
             </div>
                 </li>
 <li class="nav-item">
@@ -73,28 +83,28 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
     <div class="body-content">
         <!--Body content-->
         
-        
-        
-    <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clj1-deciding-on-an-editor/" class="u-url">(clj 1) Deciding on a Clojure editor</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">(clj 1) Deciding on a Clojure editor</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep Schuurkes
+            </span></p>
             <p class="dateline">
-            <a href="clj1-deciding-on-an-editor/" rel="bookmark">
+            <a href="." rel="bookmark">
             <time class="published dt-published" datetime="2020-05-01T18:00:15+02:00" itemprop="datePublished" title="1 May 2020">1 May 2020</time></a>
             </p>
-                </div>
-            </header><div class="e-content entry-content">
-                    <div>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
 <p>The second chapter of "<a href="https://www.braveclojure.com/">Clojure for the Brave and True</a>" is all about Emacs, "an excellent Clojure editor". Now you might wonder: does your choice of editor really matter that much? You're learning the language, so you don't need advanced IDE features. Some syntax highlighting, some code completion, something to help you manage all those parantheses perhaps, done. That would be true if not for the Clojure REPL.</p>
 <h3>The Clojure REPL</h3>
 <p>The <a href="https://clojure.org/guides/repl/introduction">REPL</a> is definitely a Thing™️ in Clojure. It gives you a prompt where you can type code and it will execute it immediately. You can also load files with code into it, interacting with the functions and data defined in those. So that's a signifcantly faster feedback loop than having to compile and then run - which is how you'd normally run something written in Clojure, since its primary platform is the JVM. There are <a href="https://clojure.org/guides/repl/launching_a_basic_repl">different ways</a> of launching a REPL, but most guides I found tell you to use <a href="https://leiningen.org/">Leiningen</a>. Oh, and REPL stands for Read-Evaluate-Print_Loop, because that's what the REPL does.</p>
 <p>It definitely feels like this REPL is a bigger deal than I appreciate right now. Probably because I have only just begun learning Clojure. On the other hand, I may have also been spoiled by the quick feedback provided by Python and its <a href="https://docs.python.org/3/library/idle.html">IDLE</a>. On the third hand, it's only because of learning of the Clojure REPL, I looked into importing files into Python's IDLE and found out that's indeed a thing it can do.</p>
 <p>In any case, for a Clojure editor you want an editor that's able to connect to and interact with the REPL. It's defintely possible to type commands into the REPL yourself to make it do things like (re)loading files or evaluating a function, but that's making things harder for yourself than needed.</p>
 <h3>Emacs</h3>
-<p>As mentioned in my <a href="clj0-diving-straight-in/">previous post</a>, I don't seem to have the mind for <a href="https://www.gnu.org/software/emacs/">Emacs</a>. However with the Brave-and-True book recommending it, I decided to give it another shot. It had been almost two decades after all. And I must say the book does a great job teaching the Emacs you need for Clojure, including the most useful keybindings for <a href="https://www.emacswiki.org/emacs/ParEdit">paredit</a>, which is a minor mode to help "keep parentheses balanced". Unfortunately it also confirmed my feelings towards Emacs. It doesn't click with me. The keybindings feel weird somehow. Probably that would change if I'd put in more effort than just going through the chapter once, but Chapter 1 did list some alternative editors. So I decided to take a look at Visual Studio Code and Vim, to see if they would work for me.</p>
+<p>As mentioned in my <a href="../clj0-diving-straight-in/">previous post</a>, I don't seem to have the mind for <a href="https://www.gnu.org/software/emacs/">Emacs</a>. However with the Brave-and-True book recommending it, I decided to give it another shot. It had been almost two decades after all. And I must say the book does a great job teaching the Emacs you need for Clojure, including the most useful keybindings for <a href="https://www.emacswiki.org/emacs/ParEdit">paredit</a>, which is a minor mode to help "keep parentheses balanced". Unfortunately it also confirmed my feelings towards Emacs. It doesn't click with me. The keybindings feel weird somehow. Probably that would change if I'd put in more effort than just going through the chapter once, but Chapter 1 did list some alternative editors. So I decided to take a look at Visual Studio Code and Vim, to see if they would work for me.</p>
 <h3>Visual Studio Code</h3>
 <p>Although I like <a href="https://code.visualstudio.com/">Visual Studio Code</a> as an editor, I rarely use it since PyCharm and Sublime Text cover my needs. Which gives me the advantage of being able to set up VS Code specifically for Clojure, without having to worry that it might mess something up.</p>
 <p>There are two Clojure plugins for VS Code. The first one I tried is simply called <a href="https://marketplace.visualstudio.com/items?itemName=avli.clojure">Clojure</a>. I tried it out and had to do quite some experimenting as I didn't really understand yet what a REPL is and what you would do with it. So after messing about with it, I drew some wrong conclusions, felt it was lacking and looked for an alternative.</p>
@@ -115,40 +125,18 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <p>All in all I think it took me several hours to set up these editors, play around with them and form an opinion. I'm not sure how I feel about that. It does allow me to make an informed choice about which editor to use, but I could have also spent that time actually learning Clojure.</p>
 <p>And the best part is that I haven't even set up Vim properly. There are some more recommended plugins in addition to vim-fireplace. And I should clean up my Vim config and the plugins I installed when looking into Vim for Python a few years ago. So more on that next time.</p>
 </div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clj0-diving-straight-in/" class="u-url">(clj 0) Diving straight in with some koans</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="clj0-diving-straight-in/" rel="bookmark">
-            <time class="published dt-published" datetime="2020-04-27T21:00:15+02:00" itemprop="datePublished" title="27 April 2020">27 April 2020</time></a>
-            </p>
-                </div>
-            </header><div class="e-content entry-content">
-                    <div>
-<h3>Why Clojure?</h3>
-<p>A long time ago (meaning I don't remember when but it's been a while) I learned about a programming language called Lisp. It was said that by studying this language you'd gain <a href="https://twobithistory.org/2018/10/14/lisp.html">deep insights</a> into programming and you'd never write code the same way again. That definitely piqued my interest.</p>
-<p>Some time later (don't remember when exactly either) I learned about the existence of Clojure and that it too, was something special. So I added it to the list of programming languages I wanted to learn some day.</p>
-<p>Then, earlier this month, I felt the need to start a new project. To learn something new. So I figured I'd learn Lisp. That didn't last long though, as I found out that the recommended editor for Lisp is Emacs. And from trying out Emacs and vi about 20 years ago I knew that for some reason vi does fit with how my mind works, and Emacs doesn't.</p>
-<p>So I went back to the drawing board, remembered there's a thing called <a href="https://clojure.org/">Clojure</a>, and learned that it's actually a Lisp dialect. Perfect! (Spoiler: Emacs is also recommended for Clojure, more on that later.) Next question was how to start learning. Back in 2018 I enjoyed <a href="https://github.com/j19sch/python_koans">solving</a> the <a href="https://github.com/gregmalcolm/python_koans">Python koans</a>, so I did an internet search and found the <a href="https://github.com/functional-koans/clojure-koans">Clojure koans</a>.</p>
-<h3>The Clojure koans</h3>
-<p>During the weekend of 18-19 April I <a href="https://github.com/j19sch/clojure-koans">solved</a> the first 13 Clojure koans. I <a href="https://twitter.com/j19sch/status/1251948519373647876">tweeted</a> how it made my head hurt but in a good way. But then on Monday the 20th I started on the 14th koan on recursion and got <a href="https://github.com/j19sch/clojure-koans/commit/2a4dc73224d0c53665edcda4382376aa4ed1f129">stuck</a>. And to be honest, I had also left a <a href="https://github.com/j19sch/clojure-koans/blob/master/src/koans/07_functions.clj#L29">ToDo</a> in the 7th one about functions, because I wasn't sure I had the correct solution.</p>
-<p>So I decided I needed a different approach, one that included more explaining. Searching the internet led to pages such as the <a href="http://www.clojurenewbieguide.com/">Clojure Newbie Guide</a> and the Reference section of Reddit's <a href="https://www.reddit.com/r/Clojure/">r/Clojure</a>. A lot of people recommended the book "<a href="https://www.braveclojure.com/">Clojure for the Brave and True</a>". After exploring the <a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">free online version</a> I decided this was my way forward.</p>
-<h3>Clojure for the Brave and True</h3>
-<p>The first chapter has you create a Clojure project. So I followed the steps and pushed it all into a new <a href="https://github.com/j19sch/clojure-brave-true">git repository</a>.</p>
-<p>Next was chapter 2 "How to Use Emacs, an Excellent Clojure Editor", which led me to explore my options for Clojure editors. More on that in my next post.</p>
-</div>
-                </div>
-            </article>
-</div>
-    
-    
-    
-        <!--End of body content-->
-
-        <footer id="footer">
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/clojure/" rel="tag">clojure</a></li>
+            <li><a class="tag p-category" href="../../categories/emacs/" rel="tag">emacs</a></li>
+            <li><a class="tag p-category" href="../../categories/vim/" rel="tag">vim</a></li>
+            <li><a class="tag p-category" href="../../categories/vscode/" rel="tag">vscode</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../clj0-diving-straight-in/" rel="prev" title="(clj 0) Diving straight in with some koans">Previous post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
             Contents © 2020     
 <a href="http://creativecommons.org/licenses/by/4.0/">
 <img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a>
@@ -158,7 +146,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 </div>
 </div>
 
-        <script src="../assets/js/all-nocdn.js"></script><script>
+        <script src="../../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
         captions: function(element) {

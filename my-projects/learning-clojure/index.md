@@ -9,7 +9,8 @@ hidetitle: false
 # Learning Clojure
 
 ## Blog posts
-- [(clj 0)](/blog/clj0-diving-straight-in/) Diving straight in with some koans
+
+{{% post-list tags=clojure categories=clojure reverse=True template=post_list_directive_clj.tmpl %}}{{% /post-list %}}
 
 
 ## My Clojure repos
