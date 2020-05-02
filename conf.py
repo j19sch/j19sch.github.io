@@ -165,7 +165,7 @@ NAVIGATION_ALT_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "bootblog4"  # uses mako, bootblog4-jinja also available
+THEME = "bootblog4-jinja"  # bootblog4 uses mako, bootblog4-jinja uses jinja
 # THEME = "bootstrap4" supports bootswatch themes
 
 # Primary color of your theme. This will be used to customize your theme.
@@ -1374,7 +1374,14 @@ WARN_ABOUT_TAG_METADATA = False
 # Templates will use those filters, along with the defaults.
 # Consult your engine's documentation on filters if you need help defining
 # those.
-# TEMPLATE_FILTERS = {}
+
+def split_blog_title(title, index):
+    import re
+    return re.search("^(\(.*\)) (.*)$", title)[index]
+
+TEMPLATE_FILTERS = {
+    "split_blog_title": split_blog_title
+}
 
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.

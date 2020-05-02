@@ -10,7 +10,7 @@ hidetitle: false
 
 ## Blog posts
 
-{{% post-list tags=clojure categories=clojure reverse=True template=post_list_directive_jsc.tmpl %}}{{% /post-list %}}
+{{% post-list tags=clojure categories=clojure reverse=True template=post_list_directive_clj.tmpl %}}{{% /post-list %}}
 
 
 ## My Clojure repos
