@@ -17,6 +17,8 @@ Some time later (don't remember when exactly either) I learned about the existen
 
 Then, earlier this month, I felt the need to start a new project. To learn something new. So I figured I'd learn Lisp. That didn't last long though, as I found out that the recommended editor for Lisp is Emacs. And from trying out Emacs and vi about 20 years ago I knew that for some reason vi does fit with how my mind works, and Emacs doesn't.
 
+<!-- TEASER_END -->
+
 So I went back to the drawing board, remembered there's a thing called [Clojure](https://clojure.org/), and learned that it's actually a Lisp dialect. Perfect! (Spoiler: Emacs is also recommended for Clojure, more on that later.) Next question was how to start learning. Back in 2018 I enjoyed [solving](https://github.com/j19sch/python_koans) the [Python koans](https://github.com/gregmalcolm/python_koans), so I did an internet search and found the [Clojure koans](https://github.com/functional-koans/clojure-koans).
 
 
