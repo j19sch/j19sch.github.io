@@ -17,6 +17,8 @@ The [REPL](https://clojure.org/guides/repl/introduction) is definitely a Thingâ„
 
 It definitely feels like this REPL is a bigger deal than I appreciate right now. Probably because I have only just begun learning Clojure. On the other hand, I may have also been spoiled by the quick feedback provided by Python and its [IDLE](https://docs.python.org/3/library/idle.html). On the third hand, it's only because of learning of the Clojure REPL, I looked into importing files into Python's IDLE and found out that's indeed a thing it can do.
 
+<!-- TEASER_END -->
+
 In any case, for a Clojure editor you want an editor that's able to connect to and interact with the REPL. It's defintely possible to type commands into the REPL yourself to make it do things like (re)loading files or evaluating a function, but that's making things harder for yourself than needed.
 
 
