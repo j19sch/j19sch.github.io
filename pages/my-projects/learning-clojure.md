@@ -10,8 +10,10 @@ hidetitle: false
 
 ## Blog posts
 
-{{% post-list tags=clojure categories=clojure reverse=True template=post_list_directive_clj.tmpl %}}{{% /post-list %}}
+{{% post-list categories=clojure reverse=True template=post_list_directive_clj.tmpl %}}{{% /post-list %}}
 
+RSS feed for these blog posts: <https://j19sch.github.io/categories/clojure.xml>  
+Atom feed for these blog posts: <http://j19sch.github.io/categories/clojure.atom>
 
 ## My Clojure repos
 - <https://github.com/j19sch/clojure-koans> - solutions to [Clojure koans](https://github.com/functional-koans/clojure-koans)

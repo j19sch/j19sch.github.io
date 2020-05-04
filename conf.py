@@ -619,7 +619,7 @@ FRONT_INDEX_HEADER = {
 # Final location for the blog main RSS feed is:
 # output / TRANSLATION[lang] / RSS_PATH / RSS_FILENAME_BASE RSS_EXTENSION
 # (translatable)
-# RSS_PATH = ""
+RSS_PATH = "blog"
 
 # Final location for the blog main Atom feed is:
 # output / TRANSLATION[lang] / ATOM_PATH / ATOM_FILENAME_BASE ATOM_EXTENSION
@@ -1157,7 +1157,7 @@ SHOW_SOURCELINK = False
 
 # By default, Nikola generates RSS files for the website and for tags, and
 # links to it.  Set this to False to disable everything RSS-related.
-# GENERATE_RSS = True
+GENERATE_RSS = True
 
 # By default, Nikola does not generates Atom files for indexes and links to
 # them. Generate Atom for tags by setting TAG_PAGES_ARE_INDEXES to True.
@@ -1166,7 +1166,7 @@ SHOW_SOURCELINK = False
 # FEED_TEASER option. FEED_LINKS_APPEND_QUERY is also respected. Atom feeds
 # are generated even for old indexes and have pagination link relations
 # between each other. Old Atom feeds with no changes are marked as archived.
-# GENERATE_ATOM = False
+GENERATE_ATOM = True
 
 # Only include teasers in Atom and RSS feeds. Disabling include the full
 # content. Defaults to True.
