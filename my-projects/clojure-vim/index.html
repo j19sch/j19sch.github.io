@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>clojure-vim | Joep Schuurkes</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../blog/rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" href="../../blog/feed.atom">
+<link rel="canonical" href="https://j19sch.github.io/my-projects/clojure-vim/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script><meta name="author" content="Joep Schuurkes">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="clojure-vim">
+<meta property="og:url" content="https://j19sch.github.io/my-projects/clojure-vim/">
+<meta property="og:description" content="Vim cheatsheet
+vimtutor
+lesson 1
+
+h j k l movement
+vim &lt;filename open file
+ESC normal mode
+:q! exit without saving
+x delete char under cursor
+i insert text
+A to append text at end of line
+:wq save and">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-05-03T22:01:51+02:00">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="https://j19sch.github.io/">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../my-projects" class="nav-link">My projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../my-talks" class="nav-link">My talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../my-lists/fountain-pens" class="dropdown-item">Fountain pens</a>
+                    <a href="../../my-lists/reading-list" class="dropdown-item">Reading list</a>
+                    <a href="../../my-lists/recommended-reading" class="dropdown-item">Recommended reading</a>
+            </div>
+                </li>
+<li class="nav-item">
+<a href="https://testingcurve.wordpress.com" class="nav-link">My blog</a>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">clojure-vim</a></h1>
+
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<h2>Vim cheatsheet</h2>
+<h3>vimtutor</h3>
+<h4>lesson 1</h4>
+<ul>
+<li>
+<code>h j k l</code> movement</li>
+<li>
+<code>vim &lt;filename</code> open file</li>
+<li>
+<code>ESC</code> normal mode</li>
+<li>
+<code>:q!</code> exit without saving</li>
+<li>
+<code>x</code> delete char under cursor</li>
+<li>
+<code>i</code> insert text</li>
+<li>
+<code>A</code> to append text at end of line</li>
+<li>
+<code>:wq</code> save and exit</li>
+</ul>
+<h4>lesson 2</h4>
+<ul>
+<li>
+<code>dw</code> delete rest of word</li>
+<li>
+<code>d$</code> delete until end of line</li>
+<li>motions: <code>w</code> start of next word, <code>e</code> end of current word, <code>$</code> end of line</li>
+<li>count: number before motion to repeat</li>
+<li>
+<code>0</code> to start of line</li>
+<li>
+<code>2dw</code> and <code>d2w</code> do the same thing, operator-[number]-motion</li>
+<li>
+<code>dd</code> delete line</li>
+<li>
+<code>u</code> undo change</li>
+<li>
+<code>U</code> undo changes whole line</li>
+<li>
+<code>ctrl+r</code> redo</li>
+</ul>
+<h4>lesson 3</h4>
+<ul>
+<li>
+<code>p</code> put deleted after cursor</li>
+<li>
+<code>r</code> replace character at cursor</li>
+<li>
+<code>c[number]&lt;motion&gt;</code> change until motion</li>
+</ul>
+<h4>lesson 4</h4>
+<ul>
+<li>
+<code>ctrl+g</code> file location and status</li>
+<li>
+<code>G</code> move to bottom of file</li>
+<li>
+<code>gg</code> move to start of file</li>
+<li>
+<code>&lt;lineno&gt;G</code> go to line number</li>
+<li>
+<code>/</code> search forward, <code>?</code> search backward, <code>n</code> match forward, <code>N</code> match backward</li>
+<li>
+<code>ctrl+o</code> jump back in jumplist, <code>ctrl+i</code> jump forward in jumplist</li>
+<li>
+<code>%</code> matching parentheses <code>)]}</code>
+</li>
+<li>
+<code>:s/old/new</code> single find-and-replace</li>
+<li>
+<code>:s/old/new/g</code> line-global find-and-replace</li>
+<li>
+<code>:#,#s/old/new/g</code> range of lines</li>
+<li>
+<code>:%s/old/new/g</code> whole file</li>
+<li>
+<code>:%s/old/new/gc</code> whole file, prompt</li>
+</ul>
+<h4>lesson 5</h4>
+<ul>
+<li>
+<code>:!&lt;command&gt;</code> execute external command</li>
+<li>
+<code>:w &lt;filename&gt;</code> save file</li>
+<li>
+<code>v</code> visual mode (selection)</li>
+<li>
+<code>:r &lt;thing&gt;</code> retrieve and insert, e.g. <code>:r &lt;filename&gt;</code> or <code>:r !ls</code>
+</li>
+</ul>
+<h4>lesson 6</h4>
+<ul>
+<li>
+<code>o</code> open line below cursor</li>
+<li>
+<code>O</code> open line above cursor</li>
+<li>
+<code>a</code> append text after cursor</li>
+<li>
+<code>R</code> replace mode</li>
+<li>
+<code>y</code> yank for copy (yank is operator so movements)</li>
+<li>
+<code>p</code> put for paste</li>
+<li>
+<code>:set ic</code> ignore case, <code>:set noic</code>
+</li>
+<li>
+<code>:set hls is</code> hlsearch (highlight matches) and incsearch (show partial matches) options</li>
+<li>
+<code>:nohlsearch</code> disable highlighting of matches</li>
+<li>
+<code>\c</code> ignore case for single search, e.g. <code>/ignore\c</code>
+</li>
+<li>
+<code>ic</code> ignorecase, <code>is</code> incsearch, <code>hls</code> hlsearch</li>
+</ul>
+<h4>lesson 7</h4>
+<ul>
+<li>
+<code>F1</code>, <code>:help</code>
+</li>
+<li>
+<code>ctrl+w ctrl+w</code> jump windows</li>
+<li>
+<code>:q</code> close window</li>
+<li><code>:help &lt;something&gt;</code></li>
+<li>
+<code>~/.vimrc</code> startup script</li>
+<li>
+<code>ctrl+d</code> <code>tab</code> command completion</li>
+</ul>
+<h4>memory</h4>
+<ul>
+<li>
+<code>b</code> back word</li>
+</ul>
+<h3>splits</h3>
+<ul>
+<li>
+<code>ctrl+w _</code> max height current split</li>
+<li>
+<code>ctrl+w |</code> max width current split</li>
+<li>
+<code>ctrl+w =</code> normalize split sizes</li>
+</ul>
+<h3>Fireplace (clojure)</h3>
+<ul>
+<li>
+<code>cpr</code> reload</li>
+<li>
+<code>cpp</code> evaluate under cursor</li>
+</ul>
+<h3>plugins</h3>
+<h4>ubuntupit https://www.ubuntupit.com/best-vim-plugins-for-programming/</h4>
+<ul>
+<li>nerd-tree</li>
+<li>tag list</li>
+<li>vim rainbow</li>
+<li>nerd commenter</li>
+<li>gitgutter</li>
+<li>lightline</li>
+<li>autopairs?</li>
+<li>vim surround?</li>
+<li>vim-multiple-cursors</li>
+<li>solarized (shading palette)</li>
+</ul>
+</div>
+    </div>
+    
+</article><!--End of body content--><footer id="footer">
+            Contents © 2020     
+<a href="http://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a>
+    <a href="mailto:j19sch@gmail.com">Joep Schuurkes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>
