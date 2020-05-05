@@ -3,13 +3,31 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes</title>
   <id>https://j19sch.github.io/blog/feed.atom</id>
-  <updated>2020-05-04T15:37:29Z</updated>
+  <updated>2020-05-05T19:55:22Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://j19sch.github.io/blog/feed.atom"/>
   <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>(clj 2) Setting up Vim for Clojure</title>
+    <id>https://j19sch.github.io/blog/clj2-setting-up-vim/</id>
+    <updated>2020-05-05T21:55:15+02:00</updated>
+    <published>2020-05-05T21:55:15+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/clj2-setting-up-vim/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;As mentioned in my &lt;a href="https://j19sch.github.io/blog/clj1-deciding-on-an-editor"&gt;previous post&lt;/a&gt; I've decided to use &lt;a href="https://www.vim.org/"&gt;Vim&lt;/a&gt; as my Clojure editor. That leaves me with three things to do: getting reacquainted with Vim, updating my Vim config in the .&lt;code&gt;vimrc&lt;/code&gt; file, and installing both general and Clojure-specific Vim plugins.&lt;/p&gt;
+&lt;h3&gt;Getting reacquainted with Vim&lt;/h3&gt;
+&lt;p&gt;Ever since I learned Vim basics a long time ago I have been using it once in a while to make small edits to a config file or a commit message, but not for anything more complicated than that. So that's the first thing I wanted to address: refresh my basics and make sure I know where to find more information when I need it.&lt;/p&gt;
+&lt;h4&gt;Vimtutor&lt;/h4&gt;
+&lt;p&gt;I figured that a good way to get back into Vim was the &lt;a href="https://vimhelp.org/usr_01.txt.html#vimtutor"&gt;Vimtutor&lt;/a&gt;. It's a 30-minute interactive tutorial where you edit a file with instructions with vim. I kept notes of what it covers, which you can find &lt;a href="https://j19sch.github.io/my-projects/vimtutor"&gt;here&lt;/a&gt;. Vim's help also includes a &lt;a href="https://vimhelp.org/quickref.txt.html"&gt;quickref&lt;/a&gt;, an "Overview of the most common commands you will use", which is intimidatingly long considering that description. As a reference to look things up in, it should be useful, though.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clj2-setting-up-vim/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="clojure" label="clojure"/>
+    <category term="vim" label="vim"/>
+  </entry>
   <entry>
     <title>(clj 1) Deciding on a Clojure editor</title>
     <id>https://j19sch.github.io/blog/clj1-deciding-on-an-editor/</id>

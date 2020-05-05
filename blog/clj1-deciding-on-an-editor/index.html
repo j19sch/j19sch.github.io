@@ -15,6 +15,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <link rel="canonical" href="https://j19sch.github.io/blog/clj1-deciding-on-an-editor/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script><meta name="author" content="Joep Schuurkes">
 <link rel="prev" href="../clj0-diving-straight-in/" title="(clj 0) Diving straight in with some koans" type="text/html">
+<link rel="next" href="../clj2-setting-up-vim/" title="(clj 2) Setting up Vim for Clojure" type="text/html">
 <meta property="og:site_name" content="Joep Schuurkes">
 <meta property="og:title" content="(clj 1) Deciding on a Clojure editor">
 <meta property="og:url" content="https://j19sch.github.io/blog/clj1-deciding-on-an-editor/">
@@ -121,7 +122,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <p>Perhaps also good to mention, somewhere along the way I updated Leiningen from 2.8.1 to 2.9.1, because something (I forgot what) was displaying an error because of the older version. Luckily that update just worked by downloading and installing a .deb of that version - without leading me into dependency hell.</p>
 <h3>Vim</h3>
 <p>For some reason I've always really liked <a href="https://www.vim.org/">Vim</a>. I've also never really used it for anything more than a quick edit of some file, since it has a steep learning curve. You need consistent practice to get over that initial cliff. Actually, the only reason I'm comfortable using Vim's basic movement keys <code>h j k l</code> is because I've played enough roguelikes such as <a href="https://crawl.develz.org/">Dungeon Crawl Stone Soup</a> that use those keys to move your character around.</p>
-<p>The Clojure plugin for vim is <a href="https://github.com/tpope/vim-fireplace">vim-fireplace</a>. It works slightly differently as it is "not quite a REPL". Apparently - I'm just repeating what I read here - providing a REPL prompt is not something that would play nice with the way Vim's buffers work.</p>
+<p>The Clojure plugin for Vim is <a href="https://github.com/tpope/vim-fireplace">vim-fireplace</a>. It works slightly differently as it is "not quite a REPL". Apparently - I'm just repeating what I read here - providing a REPL prompt is not something that would play nice with the way Vim's buffers work.</p>
 <p>How it does work, is that <code>cpp</code> will evaluate what's under your cursor in Vim's command-line window. To be exact, it evalutes the innermost form. I have somewhat of an intuitive graps of what that meams, "innermost form", but don't ask me to explain it just yet. There's also <code>cqq</code>, which gives you a blank line in insert mode to type in and evaluate some Clojure. Finally, there's <code>cpr</code>. I thought it just reloaded the file into the REPL, but looking <a href="https://github.com/tpope/vim-fireplace/blob/master/doc/fireplace.txt">here</a> it seems it will also run tests. So perhaps it's better to use <code>:Require</code> for the reloading?</p>
 <h3>Going forward with Vim</h3>
 <p>Having tried out these different editors and how they interact with the Leiningen REPL, I have decided to go with Vim. It might not be the best idea to learn both Clojure and Vim at the same time, but I'm still too intrigued with Vim not to try. And I know that I have Visual Studio Code with Calva as a backup.</p>
@@ -138,6 +139,9 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <ul class="pager hidden-print">
 <li class="previous">
                 <a href="../clj0-diving-straight-in/" rel="prev" title="(clj 0) Diving straight in with some koans">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../clj2-setting-up-vim/" rel="next" title="(clj 2) Setting up Vim for Clojure">Next post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer">
             Contents © 2020     

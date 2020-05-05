@@ -14,6 +14,9 @@ hidetitle: false
 
 Feeds: [RSS](https://j19sch.github.io/categories/clojure.xml) | [Atom](http://j19sch.github.io/categories/clojure.atom)
 
+### Related pages
+- [Clojure-Vim cheatsheet](/my-projects/clojure-vim-cheatsheet)
+
 ## My Clojure repos
 - <https://github.com/j19sch/clojure-koans> - solutions to [Clojure koans](https://github.com/functional-koans/clojure-koans)
 - <https://github.com/j19sch/clojure-brave-true> - practicing with the "[Clojure for the Brave and True](https://www.braveclojure.com/)" book

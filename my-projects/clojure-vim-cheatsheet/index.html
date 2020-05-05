@@ -5,16 +5,30 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Posts about vim | Joep Schuurkes</title>
+<title>Clojure-Vim cheatsheet | Joep Schuurkes</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../blog/rss.xml">
 <link rel="alternate" type="application/atom+xml" title="Atom" href="../../blog/feed.atom">
-<link rel="canonical" href="https://j19sch.github.io/categories/vim/">
-<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script><link rel="alternate" type="application/rss+xml" title="RSS for tag vim" hreflang="en" href="../vim.xml">
-<link rel="alternate" type="application/atom+xml" title="Atom for tag vim" hreflang="en" href="../vim.atom">
+<link rel="canonical" href="https://j19sch.github.io/my-projects/clojure-vim-cheatsheet/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script><meta name="author" content="Joep Schuurkes">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="Clojure-Vim cheatsheet">
+<meta property="og:url" content="https://j19sch.github.io/my-projects/clojure-vim-cheatsheet/">
+<meta property="og:description" content="Clojure-Vim cheatsheet
+help
+
+:help {topic}&lt;Enter&gt; or :help {topic}&lt;ctrl+d&gt;
+navigate with ctrl+] (go), ctrl+o (back), ctrl+i (forward)
+Vimtutor contents listed here
+
+windows
+
+windows size: ctrl+w _ (al">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-05-05T21:55:00+02:00">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -74,25 +88,55 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
     <div class="body-content">
         <!--Body content-->
         
-<article class="tagpage"><header><h1>Posts about vim</h1>
-        <div class="metadata">
-                            <p class="feedlink">
-                                    <a href="../vim.atom" hreflang="en" type="application/atom+xml">Atom feed</a>
-
-                                    <a href="../vim.xml" hreflang="en" type="application/rss+xml">RSS feed</a>
-
-                </p>
-
-        </div>
-        
-    </header><ul class="postlist">
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header></header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<h2>Clojure-Vim cheatsheet</h2>
+<h4>help</h4>
+<ul>
 <li>
-<time class="listdate" datetime="2020-05-05T21:55:15+02:00" title="5 May 2020">5 May 2020</time><a href="../../blog/clj2-setting-up-vim/" class="listtitle">(clj 2) Setting up Vim for Clojure</a><a></a>
+<code>:help {topic}&lt;Enter&gt;</code> or <code>:help {topic}&lt;ctrl+d&gt;</code>
 </li>
-            <li>
-<time class="listdate" datetime="2020-05-01T18:00:15+02:00" title="1 May 2020">1 May 2020</time><a href="../../blog/clj1-deciding-on-an-editor/" class="listtitle">(clj 1) Deciding on a Clojure editor</a><a></a>
+<li>navigate with <code>ctrl+]</code> (go), <code>ctrl+o</code> (back), <code>ctrl+i</code> (forward)</li>
+<li>Vimtutor contents listed <a href="../vimtutor">here</a>
 </li>
-        </ul></article><!--End of body content--><footer id="footer">
+</ul>
+<h4>windows</h4>
+<ul>
+<li>windows size: <code>ctrl+w _</code> (all vert space), <code>ctrl+w |</code> (all hor space), <code>ctrl+w =</code> (equal)</li>
+<li>snap window to side: <code>ctrl+w shift+H/J/K/L</code>
+</li>
+<li>move to window: <code>ctrl+w w</code> (next), <code>ctrl+w h/j/k/l</code> (direction)</li>
+</ul>
+<h4>tabs</h4>
+<ul>
+<li>next tab: <code>gt</code>, previous tab: <code>gT</code>, tab in position i: <code>{i}gt</code>
+</li>
+<li>back-and-forth between two tabs: <code>&lt;Leader&gt;tl</code> (.vimrc)</li>
+</ul>
+<h4>NerdTree</h4>
+<ul>
+<li>open/close with <code>ctrl+n</code> (.vimrc)</li>
+<li>
+<code>?</code> while open for keybindings</li>
+</ul>
+<h4>GitGutter</h4>
+<ul>
+<li>see diff: <code>&lt;Leader&gt;hp</code>
+</li>
+</ul>
+<h4>vim-fireplace</h4>
+<ul>
+<li>
+<code>:Require</code>: reload current namespace</li>
+<li>
+<code>:Eval</code>: eval/print the outermost form for the current line</li>
+<li>
+<code>cpp</code>: eval/print the innermost form at the cursor</li>
+</ul>
+</div>
+    </div>
+    
+</article><!--End of body content--><footer id="footer">
             Contents © 2020     
 <a href="http://creativecommons.org/licenses/by/4.0/">
 <img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a>

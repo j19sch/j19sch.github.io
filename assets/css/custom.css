@@ -31,11 +31,15 @@ div .indent-left {
 }
 
 p + ul {  
-   margin-top: -1rem;
+   margin-top: -0.9rem;
 }
 
 p:empty {
   margin-bottom: 0rem;
+}
+
+h4 + ul {
+  margin-top: -0.4rem;
 }
 
 h5 + ul {
@@ -64,11 +68,13 @@ div .smaller {
 
 .body-content h5 {
   font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 0.2rem;
 }
 
-.body-content h6 {
+/*.body-content h6 {
   font-size: 0.9rem;
-}
+}*/
 
 
 /* indexstyle.css from old site */

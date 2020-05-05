@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>(clj 2) Setting up Vim for Clojure | Joep Schuurkes</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" href="../feed.atom">
+<link rel="canonical" href="https://j19sch.github.io/blog/clj2-setting-up-vim/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../clj1-deciding-on-an-editor/" title="(clj 1) Deciding on a Clojure editor" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="(clj 2) Setting up Vim for Clojure">
+<meta property="og:url" content="https://j19sch.github.io/blog/clj2-setting-up-vim/">
+<meta property="og:description" content="As mentioned in my previous post I've decided to use Vim as my Clojure editor. That leaves me with three things to do: getting reacquainted with Vim, updating my Vim config in the .vimrc file, and ins">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-05-05T21:55:15+02:00">
+<meta property="article:tag" content="clojure">
+<meta property="article:tag" content="vim">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="https://j19sch.github.io/">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../my-projects" class="nav-link">My projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../my-talks" class="nav-link">My talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../my-lists/fountain-pens" class="dropdown-item">Fountain pens</a>
+                    <a href="../../my-lists/reading-list" class="dropdown-item">Reading list</a>
+                    <a href="../../my-lists/recommended-reading" class="dropdown-item">Recommended reading</a>
+            </div>
+                </li>
+<li class="nav-item">
+<a href="https://testingcurve.wordpress.com" class="nav-link">My blog</a>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">(clj 2) Setting up Vim for Clojure</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2020-05-05T21:55:15+02:00" itemprop="datePublished" title="5 May 2020">5 May 2020</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>As mentioned in my <a href="../clj1-deciding-on-an-editor">previous post</a> I've decided to use <a href="https://www.vim.org/">Vim</a> as my Clojure editor. That leaves me with three things to do: getting reacquainted with Vim, updating my Vim config in the .<code>vimrc</code> file, and installing both general and Clojure-specific Vim plugins.</p>
+<h3>Getting reacquainted with Vim</h3>
+<p>Ever since I learned Vim basics a long time ago I have been using it once in a while to make small edits to a config file or a commit message, but not for anything more complicated than that. So that's the first thing I wanted to address: refresh my basics and make sure I know where to find more information when I need it.</p>
+<h4>Vimtutor</h4>
+<p>I figured that a good way to get back into Vim was the <a href="https://vimhelp.org/usr_01.txt.html#vimtutor">Vimtutor</a>. It's a 30-minute interactive tutorial where you edit a file with instructions with vim. I kept notes of what it covers, which you can find <a href="../../my-projects/vimtutor">here</a>. Vim's help also includes a <a href="https://vimhelp.org/quickref.txt.html">quickref</a>, an "Overview of the most common commands you will use", which is intimidatingly long considering that description. As a reference to look things up in, it should be useful, though.</p>
+<!-- TEASER_END -->
+
+<p>Going through the Vimtutor to refresh my Vim felt good. Something about Vim keybindings just feels right to me. However, me liking Vim dies not mean that I automatically remember all the keybindings and commands and capabilities of Vim. So I decided that if I wanted this project of both learning Vim and Clojure to work, I should make a <a href="../../my-projects/clojure-vim-cheatsheet">Clojure-Vim cheatsheet</a> to help me. The plan is to keep updating this sheet as I do more with Vim and Clojure.</p>
+<h4>Using Vim's <code>:help</code> command</h4>
+<p>Another great resource are Vim's help files, which can be found <a href="https://vimhelp.org/">online</a> and by typing <code>:help&lt;Enter&gt;</code> or <code>&lt;F1&gt;</code> in Vim itself. You can also see help on specific topics by doing <code>:help {topic}&lt;Enter&gt;</code>, or do <code>:help {topic}&lt;ctrl+d&gt;</code> to see entries matching what you have typed so far.</p>
+<p>When you do that, you'll notice that Vim will open the relevant help file in a separate <a href="https://vimhelp.org/windows.txt.html">window,</a>, i.e. the vim screen is now split in half. (Vim also has <a href="https://vimhelp.org/tabpage.txt.html">tabs</a>, with tabs containing one or multiple windows.) So that makes right now the right time to learn some basic Vim window management:</p>
+<ul>
+<li>close the active window with <code>:q</code> (closes Vim if that leaves you with 0 active windows)</li>
+<li>make the active window take up all vertical space with <code>ctrl+w _</code> or all horizontal space with <code>ctrl+w |</code>
+</li>
+<li>split equally again with <code>ctrl+w =</code>
+</li>
+<li>move to the next window with <code>ctrl+w w</code>
+</li>
+<li>move to the window in a specific direction with <code>ctrl+w {direction}</code>, with direction being one of <code>h j k l</code>
+</li>
+<li>snap the window to a side with <code>ctrl+w shift+{direction}</code>, with direction again being one of <code>h j k l</code>
+</li>
+</ul>
+<p>With basic window management out of the way, there are also a few keybindings to learn to help with text navigation:</p>
+<ul>
+<li>to look up whatever word is under the cursor hit <code>ctrl+]</code> (works for topics and with section titles)</li>
+<li>to jump back to where you were use <code>ctrl+o</code>
+</li>
+<li>to jump forward again use <code>ctrl+i</code>
+</li>
+</ul>
+<p>That should be enough to make Vim's help files a useful resource. Or at least I hope it is, because the above is the result of me looking up the things I expect to need to be able to use Vim's help files.</p>
+<h3>Updating my Vim configuration</h3>
+<p>First of all a warning: you can spend hours upon hours looking into Vim's configuration settings, plugins, and color schemes - without using Vim to write a single line of... let's say Clojure. If you want to know how deep that rabbit hole goes, I recommend reading this <a href="http://karolis.koncevicius.lt/posts/porn_zen_and_vimrc/">blog post</a> by Karolis Koncevičius, where he shares "Lessons learned during my 5 year adventure in fiddling with Vim configuration files".</p>
+<p>So after spending a few hours exploring Vim settings and plugins, I decided to keep my configuration and especially my plugins as limited and simple as possible - despite all the promises of shiny new toys I could add. That way I might actually get around again to playing with Clojure and writing a blog post about that sometime soon.</p>
+<h4>The <code>.vimrc</code> file</h4>
+<p>Vim configuration happens via a file in the user's home directory, <code>.vimrc</code>. You can find mine <a href="https://github.com/j19sch/dotfiles/blob/b1b62a2169058edd8a0f5069e694b8717890a1fb/vimrc">here</a>. I might have updated it since writing this though, so if you want to see the current version, go <a href="https://github.com/j19sch/dotfiles/blob/master/vimrc">here</a>.</p>
+<p>There are plenty of good resources on what to put in your <code>.vimrc</code>-file. Here are three I took inspiration from:</p>
+<ul>
+<li>
+<a href="https://dougblack.io/words/a-good-vimrc.html">A Good Vimrc</a> by Doug Black</li>
+<li>
+<a href="https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim">Basic vimrc</a> by Amir Salihefendic</li>
+<li>
+<a href="https://www.shortcutfoo.com/blog/top-50-vim-configuration-options/">Top 50 Vim Configuration Options</a> from shortcutFoo</li>
+</ul>
+<p>That should be more than enough to get you going. As part of this blog post, I do want to highlight a few settings that you might not think of changing while using Vim. First, there's <code>set wildmenu</code>, which will display the tab completion of Vim's command line as a menu instead of as one completion at a time. Secondly, <code>set scrolloff=5</code> means Vim will always try to display 5 lines above and below the cursor and <code>set display+=lastline</code> will try to show as much as possible of the last line in the window instead of a column of "@". Finally, I disabled backup and swap files with <code>set nobackup</code>, <code>set nowritebackup</code>, and <code>set noswapfile</code> for multiple reasons. It saves writes to my SSD, for version control I use GitHub, and it allows me to set <code>updatetime=300</code> so that the GitGutter plugin feels more responsive.</p>
+<h4>Vim plugins</h4>
+<p>The main question for Vim plugins is: which Vim plugin do you use to manage your Vim plugins? A few years ago when looking into Vim as Python editor, I decided to go with <a href="https://github.com/junegunn/vim-plug">vim-plug</a>. I can't remember why, but it could be because it says it's a "minimalist Vim plugin manager". Two popular alternatives are <a href="https://github.com/VundleVim/Vundle.vim">Vundle</a> and <a href="https://github.com/tpope/vim-pathogen">Pathogen</a>. Since Vim 8 there's also native support for <a href="https://vimhelp.org/repeat.txt.html#packages">packages</a>.</p>
+<h5>General plugins</h5>
+<p>I ended up installing the following general plugins:</p>
+<ul>
+<li>
+<a href="https://github.com/airblade/vim-gitgutter">GitGutter</a> to show git diff markers in the sign column and see the diff</li>
+<li>
+<a href="https://github.com/Yggdroot/indentLine">indentLine</a> to display indentation levels</li>
+<li>
+<a href="https://github.com/itchyny/lightline.vim">Lightline</a> to configure the statusline</li>
+<li>
+<a href="https://github.com/preservim/nerdtree">NerdTree</a> to have a tree explorer</li>
+<li>
+<a href="https://github.com/tpope/vim-commentary">vim-commentary</a> to easily (un)comment lines</li>
+<li>
+<a href="https://github.com/tpope/vim-fugitive">vim-fugitive</a> to show the current branch in the statusline (it can do lots more than that)</li>
+<li>
+<a href="https://github.com/junegunn/vim-plug">vim-plug</a> to manage installing and removing plugins as mentioned above</li>
+</ul>
+<p>Of course all of these come with their own commands. The ones I expect to use are in my <a href="../../my-projects/clojure-vim-cheatsheet/">Clojure-Vim cheatsheet</a>.</p>
+<h5>Clojure plugins</h5>
+<p>For Clojure-specific plugins I mostly followed Keith Smiley's <a href="https://thoughtbot.com/blog/writing-clojure-in-vim">advice</a> and went with these:</p>
+<ul>
+<li>
+<a href="https://github.com/guns/vim-clojure-highlight">vim-clojure-highlight</a> for syntax highlighting to referred and aliased vars in Clojure buffers</li>
+<li>
+<a href="https://github.com/tpope/vim-fireplace">vim-fireplace</a> as REPL plugin</li>
+<li>
+<a href="https://github.com/guns/vim-sexp">vim-sexp</a> for precision editing to S-expressions</li>
+<li>
+<a href="https://github.com/tpope/vim-sexp-mappings-for-regular-people">vim-sexp-mappings-for-regular-people</a> for supposedly better vim-sexp key mappings</li>
+</ul>
+<p>I have barely used these plugins - if at all, actually, in the case if vim-sexp -, so my cheatsheet won't have much on these yet.</p>
+<p>As far as I know there are two alternatives to vim-fireplace: <a href="https://github.com/liquidz/vim-iced">vim-iced</a> and <a href="https://github.com/Olical/conjure">conjure</a>, with the latter only actively supporting <a href="https://neovim.io/">Neovim</a>. I am curious about those, but am going to postpone exploring them until I have some experience with vim-fireplace - and with Clojure itself.</p>
+<h5>Color schemes</h5>
+<p>The color scheme I enabled last time I was looking into Vim is <a href="https://dikiaap.id/">Diki Ananta</a>'s <a href="https://github.com/dikiaap/minimalist">minimalist</a>. I still like it, so that saved me the time of looking for a good color scheme. I would like to have a good light color scheme as well, though...</p>
+<div style="margin-bottom: 1.8rem"></div>
+<p>And with all of that done, I think I'm ready to return to the third chapter of <a href="https://www.braveclojure.com/">Clojure for the Brave and True</a>.</p>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/clojure/" rel="tag">clojure</a></li>
+            <li><a class="tag p-category" href="../../categories/vim/" rel="tag">vim</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../clj1-deciding-on-an-editor/" rel="prev" title="(clj 1) Deciding on a Clojure editor">Previous post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2020     
+<a href="http://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a>
+    <a href="mailto:j19sch@gmail.com">Joep Schuurkes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>

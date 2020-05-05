@@ -15,7 +15,7 @@
  </url>
  <url>
   <loc>https://j19sch.github.io/archive.html</loc>
-  <lastmod>2020-05-04T15:37:00Z</lastmod>
+  <lastmod>2020-05-05T19:55:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/</loc>
@@ -28,6 +28,10 @@
  <url>
   <loc>https://j19sch.github.io/blog/clj1-deciding-on-an-editor/</loc>
   <lastmod>2020-05-04T13:18:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/clj2-setting-up-vim/</loc>
+  <lastmod>2020-05-05T08:28:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/</loc>
@@ -75,7 +79,15 @@
  </url>
  <url>
   <loc>https://j19sch.github.io/my-projects/</loc>
-  <lastmod>2020-05-04T13:18:00Z</lastmod>
+  <lastmod>2020-05-05T18:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/my-projects/clj2-setting-up-vim/</loc>
+  <lastmod>2020-05-05T18:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/my-projects/clojure-vim-cheatsheet/</loc>
+  <lastmod>2020-05-05T09:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-projects/clojure-vim/</loc>
@@ -84,6 +96,10 @@
  <url>
   <loc>https://j19sch.github.io/my-projects/learning-clojure/</loc>
   <lastmod>2020-05-04T13:18:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/my-projects/vimtutor/</loc>
+  <lastmod>2020-05-05T18:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-talks/</loc>

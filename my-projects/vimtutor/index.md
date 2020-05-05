@@ -1,6 +1,15 @@
-# Vim cheatsheet
+title: Vimtutor
+slug: vimtutor
+date: 2020-05-05 21:55:00 UTC+02:00
+link: 
+description: 
+type: text
+hidetitle: false
 
-## vimtutor
+# Vimtutor
+
+The Vimtutor is Vim's interactive tutorial. It's included in most (all?) Vim installations. You can find more information about it [here](https://vimhelp.org/usr_01.txt.html#vimtutor).
+
 ### lesson 1
 - `h j k l` movement
 - `vim <filename` open file
@@ -69,29 +78,3 @@
 - `:help <something>`
 - `~/.vimrc` startup script
 - `ctrl+d` `tab` command completion
-
-### memory
-- `b` back word
-
-
-## splits
-- `ctrl+w _` max height current split
-- `ctrl+w |` max width current split
-- `ctrl+w =` normalize split sizes
-
-## Fireplace (clojure)
-- `cpr` reload
-- `cpp` evaluate under cursor
-
-## plugins
-### ubuntupit https://www.ubuntupit.com/best-vim-plugins-for-programming/
-- nerd-tree
-- tag list
-- vim rainbow
-- nerd commenter
-- gitgutter
-- lightline
-- autopairs?
-- vim surround?
-- vim-multiple-cursors
-- solarized (shading palette)
