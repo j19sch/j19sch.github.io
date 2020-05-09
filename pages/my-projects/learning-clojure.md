@@ -12,7 +12,7 @@ hidetitle: false
 
 {{% post-list categories=clojure reverse=True template=post_list_directive_clj.tmpl %}}{{% /post-list %}}
 
-Feeds: [RSS](https://j19sch.github.io/categories/clojure.xml) | [Atom](http://j19sch.github.io/categories/clojure.atom)
+Feeds: [RSS](/categories/clojure.xml) | [Atom](/categories/clojure.atom)
 
 ### Related pages
 - [Clojure-Vim cheatsheet](/my-projects/clojure-vim-cheatsheet)
