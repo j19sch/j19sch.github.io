@@ -7,94 +7,94 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://j19sch.github.io/</loc>
-  <lastmod>2020-05-04T13:18:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/2020/</loc>
-  <lastmod>2020-05-04T13:18:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/archive.html</loc>
-  <lastmod>2020-05-09T07:17:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/</loc>
-  <lastmod>2020-05-04T13:18:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/clj0-diving-straight-in/</loc>
-  <lastmod>2020-05-04T13:18:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/clj1-deciding-on-an-editor/</loc>
-  <lastmod>2020-05-04T13:18:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/clj2-setting-up-vim/</loc>
-  <lastmod>2020-05-05T08:28:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/</loc>
-  <lastmod>2020-05-04T13:18:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/brave-true/</loc>
-  <lastmod>2020-05-04T13:18:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/cat_clojure/</loc>
-  <lastmod>2020-05-04T13:18:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/clojure/</loc>
-  <lastmod>2020-05-04T13:18:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/emacs/</loc>
-  <lastmod>2020-05-04T13:18:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/koans/</loc>
-  <lastmod>2020-05-04T13:18:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/vim/</loc>
-  <lastmod>2020-05-04T13:18:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/vscode/</loc>
-  <lastmod>2020-05-04T13:18:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-lists/fountain-pens/</loc>
-  <lastmod>2020-05-04T13:18:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-lists/reading-list/</loc>
-  <lastmod>2020-05-04T13:18:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-lists/recommended-reading/</loc>
-  <lastmod>2020-05-04T13:18:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-projects/</loc>
-  <lastmod>2020-05-05T18:05:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-projects/clojure-vim-cheatsheet/</loc>
-  <lastmod>2020-05-05T09:29:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-projects/learning-clojure/</loc>
-  <lastmod>2020-05-04T13:18:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-projects/vimtutor/</loc>
-  <lastmod>2020-05-05T18:05:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-talks/</loc>
-  <lastmod>2020-05-04T13:18:00Z</lastmod>
+  <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
 </urlset>
