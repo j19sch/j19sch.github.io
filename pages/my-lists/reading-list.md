@@ -16,6 +16,7 @@ hidetitle: false
 - No more feedback: Cultivate consciousness at work - Carol Sanford
 - Practical Ways to Manage Yourself: Modern Management Made Easy, Book 1 - Johanna Rothman
 - The ETTO Principle: Efficiency-Thoroughness Trade-Off, Why things that go right sometimes go wrong - Erik Hollnagel
+- Let my people go surfing: The education of a reluctant business man (including 10 more years of business unusual) - Yvon Chouinard
 
 ### 2019
 - Host: Six new roles of engagement for teams, organizations, communities, movements - Mark McKergow & Helen Bailey
