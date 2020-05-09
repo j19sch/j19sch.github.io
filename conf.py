@@ -150,7 +150,13 @@ NAVIGATION_LINKS = {
             ),
             "My lists"
         ),
-        ("https://testingcurve.wordpress.com", "My blog")
+        (
+            (
+                ("/blog", "Projects blog"),
+                ("https://testingcurve.wordpress.com", "Wordpress blog"),
+            ),
+            "Blogs"
+        ),
         # ("/archive.html", "Archive"),
         # ("/categories/", "Tags"),
         # ("/rss.xml", "RSS feed"),

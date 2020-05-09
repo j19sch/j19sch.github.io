@@ -18,8 +18,8 @@ Somewhere along his journey (some say it was 2013) he started speaking at confer
 
 Other online places you can find me at:
 
-- [my blog](https://testingcurve.wordpress.com)
-- [my GitHub page](https://github.com/j19sch)
+- [WordPress](https://testingcurve.wordpress.com)
+- [GitHub](https://github.com/j19sch)
 - [twitter](https://twitter.com/j19sch)
 - [mastodon](https://mstdn.io/@j19sch)
 </div>
