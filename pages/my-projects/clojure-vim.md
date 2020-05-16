@@ -32,8 +32,14 @@ hidetitle: false
 ### vim-commentary
 - `gcc` (un)comment line
 
+### vim-sexp
+- `cse(`,`cse)`,`cseb`: surround element in parentheses
+- `cse[`, `cse]`: surround element in brackets
+
 ### vim-fireplace
 - `:Require`: reload current namespace
+- `:Require!`: reload all namespaces
 - `:Eval`: eval/print the outermost form for the current line
+- `:%Eval`: eval/print whole file
 - `cpp`: eval/print the innermost form at the cursor
 - `K`: show Clojure docs for symbol under cursor

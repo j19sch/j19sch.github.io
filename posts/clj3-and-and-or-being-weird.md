@@ -1,7 +1,7 @@
 <!--
 .. title: (clj 3) Clojure's 'and' and 'or' are weird (but not really)
 .. slug: clj3-and-or-being-weird
-.. date: 2020-05-15 16:25:15 UTC+02:00
+.. date: 2020-05-16 21:25:15 UTC+02:00
 .. tags: clojure
 .. category: clojure
 .. link: 
@@ -12,7 +12,7 @@
 ## The basics of Clojure's `and` and `or`
 
 Early in [chapter 3](https://www.braveclojure.com/do-things/#Control_Flow) of the [Brave and True](https://www.braveclojure.com/)-book the Boolean operators `and` and `or` are introduced:
-> Clojure uses the Boolean operators or and and. or returns either the first truthy value or the last value. and returns the first falsey value or, if no values are falsey, the last truthy value.
+> Clojure uses the Boolean operators `or` and `and`. `or` returns either the first truthy value or the last value. `and` returns the first falsey value or, if no values are falsey, the last truthy value.
 
 This explanation is followed by some examples:
 ```clojure
@@ -37,13 +37,13 @@ What I found remarkable about this is that `and` and `or` do not return booleans
 
 <!-- TEASER_END -->
 
-After reading the above description of `and` and `or`'s behavarior, reading [their](https://clojuredocs.org/clojure.core/and) [official](https://clojuredocs.org/clojure.core/or) documentation, and playing around a bit with code, I discovered a description that works better for me:
+After reading the above description of `and` and `or`'s behavarior, reading [their](https://clojuredocs.org/clojure.core/and) [official](https://clojuredocs.org/clojure.core/or) documentation, and playing around a bit with code, I discovered a description of their behavior that works better for me:
 
 - both `and` and `or` return the last value they evaluate;
 - `or` stops evaluating at the first truthy value it evaluates, since an `or` needs only one true value to evaluate to true;
 - `and` stops evaluating at the first falsy value it evaluates, since an `and` needs only one false value to evaluate to false.
 
-In Clojure only `false` and `nil` are falsy, everything else is truthy. That should give you all you need to make sense of the following examples.
+In Clojure only `false` and `nil` are falsy, everything else is truthy - as demonstrated by the following examples.
 
 ```clojure
 (and true true)        ; => true
@@ -147,33 +147,40 @@ And this behavior of `not` is also present in Clojure:
 (not "foo")  ; => false
 ```
 
-So I suppose the conclusion is that even though it may feel a bit weird to have `and` and `or` not only returning `true` or `false`, Clojure is not any weirder in this regard than some other languages.
+So I suppose the conclusion is that even though it may feel a bit weird to have `and` and `or` not only returning `true` or `false`, Clojure is not any weirder in this respect than some other languages.
 
 
-## Some vim updates
-I switched to the [gruvbox](https://github.com/morhetz/gruvbox) color scheme, since it provides some more contrast than [minimalist](https://github.com/dikiaap/minimalist).
-yay cheatsheet to look up stuff
-todo: update vim cheatsheet
-fireplace can't evaluate into comment?
+## Some notes on Clojure, Vim, and blogging
+To close off this post, I'd like to share some smaller things I noticed and/or learned about Clojure and vim.
 
-cpp the function def, before cpp the usage
+### Clojure
+In a previous post [(clj 1)](/blog/clj1-deciding-on-an-editor/) I wrote I have a vague notion of what a "form" is, but wouldn't be able to explain it. Well, chapter 3 of the Brave and True-book explains "form" refers to valid code and that it will sometimes use "expression" as a synonym. I had actually read this before writing that earlier blog post, so that shows the value of re-reading.
 
-vim and parantheses and s-exp
+When trying to evaluate a form in a new file I created to play around in with `and` and `or`, I got the following error:  
+`FileNotFoundException Could not locate clojure_noob/namespace__init.class or clojure_noob/namespace.clj on classpath. 
+Please check that namespaces with dashes use underscores in the Clojure file name.  clojure.lang.RT.load (RT.java:456)`  
+I fixed it by copy-pasting the namespace declaration of my `core.clj` file `(ns clojure-noob.core (:gen-class))` to the top of the new file. I have no idea if that's the proper way to use namespaces, but I'll learn that in [chapter 6](https://www.braveclojure.com/organization/#Creating_and_Switching_to_Namespaces) of the Brave and True-book.
 
-install vim-gtk3 to copy to system clipboard to write this blog post
+It surprised me that after making changes to a function definition and using `:Require` or `Require!` to reload a namespace, I still first had to evaluate the function definition (`cpp`) to be able to use the update version.
 
-disable `cursorline` because makes vim slow
+Function definitions go in parantheses. Everything is a list!
 
-## Some Clojure updates
-reading ch3: it explains what a "form" is -> plugins mentioned that
-namespace issue when creating new file
-	`:Require` does not load function definitions in file
-function defs go into parantheses
-am googling clojure docs instead of `K` of vim-fireplace
 
-confusing Clojure and Python syntax for parantheses now and again
+### Vim
+I switched to the [gruvbox](https://github.com/morhetz/gruvbox) color scheme, since it provides more contrast than [minimalist](https://github.com/dikiaap/minimalist).
 
-## closing thoughts
-lot of effort reading/exploring and then even more writing this
-but basics, basics, basics
-but work on stuff instead of racing through
+It's great to have [my own cheatsheet](/my-projects/clojure-vim-cheatsheet) to look things up in.
+
+If vim-fireplace can evaluate a form and add it to the buffer as a comment, I haven't found out how.
+
+I had to install `vim-gtk3` to be able to copy from vim to my system's clipboard.
+
+Highlighting the line the cursor is in with `set cursorline` looks good, until it seems to introduce lag in file navigation.
+
+Instead of looking up the Clojure docs on the internet, I should hit `K`. Thank you, vim-fireplace!
+
+The parantheses help from vim-sexp is helpful, except when it isn't. I still need to find the best way to add a matching paranthesis or bracket to an orphaned one.
+
+
+### Blogging
+Writing these blog posts is slowing me donw significantly, but it is also forcing (encouraging?) me to engage deeper with Clojure. So for now, I'm seeing that as a good thing. Also, it can't hurt to spend some extra time on the basics. I've heard too many experts say when asked how to become excellent at something: "basics, basics, basics".
