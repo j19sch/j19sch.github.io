@@ -29,7 +29,11 @@ hidetitle: false
 ### GitGutter
 - see diff: `<Leader>hp`
 
+### vim-commentary
+- `gcc` (un)comment line
+
 ### vim-fireplace
 - `:Require`: reload current namespace
 - `:Eval`: eval/print the outermost form for the current line
 - `cpp`: eval/print the innermost form at the cursor
+- `K`: show Clojure docs for symbol under cursor
