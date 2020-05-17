@@ -2,7 +2,7 @@
 .. title: (clj 3) Clojure's 'and' and 'or' are weird (but not really)
 .. slug: clj3-and-or-being-weird
 .. date: 2020-05-16 21:25:15 UTC+02:00
-.. tags: clojure, booleans
+.. tags: clojure, booleans, brave-true
 .. category: clojure
 .. link: 
 .. description:
@@ -31,7 +31,7 @@ This explanation is followed by some examples:
 ; => nil
 ```
 
-What I found remarkable about this is that `and` and `or` do not return a boolean in all cases. Before I go into that, let's back up a second and cover their basics in some more depth first.
+What I found remarkable about this is that `and` and `or` do not return a boolean in all cases. Before I go into that, let's back up a second and cover their basics in a little more depth first.
 
 <!-- TEASER_END -->
 
@@ -83,10 +83,7 @@ So I created a very simple example:
 		(* input 2)
 	)
 )
-```
 
-Which does the following:
-```Clojure
 (mult2_if_int 4)       ; => 8
 (mult2_if_int "four")  ; => nil
 ```
@@ -104,7 +101,7 @@ However, you can get the same behvarior by using `if` and that does look more re
 
 ```
 
-That wouldn't work as well with multiple conditions, but a quick search showed me that's what Clojure's [`cond`](http://clojuredocs.org/clojure.core/cond) and [`case`](http://clojuredocs.org/clojure.core/case) are for. So doing the same as above with `cond`:
+That wouldn't work as well with multiple conditions, but a quick search showed me that's what Clojure's [`cond`](http://clojuredocs.org/clojure.core/cond) and [`case`](http://clojuredocs.org/clojure.core/case) are for. So doing the same as above with `cond`, still with only one condition though:
 ```Clojure
 (defn mult4_if_int [input]
 	(cond
@@ -115,7 +112,7 @@ That wouldn't work as well with multiple conditions, but a quick search showed m
 (mult4_if_int "two")  ; => nil
 ```
 
-So for `and` I have trouble seeing a use case for this behavior. For `or` there is an [example](https://clojuredocs.org/clojure.core/or#example-5e4010ebe4b0ca44402ef82d) in the Clojure docs, using it to return a default value if our function returns `nil`:
+So for `and` I have trouble seeing a use case for this behavior. For `or` there is an [example](https://clojuredocs.org/clojure.core/or#example-5e4010ebe4b0ca44402ef82d) in the Clojure docs, using it to return a default value if the function returns `nil`:
 ```Clojure
 (or (mult2_if_int 4) "that was not a number")       ; => 4
 (or (mult2_if_int "four") "that was not a number")  ; => "that was not a number"
@@ -149,7 +146,7 @@ So I suppose the conclusion is that even though it may feel a bit weird to have 
 
 ---
 
-As a postscript to this post, I'd like to share some smaller things I noticed and/or learned about Clojure and vim.
+As a postscript to this post, I'll share some smaller things I noticed and/or learned about Clojure and vim.
 
 ### Notes on Clojure
 In a previous post [(clj 1)](/blog/clj1-deciding-on-an-editor/) I wrote I have a vague notion of what a "form" is, but wouldn't be able to explain it. Well, chapter 3 of the Brave and True-book explains that "form" refers to valid code and that it will sometimes use "expression" as a synonym. I had actually read this before writing that earlier blog post, so that shows the value of re-reading.
@@ -161,11 +158,11 @@ I fixed it by copy-pasting the namespace declaration of my `core.clj` file to th
 
 It surprised me that after making changes to a function definition and using `:Require` or `Require!` to reload a namespace, I still first had to evaluate the function definition itself before I was able to use the updated version.
 
-Reminder: function definitions go in parantheses. Why? Everything is a list!
+Reminder: function definitions go inside of a set of parantheses. Why? Everything is a list!
 
 
 ### Notes on Vim
-I switched to the [gruvbox](https://github.com/morhetz/gruvbox) color scheme, since it provides more contrast than [minimalist](https://github.com/dikiaap/minimalist).
+I switched to the [gruvbox](https://github.com/morhetz/gruvbox) color scheme, since it provides higher contrast than [minimalist](https://github.com/dikiaap/minimalist).
 
 It's great to have [my own cheatsheet](/my-projects/clojure-vim-cheatsheet) to look things up.
 
@@ -173,7 +170,7 @@ If [vim-fireplace](https://github.com/tpope/vim-fireplace) can evaluate a form a
 
 I had to install `vim-gtk3` to be able to copy from vim to my system's clipboard.
 
-Highlighting the line the cursor is in with `set cursorline` looks good, until it seems to introduce lag in vertical cursor movement.
+Highlighting the line the cursor is in with `set cursorline` looks great, until it seems to introduce lag in vertical cursor movement.
 
 Instead of looking up the Clojure docs on the internet, I should hit `K`. Thank you, vim-fireplace!
 
@@ -181,4 +178,4 @@ The parantheses help from vim-sexp is great, except when it isn't. I still need 
 
 
 ### Notes on blogging
-Writing these blog posts is slowing down my provess in the Brave and True-book significantly, but it is also forcing (encouraging?) me to engage deeper with Clojure. So for now, I'm seeing that as a good thing. Also, it can't hurt to spend some extra time on the basics. I've heard too many experts say when asked how to become excellent at something: "basics, basics, basics".
+Writing these blog posts is slowing down my progress in the Brave and True-book significantly, but it is also forcing (encouraging?) me to engage deeper with Clojure. So for now, I'm seeing that as a good thing. Also, it can't hurt to spend some extra time on the basics. I've heard too many experts say when asked how to become excellent at something: "basics, basics, basics".
