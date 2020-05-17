@@ -22,6 +22,9 @@ hidetitle: false
 - next tab: `gt`, previous tab: `gT`, tab in position i: `{i}gt`
 - back-and-forth between two tabs: `<Leader>tl` (.vimrc)
 
+### copy-pasting
+- `"+` to copy to system clipboard
+
 ### NerdTree
 - open/close with `ctrl+n` (.vimrc)
 - `?` while open for keybindings
