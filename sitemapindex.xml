@@ -7,11 +7,27 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://j19sch.github.io/blog/feed.atom</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2020-05-17T07:54:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/blog/rss.xml</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2020-05-17T07:54:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/boolean.atom</loc>
+  <lastmod>2020-05-17T07:54:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/boolean.xml</loc>
+  <lastmod>2020-05-17T07:54:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/booleans.atom</loc>
+  <lastmod>2020-05-17T07:54:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/booleans.xml</loc>
+  <lastmod>2020-05-17T07:54:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/brave-true.atom</loc>
@@ -23,19 +39,19 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_clojure.atom</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2020-05-17T07:54:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_clojure.xml</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2020-05-17T07:54:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/clojure.atom</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2020-05-17T07:54:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/clojure.xml</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2020-05-17T07:54:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/emacs.atom</loc>
@@ -71,6 +87,6 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/sitemap.xml</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2020-05-17T07:54:00Z</lastmod>
  </sitemap>
 </sitemapindex>

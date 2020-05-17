@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>(clj 3) Clojure's 'and' and 'or' are weird (but not really) | Joep Schuurkes</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" href="../feed.atom">
+<link rel="canonical" href="https://j19sch.github.io/blog/clj3-and-or-being-weird/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../clj2-setting-up-vim/" title="(clj 2) Setting up Vim for Clojure" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="(clj 3) Clojure's 'and' and 'or' are weird (but not really)">
+<meta property="og:url" content="https://j19sch.github.io/blog/clj3-and-or-being-weird/">
+<meta property="og:description" content="Early in chapter 3 of the Brave and True-book the Boolean operators and and or are introduced:
+
+Clojure uses the Boolean operators or and and. or returns either the first truthy value or the last valu">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-05-16T21:25:15+02:00">
+<meta property="article:tag" content="booleans">
+<meta property="article:tag" content="brave-true">
+<meta property="article:tag" content="clojure">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="https://j19sch.github.io/">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../my-projects" class="nav-link">My projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../my-talks" class="nav-link">My talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../my-lists/fountain-pens" class="dropdown-item">Fountain pens</a>
+                    <a href="../../my-lists/reading-list" class="dropdown-item">Reading list</a>
+                    <a href="../../my-lists/recommended-reading" class="dropdown-item">Recommended reading</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blogs</a>
+            <div class="dropdown-menu">
+                    <a href="../../blog" class="dropdown-item">Projects blog</a>
+                    <a href="https://testingcurve.wordpress.com" class="dropdown-item">Wordpress blog</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">(clj 3) Clojure's 'and' and 'or' are weird (but not really)</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2020-05-16T21:25:15+02:00" itemprop="datePublished" title="16 May 2020">16 May 2020</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>Early in <a href="https://www.braveclojure.com/do-things/#Control_Flow">chapter 3</a> of the <a href="https://www.braveclojure.com/">Brave and True</a>-book the Boolean operators <code>and</code> and <code>or</code> are introduced:</p>
+<blockquote>
+<p>Clojure uses the Boolean operators <code>or</code> and <code>and</code>. <code>or</code> returns either the first truthy value or the last value. <code>and</code> returns the first falsey value or, if no values are falsey, the last truthy value.</p>
+</blockquote>
+<p>This explanation is followed by some examples:</p>
+<pre class="code literal-block"><span></span><span class="p">(</span><span class="nf">or</span> <span class="nv">false</span> <span class="nv">nil</span> <span class="ss">:large_I_mean_venti</span> <span class="ss">:why_cant_I_just_say_large</span><span class="p">)</span>
+<span class="c1">; =&gt; :large_I_mean_venti</span>
+
+<span class="p">(</span><span class="nf">or</span> <span class="p">(</span><span class="nf">=</span> <span class="mi">0</span> <span class="mi">1</span><span class="p">)</span> <span class="p">(</span><span class="nf">=</span> <span class="s">"yes"</span> <span class="s">"no"</span><span class="p">))</span>
+<span class="c1">; =&gt; false</span>
+
+<span class="p">(</span><span class="nf">or</span> <span class="nv">nil</span><span class="p">)</span>
+<span class="c1">; =&gt; nil</span>
+</pre>
+
+
+<pre class="code literal-block"><span></span><span class="p">(</span><span class="nf">and</span> <span class="ss">:free_wifi</span> <span class="ss">:hot_coffee</span><span class="p">)</span>
+<span class="c1">; =&gt; :hot_coffee</span>
+
+<span class="p">(</span><span class="nf">and</span> <span class="ss">:feelin_super_cool</span> <span class="nv">nil</span> <span class="nv">false</span><span class="p">)</span>
+<span class="c1">; =&gt; nil</span>
+</pre>
+
+
+<p>What I found remarkable about this is that <code>and</code> and <code>or</code> do not return a boolean in all cases. Before I go into that, let's back up a second and cover their basics in a little more depth first.</p>
+<!-- TEASER_END -->
+
+<h3>The basics of Clojure's <code>and</code> and <code>or</code>
+</h3>
+<p>After reading the book's explanation of <code>and</code> and <code>or</code>'s behavarior, I played around with them a bit and also read <a href="https://clojuredocs.org/clojure.core/and">their</a> <a href="https://clojuredocs.org/clojure.core/or">official</a> documentation. That lead me to coming up with a description of their behavior that works better for me:</p>
+<ul>
+<li>both <code>and</code> and <code>or</code> return the last value they evaluate;</li>
+<li>
+<code>or</code> stops evaluating at the first truthy value it evaluates, since an <code>or</code> needs only one true value to evaluate to true;</li>
+<li>
+<code>and</code> stops evaluating at the first falsy value it evaluates, since an <code>and</code> needs only one false value to evaluate to false.</li>
+</ul>
+<p>In Clojure only <code>false</code> and <code>nil</code> are falsy, everything else is truthy. So that allows us to construct the following examples:</p>
+<pre class="code literal-block"><span></span><span class="p">(</span><span class="nb">and </span><span class="nv">true</span> <span class="nv">true</span><span class="p">)</span>        <span class="c1">; =&gt; true</span>
+<span class="p">(</span><span class="nb">and </span><span class="nv">true</span> <span class="ss">:tree</span><span class="p">)</span>       <span class="c1">; =&gt; :tree</span>
+<span class="p">(</span><span class="nb">and </span><span class="nv">true</span> <span class="nv">false</span> <span class="nv">true</span><span class="p">)</span>  <span class="c1">; =&gt; false</span>
+<span class="p">(</span><span class="nb">and </span><span class="nv">true</span> <span class="nv">nil</span> <span class="nv">true</span><span class="p">)</span>    <span class="c1">; =&gt; nil</span>
+</pre>
+
+
+<pre class="code literal-block"><span></span><span class="p">(</span><span class="nb">or </span><span class="nv">false</span> <span class="nv">true</span> <span class="nv">false</span><span class="p">)</span>     <span class="c1">; =&gt; true</span>
+<span class="p">(</span><span class="nb">or </span><span class="nv">false</span> <span class="ss">:falcon</span> <span class="nv">false</span><span class="p">)</span>  <span class="c1">; =&gt; :falcon</span>
+<span class="p">(</span><span class="nb">or </span><span class="nv">false</span> <span class="nv">false</span><span class="p">)</span>          <span class="c1">; =&gt; false</span>
+<span class="p">(</span><span class="nb">or </span><span class="nv">false</span> <span class="nv">nil</span><span class="p">)</span>            <span class="c1">; =&gt; nil</span>
+</pre>
+
+
+<p>Finally, there's <code>(and)</code> evaluating to <code>true</code>, while <code>(or)</code> evaluates to <code>nil</code>, which is mentioned in <a href="https://clojuredocs.org/clojure.core/and">their</a> <a href="https://clojuredocs.org/clojure.core/or">respective</a> doc pages. Not exactly sure why they do that, but who am I to disagree?</p>
+<h3>They don't return only <code>true</code> or <code>false</code>
+</h3>
+<p>Since <code>and</code> and <code>or</code> are boolean operators, I figured they would always return either <code>true</code> or <code>false</code>. That is how you use them, right? Give them some expressions that evaluate either to <code>true</code> or <code>false</code> and then depending if you string them together with <code>and</code> or <code>or</code>, you get <code>true</code> or <code>false</code> back. And that turns out to not be the case: <code>and</code> and <code>or</code> return the result of their last evaluation. If that's <code>true</code>, you get <code>true</code> back, but if it's <code>"tree"</code> or <code>:falcon</code>, that's what you get. So I started to think why these operators behaved that way.</p>
+<h4>A theoretical argument</h4>
+<p>Earlier in the Brave and True-book it explained that Clojure only has two types of things: literal representations of data structures (like numbers, maps, and vectors) and operations. With these two you create expressions (aka forms) and "Clojure evaluates every form to produce a value."<a href="https://www.braveclojure.com/do-things/#Forms">(p 91)</a> Combine this with the basic idea of functional programming, i.e. functions as mathemetical functions, you expect functions - and that's what the <code>and</code> and <code>or</code> operations are - to take input, transform it, and return the transformed input as their output.</p>
+<p>Looking at it that way, in some intuitive conceptual way, it does make sense to me that <code>and</code> and <code>or</code> return the last form they evaluated instead of the last form they evaluated converted to either <code>true</code> or <code>false</code>. If you need that conversion, you can do that yourself. In a similar vein, Clojure's <a href="https://clojuredocs.org/clojure.core/println"><code>println</code></a> returns <code>nil</code> and the printing of the line is considered a side effect.</p>
+<h4>A practical argument</h4>
+<p>I'm ok with their being only a theoretical reason for this, keeping the language conceptually consistent. Yet I wondered if there was a practical usage for this behavior of <code>and</code> and <code>or</code>. A possible use I saw was that you could chain functions. For instance, with <code>and</code> the first function could either return a <code>truthy</code> value, making the <code>and</code> return that value; or that first function would return <code>false</code> or <code>nil</code>, meaning the second function would be evaluated. And so on, until either a function returns something truthy or you get a <code>false</code> or <code>nil</code> from the last one.</p>
+<p>So I created a very simple example:</p>
+<pre class="code literal-block"><span></span><span class="p">(</span><span class="kd">defn </span><span class="nv">mult2_if_int</span> <span class="p">[</span><span class="nv">input</span><span class="p">]</span>
+    <span class="p">(</span><span class="nb">and </span>
+        <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nf">integer?</span> <span class="nv">input</span><span class="p">)</span> <span class="nv">true</span><span class="p">)</span>  <span class="c1">; returns nil when the if-clause is false</span>
+        <span class="p">(</span><span class="nb">* </span><span class="nv">input</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+
+<span class="p">(</span><span class="nf">mult2_if_int</span> <span class="mi">4</span><span class="p">)</span>       <span class="c1">; =&gt; 8</span>
+<span class="p">(</span><span class="nf">mult2_if_int</span> <span class="s">"four"</span><span class="p">)</span>  <span class="c1">; =&gt; nil</span>
+</pre>
+
+
+<p>However, you can get the same behvarior by using <code>if</code> and that does look more readable to me:</p>
+<pre class="code literal-block"><span></span><span class="p">(</span><span class="kd">defn </span><span class="nv">mult3_if_int</span> <span class="p">[</span><span class="nv">input</span><span class="p">]</span>
+    <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nf">integer?</span> <span class="nv">input</span><span class="p">)</span>
+        <span class="p">(</span><span class="nb">* </span><span class="nv">input</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+
+<span class="p">(</span><span class="nf">mult3_if_int</span> <span class="mi">4</span><span class="p">)</span>       <span class="c1">; =&gt; 12</span>
+<span class="p">(</span><span class="nf">mult3_if_int</span> <span class="s">"four"</span><span class="p">)</span>  <span class="c1">; =&gt; nil</span>
+</pre>
+
+
+<p>That wouldn't work as well with multiple conditions, but a quick search showed me that's what Clojure's <a href="http://clojuredocs.org/clojure.core/cond"><code>cond</code></a> and <a href="http://clojuredocs.org/clojure.core/case"><code>case</code></a> are for. So doing the same as above with <code>cond</code>, still with only one condition though:</p>
+<pre class="code literal-block"><span></span><span class="p">(</span><span class="kd">defn </span><span class="nv">mult4_if_int</span> <span class="p">[</span><span class="nv">input</span><span class="p">]</span>
+    <span class="p">(</span><span class="nf">cond</span>
+        <span class="p">(</span><span class="nf">integer?</span> <span class="nv">input</span><span class="p">)</span> <span class="p">(</span><span class="nb">* </span><span class="nv">input</span> <span class="mi">4</span><span class="p">)</span>
+    <span class="ss">:else</span> <span class="nv">nil</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="p">(</span><span class="nf">mult4_if_int</span> <span class="mi">2</span><span class="p">)</span>      <span class="c1">; =&gt; 8</span>
+<span class="p">(</span><span class="nf">mult4_if_int</span> <span class="s">"two"</span><span class="p">)</span>  <span class="c1">; =&gt; nil</span>
+</pre>
+
+
+<p>So for <code>and</code> I have trouble seeing a use case for this behavior. For <code>or</code> there is an <a href="https://clojuredocs.org/clojure.core/or#example-5e4010ebe4b0ca44402ef82d">example</a> in the Clojure docs, using it to return a default value if the function returns <code>nil</code>:</p>
+<pre class="code literal-block"><span></span><span class="p">(</span><span class="nb">or </span><span class="p">(</span><span class="nf">mult2_if_int</span> <span class="mi">4</span><span class="p">)</span> <span class="s">"that was not a number"</span><span class="p">)</span>       <span class="c1">; =&gt; 4</span>
+<span class="p">(</span><span class="nb">or </span><span class="p">(</span><span class="nf">mult2_if_int</span> <span class="s">"four"</span><span class="p">)</span> <span class="s">"that was not a number"</span><span class="p">)</span>  <span class="c1">; =&gt; "that was not a number"</span>
+</pre>
+
+
+<h4>Surely Python does something different</h4>
+<p>The language I'm most familiar with and thus my language of reference, is Python. And throughout my exploration of Clojure's <code>and</code> and <code>or</code>, I kept thinking that surely Python does this differently. That is, until I checked:</p>
+<pre class="code literal-block"><span></span><span class="kc">True</span> <span class="ow">and</span> <span class="kc">True</span>            <span class="c1"># =&gt; True</span>
+<span class="kc">True</span> <span class="ow">and</span> <span class="s2">"tree"</span>          <span class="c1"># =&gt; 'tree'</span>
+<span class="kc">True</span> <span class="ow">and</span> <span class="kc">False</span> <span class="ow">and</span> <span class="kc">True</span>  <span class="c1"># =&gt; False</span>
+<span class="kc">True</span> <span class="ow">and</span> <span class="kc">None</span> <span class="ow">and</span> <span class="kc">True</span>   <span class="c1"># =&gt; None</span>
+</pre>
+
+
+<pre class="code literal-block"><span></span><span class="kc">False</span> <span class="ow">or</span> <span class="kc">True</span> <span class="ow">or</span> <span class="kc">False</span>      <span class="c1"># =&gt; True</span>
+<span class="kc">False</span> <span class="ow">or</span> <span class="s2">"falcon"</span> <span class="ow">or</span> <span class="kc">False</span>  <span class="c1"># =&gt; 'falcon'</span>
+<span class="kc">False</span> <span class="ow">or</span> <span class="kc">False</span>              <span class="c1"># =&gt; False</span>
+<span class="kc">False</span> <span class="ow">or</span> <span class="kc">None</span>               <span class="c1"># =&gt; None</span>
+</pre>
+
+
+<p>And in the revelant <a href="https://docs.python.org/3/reference/expressions.html#boolean-operations">Python docs</a>, which I must say are excellent as always, I found:</p>
+<blockquote>
+<p>Note that neither <code>and</code> nor <code>or</code> restrict the value and type they return to <code>False</code> and <code>True</code>, but rather return the last evaluated argument. This is sometimes useful, e.g., if <code>s</code> is a string that should be replaced by a default value if it is empty, the expression <code>s or 'foo'</code> yields the desired value. Because <code>not</code> has to create a new value, it returns a boolean value regardless of the type of its argument (for example, <code>not 'foo'</code> produces <code>False</code> rather than <code>''</code>.)</p>
+</blockquote>
+<p>And this behavior of <code>not</code> is also present in Clojure:</p>
+<pre class="code literal-block"><span></span><span class="p">(</span><span class="nb">not </span><span class="s">"foo"</span><span class="p">)</span>  <span class="c1">; =&gt; false</span>
+</pre>
+
+
+<p>So I suppose the conclusion is that even though it may feel a bit weird to have <code>and</code> and <code>or</code> not only returning <code>true</code> or <code>false</code>, Clojure is not any weirder in this respect than some other languages.</p>
+<hr>
+<p>As a postscript to this post, I'll share some smaller things I noticed and/or learned about Clojure and vim.</p>
+<h4>Notes on Clojure</h4>
+<p>In a previous post <a href="../clj1-deciding-on-an-editor/">(clj 1)</a> I wrote I have a vague notion of what a "form" is, but wouldn't be able to explain it. Well, chapter 3 of the Brave and True-book explains that "form" refers to valid code and that it will sometimes use "expression" as a synonym. I had actually read this before writing that earlier blog post, so that shows the value of re-reading.</p>
+<p>When I created a new <code>clj</code>-file to play around in with <code>and</code> and <code>or</code> and tried to evaluate a form, I got the following error:<br><code>FileNotFoundException Could not locate clojure_noob/namespace__init.class or clojure_noob/namespace.clj on classpath.
+Please check that namespaces with dashes use underscores in the Clojure file name.  clojure.lang.RT.load (RT.java:456)</code><br>
+I fixed it by copy-pasting the namespace declaration of my <code>core.clj</code> file to the top of the new file: <code>(ns clojure-noob.core (:gen-class))</code>. I have no idea if that's the proper way to use namespaces, but I'll learn that in <a href="https://www.braveclojure.com/organization/#Creating_and_Switching_to_Namespaces">chapter 6</a> of the Brave and True-book.</p>
+<p>It surprised me that after making changes to a function definition and using <code>:Require</code> or <code>Require!</code> to reload a namespace, I still first had to evaluate the function definition itself before I was able to use the updated version.</p>
+<p>Reminder: function definitions go inside of a set of parantheses. Why? Everything is a list!</p>
+<h4>Notes on Vim</h4>
+<p>I switched to the <a href="https://github.com/morhetz/gruvbox">gruvbox</a> color scheme, since it provides higher contrast than <a href="https://github.com/dikiaap/minimalist">minimalist</a>.</p>
+<p>It's great to have <a href="../../my-projects/clojure-vim-cheatsheet">my own cheatsheet</a> to look things up.</p>
+<p>If <a href="https://github.com/tpope/vim-fireplace">vim-fireplace</a> can evaluate a form and add it to the buffer as a comment, I haven't found out how. Might be non-trivial in Vim, because of Vim's modes and command line.</p>
+<p>I had to install <code>vim-gtk3</code> to be able to copy from vim to my system's clipboard.</p>
+<p>Highlighting the line the cursor is in with <code>set cursorline</code> looks great, until it seems to introduce lag in vertical cursor movement.</p>
+<p>Instead of looking up the Clojure docs on the internet, I should hit <code>K</code>. Thank you, vim-fireplace!</p>
+<p>The parantheses help from vim-sexp is great, except when it isn't. I still need to find the best way to add a matching paranthesis or bracket to an orphaned one. Perhaps delete orphan, then add the pair?</p>
+<h4>Notes on blogging</h4>
+<p>Writing these blog posts is slowing down my progress in the Brave and True-book significantly, but it is also forcing (encouraging?) me to engage deeper with Clojure. So for now, I'm seeing that as a good thing. Also, it can't hurt to spend some extra time on the basics. I've heard too many experts say when asked how to become excellent at something: "basics, basics, basics".</p>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/booleans/" rel="tag">booleans</a></li>
+            <li><a class="tag p-category" href="../../categories/brave-true/" rel="tag">brave-true</a></li>
+            <li><a class="tag p-category" href="../../categories/clojure/" rel="tag">clojure</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../clj2-setting-up-vim/" rel="prev" title="(clj 2) Setting up Vim for Clojure">Previous post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2020     
+<a href="http://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a>
+    <a href="mailto:j19sch@gmail.com">Joep Schuurkes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>

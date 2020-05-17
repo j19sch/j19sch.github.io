@@ -22,6 +22,9 @@ hidetitle: false
 - next tab: `gt`, previous tab: `gT`, tab in position i: `{i}gt`
 - back-and-forth between two tabs: `<Leader>tl` (.vimrc)
 
+### copy-pasting
+- `"+` to copy to system clipboard
+
 ### NerdTree
 - open/close with `ctrl+n` (.vimrc)
 - `?` while open for keybindings
@@ -29,7 +32,17 @@ hidetitle: false
 ### GitGutter
 - see diff: `<Leader>hp`
 
+### vim-commentary
+- `gcc` (un)comment line
+
+### vim-sexp
+- `cse(`,`cse)`,`cseb`: surround element in parentheses
+- `cse[`, `cse]`: surround element in brackets
+
 ### vim-fireplace
 - `:Require`: reload current namespace
+- `:Require!`: reload all namespaces
 - `:Eval`: eval/print the outermost form for the current line
+- `:%Eval`: eval/print whole file
 - `cpp`: eval/print the innermost form at the cursor
+- `K`: show Clojure docs for symbol under cursor
