@@ -21,6 +21,7 @@ hidetitle: false
 - Man's Search for Meaning - Viktor E. Frankl
 - Kom hier dat ik u kus - Griet Op de Beeck
 - Practical Ways to Lead and Serve (Manage) Others: Modern Management Made Easy, Book 2 - Johanna Rothman
+- The answer to how is yes: Acting on what matters - Peter Block
 
 ### 2019
 - Host: Six new roles of engagement for teams, organizations, communities, movements - Mark McKergow & Helen Bailey
