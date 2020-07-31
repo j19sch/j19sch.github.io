@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://j19sch.github.io/blog/feed.atom</loc>
-  <lastmod>2020-05-17T10:08:00Z</lastmod>
+  <lastmod>2020-07-31T20:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/blog/rss.xml</loc>
-  <lastmod>2020-05-17T10:09:00Z</lastmod>
+  <lastmod>2020-07-31T20:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/booleans.atom</loc>
@@ -23,27 +23,43 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/brave-true.atom</loc>
-  <lastmod>2020-05-17T10:09:00Z</lastmod>
+  <lastmod>2020-07-31T20:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/brave-true.xml</loc>
-  <lastmod>2020-05-17T10:09:00Z</lastmod>
+  <lastmod>2020-07-31T20:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_clojure.atom</loc>
-  <lastmod>2020-05-17T10:08:00Z</lastmod>
+  <lastmod>2020-07-31T20:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_clojure.xml</loc>
-  <lastmod>2020-05-17T10:09:00Z</lastmod>
+  <lastmod>2020-07-31T20:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/clojure.atom</loc>
-  <lastmod>2020-05-17T10:08:00Z</lastmod>
+  <lastmod>2020-07-31T20:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/clojure.xml</loc>
-  <lastmod>2020-05-17T10:09:00Z</lastmod>
+  <lastmod>2020-07-31T20:27:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/closure.atom</loc>
+  <lastmod>2020-07-31T18:43:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/closure.xml</loc>
+  <lastmod>2020-07-31T18:43:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/closures.atom</loc>
+  <lastmod>2020-07-31T20:27:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/closures.xml</loc>
+  <lastmod>2020-07-31T20:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/emacs.atom</loc>
@@ -62,6 +78,14 @@
   <lastmod>2020-05-09T07:30:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://j19sch.github.io/categories/maps.atom</loc>
+  <lastmod>2020-07-31T20:27:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/maps.xml</loc>
+  <lastmod>2020-07-31T20:27:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://j19sch.github.io/categories/vim.atom</loc>
   <lastmod>2020-05-09T07:30:00Z</lastmod>
  </sitemap>
@@ -78,7 +102,15 @@
   <lastmod>2020-05-09T07:30:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://j19sch.github.io/categories/when.atom</loc>
+  <lastmod>2020-07-31T20:27:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/when.xml</loc>
+  <lastmod>2020-07-31T20:27:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://j19sch.github.io/sitemap.xml</loc>
-  <lastmod>2020-06-20T08:04:00Z</lastmod>
+  <lastmod>2020-07-31T20:27:00Z</lastmod>
  </sitemap>
 </sitemapindex>

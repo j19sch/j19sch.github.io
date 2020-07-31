@@ -25,6 +25,10 @@ hidetitle: false
 ### copy-pasting
 - `"+` to copy to system clipboard
 
+### auto-complete
+- `ctrl+n`: find next match
+- `ctrl+p`: find previous match
+
 ### NerdTree
 - open/close with `ctrl+n` (.vimrc)
 - `?` while open for keybindings
@@ -45,4 +49,5 @@ hidetitle: false
 - `:Eval`: eval/print the outermost form for the current line
 - `:%Eval`: eval/print whole file
 - `cpp`: eval/print the innermost form at the cursor
+- `cp{motion}`: eval/print motion, e.g. `$` or `_`
 - `K`: show Clojure docs for symbol under cursor
