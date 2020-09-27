@@ -24,6 +24,8 @@ hidetitle: false
 - The answer to how is yes: Acting on what matters - Peter Block
 - How to take smart notes: One simple technique to boost writing, learning and thinking - Sönke Ahrens
 - Orbiting the giant hairball: A corporate fool's guide to surviving with grace - Gordon MacKenzie
+- And the weak suffer whay they must?: Europe's crisis and America's economic future - Yanis Varoufakis
+- Influencing Patterns for Change: A Human Systems Dynamics Primer for Leaders - Royce Holladay, Kristine Quade
 
 ### 2019
 - Host: Six new roles of engagement for teams, organizations, communities, movements - Mark McKergow & Helen Bailey
