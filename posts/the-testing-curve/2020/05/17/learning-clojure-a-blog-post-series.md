@@ -1,0 +1,2 @@
+<html><body><p>For a while I have been wanting to learn <a href="https://clojure.org/">Clojure</a>, because Lisp and because functional programming. A few weeks ago I actually started and decided to also blog about it. You can find this series of blog posts (more to follow) <a href="https://j19sch.github.io/my-projects/learning-clojure/">here</a>.</p>
+<!-- /wp:paragraph --></body></html>

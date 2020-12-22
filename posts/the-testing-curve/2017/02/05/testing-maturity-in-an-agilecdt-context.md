@@ -1,0 +1,15 @@
+<html><body><p>One day during a team meeting at Joep‘s previous job at a bank the Team Manager of Testing, listed a number of topics his testers could work on in the coming months. One of those topics was “testing maturity”. This topic was on the list not because this manager was such a fan of maturity models, but because the other team managers (Business Analysis and Development) had produced one for their own teams and higher management would like to have one for testing as well. And although Joep saw little value in a classic five-tiered maturity model either, he was intrigued by the question: so what can you do with respect to maturity models that is of value?
+
+<img class="alignright  wp-image-354" src="https://testingcurve.files.wordpress.com/2017/02/artikel_pic1.jpg?w=225" alt="artikel_pic1" width="200" height="267"><img class="alignright  wp-image-355" src="https://testingcurve.files.wordpress.com/2017/02/artikel_pic2.jpg?w=225" alt="artikel_pic2" width="200" height="267">
+Joep asked <a href="http://www.huibschoots.nl/" target="_blank">Huib</a> to help him think of a way to create a valuable, context-driven way to work on maturity. Since Huib had been working for the same bank, they met and discussed the possibilities. Soon they found out that the criteria should be variable since maturity depends on context. They started experimenting with stack ranking and quite soon they had the first version of their “maturity model”.
+After a first try-out at the bank Joep worked, we let it rest for a while. After a couple of months we wrote <a href="http://www.huibschoots.nl/wordpress/wp-content/uploads/2017/02/Test-Improvement-Huib-Schoots-Joep-Schuurkes.pdf" target="_blank">this article</a>. It is the first version and it needs to be refined and polished. The heuristics lists are probably to long and need to be reduced. We think of this model as a <a href="https://www.dropbox.com/s/99o6tt1mj88i3wg/Cards%20Test%20Improvement.pdf?dl=0" target="_blank">card game</a> that can be played with teams.
+
+<img class="aligncenter  wp-image-356" src="https://testingcurve.files.wordpress.com/2017/02/artikel_pic3.jpg?w=300" alt="artikel_pic3" width="345" height="137">
+
+ 
+
+Currently we are also working on an agile version of this model, a card game for agile teams to assess their “maturity” to help them to find possible areas for improvements. More about that later.
+
+We are curious about your thoughts. What do you think? Maybe you want to try the game? Feel free to try it out. We hope you will share your experiences with us.
+
+<a href="http://www.huibschoots.nl/wordpress/wp-content/uploads/2017/02/Test-Improvement-Huib-Schoots-Joep-Schuurkes.pdf" target="_blank">Article</a> (pdf) – <a href="https://www.dropbox.com/s/99o6tt1mj88i3wg/Cards%20Test%20Improvement.pdf?dl=0" target="_blank">Card game</a> (pdf)</p></body></html>
