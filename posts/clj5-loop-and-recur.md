@@ -1,6 +1,6 @@
 <!--
-.. title: (clj 5) Loop and recur
-.. slug: clj5-loop-and-recur
+.. title: (clj 5) Loop and recur, into and conj
+.. slug: clj5-loop-and-recur-into-and-conj
 .. date: 2020-12-25 15:25:15 UTC+01:00
 .. tags: clojure, brave-true, loop, recur
 .. category: clojure
@@ -31,6 +31,7 @@ There's enough to work with: the section of the book, my [notes](https://workflo
 in [Workflowy](https://workflowy.com/), and of course my [code](https://github.com/j19sch/clojure-brave-true/blob/master/clojure-noob/src/clojure_noob/hobbit.clj). But it is taking some work.
 
 Some of the things I had to rediscover:
+
 - `:%Eval` makes vim-fireplace evaluate the whole file
 - the thing with square brackets that looks like a Python list is called a vector
 - "coll" is short for collection, so maps, vectors, lists and sets (knowing the vocabulary matters)
@@ -43,26 +44,12 @@ functional style of programming. You put some thing(s) in a function and you get
 Understand what each function does, figure out which function calls which other one and you're there.
 
 So having reacquainted myself with what I did, this blog post will cover the following topics:
+
 - vim-sexp and bracket editing
 - loop and recur
 - into and conj
 - reduce
 - what would `hobbit.clj` look like in Python?
-
-
-# remaining exceptions
-`NullPointerException   clojure.lang.Numbers.ops (Numbers.java:1013)`
--> invalid target for target-hit
-
-`ClassCastException class clojure.lang.PersistentVector cannot be cast to class java.lang.Number (clojure.lang.PersistentVector is in unnamed module of loader 'app'; java.lang.Number is in mo dule java.base of loader 'bootstrap')  clojure.lang.Numbers.add (Numbers.java:128)`
--> vector of vectors into looper function (oh yeah, it's called vector)
-
-`ArityException Wrong number of args (3) passed to: core/looper  clojure.lang.AFn.throwArity (AFn.java:429)`
--> three arguments instead of vector to looper function
-
-`IllegalArgumentException Don't know how to create ISeq from: java.lang.Long  clojure.lang.RT.seqFrom (RT.java:542)`
-`(into [1] 2);` while `(conj [1] 2);` works, so does `(conj [1] [2]);` and `(into [1] [2]);`
-
 
 
 ## vim-sexp (with alt mappings) and brackets
@@ -72,11 +59,7 @@ The trouble being that I found myself unable to add the closing bracket through 
 while writing this post. Perhaps because I only tried with simpler pieces of code, perhaps because I was mistaken earlier.)
 
 One solution I found was to use `cse]` to surround an element in brackets and then delete the opening one. That's not a satisfactory
-solution though, since it's a two-step-forward-one-step-back kind of solution.  
-I also found `<I` and `>I`, which allows you to insert at the beginning and end of a form, but since parantheses, brackets and braces
-determine where forms start and end, it wasn't a good solution either.  
-In the end I settled for adding the closing bracket and then using slurpage (`>)`, `<(`) and barfage (`>(`, `<)`) to get it in the right place.  
-And at some point during all of this, I found Micah Elliott's [vim-sexp cheat sheet](http://micahelliott.com/posts/2015-08-20-vim-sexp-cheat-sheet.html).
+solution though, since it's a two-step-forward-one-step-back kind of solution. I also found `<I` and `>I`, which allows you to insert at the beginning and end of a form, but since parantheses, brackets and braces determine where forms start and end, it wasn't a good solution either. In the end I settled for adding the closing bracket and then using slurpage ( `>)`, `<(` ) and barfage ( `>(`, `<)` ) to get it in the right place. And at some point during all of this, I found Micah Elliott's [vim-sexp cheat sheet](http://micahelliott.com/posts/2015-08-20-vim-sexp-cheat-sheet.html).
 
 Finally, because it's the best place in this post to mention it, the more [Oliver Caldwell](https://twitter.com/olivercaldwell) tweets about 
 his vim plugin [conjure](https://github.com/Olical/conjure), the more curious I get to try it out instead of [vim-fireplace](https://github.com/tpope/vim-fireplace).
@@ -135,14 +118,17 @@ then replacing the integers with maps to get closer to what's in the hobbit scri
 ; => [9 8 1 2 3]
 (conj [9 8] [1 2 3] )
 ; => [9 8 [1 2 3]]
+
 (into [1 2 3] [])
 ; => [1 2 3]
 (conj [1 2 3] [])
 ; => [1 2 3 []]
+
 (into [1 2 3] 4)
 ; IllegalArgumentException Don't know how to create ISeq from: java.lang.Long  clojure.lang.RT.seqFrom (RT.java:542)
 (conj [1 2 3] 4)
 ; [1 2 3 4]
+
 (into [{:name "my-arm"}] [{:name "left-head"} {:name "right-head"}])
 ; => [{:name "my-arm"} {:name "left-head"} {:name "right-head"}]
 (conj [{:name "my-arm"}] [{:name "left-head"} {:name "right-head"}])
@@ -157,7 +143,7 @@ These examples allowed me to see that Clojure's `into` and `conj` are very simil
 My notes show it took me some effort to understand `reduce`. They say "struggling a bit with syntax" and
 "it's not obvious" and "had to re-read and re-learn", but I have no idea what it was that I found non-obvious.
 
-My best guess is that it was a bit of a leap for me to go from these examples:
+My best guess is that it was a bit of a leap for me to go from these examples
 ```clojure
 (reduce + [1 2 3 4])
 ; => 10
@@ -170,7 +156,16 @@ it is an improved implementation of a function that was explained earlier, so it
 function is supposed to do.
 
 
-## comparing with python
-how would I write in in Python?
-more functional style?
-https://github.com/j19sch/clojure-brave-true/blob/master/python-comparisons/hobbit.py
+## Comparing with python
+Finally I wondered how I would write `hobbit.clj` in Python, so [I did](https://github.com/j19sch/clojure-brave-true/blob/master/python-comparisons/hobbit.py). I remember being somewhat disappointed with the result, as I had expected the differences to be
+bigger. And that left me wondering if the differences would have been bigger, had I written the Python version before knowing
+the Clojure version.
+
+Comparing the two pieces of code now, the main difference seems to lie in how Clojure and Python deal with vectors and lists respectively.
+Where in Clojure you use `reduce` and `loop` / `recur`, Python lets you use a for-loop on a list to go through the items one by one.
+And where in Clojure you need `reduce` to sum a particular element in a vector of maps like this `(reduce + (map :size sym-parts))`, in Python list comprehension lets you do this like so `sum([part["size"] for part in sym_parts])`. And there's another difference in those two
+pieces of code: where Python has both `+` and `sum()` depending on the number of things you want to add, Clojure's syntax with the operator
+coming first, e.g. `(+ 1 2 3)`, lets you use `+` to adds as many things to each other as you want. I just tried `(+ 1)` and even that works.
+
+
+And that almost concludes Chapter 3 of "Clojure for the Brave and True". There's only one thing left: the six exercises at the end.
