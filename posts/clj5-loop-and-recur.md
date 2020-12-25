@@ -1,7 +1,7 @@
 <!--
 .. title: (clj 5) Loop and recur
 .. slug: clj5-loop-and-recur
-.. date: 2020-12-23 15:25:15 UTC+01:00
+.. date: 2020-12-25 15:25:15 UTC+01:00
 .. tags: clojure, brave-true, loop, recur
 .. category: clojure
 .. link: 
@@ -33,7 +33,7 @@ in [Workflowy](https://workflowy.com/), and of course my [code](https://github.c
 Some of the things I had to rediscover:
 - `:%Eval` makes vim-fireplace evaluate the whole file
 - the thing with square brackets that looks like a Python list is called a vector
-- "coll" is short for collection, so maps, vectors, lists and sets
+- "coll" is short for collection, so maps, vectors, lists and sets (knowing the vocabulary matters)
 - my code had a bunch of `ArityException`s because it was calling the wrong function (`hit` instead of `target-hit`)
 - what I struggled with in this section (`loop` and `recur`, `into` and `conj`, `reduce`) and why
 - if you don't push your code, it's hard to pull it when you're working on your other machine
@@ -50,11 +50,7 @@ So having reacquainted myself with what I did, this blog post will cover the fol
 - what would `hobbit.clj` look like in Python?
 
 
-# notes
-
-yay shift+k
-
-## remaining exceptions
+# remaining exceptions
 `NullPointerException   clojure.lang.Numbers.ops (Numbers.java:1013)`
 -> invalid target for target-hit
 
@@ -69,16 +65,57 @@ yay shift+k
 
 
 
-## vim sexp (with alt bindings) and brackets
-forgot a closing bracket while copying code
+## vim-sexp (with alt mappings) and brackets
 
-getting curious about conjure because tweets by Oliver Caldwell
-https://github.com/Olical/conjure
-https://twitter.com/olivercaldwell?lang=en
+While copying some code I forgot a closing bracket and that got me into trouble with [vim-sexp](https://github.com/guns/vim-sexp), which I use in combination with Tim Pope's [alternative mappings](https://github.com/tpope/vim-sexp-mappings-for-regular-people).
+The trouble being that I found myself unable to add the closing bracket through normal editing. (I could not reproduce the problem
+while writing this post. Perhaps because I only tried with simpler pieces of code, perhaps because I was mistaken earlier.)
+
+One solution I found was to use `cse]` to surround an element in brackets and then delete the opening one. That's not a satisfactory
+solution though, since it's a two-step-forward-one-step-back kind of solution.  
+I also found `<I` and `>I`, which allows you to insert at the beginning and end of a form, but since parantheses, brackets and braces
+determine where forms start and end, it wasn't a good solution either.  
+In the end I settled for adding the closing bracket and then using slurpage (`>)`, `<(`) and barfage (`>(`, `<)`) to get it in the right place.  
+And at some point during all of this, I found Micah Elliott's [vim-sexp cheat sheet](http://micahelliott.com/posts/2015-08-20-vim-sexp-cheat-sheet.html).
+
+Finally, because it's the best place in this post to mention it, the more [Oliver Caldwell](https://twitter.com/olivercaldwell) tweets about 
+his vim plugin [conjure](https://github.com/Olical/conjure), the more curious I get to try it out instead of [vim-fireplace](https://github.com/tpope/vim-fireplace).
 
 
 ## loop and recur
-related to looper and other-loop and set-looper  and looper1 -> loop/recur
+
+After a straightforward example with `loop` and `recur`, you get thrown in the deeper end with the following piece of code:
+```clojure
+(defn symmetrize-body-parts
+	"Expects a seq of maps that have a :name and :size"
+	[asym-body-parts]
+	(loop [remaining-asym-parts asym-body-parts
+		   final-body-parts []]
+		(if (empty? remaining-asym-parts)
+			final-body-parts
+			(let [[part & remaining] remaining-asym-parts]
+				(recur remaining
+					(into final-body-parts
+						(set [part (matching-part part)])))))))
+```
+The explanation of which ends with: "If you’re new to this kind of programming, this code might take some time to puzzle out.
+Stick with it! Once you understand what’s happening, you’ll feel like a million bucks!"
+
+Despite having written three additional functions with `loop`/`recur` in September, I fould myself having to puzzle it out yet
+again to write this blog post. Upside of that is that after re-reading a part of the section, checking the Clojure documentation
+on [`loop`](https://clojuredocs.org/clojure.core/loop) and [`recur`](https://clojuredocs.org/clojure.core/recur), and looking at
+the above example again, I think I finally understand.
+
+The key to that understanding was realizing what happens to the `remaining-asym-parts` and the `final-body-parts` in the `loop`.
+When we reach the `loop` `remaining-asym-parts` is the same as `asym-body-parts` and `final-body-parts` is an empty vector `[]`.
+At some point `remaining-asym-parts` will be empty thanks to the code that follows, at which point the function return `final-body-parts`.
+Until then however, the code splits `remaining-asym-parts` in `part` and `remaining`. The `part` gets put into `final-body-parts` - together
+with its mirror part if needed. Or rather, `(into final-body-parts (set [part (matching-part part)]))` returns the updated
+`final-body-part`. Which means that we give our `recur` two expressions to use when jumping back to the `loop`: (1) `remaining`, which becomes the `remaining-asym-parts` of our `loop` and (2) the updated `final-body-parts`, which is the `final-body-parts` of our `loop`.
+
+I think what made it difficult for me to grasp this is on the one hand getting distracted by the `let` and on the other hand having trouble
+connecting the `(into final-body-parts (set [part (matching-part part)]))` of the `recur` with the `final-body-parts` of the `loop`. The former has three functions nested in each other, the latter is the name of a vector.
+
 
 ## into and conj
 
