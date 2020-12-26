@@ -6,19 +6,19 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>(clj 2) Setting up Vim for Clojure | Joep Schuurkes</title>
-<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
-<link rel="alternate" type="application/atom+xml" title="Atom" href="../feed.atom">
-<link rel="canonical" href="https://j19sch.github.io/blog/clj2-setting-up-vim/">
-<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../../feed.atom">
+<link rel="canonical" href="https://j19sch.github.io/blog/clojure/2020/clj2-setting-up-vim/">
+<!--[if lt IE 9]><script src="../../../../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script><meta name="author" content="Joep Schuurkes">
 <link rel="prev" href="../clj1-deciding-on-an-editor/" title="(clj 1) Deciding on a Clojure editor" type="text/html">
 <link rel="next" href="../clj3-and-or-being-weird/" title="(clj 3) Clojure's 'and' and 'or' are weird (but not really)" type="text/html">
 <meta property="og:site_name" content="Joep Schuurkes">
 <meta property="og:title" content="(clj 2) Setting up Vim for Clojure">
-<meta property="og:url" content="https://j19sch.github.io/blog/clj2-setting-up-vim/">
+<meta property="og:url" content="https://j19sch.github.io/blog/clojure/2020/clj2-setting-up-vim/">
 <meta property="og:description" content="As mentioned in my previous post I've decided to use Vim as my Clojure editor. That leaves me with three things to do: getting reacquainted with Vim, updating my Vim config in the .vimrc file, and ins">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2020-05-05T21:55:15+02:00">
@@ -40,7 +40,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
             </div>
         </div>
           <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
-            <a class="navbar-brand blog-header-logo text-dark" href="https://j19sch.github.io/">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../../">
 
             <span id="blog-title">Joep Schuurkes</span>
         </a>
@@ -52,26 +52,26 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 </header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
             <ul class="navbar-nav nav-fill d-flex w-100">
 <li class="nav-item">
-<a href="../../index.html" class="nav-link">Home</a>
+<a href="../../../../index.html" class="nav-link">Home</a>
                 </li>
 <li class="nav-item">
-<a href="../../my-projects" class="nav-link">My projects</a>
+<a href="../../../../my-projects" class="nav-link">My projects</a>
                 </li>
 <li class="nav-item">
-<a href="../../my-talks" class="nav-link">My talks</a>
+<a href="../../../../my-talks" class="nav-link">My talks</a>
             </li>
 <li class="nav-item dropdown">
 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My lists</a>
             <div class="dropdown-menu">
-                    <a href="../../my-lists/fountain-pens" class="dropdown-item">Fountain pens</a>
-                    <a href="../../my-lists/reading-list" class="dropdown-item">Reading list</a>
-                    <a href="../../my-lists/recommended-reading" class="dropdown-item">Recommended reading</a>
+                    <a href="../../../../my-lists/fountain-pens" class="dropdown-item">Fountain pens</a>
+                    <a href="../../../../my-lists/reading-list" class="dropdown-item">Reading list</a>
+                    <a href="../../../../my-lists/recommended-reading" class="dropdown-item">Recommended reading</a>
             </div>
             </li>
 <li class="nav-item dropdown">
 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blogs</a>
             <div class="dropdown-menu">
-                    <a href="../../blog" class="dropdown-item">Projects blog</a>
+                    <a href="../../../../blog" class="dropdown-item">Projects blog</a>
                     <a href="https://testingcurve.wordpress.com" class="dropdown-item">Wordpress blog</a>
             </div>
 
@@ -102,14 +102,14 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<p>As mentioned in my <a href="../clj1-deciding-on-an-editor">previous post</a> I've decided to use <a href="https://www.vim.org/">Vim</a> as my Clojure editor. That leaves me with three things to do: getting reacquainted with Vim, updating my Vim config in the .<code>vimrc</code> file, and installing both general and Clojure-specific Vim plugins.</p>
+<p>As mentioned in my <a href="../../../clj1-deciding-on-an-editor">previous post</a> I've decided to use <a href="https://www.vim.org/">Vim</a> as my Clojure editor. That leaves me with three things to do: getting reacquainted with Vim, updating my Vim config in the .<code>vimrc</code> file, and installing both general and Clojure-specific Vim plugins.</p>
 <h3>Getting reacquainted with Vim</h3>
 <p>Ever since I learned Vim basics a long time ago I have been using it once in a while to make small edits to a config file or a commit message, but not for anything more complicated than that. So that's the first thing I wanted to address: refresh my basics and make sure I know where to find more information when I need it.</p>
 <h4>Vimtutor</h4>
-<p>I figured that a good way to get back into Vim was the <a href="https://vimhelp.org/usr_01.txt.html#vimtutor">Vimtutor</a>. It's a 30-minute interactive tutorial where you edit a file with instructions with vim. I kept notes of what it covers, which you can find <a href="../../my-projects/vimtutor">here</a>. Vim's help also includes a <a href="https://vimhelp.org/quickref.txt.html">quickref</a>, an "Overview of the most common commands you will use", which is intimidatingly long considering that description. As a reference to look things up in, it should be useful, though.</p>
+<p>I figured that a good way to get back into Vim was the <a href="https://vimhelp.org/usr_01.txt.html#vimtutor">Vimtutor</a>. It's a 30-minute interactive tutorial where you edit a file with instructions with vim. I kept notes of what it covers, which you can find <a href="../../../../my-projects/vimtutor">here</a>. Vim's help also includes a <a href="https://vimhelp.org/quickref.txt.html">quickref</a>, an "Overview of the most common commands you will use", which is intimidatingly long considering that description. As a reference to look things up in, it should be useful, though.</p>
 <!-- TEASER_END -->
 
-<p>Going through the Vimtutor to refresh my Vim felt good. Something about Vim keybindings just feels right to me. However, me liking Vim dies not mean that I automatically remember all the keybindings and commands and capabilities of Vim. So I decided that if I wanted this project of both learning Vim and Clojure to work, I should make a <a href="../../my-projects/clojure-vim-cheatsheet">Clojure-Vim cheatsheet</a> to help me. The plan is to keep updating this sheet as I do more with Vim and Clojure.</p>
+<p>Going through the Vimtutor to refresh my Vim felt good. Something about Vim keybindings just feels right to me. However, me liking Vim dies not mean that I automatically remember all the keybindings and commands and capabilities of Vim. So I decided that if I wanted this project of both learning Vim and Clojure to work, I should make a <a href="../../../../my-projects/clojure-vim-cheatsheet">Clojure-Vim cheatsheet</a> to help me. The plan is to keep updating this sheet as I do more with Vim and Clojure.</p>
 <h4>Using Vim's <code>:help</code> command</h4>
 <p>Another great resource are Vim's help files, which can be found <a href="https://vimhelp.org/">online</a> and by typing <code>:help&lt;Enter&gt;</code> or <code>&lt;F1&gt;</code> in Vim itself. You can also see help on specific topics by doing <code>:help {topic}&lt;Enter&gt;</code>, or do <code>:help {topic}&lt;ctrl+d&gt;</code> to see entries matching what you have typed so far.</p>
 <p>When you do that, you'll notice that Vim will open the relevant help file in a separate <a href="https://vimhelp.org/windows.txt.html">window,</a>, i.e. the vim screen is now split in half. (Vim also has <a href="https://vimhelp.org/tabpage.txt.html">tabs</a>, with tabs containing one or multiple windows.) So that makes right now the right time to learn some basic Vim window management:</p>
@@ -170,7 +170,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <li>
 <a href="https://github.com/junegunn/vim-plug">vim-plug</a> to manage installing and removing plugins as mentioned above</li>
 </ul>
-<p>Of course all of these come with their own commands. The ones I expect to use are in my <a href="../../my-projects/clojure-vim-cheatsheet/">Clojure-Vim cheatsheet</a>.</p>
+<p>Of course all of these come with their own commands. The ones I expect to use are in my <a href="../../../../my-projects/clojure-vim-cheatsheet/">Clojure-Vim cheatsheet</a>.</p>
 <h5>Clojure plugins</h5>
 <p>For Clojure-specific plugins I mostly followed Keith Smiley's <a href="https://thoughtbot.com/blog/writing-clojure-in-vim">advice</a> and went with these:</p>
 <ul>
@@ -192,8 +192,8 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 </div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../categories/clojure/" rel="tag">clojure</a></li>
-            <li><a class="tag p-category" href="../../categories/vim/" rel="tag">vim</a></li>
+<li><a class="tag p-category" href="../../../../categories/clojure/" rel="tag">clojure</a></li>
+            <li><a class="tag p-category" href="../../../../categories/vim/" rel="tag">vim</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
@@ -212,12 +212,10 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 </div>
 </div>
 
-        <script src="../../assets/js/all-nocdn.js"></script><script>
+        <script src="../../../../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

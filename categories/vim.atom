@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about vim)</title>
   <id>https://j19sch.github.io/categories/vim.atom</id>
-  <updated>2020-05-09T07:30:18Z</updated>
+  <updated>2020-12-26T09:02:19Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -12,36 +12,36 @@
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
     <title>(clj 2) Setting up Vim for Clojure</title>
-    <id>https://j19sch.github.io/blog/clj2-setting-up-vim/</id>
+    <id>https://j19sch.github.io/blog/clojure/2020/clj2-setting-up-vim/</id>
     <updated>2020-05-05T21:55:15+02:00</updated>
     <published>2020-05-05T21:55:15+02:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/clj2-setting-up-vim/"/>
+    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/clojure/2020/clj2-setting-up-vim/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;As mentioned in my &lt;a href="https://j19sch.github.io/blog/clj1-deciding-on-an-editor"&gt;previous post&lt;/a&gt; I've decided to use &lt;a href="https://www.vim.org/"&gt;Vim&lt;/a&gt; as my Clojure editor. That leaves me with three things to do: getting reacquainted with Vim, updating my Vim config in the .&lt;code&gt;vimrc&lt;/code&gt; file, and installing both general and Clojure-specific Vim plugins.&lt;/p&gt;
 &lt;h3&gt;Getting reacquainted with Vim&lt;/h3&gt;
 &lt;p&gt;Ever since I learned Vim basics a long time ago I have been using it once in a while to make small edits to a config file or a commit message, but not for anything more complicated than that. So that's the first thing I wanted to address: refresh my basics and make sure I know where to find more information when I need it.&lt;/p&gt;
 &lt;h4&gt;Vimtutor&lt;/h4&gt;
 &lt;p&gt;I figured that a good way to get back into Vim was the &lt;a href="https://vimhelp.org/usr_01.txt.html#vimtutor"&gt;Vimtutor&lt;/a&gt;. It's a 30-minute interactive tutorial where you edit a file with instructions with vim. I kept notes of what it covers, which you can find &lt;a href="https://j19sch.github.io/my-projects/vimtutor"&gt;here&lt;/a&gt;. Vim's help also includes a &lt;a href="https://vimhelp.org/quickref.txt.html"&gt;quickref&lt;/a&gt;, an "Overview of the most common commands you will use", which is intimidatingly long considering that description. As a reference to look things up in, it should be useful, though.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clj2-setting-up-vim/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clojure/2020/clj2-setting-up-vim/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="clojure" label="clojure"/>
     <category term="vim" label="vim"/>
   </entry>
   <entry>
     <title>(clj 1) Deciding on a Clojure editor</title>
-    <id>https://j19sch.github.io/blog/clj1-deciding-on-an-editor/</id>
+    <id>https://j19sch.github.io/blog/clojure/2020/clj1-deciding-on-an-editor/</id>
     <updated>2020-05-01T18:00:15+02:00</updated>
     <published>2020-05-01T18:00:15+02:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/clj1-deciding-on-an-editor/"/>
+    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/clojure/2020/clj1-deciding-on-an-editor/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;The second chapter of "&lt;a href="https://www.braveclojure.com/"&gt;Clojure for the Brave and True&lt;/a&gt;" is all about Emacs, "an excellent Clojure editor". Now you might wonder: does your choice of editor really matter that much? You're learning the language, so you don't need advanced IDE features. Some syntax highlighting, some code completion, something to help you manage all those parantheses perhaps, done. That would be true if not for the Clojure REPL.&lt;/p&gt;
 &lt;h3&gt;The Clojure REPL&lt;/h3&gt;
 &lt;p&gt;The &lt;a href="https://clojure.org/guides/repl/introduction"&gt;REPL&lt;/a&gt; is definitely a Thing™️ in Clojure. It gives you a prompt where you can type code and it will execute it immediately. You can also load files with code into it, interacting with the functions and data defined in those. So that's a signifcantly faster feedback loop than having to compile and then run - which is how you'd normally run something written in Clojure, since its primary platform is the JVM. There are &lt;a href="https://clojure.org/guides/repl/launching_a_basic_repl"&gt;different ways&lt;/a&gt; of launching a REPL, but most guides I found tell you to use &lt;a href="https://leiningen.org/"&gt;Leiningen&lt;/a&gt;. Oh, and REPL stands for Read-Evaluate-Print_Loop, because that's what the REPL does.&lt;/p&gt;
 &lt;p&gt;It definitely feels like this REPL is a bigger deal than I appreciate right now. Probably because I have only just begun learning Clojure. On the other hand, I may have also been spoiled by the quick feedback provided by Python and its &lt;a href="https://docs.python.org/3/library/idle.html"&gt;IDLE&lt;/a&gt;. On the third hand, it's only because of learning of the Clojure REPL, I looked into importing files into Python's IDLE and found out that's indeed a thing it can do.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clj1-deciding-on-an-editor/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clojure/2020/clj1-deciding-on-an-editor/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="clojure" label="clojure"/>
     <category term="emacs" label="emacs"/>
     <category term="vim" label="vim"/>

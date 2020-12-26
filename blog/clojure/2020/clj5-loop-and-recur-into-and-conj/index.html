@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>(clj 5) Loop and recur, into and conj | Joep Schuurkes</title>
+<link href="../../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../../feed.atom">
+<link rel="canonical" href="https://j19sch.github.io/blog/clojure/2020/clj5-loop-and-recur-into-and-conj/">
+<!--[if lt IE 9]><script src="../../../../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../clj4-learning-when-maps-closures/" title="(clj 4) Learning about when, maps and closures" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="(clj 5) Loop and recur, into and conj">
+<meta property="og:url" content="https://j19sch.github.io/blog/clojure/2020/clj5-loop-and-recur-into-and-conj/">
+<meta property="og:description" content="Yet again it's been a while since I did some Clojure or blogged about it. This time I'm writing this blog post
+three months after working on the code on September 5, 6 and 12. I'm not going to dwell o">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-12-25T15:25:15+01:00">
+<meta property="article:tag" content="brave-true">
+<meta property="article:tag" content="clojure">
+<meta property="article:tag" content="conj">
+<meta property="article:tag" content="into">
+<meta property="article:tag" content="loop">
+<meta property="article:tag" content="recur">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../../../my-projects" class="nav-link">My projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../../my-talks" class="nav-link">My talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../../../my-lists/fountain-pens" class="dropdown-item">Fountain pens</a>
+                    <a href="../../../../my-lists/reading-list" class="dropdown-item">Reading list</a>
+                    <a href="../../../../my-lists/recommended-reading" class="dropdown-item">Recommended reading</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blogs</a>
+            <div class="dropdown-menu">
+                    <a href="../../../../blog" class="dropdown-item">Projects blog</a>
+                    <a href="https://testingcurve.wordpress.com" class="dropdown-item">Wordpress blog</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">(clj 5) Loop and recur, into and conj</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2020-12-25T15:25:15+01:00" itemprop="datePublished" title="25 December 2020">25 December 2020</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>Yet again it's been a while since I did some Clojure or blogged about it. This time I'm writing this blog post
+three months after working on the code on September 5, 6 and 12. I'm not going to dwell on that too long, because
+other things in my life were more important. I did feel a little sad when this year's <a href="https://adventofcode.com/">Advent of Code</a>
+launched and I realized my Clojure is nowhere near a state where I could attempt the puzzles. So I ended up doing
+the first 10 days in Python, which is twice as far as I got last year.</p>
+<p>I also feel like my current approach to learning lends itself well enough to going slow. Taking my time to play around
+and make notes with while working through a section of <a href="https://www.braveclojure.com/">Clojure for the Brave and True</a>
+and then revisiting my code and notes later to write a blog post, does seem to result in stuff actually sticking in my memory.
+(Disclaimer: am writing this before writing the rest of this blog post.) Slow is smooth and smooth is fast, as they say.</p>
+<p>The section I tackled in September is "Pulling It All Together" from Chapter 3, which describes the construction of a 
+piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit in different body parts.</p>
+<!-- TEASER_END -->
+
+<h3>Retracing my steps from three months ago</h3>
+<p>Despite the optimistic tone in the intro above, waiting three months to write this blog post might not have been the best idea.
+There's enough to work with: the section of the book, my <a href="https://workflowy.com/s/clj-5-ch3-pulling-it/DneREuVAmKt9PHwU">notes</a>
+in <a href="https://workflowy.com/">Workflowy</a>, and of course my <a href="https://github.com/j19sch/clojure-brave-true/blob/master/clojure-noob/src/clojure_noob/hobbit.clj">code</a>. But it is taking some work.</p>
+<p>Some of the things I had to rediscover:</p>
+<ul>
+<li>
+<code>:%Eval</code> makes <a href="https://github.com/tpope/vim-fireplace">vim-fireplace</a> evaluate the whole file</li>
+<li>the thing with square brackets that looks like a Python list is called a vector</li>
+<li>"coll" is short for collection, so maps, vectors, lists and sets (knowing the vocabulary matters)</li>
+<li>my code had a bunch of <code>ArityException</code>s because it was calling the wrong function (<code>hit</code> instead of <code>target-hit</code>)</li>
+<li>what I struggled with in this section (<code>loop</code> and <code>recur</code>, <code>into</code> and <code>conj</code>, <code>reduce</code>) and why</li>
+<li>if you don't push your code to remote, it's hard to pull it when you're working on your other machine</li>
+</ul>
+<p>And there's one more thing: figuring out what my 167 lines of Clojure do, was made easier due to the functional style of programming. You put some thing(s) in a function and you get something back. No state, no classes. Understand what each function does, figure out which function calls which other one(s) and you're there.</p>
+<p>So having reacquainted myself with what I did, this blog post will cover the following topics:</p>
+<ul>
+<li>vim-sexp and bracket editing</li>
+<li>loop and recur</li>
+<li>into and conj</li>
+<li>reduce</li>
+<li>what would <code>hobbit.clj</code> look like in Python?</li>
+</ul>
+<h3>vim-sexp (with alt mappings) and brackets</h3>
+<p>While copying some code I forgot a closing bracket and that got me into trouble with <a href="https://github.com/guns/vim-sexp">vim-sexp</a>, which I use in combination with Tim Pope's <a href="https://github.com/tpope/vim-sexp-mappings-for-regular-people">alternative mappings</a>.
+The trouble being that I found myself unable to add the closing bracket through normal editing. (I could not reproduce the problem
+while writing this post. Perhaps because I only tried just now with simpler pieces of code, perhaps because I was mistaken earlier.)</p>
+<p>One solution I found was to use <code>cse]</code> to surround an element in brackets and then delete the opening one. That's not a satisfactory
+solution though, since it's a two-steps-forward-one-step-back kind of solution. I also found <code>&lt;I</code> and <code>&gt;I</code>, which allows you to insert at the beginning and end of a form, but since parantheses, brackets and braces determine where forms start and end, it wasn't a good solution either. In the end I settled for adding the closing bracket and then using slurpage ( <code>&gt;)</code>, <code>&lt;(</code> ) and barfage ( <code>&gt;(</code>, <code>&lt;)</code> ) to get it in the right place. And at some point during all of this, I found Micah Elliott's <a href="http://micahelliott.com/posts/2015-08-20-vim-sexp-cheat-sheet.html">vim-sexp cheat sheet</a>.</p>
+<p>Finally, because it's the best place in this post to mention it, the more <a href="https://twitter.com/olivercaldwell">Oliver Caldwell</a> tweets about 
+his vim plugin <a href="https://github.com/Olical/conjure">conjure</a>, the more curious I get to try it out instead of <a href="https://github.com/tpope/vim-fireplace">vim-fireplace</a>.</p>
+<h3>loop and recur</h3>
+<p>After a straightforward example with <code>loop</code> and <code>recur</code> in "Clojure for the Brave and True", you get thrown in the deeper end with the following piece of code:</p>
+<pre class="code literal-block"><span class="p">(</span><span class="nf">defn</span> <span class="nv">symmetrize-body-parts</span>
+    <span class="s">"Expects a seq of maps that have a :name and :size"</span>
+    <span class="p">[</span><span class="nv">asym-body-parts</span><span class="p">]</span>
+    <span class="p">(</span><span class="nf">loop</span> <span class="p">[</span><span class="nv">remaining-asym-parts</span> <span class="nv">asym-body-parts</span>
+           <span class="nv">final-body-parts</span> <span class="p">[]]</span>
+        <span class="p">(</span><span class="nf">if</span> <span class="p">(</span><span class="nf">empty?</span> <span class="nv">remaining-asym-parts</span><span class="p">)</span>
+            <span class="nv">final-body-parts</span>
+            <span class="p">(</span><span class="nf">let</span> <span class="p">[[</span><span class="nv">part</span> <span class="o">&amp;</span> <span class="nv">remaining</span><span class="p">]</span> <span class="nv">remaining-asym-parts</span><span class="p">]</span>
+                <span class="p">(</span><span class="nf">recur</span> <span class="nv">remaining</span>
+                    <span class="p">(</span><span class="nf">into</span> <span class="nv">final-body-parts</span>
+                        <span class="p">(</span><span class="nf">set</span> <span class="p">[</span><span class="nv">part</span> <span class="p">(</span><span class="nf">matching-part</span> <span class="nv">part</span><span class="p">)])))))))</span>
+</pre>
+<p>The explanation of this function ends with: <em>"If you’re new to this kind of programming, this code might take some time to puzzle out.
+Stick with it! Once you understand what’s happening, you’ll feel like a million bucks!"</em></p>
+<p>Despite having written three additional functions with <code>loop</code>/<code>recur</code> in September, I fould myself having to puzzle it out yet
+again to write this blog post. Upside of that is that after re-reading a part of the section, checking the Clojure documentation
+on <a href="https://clojuredocs.org/clojure.core/loop"><code>loop</code></a> and <a href="https://clojuredocs.org/clojure.core/recur"><code>recur</code></a>, and looking at
+the above example again, I think I finally understand.</p>
+<p>The key to that understanding was realizing what happens to the <code>remaining-asym-parts</code> and the <code>final-body-parts</code> in the <code>loop</code>.
+When we reach the <code>loop</code>, <code>remaining-asym-parts</code> is the same as <code>asym-body-parts</code> and <code>final-body-parts</code> is an empty vector <code>[]</code>.
+At some point <code>remaining-asym-parts</code> will be empty thanks to the code that follows, at which point the function return <code>final-body-parts</code>.
+Until then however, the code splits <code>remaining-asym-parts</code> in <code>part</code> and <code>remaining</code>. The <code>part</code> gets put into <code>final-body-parts</code>, together
+with its mirror part if needed. Or rather, <code>(into final-body-parts (set [part (matching-part part)]))</code> returns the updated
+<code>final-body-parts</code>. Which means that we give our <code>recur</code> two expressions to use when jumping back to the <code>loop</code>: (1) <code>remaining</code>, which becomes the <code>remaining-asym-parts</code> of our <code>loop</code> and (2) the updated <code>final-body-parts</code>, which is the <code>final-body-parts</code> of our <code>loop</code>.</p>
+<p>I think what made it difficult for me to grasp this is on the one hand getting distracted by the <code>let</code> and on the other hand having trouble
+connecting the <code>(into final-body-parts (set [part (matching-part part)]))</code> of the <code>recur</code> with the <code>final-body-parts</code> of the <code>loop</code>. The former has three functions nested in each other, the latter is the name of a vector.</p>
+<h3>into and conj</h3>
+<p>The example above also shows how the hobbit script uses an <code>into</code> to add a set of maps to a vector of maps inside a <code>recur</code>. That tripped me up, also when building my own loopers where I had to use <code>conj</code> instead. It's interesting how simple functions such as <a href="https://clojuredocs.org/clojure.core/into"><code>into</code></a> and <a href="https://clojuredocs.org/clojure.core/conj"><code>conj</code></a> become harder to undestand when they're part of a more difficult context.</p>
+<p>In the end I found it helpful to try out a bunch of variations, starting with vectors containing integers, 
+then replacing the integers with maps to get closer to what's in the hobbit script.</p>
+<pre class="code literal-block"><span class="p">(</span><span class="nb">into </span><span class="p">[]</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">])</span>
+<span class="c1">; =&gt; [1 2 3]</span>
+<span class="p">(</span><span class="nb">conj </span><span class="p">[]</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">])</span>
+<span class="c1">; =&gt; [[1 2 3]]</span>
+<span class="p">(</span><span class="nb">into </span><span class="p">[</span><span class="mi">9</span> <span class="mi">8</span><span class="p">]</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">])</span>
+<span class="c1">; =&gt; [9 8 1 2 3]</span>
+<span class="p">(</span><span class="nb">conj </span><span class="p">[</span><span class="mi">9</span> <span class="mi">8</span><span class="p">]</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">])</span>
+<span class="c1">; =&gt; [9 8 [1 2 3]]</span>
+
+<span class="p">(</span><span class="nb">into </span><span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">]</span> <span class="p">[])</span>
+<span class="c1">; =&gt; [1 2 3]</span>
+<span class="p">(</span><span class="nb">conj </span><span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">]</span> <span class="p">[])</span>
+<span class="c1">; =&gt; [1 2 3 []]</span>
+
+<span class="p">(</span><span class="nb">into </span><span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">]</span> <span class="mi">4</span><span class="p">)</span>
+<span class="c1">; IllegalArgumentException Don't know how to create ISeq from: java.lang.Long  clojure.lang.RT.seqFrom (RT.java:542)</span>
+<span class="p">(</span><span class="nb">conj </span><span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">]</span> <span class="mi">4</span><span class="p">)</span>
+<span class="c1">; [1 2 3 4]</span>
+
+<span class="p">(</span><span class="nb">into </span><span class="p">[{</span><span class="ss">:name</span> <span class="s">"my-arm"</span><span class="p">}]</span> <span class="p">[{</span><span class="ss">:name</span> <span class="s">"left-head"</span><span class="p">}</span> <span class="p">{</span><span class="ss">:name</span> <span class="s">"right-head"</span><span class="p">}])</span>
+<span class="c1">; =&gt; [{:name "my-arm"} {:name "left-head"} {:name "right-head"}]</span>
+<span class="p">(</span><span class="nb">conj </span><span class="p">[{</span><span class="ss">:name</span> <span class="s">"my-arm"</span><span class="p">}]</span> <span class="p">[{</span><span class="ss">:name</span> <span class="s">"left-head"</span><span class="p">}</span> <span class="p">{</span><span class="ss">:name</span> <span class="s">"right-head"</span><span class="p">}])</span>
+<span class="c1">; =&gt; [{:name "my-arm"} [{:name "left-head"} {:name "right-head"}]]</span>
+</pre>
+<p>These examples allowed me to see that Clojure's <code>into</code> and <code>conj</code> are very similar to Python's <code>extend()</code> and <code>append()</code>.</p>
+<h3>reduce</h3>
+<p>My notes show it took me some effort to understand <a href="https://clojuredocs.org/clojure.core/reduce"><code>reduce</code></a>. They say "struggling a bit with syntax" and "it's not obvious" and "had to re-read and re-learn", but I have no idea what it was that I found non-obvious. My best guess is that it was a bit of a leap for me to go from these examples</p>
+<pre class="code literal-block"><span class="p">(</span><span class="nb">reduce + </span><span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span><span class="p">])</span>
+<span class="c1">; =&gt; 10</span>
+<span class="p">(</span><span class="nb">reduce + </span><span class="mi">15</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span><span class="p">])</span>
+<span class="c1">; =&gt; 25</span>
+</pre>
+<p>to a <code>reduce</code> that takes an anonymous function calling an other function to work on a vector of maps</p>
+<pre class="code literal-block"><span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">final-body-parts</span> <span class="nv">part</span><span class="p">]</span>
+    <span class="p">(</span><span class="nb">into </span><span class="nv">final-body-parts</span> <span class="p">(</span><span class="nb">set </span><span class="p">[</span><span class="nv">part</span> <span class="p">(</span><span class="nf">matching-part</span> <span class="nv">part</span><span class="p">)])))</span>
+    <span class="p">[]</span>
+    <span class="nv">asym-body-parts</span><span class="p">)</span>
+</pre>
+<p>To be fair,
+it is an improved implementation of a function that was explained earlier, so it is clear what this with <code>reduce</code> refactored
+function is supposed to do.</p>
+<h3>Comparing with python</h3>
+<p>Finally I wondered how I would write <code>hobbit.clj</code> in Python, <a href="https://github.com/j19sch/clojure-brave-true/blob/master/python-comparisons/hobbit.py">so I did</a>. I remember being somewhat disappointed with the result, as I had expected the differences to be
+bigger. And that left me wondering if the differences would have been bigger, had I written the Python version before knowing
+the Clojure version.</p>
+<p>Comparing the two pieces of code now, the main difference seems to be how Clojure and Python deal with vectors and lists respectively.
+Where in Clojure you use <code>reduce</code> and <code>loop</code> / <code>recur</code>, Python lets you use a for-loop on a list to go through the items one by one.
+And where in Clojure you need <code>reduce</code> to sum a particular element in a vector of maps like this <code>(reduce + (map :size sym-parts))</code>, in Python list comprehension lets you do this like so <code>sum([part["size"] for part in sym_parts])</code>. And there's another difference in those two
+pieces of code: where Python has both <code>+</code> and <code>sum()</code> depending on the number of things you want to add, Clojure's syntax with the operator
+coming first, e.g. <code>(+ 1 2 3)</code>, lets you use <code>+</code> to adds as many things to each other as you want. I just tried <code>(+ 1)</code> and even that works.</p>
+<p>And that almost concludes Chapter 3 of "Clojure for the Brave and True". There's only one thing left: the six exercises at the end.</p>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../../categories/brave-true/" rel="tag">brave-true</a></li>
+            <li><a class="tag p-category" href="../../../../categories/clojure/" rel="tag">clojure</a></li>
+            <li><a class="tag p-category" href="../../../../categories/conj/" rel="tag">conj</a></li>
+            <li><a class="tag p-category" href="../../../../categories/into/" rel="tag">into</a></li>
+            <li><a class="tag p-category" href="../../../../categories/loop/" rel="tag">loop</a></li>
+            <li><a class="tag p-category" href="../../../../categories/recur/" rel="tag">recur</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../clj4-learning-when-maps-closures/" rel="prev" title="(clj 4) Learning about when, maps and closures">Previous post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2020     
+<a href="http://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a>
+    <a href="mailto:j19sch@gmail.com">Joep Schuurkes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

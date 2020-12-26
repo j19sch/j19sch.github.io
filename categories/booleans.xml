@@ -3,12 +3,12 @@
 &lt;a href="http://creativecommons.org/licenses/by/4.0/"&gt;
 &lt;img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /&gt;
 &lt;/a&gt;
-</copyright><lastBuildDate>Sun, 17 May 2020 10:09:09 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(clj 3) Clojure's 'and' and 'or' are weird (but not really)</title><link>https://j19sch.github.io/blog/clj3-and-or-being-weird/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;Early in &lt;a href="https://www.braveclojure.com/do-things/#Control_Flow"&gt;chapter 3&lt;/a&gt; of the &lt;a href="https://www.braveclojure.com/"&gt;Brave and True&lt;/a&gt;-book the Boolean operators &lt;code&gt;and&lt;/code&gt; and &lt;code&gt;or&lt;/code&gt; are introduced:&lt;/p&gt;
+</copyright><lastBuildDate>Sat, 26 Dec 2020 09:02:19 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(clj 3) Clojure's 'and' and 'or' are weird (but not really)</title><link>https://j19sch.github.io/blog/clojure/2020/clj3-and-or-being-weird/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;Early in &lt;a href="https://www.braveclojure.com/do-things/#Control_Flow"&gt;chapter 3&lt;/a&gt; of the &lt;a href="https://www.braveclojure.com/"&gt;Brave and True&lt;/a&gt;-book the Boolean operators &lt;code&gt;and&lt;/code&gt; and &lt;code&gt;or&lt;/code&gt; are introduced:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Clojure uses the Boolean operators &lt;code&gt;or&lt;/code&gt; and &lt;code&gt;and&lt;/code&gt;. &lt;code&gt;or&lt;/code&gt; returns either the first truthy value or the last value. &lt;code&gt;and&lt;/code&gt; returns the first falsey value or, if no values are falsey, the last truthy value.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;This explanation is followed by some examples:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;or&lt;/span&gt; &lt;span class="nv"&gt;false&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt; &lt;span class="ss"&gt;:large_I_mean_venti&lt;/span&gt; &lt;span class="ss"&gt;:why_cant_I_just_say_large&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;pre class="code literal-block"&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;or&lt;/span&gt; &lt;span class="nv"&gt;false&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt; &lt;span class="ss"&gt;:large_I_mean_venti&lt;/span&gt; &lt;span class="ss"&gt;:why_cant_I_just_say_large&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; :large_I_mean_venti&lt;/span&gt;
 
 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;or&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"yes"&lt;/span&gt; &lt;span class="s"&gt;"no"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
@@ -17,15 +17,11 @@
 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;or&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; nil&lt;/span&gt;
 &lt;/pre&gt;
-
-
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;and&lt;/span&gt; &lt;span class="ss"&gt;:free_wifi&lt;/span&gt; &lt;span class="ss"&gt;:hot_coffee&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;pre class="code literal-block"&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;and&lt;/span&gt; &lt;span class="ss"&gt;:free_wifi&lt;/span&gt; &lt;span class="ss"&gt;:hot_coffee&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; :hot_coffee&lt;/span&gt;
 
 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;and&lt;/span&gt; &lt;span class="ss"&gt;:feelin_super_cool&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt; &lt;span class="nv"&gt;false&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; nil&lt;/span&gt;
 &lt;/pre&gt;
-
-
 &lt;p&gt;What I found remarkable about this is that &lt;code&gt;and&lt;/code&gt; and &lt;code&gt;or&lt;/code&gt; do not return a boolean in all cases. Before I go into that, let's back up a second and cover their basics in a little more depth first.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clj3-and-or-being-weird/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>booleans</category><category>brave-true</category><category>clojure</category><guid>https://j19sch.github.io/blog/clj3-and-or-being-weird/</guid><pubDate>Sat, 16 May 2020 19:25:15 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clojure/2020/clj3-and-or-being-weird/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>booleans</category><category>brave-true</category><category>clojure</category><guid>https://j19sch.github.io/blog/clojure/2020/clj3-and-or-being-weird/</guid><pubDate>Sat, 16 May 2020 19:25:15 GMT</pubDate></item></channel></rss>

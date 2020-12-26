@@ -11,8 +11,8 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
-<link rel="alternate" type="application/atom+xml" title="Atom" href="feed.atom">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="feed.atom">
 <link rel="canonical" href="https://j19sch.github.io/blog/">
 <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script>
 </head>
@@ -31,7 +31,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
             </div>
         </div>
           <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
-            <a class="navbar-brand blog-header-logo text-dark" href="https://j19sch.github.io/">
+            <a class="navbar-brand blog-header-logo text-dark" href="../">
 
             <span id="blog-title">Joep Schuurkes</span>
         </a>
@@ -81,13 +81,39 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clj4-learning-when-maps-closures/" class="u-url">(clj 4) Learning about when, maps and closures</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2020/clj5-loop-and-recur-into-and-conj/" class="u-url">(clj 5) Loop and recur, into and conj</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
                     </span></p>
             <p class="dateline">
-            <a href="clj4-learning-when-maps-closures/" rel="bookmark">
+            <a href="clojure/2020/clj5-loop-and-recur-into-and-conj/" rel="bookmark">
+            <time class="published dt-published" datetime="2020-12-25T15:25:15+01:00" itemprop="datePublished" title="25 December 2020">25 December 2020</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Yet again it's been a while since I did some Clojure or blogged about it. This time I'm writing this blog post
+three months after working on the code on September 5, 6 and 12. I'm not going to dwell on that too long, because
+other things in my life were more important. I did feel a little sad when this year's <a href="https://adventofcode.com/">Advent of Code</a>
+launched and I realized my Clojure is nowhere near a state where I could attempt the puzzles. So I ended up doing
+the first 10 days in Python, which is twice as far as I got last year.</p>
+<p>I also feel like my current approach to learning lends itself well enough to going slow. Taking my time to play around
+and make notes with while working through a section of <a href="https://www.braveclojure.com/">Clojure for the Brave and True</a>
+and then revisiting my code and notes later to write a blog post, does seem to result in stuff actually sticking in my memory.
+(Disclaimer: am writing this before writing the rest of this blog post.) Slow is smooth and smooth is fast, as they say.</p>
+<p>The section I tackled in September is "Pulling It All Together" from Chapter 3, which describes the construction of a 
+piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit in different body parts.</p>
+<p class="more"><a href="clojure/2020/clj5-loop-and-recur-into-and-conj/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2020/clj4-learning-when-maps-closures/" class="u-url">(clj 4) Learning about when, maps and closures</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="clojure/2020/clj4-learning-when-maps-closures/" rel="bookmark">
             <time class="published dt-published" datetime="2020-07-31T22:25:15+02:00" itemprop="datePublished" title="31 July 2020">31 July 2020</time></a>
             </p>
                 </div>
@@ -97,144 +123,22 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <h3>Why is there a <code>when</code>?</h3>
 <p>The part about control flow is actually before the part about <code>and</code> and <code>or</code> which I talked about in my <a href="clj3-and-or-being-weird">previous post</a>, but according to my notes I returned to it. I don't remember why to be honest.</p>
 <p>The book provides the following example of <code>when</code>:</p>
-<pre class="code literal-block"><span></span><span class="p">(</span><span class="nb">when </span><span class="nv">true</span>
+<pre class="code literal-block"><span class="p">(</span><span class="nb">when </span><span class="nv">true</span>
     <span class="p">(</span><span class="nb">println </span><span class="s">"Success!"</span><span class="p">)</span>
     <span class="s">"abra cadabra"</span><span class="p">)</span>
 <span class="c1">; =&gt; Success!</span>
 <span class="c1">; =&gt; "abra cadabra"</span>
 </pre>
-
-
-<p>And if the condition is <code>false</code>, you get:</p>
-<pre class="code literal-block"><span></span><span class="p">(</span><span class="nb">when </span><span class="nv">false</span>
-    <span class="p">(</span><span class="nb">println </span><span class="s">"First do!"</span><span class="p">)</span>
-    <span class="s">"By Odin's Elbow!"</span><span class="p">)</span>
-<span class="c1">; =&gt; nil</span>
-</pre>
-
-
-<p>So <code>when</code> allows you to do several things and return something when the condition is <code>true</code>, while it will return <code>nil</code> if the condition is <code>false</code>. The thing that got me curious is that you can do the same thing almost as easily with <code>if</code> and <code>do</code>:</p>
-<pre class="code literal-block"><span></span><span class="p">(</span><span class="k">if </span><span class="nv">true</span>
-  <span class="p">(</span><span class="k">do </span><span class="p">(</span><span class="nb">println </span><span class="s">"Success!"</span><span class="p">)</span>
-      <span class="s">"abra cadabra"</span><span class="p">)</span>
-  <span class="p">)</span>
-<span class="c1">; =&gt; Success!</span>
-<span class="c1">; =&gt; "abra cadabra"</span>
-
-<span class="p">(</span><span class="k">if </span><span class="nv">false</span>
-  <span class="p">(</span><span class="k">do </span><span class="p">(</span><span class="nb">println </span><span class="s">"First do!"</span><span class="p">)</span>
-      <span class="s">"By Odin's Elbow!"</span><span class="p">)</span>
-  <span class="p">)</span>
-<span class="c1">; =&gt; nil</span>
-</pre>
-
-
-<p>I can see two advantages to having the <code>when</code>. It needs fewer characters: two brackets and a space. It's also more readable, since there is no <code>do</code> and no indentation decisions because of that <code>do</code>. Is that enough reason? I honestly don't know, because I haven't written enough Clojure to decide if you use <code>when</code> often enough to make it worth it having it.</p>
-<p>There is another difference, however, which I found out thanks to <a href="https://github.com/tpope/vim-fireplace">vim-fireplace</a>'s <code>K</code> command, which looks up the symbol under the cursor with <code>doc</code>. <code>if</code> and <code>do</code> are Special Forms, while <code>when</code> is a Macro. What difference that makes, I don't know yet. In the section about functions in the same chapter, it does say on page 126:</p>
-<blockquote>
-<p>You’ll learn everything there is to know about macro calls and special forms in Chapter 7. For now, the main feature that makes special forms “special” is that, unlike function calls, they don’t always evaluate all of their operands.</p>
-</blockquote>
-<p>And on page 127:</p>
-<blockquote>
-<p>Macros are similar to special forms in that they evaluate their operands differently from function calls, and they also can’t be passed as arguments to functions.</p>
-</blockquote>
-<p>I made a note to revisit this when I get to Chapter 7. So one day there should be a link to that post here.</p>
-<h3>Maps</h3>
-<p>With my Python background I had some trouble with the syntax of maps. With keywords being used as keys, they look like this:</p>
-<pre class="code literal-block"><span></span><span class="p">{</span><span class="ss">:first-name</span> <span class="s">"Charlie"</span>
- <span class="ss">:last-name</span> <span class="s">"McFishwich"</span><span class="p">}</span>
-</pre>
-
-
-<p>So the same characters as a Python dictionary but in a different order. This made me appreciate the value of practice. I won't be enjoying writing Clojure if I mess up the syntax of maps every time because of Python muscle memory.</p>
-<p>Practice wasn't without its hurdles, though. When I defined a map and evaluated it like this:</p>
-<pre class="code literal-block"><span></span><span class="p">(</span><span class="k">def </span><span class="nv">my-other-map</span> <span class="p">(</span><span class="nb">hash-map </span><span class="ss">:a</span> <span class="mi">100</span> <span class="ss">:b</span> <span class="mi">101</span> <span class="ss">:c</span> <span class="mi">102</span><span class="p">))</span>
-<span class="p">(</span><span class="nf">my-other-map</span><span class="p">)</span>
-</pre>
-
-
-<p>I got the error <code>ArityException Wrong number of args (0) passed to: PersistentArrayMap  clojure.lang.AFn.throwArity (AFn.java:429)</code>. </p>
-<p>Removing ther parantheses around the map's name resulted in:</p>
-<pre class="code literal-block"><span></span>Error detected while processing function &lt;SNR&gt;48_printop[1]..&lt;SNR&gt;48_opfunc[40]..function &lt;SNR&gt;48_printop[1]..&lt;SNR&gt;48_opfunc:
-line   21:
-E20: Mark not set
-E20: Mark not set
-Press ENTER or type command to continue
-</pre>
-
-
-<p>The solution turned out to be to not have the parantheses (so just <code>my-other-map</code> on its own line), but then not use <code>cpp</code> to evaluate the statement, which evaluates the innermost statement, but use <code>cp$</code> (evaluate until end of the line) or <code>cp_</code> (evaluate current line).</p>
-<p>Trying to evaluate the innermost form of a string in parantheses, gave me an impressive error message as well:</p>
-<pre class="code literal-block"><span></span>ClassCastException class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')  clojure-noob.core/eval6974 (form-init11099437324952859876.clj:5)
-</pre>
-
-
-<p>My notes tell me I didn't understand what exactly was going on here. Today, while writing this blog post, I went back in the book to the start of the chapter and there it explains that Clojure recognizes two kinds of structures: literal representations of data structures and operations. All operations take the form of opening parenthesis, operator, operands, closing parenthesis. Me putting the name of my hash map or a string literal in parantheses is neither of those structures, so makes sense I get an error.</p>
-<p>Then for the scope of evaluation, <code>cpp</code> evaluates the innermost form. However I am on a line with just the name of my map, so I'm not sure what it tries to evaluate. Perhaps the whole file? In any case it's not what I want to evaluate, so it's ok that it throws an error instead of working.</p>
-<p>Finally, I was surprised that all these three ways to get a value from a map are part of the language:</p>
-<pre class="code literal-block"><span></span><span class="p">(</span><span class="k">def </span><span class="nv">my-map</span> <span class="p">{</span><span class="ss">:a</span> <span class="mi">0</span> <span class="ss">:b</span> <span class="p">{</span><span class="ss">:c</span> <span class="s">"ho hum"</span><span class="p">}})</span>
-
-<span class="p">(</span><span class="nb">get </span><span class="nv">my-map</span> <span class="ss">:a</span><span class="p">)</span>
-<span class="c1">; =&gt; 0</span>
-
-<span class="p">(</span><span class="nf">my-map</span> <span class="ss">:a</span><span class="p">)</span>
-<span class="c1">; =&gt; 0</span>
-
-<span class="p">(</span><span class="ss">:a</span> <span class="nv">my-map</span><span class="p">)</span>
-<span class="c1">; =&gt; 0</span>
-</pre>
-
-
-<h3>Functions and returning functions</h3>
-<p>The section about functions ends with the following explanation about returning functions:</p>
-<blockquote>
-<p>By now you’ve seen that functions can return other functions. The returned functions are <em>closures</em>, which means that they can access all the variables that were in scope when the function was created. Here’s a standard example:</p>
-</blockquote>
-<pre class="code literal-block"><span></span><span class="p">(</span><span class="nf">defn</span> <span class="nv">inc-maker</span>
-  <span class="s">"Create a custom incrementor"</span>
-  <span class="p">[</span><span class="nv">inc-by</span><span class="p">]</span>
-  <span class="o">#</span><span class="p">(</span><span class="nf">+</span> <span class="nv">%</span> <span class="nv">inc-by</span><span class="p">))</span>
-
-
-<span class="p">(</span><span class="nf">def</span> <span class="nv">inc3</span> <span class="p">(</span><span class="nf">inc-maker</span> <span class="mi">3</span><span class="p">))</span>
-<span class="p">(</span><span class="nf">inc3</span> <span class="mi">7</span><span class="p">)</span>
-<span class="c1">; =&gt; 10</span>
-</pre>
-
-
-<blockquote>
-<p>Here, <code>inc-by</code> is in scope, so the returned function has access to it even when the returned function is used outside <code>inc-maker</code>.</p>
-</blockquote>
-<p>I do not understand this explanation. In my mind the <code>inc-maker</code> returns a function that adds 3 to a number, so basically <code>(defn inc3 [number] (+ number 3))</code>, and I don't see how the scope of <code>inc-by</code> comes into play. (I am noticing now though that in the example <code>def</code> is used, not <code>defn</code> to create the <code>inc3</code> function.) So now I have some code that does make sense to me, while the explanation of the code doesn't, which is a somewhat weird place to be in.</p>
-<p>In the hope of figuring this out I checked Wikipedia which says about <a href="https://en.wikipedia.org/wiki/Closure_(computer_programming)">clojures</a>: "Operationally, a closure is a record storing a function together with an environment." Which is in line with the explanation quoted above, but it doesn't help me understand.</p>
-<p>It doesn't help either that the name of this language, Clojure, is a pun on the term 'closure', which makes me feel it is important to understand them. Some more searching didn't get me anything useful, although I did find <a href="https://groups.google.com/forum/#!msg/clojure/4uDxeOS8pwY/UHiYp7p1a3YJ">this post</a> from <a href="https://twitter.com/richhickey">Rich Hickey</a> about naming Clojure "Clojure":</p>
-<blockquote>
-<p>The name was chosen to be unique. I wanted to involve c (c#), l (lisp)
-and j (java).</p>
-<p>Once I came up with Clojure, given the pun on closure, the available
-domains and vast emptiness of the googlespace, it was an easy
-decision.</p>
-</blockquote>
-<p>And that's where I decided to accept I would not be understanding why closures are important when functions return other functions. Except that after writing the previous sentence, I started wondering if I could construct a more complicated function that returns a function, that would help me understand. I failed to construct such a function, since it wouldn't accept me binding a variable in either of the ways I tried to.</p>
-<p>In any case, hopefully I will understand this one day. It does leave me with the feeling that the explanation about closures doesn't need to be in this part of the book. Perhaps it would be more in its place in chapter 7 which describes how Clojure runs your code.</p>
-<hr>
-<p>As I did in my previous post, this postscript contains some smaller things I noticed and/or learned.</p>
-<h4>Notes on blogging</h4>
-<p>Thanks to the combination of my notes, my play-around files and some re-playing around, it was fairly easy to write this blog post. I don't like leaving such a gap between learning and blogging, but it's good to know that when it happens, it's not a problem.</p>
-<h4>Notes on Vim</h4>
-<p>I had to relearn a few things. Vim-fireplace will not connect to the REPL if you don't start one with <code>lein repl</code> first. Use <code>"+</code> in Vim to copy-paste to the system clipboard (thank you past me for the <a href="clj4-learning-when-maps-closures/(/my-projects/clojure-vim-cheatsheet)">cheatsheet</a>).</p>
-<p>Changing to gruvbox as Vim theme was a good idea. I did have to move the colorscheme line in my <code>.vimrc</code> because the statusbar was not green in normal mode.</p>
-<p>In my previous post's postscrpit I was wondering how to get the result of an evaluation into my file. I have found a way, but it's quite a few keystrokes: copy the thing, paste the thing, evaluate it with <code>c!{motion}</code> which replaces it with the result of the evaluation, then <code>gcc</code> to make it into a comment. I might need to make a custom vim command to make that easier.</p>
-<p>According to my notes I used <code>ctrl+n</code> (next match) and <code>ctrl+p</code> (previous match) for auto-completion, so I added those to my cheatsheet.</p>
+<p class="more"><a href="clojure/2020/clj4-learning-when-maps-closures/">Read more…</a></p>
 </div>
                 </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clj3-and-or-being-weird/" class="u-url">(clj 3) Clojure's 'and' and 'or' are weird (but not really)</a></h1>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2020/clj3-and-or-being-weird/" class="u-url">(clj 3) Clojure's 'and' and 'or' are weird (but not really)</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
                     </span></p>
             <p class="dateline">
-            <a href="clj3-and-or-being-weird/" rel="bookmark">
+            <a href="clojure/2020/clj3-and-or-being-weird/" rel="bookmark">
             <time class="published dt-published" datetime="2020-05-16T21:25:15+02:00" itemprop="datePublished" title="16 May 2020">16 May 2020</time></a>
             </p>
                 </div>
@@ -245,7 +149,7 @@ decision.</p>
 <p>Clojure uses the Boolean operators <code>or</code> and <code>and</code>. <code>or</code> returns either the first truthy value or the last value. <code>and</code> returns the first falsey value or, if no values are falsey, the last truthy value.</p>
 </blockquote>
 <p>This explanation is followed by some examples:</p>
-<pre class="code literal-block"><span></span><span class="p">(</span><span class="nf">or</span> <span class="nv">false</span> <span class="nv">nil</span> <span class="ss">:large_I_mean_venti</span> <span class="ss">:why_cant_I_just_say_large</span><span class="p">)</span>
+<pre class="code literal-block"><span class="p">(</span><span class="nf">or</span> <span class="nv">false</span> <span class="nv">nil</span> <span class="ss">:large_I_mean_venti</span> <span class="ss">:why_cant_I_just_say_large</span><span class="p">)</span>
 <span class="c1">; =&gt; :large_I_mean_venti</span>
 
 <span class="p">(</span><span class="nf">or</span> <span class="p">(</span><span class="nf">=</span> <span class="mi">0</span> <span class="mi">1</span><span class="p">)</span> <span class="p">(</span><span class="nf">=</span> <span class="s">"yes"</span> <span class="s">"no"</span><span class="p">))</span>
@@ -254,27 +158,23 @@ decision.</p>
 <span class="p">(</span><span class="nf">or</span> <span class="nv">nil</span><span class="p">)</span>
 <span class="c1">; =&gt; nil</span>
 </pre>
-
-
-<pre class="code literal-block"><span></span><span class="p">(</span><span class="nf">and</span> <span class="ss">:free_wifi</span> <span class="ss">:hot_coffee</span><span class="p">)</span>
+<pre class="code literal-block"><span class="p">(</span><span class="nf">and</span> <span class="ss">:free_wifi</span> <span class="ss">:hot_coffee</span><span class="p">)</span>
 <span class="c1">; =&gt; :hot_coffee</span>
 
 <span class="p">(</span><span class="nf">and</span> <span class="ss">:feelin_super_cool</span> <span class="nv">nil</span> <span class="nv">false</span><span class="p">)</span>
 <span class="c1">; =&gt; nil</span>
 </pre>
-
-
 <p>What I found remarkable about this is that <code>and</code> and <code>or</code> do not return a boolean in all cases. Before I go into that, let's back up a second and cover their basics in a little more depth first.</p>
-<p class="more"><a href="clj3-and-or-being-weird/">Read more…</a></p>
+<p class="more"><a href="clojure/2020/clj3-and-or-being-weird/">Read more…</a></p>
 </div>
                 </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clj2-setting-up-vim/" class="u-url">(clj 2) Setting up Vim for Clojure</a></h1>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2020/clj2-setting-up-vim/" class="u-url">(clj 2) Setting up Vim for Clojure</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
                     </span></p>
             <p class="dateline">
-            <a href="clj2-setting-up-vim/" rel="bookmark">
+            <a href="clojure/2020/clj2-setting-up-vim/" rel="bookmark">
             <time class="published dt-published" datetime="2020-05-05T21:55:15+02:00" itemprop="datePublished" title="5 May 2020">5 May 2020</time></a>
             </p>
                 </div>
@@ -285,16 +185,16 @@ decision.</p>
 <p>Ever since I learned Vim basics a long time ago I have been using it once in a while to make small edits to a config file or a commit message, but not for anything more complicated than that. So that's the first thing I wanted to address: refresh my basics and make sure I know where to find more information when I need it.</p>
 <h4>Vimtutor</h4>
 <p>I figured that a good way to get back into Vim was the <a href="https://vimhelp.org/usr_01.txt.html#vimtutor">Vimtutor</a>. It's a 30-minute interactive tutorial where you edit a file with instructions with vim. I kept notes of what it covers, which you can find <a href="../my-projects/vimtutor">here</a>. Vim's help also includes a <a href="https://vimhelp.org/quickref.txt.html">quickref</a>, an "Overview of the most common commands you will use", which is intimidatingly long considering that description. As a reference to look things up in, it should be useful, though.</p>
-<p class="more"><a href="clj2-setting-up-vim/">Read more…</a></p>
+<p class="more"><a href="clojure/2020/clj2-setting-up-vim/">Read more…</a></p>
 </div>
                 </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clj1-deciding-on-an-editor/" class="u-url">(clj 1) Deciding on a Clojure editor</a></h1>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2020/clj1-deciding-on-an-editor/" class="u-url">(clj 1) Deciding on a Clojure editor</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
                     </span></p>
             <p class="dateline">
-            <a href="clj1-deciding-on-an-editor/" rel="bookmark">
+            <a href="clojure/2020/clj1-deciding-on-an-editor/" rel="bookmark">
             <time class="published dt-published" datetime="2020-05-01T18:00:15+02:00" itemprop="datePublished" title="1 May 2020">1 May 2020</time></a>
             </p>
                 </div>
@@ -304,16 +204,16 @@ decision.</p>
 <h3>The Clojure REPL</h3>
 <p>The <a href="https://clojure.org/guides/repl/introduction">REPL</a> is definitely a Thing™️ in Clojure. It gives you a prompt where you can type code and it will execute it immediately. You can also load files with code into it, interacting with the functions and data defined in those. So that's a signifcantly faster feedback loop than having to compile and then run - which is how you'd normally run something written in Clojure, since its primary platform is the JVM. There are <a href="https://clojure.org/guides/repl/launching_a_basic_repl">different ways</a> of launching a REPL, but most guides I found tell you to use <a href="https://leiningen.org/">Leiningen</a>. Oh, and REPL stands for Read-Evaluate-Print_Loop, because that's what the REPL does.</p>
 <p>It definitely feels like this REPL is a bigger deal than I appreciate right now. Probably because I have only just begun learning Clojure. On the other hand, I may have also been spoiled by the quick feedback provided by Python and its <a href="https://docs.python.org/3/library/idle.html">IDLE</a>. On the third hand, it's only because of learning of the Clojure REPL, I looked into importing files into Python's IDLE and found out that's indeed a thing it can do.</p>
-<p class="more"><a href="clj1-deciding-on-an-editor/">Read more…</a></p>
+<p class="more"><a href="clojure/2020/clj1-deciding-on-an-editor/">Read more…</a></p>
 </div>
                 </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clj0-diving-straight-in/" class="u-url">(clj 0) Diving straight in with some koans</a></h1>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2020/clj0-diving-straight-in/" class="u-url">(clj 0) Diving straight in with some koans</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
                     </span></p>
             <p class="dateline">
-            <a href="clj0-diving-straight-in/" rel="bookmark">
+            <a href="clojure/2020/clj0-diving-straight-in/" rel="bookmark">
             <time class="published dt-published" datetime="2020-04-27T21:00:15+02:00" itemprop="datePublished" title="27 April 2020">27 April 2020</time></a>
             </p>
                 </div>
@@ -323,7 +223,7 @@ decision.</p>
 <p>A long time ago (meaning I don't remember when but it's been a while) I learned about a programming language called Lisp. It was said that by studying this language you'd gain <a href="https://twobithistory.org/2018/10/14/lisp.html">deep insights</a> into programming and you'd never write code the same way again. That definitely piqued my interest.</p>
 <p>Some time later (don't remember when exactly either) I learned about the existence of Clojure and that it too, was something special. So I added it to the list of programming languages I wanted to learn some day.</p>
 <p>Then, earlier this month, I felt the need to start a new project. To learn something new. So I figured I'd learn Lisp. That didn't last long though, as I found out that the recommended editor for Lisp is Emacs. And from trying out Emacs and vi about 20 years ago I knew that for some reason vi does fit with how my mind works, and Emacs doesn't.</p>
-<p class="more"><a href="clj0-diving-straight-in/">Read more…</a></p>
+<p class="more"><a href="clojure/2020/clj0-diving-straight-in/">Read more…</a></p>
 </div>
                 </div>
             </article>
@@ -346,9 +246,7 @@ decision.</p>
         <script src="../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

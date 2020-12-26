@@ -40,8 +40,13 @@ hidetitle: false
 - `gcc` (un)comment line
 
 ### vim-sexp
-- `cse(`,`cse)`,`cseb`: surround element in parentheses
+- `cse(`,`cse)`: surround element in parentheses
 - `cse[`, `cse]`: surround element in brackets
+- `cse{`, `cse}`: surround element in braces
+- `>)`, `<)`, `>(`, and `<(`: slurpage and barfage
+- `dsf`: splice (delete surroundings of form)
+- `<I`, `>I`: insert at the beginning and ending of a form
+
 
 ### vim-fireplace
 - `:Require`: reload current namespace

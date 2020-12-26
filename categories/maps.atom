@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about maps)</title>
   <id>https://j19sch.github.io/categories/maps.atom</id>
-  <updated>2020-07-31T20:27:52Z</updated>
+  <updated>2020-12-26T09:02:19Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -12,146 +12,24 @@
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
     <title>(clj 4) Learning about when, maps and closures</title>
-    <id>https://j19sch.github.io/blog/clj4-learning-when-maps-closures/</id>
-    <updated>2020-07-31T16:25:15+02:00</updated>
-    <published>2020-07-31T16:25:15+02:00</published>
+    <id>https://j19sch.github.io/blog/clojure/2020/clj4-learning-when-maps-closures/</id>
+    <updated>2020-07-31T22:25:15+02:00</updated>
+    <published>2020-07-31T22:25:15+02:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/clj4-learning-when-maps-closures/"/>
+    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/clojure/2020/clj4-learning-when-maps-closures/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;It's been more than two months since I did any Clojure - for the obvious reasons. Luckily I did take notes as I proceeded with chapter 3 of "&lt;a href="https://www.braveclojure.com/"&gt;Clojure for the Brave and True&lt;/a&gt;". So the plan is to process these notes into a blog post, which means this post will cover the sections "Data Structures" and "Functions" of that third chapter. Leaving me ready to proceed with the rest of the chapter, i.e. "Pulling It All Together" and the summary and exercises.&lt;/p&gt;
 &lt;h3&gt;Why is there a &lt;code&gt;when&lt;/code&gt;?&lt;/h3&gt;
 &lt;p&gt;The part about control flow is actually before the part about &lt;code&gt;and&lt;/code&gt; and &lt;code&gt;or&lt;/code&gt; which I talked about in my &lt;a href="https://j19sch.github.io/blog/clj3-and-or-being-weird"&gt;previous post&lt;/a&gt;, but according to my notes I returned to it. I don't remember why to be honest.&lt;/p&gt;
 &lt;p&gt;The book provides the following example of &lt;code&gt;when&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;when &lt;/span&gt;&lt;span class="nv"&gt;true&lt;/span&gt;
+&lt;pre class="code literal-block"&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;when &lt;/span&gt;&lt;span class="nv"&gt;true&lt;/span&gt;
     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;println &lt;/span&gt;&lt;span class="s"&gt;"Success!"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="s"&gt;"abra cadabra"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; Success!&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; "abra cadabra"&lt;/span&gt;
 &lt;/pre&gt;
-
-
-&lt;p&gt;And if the condition is &lt;code&gt;false&lt;/code&gt;, you get:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;when &lt;/span&gt;&lt;span class="nv"&gt;false&lt;/span&gt;
-    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;println &lt;/span&gt;&lt;span class="s"&gt;"First do!"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="s"&gt;"By Odin's Elbow!"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="c1"&gt;; =&amp;gt; nil&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;So &lt;code&gt;when&lt;/code&gt; allows you to do several things and return something when the condition is &lt;code&gt;true&lt;/code&gt;, while it will return &lt;code&gt;nil&lt;/code&gt; if the condition is &lt;code&gt;false&lt;/code&gt;. The thing that got me curious is that you can do the same thing almost as easily with &lt;code&gt;if&lt;/code&gt; and &lt;code&gt;do&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;if &lt;/span&gt;&lt;span class="nv"&gt;true&lt;/span&gt;
-  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;do &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;println &lt;/span&gt;&lt;span class="s"&gt;"Success!"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-      &lt;span class="s"&gt;"abra cadabra"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-  &lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="c1"&gt;; =&amp;gt; Success!&lt;/span&gt;
-&lt;span class="c1"&gt;; =&amp;gt; "abra cadabra"&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;if &lt;/span&gt;&lt;span class="nv"&gt;false&lt;/span&gt;
-  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;do &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;println &lt;/span&gt;&lt;span class="s"&gt;"First do!"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-      &lt;span class="s"&gt;"By Odin's Elbow!"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-  &lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="c1"&gt;; =&amp;gt; nil&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;I can see two advantages to having the &lt;code&gt;when&lt;/code&gt;. It needs fewer characters: two brackets and a space. It's also more readable, since there is no &lt;code&gt;do&lt;/code&gt; and no indentation decisions because of that &lt;code&gt;do&lt;/code&gt;. Is that enough reason? I honestly don't know, because I haven't written enough Clojure to decide if you use &lt;code&gt;when&lt;/code&gt; often enough to make it worth it having it.&lt;/p&gt;
-&lt;p&gt;There is another difference, however, which I found out thanks to &lt;a href="https://github.com/tpope/vim-fireplace"&gt;vim-fireplace&lt;/a&gt;'s &lt;code&gt;K&lt;/code&gt; command, which looks up the symbol under the cursor with &lt;code&gt;doc&lt;/code&gt;. &lt;code&gt;if&lt;/code&gt; and &lt;code&gt;do&lt;/code&gt; are Special Forms, while &lt;code&gt;when&lt;/code&gt; is a Macro. What difference that makes, I don't know yet. In the section about functions in the same chapter, it does say on page 126:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;You’ll learn everything there is to know about macro calls and special forms in Chapter 7. For now, the main feature that makes special forms “special” is that, unlike function calls, they don’t always evaluate all of their operands.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;And on page 127:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Macros are similar to special forms in that they evaluate their operands differently from function calls, and they also can’t be passed as arguments to functions.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;I made a note to revisit this when I get to Chapter 7. So one day there should be a link to that post here.&lt;/p&gt;
-&lt;h3&gt;Maps&lt;/h3&gt;
-&lt;p&gt;With my Python background I had some trouble with the syntax of maps. With keywords being used as keys, they look like this:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="ss"&gt;:first-name&lt;/span&gt; &lt;span class="s"&gt;"Charlie"&lt;/span&gt;
- &lt;span class="ss"&gt;:last-name&lt;/span&gt; &lt;span class="s"&gt;"McFishwich"&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;So the same characters as a Python dictionary but in a different order. This made me appreciate the value of practice. I won't be enjoying writing Clojure if I mess up the syntax of maps every time because of Python muscle memory.&lt;/p&gt;
-&lt;p&gt;Practice wasn't without its hurdles, though. When I defined a map and evaluated it like this:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;def &lt;/span&gt;&lt;span class="nv"&gt;my-other-map&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;hash-map &lt;/span&gt;&lt;span class="ss"&gt;:a&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt; &lt;span class="ss"&gt;:b&lt;/span&gt; &lt;span class="mi"&gt;101&lt;/span&gt; &lt;span class="ss"&gt;:c&lt;/span&gt; &lt;span class="mi"&gt;102&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;my-other-map&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;I got the error &lt;code&gt;ArityException Wrong number of args (0) passed to: PersistentArrayMap  clojure.lang.AFn.throwArity (AFn.java:429)&lt;/code&gt;. &lt;/p&gt;
-&lt;p&gt;Removing ther parantheses around the map's name resulted in:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;Error detected while processing function &amp;lt;SNR&amp;gt;48_printop[1]..&amp;lt;SNR&amp;gt;48_opfunc[40]..function &amp;lt;SNR&amp;gt;48_printop[1]..&amp;lt;SNR&amp;gt;48_opfunc:
-line   21:
-E20: Mark not set
-E20: Mark not set
-Press ENTER or type command to continue
-&lt;/pre&gt;
-
-
-&lt;p&gt;The solution turned out to be to not have the parantheses (so just &lt;code&gt;my-other-map&lt;/code&gt; on its own line), but then not use &lt;code&gt;cpp&lt;/code&gt; to evaluate the statement, which evaluates the innermost statement, but use &lt;code&gt;cp$&lt;/code&gt; (evaluate until end of the line) or &lt;code&gt;cp_&lt;/code&gt; (evaluate current line).&lt;/p&gt;
-&lt;p&gt;Trying to evaluate the innermost form of a string in parantheses, gave me an impressive error message as well:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;ClassCastException class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')  clojure-noob.core/eval6974 (form-init11099437324952859876.clj:5)
-&lt;/pre&gt;
-
-
-&lt;p&gt;My notes tell me I didn't understand what exactly was going on here. Today, while writing this blog post, I went back in the book to the start of the chapter and there it explains that Clojure recognizes two kinds of structures: literal representations of data structures and operations. All operations take the form of opening parenthesis, operator, operands, closing parenthesis. Me putting the name of my hash map or a string literal in parantheses is neither of those structures, so makes sense I get an error.&lt;/p&gt;
-&lt;p&gt;Then for the scope of evaluation, &lt;code&gt;cpp&lt;/code&gt; evaluates the innermost form. However I am on a line with just the name of my map, so I'm not sure what it tries to evaluate. Perhaps the whole file? In any case it's not what I want to evaluate, so it's ok that it throws an error instead of working.&lt;/p&gt;
-&lt;p&gt;Finally, I was surprised that all these three ways to get a value from a map are part of the language:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;def &lt;/span&gt;&lt;span class="nv"&gt;my-map&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="ss"&gt;:a&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="ss"&gt;:b&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="ss"&gt;:c&lt;/span&gt; &lt;span class="s"&gt;"ho hum"&lt;/span&gt;&lt;span class="p"&gt;}})&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;get &lt;/span&gt;&lt;span class="nv"&gt;my-map&lt;/span&gt; &lt;span class="ss"&gt;:a&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="c1"&gt;; =&amp;gt; 0&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;my-map&lt;/span&gt; &lt;span class="ss"&gt;:a&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="c1"&gt;; =&amp;gt; 0&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;:a&lt;/span&gt; &lt;span class="nv"&gt;my-map&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="c1"&gt;; =&amp;gt; 0&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;h3&gt;Functions and returning functions&lt;/h3&gt;
-&lt;p&gt;The section about functions ends with the following explanation about returning functions:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;By now you’ve seen that functions can return other functions. The returned functions are &lt;em&gt;closures&lt;/em&gt;, which means that they can access all the variables that were in scope when the function was created. Here’s a standard example:&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defn&lt;/span&gt; &lt;span class="nv"&gt;inc-maker&lt;/span&gt;
-  &lt;span class="s"&gt;"Create a custom incrementor"&lt;/span&gt;
-  &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nv"&gt;inc-by&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-  &lt;span class="o"&gt;#&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;+&lt;/span&gt; &lt;span class="nv"&gt;%&lt;/span&gt; &lt;span class="nv"&gt;inc-by&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;def&lt;/span&gt; &lt;span class="nv"&gt;inc3&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;inc-maker&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;inc3&lt;/span&gt; &lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="c1"&gt;; =&amp;gt; 10&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Here, &lt;code&gt;inc-by&lt;/code&gt; is in scope, so the returned function has access to it even when the returned function is used outside &lt;code&gt;inc-maker&lt;/code&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;I do not understand this explanation. In my mind the &lt;code&gt;inc-maker&lt;/code&gt; returns a function that adds 3 to a number, so basically &lt;code&gt;(defn inc3 [number] (+ number 3))&lt;/code&gt;, and I don't see how the scope of &lt;code&gt;inc-by&lt;/code&gt; comes into play. (I am noticing now though that in the example &lt;code&gt;def&lt;/code&gt; is used, not &lt;code&gt;defn&lt;/code&gt; to create the &lt;code&gt;inc3&lt;/code&gt; function.) So now I have some code that does make sense to me, while the explanation of the code doesn't, which is a somewhat weird place to be in.&lt;/p&gt;
-&lt;p&gt;In the hope of figuring this out I checked Wikipedia which says about &lt;a href="https://en.wikipedia.org/wiki/Closure_(computer_programming)"&gt;clojures&lt;/a&gt;: "Operationally, a closure is a record storing a function together with an environment." Which is in line with the explanation quoted above, but it doesn't help me understand.&lt;/p&gt;
-&lt;p&gt;It doesn't help either that the name of this language, Clojure, is a pun on the term 'closure', which makes me feel it is important to understand them. Some more searching didn't get me anything useful, although I did find &lt;a href="https://groups.google.com/forum/#!msg/clojure/4uDxeOS8pwY/UHiYp7p1a3YJ"&gt;this post&lt;/a&gt; from &lt;a href="https://twitter.com/richhickey"&gt;Rich Hickey&lt;/a&gt; about naming Clojure "Clojure":&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The name was chosen to be unique. I wanted to involve c (c#), l (lisp)
-and j (java).&lt;/p&gt;
-&lt;p&gt;Once I came up with Clojure, given the pun on closure, the available
-domains and vast emptiness of the googlespace, it was an easy
-decision.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;And that's where I decided to accept I would not be understanding why closures are important when functions return other functions. Except that after writing the previous sentence, I started wondering if I could construct a more complicated function that returns a function, that would help me understand. I failed to construct such a function, since it wouldn't accept me binding a variable in either of the ways I tried to.&lt;/p&gt;
-&lt;p&gt;In any case, hopefully I will understand this one day. It does leave me with the feeling that the explanation about closures doesn't need to be in this part of the book. Perhaps it would be more in its place in chapter 7 which describes how Clojure runs your code.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;As I did in my previous post, this postscript contains some smaller things I noticed and/or learned.&lt;/p&gt;
-&lt;h4&gt;Notes on blogging&lt;/h4&gt;
-&lt;p&gt;Thanks to the combination of my notes, my play-around files and some re-playing around, it was fairly easy to write this blog post. I don't like leaving such a gap between learning and blogging, but it's good to know that when it happens, it's not a problem.&lt;/p&gt;
-&lt;h4&gt;Notes on Vim&lt;/h4&gt;
-&lt;p&gt;I had to relearn a few things. Vim-fireplace will not connect to the REPL if you don't start one with &lt;code&gt;lein repl&lt;/code&gt; first. Use &lt;code&gt;"+&lt;/code&gt; in Vim to copy-paste to the system clipboard (thank you past me for the &lt;a href="https://j19sch.github.io/blog/clj4-learning-when-maps-closures/(/my-projects/clojure-vim-cheatsheet)"&gt;cheatsheet&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;Changing to gruvbox as Vim theme was a good idea. I did have to move the colorscheme line in my &lt;code&gt;.vimrc&lt;/code&gt; because the statusbar was not green in normal mode.&lt;/p&gt;
-&lt;p&gt;In my previous post's postscrpit I was wondering how to get the result of an evaluation into my file. I have found a way, but it's quite a few keystrokes: copy the thing, paste the thing, evaluate it with &lt;code&gt;c!{motion}&lt;/code&gt; which replaces it with the result of the evaluation, then &lt;code&gt;gcc&lt;/code&gt; to make it into a comment. I might need to make a custom vim command to make that easier.&lt;/p&gt;
-&lt;p&gt;According to my notes I used &lt;code&gt;ctrl+n&lt;/code&gt; (next match) and &lt;code&gt;ctrl+p&lt;/code&gt; (previous match) for auto-completion, so I added those to my cheatsheet.&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clojure/2020/clj4-learning-when-maps-closures/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="brave-true" label="brave-true"/>
     <category term="clojure" label="clojure"/>
     <category term="closures" label="closures"/>

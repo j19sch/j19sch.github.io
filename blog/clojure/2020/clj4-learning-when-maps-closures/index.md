@@ -24,6 +24,8 @@ The book provides the following example of `when`:
 ; => "abra cadabra"
 ```
 
+<!-- TEASER_END -->
+
 And if the condition is `false`, you get:
 ```clojure
 (when false
