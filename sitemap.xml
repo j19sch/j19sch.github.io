@@ -10,38 +10,6 @@
   <lastmod>2020-12-22T15:21:00Z</lastmod>
  </url>
  <url>
-  <loc>https://j19sch.github.io/2012/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/2013/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/2014/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/2015/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/2016/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/2017/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/2018/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/2019/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
   <loc>https://j19sch.github.io/2020/</loc>
   <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
@@ -51,39 +19,7 @@
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/</loc>
-  <lastmod>2020-12-26T09:02:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/clj0-diving-straight-in/</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/clj1-deciding-on-an-editor/</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/clj2-setting-up-vim/</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/clj3-and-or-being-weird/</loc>
-  <lastmod>2020-05-16T19:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/clj4-learning-when-maps-closures/</loc>
-  <lastmod>2020-07-31T20:27:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/clj5-loop-and-recur-into-and-conj/</loc>
-  <lastmod>2020-12-25T20:48:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/clj5-loop-and-recur/</loc>
-  <lastmod>2020-12-25T20:45:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/clj5-lop-and-recur/</loc>
-  <lastmod>2020-12-22T15:38:00Z</lastmod>
+  <lastmod>2020-12-26T09:09:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/clojure/2020/clj0-diving-straight-in/</loc>
@@ -110,192 +46,8 @@
   <lastmod>2020-12-26T09:02:00Z</lastmod>
  </url>
  <url>
-  <loc>https://j19sch.github.io/blog/index-1.html</loc>
-  <lastmod>2020-12-22T15:27:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/index-2.html</loc>
-  <lastmod>2020-12-22T15:27:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/index-3.html</loc>
-  <lastmod>2020-12-22T15:27:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/index-4.html</loc>
-  <lastmod>2020-12-22T15:27:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2012/01/02/introduction-share-your-learning-curve/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2012/01/15/the-seven-basic-principles-of-the-context-driven-school-part-one/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2012/02/05/the-seven-basic-principles-of-the-context-driven-school-part-two/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2012/03/30/the-seven-basic-principles-of-the-context-driven-school-part-not-three/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2012/04/09/the-irony-of-scripted-testing/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2012/04/29/some-thoughts-after-attending-the-getting-a-grip-on-exploratory-testing-workshop/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2012/05/18/lets-test-2012-time-travel-advice/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2012/07/09/yet-another-testing-model-value-information-processes-value/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2012/07/15/vipt-intermezzo-models-and-the-unix-philosophy/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2012/07/17/vipt-bottom-up-or-top-down/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2012/07/29/vipt-how-to-teach-software-testing/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2012/09/13/measuring-review-coverage/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2012/11/08/dewt2-becoming-a-context-driven-tester/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2013/02/18/lessons-learned-in-some-test-automation/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2013/04/28/dewt3-experience-report/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2013/06/23/why-your-product-risk-analysis-isnt/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2013/07/06/test-cases-cant-do-m-no-more/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2013/07/15/why-i-dislike-test-management/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2013/08/03/five-leftover-thoughts-on-software-testing/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2014/07/13/information-debt/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2014/08/23/joining-the-fray-on-iso-29119/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2015/02/01/the-test-case-an-epistemological-deconstruction/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2015/02/10/three-arguments-against-the-verification-validation-dichotomy/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2015/03/24/test-automation-five-questions-leading-to-five-heuristics/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2015/08/17/whats-the-word-for-the-part-of-testing-thats-not-checking/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2015/09/06/two-styles-of-leadership-in-spreading-context-driven-testing-titanconf/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2015/11/15/why-the-testingchecking-debate-is-so-messy-a-fruit-salad-analogy/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2016/01/03/regression-testing-it-means-less-than-you-think/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2017/02/05/testing-maturity-in-an-agilecdt-context/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2018/12/04/manifesto-for-software-testing/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2018/12/22/reflections-on-my-testing-manifesto/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2019/01/29/test-strategy-primer/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2019/04/28/solving-black-box-puzzle-31-with-data-analysis/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2019/06/08/how-this-tester-writes-code/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2019/08/05/your-ci-cd-pipeline-does-not-run-regression-tests/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2019/08/26/getting-name-from-name-name-in-python-an-engineering-problem/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2020/05/17/learning-clojure-a-blog-post-series/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/the-testing-curve/2020/07/19/its-time-to-retire-our-test-case-management-tools/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
   <loc>https://j19sch.github.io/categories/</loc>
-  <lastmod>2020-12-26T08:52:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/advice/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/agile/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/automation/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/blackboxpuzzle/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
+  <lastmod>2020-12-26T09:09:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/booleans/</loc>
@@ -310,22 +62,6 @@
   <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
-  <loc>https://j19sch.github.io/categories/cat_the-testing-curve/</loc>
-  <lastmod>2020-12-22T15:19:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/cdt/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/change/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/cicd/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
   <loc>https://j19sch.github.io/categories/clojure/</loc>
   <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
@@ -334,292 +70,36 @@
   <lastmod>2020-07-31T18:43:00Z</lastmod>
  </url>
  <url>
-  <loc>https://j19sch.github.io/categories/code/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/conference/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
   <loc>https://j19sch.github.io/categories/conj/</loc>
   <lastmod>2020-12-26T08:52:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/context-driven-testing/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/context-driven/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/cop-out/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/craftsmanship/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/devops/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/dewt/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/documentation/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/emacs/</loc>
   <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
-  <loc>https://j19sch.github.io/categories/epistemology/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/exploration/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/exploratory-testing/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/first/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/five/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/information-debt/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
   <loc>https://j19sch.github.io/categories/into/</loc>
   <lastmod>2020-12-26T08:52:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/intro/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/irony/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/iso29119/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/koans/</loc>
   <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
-  <loc>https://j19sch.github.io/categories/leadership/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/learning-curve/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/learning/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/leftover-thoughts/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/letstest/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
   <loc>https://j19sch.github.io/categories/loop/</loc>
   <lastmod>2020-12-22T15:38:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/manifesto/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/maps/</loc>
   <lastmod>2020-07-31T18:43:00Z</lastmod>
  </url>
  <url>
-  <loc>https://j19sch.github.io/categories/maturity/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/measurements/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/meta/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/model/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/models/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/notserious/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/pandas/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/philosophy-of-testing/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/pra/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/progr/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/programming/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/project-management/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/python/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/rantish/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
   <loc>https://j19sch.github.io/categories/recur/</loc>
   <lastmod>2020-12-22T15:38:00Z</lastmod>
  </url>
  <url>
-  <loc>https://j19sch.github.io/categories/regression-testing/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/reviews/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/schools-of-testing/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/scripted-testing/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/seman/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/semantics/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/spreadsheets/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/standards/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/systems-thinking/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/teaching-testing/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/terminology/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/test-automation/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/test-cases/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/test-management/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/test-reporting/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/test-strategy/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/testing-checking/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/testing-skills/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/testing/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/titanconf/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/tools/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/unix/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/validation/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/vba/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/verification/</loc>
-  <lastmod>2020-12-22T15:21:00Z</lastmod>
- </url>
- <url>
   <loc>https://j19sch.github.io/categories/vim/</loc>
   <lastmod>2020-05-09T07:30:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/vipt/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/vscode/</loc>
@@ -628,14 +108,6 @@
  <url>
   <loc>https://j19sch.github.io/categories/when/</loc>
   <lastmod>2020-07-31T18:43:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/workshop/</loc>
-  <lastmod>2020-12-22T15:09:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/learning-clojure/</loc>
-  <lastmod>2020-12-22T15:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-lists/fountain-pens/</loc>
@@ -668,9 +140,5 @@
  <url>
   <loc>https://j19sch.github.io/my-talks/</loc>
   <lastmod>2020-05-09T07:30:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/the-testing-curve/</loc>
-  <lastmod>2020-12-22T15:15:00Z</lastmod>
  </url>
 </urlset>
