@@ -24,8 +24,12 @@ hidetitle: false
 - The answer to how is yes: Acting on what matters - Peter Block
 - How to take smart notes: One simple technique to boost writing, learning and thinking - Sönke Ahrens
 - Orbiting the giant hairball: A corporate fool's guide to surviving with grace - Gordon MacKenzie
+- Software Estimation Without Guessing: Effective Planning in an Imperfect World - George Dinwiddie
 - And the weak suffer whay they must?: Europe's crisis and America's economic future - Yanis Varoufakis
 - Influencing Patterns for Change: A Human Systems Dynamics Primer for Leaders - Royce Holladay, Kristine Quade
+- Another Now: Dispatches from an Alternative Present - Yanis Varoufakis
+- Death by Meeting: A Leadership Fable about Solving the Most Painful Problem in Business - Patrick Lencioni
+- The Regenerative Business: Redesign Work, Cultivate Human Potential, Achieve Extraordinary Outcomes - Carol Sanford
 
 ### 2019
 - Host: Six new roles of engagement for teams, organizations, communities, movements - Mark McKergow & Helen Bailey
