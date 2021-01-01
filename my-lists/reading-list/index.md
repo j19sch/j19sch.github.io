@@ -8,6 +8,10 @@ hidetitle: false
 
 ## Reading list
 
+### 2021
+- Practical Ways to Lead an Innovative Organization: Modern Management Made Easy, Book 3 - Johanna Rothman
+
+
 ### 2020
 - Essentialism: The disciplined pursuit of less - Greg McKeown
 - Good strategy, Bad strategy: The difference and why it matters - Richard Rumelt
@@ -30,6 +34,7 @@ hidetitle: false
 - Another Now: Dispatches from an Alternative Present - Yanis Varoufakis
 - Death by Meeting: A Leadership Fable about Solving the Most Painful Problem in Business - Patrick Lencioni
 - The Regenerative Business: Redesign Work, Cultivate Human Potential, Achieve Extraordinary Outcomes - Carol Sanford
+
 
 ### 2019
 - Host: Six new roles of engagement for teams, organizations, communities, movements - Mark McKergow & Helen Bailey
