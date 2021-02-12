@@ -153,6 +153,7 @@ NAVIGATION_LINKS = {
         (
             (
                 ("/blog", "Projects blog"),
+                ("/blog", "Thoughts blog"),
                 ("https://testingcurve.wordpress.com", "Wordpress blog"),
             ),
             "Blogs"
