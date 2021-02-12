@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Joep Schuurkes (Posts about clojure)</title><link>https://j19sch.github.io/</link><description></description><atom:link href="https://j19sch.github.io/categories/cat_clojure.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:j19sch@gmail.com"&gt;Joep Schuurkes&lt;/a&gt; 
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Joep Schuurkes (Posts about clojure)</title><link>https://j19sch.github.io/</link><description></description><atom:link href="https://j19sch.github.io/categories/cat_clojure.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2021 &lt;a href="mailto:j19sch@gmail.com"&gt;Joep Schuurkes&lt;/a&gt; 
 &lt;a href="http://creativecommons.org/licenses/by/4.0/"&gt;
 &lt;img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /&gt;
 &lt;/a&gt;
-</copyright><lastBuildDate>Sat, 26 Dec 2020 09:11:18 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(clj 5) Loop and recur, into and conj</title><link>https://j19sch.github.io/blog/clojure/2020/clj5-loop-and-recur-into-and-conj/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;Yet again it's been a while since I did some Clojure or blogged about it. This time I'm writing this blog post
+</copyright><lastBuildDate>Fri, 12 Feb 2021 13:37:57 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(clj 5) Loop and recur, into and conj</title><link>https://j19sch.github.io/blog/clojure/2020/clj5-loop-and-recur-into-and-conj/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;Yet again it's been a while since I did some Clojure or blogged about it. This time I'm writing this blog post
 three months after working on the code on September 5, 6 and 12. I'm not going to dwell on that too long, because
 other things in my life were more important. I did feel a little sad when this year's &lt;a href="https://adventofcode.com/"&gt;Advent of Code&lt;/a&gt;
 launched and I realized my Clojure is nowhere near a state where I could attempt the puzzles. So I ended up doing
@@ -18,18 +18,20 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
 &lt;h3&gt;Why is there a &lt;code&gt;when&lt;/code&gt;?&lt;/h3&gt;
 &lt;p&gt;The part about control flow is actually before the part about &lt;code&gt;and&lt;/code&gt; and &lt;code&gt;or&lt;/code&gt; which I talked about in my &lt;a href="https://j19sch.github.io/blog/clj3-and-or-being-weird"&gt;previous post&lt;/a&gt;, but according to my notes I returned to it. I don't remember why to be honest.&lt;/p&gt;
 &lt;p&gt;The book provides the following example of &lt;code&gt;when&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;when &lt;/span&gt;&lt;span class="nv"&gt;true&lt;/span&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;when &lt;/span&gt;&lt;span class="nv"&gt;true&lt;/span&gt;
     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;println &lt;/span&gt;&lt;span class="s"&gt;"Success!"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="s"&gt;"abra cadabra"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; Success!&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; "abra cadabra"&lt;/span&gt;
 &lt;/pre&gt;
+
+
 &lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clojure/2020/clj4-learning-when-maps-closures/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>brave-true</category><category>clojure</category><category>closures</category><category>maps</category><category>when</category><guid>https://j19sch.github.io/blog/clojure/2020/clj4-learning-when-maps-closures/</guid><pubDate>Fri, 31 Jul 2020 20:25:15 GMT</pubDate></item><item><title>(clj 3) Clojure's 'and' and 'or' are weird (but not really)</title><link>https://j19sch.github.io/blog/clojure/2020/clj3-and-or-being-weird/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;Early in &lt;a href="https://www.braveclojure.com/do-things/#Control_Flow"&gt;chapter 3&lt;/a&gt; of the &lt;a href="https://www.braveclojure.com/"&gt;Brave and True&lt;/a&gt;-book the Boolean operators &lt;code&gt;and&lt;/code&gt; and &lt;code&gt;or&lt;/code&gt; are introduced:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Clojure uses the Boolean operators &lt;code&gt;or&lt;/code&gt; and &lt;code&gt;and&lt;/code&gt;. &lt;code&gt;or&lt;/code&gt; returns either the first truthy value or the last value. &lt;code&gt;and&lt;/code&gt; returns the first falsey value or, if no values are falsey, the last truthy value.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;This explanation is followed by some examples:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;or&lt;/span&gt; &lt;span class="nv"&gt;false&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt; &lt;span class="ss"&gt;:large_I_mean_venti&lt;/span&gt; &lt;span class="ss"&gt;:why_cant_I_just_say_large&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;or&lt;/span&gt; &lt;span class="nv"&gt;false&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt; &lt;span class="ss"&gt;:large_I_mean_venti&lt;/span&gt; &lt;span class="ss"&gt;:why_cant_I_just_say_large&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; :large_I_mean_venti&lt;/span&gt;
 
 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;or&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"yes"&lt;/span&gt; &lt;span class="s"&gt;"no"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
@@ -38,12 +40,16 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;or&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; nil&lt;/span&gt;
 &lt;/pre&gt;
-&lt;pre class="code literal-block"&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;and&lt;/span&gt; &lt;span class="ss"&gt;:free_wifi&lt;/span&gt; &lt;span class="ss"&gt;:hot_coffee&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;and&lt;/span&gt; &lt;span class="ss"&gt;:free_wifi&lt;/span&gt; &lt;span class="ss"&gt;:hot_coffee&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; :hot_coffee&lt;/span&gt;
 
 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;and&lt;/span&gt; &lt;span class="ss"&gt;:feelin_super_cool&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt; &lt;span class="nv"&gt;false&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; nil&lt;/span&gt;
 &lt;/pre&gt;
+
+
 &lt;p&gt;What I found remarkable about this is that &lt;code&gt;and&lt;/code&gt; and &lt;code&gt;or&lt;/code&gt; do not return a boolean in all cases. Before I go into that, let's back up a second and cover their basics in a little more depth first.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clojure/2020/clj3-and-or-being-weird/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>booleans</category><category>brave-true</category><category>clojure</category><guid>https://j19sch.github.io/blog/clojure/2020/clj3-and-or-being-weird/</guid><pubDate>Sat, 16 May 2020 19:25:15 GMT</pubDate></item><item><title>(clj 2) Setting up Vim for Clojure</title><link>https://j19sch.github.io/blog/clojure/2020/clj2-setting-up-vim/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;As mentioned in my &lt;a href="https://j19sch.github.io/blog/clj1-deciding-on-an-editor"&gt;previous post&lt;/a&gt; I've decided to use &lt;a href="https://www.vim.org/"&gt;Vim&lt;/a&gt; as my Clojure editor. That leaves me with three things to do: getting reacquainted with Vim, updating my Vim config in the .&lt;code&gt;vimrc&lt;/code&gt; file, and installing both general and Clojure-specific Vim plugins.&lt;/p&gt;
 &lt;h3&gt;Getting reacquainted with Vim&lt;/h3&gt;
