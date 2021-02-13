@@ -140,23 +140,24 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/index.html", "Home"),
-        ("/my-projects", "My projects"),
-        ("/my-talks", "My talks"),
+        ("/my-projects", "Projects"),
+        ("/my-talks", "Talks"),
         (
             (
                 ("/my-lists/fountain-pens", "Fountain pens"),
                 ("/my-lists/reading-list", "Reading list"),
                 ("/my-lists/recommended-reading", "Recommended reading"),
             ),
-            "My lists"
+            "Lists"
         ),
         (
             (
-                ("/blog", "Projects blog"),
-                ("/blog", "Thoughts blog"),
-                ("https://testingcurve.wordpress.com", "Wordpress blog"),
+                ("/blog", "My blog"),
+                ("/categories/", "Categories and tags"),
+                ("/blog/rss.xml", "RSS feed"),
+                ("/blog/feed.atom", "Atom feed")
             ),
-            "Blogs"
+            "Blog"
         ),
         # ("/archive.html", "Archive"),
         # ("/categories/", "Tags"),
@@ -484,8 +485,8 @@ CATEGORY_OUTPUT_FLAT_HIERARCHY = False
 # and displayed underneath the category list or index page’s title.
 # CATEGORY_DESCRIPTIONS = {
 #    DEFAULT_LANG: {
-#        "blogging": "Meta-blog posts about blogging.",
-#        "open source": "My contributions to my many, varied, ever-changing, and eternal libre software projects."
+#        "clojure": "posts about me learning Clojure",
+#        "quality": "thoughts about quality"
 #    },
 # }
 
