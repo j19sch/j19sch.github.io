@@ -144,9 +144,9 @@ NAVIGATION_LINKS = {
         ("/my-talks", "Talks"),
         (
             (
-                ("/my-lists/fountain-pens", "Fountain pens"),
                 ("/my-lists/reading-list", "Reading list"),
                 ("/my-lists/recommended-reading", "Recommended reading"),
+                ("/my-lists/fountain-pens", "Fountain pens"),
             ),
             "Lists"
         ),

@@ -6,7 +6,7 @@ description:
 type: text
 hidetitle: false
 
-## Reading list
+# Reading list
 
 ### 2021
 - Practical Ways to Lead an Innovative Organization: Modern Management Made Easy, Book 3 - Johanna Rothman

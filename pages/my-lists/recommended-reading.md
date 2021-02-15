@@ -7,7 +7,7 @@ type: text
 hidetitle: false
 
 
-## Recommended reading
+# Recommended reading
 
 ### Non-fiction
 - 7 rules for positive, productive change: Micro shifts, macro results - Esther Derby

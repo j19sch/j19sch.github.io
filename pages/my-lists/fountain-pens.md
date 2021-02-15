@@ -6,7 +6,7 @@ description:
 type: text
 hidetitle: false
 
-## Fountain pens
+# Fountain pens
 
 #### *Conid*
 - Minimalistica
