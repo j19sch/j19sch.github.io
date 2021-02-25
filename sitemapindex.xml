@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://j19sch.github.io/blog/feed.atom</loc>
-  <lastmod>2021-02-25T11:38:00Z</lastmod>
+  <lastmod>2021-02-25T11:43:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/blog/rss.xml</loc>
-  <lastmod>2021-02-25T11:40:00Z</lastmod>
+  <lastmod>2021-02-25T11:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/booleans.atom</loc>
@@ -39,19 +39,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_quality.atom</loc>
-  <lastmod>2021-02-25T11:38:00Z</lastmod>
+  <lastmod>2021-02-25T11:43:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_quality.xml</loc>
-  <lastmod>2021-02-25T11:40:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://j19sch.github.io/categories/cat_thoughts.atom</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://j19sch.github.io/categories/cat_thoughts.xml</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2021-02-25T11:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/clojure.atom</loc>
@@ -119,27 +111,27 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/peer-conference.atom</loc>
-  <lastmod>2021-02-25T11:38:00Z</lastmod>
+  <lastmod>2021-02-25T11:43:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/peer-conference.xml</loc>
-  <lastmod>2021-02-25T11:40:00Z</lastmod>
+  <lastmod>2021-02-25T11:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/problems.atom</loc>
-  <lastmod>2021-02-25T11:40:00Z</lastmod>
+  <lastmod>2021-02-25T11:43:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/problems.xml</loc>
-  <lastmod>2021-02-25T11:40:00Z</lastmod>
+  <lastmod>2021-02-25T11:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/quality.atom</loc>
-  <lastmod>2021-02-25T11:38:00Z</lastmod>
+  <lastmod>2021-02-25T11:43:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/quality.xml</loc>
-  <lastmod>2021-02-25T11:40:00Z</lastmod>
+  <lastmod>2021-02-25T11:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/recur.atom</loc>
@@ -151,11 +143,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/selling.atom</loc>
-  <lastmod>2021-02-25T11:40:00Z</lastmod>
+  <lastmod>2021-02-25T11:43:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/selling.xml</loc>
-  <lastmod>2021-02-25T11:40:00Z</lastmod>
+  <lastmod>2021-02-25T11:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/value-systems.atom</loc>
@@ -191,6 +183,6 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/sitemap.xml</loc>
-  <lastmod>2021-02-25T11:40:00Z</lastmod>
+  <lastmod>2021-02-25T11:53:00Z</lastmod>
  </sitemap>
 </sitemapindex>

@@ -1,6 +1,6 @@
 <!--
 .. title: Thinking about quality: who doesn't want quality?
-.. slug:who-doesnt-want-quality
+.. slug: who-doesnt-want-quality
 .. date: 2021-02-25 12:34:08 UTC+01:00
 .. tags: peer conference, quality, selling, problems
 .. category: quality

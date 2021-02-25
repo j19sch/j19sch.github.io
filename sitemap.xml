@@ -30,16 +30,12 @@
   <lastmod>2021-02-25T11:38:00Z</lastmod>
  </url>
  <url>
-  <loc>https://j19sch.github.io/blog/2021/quality-1-value-systems/</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/2021/quality-value-systems/</loc>
-  <lastmod>2021-02-13T13:23:00Z</lastmod>
- </url>
- <url>
   <loc>https://j19sch.github.io/blog/2021/quality-who-doesnt-want-quality/</loc>
   <lastmod>2021-02-25T11:38:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2021/who-doesnt-want-quality/</loc>
+  <lastmod>2021-02-25T11:53:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/clojure/2020/clj0-diving-straight-in/</loc>
@@ -67,7 +63,7 @@
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/</loc>
-  <lastmod>2021-02-25T11:40:00Z</lastmod>
+  <lastmod>2021-02-25T11:44:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/booleans/</loc>
@@ -84,10 +80,6 @@
  <url>
   <loc>https://j19sch.github.io/categories/cat_quality/</loc>
   <lastmod>2021-02-13T13:13:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/cat_thoughts/</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/clojure/</loc>
