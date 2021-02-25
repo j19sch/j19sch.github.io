@@ -7,170 +7,186 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://j19sch.github.io/</loc>
-  <lastmod>2021-02-15T19:32:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/2020/</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/2021/</loc>
-  <lastmod>2021-02-15T19:32:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/archive.html</loc>
-  <lastmod>2021-02-15T19:49:00Z</lastmod>
+  <lastmod>2021-02-25T11:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/</loc>
-  <lastmod>2021-02-15T19:32:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/2021/choosing-your-value-system/</loc>
-  <lastmod>2021-02-15T19:34:00Z</lastmod>
+  <lastmod>2021-02-25T11:38:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2021/quality-1-value-systems/</loc>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/2021/quality-value-systems/</loc>
-  <lastmod>2021-02-15T19:32:00Z</lastmod>
+  <lastmod>2021-02-13T13:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2021/quality-who-doesnt-want-quality/</loc>
+  <lastmod>2021-02-25T11:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/clojure/2020/clj0-diving-straight-in/</loc>
-  <lastmod>2020-12-26T09:02:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/clojure/2020/clj1-deciding-on-an-editor/</loc>
-  <lastmod>2020-12-26T09:02:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/clojure/2020/clj2-setting-up-vim/</loc>
-  <lastmod>2020-12-26T09:02:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/clojure/2020/clj3-and-or-being-weird/</loc>
-  <lastmod>2020-12-26T09:02:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/clojure/2020/clj4-learning-when-maps-closures/</loc>
-  <lastmod>2020-12-26T09:02:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/clojure/2020/clj5-loop-and-recur-into-and-conj/</loc>
-  <lastmod>2020-12-26T09:02:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/</loc>
-  <lastmod>2021-02-15T19:52:00Z</lastmod>
+  <lastmod>2021-02-25T11:40:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/booleans/</loc>
-  <lastmod>2020-05-17T07:54:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/brave-true/</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/cat_clojure/</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/cat_quality/</loc>
-  <lastmod>2021-02-15T19:32:00Z</lastmod>
+  <lastmod>2021-02-13T13:13:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/cat_thoughts/</loc>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/clojure/</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/closures/</loc>
-  <lastmod>2020-07-31T18:43:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/conj/</loc>
-  <lastmod>2020-12-26T08:52:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/emacs/</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/into/</loc>
-  <lastmod>2020-12-26T08:52:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/koans/</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/loop/</loc>
-  <lastmod>2020-12-22T15:38:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/maps/</loc>
-  <lastmod>2020-07-31T18:43:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/peer-conference/</loc>
-  <lastmod>2021-02-15T19:32:00Z</lastmod>
+  <lastmod>2021-02-13T13:13:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/problems/</loc>
+  <lastmod>2021-02-25T11:40:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/quality/</loc>
-  <lastmod>2021-02-15T19:36:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/recur/</loc>
-  <lastmod>2020-12-22T15:38:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
-  <loc>https://j19sch.github.io/categories/value-system/</loc>
-  <lastmod>2021-02-15T19:35:00Z</lastmod>
+  <loc>https://j19sch.github.io/categories/selling/</loc>
+  <lastmod>2021-02-25T11:40:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/value-systems/</loc>
-  <lastmod>2021-02-15T19:52:00Z</lastmod>
+  <lastmod>2021-02-25T11:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/vim/</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/vscode/</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/when/</loc>
-  <lastmod>2020-07-31T18:43:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-lists/fountain-pens/</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-lists/reading-list/</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-lists/recommended-reading/</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-projects/</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-projects/clojure-vim-cheatsheet/</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-projects/learning-clojure/</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-projects/vimtutor/</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-talks/</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2021-02-13T13:10:00Z</lastmod>
  </url>
 </urlset>

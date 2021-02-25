@@ -3,13 +3,33 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about peer conference)</title>
   <id>https://j19sch.github.io/categories/peer-conference.atom</id>
-  <updated>2021-02-15T19:52:41Z</updated>
+  <updated>2021-02-25T11:43:01Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://j19sch.github.io/categories/peer-conference.atom"/>
   <link rel="alternate" type="text/html" href="https://j19sch.github.io/categories/peer-conference/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Thinking about quality: who doesn't want quality?</title>
+    <id>https://j19sch.github.io/blog/2021/quality-who-doesnt-want-quality/</id>
+    <updated>2021-02-25T12:34:08+01:00</updated>
+    <published>2021-02-25T12:34:08+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2021/quality-who-doesnt-want-quality/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;On 30 January 2021 I participated in the Quality Acceleration Peer Conference organized by Huib Schoots and Joost Voskuil. Participants were &lt;a href="https://twitter.com/alanpage"&gt;Alan Page&lt;/a&gt;, &lt;a href="https://twitter.com/unremarkableQA"&gt;Areti Panou&lt;/a&gt;, &lt;a href="https://twitter.com/northern_tester"&gt;Ash Winter&lt;/a&gt;, &lt;a href="https://twitter.com/btknaack"&gt;Bart Knaack&lt;/a&gt;, &lt;a href="https://twitter.com/conorfi"&gt;Conor Fitzgerald&lt;/a&gt;, &lt;a href="https://twitter.com/roukedejong"&gt;Rouke de Jong&lt;/a&gt;, &lt;a href="https://twitter.com/gwendiagram"&gt;Gwen Diagram&lt;/a&gt;, &lt;a href="https://twitter.com/gdinwiddie"&gt;George Dinwiddie&lt;/a&gt;, &lt;a href="https://twitter.com/janetgregoryca"&gt;Janet Gregory&lt;/a&gt;, &lt;a href="https://twitter.com/joost_voskuil"&gt;Joost Voskuil&lt;/a&gt;, &lt;a href="https://twitter.com/jpjwolli"&gt;Joost van Wollingen&lt;/a&gt;, &lt;a href="https://twitter.com/mmeijeri"&gt;Martijn Meijering&lt;/a&gt;, &lt;a href="https://twitter.com/robmeaney"&gt;Rob Meaney&lt;/a&gt;, &lt;a href="https://twitter.com/vinwijnl"&gt;Vincent Wijnen&lt;/a&gt; - with &lt;a href="https://twitter.com/huibschoots"&gt;Huib Schoots&lt;/a&gt; facilitating the peer conference. The main topics mentioned in the invite were: "How can you sell quality?", "How can you convince people that quality can accelerate software delivery?", and "What limitations or barriers do you hit?"&lt;/p&gt;
+&lt;p&gt;Reflecting during and after our discussions on these topics, I realized there are some interesting things going on about how we talk about quality and how to sell it. Enough interesting things to fill more than one blog post, so this will be a four-part series. And I might expand on some ideas in the series after that.&lt;/p&gt;
+&lt;p&gt;This is the second part. The first one about choosing your value system can be found &lt;a href="https://j19sch.github.io/blog/2021/choosing-your-value-system/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Everyone wants quality, right?&lt;/h3&gt;
+&lt;p&gt;In the previous post I distinguished two definitions of quality. If we proceed with the second and more interesting one, value to a person who matters, I would argue that everyone wants quality and is already doing their best to get it. The alternative would be that some people are not doing their best to get the things they value - which seems absurd to me.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2021/quality-who-doesnt-want-quality/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="peer-conference" label="peer conference"/>
+    <category term="problems" label="problems"/>
+    <category term="quality" label="quality"/>
+    <category term="selling" label="selling"/>
+  </entry>
   <entry>
     <title>Thinking about quality: choosing your value system</title>
     <id>https://j19sch.github.io/blog/2021/choosing-your-value-system/</id>
