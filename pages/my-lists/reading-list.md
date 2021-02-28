@@ -12,6 +12,7 @@ hidetitle: false
 - Practical Ways to Lead an Innovative Organization: Modern Management Made Easy, Book 3 - Johanna Rothman
 - Roundtable on Project Management: A Shape Forum Dialogue  - James Bullock, Marie Benesh, Jerry Weinberg
 - Queen of the Desert, The extraordinary life of Gertrude Bell - Georgina Howell
+- Tegen verkiezingen - David van Reybrouck
 
 
 ### 2020

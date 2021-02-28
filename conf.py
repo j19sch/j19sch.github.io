@@ -146,6 +146,7 @@ NAVIGATION_LINKS = {
             (
                 ("/my-lists/reading-list", "Reading list"),
                 ("/my-lists/recommended-reading", "Recommended reading"),
+                ("/my-lists/favorite-podcasts", "Favorite podcasts"),
                 ("/my-lists/fountain-pens", "Fountain pens"),
             ),
             "Lists"
