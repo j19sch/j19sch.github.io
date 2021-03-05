@@ -10,8 +10,8 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
-<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../../feed.atom">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" href="../../../feed.atom">
 <link rel="canonical" href="https://j19sch.github.io/blog/clojure/2020/clj4-learning-when-maps-closures/">
 <!--[if lt IE 9]><script src="../../../../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script><meta name="author" content="Joep Schuurkes">
 <link rel="prev" href="../clj3-and-or-being-weird/" title="(clj 3) Clojure's 'and' and 'or' are weird (but not really)" type="text/html">
@@ -43,7 +43,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
             </div>
         </div>
           <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
-            <a class="navbar-brand blog-header-logo text-dark" href="../../../../">
+            <a class="navbar-brand blog-header-logo text-dark" href="https://j19sch.github.io/">
 
             <span id="blog-title">Joep Schuurkes</span>
         </a>
@@ -112,22 +112,26 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <h3>Why is there a <code>when</code>?</h3>
 <p>The part about control flow is actually before the part about <code>and</code> and <code>or</code> which I talked about in my <a href="../../../clj3-and-or-being-weird">previous post</a>, but according to my notes I returned to it. I don't remember why to be honest.</p>
 <p>The book provides the following example of <code>when</code>:</p>
-<pre class="code literal-block"><span class="p">(</span><span class="nb">when </span><span class="nv">true</span>
+<pre class="code literal-block"><span></span><span class="p">(</span><span class="nb">when </span><span class="nv">true</span>
     <span class="p">(</span><span class="nb">println </span><span class="s">"Success!"</span><span class="p">)</span>
     <span class="s">"abra cadabra"</span><span class="p">)</span>
 <span class="c1">; =&gt; Success!</span>
 <span class="c1">; =&gt; "abra cadabra"</span>
 </pre>
+
+
 <!-- TEASER_END -->
 
 <p>And if the condition is <code>false</code>, you get:</p>
-<pre class="code literal-block"><span class="p">(</span><span class="nb">when </span><span class="nv">false</span>
+<pre class="code literal-block"><span></span><span class="p">(</span><span class="nb">when </span><span class="nv">false</span>
     <span class="p">(</span><span class="nb">println </span><span class="s">"First do!"</span><span class="p">)</span>
     <span class="s">"By Odin's Elbow!"</span><span class="p">)</span>
 <span class="c1">; =&gt; nil</span>
 </pre>
+
+
 <p>So <code>when</code> allows you to do several things and return something when the condition is <code>true</code>, while it will return <code>nil</code> if the condition is <code>false</code>. The thing that got me curious is that you can do the same thing almost as easily with <code>if</code> and <code>do</code>:</p>
-<pre class="code literal-block"><span class="p">(</span><span class="k">if </span><span class="nv">true</span>
+<pre class="code literal-block"><span></span><span class="p">(</span><span class="k">if </span><span class="nv">true</span>
   <span class="p">(</span><span class="k">do </span><span class="p">(</span><span class="nb">println </span><span class="s">"Success!"</span><span class="p">)</span>
       <span class="s">"abra cadabra"</span><span class="p">)</span>
   <span class="p">)</span>
@@ -140,6 +144,8 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
   <span class="p">)</span>
 <span class="c1">; =&gt; nil</span>
 </pre>
+
+
 <p>I can see two advantages to having the <code>when</code>. It needs fewer characters: two brackets and a space. It's also more readable, since there is no <code>do</code> and no indentation decisions because of that <code>do</code>. Is that enough reason? I honestly don't know, because I haven't written enough Clojure to decide if you use <code>when</code> often enough to make it worth it having it.</p>
 <p>There is another difference, however, which I found out thanks to <a href="https://github.com/tpope/vim-fireplace">vim-fireplace</a>'s <code>K</code> command, which looks up the symbol under the cursor with <code>doc</code>. <code>if</code> and <code>do</code> are Special Forms, while <code>when</code> is a Macro. What difference that makes, I don't know yet. In the section about functions in the same chapter, it does say on page 126:</p>
 <blockquote>
@@ -152,30 +158,38 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <p>I made a note to revisit this when I get to Chapter 7. So one day there should be a link to that post here.</p>
 <h3>Maps</h3>
 <p>With my Python background I had some trouble with the syntax of maps. With keywords being used as keys, they look like this:</p>
-<pre class="code literal-block"><span class="p">{</span><span class="ss">:first-name</span> <span class="s">"Charlie"</span>
+<pre class="code literal-block"><span></span><span class="p">{</span><span class="ss">:first-name</span> <span class="s">"Charlie"</span>
  <span class="ss">:last-name</span> <span class="s">"McFishwich"</span><span class="p">}</span>
 </pre>
+
+
 <p>So the same characters as a Python dictionary but in a different order. This made me appreciate the value of practice. I won't be enjoying writing Clojure if I mess up the syntax of maps every time because of Python muscle memory.</p>
 <p>Practice wasn't without its hurdles, though. When I defined a map and evaluated it like this:</p>
-<pre class="code literal-block"><span class="p">(</span><span class="k">def </span><span class="nv">my-other-map</span> <span class="p">(</span><span class="nb">hash-map </span><span class="ss">:a</span> <span class="mi">100</span> <span class="ss">:b</span> <span class="mi">101</span> <span class="ss">:c</span> <span class="mi">102</span><span class="p">))</span>
+<pre class="code literal-block"><span></span><span class="p">(</span><span class="k">def </span><span class="nv">my-other-map</span> <span class="p">(</span><span class="nb">hash-map </span><span class="ss">:a</span> <span class="mi">100</span> <span class="ss">:b</span> <span class="mi">101</span> <span class="ss">:c</span> <span class="mi">102</span><span class="p">))</span>
 <span class="p">(</span><span class="nf">my-other-map</span><span class="p">)</span>
 </pre>
+
+
 <p>I got the error <code>ArityException Wrong number of args (0) passed to: PersistentArrayMap  clojure.lang.AFn.throwArity (AFn.java:429)</code>. </p>
 <p>Removing ther parantheses around the map's name resulted in:</p>
-<pre class="code literal-block">Error detected while processing function &lt;SNR&gt;48_printop[1]..&lt;SNR&gt;48_opfunc[40]..function &lt;SNR&gt;48_printop[1]..&lt;SNR&gt;48_opfunc:
+<pre class="code literal-block"><span></span>Error detected while processing function &lt;SNR&gt;48_printop[1]..&lt;SNR&gt;48_opfunc[40]..function &lt;SNR&gt;48_printop[1]..&lt;SNR&gt;48_opfunc:
 line   21:
 E20: Mark not set
 E20: Mark not set
 Press ENTER or type command to continue
 </pre>
+
+
 <p>The solution turned out to be to not have the parantheses (so just <code>my-other-map</code> on its own line), but then not use <code>cpp</code> to evaluate the statement, which evaluates the innermost statement, but use <code>cp$</code> (evaluate until end of the line) or <code>cp_</code> (evaluate current line).</p>
 <p>Trying to evaluate the innermost form of a string in parantheses, gave me an impressive error message as well:</p>
-<pre class="code literal-block">ClassCastException class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')  clojure-noob.core/eval6974 (form-init11099437324952859876.clj:5)
+<pre class="code literal-block"><span></span>ClassCastException class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')  clojure-noob.core/eval6974 (form-init11099437324952859876.clj:5)
 </pre>
+
+
 <p>My notes tell me I didn't understand what exactly was going on here. Today, while writing this blog post, I went back in the book to the start of the chapter and there it explains that Clojure recognizes two kinds of structures: literal representations of data structures and operations. All operations take the form of opening parenthesis, operator, operands, closing parenthesis. Me putting the name of my hash map or a string literal in parantheses is neither of those structures, so makes sense I get an error.</p>
 <p>Then for the scope of evaluation, <code>cpp</code> evaluates the innermost form. However I am on a line with just the name of my map, so I'm not sure what it tries to evaluate. Perhaps the whole file? In any case it's not what I want to evaluate, so it's ok that it throws an error instead of working.</p>
 <p>Finally, I was surprised that all these three ways to get a value from a map are part of the language:</p>
-<pre class="code literal-block"><span class="p">(</span><span class="k">def </span><span class="nv">my-map</span> <span class="p">{</span><span class="ss">:a</span> <span class="mi">0</span> <span class="ss">:b</span> <span class="p">{</span><span class="ss">:c</span> <span class="s">"ho hum"</span><span class="p">}})</span>
+<pre class="code literal-block"><span></span><span class="p">(</span><span class="k">def </span><span class="nv">my-map</span> <span class="p">{</span><span class="ss">:a</span> <span class="mi">0</span> <span class="ss">:b</span> <span class="p">{</span><span class="ss">:c</span> <span class="s">"ho hum"</span><span class="p">}})</span>
 
 <span class="p">(</span><span class="nb">get </span><span class="nv">my-map</span> <span class="ss">:a</span><span class="p">)</span>
 <span class="c1">; =&gt; 0</span>
@@ -186,12 +200,14 @@ Press ENTER or type command to continue
 <span class="p">(</span><span class="ss">:a</span> <span class="nv">my-map</span><span class="p">)</span>
 <span class="c1">; =&gt; 0</span>
 </pre>
+
+
 <h3>Functions and returning functions</h3>
 <p>The section about functions ends with the following explanation about returning functions:</p>
 <blockquote>
 <p>By now you’ve seen that functions can return other functions. The returned functions are <em>closures</em>, which means that they can access all the variables that were in scope when the function was created. Here’s a standard example:</p>
 </blockquote>
-<pre class="code literal-block"><span class="p">(</span><span class="nf">defn</span> <span class="nv">inc-maker</span>
+<pre class="code literal-block"><span></span><span class="p">(</span><span class="nf">defn</span> <span class="nv">inc-maker</span>
   <span class="s">"Create a custom incrementor"</span>
   <span class="p">[</span><span class="nv">inc-by</span><span class="p">]</span>
   <span class="o">#</span><span class="p">(</span><span class="nf">+</span> <span class="nv">%</span> <span class="nv">inc-by</span><span class="p">))</span>
@@ -201,6 +217,8 @@ Press ENTER or type command to continue
 <span class="p">(</span><span class="nf">inc3</span> <span class="mi">7</span><span class="p">)</span>
 <span class="c1">; =&gt; 10</span>
 </pre>
+
+
 <blockquote>
 <p>Here, <code>inc-by</code> is in scope, so the returned function has access to it even when the returned function is used outside <code>inc-maker</code>.</p>
 </blockquote>
@@ -254,7 +272,9 @@ decision.</p>
         <script src="../../../../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
     </script>
 </body>
 </html>

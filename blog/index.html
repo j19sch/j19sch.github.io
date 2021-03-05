@@ -11,8 +11,8 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="rss.xml">
-<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="feed.atom">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" href="feed.atom">
 <link rel="canonical" href="https://j19sch.github.io/blog/">
 <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script>
 </head>
@@ -31,7 +31,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
             </div>
         </div>
           <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
-            <a class="navbar-brand blog-header-logo text-dark" href="../">
+            <a class="navbar-brand blog-header-logo text-dark" href="https://j19sch.github.io/">
 
             <span id="blog-title">Joep Schuurkes</span>
         </a>
@@ -165,12 +165,14 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
 <h3>Why is there a <code>when</code>?</h3>
 <p>The part about control flow is actually before the part about <code>and</code> and <code>or</code> which I talked about in my <a href="clj3-and-or-being-weird">previous post</a>, but according to my notes I returned to it. I don't remember why to be honest.</p>
 <p>The book provides the following example of <code>when</code>:</p>
-<pre class="code literal-block"><span class="p">(</span><span class="nb">when </span><span class="nv">true</span>
+<pre class="code literal-block"><span></span><span class="p">(</span><span class="nb">when </span><span class="nv">true</span>
     <span class="p">(</span><span class="nb">println </span><span class="s">"Success!"</span><span class="p">)</span>
     <span class="s">"abra cadabra"</span><span class="p">)</span>
 <span class="c1">; =&gt; Success!</span>
 <span class="c1">; =&gt; "abra cadabra"</span>
 </pre>
+
+
 <p class="more"><a href="clojure/2020/clj4-learning-when-maps-closures/">Read more…</a></p>
 </div>
                 </div>
@@ -191,7 +193,7 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
 <p>Clojure uses the Boolean operators <code>or</code> and <code>and</code>. <code>or</code> returns either the first truthy value or the last value. <code>and</code> returns the first falsey value or, if no values are falsey, the last truthy value.</p>
 </blockquote>
 <p>This explanation is followed by some examples:</p>
-<pre class="code literal-block"><span class="p">(</span><span class="nf">or</span> <span class="nv">false</span> <span class="nv">nil</span> <span class="ss">:large_I_mean_venti</span> <span class="ss">:why_cant_I_just_say_large</span><span class="p">)</span>
+<pre class="code literal-block"><span></span><span class="p">(</span><span class="nf">or</span> <span class="nv">false</span> <span class="nv">nil</span> <span class="ss">:large_I_mean_venti</span> <span class="ss">:why_cant_I_just_say_large</span><span class="p">)</span>
 <span class="c1">; =&gt; :large_I_mean_venti</span>
 
 <span class="p">(</span><span class="nf">or</span> <span class="p">(</span><span class="nf">=</span> <span class="mi">0</span> <span class="mi">1</span><span class="p">)</span> <span class="p">(</span><span class="nf">=</span> <span class="s">"yes"</span> <span class="s">"no"</span><span class="p">))</span>
@@ -200,12 +202,16 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
 <span class="p">(</span><span class="nf">or</span> <span class="nv">nil</span><span class="p">)</span>
 <span class="c1">; =&gt; nil</span>
 </pre>
-<pre class="code literal-block"><span class="p">(</span><span class="nf">and</span> <span class="ss">:free_wifi</span> <span class="ss">:hot_coffee</span><span class="p">)</span>
+
+
+<pre class="code literal-block"><span></span><span class="p">(</span><span class="nf">and</span> <span class="ss">:free_wifi</span> <span class="ss">:hot_coffee</span><span class="p">)</span>
 <span class="c1">; =&gt; :hot_coffee</span>
 
 <span class="p">(</span><span class="nf">and</span> <span class="ss">:feelin_super_cool</span> <span class="nv">nil</span> <span class="nv">false</span><span class="p">)</span>
 <span class="c1">; =&gt; nil</span>
 </pre>
+
+
 <p>What I found remarkable about this is that <code>and</code> and <code>or</code> do not return a boolean in all cases. Before I go into that, let's back up a second and cover their basics in a little more depth first.</p>
 <p class="more"><a href="clojure/2020/clj3-and-or-being-weird/">Read more…</a></p>
 </div>
@@ -288,7 +294,9 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
         <script src="../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
     </script>
 </body>
 </html>

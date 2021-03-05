@@ -13,6 +13,8 @@ hidetitle: false
 - Roundtable on Project Management: A Shape Forum Dialogue  - James Bullock, Marie Benesh, Jerry Weinberg
 - Queen of the Desert, The extraordinary life of Gertrude Bell - Georgina Howell
 - Tegen verkiezingen - David van Reybrouck
+- Kitchen Confidential, Adventures in the Culinary Underbelly - Anthony Bourdain
+- Agile Conversations, Transform Your Conversations, Transform Your Culture - Douglas Squirrel and Jeffrey Fredrick
 
 
 ### 2020
