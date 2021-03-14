@@ -1,6 +1,6 @@
 <!--
-.. title: Thinking about quality: management paradigms affecting quality
-.. slug: management-paradigms-affecting-quality
+.. title: Thinking about quality: management paradigms and quality
+.. slug: management-paradigms-and-quality
 .. date: 2021-03-14 14:34:08 UTC+01:00
 .. tags: peer conference, quality, management, paradigms
 .. category: quality
