@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about peer conference)</title>
   <id>https://j19sch.github.io/categories/peer-conference.atom</id>
-  <updated>2021-03-15T08:23:01Z</updated>
+  <updated>2021-03-15T09:17:47Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -11,10 +11,10 @@
   <link rel="alternate" type="text/html" href="https://j19sch.github.io/categories/peer-conference/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
-    <title>Thinking about quality: management paradigms and quality</title>
+    <title>Thinking about quality:&lt;br&gt;management paradigms and quality</title>
     <id>https://j19sch.github.io/blog/2021/management-paradigms-and-quality/</id>
-    <updated>2021-03-15T08:34:08+01:00</updated>
-    <published>2021-03-15T08:34:08+01:00</published>
+    <updated>2021-03-15T09:32:08+01:00</updated>
+    <published>2021-03-15T09:32:08+01:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>

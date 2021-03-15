@@ -46,16 +46,8 @@
   <lastmod>2021-03-14T14:45:00Z</lastmod>
  </url>
  <url>
-  <loc>https://j19sch.github.io/blog/2020/learning-clojure-a-blog-post-series/</loc>
-  <lastmod>2021-03-14T14:52:00Z</lastmod>
- </url>
- <url>
   <loc>https://j19sch.github.io/blog/2021/choosing-your-value-system/</loc>
   <lastmod>2021-02-15T19:34:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/2021/management-paradigms-affecting-quality/</loc>
-  <lastmod>2021-03-14T14:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/2021/management-paradigms-and-quality/</loc>
@@ -95,7 +87,7 @@
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/</loc>
-  <lastmod>2021-03-14T16:13:00Z</lastmod>
+  <lastmod>2021-03-15T08:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/booleans/</loc>
@@ -146,10 +138,6 @@
   <lastmod>2021-03-14T16:05:00Z</lastmod>
  </url>
  <url>
-  <loc>https://j19sch.github.io/categories/documentation/</loc>
-  <lastmod>2021-03-14T16:13:00Z</lastmod>
- </url>
- <url>
   <loc>https://j19sch.github.io/categories/emacs/</loc>
   <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
@@ -160,10 +148,6 @@
  <url>
   <loc>https://j19sch.github.io/categories/koans/</loc>
   <lastmod>2020-05-09T07:30:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/categories/learning/</loc>
-  <lastmod>2021-03-14T14:52:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/loop/</loc>
