@@ -7,6 +7,14 @@ p {
   font-family: 'News Cycle', sans-serif;
 }
 
+div.container {
+  max-width: 1000px;
+}
+
+div.container#content {
+  max-width: 960px;
+}
+
 div .flex {
   display:flex;
   flex-wrap:nowrap;
