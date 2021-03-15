@@ -62,12 +62,14 @@ div .smaller {
 
 .body-content h3 {
   font-size: 1.7rem;
-  margin-top: 1.3rem;
-  margin-bottom: 0.3rem;
+  margin-top: 1.7rem;
+  margin-bottom: 0.5rem;
 }
 
 .body-content h4 {
   font-size: 1.4rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.2rem;
 }
 
 .body-content h5 {

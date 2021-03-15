@@ -15,6 +15,7 @@ hidetitle: false
 - Tegen verkiezingen - David van Reybrouck
 - Kitchen Confidential, Adventures in the Culinary Underbelly - Anthony Bourdain
 - Agile Conversations, Transform Your Conversations, Transform Your Culture - Douglas Squirrel and Jeffrey Fredrick
+- The Freedom the be Free - Hannah Arendt
 
 
 ### 2020

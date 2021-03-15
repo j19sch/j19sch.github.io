@@ -7,182 +7,318 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://j19sch.github.io/blog/feed.atom</loc>
-  <lastmod>2021-02-25T11:43:00Z</lastmod>
+  <lastmod>2021-03-15T08:23:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/blog/rss.xml</loc>
-  <lastmod>2021-02-25T11:53:00Z</lastmod>
+  <lastmod>2021-03-15T08:23:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/booleans.atom</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/booleans.xml</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/brave-true.atom</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/brave-true.xml</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_clojure.atom</loc>
-  <lastmod>2021-02-13T13:13:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_clojure.xml</loc>
-  <lastmod>2021-02-13T13:13:00Z</lastmod>
+  <lastmod>2020-12-26T09:11:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/cat_devops.atom</loc>
+  <lastmod>2021-03-14T16:08:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/cat_devops.xml</loc>
+  <lastmod>2021-03-14T16:28:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/cat_programming.atom</loc>
+  <lastmod>2021-03-14T17:02:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/cat_programming.xml</loc>
+  <lastmod>2021-03-14T17:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_quality.atom</loc>
-  <lastmod>2021-02-25T11:43:00Z</lastmod>
+  <lastmod>2021-03-15T08:23:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_quality.xml</loc>
-  <lastmod>2021-02-25T11:53:00Z</lastmod>
+  <lastmod>2021-03-15T08:23:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/cat_test-management.atom</loc>
+  <lastmod>2021-03-14T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/cat_test-management.xml</loc>
+  <lastmod>2021-03-14T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/cicd.atom</loc>
+  <lastmod>2021-03-14T16:08:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/cicd.xml</loc>
+  <lastmod>2021-03-14T16:28:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/clojure.atom</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2021-03-14T14:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/clojure.xml</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2021-03-14T14:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/closures.atom</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/closures.xml</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/conj.atom</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/conj.xml</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:11:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/devops.atom</loc>
+  <lastmod>2021-03-14T16:08:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/devops.xml</loc>
+  <lastmod>2021-03-14T16:28:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/documentation.atom</loc>
+  <lastmod>2021-03-14T16:21:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/documentation.xml</loc>
+  <lastmod>2021-03-14T16:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/emacs.atom</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/emacs.xml</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/into.atom</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/into.xml</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/koans.atom</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/koans.xml</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/learning.atom</loc>
+  <lastmod>2021-03-14T14:53:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/learning.xml</loc>
+  <lastmod>2021-03-14T14:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/loop.atom</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/loop.xml</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:11:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/management.atom</loc>
+  <lastmod>2021-03-14T14:54:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/management.xml</loc>
+  <lastmod>2021-03-15T08:23:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/maps.atom</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/maps.xml</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/paradigms.atom</loc>
+  <lastmod>2021-03-14T14:54:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/paradigms.xml</loc>
+  <lastmod>2021-03-15T08:23:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/peer-conference.atom</loc>
-  <lastmod>2021-02-25T11:43:00Z</lastmod>
+  <lastmod>2021-03-15T08:23:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/peer-conference.xml</loc>
-  <lastmod>2021-02-25T11:53:00Z</lastmod>
+  <lastmod>2021-03-15T08:23:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/problems.atom</loc>
-  <lastmod>2021-02-25T11:43:00Z</lastmod>
+  <lastmod>2021-03-14T14:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/problems.xml</loc>
-  <lastmod>2021-02-25T11:53:00Z</lastmod>
+  <lastmod>2021-03-14T14:45:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/programming.atom</loc>
+  <lastmod>2021-03-14T17:02:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/programming.xml</loc>
+  <lastmod>2021-03-14T17:02:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/python.atom</loc>
+  <lastmod>2021-03-14T17:02:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/python.xml</loc>
+  <lastmod>2021-03-14T17:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/quality.atom</loc>
-  <lastmod>2021-02-25T11:43:00Z</lastmod>
+  <lastmod>2021-03-15T08:23:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/quality.xml</loc>
-  <lastmod>2021-02-25T11:53:00Z</lastmod>
+  <lastmod>2021-03-15T08:23:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/recur.atom</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/recur.xml</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:11:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/regression-testing.atom</loc>
+  <lastmod>2021-03-14T16:08:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/regression-testing.xml</loc>
+  <lastmod>2021-03-14T16:28:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/selling.atom</loc>
-  <lastmod>2021-02-25T11:43:00Z</lastmod>
+  <lastmod>2021-03-14T14:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/selling.xml</loc>
-  <lastmod>2021-02-25T11:53:00Z</lastmod>
+  <lastmod>2021-03-14T14:45:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/semantics.atom</loc>
+  <lastmod>2021-03-14T16:28:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/semantics.xml</loc>
+  <lastmod>2021-03-14T16:28:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/test-automation.atom</loc>
+  <lastmod>2021-03-14T16:08:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/test-automation.xml</loc>
+  <lastmod>2021-03-14T16:28:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/test-cases.atom</loc>
+  <lastmod>2021-03-14T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/test-cases.xml</loc>
+  <lastmod>2021-03-14T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/test-management.atom</loc>
+  <lastmod>2021-03-14T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/test-management.xml</loc>
+  <lastmod>2021-03-14T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/tools.atom</loc>
+  <lastmod>2021-03-14T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/tools.xml</loc>
+  <lastmod>2021-03-14T16:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/value-systems.atom</loc>
-  <lastmod>2021-02-25T11:38:00Z</lastmod>
+  <lastmod>2021-03-14T14:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/value-systems.xml</loc>
-  <lastmod>2021-02-25T11:38:00Z</lastmod>
+  <lastmod>2021-03-14T14:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/vim.atom</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/vim.xml</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/vscode.atom</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/vscode.xml</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/when.atom</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/when.xml</loc>
-  <lastmod>2021-02-13T13:10:00Z</lastmod>
+  <lastmod>2020-12-26T09:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/sitemap.xml</loc>
-  <lastmod>2021-03-05T08:13:00Z</lastmod>
+  <lastmod>2021-03-15T08:23:00Z</lastmod>
  </sitemap>
 </sitemapindex>

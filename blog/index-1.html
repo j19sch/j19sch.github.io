@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="joep's site">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joep Schuurkes (old posts, page 1) | Joep Schuurkes</title>
+<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="feed.atom">
+<link rel="canonical" href="https://j19sch.github.io/blog/index-1.html">
+<link rel="prev" href="." type="text/html">
+<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script>
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../my-projects" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../my-talks" class="nav-link">Talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lists</a>
+            <div class="dropdown-menu">
+                    <a href="../my-lists/reading-list" class="dropdown-item">Reading list</a>
+                    <a href="../my-lists/recommended-reading" class="dropdown-item">Recommended reading</a>
+                    <a href="../my-lists/favorite-podcasts" class="dropdown-item">Favorite podcasts</a>
+                    <a href="../my-lists/fountain-pens" class="dropdown-item">Fountain pens</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../blog" class="dropdown-item">My blog</a>
+                    <a href="../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="rss.xml" class="dropdown-item">RSS feed</a>
+                    <a href="feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+    <div class="postindex">
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2019/getting-name-from-name-name-in-python-an-engineering-problem/" class="u-url">Getting [name] from "Name: [name]" in Python - an engineering problem</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2019/getting-name-from-name-name-in-python-an-engineering-problem/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-08-26T21:27:38+02:00" itemprop="datePublished" title="26 August 2019">26 August 2019</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Today I was presented with an interesting engineering problem. (Important later: context was the code of an auto-test.) Given a string of the format "Name: [name]", what's the best way to get the [name] in Python?</p>
+<p>There are several options:</p>
+<ul>
+<li><code>lstrip()</code></li>
+<li><code>split()</code></li>
+<li><code>replace()</code></li>
+<li>string slicing</li>
+<li>regex</li>
+</ul>
+<p>So let's look at each of them and then I'll explain which one I prefer and why. All examples are in Python 3.6, using the <a href="https://docs.python.org/3.6/tutorial/interpreter.html">Python Interpreter</a>.</p>
+<p class="more"><a href="2019/getting-name-from-name-name-in-python-an-engineering-problem/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2019/your-ci-cd-pipeline-does-not-run-regression-tests/" class="u-url">Your CI/CD pipeline does not run regression tests</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2019/your-ci-cd-pipeline-does-not-run-regression-tests/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-08-05T23:47:51+02:00" itemprop="datePublished" title="5 August 2019">5 August 2019</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<h3>CI/CD pipelines</h3>
+<p>The purpose of a CI/CD pipeline is to allow you to deliver small changes in a fast and controlled way. Without any tests in your pipeline you would gain a lot of speed. You'd also lose a lot control, which is why people in general do run tests in their pipeline. The purpose of these tests is to check if that stage of the pipeline meets the minimum level of acceptable quality for that stage.</p>
+<p>For example, commit stage tests will consist of mostly unit tests, a few integration tests, and even fewer end-to-end tests, because early in the pipeline speed is more important than comprehensiveness. When I commit my changes, I want the results fast enough so that I will wait for them - ready to fix any issue that might occur.</p>
+<h3>Regression testing</h3>
+<p>There are many definitions of regression testing, as you can read in <a href="https://arborosa.org/2015/07/31/regression-testing/">Arborosa's blog post on the topic</a>. I have always defined regression testing along the lines of "testing the parts that weren't impacted by a change to see if they really weren't impacted." (Which is really weird if you start thinking about it: something is regression testing depending on your knowledge of the system and the change.)</p>
+<h3>The tests in your pipeline are regression tests, …</h3>
+<p>Most of the tests that run in your pipeline are regression tests. Your commits are small and you have a lot of tests, so most of those will cover parts of the system that shouldn't have been impacted by your changes. So yes, regression tests.</p>
+<p class="more"><a href="2019/your-ci-cd-pipeline-does-not-run-regression-tests/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2019/how-this-tester-writes-code/" class="u-url">How this tester writes code</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2019/how-this-tester-writes-code/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-06-08T18:21:38+02:00" itemprop="datePublished" title="8 June 2019">8 June 2019</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>A long time ago (March 2015) I wrote a post titled "<a href="https://testingcurve.wordpress.com/2015/03/24/test-automation-five-questions-leading-to-five-heuristics/">Test automation - five questions leading to five heuristics</a>". Later that year <a href="https://twitter.com/richrtesting">Rich Rogers</a> asked for a follow-up. To which I replied I should do a follow-up post (ahum) "soon".
+Then last Wednesday <a href="https://twitter.com/noahsussman">Noah Sussman</a> said on <a href="https://twitter.com/noahsussman/status/1136288062651142149">twitter</a>: <em>'I don't know that I've *ever* seen "this is how testers write code"'</em>. To which I replied "challenge accepted", so now here we are, me writing a blog post about how I as a tester write code.</p>
+<p>The format of this post turned out to be advice based on my experiences, so the usual disclaimers apply. And feel free to leave a comment if you have any feedback!</p>
+<h3>The basics</h3>
+<h4>use an IDE</h4>
+<p>An IDE is not just an advanced text editor. It understands your code - to a degree, since it's not interpreting, compiling or executing the code. So not only allows an IDE you to manipulate your code as text, it also allows you to manipulate your code as code.</p>
+<p class="more"><a href="2019/how-this-tester-writes-code/">Read more…</a></p>
+</div>
+                </div>
+            </article>
+</div>
+            <ul class="pager postindexpager clearfix">
+<li class="previous"><a href="." rel="prev">Newer posts</a></li>
+        </ul>
+<!--End of body content--><footer id="footer">
+            Contents © 2021     
+<a href="http://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a>
+    <a href="mailto:j19sch@gmail.com">Joep Schuurkes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Getting [name] from "Name: [name]" in Python - an engineering problem | Joep Schuurkes</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../feed.atom">
+<link rel="canonical" href="https://j19sch.github.io/blog/2019/getting-name-from-name-name-in-python-an-engineering-problem/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../your-ci-cd-pipeline-does-not-run-regression-tests/" title="Your CI/CD pipeline does not run regression tests" type="text/html">
+<link rel="next" href="../../clojure/2020/clj0-diving-straight-in/" title="(clj 0) Diving straight in with some koans" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content='Getting [name] from "Name: [name]" in Python - an engineering problem'>
+<meta property="og:url" content="https://j19sch.github.io/blog/2019/getting-name-from-name-name-in-python-an-engineering-problem/">
+<meta property="og:description" content="Today I was presented with an interesting engineering problem. (Important later: context was the code of an auto-test.) Given a string of the format &quot;Name: [name]&quot;, what's the best way to get the [nam">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2019-08-26T21:27:38+02:00">
+<meta property="article:tag" content="programming">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="semantics">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-projects" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-talks" class="nav-link">Talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../../my-lists/reading-list" class="dropdown-item">Reading list</a>
+                    <a href="../../../my-lists/recommended-reading" class="dropdown-item">Recommended reading</a>
+                    <a href="../../../my-lists/favorite-podcasts" class="dropdown-item">Favorite podcasts</a>
+                    <a href="../../../my-lists/fountain-pens" class="dropdown-item">Fountain pens</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../../blog" class="dropdown-item">My blog</a>
+                    <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="../../rss.xml" class="dropdown-item">RSS feed</a>
+                    <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Getting [name] from "Name: [name]" in Python - an engineering problem</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2019-08-26T21:27:38+02:00" itemprop="datePublished" title="26 August 2019">26 August 2019</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>Today I was presented with an interesting engineering problem. (Important later: context was the code of an auto-test.) Given a string of the format "Name: [name]", what's the best way to get the [name] in Python?</p>
+<p>There are several options:</p>
+<ul>
+<li><code>lstrip()</code></li>
+<li><code>split()</code></li>
+<li><code>replace()</code></li>
+<li>string slicing</li>
+<li>regex</li>
+</ul>
+<p>So let's look at each of them and then I'll explain which one I prefer and why. All examples are in Python 3.6, using the <a href="https://docs.python.org/3.6/tutorial/interpreter.html">Python Interpreter</a>.</p>
+<!-- TEASER_END -->
+
+<h3>lstrip()</h3>
+<pre class="code literal-block"><span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span> <span class="o">=</span> <span class="s2">"Name: this-is-the-name"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s2">"Name: "</span><span class="p">)</span>
+<span class="s1">'this-is-the-name'</span>
+</pre>
+<p>That seems to work until we try a different string:</p>
+<pre class="code literal-block"><span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span> <span class="o">=</span> <span class="s2">"Name: a name"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s2">"Name: "</span><span class="p">)</span>
+<span class="s1">'name'</span>
+</pre>
+<p>This may seem weird, but <code>lstrip()</code> is doing exactly <a href="https://docs.python.org/3.6/library/stdtypes.html#str.lstrip">what it says it will do</a>: "The chars argument is not a prefix; rather, all combinations of its values are stripped." So it will continue stripping until it encounters the first character that doesn't match any character in the string we gave to <code>lstrip()</code>.</p>
+<p>To fix that, we can do:</p>
+<pre class="code literal-block"><span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span> <span class="o">=</span> <span class="s2">"Name: a name"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s2">"Name:"</span><span class="p">)</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span>
+<span class="s1">'a name'</span>
+</pre>
+<p>Where the first <code>lstrip()</code> won't get beyond the space and the second <code>lstrip()</code> will get rid of that space for us.</p>
+<h3>split()</h3>
+<pre class="code literal-block"><span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span> <span class="o">=</span> <span class="s2">"Name: this-is-the-name"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">":"</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span>
+<span class="s1">'this-is-the-name'</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span> <span class="o">=</span> <span class="s2">"Name: a name"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">":"</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span>
+<span class="s1">'a name'</span>
+</pre>
+<p>The <code>split()</code> method will <a href="https://docs.python.org/3.6/library/stdtypes.html#str.split">split the string</a> on the colon (:) into a list with two items. We get the second item with the <code>[1]</code> (list indices start at 0). We strip off the leading space.</p>
+<h3>replace()</h3>
+<pre class="code literal-block"><span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span> <span class="o">=</span> <span class="s2">"Name: this-is-the-name"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"Name: "</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="s1">'this-is-the-name'</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span> <span class="o">=</span> <span class="s2">"Name: a name"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"Name: "</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="s1">'a name'</span>
+</pre>
+<p>The <code>replace()</code> method replaces parts of a string. So here we replace "Name: " with an empty string - deleting it. The '1' argument at the end tells <code>replace()</code> to only replace the first occurrence:</p>
+<pre class="code literal-block"><span class="o">&gt;&gt;&gt;</span> <span class="n">too_many</span> <span class="o">=</span> <span class="s2">"Name: more Name: please"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">too_many</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"Name: "</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span>
+<span class="s1">'more please'</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">too_many</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"Name: "</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="s1">'more Name: please'</span>
+</pre>
+<h3>string slicing</h3>
+<p>Python allows you to grab slices from a string similar to what you do from a list (as we did for the <code>split()</code> above).</p>
+<pre class="code literal-block"><span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span> <span class="o">=</span> <span class="s2">"Name: this-is-the-name"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span><span class="p">[</span><span class="mi">6</span><span class="p">:]</span>
+<span class="s1">'this-is-the-name'</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span> <span class="o">=</span> <span class="s2">"Name: a name"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span><span class="p">[</span><span class="mi">6</span><span class="p">:]</span>
+<span class="s1">'a name'</span>
+</pre>
+<p>The number before the colon tells Python where to start, the one after the colon where to end. So <code>[6:]</code> means to start after the 6th character (or rather from index 6, since indices start at 0) and continue until the end of the string (because no number was given).</p>
+<h3>regex</h3>
+<pre class="code literal-block"><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">re</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">regex</span> <span class="o">=</span> <span class="s2">"(^Name: )(.+)"</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span> <span class="o">=</span> <span class="s2">"Name: this-is-the-name"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">regex</span><span class="p">,</span> <span class="n">our_string</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="s1">'this-is-the-name'</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span> <span class="o">=</span> <span class="s2">"Name: a name"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">regex</span><span class="p">,</span> <span class="n">our_other_string</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="s1">'a name'</span>
+</pre>
+<p>The regular expression is defined in the <code>regex</code> variable. It describes a string that starts with "Name: " and is followed by at least one other character. The parentheses define groups, which we'll use to get the part we're interested in, i.e. the part after "Name: ".</p>
+<p><code>match()</code> will return a <a href="https://docs.python.org/3.6/library/re.html#match-objects">match object</a> if zero or more characters at the beginning of the string <a href="https://docs.python.org/3.6/library/re.html#re.match">match</a> the regular expression pattern. Which means we don't actually need the '^' at the start of our regex to only match the start of the string.</p>
+<p><code>group()</code> will return <a href="https://docs.python.org/3.6/library/re.html#re.match.group">one or more subgroups</a> of the match. The zeroth group is the entire match. Thanks to the parentheses in our regex definition we also have a first group ("Name: ") and a second group (the thing we're after).</p>
+<h3>which one to use</h3>
+<p>Going through the options they all have disadvantages:</p>
+<ul>
+<li>
+<code>lstrip()</code> strips characters not strings, but we want to strip a certain string.</li>
+<li>
+<code>split()</code> returns two things of which we need only one after we have <code>lstrip()</code>-ed it.</li>
+<li>
+<code>replace()</code> returns a changed copy of a string, while we just want to parse the original string.</li>
+<li>string slicing ditches the first 6 characters not caring what they are.</li>
+<li>regex feels like a bit too much.</li>
+</ul>
+<p>However, two of them have a distinct advantage over the others.</p>
+<p>As I said in the introduction, the context of this problem was the code of an auto-test. More specifically, the "Name: [name]" is returned by Selenium WebDriver as the content of an html tag. So without knowing or seeing the application, just from reading the code that retrieves the content of the tag, you have no idea what this string is that we are manipulating.</p>
+<p>So that's the first thing we want from our solution: it should give as much information about the string we are manipulating as possible. This means that <code>split()</code> and string slicing are not an option. The <code>split()</code> solution only tells you there's a colon followed by a whitespace in the string. The string slicing solution only tells you there are at least 7 characters in the string.</p>
+<p>Secondly, the solution should capture our intention as clearly as possible, which is getting the [name] from the string "Name: [name]". That means <code>lstrip()</code> is out, because it strips characters, not a specific string.</p>
+<p>You could argue something similar for <code>replace()</code>, since the "replace with empty string" is a somewhat clever hack to use something intended for editing to retrieve a specific part of a string. On the other hand, the code is clear enough - unlike <code>lstrip()</code> where the characters-not-string might become a bit of a surprise down the line.</p>
+<p>So basically we're left with <code>replace()</code> and regex. At the office we hadn't figured out that <code>replace()</code> has a count argument, so based on ‘But what if there's a "Name: " in the content of the tag?', we went with the regex solution. Regardless, I still think that the regex solution is the clearest one.</p>
+<h3>conclusion</h3>
+<p>The <a href="https://www.python.org/dev/peps/pep-0020/">Zen of Python</a> states: "Explicit is better than implicit." This one sentence is the reason I can write a whole blog post about what the best way is to get [name] from "Name: [name]". Code being explicit about what it's doing and what it is trying to do, matters. The more explicit it is, the better it can serve as documentation.</p>
+<p>But what if you have to choose? The regex solution is indeed the clearest - assuming you know some regex, that is. So the solution that's most explicit about what the string is and what our intentions with it are, is the least explicit about how it does what it does. (Also, if you have trouble understanding what it does, it will be hard to determine the intentions behind the code.) So what now?</p>
+<p>Personally I will always trade the code being less explicit about what it does for being more explicit about the thing-under-test and what my intentions are. Because figuring out what the thing-under-test exactly does and what someone's intentions were, are hard things to do. Learning some new things about a programming language or tool, significantly less so - even if it's regex.</p>
+<hr>
+<p><em>This post was originally published <a href="https://testingcurve.wordpress.com/2019/08/26/getting-name-from-name-name-in-python-an-engineering-problem/">here</a>.</em></p>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/programming/" rel="tag">programming</a></li>
+            <li><a class="tag p-category" href="../../../categories/python/" rel="tag">python</a></li>
+            <li><a class="tag p-category" href="../../../categories/semantics/" rel="tag">semantics</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../your-ci-cd-pipeline-does-not-run-regression-tests/" rel="prev" title="Your CI/CD pipeline does not run regression tests">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../../clojure/2020/clj0-diving-straight-in/" rel="next" title="(clj 0) Diving straight in with some koans">Next post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2021     
+<a href="http://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a>
+    <a href="mailto:j19sch@gmail.com">Joep Schuurkes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

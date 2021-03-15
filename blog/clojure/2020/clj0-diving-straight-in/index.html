@@ -10,10 +10,11 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
-<link rel="alternate" type="application/atom+xml" title="Atom" href="../../../feed.atom">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../../feed.atom">
 <link rel="canonical" href="https://j19sch.github.io/blog/clojure/2020/clj0-diving-straight-in/">
 <!--[if lt IE 9]><script src="../../../../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../../../2019/getting-name-from-name-name-in-python-an-engineering-problem/" title='Getting [name] from "Name: [name]" in Python - an engineering problem' type="text/html">
 <link rel="next" href="../clj1-deciding-on-an-editor/" title="(clj 1) Deciding on a Clojure editor" type="text/html">
 <meta property="og:site_name" content="Joep Schuurkes">
 <meta property="og:title" content="(clj 0) Diving straight in with some koans">
@@ -41,7 +42,7 @@ A long time ago (meaning I don't remember when but it's been a while) I learned 
             </div>
         </div>
           <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
-            <a class="navbar-brand blog-header-logo text-dark" href="https://j19sch.github.io/">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../../">
 
             <span id="blog-title">Joep Schuurkes</span>
         </a>
@@ -127,7 +128,10 @@ A long time ago (meaning I don't remember when but it's been a while) I learned 
             <li><a class="tag p-category" href="../../../../categories/koans/" rel="tag">koans</a></li>
         </ul>
 <ul class="pager hidden-print">
-<li class="next">
+<li class="previous">
+                <a href="../../../2019/getting-name-from-name-name-in-python-an-engineering-problem/" rel="prev" title='Getting [name] from "Name: [name]" in Python - an engineering problem'>Previous post</a>
+            </li>
+            <li class="next">
                 <a href="../clj1-deciding-on-an-editor/" rel="next" title="(clj 1) Deciding on a Clojure editor">Next post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer">
@@ -143,9 +147,7 @@ A long time ago (meaning I don't remember when but it's been a while) I learned 
         <script src="../../../../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>
