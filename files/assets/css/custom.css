@@ -38,6 +38,12 @@ div .indent-left {
 	margin: 10px 10px 10px 10px;
 }
 
+/*figcaption {
+  text-align: center!important;
+  font-style: italic;
+  font-size: 0.95rem;
+}*/
+
 p + ul {  
    margin-top: -0.9rem;
 }
@@ -63,6 +69,10 @@ div .smaller {
 	padding-left: 0px;
 }
 
+/*.body-content h1 {
+  font-size: 2.5rem;
+}*/
+
 .body-content h2 {
   font-size: 2.2rem;
   margin-bottom: 1.2rem;
@@ -77,7 +87,7 @@ div .smaller {
 .body-content h4 {
   font-size: 1.4rem;
   margin-top: 0.7rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.3rem;
 }
 
 .body-content h5 {
