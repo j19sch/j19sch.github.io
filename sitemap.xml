@@ -23,7 +23,7 @@
  </url>
  <url>
   <loc>https://j19sch.github.io/archive.html</loc>
-  <lastmod>2021-03-15T08:23:00Z</lastmod>
+  <lastmod>2021-03-21T15:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/</loc>
@@ -36,6 +36,14 @@
  <url>
   <loc>https://j19sch.github.io/blog/2019/how-this-tester-writes-code/</loc>
   <lastmod>2021-03-14T16:28:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2019/solving-black-box-puzzle-31-with-data-analysis/</loc>
+  <lastmod>2021-03-21T14:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2019/test-strategy-primer/</loc>
+  <lastmod>2021-03-21T15:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/2019/your-ci-cd-pipeline-does-not-run-regression-tests/</loc>
@@ -83,11 +91,19 @@
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/index-1.html</loc>
-  <lastmod>2021-03-15T08:23:00Z</lastmod>
+  <lastmod>2021-03-21T15:33:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/</loc>
-  <lastmod>2021-03-15T08:38:00Z</lastmod>
+  <lastmod>2021-03-21T15:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/automation/</loc>
+  <lastmod>2021-03-21T14:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/black-box-puzzle/</loc>
+  <lastmod>2021-03-21T14:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/booleans/</loc>
@@ -106,6 +122,10 @@
   <lastmod>2021-03-14T16:05:00Z</lastmod>
  </url>
  <url>
+  <loc>https://j19sch.github.io/categories/cat_exploration/</loc>
+  <lastmod>2021-03-21T14:51:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://j19sch.github.io/categories/cat_programming/</loc>
   <lastmod>2021-03-14T14:52:00Z</lastmod>
  </url>
@@ -116,6 +136,10 @@
  <url>
   <loc>https://j19sch.github.io/categories/cat_test-management/</loc>
   <lastmod>2021-03-14T14:45:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/cat_test-strategy/</loc>
+  <lastmod>2021-03-21T15:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/cicd/</loc>
@@ -134,12 +158,24 @@
   <lastmod>2020-12-26T08:52:00Z</lastmod>
  </url>
  <url>
+  <loc>https://j19sch.github.io/categories/context-driven-testing/</loc>
+  <lastmod>2021-03-21T15:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/data-analysis/</loc>
+  <lastmod>2021-03-21T14:23:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://j19sch.github.io/categories/devops/</loc>
   <lastmod>2021-03-14T16:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/emacs/</loc>
   <lastmod>2020-05-09T07:30:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/exploration/</loc>
+  <lastmod>2021-03-21T14:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/into/</loc>
@@ -212,6 +248,10 @@
  <url>
   <loc>https://j19sch.github.io/categories/test-management/</loc>
   <lastmod>2021-03-14T14:45:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/test-strategy/</loc>
+  <lastmod>2021-03-21T15:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/tools/</loc>

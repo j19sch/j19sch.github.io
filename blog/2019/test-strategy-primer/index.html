@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test strategy primer | Joep Schuurkes</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../feed.atom">
+<link rel="canonical" href="https://j19sch.github.io/blog/2019/test-strategy-primer/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="next" href="../solving-black-box-puzzle-31-with-data-analysis/" title="Solving Black Box Puzzle 31 with data analysis" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="Test strategy primer">
+<meta property="og:url" content="https://j19sch.github.io/blog/2019/test-strategy-primer/">
+<meta property="og:description" content="I originally wrote this primer to share with people at work. The first section is intended to be generally applicable; the second not necessarily so. The main influences on this primer are:
+- Rapid So">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2019-01-29T21:34:19+01:00">
+<meta property="article:tag" content="context-driven testing">
+<meta property="article:tag" content="test management">
+<meta property="article:tag" content="test strategy">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-projects" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-talks" class="nav-link">Talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../../my-lists/reading-list" class="dropdown-item">Reading list</a>
+                    <a href="../../../my-lists/recommended-reading" class="dropdown-item">Recommended reading</a>
+                    <a href="../../../my-lists/favorite-podcasts" class="dropdown-item">Favorite podcasts</a>
+                    <a href="../../../my-lists/fountain-pens" class="dropdown-item">Fountain pens</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../../blog" class="dropdown-item">My blog</a>
+                    <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="../../rss.xml" class="dropdown-item">RSS feed</a>
+                    <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Test strategy primer</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2019-01-29T21:34:19+01:00" itemprop="datePublished" title="29 January 2019">29 January 2019</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p><em>I originally wrote this primer to share with people at work. The first section is intended to be generally applicable; the second not necessarily so. The main influences on this primer are:</em><br><em>- Rapid Software Testing's <a href="https://www.satisfice.com/tools/htsm.pdf">Heuristic Test Strategy Model</a></em><br><em>- James Lyndsay's <a href="http://www.workroom-productions.com/papers/Exploration%20and%20Strategy.pdf">Why Exploration has a place in any Strategy</a></em><br><em>- Rikard Edgren's <a href="http://www.thetesteye.com/papers/TheLittleBlackBookOnTestDesign.pdf">Little Black Book on Test Design</a></em></p>
+<p>This document contains two sections:</p>
+<ul>
+<li>Why have a test strategy? - what is a test strategy and what's its purpose</li>
+<li>Test strategy checklist - checklist for describing your test strategy</li>
+</ul>
+<h3>Why have a test strategy?</h3>
+<p>The purpose of a test strategy is to answer the question: "How do we know that what we are building, is good enough?" As such, every team has a test strategy, even if it's only implicitly defined through the actions of the team members.</p>
+<!-- TEASER_END -->
+
+<p>The value of documenting your test strategy is to create an explicit shared understanding of your strategy among your stakeholders (that includes you as team members) . So your test strategy document should be a living document, a tool that helps you deliver software better.</p>
+<p>A good test strategy is characterized by diverse half-measures: diversity is often more important than depth.</p>
+<h4>"How do we know that what we are building, is good enough?"</h4>
+<h5>"what we are building"</h5>
+<p>You can look at what we are building from different perspectives:</p>
+<ul>
+<li>a piece of code</li>
+<li>one or more components</li>
+<li>a feature</li>
+<li>a capability</li>
+<li>a product</li>
+</ul>
+<h5>"good"</h5>
+<p>A good way to approach this is to split up "good" in different quality attributes such as capability, security, maintainability. Two good checklists with quality attributes are:</p>
+<ul>
+<li>The Test Eye's <a href="http://thetesteye.com/posters/TheTestEye_SoftwareQualityCharacteristics.pdf">Software Quality Characteristics</a>
+</li>
+<li>The Heuristic Test Strategy Model's <a href="https://www.satisfice.com/tools/htsm.pdf">Quality Criteria Categories</a> (page 5)</li>
+</ul>
+<h5>"good enough"</h5>
+<p>Something is good enough when it provides sufficient value at low enough risk. Exactly where to draw that line, is a decision for the team's stakeholders.</p>
+<p>Evaluating value starts from our expectations, e.g. acceptance criteria. It's about showing that something works, that it provides the value we want it to provide. Scripted approaches, i.e. the test is largely or completely defined beforehand, work well in this area - especially when you can define these in code instead of manual instructions.</p>
+<p>Evaluating risk starts from the thing we are building. It's about looking for problems, that what we're building is not doing things we don't want it to do. Exploratory approaches work well in this area, because you don't know beforehand what exactly you are looking for.</p>
+<p>A few important things to note:</p>
+<ul>
+<li>The two approaches (scripted versus exploratory) exist in a continuum. When testing, you move within this continuum.</li>
+<li>Both approaches can be applied to any level or across levels of your stack.</li>
+<li>Both approaches benefit greatly from using different kinds of tools.</li>
+</ul>
+<h5>"how do we know"</h5>
+<p>What are the things we do?</p>
+<ul>
+<li>static testing (code does not need to run), examples: code review, code analysis.</li>
+<li>dynamic testing (code needs to run), examples: unit testing, system testing, performance testing.</li>
+<li>monitoring (product is used by customers), examples: log alerts, server monitoring, support tickets dashboard.</li>
+</ul>
+<h3>Test strategy checklist</h3>
+<h4>Products &amp; components</h4>
+<ul>
+<li>What product(s) do we contribute to?</li>
+<li>Why would our company want to have these products?</li>
+<li>What components of those products are we responsible for?</li>
+<li>Critical dependencies of our components:<ul>
+<li>What do our components depend on?</li>
+<li>What has dependencies on our components?</li>
+</ul>
+</li>
+</ul>
+<h4>Feature testing</h4>
+<ul>
+<li>What testing is done while developing a feature?<ul>
+<li>which quality characteristics do you focus on?</li>
+<li>what levels of the stack and/or which components are part of the test?</li>
+<li>what testing is done as part of a pipeline (see below)?</li>
+</ul>
+</li>
+<li>What testing have you decided <strong>not</strong> to do, i.e. is not in scope?</li>
+</ul>
+<h4>Release testing</h4>
+<ul>
+<li>What testing is performed on the release candidate?<ul>
+<li>which quality characteristics do you focus on?</li>
+<li>what levels of the stack and/or which components are part of the test?</li>
+<li>what testing is done as part of a pipeline (see below)?</li>
+</ul>
+</li>
+<li>To what degree do you repeat your feature testing during release testing?</li>
+<li>What testing have you decided <strong>not</strong> to do, i.e. is not in scope?</li>
+</ul>
+<h4>CI/CD pipeline(s)</h4>
+<ul>
+<li>What is covered by the pipeline(s)?<ul>
+<li>code analysis</li>
+<li>auto-tests</li>
+<li>deployment</li>
+</ul>
+</li>
+<li>When/how are they triggered?<ul>
+<li>schedule</li>
+<li>commits, merge requests, ...</li>
+</ul>
+</li>
+<li>Is there a dashboard?</li>
+<li>What happens if a pipeline goes red?</li>
+</ul>
+<h4>Testing done by others</h4>
+<ul>
+<li>What testing is done by others?<ul>
+<li>Examples: security testing by a 3rd party, beta-releases.</li>
+</ul>
+</li>
+</ul>
+<h4>Monitoring</h4>
+<ul>
+<li>How do you monitor your production environment(s)?<ul>
+<li>Examples: server metrics, logs, user analytics, support tickets.</li>
+</ul>
+</li>
+</ul>
+<h4>Impediments</h4>
+<ul>
+<li>What is slowing down your testing?<ul>
+<li>Examples: architecture, design, skills, tools, team capacity.</li>
+</ul>
+</li>
+</ul>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/context-driven-testing/" rel="tag">context-driven testing</a></li>
+            <li><a class="tag p-category" href="../../../categories/test-management/" rel="tag">test management</a></li>
+            <li><a class="tag p-category" href="../../../categories/test-strategy/" rel="tag">test strategy</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="next">
+                <a href="../solving-black-box-puzzle-31-with-data-analysis/" rel="next" title="Solving Black Box Puzzle 31 with data analysis">Next post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2021     
+<a href="http://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a>
+    <a href="mailto:j19sch@gmail.com">Joep Schuurkes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>
