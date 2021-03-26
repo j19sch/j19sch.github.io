@@ -10,6 +10,18 @@
   <lastmod>2021-02-15T19:32:00Z</lastmod>
  </url>
  <url>
+  <loc>https://j19sch.github.io/2016/</loc>
+  <lastmod>2021-03-26T20:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/2017/</loc>
+  <lastmod>2021-03-26T19:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/2018/</loc>
+  <lastmod>2021-03-26T19:24:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://j19sch.github.io/2019/</loc>
   <lastmod>2021-03-14T16:05:00Z</lastmod>
  </url>
@@ -23,11 +35,27 @@
  </url>
  <url>
   <loc>https://j19sch.github.io/archive.html</loc>
-  <lastmod>2021-03-21T15:23:00Z</lastmod>
+  <lastmod>2021-03-26T20:04:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/</loc>
-  <lastmod>2021-03-14T16:05:00Z</lastmod>
+  <lastmod>2021-03-26T20:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2016/regression-testing-it-means-less-than-you-think/</loc>
+  <lastmod>2021-03-26T20:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2017/testing-maturity-in-an-agilecdt-context/</loc>
+  <lastmod>2021-03-26T19:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2018/manifesto-for-software-testing/</loc>
+  <lastmod>2021-03-26T19:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2018/reflections-on-my-testing-manifesto/</loc>
+  <lastmod>2021-03-26T19:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/2019/getting-name-from-name-name-in-python-an-engineering-problem/</loc>
@@ -91,11 +119,15 @@
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/index-1.html</loc>
-  <lastmod>2021-03-21T15:33:00Z</lastmod>
+  <lastmod>2021-03-26T20:16:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/</loc>
-  <lastmod>2021-03-21T15:23:00Z</lastmod>
+  <lastmod>2021-03-26T20:15:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/agile/</loc>
+  <lastmod>2021-03-26T19:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/automation/</loc>
@@ -134,12 +166,24 @@
   <lastmod>2021-02-15T19:32:00Z</lastmod>
  </url>
  <url>
+  <loc>https://j19sch.github.io/categories/cat_test-management-test-strategy/</loc>
+  <lastmod>2021-03-26T20:15:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://j19sch.github.io/categories/cat_test-management/</loc>
   <lastmod>2021-03-14T14:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/cat_test-strategy/</loc>
   <lastmod>2021-03-21T15:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/cat_testing-manifesto/</loc>
+  <lastmod>2021-03-26T19:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/cat_testing-maturity/</loc>
+  <lastmod>2021-03-26T19:44:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/cicd/</loc>
@@ -160,6 +204,10 @@
  <url>
   <loc>https://j19sch.github.io/categories/context-driven-testing/</loc>
   <lastmod>2021-03-21T15:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/context-driven/</loc>
+  <lastmod>2021-03-26T19:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/data-analysis/</loc>
@@ -194,8 +242,16 @@
   <lastmod>2021-03-14T14:45:00Z</lastmod>
  </url>
  <url>
+  <loc>https://j19sch.github.io/categories/manifesto/</loc>
+  <lastmod>2021-03-26T19:24:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://j19sch.github.io/categories/maps/</loc>
   <lastmod>2020-07-31T18:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/maturity/</loc>
+  <lastmod>2021-03-26T19:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/paradigms/</loc>
@@ -252,6 +308,10 @@
  <url>
   <loc>https://j19sch.github.io/categories/test-strategy/</loc>
   <lastmod>2021-03-21T15:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/testing/</loc>
+  <lastmod>2021-03-26T19:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/tools/</loc>

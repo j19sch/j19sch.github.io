@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Regression testing, it means less than you think | Joep Schuurkes</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../feed.atom">
+<link rel="canonical" href="https://j19sch.github.io/blog/2016/regression-testing-it-means-less-than-you-think/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="next" href="../../2017/testing-maturity-in-an-agilecdt-context/" title="Testing maturity in an agile/CDT context" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="Regression testing, it means less than you think">
+<meta property="og:url" content="https://j19sch.github.io/blog/2016/regression-testing-it-means-less-than-you-think/">
+<meta property="og:description" content="The past weeks I have made several attempts at a blog post about regression testing. About how we use it to refer to different things: tests running on a CI server, people executing test scripts, etc.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2016-01-03T19:42:26+01:00">
+<meta property="article:tag" content="regression testing">
+<meta property="article:tag" content="semantics">
+<meta property="article:tag" content="test management">
+<meta property="article:tag" content="test strategy">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-projects" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-talks" class="nav-link">Talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../../my-lists/reading-list" class="dropdown-item">Reading list</a>
+                    <a href="../../../my-lists/recommended-reading" class="dropdown-item">Recommended reading</a>
+                    <a href="../../../my-lists/favorite-podcasts" class="dropdown-item">Favorite podcasts</a>
+                    <a href="../../../my-lists/fountain-pens" class="dropdown-item">Fountain pens</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../../blog" class="dropdown-item">My blog</a>
+                    <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="../../rss.xml" class="dropdown-item">RSS feed</a>
+                    <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Regression testing, it means less than you think</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2016-01-03T19:42:26+01:00" itemprop="datePublished" title="3 January 2016">3 January 2016</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>The past weeks I have made several attempts at a blog post about regression testing. About how we use it to refer to different things: tests running on a CI server, people executing test scripts, etc. And about how often the term really doesn't mean much at all, yet nobody questions you when you use it: "What are you doing?" "Regression testing." "Oh good, carry on." The point of the post would be to argue we should use the term 'regression testing' a lot less, because most of the time we can be more specific without having to be more verbose.</p>
+<p>However, the more I thought about (what I would qualify as) proper regression testing, the more I felt that regression versus progression (or progressive) testing is a distinction without difference. One interesting observation in this regard is that "regression testing" returns 30 times more results on Google than "progression testing" and "progressive testing" combined. So what's going on here if we have a dichotomy with one member producing so much more discussion than the other? And there's more: regression testing is commonly contrasted with test types like functional testing and usability testing. But how then should I categorize a regression test focusing on functionality<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>?</p>
+<!-- TEASER_END -->
+
+<p>Anyhow, more thinking followed and the result is what you are reading here. A blog post describing four different things you could call regression testing. The first two I don't consider to be regression testing, the third one I find confusing and in the fourth I am reluctant to use the term at all.</p>
+<p>Oh wait, I do have to provide a definition of regression testing for within this blog post, so here you go: Regression testing is testing the things you don't expect to observe any changes in.</p>
+<h4>Regression testing as part of continuous integration</h4>
+<p>Situation: your regression test is a bunch of automated checks running on your CI server.</p>
+<p>Although I see great value in this, it's debatable if this qualifies as testing. You commit your code and check if the build is green or red. If it goes red, you know there is a problem somewhere. If it stays green, you know the checks did not detect anything alarming and you move on. This is why people refer to these checks as change detectors<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. Because so far, no real testing is going on. On the other hand, you likely will do testing when you are investigating why the build went red. And testing was involved when you wrote the checks, and arguably when people decided how to run which checks on the CI server. So whether running these checks should be considered testing or not strongly depends on your choice of perspective.</p>
+<p>More important for this blog post and referring back to the definition, the decision which checks to run has no relation to where we don't expect to see any changes. The checks that are run are simply the checks that the CI server has been configured to run. And some of those checks are checks you changed or created because of the code changes in your commit. So there really is no consideration for changed versus unchanged areas here, which means there is no good reason to call running these checks regression testing.</p>
+<p>(Not directly relevant, but related and interesting: for a critique of the fully automated approach to regression testing, watch this short Whiteboard Testing video "<a href="https://www.youtube.com/watch?v=P2PUXqasvGI">Regression Testing, the F.A.R.T Model</a>".)</p>
+<h4>Regression testing with a suite of regression test scripts</h4>
+<p>Situation: you have a suite of test scripts you execute every time you perform a regression test.</p>
+<p>The problem here is that you have the worst of two worlds: people trying to be like CI servers, executing the same test scripts every time, while that's not what people are good at. So it's time to make a choice: either go machine-centric and automate it all, or go human-centric and give them more freedom<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>. In any case, what's going on here, is not regression testing. It's slow, error-prone change detection, again with no consideration what has and what hasn't been changed.</p>
+<h4>Regression testing by doing actual testing</h4>
+<p>Situation: you identify the things you don't expect to observe any changes in and you test those.</p>
+<p>This is the part where my thoughts become a little messy. Let's start with some questions:</p>
+<ul>
+<li>How do you decide that something is a thing<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>?</li>
+<li>When deciding what is a thing and what isn't, why do we so strongly prefer modules and interfaces as things<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>?</li>
+<li>How do we decide that a change in thing A should not have any effect on thing B?</li>
+<li>How do we know which observations are needed to decide that thing B is not affected by a change in thing A?</li>
+</ul>
+<p>The answer to all of these questions is: a model. You need a model for all three activities: mapping out the application, deciding the impact of a change, and designing your tests. However, if my model predicts there are no changes, how can that same model inform my test design? It provides me with no information whatsoever about what to focus my testing on. Wich shows that we should not be using the same model for all three activities. Even more, we should be using different models within all three activities.</p>
+<p>However, that does not solve the problem of 'regression testing', the definition of which largely depends on the second activity: deciding where you don't expect any changes. And this decision is fully dependent on which model you use. What is regression testing according to one model, might be progression testing to a different model. So actually the distinction between regression and progression testing is based on our lack of knowledge and/or imagination to predict a change.</p>
+<p>And this is where my understanding of 'regression testing' starts to break down. If you are testing a refactored feature, are you regression testing or progression testing? The code changed, so that's progression testing, but the behaviour of the feature hasn't, so you're regression testing. If you are testing a feature and you find no bugs in the feature as such, but you do find a regression bug related to the feature, would you say the feature works? If so, how does that even make sense? If one part of a workflow changes and I am testing the whole workflow, am I progression or regression testing? Or does that depend on where I find a bug, if any?</p>
+<p>Ok, enough questions. Let's go over this one more time. A change was made in area A and none of my models predict an impact on area B. Why would I want to regression test area B? Two possible reasons: either I do not sufficiently trust my judgement, or Area B is so important, my judgement doesn't matter. So what I am acutally saying when I want to regression test area B, is that I have identified a low-risk area that's important enough that I want to test it. But then... how is this different from testing in general? Why would it need a separate term? Well, that's why we have a fourth and last section in this blog post.</p>
+<h4>Regression testing without regression testing</h4>
+<p>Situation: whenever you test something, you consider what needs testing and you test it. Which is to say: you're testing a feature, a release, or a whatever, and you decide what testing will give you the information you're looking for.</p>
+<p>This is what in my opinion we should be doing: test the things that are important enough to test. The notion 'regression testing' is not relevant in that discussion.</p>
+<p>Does this mean that the term 'regression testing' is meaningless within this approach? No, it doesn't. It does mean that 'regression testing' is a lot less important as a concept. You might be testing a feature, focusing on usability. And you might not expect to find any issues, because it's a regression test, i.e. you don't expect the changes that were made, to have had any impact. Then it makes perfect sense to use the term, but at best 'regression test' is the fourth thing you mention, because only in the context of those other three things, it has any meaning.</p>
+<hr>
+<p><em>This post was originally published <a href="https://testingcurve.wordpress.com/2016/01/03/regression-testing-it-means-less-than-you-think/">here</a>.</em></p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>I'm definitely not the first one to notice this peculiarity, see e.g. <a href="http://arborosa.org/2015/07/31/regression-testing/">Arborosa's blog post about regression testing</a>: "such a definition [...] only provides the intention of this type, or should I say activity, of testing. Regression testing could still encompass any other testing type in practice." <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>I am not sure who first used the term 'change detector' in this way. The oldest reference I could find is from 2005: Regression testing by Cem Kaner and James Bach. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+<li id="fn:3">
+<p>Just to be clear: machine-centric will involve humans and human-centric will involve machines. The question is: what's the focus? Humans supporting machines (i.e. machine-centric) or machines supporting humans (i.e. human-centric). And of course, until our robotic overlords are here, at the highest level what you do will be human-centric. (Afterwards too, actually, I hope.) <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
+</li>
+<li id="fn:4">
+<p>Some further explanation for the less philosophically inclined: according to a city map, streets and buildings are things, but people and the weather are not. If your application is a city, what kind of map would you draw? What elements would it include and which would it omit? <a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">↩</a></p>
+</li>
+<li id="fn:5">
+<p>There's a more general blog post hidden in this question, expanding into the philosophical: why are most Western ontologies focused on things instead of processes? <a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/regression-testing/" rel="tag">regression testing</a></li>
+            <li><a class="tag p-category" href="../../../categories/semantics/" rel="tag">semantics</a></li>
+            <li><a class="tag p-category" href="../../../categories/test-management/" rel="tag">test management</a></li>
+            <li><a class="tag p-category" href="../../../categories/test-strategy/" rel="tag">test strategy</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="next">
+                <a href="../../2017/testing-maturity-in-an-agilecdt-context/" rel="next" title="Testing maturity in an agile/CDT context">Next post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2021     
+<a href="http://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a>
+    <a href="mailto:j19sch@gmail.com">Joep Schuurkes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>
