@@ -1119,6 +1119,7 @@ article .metadata {
 @font-face{ 
   font-family: 'Montserrat';
   src: url('/assets/fonts/Montserrat-Regular.ttf');
+  font-display: swap;
   font-weight: 400;
   font-style: normal;
 }
@@ -1126,6 +1127,7 @@ article .metadata {
 @font-face{ 
   font-family: 'Montserrat';
   src: url('/assets/fonts/Montserrat-Italic.ttf');
+  font-display: swap;
   font-weight: 400;
   font-style: italic;
 }
@@ -1133,6 +1135,7 @@ article .metadata {
 @font-face{ 
   font-family: 'Montserrat';
   src: url('/assets/fonts/Montserrat-SemiBold.ttf');
+  font-display: swap;
   font-weight: 600;
   font-style: normal;
 }
@@ -1140,6 +1143,7 @@ article .metadata {
 @font-face{ 
   font-family: 'Montserrat';
   src: url('/assets/fonts/Montserrat-SemiBoldItalic.ttf');
+  font-display: swap;
   font-weight: 600;
   font-style: italic;
 }
@@ -1147,6 +1151,7 @@ article .metadata {
 @font-face{ 
   font-family: 'Zilla Slab';
   src: url('/assets/fonts/ZillaSlab-Medium.ttf');
+  font-display: swap;
   font-weight: 400;
   font-style: normal;
 }
@@ -1154,6 +1159,7 @@ article .metadata {
 @font-face{ 
   font-family: 'Zilla Slab';
   src: url('/assets/fonts/ZillaSlab-MediumItalic.ttf');
+  font-display: swap;
   font-weight: 400;
   font-style: italic;
 }
@@ -1161,6 +1167,7 @@ article .metadata {
 @font-face{ 
   font-family: 'Zilla Slab';
   src: url('/assets/fonts/ZillaSlab-SemiBold.ttf');
+  font-display: swap;
   font-weight: 600;
   font-style: normal;
 }
@@ -1168,6 +1175,7 @@ article .metadata {
 @font-face{ 
   font-family: 'Zilla Slab';
   src: url('/assets/fonts/ZillaSlab-SemiBoldItalic.ttf');
+  font-display: swap;
   font-weight: 600;
   font-style: italic;
 }
