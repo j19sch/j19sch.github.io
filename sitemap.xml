@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://j19sch.github.io/</loc>
-  <lastmod>2021-02-15T19:32:00Z</lastmod>
+  <lastmod>2021-03-28T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/2016/</loc>
@@ -347,7 +347,7 @@
  </url>
  <url>
   <loc>https://j19sch.github.io/my-projects/</loc>
-  <lastmod>2020-05-09T07:30:00Z</lastmod>
+  <lastmod>2021-03-28T13:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-projects/clojure-vim-cheatsheet/</loc>
@@ -358,8 +358,16 @@
   <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
+  <loc>https://j19sch.github.io/my-projects/my-talks-v2/</loc>
+  <lastmod>2021-03-28T13:36:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://j19sch.github.io/my-projects/vimtutor/</loc>
   <lastmod>2020-05-09T07:30:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/my-talks-v2/</loc>
+  <lastmod>2021-03-28T13:38:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-talks/</loc>

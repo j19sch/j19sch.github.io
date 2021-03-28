@@ -9,8 +9,6 @@ hidetitle: false
 
 # My projects
 
-Occasionally, and sometimes more often than that, I [blog](/blog/) about these projects. There's also an [RSS](/blog/rss.xml) feed and an [Atom](/blog/feed.atom) feed.
-
 <div markdown="1">
 
 ## TestCraftCamp

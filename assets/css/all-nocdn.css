@@ -1119,71 +1119,100 @@ article .metadata {
 @font-face{ 
   font-family: 'Montserrat';
   src: url('/assets/fonts/Montserrat-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face{ 
-  font-family: 'Montserrat Italic';
+  font-family: 'Montserrat';
   src: url('/assets/fonts/Montserrat-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
 }
 
 @font-face{ 
-  font-family: 'Montserrat SemiBold';
+  font-family: 'Montserrat';
   src: url('/assets/fonts/Montserrat-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face{ 
-  font-family: 'Montserrat SemiBold Italic';
+  font-family: 'Montserrat';
   src: url('/assets/fonts/Montserrat-SemiBoldItalic.ttf');
+  font-weight: 600;
+  font-style: italic;
 }
 
 @font-face{ 
   font-family: 'Zilla Slab';
   src: url('/assets/fonts/ZillaSlab-Medium.ttf');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face{ 
-  font-family: 'Zilla Slab Italic';
+  font-family: 'Zilla Slab';
   src: url('/assets/fonts/ZillaSlab-MediumItalic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face{ 
+  font-family: 'Zilla Slab';
+  src: url('/assets/fonts/ZillaSlab-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face{ 
+  font-family: 'Zilla Slab';
+  src: url('/assets/fonts/ZillaSlab-SemiBoldItalic.ttf');
+  font-weight: 600;
+  font-style: italic;
 }
 
 .blog-header-logo
 {
   font-family: 'Zilla Slab', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-item {
+  font-family: 'Montserrat', sans-serif;  
+  font-weight: 400;
+  font-style: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Zilla Slab', serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .body-content {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .body-content em {
-   font-family: 'Montserrat Italic', sans-serif;
-   font-weight: normal;
-   font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .body-content strong {
-   font-family: 'Montserrat SemiBold', sans-serif;
-   font-weight: normal;
-   font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .body-content strong > em, .body-content em > strong {
-   font-family: 'Montserrat SemiBold Italic', sans-serif;
-   font-weight: normal;
-   font-style: normal;
-}
-
-
-h5.title > a, h5.title {
-   font-family: 'Montserrat', sans-serif; 
-}
-
-h6.note {
- font-family: 'Montserrat', sans-serif;  
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-style: italic;
 }
 
 div.container {
@@ -1192,26 +1221,6 @@ div.container {
 
 div.container#content {
   max-width: 900px;
-}
-
-/*ToDo: flex classes still needed?*/
-div .flex {
-  display:flex;
-  flex-wrap:nowrap;
-  justify-content:space-around;
-  padding: 0px 0px 0px 0px;
-}
-
-div.flex > div.container {
-	padding: 0px 0px 0px 0px;	
-}
-
-div.flex > div.left {
-	margin-right: 5em;
-}
-
-div .indent-left {
-  margin-left: 0.3rem;
 }
 
 .body-content img {
@@ -1238,11 +1247,6 @@ h5 + ul {
   margin-top: -0.3rem;
 }
 
-div .smaller {
-	font-size: 0.8rem;
-	padding-left: 0px;
-}
-
 /*.body-content h1 {
   font-size: 2.5rem;
 }*/
@@ -1255,7 +1259,6 @@ div .smaller {
 .body-content h3 {
   font-size: 1.7rem;
   margin-top: 1.7rem;
-  /*margin-bottom: 0.5rem;*/
 }
 
 .body-content h4 {
@@ -1275,33 +1278,29 @@ div .smaller {
 }*/
 
 
-/* indexstyle.css from old site */
-
+/* styling for my talks page */
 
 h3.year {
   margin-top: 2.0rem;
-  margin-left: 0.3rem;
   margin-bottom: -0.8rem;
 }
-
 
 div.presentation {
   margin-top: 1.3rem;
   margin-bottom: 1.5rem;
-  padding-left: 1rem;
-}
-
-h4.title, h5.title, p.title, h5.title > a {
-  margin-bottom: 0rem;
-  font-family: 'Montserrat SemiBold', sans-serif;
-  font-weight: normal;
-  font-style: normal;
 }
 
 h5.co-presenter, p.co-presenter {
   margin-bottom: -0.1rem;
   font-family: 'Montserrat Italic', sans-serif;
-  font-weight: normal;
+  font-weight: 400;
+  font-style: italic;
+}
+
+h4.title, h5.title, p.title, h5.title > a {
+  margin-bottom: 0rem;
+  font-family: 'Montserrat SemiBold', sans-serif;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -1312,7 +1311,13 @@ h5.talk, p.talk {
 }
 
 h6.note {
-  margin-left: 1rem;
-  padding-bottom: 0.1rem;
+  font-family: 'Montserrat', sans-serif;  
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.95rem;
+}
+
+span.note {
+  font-size: 0.9rem;
 }
 
