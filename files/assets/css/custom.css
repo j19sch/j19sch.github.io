@@ -1,20 +1,82 @@
-@import url('https://fonts.googleapis.com/css?family=News+Cycle&display=swap');
+@font-face{ 
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat-Regular.ttf');
+}
 
-/*#blog-title,*/
-body,
-h1, h2, h3, h4, h5, h6,
-p {
-  font-family: 'News Cycle', sans-serif;
+@font-face{ 
+  font-family: 'Montserrat Italic';
+  src: url('/assets/fonts/Montserrat-Italic.ttf');
+}
+
+@font-face{ 
+  font-family: 'Montserrat SemiBold';
+  src: url('/assets/fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face{ 
+  font-family: 'Montserrat SemiBold Italic';
+  src: url('/assets/fonts/Montserrat-SemiBoldItalic.ttf');
+}
+
+@font-face{ 
+  font-family: 'Zilla Slab';
+  src: url('/assets/fonts/ZillaSlab-Medium.ttf');
+}
+
+@font-face{ 
+  font-family: 'Zilla Slab Italic';
+  src: url('/assets/fonts/ZillaSlab-MediumItalic.ttf');
+}
+
+.blog-header-logo
+{
+  font-family: 'Zilla Slab', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Zilla Slab', serif;
+}
+
+.body-content {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.body-content em {
+   font-family: 'Montserrat Italic', sans-serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.body-content strong {
+   font-family: 'Montserrat SemiBold', sans-serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.body-content strong > em, .body-content em > strong {
+   font-family: 'Montserrat SemiBold Italic', sans-serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+
+h5.title > a, h5.title {
+   font-family: 'Montserrat', sans-serif; 
+}
+
+h6.note {
+ font-family: 'Montserrat', sans-serif;  
 }
 
 div.container {
-  max-width: 1000px;
-}
-
-div.container#content {
   max-width: 960px;
 }
 
+div.container#content {
+  max-width: 900px;
+}
+
+/*ToDo: flex classes still needed?*/
 div .flex {
   display:flex;
   flex-wrap:nowrap;
@@ -37,12 +99,6 @@ div .indent-left {
 .body-content img {
 	margin: 10px 10px 10px 10px;
 }
-
-/*figcaption {
-  text-align: center!important;
-  font-style: italic;
-  font-size: 0.95rem;
-}*/
 
 p + ul {  
    margin-top: -0.9rem;
@@ -81,7 +137,7 @@ div .smaller {
 .body-content h3 {
   font-size: 1.7rem;
   margin-top: 1.7rem;
-  margin-bottom: 0.5rem;
+  /*margin-bottom: 0.5rem;*/
 }
 
 .body-content h4 {
@@ -108,7 +164,6 @@ h3.year {
   margin-top: 2.0rem;
   margin-left: 0.3rem;
   margin-bottom: -0.8rem;
-  font-style: italic;
 }
 
 
@@ -118,14 +173,18 @@ div.presentation {
   padding-left: 1rem;
 }
 
-h4.title, h5.title, p.title {
+h4.title, h5.title, p.title, h5.title > a {
   margin-bottom: 0rem;
-  font-weight: bold;
+  font-family: 'Montserrat SemiBold', sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 
 h5.co-presenter, p.co-presenter {
-  font-style: italic;
   margin-bottom: -0.1rem;
+  font-family: 'Montserrat Italic', sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 
 h5.talk, p.talk {
@@ -134,12 +193,7 @@ h5.talk, p.talk {
   font-weight: normal;
 }
 
-span.note {
-  font-style: oblique;
-}
-
 h6.note {
-  font-style: oblique;
   margin-left: 1rem;
   padding-bottom: 0.1rem;
 }
