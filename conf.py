@@ -25,7 +25,7 @@ SITE_URL = "https://j19sch.github.io/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://j19sch.github.io/"
 BLOG_EMAIL = "j19sch@hey.com"
-BLOG_DESCRIPTION = "joep's site"  # (translatable)
+BLOG_DESCRIPTION = "Joep Schuurkes"  # (translatable)
 
 # Nikola is multilingual!
 #

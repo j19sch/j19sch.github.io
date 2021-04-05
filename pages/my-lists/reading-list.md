@@ -1,4 +1,4 @@
-title: My reading list
+title: Reading list
 slug: reading-list
 date: 2020-02-05 12:52:00 UTC+01:00
 link: 
