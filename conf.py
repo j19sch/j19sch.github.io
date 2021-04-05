@@ -155,14 +155,12 @@ NAVIGATION_LINKS = {
             (
                 ("/blog", "My blog"),
                 ("/categories/", "Categories and tags"),
+                ("/archive.html", "Archive"),
                 ("/blog/rss.xml", "RSS feed"),
                 ("/blog/feed.atom", "Atom feed")
             ),
             "Blog"
         ),
-        # ("/archive.html", "Archive"),
-        # ("/categories/", "Tags"),
-        # ("/rss.xml", "RSS feed"),
     ),
 }
 
@@ -597,7 +595,7 @@ FRONT_INDEX_HEADER = {
 # If monthly archives or full archives are created, adds also one archive per day
 # CREATE_DAILY_ARCHIVE = False
 # Create previous, up, next navigation links for archives
-# CREATE_ARCHIVE_NAVIGATION = False
+CREATE_ARCHIVE_NAVIGATION = False
 # Final locations for the archives are:
 # output / TRANSLATION[lang] / ARCHIVE_PATH / ARCHIVE_FILENAME
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / index.html
