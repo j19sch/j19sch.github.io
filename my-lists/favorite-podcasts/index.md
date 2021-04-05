@@ -1,4 +1,4 @@
-title: My favorite podcasts
+title: Favorite podcasts
 slug: favorite-podcasts
 date: 2021-02-28 14:25:00 UTC+01:00
 link: 

@@ -1,4 +1,4 @@
-title: My projects
+title: Projects
 slug: my-projects
 date: 2020-01-06 22:00:00 UTC+01:00
 link: 
