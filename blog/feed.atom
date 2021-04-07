@@ -3,13 +3,36 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes</title>
   <id>https://j19sch.github.io/blog/feed.atom</id>
-  <updated>2021-04-05T08:24:33Z</updated>
+  <updated>2021-04-06T19:56:32Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://j19sch.github.io/blog/feed.atom"/>
   <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Thinking about quality: so what to do?</title>
+    <id>https://j19sch.github.io/blog/2021/thinking-about-quality-so-what-to-do/</id>
+    <updated>2021-04-06T21:31:02+02:00</updated>
+    <published>2021-04-06T21:31:02+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2021/thinking-about-quality-so-what-to-do/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;On 30 January 2021 I participated in the Quality Acceleration Peer Conference organized by Huib Schoots and Joost Voskuil. Participants were &lt;a href="https://twitter.com/alanpage"&gt;Alan Page&lt;/a&gt;, &lt;a href="https://twitter.com/unremarkableQA"&gt;Areti Panou&lt;/a&gt;, &lt;a href="https://twitter.com/northern_tester"&gt;Ash Winter&lt;/a&gt;, &lt;a href="https://twitter.com/btknaack"&gt;Bart Knaack&lt;/a&gt;, &lt;a href="https://twitter.com/conorfi"&gt;Conor Fitzgerald&lt;/a&gt;, &lt;a href="https://twitter.com/roukedejong"&gt;Rouke de Jong&lt;/a&gt;, &lt;a href="https://twitter.com/gwendiagram"&gt;Gwen Diagram&lt;/a&gt;, &lt;a href="https://twitter.com/gdinwiddie"&gt;George Dinwiddie&lt;/a&gt;, &lt;a href="https://twitter.com/janetgregoryca"&gt;Janet Gregory&lt;/a&gt;, &lt;a href="https://twitter.com/joost_voskuil"&gt;Joost Voskuil&lt;/a&gt;, &lt;a href="https://twitter.com/jpjwolli"&gt;Joost van Wollingen&lt;/a&gt;, &lt;a href="https://twitter.com/mmeijeri"&gt;Martijn Meijering&lt;/a&gt;, &lt;a href="https://twitter.com/robmeaney"&gt;Rob Meaney&lt;/a&gt;, &lt;a href="https://twitter.com/vinwijnl"&gt;Vincent Wijnen&lt;/a&gt; - with &lt;a href="https://twitter.com/huibschoots"&gt;Huib Schoots&lt;/a&gt; facilitating the peer conference. The main topics mentioned in the invite were: "How can you sell quality?", "How can you convince people that quality can accelerate software delivery?", and "What limitations or barriers do you hit?"&lt;/p&gt;
+&lt;p&gt;Reflecting during and after our discussions on these topics, I realized there are some interesting things going on about how we talk about quality and how to sell it. Enough interesting things to fill more than one blog post, so this will be a four-part series. And I might expand on some ideas in the series after that.&lt;/p&gt;
+&lt;p&gt;The first three parts covered rather philosophical topics: &lt;a href="https://j19sch.github.io/blog/2021/choosing-your-value-system/"&gt;choosing your value system&lt;/a&gt;, &lt;a href="https://j19sch.github.io/blog/2021/who-doesnt-want-quality/"&gt;exploring what it means to sell quality&lt;/a&gt;, and &lt;a href="https://j19sch.github.io/blog/2021/management-paradigms-and-quality/"&gt;how management paradigms affect quality&lt;/a&gt;. At the end of the third post I brought up the main question for this fourth and last post: so now what? If you expect me to get very concrete and specific in this post, I'm afraid I have to disappoint you. What I will do, is share a way to think about actions that has been helpful to me.&lt;/p&gt;
+&lt;h3&gt;Quality is something emergent&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/charrett"&gt;Anne-Marie Charrett&lt;/a&gt; says in a blog post titled "&lt;a href="https://mavericktester.com/2018/12/04/emergent-quality/"&gt;Emergent Quality&lt;/a&gt;":&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"My hypothesis is that quality is an emergent behaviour. It relies on a whole set of independent systems coming together to create this emergent property. We can never truly know what quality is. It’s constantly changing and morphing into different things. For sure, we can provide examples, but know quality itself? I’m not convinced."&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2021/thinking-about-quality-so-what-to-do/"&gt;Read more…&lt;/a&gt; (8 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="horizon" label="horizon"/>
+    <category term="peer-conference" label="peer conference"/>
+    <category term="quality" label="quality"/>
+    <category term="small-steps" label="small steps"/>
+  </entry>
   <entry>
     <title>Thinking about quality: management paradigms and quality</title>
     <id>https://j19sch.github.io/blog/2021/management-paradigms-and-quality/</id>
@@ -109,13 +132,12 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
 &lt;h3&gt;Why is there a &lt;code&gt;when&lt;/code&gt;?&lt;/h3&gt;
 &lt;p&gt;The part about control flow is actually before the part about &lt;code&gt;and&lt;/code&gt; and &lt;code&gt;or&lt;/code&gt; which I talked about in my &lt;a href="https://j19sch.github.io/blog/clj3-and-or-being-weird"&gt;previous post&lt;/a&gt;, but according to my notes I returned to it. I don't remember why to be honest.&lt;/p&gt;
 &lt;p&gt;The book provides the following example of &lt;code&gt;when&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;when &lt;/span&gt;&lt;span class="nv"&gt;true&lt;/span&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;when &lt;/span&gt;&lt;span class="nv"&gt;true&lt;/span&gt;
     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;println &lt;/span&gt;&lt;span class="s"&gt;"Success!"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="s"&gt;"abra cadabra"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; Success!&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; "abra cadabra"&lt;/span&gt;
-&lt;/pre&gt;
-
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clojure/2020/clj4-learning-when-maps-closures/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="brave-true" label="brave-true"/>
@@ -155,7 +177,7 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
 &lt;p&gt;Clojure uses the Boolean operators &lt;code&gt;or&lt;/code&gt; and &lt;code&gt;and&lt;/code&gt;. &lt;code&gt;or&lt;/code&gt; returns either the first truthy value or the last value. &lt;code&gt;and&lt;/code&gt; returns the first falsey value or, if no values are falsey, the last truthy value.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;This explanation is followed by some examples:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;or&lt;/span&gt; &lt;span class="nv"&gt;false&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt; &lt;span class="ss"&gt;:large_I_mean_venti&lt;/span&gt; &lt;span class="ss"&gt;:why_cant_I_just_say_large&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;or&lt;/span&gt; &lt;span class="nv"&gt;false&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt; &lt;span class="ss"&gt;:large_I_mean_venti&lt;/span&gt; &lt;span class="ss"&gt;:why_cant_I_just_say_large&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; :large_I_mean_venti&lt;/span&gt;
 
 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;or&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"yes"&lt;/span&gt; &lt;span class="s"&gt;"no"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
@@ -163,16 +185,14 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
 
 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;or&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; nil&lt;/span&gt;
-&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;and&lt;/span&gt; &lt;span class="ss"&gt;:free_wifi&lt;/span&gt; &lt;span class="ss"&gt;:hot_coffee&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;and&lt;/span&gt; &lt;span class="ss"&gt;:free_wifi&lt;/span&gt; &lt;span class="ss"&gt;:hot_coffee&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; :hot_coffee&lt;/span&gt;
 
 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;and&lt;/span&gt; &lt;span class="ss"&gt;:feelin_super_cool&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt; &lt;span class="nv"&gt;false&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; nil&lt;/span&gt;
-&lt;/pre&gt;
-
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;What I found remarkable about this is that &lt;code&gt;and&lt;/code&gt; and &lt;code&gt;or&lt;/code&gt; do not return a boolean in all cases. Before I go into that, let's back up a second and cover their basics in a little more depth first.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clojure/2020/clj3-and-or-being-weird/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
@@ -216,23 +236,5 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
     <category term="emacs" label="emacs"/>
     <category term="vim" label="vim"/>
     <category term="vscode" label="vscode"/>
-  </entry>
-  <entry>
-    <title>(clj 0) Diving straight in with some koans</title>
-    <id>https://j19sch.github.io/blog/clojure/2020/clj0-diving-straight-in/</id>
-    <updated>2020-04-27T21:00:15+02:00</updated>
-    <published>2020-04-27T21:00:15+02:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/clojure/2020/clj0-diving-straight-in/"/>
-    <summary type="html">&lt;div&gt;&lt;h3&gt;Why Clojure?&lt;/h3&gt;
-&lt;p&gt;A long time ago (meaning I don't remember when but it's been a while) I learned about a programming language called Lisp. It was said that by studying this language you'd gain &lt;a href="https://twobithistory.org/2018/10/14/lisp.html"&gt;deep insights&lt;/a&gt; into programming and you'd never write code the same way again. That definitely piqued my interest.&lt;/p&gt;
-&lt;p&gt;Some time later (don't remember when exactly either) I learned about the existence of Clojure and that it too, was something special. So I added it to the list of programming languages I wanted to learn some day.&lt;/p&gt;
-&lt;p&gt;Then, earlier this month, I felt the need to start a new project. To learn something new. So I figured I'd learn Lisp. That didn't last long though, as I found out that the recommended editor for Lisp is Emacs. And from trying out Emacs and vi about 20 years ago I knew that for some reason vi does fit with how my mind works, and Emacs doesn't.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clojure/2020/clj0-diving-straight-in/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="brave-true" label="brave-true"/>
-    <category term="clojure" label="clojure"/>
-    <category term="koans" label="koans"/>
   </entry>
 </feed>

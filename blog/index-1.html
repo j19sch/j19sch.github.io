@@ -11,8 +11,8 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
-<link rel="alternate" type="application/atom+xml" title="Atom" href="feed.atom">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="feed.atom">
 <link rel="canonical" href="https://j19sch.github.io/blog/index-1.html">
 <link rel="icon" href="../assets/favicons/favicon-16x16.png" sizes="16x16">
 <link rel="icon" href="../assets/favicons/favicon-32x32.png" sizes="32x32">
@@ -35,7 +35,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
             </div>
         </div>
           <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
-            <a class="navbar-brand blog-header-logo text-dark" href="https://j19sch.github.io/">
+            <a class="navbar-brand blog-header-logo text-dark" href="../">
 
             <span id="blog-title">Joep Schuurkes</span>
         </a>
@@ -89,7 +89,26 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2019/getting-name-from-name-name-in-python-an-engineering-problem/" class="u-url">Getting [name] from "Name: [name]" in Python - an engineering problem</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2020/clj0-diving-straight-in/" class="u-url">(clj 0) Diving straight in with some koans</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="clojure/2020/clj0-diving-straight-in/" rel="bookmark">
+            <time class="published dt-published" datetime="2020-04-27T21:00:15+02:00" itemprop="datePublished" title="27 April 2020">27 April 2020</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<h3>Why Clojure?</h3>
+<p>A long time ago (meaning I don't remember when but it's been a while) I learned about a programming language called Lisp. It was said that by studying this language you'd gain <a href="https://twobithistory.org/2018/10/14/lisp.html">deep insights</a> into programming and you'd never write code the same way again. That definitely piqued my interest.</p>
+<p>Some time later (don't remember when exactly either) I learned about the existence of Clojure and that it too, was something special. So I added it to the list of programming languages I wanted to learn some day.</p>
+<p>Then, earlier this month, I felt the need to start a new project. To learn something new. So I figured I'd learn Lisp. That didn't last long though, as I found out that the recommended editor for Lisp is Emacs. And from trying out Emacs and vi about 20 years ago I knew that for some reason vi does fit with how my mind works, and Emacs doesn't.</p>
+<p class="more"><a href="clojure/2020/clj0-diving-straight-in/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2019/getting-name-from-name-name-in-python-an-engineering-problem/" class="u-url">Getting [name] from "Name: [name]" in Python - an engineering problem</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
@@ -290,9 +309,7 @@ Finally, the code and the spreadsheet I created (linked throughout, also availab
         <script src="../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>
