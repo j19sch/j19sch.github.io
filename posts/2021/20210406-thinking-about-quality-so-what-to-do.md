@@ -1,7 +1,7 @@
 <!--
 .. title: Thinking about quality: so what to do?
 .. slug: thinking-about-quality-so-what-to-do
-.. date: 2021-04-06 21:31:02 UTC+02:00
+.. date: 2021-04-07 13:25:02 UTC+02:00
 .. tags: peer conference, quality, horizon, small steps
 .. category: quality
 .. link: 
