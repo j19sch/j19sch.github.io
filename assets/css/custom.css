@@ -40,9 +40,9 @@
 
 @font-face{ 
   font-family: 'Zilla Slab';
-  src: url('/assets/fonts/ZillaSlab/ZillaSlab-Medium.woff2') format('woff2'),
-       url('/assets/fonts/ZillaSlab/ZillaSlab-Medium.woff') format('woff'),
-       url('/assets/fonts/ZillaSlab/ZillaSlab-Medium.ttf') format('truetype');
+  src: url('https://code.cdn.mozilla.net/fonts/woff2/ZillaSlab-Medium.woff2') format('woff2'),
+       url('https://code.cdn.mozilla.net/fonts/woff/ZillaSlab-Medium.woff') format('woff'),
+       url('https://code.cdn.mozilla.net/fonts/ttf/ZillaSlab-Medium.ttf') format('truetype');
   font-display: swap;
   font-weight: 400;
   font-style: normal;
@@ -50,9 +50,9 @@
 
 @font-face{ 
   font-family: 'Zilla Slab';
-  src: url('/assets/fonts/ZillaSlab/ZillaSlab-MediumItalic.woff2') format('woff2'),
-       url('/assets/fonts/ZillaSlab/ZillaSlab-MediumItalic.woff') format('woff'),
-       url('/assets/fonts/ZillaSlab/ZillaSlab-MediumItalic.ttf') format('truetype');
+  src: url('https://code.cdn.mozilla.net/fonts/woff2/ZillaSlab-MediumItalic.woff2') format('woff2'),
+       url('https://code.cdn.mozilla.net/fonts/woff/ZillaSlab-MediumItalic.woff') format('woff'),
+       url('https://code.cdn.mozilla.net/fonts/ttf/ZillaSlab-MediumItalic.ttf') format('truetype');
   font-display: swap;
   font-weight: 400;
   font-style: italic;
@@ -60,9 +60,9 @@
 
 @font-face{ 
   font-family: 'Zilla Slab';
-  src: url('/assets/fonts/ZillaSlab/ZillaSlab-SemiBold.woff2') format('woff2'),
-       url('/assets/fonts/ZillaSlab/ZillaSlab-SemiBold.woff') format('woff'),
-       url('/assets/fonts/ZillaSlab/ZillaSlab-SemiBold.ttf') format('truetype');
+  src: url('https://code.cdn.mozilla.net/fonts/woff2/ZillaSlab-SemiBold.woff2') format('woff2'),
+       url('https://code.cdn.mozilla.net/fonts/woff/ZillaSlab-SemiBold.woff') format('woff'),
+       url('https://code.cdn.mozilla.net/fonts/ttf/ZillaSlab-SemiBold.ttf') format('truetype');
   font-display: swap;
   font-weight: 600;
   font-style: normal;
@@ -70,9 +70,9 @@
 
 @font-face{ 
   font-family: 'Zilla Slab';
-  src: url('/assets/fonts/ZillaSlab/ZillaSlab-SemiBoldItalic.woff2') format('woff2'),
-       url('/assets/fonts/ZillaSlab/ZillaSlab-SemiBoldItalic.woff') format('woff'),
-       url('/assets/fonts/ZillaSlab/ZillaSlab-SemiBoldItalic.ttf') format('truetype');
+  src: url('https://code.cdn.mozilla.net/fonts/woff2/ZillaSlab-SemiBoldItalic.woff2') format('woff2'),
+       url('https://code.cdn.mozilla.net/fonts/woff/ZillaSlab-SemiBoldItalic.woff') format('woff'),
+       url('https://code.cdn.mozilla.net/fonts/ttf/ZillaSlab-SemiBoldItalic.ttf') format('truetype');
   font-display: swap;
   font-weight: 600;
   font-style: italic;
@@ -119,6 +119,26 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-style: italic;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0,0,0,.55);
+}
+
+#footer {
+  color: rgba(0,0,0,.55);
+}
+
+.body-content a {
+  color: #0273ec;
+}
+
+#footer a {
+  color: #0273ec;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  text-decoration: underline;
 }
 
 div.container {
