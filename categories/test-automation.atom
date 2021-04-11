@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about test automation)</title>
   <id>https://j19sch.github.io/categories/test-automation.atom</id>
-  <updated>2021-04-05T08:24:13Z</updated>
+  <updated>2021-04-11T13:59:14Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -32,5 +32,25 @@
     <category term="regression-testing" label="regression testing"/>
     <category term="semantics" label="semantics"/>
     <category term="test-automation" label="test automation"/>
+  </entry>
+  <entry>
+    <title>Test automation - five questions leading to five heuristics</title>
+    <id>https://j19sch.github.io/blog/2015/test-automation-five-questions-leading-to-five-heuristics/</id>
+    <updated>2015-03-24T20:53:24+01:00</updated>
+    <published>2015-03-24T20:53:24+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2015/test-automation-five-questions-leading-to-five-heuristics/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;(I wrote a follow-up to this post in June 2019: &lt;a href="https://j19sch.github.io/blog/2019/how-this-tester-writes-code/"&gt;how this tester writes code&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;In 1984 Abelson and Sussman said in the Preface to '&lt;a href="https://mitpress.mit.edu/sicp/"&gt;Structure and Interpretation of Computer Programs&lt;/a&gt;':&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Our design of this introductory computer-science subject reflects two major concerns. First, we want to establish the idea that a computer language is not just a way of getting a computer to perform operations but rather that it is a novel formal medium for expressing ideas about methodology. &lt;strong&gt;Thus, programs must be written for people to read, and only incidentally for machines to execute.&lt;/strong&gt; Second, we believe that the essential material to be addressed by a subject at this level is not the syntax of particular programming-language constructs, nor clever algorithms for computing particular functions efficiently, nor even the mathematical analysis of algorithms and the foundations of computing, but rather the techniques used to control the intellectual complexity of large software systems. [emphasis mine]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This oft-quoted sentence I emphasized, is even more true if the purpose of our programs is test automation&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://j19sch.github.io/blog/2015/test-automation-five-questions-leading-to-five-heuristics/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;. So let's say you run your test automation program and the result is a list of passes and fails.  The purpose of testing is to produce information. You could say that this list of results qualifies as information and I would disagree. I would say it is data, data in need of interpretation. When we attempt this interpretation, we should consider the following five questions.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2015/test-automation-five-questions-leading-to-five-heuristics/"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="programming" label="programming"/>
+    <category term="test-automation" label="test automation"/>
+    <category term="testing-and-checking" label="testing and checking"/>
   </entry>
 </feed>

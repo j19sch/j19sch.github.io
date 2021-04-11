@@ -17,7 +17,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <link rel="icon" href="../assets/favicons/favicon-16x16.png" sizes="16x16">
 <link rel="icon" href="../assets/favicons/favicon-32x32.png" sizes="32x32">
 <link rel="icon" href="../assets/favicons/favicon-96x96.png" sizes="96x96">
-<link rel="prev" href="." type="text/html">
+<link rel="prev" href="index-2.html" type="text/html">
 <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script>
 </head>
 <body>
@@ -89,139 +89,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2020/clj0-diving-straight-in/" class="u-url">(clj 0) Diving straight in with some koans</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="clojure/2020/clj0-diving-straight-in/" rel="bookmark">
-            <time class="published dt-published" datetime="2020-04-27T21:00:15+02:00" itemprop="datePublished" title="27 April 2020">27 April 2020</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<h3>Why Clojure?</h3>
-<p>A long time ago (meaning I don't remember when but it's been a while) I learned about a programming language called Lisp. It was said that by studying this language you'd gain <a href="https://twobithistory.org/2018/10/14/lisp.html">deep insights</a> into programming and you'd never write code the same way again. That definitely piqued my interest.</p>
-<p>Some time later (don't remember when exactly either) I learned about the existence of Clojure and that it too, was something special. So I added it to the list of programming languages I wanted to learn some day.</p>
-<p>Then, earlier this month, I felt the need to start a new project. To learn something new. So I figured I'd learn Lisp. That didn't last long though, as I found out that the recommended editor for Lisp is Emacs. And from trying out Emacs and vi about 20 years ago I knew that for some reason vi does fit with how my mind works, and Emacs doesn't.</p>
-<p class="more"><a href="clojure/2020/clj0-diving-straight-in/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2019/getting-name-from-name-name-in-python-an-engineering-problem/" class="u-url">Getting [name] from "Name: [name]" in Python - an engineering problem</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2019/getting-name-from-name-name-in-python-an-engineering-problem/" rel="bookmark">
-            <time class="published dt-published" datetime="2019-08-26T21:27:38+02:00" itemprop="datePublished" title="26 August 2019">26 August 2019</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>Today I was presented with an interesting engineering problem. (Important later: context was the code of an auto-test.) Given a string of the format "Name: [name]", what's the best way to get the [name] in Python?</p>
-<p>There are several options:</p>
-<ul>
-<li><code>lstrip()</code></li>
-<li><code>split()</code></li>
-<li><code>replace()</code></li>
-<li>string slicing</li>
-<li>regex</li>
-</ul>
-<p>So let's look at each of them and then I'll explain which one I prefer and why. All examples are in Python 3.6, using the <a href="https://docs.python.org/3.6/tutorial/interpreter.html">Python Interpreter</a>.</p>
-<p class="more"><a href="2019/getting-name-from-name-name-in-python-an-engineering-problem/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2019/your-ci-cd-pipeline-does-not-run-regression-tests/" class="u-url">Your CI/CD pipeline does not run regression tests</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2019/your-ci-cd-pipeline-does-not-run-regression-tests/" rel="bookmark">
-            <time class="published dt-published" datetime="2019-08-05T23:47:51+02:00" itemprop="datePublished" title="5 August 2019">5 August 2019</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<h3>CI/CD pipelines</h3>
-<p>The purpose of a CI/CD pipeline is to allow you to deliver small changes in a fast and controlled way. Without any tests in your pipeline you would gain a lot of speed. You'd also lose a lot control, which is why people in general do run tests in their pipeline. The purpose of these tests is to check if that stage of the pipeline meets the minimum level of acceptable quality for that stage.</p>
-<p>For example, commit stage tests will consist of mostly unit tests, a few integration tests, and even fewer end-to-end tests, because early in the pipeline speed is more important than comprehensiveness. When I commit my changes, I want the results fast enough so that I will wait for them - ready to fix any issue that might occur.</p>
-<h3>Regression testing</h3>
-<p>There are many definitions of regression testing, as you can read in <a href="https://arborosa.org/2015/07/31/regression-testing/">Arborosa's blog post on the topic</a>. I have always defined regression testing along the lines of "testing the parts that weren't impacted by a change to see if they really weren't impacted." (Which is really weird if you start thinking about it: something is regression testing depending on your knowledge of the system and the change.)</p>
-<h3>The tests in your pipeline are regression tests, …</h3>
-<p>Most of the tests that run in your pipeline are regression tests. Your commits are small and you have a lot of tests, so most of those will cover parts of the system that shouldn't have been impacted by your changes. So yes, regression tests.</p>
-<p class="more"><a href="2019/your-ci-cd-pipeline-does-not-run-regression-tests/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2019/how-this-tester-writes-code/" class="u-url">How this tester writes code</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2019/how-this-tester-writes-code/" rel="bookmark">
-            <time class="published dt-published" datetime="2019-06-08T18:21:38+02:00" itemprop="datePublished" title="8 June 2019">8 June 2019</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>A long time ago (March 2015) I wrote a post titled "<a href="https://testingcurve.wordpress.com/2015/03/24/test-automation-five-questions-leading-to-five-heuristics/">Test automation - five questions leading to five heuristics</a>". Later that year <a href="https://twitter.com/richrtesting">Rich Rogers</a> asked for a follow-up. To which I replied I should do a follow-up post (ahum) "soon".
-Then last Wednesday <a href="https://twitter.com/noahsussman">Noah Sussman</a> said on <a href="https://twitter.com/noahsussman/status/1136288062651142149">twitter</a>: <em>'I don't know that I've *ever* seen "this is how testers write code"'</em>. To which I replied "challenge accepted", so now here we are, me writing a blog post about how I as a tester write code.</p>
-<p>The format of this post turned out to be advice based on my experiences, so the usual disclaimers apply. And feel free to leave a comment if you have any feedback!</p>
-<h3>The basics</h3>
-<h4>use an IDE</h4>
-<p>An IDE is not just an advanced text editor. It understands your code - to a degree, since it's not interpreting, compiling or executing the code. So not only allows an IDE you to manipulate your code as text, it also allows you to manipulate your code as code.</p>
-<p class="more"><a href="2019/how-this-tester-writes-code/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2019/solving-black-box-puzzle-31-with-data-analysis/" class="u-url">Solving Black Box Puzzle 31 with data analysis</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2019/solving-black-box-puzzle-31-with-data-analysis/" rel="bookmark">
-            <time class="published dt-published" datetime="2019-04-28T13:16:34+02:00" itemprop="datePublished" title="28 April 2019">28 April 2019</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p><a href="https://twitter.com/workroomprds">James Lyndsay</a> has created a number of amazing <a href="http://blackboxpuzzles.workroomprds.com/">Black Box Puzzles</a>: tiny applications that challenge you to figure out what they do. (You can support him in creating more of these at <a href="https://www.patreon.com/workroomprds">his Patreon page</a>.) Two of these Puzzles, <a href="http://blackboxpuzzles.workroomprds.com/puzzle29/">29</a> and <a href="http://blackboxpuzzles.workroomprds.com/puzzle31/">31</a>, not only have a GUI to explore, but also an API.</p>
-<p>And that gave me an idea. If you explore these Puzzles through their GUI, you start from the inputs. You try out different inputs in the hope of discovering a pattern in the outputs. And then that pattern feeds back into your exploration.<br>
-With an API, however - and because of the nature of Puzzle 31 - it becomes easy to get the outputs for all possible combinations of inputs. Which means you can start your exploration from the outputs instead of the inputs.</p>
-<p>Before I tell you how and what I did, three important remarks.<br>
-First of all, I will be spoiling the solution to the Puzzle in this blog post. So this is the right moment to go and solve <a href="http://blackboxpuzzles.workroomprds.com/puzzle31/">Puzzle 31</a> for yourself first. Or at least go play a bit with it, so you have an idea what the inputs and outputs are.<br>
-Secondly, I had already solved the Puzzle through the GUI a few months ago. So it was more of a "Can I find the solution this way as well?" than a "Can I find the solution?" thing.<br>
-Finally, the code and the spreadsheet I created (linked throughout, also available on GitHub <a href="https://github.com/j19sch/blackbox-puzzle-31">here</a>), are not very clean. I thought about tidying them up, but my two reasons for not doing so are (1) laziness; (2) the way they are now gives a more honest picture of what I did.</p>
-<p class="more"><a href="2019/solving-black-box-puzzle-31-with-data-analysis/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2019/test-strategy-primer/" class="u-url">Test strategy primer</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2019/test-strategy-primer/" rel="bookmark">
-            <time class="published dt-published" datetime="2019-01-29T21:34:19+01:00" itemprop="datePublished" title="29 January 2019">29 January 2019</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p><em>I originally wrote this primer to share with people at work. The first section is intended to be generally applicable; the second not necessarily so. The main influences on this primer are:</em><br><em>- Rapid Software Testing's <a href="https://www.satisfice.com/tools/htsm.pdf">Heuristic Test Strategy Model</a></em><br><em>- James Lyndsay's <a href="http://www.workroom-productions.com/papers/Exploration%20and%20Strategy.pdf">Why Exploration has a place in any Strategy</a></em><br><em>- Rikard Edgren's <a href="http://www.thetesteye.com/papers/TheLittleBlackBookOnTestDesign.pdf">Little Black Book on Test Design</a></em></p>
-<p>This document contains two sections:</p>
-<ul>
-<li>Why have a test strategy? - what is a test strategy and what's its purpose</li>
-<li>Test strategy checklist - checklist for describing your test strategy</li>
-</ul>
-<h3>Why have a test strategy?</h3>
-<p>The purpose of a test strategy is to answer the question: "How do we know that what we are building, is good enough?" As such, every team has a test strategy, even if it's only implicitly defined through the actions of the team members.</p>
-<p class="more"><a href="2019/test-strategy-primer/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2018/reflections-on-my-testing-manifesto/" class="u-url">Reflections on my testing manifesto</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2018/reflections-on-my-testing-manifesto/" class="u-url">Reflections on my testing manifesto</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
@@ -291,10 +159,148 @@ Finally, the code and the spreadsheet I created (linked throughout, also availab
 <p class="more"><a href="2016/regression-testing-it-means-less-than-you-think/">Read more…</a></p>
 </div>
                 </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2015/why-the-testingchecking-debate-is-so-messy-a-fruit-salad-analogy/" class="u-url">Why the testing/checking debate is so messy - a fruit salad analogy</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2015/why-the-testingchecking-debate-is-so-messy-a-fruit-salad-analogy/" rel="bookmark">
+            <time class="published dt-published" datetime="2015-11-15T12:17:12+01:00" itemprop="datePublished" title="15 November 2015">15 November 2015</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Five days ago James Thomas posted <a href="https://www.linkedin.com/grp/post/55636-6069749695687770112?trk=groups-post-b-title">the following</a> in the Software Testing &amp; Quality Assurance group on LinkedIn:</p>
+<blockquote>
+<p><strong>Are Testing and Checking different or not?</strong><br>
+This <a href="http://gerrardconsulting.com/?q=node/659">article by Paul Gerrard</a> explains why we shouldn't be trying to draw a distinction between checking and testing, but should be paying more attention to the skills of the testers we employ to do the job.</p>
+</blockquote>
+<p>I posted a reply there, but I think I can do better than those initial thoughts, so here we go.</p>
+<p>Let's imagine the following scene: Alice and Bob are preparing a fruit salad together.<br><em>Alice</em>: "Ok, let's make a nice fruit salad. We need some apples and some fruit."<br><em>Bob</em>: "Euh, aren't apples fruit?"<br><em>Alice</em>: "Yes. Of course. But when I say 'fruit', I mean 'non-apple fruit'."</p>
+<p class="more"><a href="2015/why-the-testingchecking-debate-is-so-messy-a-fruit-salad-analogy/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2015/two-styles-of-leadership-in-spreading-context-driven-testing-titanconf/" class="u-url">Two styles of leadership in spreading context-driven testing (TITANconf)</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2015/two-styles-of-leadership-in-spreading-context-driven-testing-titanconf/" rel="bookmark">
+            <time class="published dt-published" datetime="2015-09-06T19:56:54+02:00" itemprop="datePublished" title="6 September 2015">6 September 2015</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>The last weekend of August I spent with some great people - Kristoffer Ankarberg (<a href="https://twitter.com/KrisAnkarberg">@KrisAnkarberg</a>), Kristoffer Nordström (<a href="https://twitter.com/kristoffer_nord">@kristoffer_nord</a>), Anna Brunell (<a href="https://twitter.com/Anna_Brunell">@Anna_Brunell</a>), Fredrik Thuresson (<a href="https://twitter.com/Thure98">@Thure98</a>), Maria Kedemo (<a href="https://twitter.com/mariakedemo">@mariakedemo</a>), Henrik Andersson (<a href="https://twitter.com/henkeandersson">@henkeandersson</a>), Maria Månsson, Amy Philips (<a href="https://twitter.com/ItJustBroke">@ItJustBroke</a>), Richard Bradshaw (<a href="https://twitter.com/FriendlyTester">@FriendlyTester</a>), Duncan Nisbet (<a href="https://twitter.com/DuncNisbet">@DuncNisbet</a>), Alexandru Rotaru (<a href="https://twitter.com/altomalex">@altomalex</a>), Oana Casapu, Simon Schrijver (<a href="https://twitter.com/SimonSaysNoMore">@SimonSaysNoMore</a>), Zeger Van Hese (<a href="https://twitter.com/TestSideStory">@TestSideStory</a>), Helena Jeret-Mäe (<a href="https://twitter.com/HelenaJ_M">@HelenaJ_M</a>), Aleksis Tulonen (<a href="https://twitter.com/al3ksis">@al3ksis</a>), Anders Dinsen (<a href="https://twitter.com/andersdinsen">@andersdinsen</a>) - at the awesome <a href="http://www.karlskronatestgathering.se/titan.html">TITAN peer conference</a> in Karlskrona, Sweden.</p>
+<p>During the conference we discussed leadership and testing and on Sunday morning I got the opportunity to tell my story<sup id="fnref:1"><a class="footnote-ref" href="2015/two-styles-of-leadership-in-spreading-context-driven-testing-titanconf/#fn:1">1</a></sup>. (I do wish I had captured more of the discussion afterwards to include in this blog post.)</p>
+<h3>The first style</h3>
+<p>When thinking about my own leadership in testing, one of the first things that come to mind are my attempts to influence my colleagues at work (testers, developers, project managers) to become more context-driven in their attitude towards testing.</p>
+<p class="more"><a href="2015/two-styles-of-leadership-in-spreading-context-driven-testing-titanconf/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2015/whats-the-word-for-the-part-of-testing-thats-not-checking/" class="u-url">What's the word for the part of testing that's not checking?</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2015/whats-the-word-for-the-part-of-testing-thats-not-checking/" rel="bookmark">
+            <time class="published dt-published" datetime="2015-08-17T20:19:25+02:00" itemprop="datePublished" title="17 August 2015">17 August 2015</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<h3>The question I asked</h3>
+<p>Yesterday <a href="https://twitter.com/j19sch/status/632910141751447552">I asked on twitter</a>:</p>
+<blockquote>
+<p>Question: what's the proper word for the part of testing that's not checking? #cdt #testing #semantics<br>
+- Joep Schuurkes (@j19sch) August 16, 2015</p>
+</blockquote>
+<p>The reason I asked, is that I noticed I needed that word in discussions about testing and checking. If checking is part of testing - and in the RST namespace it most definitely is, see '<a href="http://www.satisfice.com/blog/archives/856">Testing and checking refined</a>' -, then what can I contrast checking with? Contrasting checking with testing (as in 'checking versus testing') isn't going to work: there's one thing that's checking and then there's this other thing, testing, that contains that one thing and some other stuff<sup id="fnref:1"><a class="footnote-ref" href="2015/whats-the-word-for-the-part-of-testing-thats-not-checking/#fn:1">1</a></sup>, but it's like a completely different thing. See the difference? Conceptually that just doesn't work - at least not in my mind.</p>
+<h3>The answers I got</h3>
+<p>So I figured I'd ask twitter in all its infinite testing wisdom and lo and behold, not only did people reply, a discussion ensued with the following people (listed in no particular order) participating in different configurations: <a href="https://twitter.com/eddybruin">@eddybruin</a>, <a href="https://twitter.com/mariakedemo">@mariakedemo</a>, <a href="https://twitter.com/SandroIbig">@SandroIbig</a>, <a href="https://twitter.com/TestPappy">@TestPappy</a>, <a href="https://twitter.com/dwiersma">@dwiersma</a>, <a href="https://twitter.com/ilarihenrik">@ilarihenrik</a>, <a href="https://twitter.com/PhilipHoeben">@PhilipHoeben</a>, <a href="https://twitter.com/huibschoots">@huibschoots</a> and <a href="https://twitter.com/deefex">@deefex</a>. Thank you all!</p>
+<p class="more"><a href="2015/whats-the-word-for-the-part-of-testing-thats-not-checking/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2015/test-automation-five-questions-leading-to-five-heuristics/" class="u-url">Test automation - five questions leading to five heuristics</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2015/test-automation-five-questions-leading-to-five-heuristics/" rel="bookmark">
+            <time class="published dt-published" datetime="2015-03-24T20:53:24+01:00" itemprop="datePublished" title="24 March 2015">24 March 2015</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>(I wrote a follow-up to this post in June 2019: <a href="2019/how-this-tester-writes-code/">how this tester writes code</a>.)</p>
+<p>In 1984 Abelson and Sussman said in the Preface to '<a href="https://mitpress.mit.edu/sicp/">Structure and Interpretation of Computer Programs</a>':</p>
+<blockquote>
+<p>Our design of this introductory computer-science subject reflects two major concerns. First, we want to establish the idea that a computer language is not just a way of getting a computer to perform operations but rather that it is a novel formal medium for expressing ideas about methodology. <strong>Thus, programs must be written for people to read, and only incidentally for machines to execute.</strong> Second, we believe that the essential material to be addressed by a subject at this level is not the syntax of particular programming-language constructs, nor clever algorithms for computing particular functions efficiently, nor even the mathematical analysis of algorithms and the foundations of computing, but rather the techniques used to control the intellectual complexity of large software systems. [emphasis mine]</p>
+</blockquote>
+<p>This oft-quoted sentence I emphasized, is even more true if the purpose of our programs is test automation<sup id="fnref:1"><a class="footnote-ref" href="2015/test-automation-five-questions-leading-to-five-heuristics/#fn:1">1</a></sup>. So let's say you run your test automation program and the result is a list of passes and fails.  The purpose of testing is to produce information. You could say that this list of results qualifies as information and I would disagree. I would say it is data, data in need of interpretation. When we attempt this interpretation, we should consider the following five questions.</p>
+<p class="more"><a href="2015/test-automation-five-questions-leading-to-five-heuristics/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2015/three-arguments-against-the-verification-validation-dichotomy/" class="u-url">Three arguments against the verification-validation dichotomy</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2015/three-arguments-against-the-verification-validation-dichotomy/" rel="bookmark">
+            <time class="published dt-published" datetime="2015-03-24T20:53:24+01:00" itemprop="datePublished" title="24 March 2015">24 March 2015</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Last week while talking with two colleagues, one of them mentioned the verification/validation thing. And I noticed it made me feel uneasy. Because I know well enough what is meant by the distinction, but on a practical level I simply can't relate to it. When I think about what I do as a software tester and how verification versus validation applies to it, nothing happens. Blank mind. Crickets. Tumbleweed.
+So after giving it some thought, I present you with three arguments against the verification-validation dichotomy.</p>
+<p>First of course, we have the obligatory interlude of defining these two terms. A place to start is the Wikipedia page on <a href="http://en.wikipedia.org/wiki/Software_verification_and_validation">Software verification and validation</a>. Unfortunately it contains conflicting definitions, so if anyone cares enough, please do fix. Luckily there's also the general <a href="http://en.wikipedia.org/wiki/Verification_and_validation">Verification and validation</a> page of Wikipedia, which gives us (among others) the tl;dr version of the distinction:</p>
+<ul>
+<li>Verification: <em>Are we building the product right?</em>
+</li>
+<li>Validation: <em>Are we building the right product?</em>
+</li>
+</ul>
+<p>Finally there's the <a href="http://www.istqb.org/downloads/finish/20/145.html">ISTQB glossary v2.4</a> that borrows from ISO 9000:</p>
+<ul>
+<li>Verification: <em>Confirmation by examination and through provision of objective evidence that specified requirements have been fulfilled.</em>
+</li>
+<li>Validation: <em>Confirmation by examination and through provision of objective evidence that the requirements for a specific intended use or application have been fulfilled.</em>
+</li>
+</ul>
+<p>Now on to the three arguments.</p>
+<p class="more"><a href="2015/three-arguments-against-the-verification-validation-dichotomy/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2015/the-test-case-an-epistemological-deconstruction/" class="u-url">The test case - an epistemological deconstruction</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2015/the-test-case-an-epistemological-deconstruction/" rel="bookmark">
+            <time class="published dt-published" datetime="2015-02-01T22:19:55+01:00" itemprop="datePublished" title="1 February 2015">1 February 2015</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p><em>(This article was first published in Dutch in <a href="https://www.testnet.org/testnet/home">TestNet</a> Nieuws 18. The article below is a translation with minor changes. Many thanks to Joris Meerts and Ruud Cox for reviewing the original version.)</em></p>
+<h3>Testing as an information problem</h3>
+<p>Testing is an information problem. We are in search of certain information, of an answer to the question: does this application fulfill the relevant explicit and implicit expectations? The exact way in which we can answer this question, however, is not immediately clear. First we will need to decide which questions to ask, how to ask them and how to evaluate the responses. Hence, testing is an information problem.</p>
+<p>For the traditional test methodologies (ISTQB and TMap being the most well-known) the test case is a large part of the solution. So let's take this solution apart epistemologically and see what it is we have in front of us. If the traditional test case is our solution, what information does a test case contain? What changes occur after executing it? And also, where is the understanding in all of this that's happening?</p>
+<p>In this article, I will first describe how a typical test case is created and how it is used. Then we shall take a look at which kinds of information a test case contains. Finally, we will analyze where the understanding of what happens during testing, is present and where it is not.</p>
+<p class="more"><a href="2015/the-test-case-an-epistemological-deconstruction/">Read more…</a></p>
+</div>
+                </div>
             </article>
 </div>
             <ul class="pager postindexpager clearfix">
-<li class="previous"><a href="." rel="prev">Newer posts</a></li>
+<li class="previous"><a href="index-2.html" rel="prev">Newer posts</a></li>
         </ul>
 <!--End of body content--><footer id="footer">
             Contents © 2021     

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="https://j19sch.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>Joep Schuurkes (Posts about information debt)</title>
+  <id>https://j19sch.github.io/categories/information-debt.atom</id>
+  <updated>2021-04-11T14:02:28Z</updated>
+  <author>
+    <name>Joep Schuurkes</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://j19sch.github.io/categories/information-debt.atom"/>
+  <link rel="alternate" type="text/html" href="https://j19sch.github.io/categories/information-debt/"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>The test case - an epistemological deconstruction</title>
+    <id>https://j19sch.github.io/blog/2015/the-test-case-an-epistemological-deconstruction/</id>
+    <updated>2015-02-01T22:19:55+01:00</updated>
+    <published>2015-02-01T22:19:55+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2015/the-test-case-an-epistemological-deconstruction/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;&lt;em&gt;(This article was first published in Dutch in &lt;a href="https://www.testnet.org/testnet/home"&gt;TestNet&lt;/a&gt; Nieuws 18. The article below is a translation with minor changes. Many thanks to Joris Meerts and Ruud Cox for reviewing the original version.)&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;Testing as an information problem&lt;/h3&gt;
+&lt;p&gt;Testing is an information problem. We are in search of certain information, of an answer to the question: does this application fulfill the relevant explicit and implicit expectations? The exact way in which we can answer this question, however, is not immediately clear. First we will need to decide which questions to ask, how to ask them and how to evaluate the responses. Hence, testing is an information problem.&lt;/p&gt;
+&lt;p&gt;For the traditional test methodologies (ISTQB and TMap being the most well-known) the test case is a large part of the solution. So let's take this solution apart epistemologically and see what it is we have in front of us. If the traditional test case is our solution, what information does a test case contain? What changes occur after executing it? And also, where is the understanding in all of this that's happening?&lt;/p&gt;
+&lt;p&gt;In this article, I will first describe how a typical test case is created and how it is used. Then we shall take a look at which kinds of information a test case contains. Finally, we will analyze where the understanding of what happens during testing, is present and where it is not.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2015/the-test-case-an-epistemological-deconstruction/"&gt;Read more…&lt;/a&gt; (10 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="epistemology" label="epistemology"/>
+    <category term="information-debt" label="information debt"/>
+    <category term="test-cases" label="test cases"/>
+  </entry>
+</feed>

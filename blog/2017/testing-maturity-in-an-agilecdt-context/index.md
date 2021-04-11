@@ -2,7 +2,7 @@
 .. title: Testing maturity in an agile/CDT context
 .. slug: testing-maturity-in-an-agilecdt-context
 .. date: 2017-02-05 17:43:10 UTC+01:00
-.. tags: agile, context-driven, maturity
+.. tags: agile, context-driven testing, maturity
 .. category: testing maturity
 .. link: 
 .. description:

@@ -3,7 +3,7 @@
 .. slug: your-ci-cd-pipeline-does-not-run-regression-tests
 .. date: 2019-08-05 23:47:51 UTC+02:00
 .. tags: devops, ci/cd, regression testing, semantics, test automation
-.. category: devops
+.. category: ci\/cd
 .. link: 
 .. description:
 .. type: text

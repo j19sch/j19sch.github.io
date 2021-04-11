@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What's the word for the part of testing that's not checking? | Joep Schuurkes</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../feed.atom">
+<link rel="canonical" href="https://j19sch.github.io/blog/2015/whats-the-word-for-the-part-of-testing-thats-not-checking/">
+<link rel="icon" href="../../../assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="../../../assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../assets/favicons/favicon-96x96.png" sizes="96x96">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../three-arguments-against-the-verification-validation-dichotomy/" title="Three arguments against the verification-validation dichotomy" type="text/html">
+<link rel="next" href="../two-styles-of-leadership-in-spreading-context-driven-testing-titanconf/" title="Two styles of leadership in spreading context-driven testing (TITANconf)" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="What's the word for the part of testing that's not checking?">
+<meta property="og:url" content="https://j19sch.github.io/blog/2015/whats-the-word-for-the-part-of-testing-thats-not-checking/">
+<meta property="og:description" content="The question I asked
+Yesterday I asked on twitter:
+
+Question: what's the proper word for the part of testing that's not checking? #cdt #testing #semantics
+- Joep Schuurkes (@j19sch) August 16, 2015
+
+T">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2015-08-17T20:19:25+02:00">
+<meta property="article:tag" content="context-driven testing">
+<meta property="article:tag" content="semantics">
+<meta property="article:tag" content="testing and checking">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-projects" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-talks" class="nav-link">Talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../../my-lists/reading-list" class="dropdown-item">Reading list</a>
+                    <a href="../../../my-lists/recommended-reading" class="dropdown-item">Recommended reading</a>
+                    <a href="../../../my-lists/favorite-podcasts" class="dropdown-item">Favorite podcasts</a>
+                    <a href="../../../my-lists/fountain-pens" class="dropdown-item">Fountain pens</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../../blog" class="dropdown-item">My blog</a>
+                    <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../rss.xml" class="dropdown-item">RSS feed</a>
+                    <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">What's the word for the part of testing that's not checking?</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2015-08-17T20:19:25+02:00" itemprop="datePublished" title="17 August 2015">17 August 2015</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<h3>The question I asked</h3>
+<p>Yesterday <a href="https://twitter.com/j19sch/status/632910141751447552">I asked on twitter</a>:</p>
+<blockquote>
+<p>Question: what's the proper word for the part of testing that's not checking? #cdt #testing #semantics<br>
+- Joep Schuurkes (@j19sch) August 16, 2015</p>
+</blockquote>
+<p>The reason I asked, is that I noticed I needed that word in discussions about testing and checking. If checking is part of testing - and in the RST namespace it most definitely is, see '<a href="http://www.satisfice.com/blog/archives/856">Testing and checking refined</a>' -, then what can I contrast checking with? Contrasting checking with testing (as in 'checking versus testing') isn't going to work: there's one thing that's checking and then there's this other thing, testing, that contains that one thing and some other stuff<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, but it's like a completely different thing. See the difference? Conceptually that just doesn't work - at least not in my mind.</p>
+<h3>The answers I got</h3>
+<p>So I figured I'd ask twitter in all its infinite testing wisdom and lo and behold, not only did people reply, a discussion ensued with the following people (listed in no particular order) participating in different configurations: <a href="https://twitter.com/eddybruin">@eddybruin</a>, <a href="https://twitter.com/mariakedemo">@mariakedemo</a>, <a href="https://twitter.com/SandroIbig">@SandroIbig</a>, <a href="https://twitter.com/TestPappy">@TestPappy</a>, <a href="https://twitter.com/dwiersma">@dwiersma</a>, <a href="https://twitter.com/ilarihenrik">@ilarihenrik</a>, <a href="https://twitter.com/PhilipHoeben">@PhilipHoeben</a>, <a href="https://twitter.com/huibschoots">@huibschoots</a> and <a href="https://twitter.com/deefex">@deefex</a>. Thank you all!</p>
+<!-- TEASER_END -->
+
+<p>Do click on the embedded tweet to read all of it, but here's a list of the answers they came up with:</p>
+<ul>
+<li>Exploring</li>
+<li>Learning</li>
+<li>Evaluating</li>
+<li>Monitoring</li>
+<li>Confidence building and refining</li>
+<li>Experimenting</li>
+<li>Non-checking</li>
+</ul>
+<p>It only took a few replies for me to realize I may have asked the wrong question - as in: not the question I had intended to ask. And a quick look at the diagram in '<a href="http://www.satisfice.com/blog/archives/856">Testing and checking refined</a>' confirmed this:</p>
+<div class="d-flex justify-content-center">
+    <figure class="figure w-50"><img src="../../../images/2015/testing-not-checking/checking-diagram.png" class="figure-img img-fluid rounded" alt="testing and checking diagram"></figure>
+</div>
+
+<p>Testing is a very big box. Learning is a part of it and so are experimenting, studying, questioning, modeling, etc. <strong>and</strong> checking. So the part of testing that's not checking, isn't just one thing, it's many things. Hence Del Delwar's (<a href="https://twitter.com/deefex">@deefex</a>) reply: "<em>I'd suggest that's possibly too wide an array of things to encapsulate in a single word. Try 'non-checking' :-)</em>"</p>
+<h3>The question I meant to ask</h3>
+<p>So with that settled, on to the question I meant to ask: If checking is "<em>the process of making evaluations by applying algorithmic decision rules to specific observations of a product</em>" (source yet again '<a href="http://www.satisfice.com/blog/archives/856">Testing and checking refined</a>'), then what's the name for the non-algorithmic evaluation of a product? A 'heuristic evaluation'? Does such a thing exist? Or are all our evaluations during testing checks?</p>
+<p>First of all, when I test, it doesn't feel like all my evaluations are checks. That may not be a very strong argument, but I do think it's worth to at least note.</p>
+<p>Secondly, where do these algorithmic decision rules come from? Do I need to have them beforehand? Do I need to have them recorded somewhere? Or can I just make them up as I go along? More importantly, do these rules need to be explicit?</p>
+<p>And that last question led me to a bunch of philosophical questions:</p>
+<ul>
+<li>If not all of our evaluations are checks per se, is it possible to (re-)formulate them as checks?</li>
+<li>If I can't express my evaluation as a check, how would I able to communicate in a meaningful way about my evaluation?</li>
+<li>If my evaluation is founded on tacit knowledge and there's no need to make that knowledge explicit, because the people I communicate with, share in that tacit knowledge, can that evaluation still be considered a check?</li>
+<li>Does it matter if the tacit knowledge on which an evaluation is based, is 'weak' (we could make it explicit) or 'strong' (we can't make it explicit)?</li>
+<li>Where does algorithmic end? I can make an algorithmic decision if I find something beautiful, by observing my aesthetic feelings towards that object. If I observe positive feelings within myself, I find the thing beautiful. However, I can't make an algorithmic decision if I find some beautiful (yes, I know, that's the exact same sentence), because I can't specify a set of algorithmic rules that decide if I would find something beautiful. So what it boils down to is: is the algorithmic evaluation of an observation of my own mental state a valid check? Or should we go one level deeper, to the cause(s) of my mental state?</li>
+<li>Is the previous bullet point anything other than a philosophical quagmire one needs to extract oneself out off Münchhausen-style? In any case I highly recommend reading Raymond M. Smullyan's "<a href="http://www.mit.edu/people/dpolicar/writing/prose/text/epistemologicalNightmare.html">An Epistemological Nightmare</a>" to sink a little deeper.</li>
+</ul>
+<h3>Back to the context of the question</h3>
+<p>So… why was I asking this question again about non-algorithmic evaluation during testing? It's quite simple actually:<br>
+(1) If testing is investigating a product to evaluate it<br>
+AND<br>
+(2) all evaluation is done by applying algorithmic decision rules,<br>
+THEN<br>
+(3) the core of testing is checking.</p>
+<p>Of course, there's all the stuff going on around the checking. There's all the investigating, modeling, experimenting to come to the checks. And there's all the sense-making of the results of the checks to provide valuable information to our stakeholders. But it all revolves around checking.</p>
+<p>So when I am talking to someone who seems to think that there's nothing more to testing than checking, I can argue that there's all this other stuff we testers do that is testing, but is not checking. But what I cannot argue is that there is something we do instead of checking (so something non-algorithmic) that leads to evaluative data<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> about the product, because there is no such thing. And that bugs me, because that's not how I've been using the words 'checking' and 'testing'.</p>
+<hr>
+<p><em>This post was originally published <a href="https://testingcurve.wordpress.com/2015/08/17/whats-the-word-for-the-part-of-testing-thats-not-checking/">here</a>.</em></p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Advanced semantics question: is 'checking versus testing' more like 'apples versus fruit' or more like 'squares versus rectangles'?<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>Data + interpretation = information. Hmm… or: Interpretation(data) = information. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+<li id="fn:3">
+<p>Apparently the correct answer is "<a href="https://twitter.com/al3ksis/status/633343017252995073">leaves vs trees</a>". <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/context-driven-testing/" rel="tag">context-driven testing</a></li>
+            <li><a class="tag p-category" href="../../../categories/semantics/" rel="tag">semantics</a></li>
+            <li><a class="tag p-category" href="../../../categories/testing-and-checking/" rel="tag">testing and checking</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../three-arguments-against-the-verification-validation-dichotomy/" rel="prev" title="Three arguments against the verification-validation dichotomy">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../two-styles-of-leadership-in-spreading-context-driven-testing-titanconf/" rel="next" title="Two styles of leadership in spreading context-driven testing (TITANconf)">Next post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2021     
+<a href="http://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a>
+    <a href="mailto:j19sch@hey.com">Joep Schuurkes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

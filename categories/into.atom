@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about into)</title>
   <id>https://j19sch.github.io/categories/into.atom</id>
-  <updated>2021-04-06T19:47:26Z</updated>
+  <updated>2020-12-26T09:02:19Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -13,8 +13,8 @@
   <entry>
     <title>(clj 5) Loop and recur, into and conj</title>
     <id>https://j19sch.github.io/blog/clojure/2020/clj5-loop-and-recur-into-and-conj/</id>
-    <updated>2020-12-26T10:09:08+01:00</updated>
-    <published>2020-12-26T10:09:08+01:00</published>
+    <updated>2020-12-25T15:25:15+01:00</updated>
+    <published>2020-12-25T15:25:15+01:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
