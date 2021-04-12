@@ -1232,6 +1232,14 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
 }
 
+div.container {
+  max-width: 960px;
+}
+
+div.container#content {
+  max-width: 900px;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: rgba(0,0,0,.55);
 }
@@ -1256,12 +1264,21 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: underline;
 }
 
-div.container {
-  max-width: 960px;
+nav.archivenav {
+  margin-bottom: 1.3rem;
 }
 
-div.container#content {
-  max-width: 900px;
+nav.archivenav li a {
+  border: 0px;
+}
+
+nav.archivenav li.disabled a {
+  color: #737373;
+  cursor: default;
+}
+
+nav.archivenav li.disabled a:hover {
+  text-decoration: none;
 }
 
 .body-content img {
