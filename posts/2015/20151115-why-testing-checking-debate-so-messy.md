@@ -3,7 +3,7 @@
 .. slug: why-the-testingchecking-debate-is-so-messy-a-fruit-salad-analogy
 .. date: 2015-11-15 12:17:12 UTC+01:00
 .. tags: semantics, context-driven testing, testing and checking
-.. category: philosohpy of testing
+.. category: philosophy of testing
 .. link: 
 .. description:
 .. type: text

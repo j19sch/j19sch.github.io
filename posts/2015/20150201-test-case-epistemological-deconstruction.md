@@ -3,7 +3,7 @@
 .. slug: the-test-case-an-epistemological-deconstruction
 .. date: 2015-02-01 22:19:55 UTC+01:00
 .. tags: test cases, epistemology, information debt
-.. category: philosohpy of testing
+.. category: philosophy of testing
 .. link: 
 .. description:
 .. type: text
