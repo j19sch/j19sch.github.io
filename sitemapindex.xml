@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://j19sch.github.io/blog/feed.atom</loc>
-  <lastmod>2021-04-11T08:38:00Z</lastmod>
+  <lastmod>2021-04-17T14:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/blog/rss.xml</loc>
-  <lastmod>2021-04-12T12:27:00Z</lastmod>
+  <lastmod>2021-04-17T14:13:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/agile.atom</loc>
@@ -19,7 +19,7 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/agile.xml</loc>
-  <lastmod>2021-04-12T12:27:00Z</lastmod>
+  <lastmod>2021-04-17T13:20:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/automation.atom</loc>
@@ -39,19 +39,27 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/booleans.atom</loc>
-  <lastmod>2020-12-26T09:02:00Z</lastmod>
+  <lastmod>2021-04-17T14:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/booleans.xml</loc>
-  <lastmod>2020-12-26T09:02:00Z</lastmod>
+  <lastmod>2021-04-17T14:10:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/brave-clojure.atom</loc>
+  <lastmod>2021-04-17T14:11:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/brave-clojure.xml</loc>
+  <lastmod>2021-04-17T14:13:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/brave-true.atom</loc>
-  <lastmod>2020-12-26T09:02:00Z</lastmod>
+  <lastmod>2021-04-17T14:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/brave-true.xml</loc>
-  <lastmod>2020-12-26T09:11:00Z</lastmod>
+  <lastmod>2021-04-17T14:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_cicd.atom</loc>
@@ -63,19 +71,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_clojure.atom</loc>
-  <lastmod>2020-12-26T09:02:00Z</lastmod>
+  <lastmod>2021-04-17T14:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_clojure.xml</loc>
-  <lastmod>2020-12-26T09:11:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://j19sch.github.io/categories/cat_devops.atom</loc>
-  <lastmod>2021-04-12T12:09:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://j19sch.github.io/categories/cat_devops.xml</loc>
-  <lastmod>2021-04-12T12:09:00Z</lastmod>
+  <lastmod>2021-04-17T14:13:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_exploration.atom</loc>
@@ -95,11 +95,19 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_philosohpy-of-testing.atom</loc>
-  <lastmod>2021-04-11T14:02:00Z</lastmod>
+  <lastmod>2021-04-17T13:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_philosohpy-of-testing.xml</loc>
-  <lastmod>2021-04-11T14:02:00Z</lastmod>
+  <lastmod>2021-04-17T13:21:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/cat_philosophy-of-testing.atom</loc>
+  <lastmod>2021-04-17T13:42:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/cat_philosophy-of-testing.xml</loc>
+  <lastmod>2021-04-17T13:44:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_programming.atom</loc>
@@ -107,7 +115,7 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_programming.xml</loc>
-  <lastmod>2021-03-14T17:02:00Z</lastmod>
+  <lastmod>2021-04-17T14:12:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_quality.atom</loc>
@@ -126,20 +134,36 @@
   <lastmod>2021-04-11T14:00:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://j19sch.github.io/categories/cat_test-management-software-testing-test-cases.atom</loc>
+  <lastmod>2021-04-17T13:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/cat_test-management-software-testing-test-cases.xml</loc>
+  <lastmod>2021-04-17T13:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/cat_test-management-software-testing-test-strategy.atom</loc>
+  <lastmod>2021-04-17T13:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/cat_test-management-software-testing-test-strategy.xml</loc>
+  <lastmod>2021-04-17T13:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://j19sch.github.io/categories/cat_test-management.atom</loc>
-  <lastmod>2021-03-26T20:15:00Z</lastmod>
+  <lastmod>2021-04-17T14:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_test-management.xml</loc>
-  <lastmod>2021-03-26T20:15:00Z</lastmod>
+  <lastmod>2021-04-17T14:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_test-strategy.atom</loc>
-  <lastmod>2021-03-26T20:16:00Z</lastmod>
+  <lastmod>2021-04-17T14:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_test-strategy.xml</loc>
-  <lastmod>2021-03-26T20:16:00Z</lastmod>
+  <lastmod>2021-04-17T14:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_testing-manifesto.atom</loc>
@@ -147,7 +171,7 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_testing-manifesto.xml</loc>
-  <lastmod>2021-04-12T12:27:00Z</lastmod>
+  <lastmod>2021-04-17T13:20:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_testing-maturity.atom</loc>
@@ -166,12 +190,20 @@
   <lastmod>2021-04-12T12:27:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://j19sch.github.io/categories/clojure-for-brave-and-true.atom</loc>
+  <lastmod>2021-04-17T14:08:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/clojure-for-brave-and-true.xml</loc>
+  <lastmod>2021-04-17T14:08:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://j19sch.github.io/categories/clojure.atom</loc>
-  <lastmod>2021-03-14T14:53:00Z</lastmod>
+  <lastmod>2021-04-17T14:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/clojure.xml</loc>
-  <lastmod>2021-03-14T14:53:00Z</lastmod>
+  <lastmod>2021-04-17T14:13:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/closures.atom</loc>
@@ -187,23 +219,15 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/conj.xml</loc>
-  <lastmod>2020-12-26T09:11:00Z</lastmod>
+  <lastmod>2021-04-17T14:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/context-driven-testing.atom</loc>
-  <lastmod>2021-04-12T12:27:00Z</lastmod>
+  <lastmod>2021-04-17T13:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/context-driven-testing.xml</loc>
-  <lastmod>2021-04-12T12:27:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://j19sch.github.io/categories/context-driven.atom</loc>
-  <lastmod>2021-04-12T12:09:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://j19sch.github.io/categories/context-driven.xml</loc>
-  <lastmod>2021-04-12T12:09:00Z</lastmod>
+  <lastmod>2021-04-17T13:44:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/data-analysis.atom</loc>
@@ -219,7 +243,15 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/devops.xml</loc>
-  <lastmod>2021-04-12T12:27:00Z</lastmod>
+  <lastmod>2021-04-17T13:20:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/dewt.atom</loc>
+  <lastmod>2021-04-17T13:44:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/dewt.xml</loc>
+  <lastmod>2021-04-17T13:44:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/emacs.atom</loc>
@@ -227,7 +259,7 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/emacs.xml</loc>
-  <lastmod>2020-12-26T09:02:00Z</lastmod>
+  <lastmod>2021-04-17T14:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/epistemology.atom</loc>
@@ -235,15 +267,23 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/epistemology.xml</loc>
-  <lastmod>2021-04-11T14:02:00Z</lastmod>
+  <lastmod>2021-04-17T13:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/exploration.atom</loc>
-  <lastmod>2021-04-12T12:27:00Z</lastmod>
+  <lastmod>2021-04-17T14:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/exploration.xml</loc>
-  <lastmod>2021-04-12T12:27:00Z</lastmod>
+  <lastmod>2021-04-17T14:03:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/five.atom</loc>
+  <lastmod>2021-04-17T13:49:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/five.xml</loc>
+  <lastmod>2021-04-17T13:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/horizon.atom</loc>
@@ -254,12 +294,20 @@
   <lastmod>2021-04-12T12:27:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://j19sch.github.io/categories/ides.atom</loc>
+  <lastmod>2021-04-17T14:12:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/ides.xml</loc>
+  <lastmod>2021-04-17T14:13:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://j19sch.github.io/categories/information-debt.atom</loc>
-  <lastmod>2021-04-11T14:02:00Z</lastmod>
+  <lastmod>2021-04-17T13:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/information-debt.xml</loc>
-  <lastmod>2021-04-11T14:02:00Z</lastmod>
+  <lastmod>2021-04-17T13:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/into.atom</loc>
@@ -267,7 +315,15 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/into.xml</loc>
-  <lastmod>2020-12-26T09:11:00Z</lastmod>
+  <lastmod>2021-04-17T14:11:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/iso-29119.atom</loc>
+  <lastmod>2021-04-17T13:35:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/iso-29119.xml</loc>
+  <lastmod>2021-04-17T13:35:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/koans.atom</loc>
@@ -275,7 +331,7 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/koans.xml</loc>
-  <lastmod>2020-12-26T09:02:00Z</lastmod>
+  <lastmod>2021-04-17T14:13:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/leadership.atom</loc>
@@ -286,12 +342,28 @@
   <lastmod>2021-04-11T13:58:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://j19sch.github.io/categories/leftover-thoughts.atom</loc>
+  <lastmod>2021-04-17T13:49:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/leftover-thoughts.xml</loc>
+  <lastmod>2021-04-17T13:49:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/logic.atom</loc>
+  <lastmod>2021-04-17T14:10:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/logic.xml</loc>
+  <lastmod>2021-04-17T14:10:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://j19sch.github.io/categories/loop.atom</loc>
   <lastmod>2020-12-26T09:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/loop.xml</loc>
-  <lastmod>2020-12-26T09:11:00Z</lastmod>
+  <lastmod>2021-04-17T14:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/management.atom</loc>
@@ -307,7 +379,7 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/manifesto.xml</loc>
-  <lastmod>2021-04-12T12:27:00Z</lastmod>
+  <lastmod>2021-04-17T13:20:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/maps.atom</loc>
@@ -351,11 +423,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/programming.atom</loc>
-  <lastmod>2021-04-12T12:27:00Z</lastmod>
+  <lastmod>2021-04-17T14:13:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/programming.xml</loc>
-  <lastmod>2021-04-12T12:27:00Z</lastmod>
+  <lastmod>2021-04-17T14:13:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/python.atom</loc>
@@ -363,7 +435,7 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/python.xml</loc>
-  <lastmod>2021-03-14T17:02:00Z</lastmod>
+  <lastmod>2021-04-17T14:12:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/quality.atom</loc>
@@ -379,7 +451,7 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/recur.xml</loc>
-  <lastmod>2020-12-26T09:11:00Z</lastmod>
+  <lastmod>2021-04-17T14:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/regression-testing.atom</loc>
@@ -399,11 +471,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/semantics.atom</loc>
-  <lastmod>2021-04-12T12:27:00Z</lastmod>
+  <lastmod>2021-04-17T13:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/semantics.xml</loc>
-  <lastmod>2021-04-12T12:27:00Z</lastmod>
+  <lastmod>2021-04-17T13:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/small-steps.atom</loc>
@@ -412,6 +484,22 @@
  <sitemap>
   <loc>https://j19sch.github.io/categories/small-steps.xml</loc>
   <lastmod>2021-04-12T12:27:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/software-testing.atom</loc>
+  <lastmod>2021-04-17T13:59:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/software-testing.xml</loc>
+  <lastmod>2021-04-17T13:59:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/terminology.atom</loc>
+  <lastmod>2021-04-17T13:49:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/terminology.xml</loc>
+  <lastmod>2021-04-17T13:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/test-automation.atom</loc>
@@ -423,27 +511,35 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/test-cases.atom</loc>
-  <lastmod>2021-04-12T12:27:00Z</lastmod>
+  <lastmod>2021-04-17T14:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/test-cases.xml</loc>
-  <lastmod>2021-04-12T12:27:00Z</lastmod>
+  <lastmod>2021-04-17T14:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/test-management.atom</loc>
-  <lastmod>2021-03-26T20:13:00Z</lastmod>
+  <lastmod>2021-04-17T14:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/test-management.xml</loc>
-  <lastmod>2021-03-26T20:16:00Z</lastmod>
+  <lastmod>2021-04-17T14:04:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/test-reporting.atom</loc>
+  <lastmod>2021-04-17T14:03:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/test-reporting.xml</loc>
+  <lastmod>2021-04-17T14:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/test-strategy.atom</loc>
-  <lastmod>2021-03-26T20:13:00Z</lastmod>
+  <lastmod>2021-04-17T14:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/test-strategy.xml</loc>
-  <lastmod>2021-03-26T20:16:00Z</lastmod>
+  <lastmod>2021-04-17T14:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/testing-and-checking.atom</loc>
@@ -451,15 +547,23 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/testing-and-checking.xml</loc>
-  <lastmod>2021-04-11T14:00:00Z</lastmod>
+  <lastmod>2021-04-17T13:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/testing.atom</loc>
-  <lastmod>2021-03-26T19:40:00Z</lastmod>
+  <lastmod>2021-04-17T13:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/testing.xml</loc>
-  <lastmod>2021-04-12T12:27:00Z</lastmod>
+  <lastmod>2021-04-17T13:49:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/text-editors.atom</loc>
+  <lastmod>2021-04-17T14:09:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/text-editors.xml</loc>
+  <lastmod>2021-04-17T14:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/tools.atom</loc>
@@ -483,15 +587,23 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/verification-and-validation.xml</loc>
-  <lastmod>2021-04-11T13:41:00Z</lastmod>
+  <lastmod>2021-04-17T13:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/vim.atom</loc>
-  <lastmod>2020-12-26T09:02:00Z</lastmod>
+  <lastmod>2021-04-17T14:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/vim.xml</loc>
-  <lastmod>2020-12-26T09:02:00Z</lastmod>
+  <lastmod>2021-04-17T14:13:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/vipt.atom</loc>
+  <lastmod>2021-04-17T13:42:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/vipt.xml</loc>
+  <lastmod>2021-04-17T13:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/vscode.atom</loc>
@@ -499,7 +611,7 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/vscode.xml</loc>
-  <lastmod>2020-12-26T09:02:00Z</lastmod>
+  <lastmod>2021-04-17T14:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/when.atom</loc>
@@ -511,6 +623,6 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/sitemap.xml</loc>
-  <lastmod>2021-04-12T12:27:00Z</lastmod>
+  <lastmod>2021-04-17T14:13:00Z</lastmod>
  </sitemap>
 </sitemapindex>

@@ -3,7 +3,7 @@
 .. slug: whats-the-word-for-the-part-of-testing-thats-not-checking
 .. date: 2015-08-17 20:19:25 UTC+02:00
 .. tags: context-driven testing, testing and checking, semantics
-.. category: philosohpy of testing
+.. category: philosophy of testing
 .. link: 
 .. description:
 .. type: text

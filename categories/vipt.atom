@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="https://j19sch.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>Joep Schuurkes (Posts about VIPT)</title>
+  <id>https://j19sch.github.io/categories/vipt.atom</id>
+  <updated>2021-04-17T13:42:11Z</updated>
+  <author>
+    <name>Joep Schuurkes</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://j19sch.github.io/categories/vipt.atom"/>
+  <link rel="alternate" type="text/html" href="https://j19sch.github.io/categories/vipt/"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Information debt</title>
+    <id>https://j19sch.github.io/blog/2014/information-debt/</id>
+    <updated>2014-07-13T16:50:21+02:00</updated>
+    <published>2014-07-13T16:50:21+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2014/information-debt/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Last week ago the following happened on twitter:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;New word of the day: "information debt". It's like technical debt, but related to information, communication, models, docs, visualisations.&lt;br&gt;
+&lt;em&gt;- Joep Schuurkes (@j19sch) &lt;a href="https://twitter.com/j19sch/statuses/486534198803841024"&gt;July 8, 2014&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;@j19sch: New word of the day: "information debt" =&amp;gt; blogpost coming up ?!?!?&lt;br&gt;
+&lt;em&gt;- Simon P. Schrijver (@SimonSaysNoMore) &lt;a href="https://twitter.com/SimonSaysNoMore/statuses/486551279590977536"&gt;July 8, 2014&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;@SimonSaysNoMore Wasn't planning to, but now you made me think about it, so yes. Damn you! :-P&lt;br&gt;
+&lt;em&gt;- Joep Schuurkes (@j19sch) &lt;a href="https://twitter.com/j19sch/statuses/486555404089188352"&gt;July 8, 2014&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In case you don't know what technical debt is, you might want to read &lt;a href="http://techblog.net-a-porter.com/2011/10/agile-tetris/"&gt;this&lt;/a&gt; first. (It's the oldest source I could find of the technical debt-tetris analogy, by the way. If you know of an older one, please leave a comment.)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2014/information-debt/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="information-debt" label="information debt"/>
+    <category term="software-testing" label="software testing"/>
+    <category term="vipt" label="VIPT"/>
+  </entry>
+</feed>

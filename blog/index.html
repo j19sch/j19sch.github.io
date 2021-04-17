@@ -17,7 +17,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <link rel="icon" href="../assets/favicons/favicon-16x16.png" sizes="16x16">
 <link rel="icon" href="../assets/favicons/favicon-32x32.png" sizes="32x32">
 <link rel="icon" href="../assets/favicons/favicon-96x96.png" sizes="96x96">
-<link rel="next" href="index-2.html" type="text/html">
+<link rel="next" href="index-3.html" type="text/html">
 <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script>
 </head>
 <body>
@@ -213,12 +213,13 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
 <h3>Why is there a <code>when</code>?</h3>
 <p>The part about control flow is actually before the part about <code>and</code> and <code>or</code> which I talked about in my <a href="clj3-and-or-being-weird">previous post</a>, but according to my notes I returned to it. I don't remember why to be honest.</p>
 <p>The book provides the following example of <code>when</code>:</p>
-<pre class="code literal-block"><span class="p">(</span><span class="nb">when </span><span class="nv">true</span>
+<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">when </span><span class="nv">true</span>
     <span class="p">(</span><span class="nb">println </span><span class="s">"Success!"</span><span class="p">)</span>
     <span class="s">"abra cadabra"</span><span class="p">)</span>
 <span class="c1">; =&gt; Success!</span>
 <span class="c1">; =&gt; "abra cadabra"</span>
-</pre>
+</code></pre>
+
 <p class="more"><a href="clojure/2020/clj4-learning-when-maps-closures/">Read more…</a></p>
 </div>
                 </div>
@@ -257,7 +258,7 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
 <p>Clojure uses the Boolean operators <code>or</code> and <code>and</code>. <code>or</code> returns either the first truthy value or the last value. <code>and</code> returns the first falsey value or, if no values are falsey, the last truthy value.</p>
 </blockquote>
 <p>This explanation is followed by some examples:</p>
-<pre class="code literal-block"><span class="p">(</span><span class="nf">or</span> <span class="nv">false</span> <span class="nv">nil</span> <span class="ss">:large_I_mean_venti</span> <span class="ss">:why_cant_I_just_say_large</span><span class="p">)</span>
+<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nf">or</span> <span class="nv">false</span> <span class="nv">nil</span> <span class="ss">:large_I_mean_venti</span> <span class="ss">:why_cant_I_just_say_large</span><span class="p">)</span>
 <span class="c1">; =&gt; :large_I_mean_venti</span>
 
 <span class="p">(</span><span class="nf">or</span> <span class="p">(</span><span class="nf">=</span> <span class="mi">0</span> <span class="mi">1</span><span class="p">)</span> <span class="p">(</span><span class="nf">=</span> <span class="s">"yes"</span> <span class="s">"no"</span><span class="p">))</span>
@@ -265,13 +266,15 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
 
 <span class="p">(</span><span class="nf">or</span> <span class="nv">nil</span><span class="p">)</span>
 <span class="c1">; =&gt; nil</span>
-</pre>
-<pre class="code literal-block"><span class="p">(</span><span class="nf">and</span> <span class="ss">:free_wifi</span> <span class="ss">:hot_coffee</span><span class="p">)</span>
+</code></pre>
+
+<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nf">and</span> <span class="ss">:free_wifi</span> <span class="ss">:hot_coffee</span><span class="p">)</span>
 <span class="c1">; =&gt; :hot_coffee</span>
 
 <span class="p">(</span><span class="nf">and</span> <span class="ss">:feelin_super_cool</span> <span class="nv">nil</span> <span class="nv">false</span><span class="p">)</span>
 <span class="c1">; =&gt; nil</span>
-</pre>
+</code></pre>
+
 <p>What I found remarkable about this is that <code>and</code> and <code>or</code> do not return a boolean in all cases. Before I go into that, let's back up a second and cover their basics in a little more depth first.</p>
 <p class="more"><a href="clojure/2020/clj3-and-or-being-weird/">Read more…</a></p>
 </div>
@@ -318,7 +321,7 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
             </article>
 </div>
             <ul class="pager postindexpager clearfix">
-<li class="next"><a href="index-2.html" rel="next">Older posts</a></li>
+<li class="next"><a href="index-3.html" rel="next">Older posts</a></li>
         </ul>
 <!--End of body content--><footer id="footer">
             Contents © 2021     

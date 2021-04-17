@@ -26,12 +26,9 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 three months after working on the code on September 5, 6 and 12. I'm not going to dwell o">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2020-12-26T10:09:08+01:00">
-<meta property="article:tag" content="brave-true">
+<meta property="article:tag" content="brave clojure">
 <meta property="article:tag" content="clojure">
-<meta property="article:tag" content="conj">
-<meta property="article:tag" content="into">
-<meta property="article:tag" content="loop">
-<meta property="article:tag" content="recur">
+<meta property="article:tag" content="programming">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -160,7 +157,7 @@ solution though, since it's a two-steps-forward-one-step-back kind of solution. 
 his vim plugin <a href="https://github.com/Olical/conjure">conjure</a>, the more curious I get to try it out instead of <a href="https://github.com/tpope/vim-fireplace">vim-fireplace</a>.</p>
 <h3>loop and recur</h3>
 <p>After a straightforward example with <code>loop</code> and <code>recur</code> in "Clojure for the Brave and True", you get thrown in the deeper end with the following piece of code:</p>
-<pre class="code literal-block"><span class="p">(</span><span class="nf">defn</span> <span class="nv">symmetrize-body-parts</span>
+<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nf">defn</span> <span class="nv">symmetrize-body-parts</span>
     <span class="s">"Expects a seq of maps that have a :name and :size"</span>
     <span class="p">[</span><span class="nv">asym-body-parts</span><span class="p">]</span>
     <span class="p">(</span><span class="nf">loop</span> <span class="p">[</span><span class="nv">remaining-asym-parts</span> <span class="nv">asym-body-parts</span>
@@ -171,7 +168,8 @@ his vim plugin <a href="https://github.com/Olical/conjure">conjure</a>, the more
                 <span class="p">(</span><span class="nf">recur</span> <span class="nv">remaining</span>
                     <span class="p">(</span><span class="nf">into</span> <span class="nv">final-body-parts</span>
                         <span class="p">(</span><span class="nf">set</span> <span class="p">[</span><span class="nv">part</span> <span class="p">(</span><span class="nf">matching-part</span> <span class="nv">part</span><span class="p">)])))))))</span>
-</pre>
+</code></pre>
+
 <p>The explanation of this function ends with: <em>"If you’re new to this kind of programming, this code might take some time to puzzle out.
 Stick with it! Once you understand what’s happening, you’ll feel like a million bucks!"</em></p>
 <p>Despite having written three additional functions with <code>loop</code>/<code>recur</code> in September, I fould myself having to puzzle it out yet
@@ -190,7 +188,7 @@ connecting the <code>(into final-body-parts (set [part (matching-part part)]
 <p>The example above also shows how the hobbit script uses an <code>into</code> to add a set of maps to a vector of maps inside a <code>recur</code>. That tripped me up, also when building my own loopers where I had to use <code>conj</code> instead. It's interesting how simple functions such as <a href="https://clojuredocs.org/clojure.core/into"><code>into</code></a> and <a href="https://clojuredocs.org/clojure.core/conj"><code>conj</code></a> become harder to undestand when they're part of a more difficult context.</p>
 <p>In the end I found it helpful to try out a bunch of variations, starting with vectors containing integers, 
 then replacing the integers with maps to get closer to what's in the hobbit script.</p>
-<pre class="code literal-block"><span class="p">(</span><span class="nb">into </span><span class="p">[]</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">])</span>
+<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">into </span><span class="p">[]</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">])</span>
 <span class="c1">; =&gt; [1 2 3]</span>
 <span class="p">(</span><span class="nb">conj </span><span class="p">[]</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">])</span>
 <span class="c1">; =&gt; [[1 2 3]]</span>
@@ -213,21 +211,24 @@ then replacing the integers with maps to get closer to what's in the hobbit scri
 <span class="c1">; =&gt; [{:name "my-arm"} {:name "left-head"} {:name "right-head"}]</span>
 <span class="p">(</span><span class="nb">conj </span><span class="p">[{</span><span class="ss">:name</span> <span class="s">"my-arm"</span><span class="p">}]</span> <span class="p">[{</span><span class="ss">:name</span> <span class="s">"left-head"</span><span class="p">}</span> <span class="p">{</span><span class="ss">:name</span> <span class="s">"right-head"</span><span class="p">}])</span>
 <span class="c1">; =&gt; [{:name "my-arm"} [{:name "left-head"} {:name "right-head"}]]</span>
-</pre>
+</code></pre>
+
 <p>These examples allowed me to see that Clojure's <code>into</code> and <code>conj</code> are very similar to Python's <code>extend()</code> and <code>append()</code>.</p>
 <h3>reduce</h3>
 <p>My notes show it took me some effort to understand <a href="https://clojuredocs.org/clojure.core/reduce"><code>reduce</code></a>. They say "struggling a bit with syntax" and "it's not obvious" and "had to re-read and re-learn", but I have no idea what it was that I found non-obvious. My best guess is that it was a bit of a leap for me to go from these examples</p>
-<pre class="code literal-block"><span class="p">(</span><span class="nb">reduce + </span><span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span><span class="p">])</span>
+<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">reduce + </span><span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span><span class="p">])</span>
 <span class="c1">; =&gt; 10</span>
 <span class="p">(</span><span class="nb">reduce + </span><span class="mi">15</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span><span class="p">])</span>
 <span class="c1">; =&gt; 25</span>
-</pre>
+</code></pre>
+
 <p>to a <code>reduce</code> that takes an anonymous function calling an other function to work on a vector of maps</p>
-<pre class="code literal-block"><span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">final-body-parts</span> <span class="nv">part</span><span class="p">]</span>
+<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">final-body-parts</span> <span class="nv">part</span><span class="p">]</span>
     <span class="p">(</span><span class="nb">into </span><span class="nv">final-body-parts</span> <span class="p">(</span><span class="nb">set </span><span class="p">[</span><span class="nv">part</span> <span class="p">(</span><span class="nf">matching-part</span> <span class="nv">part</span><span class="p">)])))</span>
     <span class="p">[]</span>
     <span class="nv">asym-body-parts</span><span class="p">)</span>
-</pre>
+</code></pre>
+
 <p>To be fair,
 it is an improved implementation of a function that was explained earlier, so it is clear what this with <code>reduce</code> refactored
 function is supposed to do.</p>
@@ -244,12 +245,9 @@ coming first, e.g. <code>(+ 1 2 3)</code>, lets you use <code>+</code> to add
 </div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../../../categories/brave-true/" rel="tag">brave-true</a></li>
+<li><a class="tag p-category" href="../../../../categories/brave-clojure/" rel="tag">brave clojure</a></li>
             <li><a class="tag p-category" href="../../../../categories/clojure/" rel="tag">clojure</a></li>
-            <li><a class="tag p-category" href="../../../../categories/conj/" rel="tag">conj</a></li>
-            <li><a class="tag p-category" href="../../../../categories/into/" rel="tag">into</a></li>
-            <li><a class="tag p-category" href="../../../../categories/loop/" rel="tag">loop</a></li>
-            <li><a class="tag p-category" href="../../../../categories/recur/" rel="tag">recur</a></li>
+            <li><a class="tag p-category" href="../../../../categories/programming/" rel="tag">programming</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">

@@ -17,7 +17,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <link rel="icon" href="../assets/favicons/favicon-16x16.png" sizes="16x16">
 <link rel="icon" href="../assets/favicons/favicon-32x32.png" sizes="32x32">
 <link rel="icon" href="../assets/favicons/favicon-96x96.png" sizes="96x96">
-<link rel="prev" href="." type="text/html">
+<link rel="prev" href="index-3.html" type="text/html">
 <link rel="next" href="index-1.html" type="text/html">
 <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script>
 </head>
@@ -90,73 +90,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2020/clj0-diving-straight-in/" class="u-url">(clj 0) Diving straight in with some koans</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="clojure/2020/clj0-diving-straight-in/" rel="bookmark">
-            <time class="published dt-published" datetime="2020-04-27T21:00:15+02:00" itemprop="datePublished" title="27 April 2020">27 April 2020</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<h3>Why Clojure?</h3>
-<p>A long time ago (meaning I don't remember when but it's been a while) I learned about a programming language called Lisp. It was said that by studying this language you'd gain <a href="https://twobithistory.org/2018/10/14/lisp.html">deep insights</a> into programming and you'd never write code the same way again. That definitely piqued my interest.</p>
-<p>Some time later (don't remember when exactly either) I learned about the existence of Clojure and that it too, was something special. So I added it to the list of programming languages I wanted to learn some day.</p>
-<p>Then, earlier this month, I felt the need to start a new project. To learn something new. So I figured I'd learn Lisp. That didn't last long though, as I found out that the recommended editor for Lisp is Emacs. And from trying out Emacs and vi about 20 years ago I knew that for some reason vi does fit with how my mind works, and Emacs doesn't.</p>
-<p class="more"><a href="clojure/2020/clj0-diving-straight-in/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2019/getting-name-from-name-name-in-python-an-engineering-problem/" class="u-url">Getting [name] from "Name: [name]" in Python - an engineering problem</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2019/getting-name-from-name-name-in-python-an-engineering-problem/" rel="bookmark">
-            <time class="published dt-published" datetime="2019-08-26T21:27:38+02:00" itemprop="datePublished" title="26 August 2019">26 August 2019</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>Today I was presented with an interesting engineering problem. (Important later: context was the code of an auto-test.) Given a string of the format "Name: [name]", what's the best way to get the [name] in Python?</p>
-<p>There are several options:</p>
-<ul>
-<li><code>lstrip()</code></li>
-<li><code>split()</code></li>
-<li><code>replace()</code></li>
-<li>string slicing</li>
-<li>regex</li>
-</ul>
-<p>So let's look at each of them and then I'll explain which one I prefer and why. All examples are in Python 3.6, using the <a href="https://docs.python.org/3.6/tutorial/interpreter.html">Python Interpreter</a>.</p>
-<p class="more"><a href="2019/getting-name-from-name-name-in-python-an-engineering-problem/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2019/your-ci-cd-pipeline-does-not-run-regression-tests/" class="u-url">Your CI/CD pipeline does not run regression tests</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2019/your-ci-cd-pipeline-does-not-run-regression-tests/" rel="bookmark">
-            <time class="published dt-published" datetime="2019-08-05T23:47:51+02:00" itemprop="datePublished" title="5 August 2019">5 August 2019</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<h3>CI/CD pipelines</h3>
-<p>The purpose of a CI/CD pipeline is to allow you to deliver small changes in a fast and controlled way. Without any tests in your pipeline you would gain a lot of speed. You'd also lose a lot control, which is why people in general do run tests in their pipeline. The purpose of these tests is to check if that stage of the pipeline meets the minimum level of acceptable quality for that stage.</p>
-<p>For example, commit stage tests will consist of mostly unit tests, a few integration tests, and even fewer end-to-end tests, because early in the pipeline speed is more important than comprehensiveness. When I commit my changes, I want the results fast enough so that I will wait for them - ready to fix any issue that might occur.</p>
-<h3>Regression testing</h3>
-<p>There are many definitions of regression testing, as you can read in <a href="https://arborosa.org/2015/07/31/regression-testing/">Arborosa's blog post on the topic</a>. I have always defined regression testing along the lines of "testing the parts that weren't impacted by a change to see if they really weren't impacted." (Which is really weird if you start thinking about it: something is regression testing depending on your knowledge of the system and the change.)</p>
-<h3>The tests in your pipeline are regression tests, …</h3>
-<p>Most of the tests that run in your pipeline are regression tests. Your commits are small and you have a lot of tests, so most of those will cover parts of the system that shouldn't have been impacted by your changes. So yes, regression tests.</p>
-<p class="more"><a href="2019/your-ci-cd-pipeline-does-not-run-regression-tests/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2019/how-this-tester-writes-code/" class="u-url">How this tester writes code</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2019/how-this-tester-writes-code/" class="u-url">How this tester writes code</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
@@ -222,10 +156,145 @@ Finally, the code and the spreadsheet I created (linked throughout, also availab
 <p class="more"><a href="2019/test-strategy-primer/">Read more…</a></p>
 </div>
                 </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2018/reflections-on-my-testing-manifesto/" class="u-url">Reflections on my testing manifesto</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2018/reflections-on-my-testing-manifesto/" rel="bookmark">
+            <time class="published dt-published" datetime="2018-12-22T17:43:10+01:00" itemprop="datePublished" title="22 December 2018">22 December 2018</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Earlier this month I published my <a href="2018/manifesto-for-software-testing/">Manifesto for software testing</a>. This manifesto is my attempt to bring together what I have learned about testing from the context-driven, agile and DevOps communities. Below you can find the manifesto with my reflections on it.</p>
+<h5>1. Testing is investigating in order to evaluate a product.</h5>
+<p>This definition is clearly influenced by James Bach's "questioning a product in order to evaluate it". I'm not sure at which point I started misremembering his definition as "investigating a product...", but it works well with a change I did make intentionally: moving "a product" to the second part of the definition. As explained in 6. I believe that in order to evaluate the product, we need to investigate a number of different things, not only the product.</p>
+<p class="more"><a href="2018/reflections-on-my-testing-manifesto/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2018/manifesto-for-software-testing/" class="u-url">Manifesto for software testing</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2018/manifesto-for-software-testing/" rel="bookmark">
+            <time class="published dt-published" datetime="2018-12-04T20:44:51+01:00" itemprop="datePublished" title="4 December 2018">4 December 2018</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>1. Testing is investigating in order to evaluate a product.</p>
+<p>2. An evaluation is a judgement about quality – quality being value to persons who matter.</p>
+<p>3. This makes testing a fundamentally human and contextual activity.</p>
+<p>4. As such, testing is an exploratory and open-ended activity, requiring continuous evaluation of and experimentation with our practices.</p>
+<p class="more"><a href="2018/manifesto-for-software-testing/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2017/testing-maturity-in-an-agilecdt-context/" class="u-url">Testing maturity in an agile/CDT context</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2017/testing-maturity-in-an-agilecdt-context/" rel="bookmark">
+            <time class="published dt-published" datetime="2017-02-05T17:43:10+01:00" itemprop="datePublished" title="5 February 2017">5 February 2017</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>One day during a team meeting at Joep's previous job at a bank the Team Manager of Testing, listed a number of topics his testers could work on in the coming months. One of those topics was "testing maturity". This topic was on the list not because this manager was such a fan of maturity models, but because the other team managers (Business Analysis and Development) had produced one for their own teams and higher management would like to have one for testing as well. And although Joep saw little value in a classic five-tiered maturity model either, he was intrigued by the question: so what can you do with respect to maturity models that is of value?</p>
+<p class="more"><a href="2017/testing-maturity-in-an-agilecdt-context/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2016/regression-testing-it-means-less-than-you-think/" class="u-url">Regression testing, it means less than you think</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2016/regression-testing-it-means-less-than-you-think/" rel="bookmark">
+            <time class="published dt-published" datetime="2016-01-03T19:42:26+01:00" itemprop="datePublished" title="3 January 2016">3 January 2016</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>The past weeks I have made several attempts at a blog post about regression testing. About how we use it to refer to different things: tests running on a CI server, people executing test scripts, etc. And about how often the term really doesn't mean much at all, yet nobody questions you when you use it: "What are you doing?" "Regression testing." "Oh good, carry on." The point of the post would be to argue we should use the term 'regression testing' a lot less, because most of the time we can be more specific without having to be more verbose.</p>
+<p>However, the more I thought about (what I would qualify as) proper regression testing, the more I felt that regression versus progression (or progressive) testing is a distinction without difference. One interesting observation in this regard is that "regression testing" returns 30 times more results on Google than "progression testing" and "progressive testing" combined. So what's going on here if we have a dichotomy with one member producing so much more discussion than the other? And there's more: regression testing is commonly contrasted with test types like functional testing and usability testing. But how then should I categorize a regression test focusing on functionality<sup id="fnref:1"><a class="footnote-ref" href="2016/regression-testing-it-means-less-than-you-think/#fn:1">1</a></sup>?</p>
+<p class="more"><a href="2016/regression-testing-it-means-less-than-you-think/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2015/why-the-testingchecking-debate-is-so-messy-a-fruit-salad-analogy/" class="u-url">Why the testing/checking debate is so messy - a fruit salad analogy</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2015/why-the-testingchecking-debate-is-so-messy-a-fruit-salad-analogy/" rel="bookmark">
+            <time class="published dt-published" datetime="2015-11-15T12:17:12+01:00" itemprop="datePublished" title="15 November 2015">15 November 2015</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Five days ago James Thomas posted <a href="https://www.linkedin.com/grp/post/55636-6069749695687770112?trk=groups-post-b-title">the following</a> in the Software Testing &amp; Quality Assurance group on LinkedIn:</p>
+<blockquote>
+<p><strong>Are Testing and Checking different or not?</strong><br>
+This <a href="http://gerrardconsulting.com/?q=node/659">article by Paul Gerrard</a> explains why we shouldn't be trying to draw a distinction between checking and testing, but should be paying more attention to the skills of the testers we employ to do the job.</p>
+</blockquote>
+<p>I posted a reply there, but I think I can do better than those initial thoughts, so here we go.</p>
+<p>Let's imagine the following scene: Alice and Bob are preparing a fruit salad together.<br><em>Alice</em>: "Ok, let's make a nice fruit salad. We need some apples and some fruit."<br><em>Bob</em>: "Euh, aren't apples fruit?"<br><em>Alice</em>: "Yes. Of course. But when I say 'fruit', I mean 'non-apple fruit'."</p>
+<p class="more"><a href="2015/why-the-testingchecking-debate-is-so-messy-a-fruit-salad-analogy/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2015/two-styles-of-leadership-in-spreading-context-driven-testing-titanconf/" class="u-url">Two styles of leadership in spreading context-driven testing (TITANconf)</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2015/two-styles-of-leadership-in-spreading-context-driven-testing-titanconf/" rel="bookmark">
+            <time class="published dt-published" datetime="2015-09-06T19:56:54+02:00" itemprop="datePublished" title="6 September 2015">6 September 2015</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>The last weekend of August I spent with some great people - Kristoffer Ankarberg (<a href="https://twitter.com/KrisAnkarberg">@KrisAnkarberg</a>), Kristoffer Nordström (<a href="https://twitter.com/kristoffer_nord">@kristoffer_nord</a>), Anna Brunell (<a href="https://twitter.com/Anna_Brunell">@Anna_Brunell</a>), Fredrik Thuresson (<a href="https://twitter.com/Thure98">@Thure98</a>), Maria Kedemo (<a href="https://twitter.com/mariakedemo">@mariakedemo</a>), Henrik Andersson (<a href="https://twitter.com/henkeandersson">@henkeandersson</a>), Maria Månsson, Amy Philips (<a href="https://twitter.com/ItJustBroke">@ItJustBroke</a>), Richard Bradshaw (<a href="https://twitter.com/FriendlyTester">@FriendlyTester</a>), Duncan Nisbet (<a href="https://twitter.com/DuncNisbet">@DuncNisbet</a>), Alexandru Rotaru (<a href="https://twitter.com/altomalex">@altomalex</a>), Oana Casapu, Simon Schrijver (<a href="https://twitter.com/SimonSaysNoMore">@SimonSaysNoMore</a>), Zeger Van Hese (<a href="https://twitter.com/TestSideStory">@TestSideStory</a>), Helena Jeret-Mäe (<a href="https://twitter.com/HelenaJ_M">@HelenaJ_M</a>), Aleksis Tulonen (<a href="https://twitter.com/al3ksis">@al3ksis</a>), Anders Dinsen (<a href="https://twitter.com/andersdinsen">@andersdinsen</a>) - at the awesome <a href="http://www.karlskronatestgathering.se/titan.html">TITAN peer conference</a> in Karlskrona, Sweden.</p>
+<p>During the conference we discussed leadership and testing and on Sunday morning I got the opportunity to tell my story<sup id="fnref:1"><a class="footnote-ref" href="2015/two-styles-of-leadership-in-spreading-context-driven-testing-titanconf/#fn:1">1</a></sup>. (I do wish I had captured more of the discussion afterwards to include in this blog post.)</p>
+<h3>The first style</h3>
+<p>When thinking about my own leadership in testing, one of the first things that come to mind are my attempts to influence my colleagues at work (testers, developers, project managers) to become more context-driven in their attitude towards testing.</p>
+<p class="more"><a href="2015/two-styles-of-leadership-in-spreading-context-driven-testing-titanconf/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2015/whats-the-word-for-the-part-of-testing-thats-not-checking/" class="u-url">What's the word for the part of testing that's not checking?</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2015/whats-the-word-for-the-part-of-testing-thats-not-checking/" rel="bookmark">
+            <time class="published dt-published" datetime="2015-08-17T20:19:25+02:00" itemprop="datePublished" title="17 August 2015">17 August 2015</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<h3>The question I asked</h3>
+<p>Yesterday <a href="https://twitter.com/j19sch/status/632910141751447552">I asked on twitter</a>:</p>
+<blockquote>
+<p>Question: what's the proper word for the part of testing that's not checking? #cdt #testing #semantics<br>
+- Joep Schuurkes (@j19sch) August 16, 2015</p>
+</blockquote>
+<p>The reason I asked, is that I noticed I needed that word in discussions about testing and checking. If checking is part of testing - and in the RST namespace it most definitely is, see '<a href="http://www.satisfice.com/blog/archives/856">Testing and checking refined</a>' -, then what can I contrast checking with? Contrasting checking with testing (as in 'checking versus testing') isn't going to work: there's one thing that's checking and then there's this other thing, testing, that contains that one thing and some other stuff<sup id="fnref:1"><a class="footnote-ref" href="2015/whats-the-word-for-the-part-of-testing-thats-not-checking/#fn:1">1</a></sup>, but it's like a completely different thing. See the difference? Conceptually that just doesn't work - at least not in my mind.</p>
+<h3>The answers I got</h3>
+<p>So I figured I'd ask twitter in all its infinite testing wisdom and lo and behold, not only did people reply, a discussion ensued with the following people (listed in no particular order) participating in different configurations: <a href="https://twitter.com/eddybruin">@eddybruin</a>, <a href="https://twitter.com/mariakedemo">@mariakedemo</a>, <a href="https://twitter.com/SandroIbig">@SandroIbig</a>, <a href="https://twitter.com/TestPappy">@TestPappy</a>, <a href="https://twitter.com/dwiersma">@dwiersma</a>, <a href="https://twitter.com/ilarihenrik">@ilarihenrik</a>, <a href="https://twitter.com/PhilipHoeben">@PhilipHoeben</a>, <a href="https://twitter.com/huibschoots">@huibschoots</a> and <a href="https://twitter.com/deefex">@deefex</a>. Thank you all!</p>
+<p class="more"><a href="2015/whats-the-word-for-the-part-of-testing-thats-not-checking/">Read more…</a></p>
+</div>
+                </div>
             </article>
 </div>
             <ul class="pager postindexpager clearfix">
-<li class="previous"><a href="." rel="prev">Newer posts</a></li>
+<li class="previous"><a href="index-3.html" rel="prev">Newer posts</a></li>
             <li class="next"><a href="index-1.html" rel="next">Older posts</a></li>
         </ul>
 <!--End of body content--><footer id="footer">

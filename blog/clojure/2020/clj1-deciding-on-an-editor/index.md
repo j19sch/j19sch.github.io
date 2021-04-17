@@ -2,7 +2,7 @@
 .. title: (clj 1) Deciding on a Clojure editor
 .. slug: clj1-deciding-on-an-editor
 .. date: 2020-05-01 18:00:15 UTC+02:00
-.. tags: clojure, emacs, vscode, vim
+.. tags: clojure, programming, brave clojure, IDEs, vim
 .. category: clojure
 .. link: 
 .. description:

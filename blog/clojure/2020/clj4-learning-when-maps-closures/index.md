@@ -2,7 +2,7 @@
 .. title: (clj 4) Learning about when, maps and closures
 .. slug: clj4-learning-when-maps-closures
 .. date: 2020-07-31 22:25:15 UTC+02:00
-.. tags: clojure, brave-true, when, maps, closures
+.. tags: clojure, programming, brave clojure
 .. category: clojure
 .. link: 
 .. description:

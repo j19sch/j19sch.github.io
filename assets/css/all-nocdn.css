@@ -1300,6 +1300,11 @@ p:empty {
   margin-bottom: 0rem;
 }
 
+blockquote {
+  border-left: 5px solid blueviolet;
+  padding-left: 1rem;
+}
+
 blockquote p {
   font-size: 1.1rem;
 }

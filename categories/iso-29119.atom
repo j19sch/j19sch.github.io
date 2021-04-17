@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="https://j19sch.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>Joep Schuurkes (Posts about ISO 29119)</title>
+  <id>https://j19sch.github.io/categories/iso-29119.atom</id>
+  <updated>2021-04-17T13:35:37Z</updated>
+  <author>
+    <name>Joep Schuurkes</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://j19sch.github.io/categories/iso-29119.atom"/>
+  <link rel="alternate" type="text/html" href="https://j19sch.github.io/categories/iso-29119/"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Joining the fray on ISO 29119</title>
+    <id>https://j19sch.github.io/blog/2014/joining-the-fray-on-iso-29119/</id>
+    <updated>2014-08-23T10:04:08+02:00</updated>
+    <published>2014-08-23T10:04:08+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2014/joining-the-fray-on-iso-29119/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;For those of you who weren't aware yet: something happened at CAST 2014 regarding the ISO/IEC/IEEE 29119 Software Testing. For instance, first &lt;a href="http://www.youtube.com/watch?v=A721ltyVw3o&amp;amp;list=PLQB4l9iafcelXpJnK6IyDsoFeEb1icqrl"&gt;this&lt;/a&gt; happened, which resulted in &lt;a href="http://www.ipetitions.com/petition/stop29119"&gt;this&lt;/a&gt; and &lt;a href="http://www.professionaltestersmanifesto.org/"&gt;this&lt;/a&gt; and a whole bunch of other initiatives.&lt;/p&gt;
+&lt;p&gt;And then someone on twitter (forgot who, apologies) suggested watching Stuard Reid's Eurostar webinar "ISO 29119 – the new set of international standards on software testing" which can be found &lt;a href="https://www.youtube.com/watch?v=c4W-jWRldj0"&gt;here&lt;/a&gt;. Since I liked to learn more about the standard, but not enough to pay almost 500€ to &lt;a href="http://www.nen.nl/Zoekresultaten.htm?q=iso+29119"&gt;NEN&lt;/a&gt; (Dutch standards organisation) for parts 1 to 3, I began watching the webinar.
+And truth be told, I didn't watch all of it. Some parts were boring, some parts sounded quite reasonable and some parts I..euh..skipped. And that's ok because all I want to discuss is this one particular quote that begins at 33:25:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2014/joining-the-fray-on-iso-29119/"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="context-driven-testing" label="context-driven testing"/>
+    <category term="iso-29119" label="ISO 29119"/>
+    <category term="test-management" label="test management"/>
+  </entry>
+</feed>
