@@ -2,7 +2,7 @@
 .. title: (clj 0) Diving straight in with some koans
 .. slug: clj0-diving-straight-in
 .. date: 2020-04-27 21:00:15 UTC+02:00
-.. tags: clojure, koans, brave-true
+.. tags: clojure, programming, brave clojure, koans
 .. category: clojure
 .. link: 
 .. description: 

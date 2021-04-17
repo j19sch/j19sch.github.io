@@ -2,7 +2,7 @@
 .. title: (clj 2) Setting up Vim for Clojure
 .. slug: clj2-setting-up-vim
 .. date: 2020-05-05 21:55:15 UTC+02:00
-.. tags: clojure, vim
+.. tags: clojure, programming, vim
 .. category: clojure
 .. link: 
 .. description:
