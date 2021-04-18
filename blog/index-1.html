@@ -89,220 +89,201 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2015/test-automation-five-questions-leading-to-five-heuristics/" class="u-url">Test automation - five questions leading to five heuristics</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2013/dewt3-experience-report/" class="u-url">DEWT3 experience report</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
                     </span></p>
             <p class="dateline">
-            <a href="2015/test-automation-five-questions-leading-to-five-heuristics/" rel="bookmark">
-            <time class="published dt-published" datetime="2015-03-24T20:53:24+01:00" itemprop="datePublished" title="24 March 2015">24 March 2015</time></a>
+            <a href="2013/dewt3-experience-report/" rel="bookmark">
+            <time class="published dt-published" datetime="2013-04-28T15:32:02+02:00" itemprop="datePublished" title="28 April 2013">28 April 2013</time></a>
             </p>
                 </div>
             </header><div class="p-summary entry-summary">
                     <div>
-<p>(I wrote a follow-up to this post in June 2019: <a href="2019/how-this-tester-writes-code/">how this tester writes code</a>.)</p>
-<p>In 1984 Abelson and Sussman said in the Preface to '<a href="https://mitpress.mit.edu/sicp/">Structure and Interpretation of Computer Programs</a>':</p>
+<p>Last weekend the third Dutch Exploratory Workshop in Testing (DEWT3 for short) took place. The ingredients were: a very nice hotel in the woods, lots of talk about testing, beer, whiskey, a small to moderate amount of sleep, stickies and a group of fun and interesting people (You can see them <a href="http://dewt.wordpress.com/2013/04/24/dewt3-experience-reports/">here</a>.)</p>
+<p>On Saturday the talks (and thus discussions) were about systems thinking. A few years ago I did read Jerry Weinberg's "An Introduction to General Systems Thinking" and although a very interesting read, w.r.t. to applying it to testing I never got further then: Software is (part of) a system, so you can apply systems thinking to it. Of course, that's very much true, but it's also quite a vague piece of advice.</p>
+<h3>A primer on systems thinking</h3>
+<p>Enter James Bach, who kicked off DEWT3 with a primer on systems thinking. Systems thinking is just a way of thinking - just like logical thinking, analogical thinking, creative thinking, etc. - in which we approach a situation as being a system. So what's a system? It's a set of things in a meaningful interaction with each other.
+This definition raises all sorts of questions relevant in systems thinking:</p>
+<p class="more"><a href="2013/dewt3-experience-report/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2013/lessons-learned-in-some-test-automation/" class="u-url">Lessons learned in some test automation</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2013/lessons-learned-in-some-test-automation/" rel="bookmark">
+            <time class="published dt-published" datetime="2013-02-18T21:46:02+01:00" itemprop="datePublished" title="18 February 2013">18 February 2013</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>In the past two weeks I built a test tool in VBA (Visual Basic for Applications). I did this, because two weeks ago my fellow tester showed me an important test we have to do at least once for each major release. The test consists of having the application generate three reports in Excel format. On two of these reports you apply a set of filters and take the sum of a few columns, rinse and repeat. Then you add several of those sums together and the results of those calculations should match the numbers in the third report. So basically, the point of the test is to check if the numbers in the three reports add up. And it's a lot of work, i.e. about two days.</p>
+<p>After being shown how to perform the test, the first thought that popped into my head, was: "Boring!" The second thought was: "It's automatable!" And since there was little else to do - delivery of the new test environments was delayed - I changed it from automatable to automated.</p>
+<p>So now, after two weeks, I have this tool in VBA. For each of the three reports it contains a sheet in which you define the sets of filters and sums. If you click a big button, the report is opened and the filters and sums are applied. There's also a fourth sheet to do the second set of calculations and to do the check if the numbers match. This last part is not done in VBA; it's all formulas in Excel.</p>
+<p class="more"><a href="2013/lessons-learned-in-some-test-automation/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2012/dewt2-becoming-a-context-driven-tester/" class="u-url">DEWT2 - Becoming a context-driven tester</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2012/dewt2-becoming-a-context-driven-tester/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-11-08T23:14:57+01:00" itemprop="datePublished" title="8 November 2012">8 November 2012</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>About a month ago ago (October 5th - 6th) I was in Driebergen to attend <a href="http://dewt.wordpress.com/2012/10/07/dewt2-was-a-blast/">DEWT2</a>, a peer workshop with as theme "Implementing Context-Driven Testing". As it turns out, implementing context-driven testing is not easy to do. That should not come as a surprise: it requires people to change and that is difficult. Luckily, I'm not a manager wanting to implement context-driven testing, so I can dodge most of that problem.</p>
+<p>However, I do like 'spreading the word' on context-driven testing, because I would like for there to be more context-driven testers in the Netherlands (and Europe and the world, of course). So to promote context-driven testing I think there are three things I can do: <br>
+1) set an example,<br>
+2) be available to other people,<br>
+3) leave bread crumbs.</p>
+<p class="more"><a href="2012/dewt2-becoming-a-context-driven-tester/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2012/measuring-review-coverage/" class="u-url">Measuring review coverage</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2012/measuring-review-coverage/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-09-13T19:39:57+02:00" itemprop="datePublished" title="13 September 2012">13 September 2012</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Recently it occurred to me we have plenty of ways to measure test coverage, but there doesn't seem to be a way to measure review coverage. So today I decided to fix that. The result is the scale below with which you can measure review coverage. And just like all good scales, <a href="http://www.youtube.com/watch?v=XuzpsO4ErOQ">it goes all the way up to 11</a>.</p>
+<p>0) I'm sorry, what document?<br>
+1) I think I do remember someone mentioning that document.<br>
+2) I'm sure I have it somewhere – well, at least fairly sure...<br>
+3) Look, it's on my to do-pile!</p>
+<p class="more"><a href="2012/measuring-review-coverage/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2012/lets-test-2012-time-travel-advice/" class="u-url">Let's Test 2012 - time travel advice</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2012/lets-test-2012-time-travel-advice/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-05-18T19:32:08+02:00" itemprop="datePublished" title="18 May 2012">18 May 2012</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>If I had a time machine and could travel back in time to give myself some advice before attending <a href="http://lets-test.com/">Let's Test 20212</a>,
+it would be this:</p>
+<p>- Go!<br>
+- Don't worry too much about which session to attend. One of the most valuable sessions you will attend, you'll choose because it has the least appealing abstract.<br>
+- Bring your running gear.<br>
+- If you ask Rikard Edgren nicely, he will give you a dead-tree version of his '<a href="http://www.thetesteye.com/papers/TheLittleBlackBookOnTestDesign.pdf">Little Black Book on Test Design</a>'.<br>
+- Enjoy the food. Don't worry, it's not much of a challenge.</p>
+<p class="more"><a href="2012/lets-test-2012-time-travel-advice/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2012/some-thoughts-after-attending-the-getting-a-grip-on-exploratory-testing-workshop/" class="u-url">Some thoughts after attending the 'Getting a Grip on Exploratory Testing' workshop</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2012/some-thoughts-after-attending-the-getting-a-grip-on-exploratory-testing-workshop/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-04-29T19:55:30+02:00" itemprop="datePublished" title="29 April 2012">29 April 2012</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>About two weeks ago I attended <a href="http://www.workroom-productions.com/">James Lyndsay</a>'s 'Getting a Grip on Exploratory Testing' workshop in Amsterdam. So it's about time to write something about it…</p>
+<p>Now one of the things I dislike about workshop blog posts is that people will say "It was great! And person X is such a good trainer!" without saying much about the content of the workshop. However, I find myself now writing this post and thinking: I shouldn't post a full summary of the workshop. Not that it would spoil too much for any future attendee: most of the workshop consists of exercises and discussion. But posting a summary of the workshop that James has put a lot of effort in to create, just doesn't feel right. So let me just say this: the workshop was great and James is such a good trainer! :-D</p>
+<p>Now that's out of the way, there are a few things from the workshop I'd like to share. Of course, the usual disclaimer applies: these are my thoughts on what was presented during the workshop. Any misrepresentations are my responsibility.</p>
+<p class="more"><a href="2012/some-thoughts-after-attending-the-getting-a-grip-on-exploratory-testing-workshop/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2012/the-irony-of-scripted-testing/" class="u-url">The irony of scripted testing</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2012/the-irony-of-scripted-testing/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-04-09T23:16:17+02:00" itemprop="datePublished" title="9 April 2012">9 April 2012</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>A bit over a week ago, <a href="https://twitter.com/jamesmarcusbach/status/185816224075227137">James Bach posted on twitter</a>:</p>
 <blockquote>
-<p>Our design of this introductory computer-science subject reflects two major concerns. First, we want to establish the idea that a computer language is not just a way of getting a computer to perform operations but rather that it is a novel formal medium for expressing ideas about methodology. <strong>Thus, programs must be written for people to read, and only incidentally for machines to execute.</strong> Second, we believe that the essential material to be addressed by a subject at this level is not the syntax of particular programming-language constructs, nor clever algorithms for computing particular functions efficiently, nor even the mathematical analysis of algorithms and the foundations of computing, but rather the techniques used to control the intellectual complexity of large software systems. [emphasis mine]</p>
+<p>"This video shows a nice simple contrast between heavy scripted testing and exploratory testing <a href="http://youtu.be/PxTqjAwM2Pw">http://youtu.be/PxTqjAwM2Pw</a>"<br>
+- James Bach (@jamesmarcusbach) March 30, 2012</p>
 </blockquote>
-<p>This oft-quoted sentence I emphasized, is even more true if the purpose of our programs is test automation<sup id="fnref:1"><a class="footnote-ref" href="2015/test-automation-five-questions-leading-to-five-heuristics/#fn:1">1</a></sup>. So let's say you run your test automation program and the result is a list of passes and fails.  The purpose of testing is to produce information. You could say that this list of results qualifies as information and I would disagree. I would say it is data, data in need of interpretation. When we attempt this interpretation, we should consider the following five questions.</p>
-<p class="more"><a href="2015/test-automation-five-questions-leading-to-five-heuristics/">Read more…</a></p>
+<p>So I watched the video, hoping to see something that would make me go 'Cool!', but instead I went 'Hmmm.'</p>
+<p>First let me say that this video does get a few things right:<br>
+- Exploratory testing can be structured by using charters.<br>
+- Exploratory testing allows you to easily change your test approach based on your test results.<br>
+- Exploratory testing is very adaptable when confronted with inaccurate or changing requirements.<br>
+Yet notice how the above only talks about exploratory testing, because for every thing the video gets right about exploratory testing, it gets something wrong about scripted testing – or rather about how scripted testing works in practice.</p>
+<p class="more"><a href="2012/the-irony-of-scripted-testing/">Read more…</a></p>
 </div>
                 </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2015/three-arguments-against-the-verification-validation-dichotomy/" class="u-url">Three arguments against the verification-validation dichotomy</a></h1>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2012/the-seven-basic-principles-of-the-context-driven-school-part-not-three/" class="u-url">The Seven Basic Principles of the Context-Driven School - part not-three</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
                     </span></p>
             <p class="dateline">
-            <a href="2015/three-arguments-against-the-verification-validation-dichotomy/" rel="bookmark">
-            <time class="published dt-published" datetime="2015-03-24T20:53:24+01:00" itemprop="datePublished" title="24 March 2015">24 March 2015</time></a>
+            <a href="2012/the-seven-basic-principles-of-the-context-driven-school-part-not-three/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-03-30T16:26:26+02:00" itemprop="datePublished" title="30 March 2012">30 March 2012</time></a>
             </p>
                 </div>
             </header><div class="p-summary entry-summary">
                     <div>
-<p>Last week while talking with two colleagues, one of them mentioned the verification/validation thing. And I noticed it made me feel uneasy. Because I know well enough what is meant by the distinction, but on a practical level I simply can't relate to it. When I think about what I do as a software tester and how verification versus validation applies to it, nothing happens. Blank mind. Crickets. Tumbleweed.
-So after giving it some thought, I present you with three arguments against the verification-validation dichotomy.</p>
-<p>First of course, we have the obligatory interlude of defining these two terms. A place to start is the Wikipedia page on <a href="http://en.wikipedia.org/wiki/Software_verification_and_validation">Software verification and validation</a>. Unfortunately it contains conflicting definitions, so if anyone cares enough, please do fix. Luckily there's also the general <a href="http://en.wikipedia.org/wiki/Verification_and_validation">Verification and validation</a> page of Wikipedia, which gives us (among others) the tl;dr version of the distinction:</p>
-<ul>
-<li>Verification: <em>Are we building the product right?</em>
-</li>
-<li>Validation: <em>Are we building the right product?</em>
-</li>
-</ul>
-<p>Finally there's the <a href="http://www.istqb.org/downloads/finish/20/145.html">ISTQB glossary v2.4</a> that borrows from ISO 9000:</p>
-<ul>
-<li>Verification: <em>Confirmation by examination and through provision of objective evidence that specified requirements have been fulfilled.</em>
-</li>
-<li>Validation: <em>Confirmation by examination and through provision of objective evidence that the requirements for a specific intended use or application have been fulfilled.</em>
-</li>
-</ul>
-<p>Now on to the three arguments.</p>
-<p class="more"><a href="2015/three-arguments-against-the-verification-validation-dichotomy/">Read more…</a></p>
+<p>This blog post should have been part three on the basic principles of context-driven testing. As you can see from the title, it is not. :-) The plan was to see if and to what degree the other schools of testing could accomodate the principles of the context-driven school - as a way of highlighting what makes the context-driven school different from the other schools. The problem is I'm not that interested in doing that at the moment, so the chance is small an interesting post would result from it. Perhaps another time.</p>
+<p class="more"><a href="2012/the-seven-basic-principles-of-the-context-driven-school-part-not-three/">Read more…</a></p>
 </div>
                 </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2015/the-test-case-an-epistemological-deconstruction/" class="u-url">The test case - an epistemological deconstruction</a></h1>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2012/the-seven-basic-principles-of-the-context-driven-school-part-two/" class="u-url">The Seven Basic Principles of the Context-Driven School - part two</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
                     </span></p>
             <p class="dateline">
-            <a href="2015/the-test-case-an-epistemological-deconstruction/" rel="bookmark">
-            <time class="published dt-published" datetime="2015-02-01T22:19:55+01:00" itemprop="datePublished" title="1 February 2015">1 February 2015</time></a>
+            <a href="2012/the-seven-basic-principles-of-the-context-driven-school-part-two/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-02-05T21:51:01+01:00" itemprop="datePublished" title="5 February 2012">5 February 2012</time></a>
             </p>
                 </div>
             </header><div class="p-summary entry-summary">
                     <div>
-<p><em>(This article was first published in Dutch in <a href="https://www.testnet.org/testnet/home">TestNet</a> Nieuws 18. The article below is a translation with minor changes. Many thanks to Joris Meerts and Ruud Cox for reviewing the original version.)</em></p>
-<h3>Testing as an information problem</h3>
-<p>Testing is an information problem. We are in search of certain information, of an answer to the question: does this application fulfill the relevant explicit and implicit expectations? The exact way in which we can answer this question, however, is not immediately clear. First we will need to decide which questions to ask, how to ask them and how to evaluate the responses. Hence, testing is an information problem.</p>
-<p>For the traditional test methodologies (ISTQB and TMap being the most well-known) the test case is a large part of the solution. So let's take this solution apart epistemologically and see what it is we have in front of us. If the traditional test case is our solution, what information does a test case contain? What changes occur after executing it? And also, where is the understanding in all of this that's happening?</p>
-<p>In this article, I will first describe how a typical test case is created and how it is used. Then we shall take a look at which kinds of information a test case contains. Finally, we will analyze where the understanding of what happens during testing, is present and where it is not.</p>
-<p class="more"><a href="2015/the-test-case-an-epistemological-deconstruction/">Read more…</a></p>
+<p>After the introductory post (to be found <a href="https://testingcurve.wordpress.com/2012/01/15/the-seven-basic-principles-of-the-context-driven-school-part-one/">here</a>) it's time to take a closer look at each of <a href="http://www.context-driven-testing.com/">the basic principles</a>. In the past weeks I found out that it's quite possible to take any one of these principles as a starting point for several different trains of thought. More importantly I discovered a story<sup id="fnref:1"><a class="footnote-ref" href="2012/the-seven-basic-principles-of-the-context-driven-school-part-two/#fn:1">1</a></sup> to the principles: the first five principles are ways in which software testing is intellectually challenging, as stated by principle six. And principle seven then wraps it all up.
+So below you can find some of the thoughts I had on the principles and the story I discovered.</p>
+<h4>1. The value of any practice depends on its context.</h4>
+<p>To get a better understanding of this principle I started thinking: what if the value of a practice did not depend on context? What else coud it depend on?</p>
+<p class="more"><a href="2012/the-seven-basic-principles-of-the-context-driven-school-part-two/">Read more…</a></p>
 </div>
                 </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2014/joining-the-fray-on-iso-29119/" class="u-url">Joining the fray on ISO 29119</a></h1>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2012/he-seven-basic-principles-of-the-context-driven-school-part-one/" class="u-url">The Seven Basic Principles of the Context-Driven School - part one</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
                     </span></p>
             <p class="dateline">
-            <a href="2014/joining-the-fray-on-iso-29119/" rel="bookmark">
-            <time class="published dt-published" datetime="2014-08-23T10:04:08+02:00" itemprop="datePublished" title="23 August 2014">23 August 2014</time></a>
+            <a href="2012/he-seven-basic-principles-of-the-context-driven-school-part-one/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-01-15T22:11:43+01:00" itemprop="datePublished" title="15 January 2012">15 January 2012</time></a>
             </p>
                 </div>
             </header><div class="p-summary entry-summary">
                     <div>
-<p>For those of you who weren't aware yet: something happened at CAST 2014 regarding the ISO/IEC/IEEE 29119 Software Testing. For instance, first <a href="http://www.youtube.com/watch?v=A721ltyVw3o&amp;list=PLQB4l9iafcelXpJnK6IyDsoFeEb1icqrl">this</a> happened, which resulted in <a href="http://www.ipetitions.com/petition/stop29119">this</a> and <a href="http://www.professionaltestersmanifesto.org/">this</a> and a whole bunch of other initiatives.</p>
-<p>And then someone on twitter (forgot who, apologies) suggested watching Stuard Reid's Eurostar webinar "ISO 29119 – the new set of international standards on software testing" which can be found <a href="https://www.youtube.com/watch?v=c4W-jWRldj0">here</a>. Since I liked to learn more about the standard, but not enough to pay almost 500€ to <a href="http://www.nen.nl/Zoekresultaten.htm?q=iso+29119">NEN</a> (Dutch standards organisation) for parts 1 to 3, I began watching the webinar.
-And truth be told, I didn't watch all of it. Some parts were boring, some parts sounded quite reasonable and some parts I..euh..skipped. And that's ok because all I want to discuss is this one particular quote that begins at 33:25:</p>
-<p class="more"><a href="2014/joining-the-fray-on-iso-29119/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2014/information-debt/" class="u-url">Information debt</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2014/information-debt/" rel="bookmark">
-            <time class="published dt-published" datetime="2014-07-13T16:50:21+02:00" itemprop="datePublished" title="13 July 2014">13 July 2014</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>Last week ago the following happened on twitter:</p>
-<blockquote>
-<p>New word of the day: "information debt". It's like technical debt, but related to information, communication, models, docs, visualisations.<br><em>- Joep Schuurkes (@j19sch) <a href="https://twitter.com/j19sch/statuses/486534198803841024">July 8, 2014</a></em></p>
-</blockquote>
-<div></div>
-
-<blockquote>
-<p>@j19sch: New word of the day: "information debt" =&gt; blogpost coming up ?!?!?<br><em>- Simon P. Schrijver (@SimonSaysNoMore) <a href="https://twitter.com/SimonSaysNoMore/statuses/486551279590977536">July 8, 2014</a></em></p>
-</blockquote>
-<div></div>
-
-<blockquote>
-<p>@SimonSaysNoMore Wasn't planning to, but now you made me think about it, so yes. Damn you! :-P<br><em>- Joep Schuurkes (@j19sch) <a href="https://twitter.com/j19sch/statuses/486555404089188352">July 8, 2014</a></em></p>
-</blockquote>
-<p>In case you don't know what technical debt is, you might want to read <a href="http://techblog.net-a-porter.com/2011/10/agile-tetris/">this</a> first. (It's the oldest source I could find of the technical debt-tetris analogy, by the way. If you know of an older one, please leave a comment.)</p>
-<p class="more"><a href="2014/information-debt/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2014/why-i-am-context-driven/" class="u-url">Why I am context-driven</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2014/why-i-am-context-driven/" rel="bookmark">
-            <time class="published dt-published" datetime="2014-06-30T07:06:21+02:00" itemprop="datePublished" title="30 June 2014">30 June 2014</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p><em>(This post was first published on the DEWT site as part of a <a href="https://dewt.wordpress.com/category/why-am-i-context-driven/">blog post series</a> by the DEWT members .)</em></p>
-<p>Why am I context-driven? Because it's more fun.</p>
-<p>That's all there is to it.</p>
-<p>Of course I could argue that becoming context-driven has made me a better tester and I do think it has. Yet it's not the reason I became a context-driven tester. Besides, how would I prove it made me a better tester?</p>
-<p>So no, I am context-driven because it's more fun. Because it sees testing as an intellectual challenge. Because it allows human uncertainty to be at the core of what it is. Because it tells me that I'm in charge of what I do and how I do it. Because it encourages me to dive in at the deep end of some complex problem, trusting on my skills to get out on top and enjoying every step of the way.</p>
-<p class="more"><a href="2014/why-i-am-context-driven/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2013/five-leftover-thoughts-on-software-testing/" class="u-url">Five leftover thoughts on software testing</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2013/five-leftover-thoughts-on-software-testing/" rel="bookmark">
-            <time class="published dt-published" datetime="2013-08-03T12:28:32+02:00" itemprop="datePublished" title="3 August 2013">3 August 2013</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>Defect severity 'Skynet': If this gets to production, we're screwed. Really screwed.</p>
-<p>The problem with templates is that the people who need them shouldn't be writing the document in the first place and that the people who don't need them, have trouble shaking off the vague sense of obligation to adhere to them.</p>
-<p>Happy path application: application that works perfectly fine as long as you stick to the beaten path with your eyes half-closed.</p>
-<p>The contents of a test plan can be divided into the following four categories: good stuff, cover your ass, bullshit, trivialities.</p>
-<p>Buddhist software development: there is no progress, only a never-ending cycle of suffering.</p>
-<p class="more"><a href="2013/five-leftover-thoughts-on-software-testing/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2013/why-i-dislike-test-management/" class="u-url">Why I dislike test management</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2013/why-i-dislike-test-management/" rel="bookmark">
-            <time class="published dt-published" datetime="2013-07-15T20:10:03+02:00" itemprop="datePublished" title="15 July 2013">15 July 2013</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>As I am enjoying these short, not very nuanced, not extremely well thought out blog posts, here’s another one.</p>
-<p>Some people seem to think that it makes sense to think of testing as a project within a project, so they apply project management tools and techniques to testing. This simply doesn’t work.</p>
-<p>Because what are the tools and techniques do they use? A plan with milestones no one is ever going to make as unexpected stuff tends to happen. A budget that is too tight because it’s based on that same plan. Entry criteria that are not met, but never mind, we’re running out of time so you need to start testing anyhow. And finally exit criteria that we fail to meet as well, but hey we’ll go live anyway, because the software really isn’t that bad (or so we hope).</p>
-<p>So in the end, a lot of time and effort is spent on producing documents that are of little use in guiding the actual testing effort. The only thing they do is give some people a warm and fuzzy illusion of control.</p>
-<p class="more"><a href="2013/why-i-dislike-test-management/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2013/test-cases-cant-do-m-no-more/" class="u-url">Test cases, can't do 'm no more</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2013/test-cases-cant-do-m-no-more/" rel="bookmark">
-            <time class="published dt-published" datetime="2013-07-06T20:19:32+02:00" itemprop="datePublished" title="6 July 2013">6 July 2013</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>Continuing the style of my previous blog post...</p>
-<p>Some days ago I found myself no longer able to think in test cases while testing. Of course, it's not as if I was using test design techniques to generate test cases one day and woke up the next day to find myself unable to do it anymore. But still, about a week ago I figured I had explored enough to be able to write down the test cases I wanted to execute and found myself staring at a blank page (well ok, empty Excel sheet) feeling alienated from what I was planning to do.</p>
-<p>So what do I mean when saying "thinking in test cases". Simply put, you take a piece of functionality, let a test design technique loose on it and there you go: a set of test cases to execute. Combine test design techniques over the different pieces of functionality as required and you're all covered test strategy-wise. Or that's the idea.</p>
-<p class="more"><a href="2013/test-cases-cant-do-m-no-more/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2013/why-your-product-risk-analysis-isnt/" class="u-url">Why your Product Risk Analysis isn't</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2013/why-your-product-risk-analysis-isnt/" rel="bookmark">
-            <time class="published dt-published" datetime="2013-06-23T14:34:36+02:00" itemprop="datePublished" title="23 June 2013">23 June 2013</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>Ok, going to try to keep this short and ranty (rantish?).</p>
-<p>Typical test advice is to do a Product Risk Analysis (PRA, mind the capitalisation!) and based on that you decide what to test and how thoroughly. The most common way to do a PRA is with a workshop. Put some people in a room with a lot of stickies, let them list all the risks they can think of and then have them score them. Et voilà, Product Risk Analysis is done!</p>
-<p>But that doesn't really make sense, now does it? If someone were to give you an object and asked you "What could possibly go wrong with this?", what would you do? Gather a bunch of people with some knowledge of the object, yet no actual experience with it and do a workshop imagining things that could go wrong? That's not an Analysis (capital A!), that's a SWAG – a scientific wild ass guess.</p>
-<p class="more"><a href="2013/why-your-product-risk-analysis-isnt/">Read more…</a></p>
+<p>In the next several posts, I'd like to take a look at the seven basic principles of the Context-Driven School of software testing. The main reason for this is that I like what people belonging to this school say about testing, but I don't 'get' the seven basic principles. I do understand the principles when I read them, but I don't feel like I 'own' them.</p>
+<p>So in the first few posts I will explore the principles as such. After that I will take a look at what other people have said about these principles. So please leave a comment if you know some good secondary sources on these principles!</p>
+<p>The seven basic principles can be found here: <a href="http://www.context-driven-testing.com">http://www.context-driven-testing.com</a>. They are also present as an appendix in "Lessons learned in software testing" by Cem Kaner, James Bach, Bret Pettichord, publised in 2002. This means that these principles were written in a context I'm not familiar with. They are at least four years older than my career in software testing, which began in 2006. And they were written by people from the USA, while I live and work in Western Europe.</p>
+<p class="more"><a href="2012/he-seven-basic-principles-of-the-context-driven-school-part-one/">Read more…</a></p>
 </div>
                 </div>
             </article>

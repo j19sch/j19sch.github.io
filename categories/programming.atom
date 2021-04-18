@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about programming)</title>
   <id>https://j19sch.github.io/categories/programming.atom</id>
-  <updated>2021-04-17T14:13:07Z</updated>
+  <updated>2021-04-18T15:05:57Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -218,5 +218,22 @@ Then last Wednesday &lt;a href="https://twitter.com/noahsussman"&gt;Noah Sussman
     <category term="programming" label="programming"/>
     <category term="test-automation" label="test automation"/>
     <category term="testing-and-checking" label="testing and checking"/>
+  </entry>
+  <entry>
+    <title>Lessons learned in some test automation</title>
+    <id>https://j19sch.github.io/blog/2013/lessons-learned-in-some-test-automation/</id>
+    <updated>2013-02-18T21:46:02+01:00</updated>
+    <published>2013-02-18T21:46:02+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2013/lessons-learned-in-some-test-automation/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;In the past two weeks I built a test tool in VBA (Visual Basic for Applications). I did this, because two weeks ago my fellow tester showed me an important test we have to do at least once for each major release. The test consists of having the application generate three reports in Excel format. On two of these reports you apply a set of filters and take the sum of a few columns, rinse and repeat. Then you add several of those sums together and the results of those calculations should match the numbers in the third report. So basically, the point of the test is to check if the numbers in the three reports add up. And it's a lot of work, i.e. about two days.&lt;/p&gt;
+&lt;p&gt;After being shown how to perform the test, the first thought that popped into my head, was: "Boring!" The second thought was: "It's automatable!" And since there was little else to do - delivery of the new test environments was delayed - I changed it from automatable to automated.&lt;/p&gt;
+&lt;p&gt;So now, after two weeks, I have this tool in VBA. For each of the three reports it contains a sheet in which you define the sets of filters and sums. If you click a big button, the report is opened and the filters and sums are applied. There's also a fourth sheet to do the second set of calculations and to do the check if the numbers match. This last part is not done in VBA; it's all formulas in Excel.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2013/lessons-learned-in-some-test-automation/"&gt;Read more…&lt;/a&gt; (8 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="programming" label="programming"/>
+    <category term="test-automation" label="test automation"/>
+    <category term="vba" label="VBA"/>
   </entry>
 </feed>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="https://j19sch.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>Joep Schuurkes (Posts about conference)</title>
+  <id>https://j19sch.github.io/categories/cat_conference.atom</id>
+  <updated>2021-04-18T15:15:29Z</updated>
+  <author>
+    <name>Joep Schuurkes</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://j19sch.github.io/categories/cat_conference.atom"/>
+  <link rel="alternate" type="text/html" href="https://j19sch.github.io/categories/cat_conference/"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>DEWT3 experience report</title>
+    <id>https://j19sch.github.io/blog/2013/dewt3-experience-report/</id>
+    <updated>2013-04-28T15:32:02+02:00</updated>
+    <published>2013-04-28T15:32:02+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2013/dewt3-experience-report/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Last weekend the third Dutch Exploratory Workshop in Testing (DEWT3 for short) took place. The ingredients were: a very nice hotel in the woods, lots of talk about testing, beer, whiskey, a small to moderate amount of sleep, stickies and a group of fun and interesting people (You can see them &lt;a href="http://dewt.wordpress.com/2013/04/24/dewt3-experience-reports/"&gt;here&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;On Saturday the talks (and thus discussions) were about systems thinking. A few years ago I did read Jerry Weinberg's "An Introduction to General Systems Thinking" and although a very interesting read, w.r.t. to applying it to testing I never got further then: Software is (part of) a system, so you can apply systems thinking to it. Of course, that's very much true, but it's also quite a vague piece of advice.&lt;/p&gt;
+&lt;h3&gt;A primer on systems thinking&lt;/h3&gt;
+&lt;p&gt;Enter James Bach, who kicked off DEWT3 with a primer on systems thinking. Systems thinking is just a way of thinking - just like logical thinking, analogical thinking, creative thinking, etc. - in which we approach a situation as being a system. So what's a system? It's a set of things in a meaningful interaction with each other.
+This definition raises all sorts of questions relevant in systems thinking:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2013/dewt3-experience-report/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="context-driven-testing" label="context-driven testing"/>
+    <category term="dewt" label="DEWT"/>
+    <category term="peer-conference" label="peer conference"/>
+    <category term="systems-thinking" label="systems thinking"/>
+  </entry>
+  <entry>
+    <title>Let's Test 2012 - time travel advice</title>
+    <id>https://j19sch.github.io/blog/2012/lets-test-2012-time-travel-advice/</id>
+    <updated>2012-05-18T19:32:08+02:00</updated>
+    <published>2012-05-18T19:32:08+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2012/lets-test-2012-time-travel-advice/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;If I had a time machine and could travel back in time to give myself some advice before attending &lt;a href="http://lets-test.com/"&gt;Let's Test 20212&lt;/a&gt;,
+it would be this:&lt;/p&gt;
+&lt;p&gt;- Go!&lt;br&gt;
+- Don't worry too much about which session to attend. One of the most valuable sessions you will attend, you'll choose because it has the least appealing abstract.&lt;br&gt;
+- Bring your running gear.&lt;br&gt;
+- If you ask Rikard Edgren nicely, he will give you a dead-tree version of his '&lt;a href="http://www.thetesteye.com/papers/TheLittleBlackBookOnTestDesign.pdf"&gt;Little Black Book on Test Design&lt;/a&gt;'.&lt;br&gt;
+- Enjoy the food. Don't worry, it's not much of a challenge.&lt;/p&gt;&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2012/lets-test-2012-time-travel-advice/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="conference" label="conference"/>
+    <category term="context-driven-testing" label="context-driven testing"/>
+  </entry>
+</feed>

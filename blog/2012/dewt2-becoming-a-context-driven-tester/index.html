@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEWT2 - Becoming a context-driven tester | Joep Schuurkes</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../feed.atom">
+<link rel="canonical" href="https://j19sch.github.io/blog/2012/dewt2-becoming-a-context-driven-tester/">
+<link rel="icon" href="../../../assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="../../../assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../assets/favicons/favicon-96x96.png" sizes="96x96">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script><script async src="//static.getclicky.com/js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../measuring-review-coverage/" title="Measuring review coverage" type="text/html">
+<link rel="next" href="../../2013/lessons-learned-in-some-test-automation/" title="Lessons learned in some test automation" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="DEWT2 - Becoming a context-driven tester">
+<meta property="og:url" content="https://j19sch.github.io/blog/2012/dewt2-becoming-a-context-driven-tester/">
+<meta property="og:description" content='About a month ago ago (October 5th - 6th) I was in Driebergen to attend DEWT2, a peer workshop with as theme "Implementing Context-Driven Testing". As it turns out, implementing context-driven testing'>
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2012-11-08T23:14:57+01:00">
+<meta property="article:tag" content="context-driven testing">
+<meta property="article:tag" content="DEWT">
+<meta property="article:tag" content="peer conference">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-projects/" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-talks/" class="nav-link">Talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../../my-lists/reading-list/" class="dropdown-item">Reading list</a>
+                    <a href="../../../my-lists/recommended-reading/" class="dropdown-item">Recommended reading</a>
+                    <a href="../../../my-lists/favorite-podcasts/" class="dropdown-item">Favorite podcasts</a>
+                    <a href="../../../my-lists/fountain-pens/" class="dropdown-item">Fountain pens</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../" class="dropdown-item">My blog</a>
+                    <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../rss.xml" class="dropdown-item">RSS feed</a>
+                    <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">DEWT2 - Becoming a context-driven tester</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2012-11-08T23:14:57+01:00" itemprop="datePublished" title="8 November 2012">8 November 2012</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>About a month ago ago (October 5th - 6th) I was in Driebergen to attend <a href="http://dewt.wordpress.com/2012/10/07/dewt2-was-a-blast/">DEWT2</a>, a peer workshop with as theme "Implementing Context-Driven Testing". As it turns out, implementing context-driven testing is not easy to do. That should not come as a surprise: it requires people to change and that is difficult. Luckily, I'm not a manager wanting to implement context-driven testing, so I can dodge most of that problem.</p>
+<p>However, I do like 'spreading the word' on context-driven testing, because I would like for there to be more context-driven testers in the Netherlands (and Europe and the world, of course). So to promote context-driven testing I think there are three things I can do: <br>
+1) set an example,<br>
+2) be available to other people,<br>
+3) leave bread crumbs.</p>
+<!-- TEASER_END -->
+
+<p>Setting an example means testing in a context-driven way and (very important) labelling it as such. You want people to know there's a reason you do the things you do and that reason has a name: context-driven testing.<br>
+Secondly, be available to people. When asked a question, don't just answer the question. Take your time to engage in a conversation.<br>
+Finally, leave bread crumbs to expose other people to context-driven testing. Keep some books on your desk. Put the 37 test ideas from the Little Black Book on Test Design up on a wall. Or a mindmap with the test coverage of your current project. Perhaps no one will ask about it, but perhaps someone will.</p>
+<p>Now, I am fully aware these three things are nothing special. They are not the result of a stroke of genius insight on my part, if only because they were very much present in the talks by the speakers (Henrik Ilari Aegerter, Markus Gärtner, Ray Oei, Ruud Cox and Huib Schoots) and in the discussions at DEWT2.</p>
+<p>However, I now am wondering perhaps there isn't much more we can do, because (as I said earlier) change is hard. As I have discovered in one of my other pursuits: some people will get it and some people won't. If you're for instance a factory school-tester, you may become intrigued by the context-driven school or you may not. You may come to prefer the context-driven school or not. You may be able to fully change to a context-driven way of thinking or not. So there are at least three points in time in which a person may 'fail' to become an actual context-driven tester.</p>
+<p>And even if you are able to make the change, it will take quite some time to make the change. Perhaps I'm not at all representative, but to illustrate here's how I became a context-driven tester.</p>
+<h3>How I became a context-driven tester</h3>
+<p>My career in testing started in May 2006 with a TMap course and I got the 'Professional Advanced' certificate in June 2007. Somewhere in 2008 I started teaching this TMap course to our new employees. So let's say I had a fair grasp of TMap and thus (unknowingly) of the factory school of testing.</p>
+<p>Then, somewhere in the beginning of 2010 I came across the blogs of James Bach and Michael Bolton, so I read those from the first post to the most recent. I also read the Rapid Software Testing course slides. I read about the different schools in software testing. I read "Lessons Learned In Software Testing" and read the context-driven-testin.com site. Did this make me context-driven tester? No, I was just a guy that had read a lot about it. I liked what I read, but I did not really actually get it.</p>
+<p>In November 2010 I attended the Rapid Software Testing class taught by Michael Bolton in London. This did give me a better grasp of what a context-driven testing approach looked like, but afterwards I still didn't feel I was a context-driven tester. It still felt somewhat alien to me. So I continued to process everything. I noticed that quite often the first response to a situation that came into my mind was a factory-style one, but if I put a little more tought in it, I could also provide a 'proper' context-driven answer. In that respect thid was a very strange phase: noticing factory school thoughts popping up in my mind and then having a different part of my mind reasoning against those thoughts with context-driven arguments.</p>
+<p>Fast forward to Januari 2012 when I began this blog. I even did a few posts on the seven principles of context-driven testing and still I didn't feel like I was a context-driven tester. May 2012 I was at the Let's Test conference in Sweden; that helped. And then finally in July 2012 I made my first blog post on the VIPT model and felt I had become a context-driven tester - probably because that model is my personal synthesis of context-driven testing. Only since that moment do I feel like context-driven testing is a fundamental part of how I think about testing.</p>
+<p>So to summarize I went through these three stages:<br>
+1) Being interested and absorbing information;<br>
+2) Being able to reason to a context-driven repsonse;<br>
+3) Being a context-driven tester.</p>
+<p>And it took me about 2.5 years to go through these three stages. To be honest, I don't think that's slow. Changing the way you look at testing in a fundamental way takes time. And the longer ago you made that change, the harder it is to remember how you thought before the change and to remember how you made this change. Which is part of the reason I am writing this blog post: to document this while I still remember. Because in a few years time I will have as hard a time to imagine what it's like to think factory school as I had all those years ago imagining there was a different way to think about testing.</p>
+<hr>
+<p><em>This post was originally published <a href="https://testingcurve.wordpress.com/2012/11/08/dewt2-becoming-a-context-driven-tester/">here</a>.</em></p>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/context-driven-testing/" rel="tag">context-driven testing</a></li>
+            <li><a class="tag p-category" href="../../../categories/dewt/" rel="tag">DEWT</a></li>
+            <li><a class="tag p-category" href="../../../categories/peer-conference/" rel="tag">peer conference</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../measuring-review-coverage/" rel="prev" title="Measuring review coverage">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../../2013/lessons-learned-in-some-test-automation/" rel="next" title="Lessons learned in some test automation">Next post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2021     
+<a href="http://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a>
+    <a href="mailto:j19sch@hey.com">Joep Schuurkes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

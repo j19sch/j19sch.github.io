@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about exploration)</title>
   <id>https://j19sch.github.io/categories/exploration.atom</id>
-  <updated>2021-04-17T14:03:57Z</updated>
+  <updated>2021-04-18T15:55:37Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -75,5 +75,46 @@ So after giving it some thought, I present you with three arguments against the 
     <category term="exploration" label="exploration"/>
     <category term="test-cases" label="test cases"/>
     <category term="test-management" label="test management"/>
+  </entry>
+  <entry>
+    <title>Some thoughts after attending the 'Getting a Grip on Exploratory Testing' workshop</title>
+    <id>https://j19sch.github.io/blog/2012/some-thoughts-after-attending-the-getting-a-grip-on-exploratory-testing-workshop/</id>
+    <updated>2012-04-29T19:55:30+02:00</updated>
+    <published>2012-04-29T19:55:30+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2012/some-thoughts-after-attending-the-getting-a-grip-on-exploratory-testing-workshop/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;About two weeks ago I attended &lt;a href="http://www.workroom-productions.com/"&gt;James Lyndsay&lt;/a&gt;'s 'Getting a Grip on Exploratory Testing' workshop in Amsterdam. So it's about time to write something about it…&lt;/p&gt;
+&lt;p&gt;Now one of the things I dislike about workshop blog posts is that people will say "It was great! And person X is such a good trainer!" without saying much about the content of the workshop. However, I find myself now writing this post and thinking: I shouldn't post a full summary of the workshop. Not that it would spoil too much for any future attendee: most of the workshop consists of exercises and discussion. But posting a summary of the workshop that James has put a lot of effort in to create, just doesn't feel right. So let me just say this: the workshop was great and James is such a good trainer! :-D&lt;/p&gt;
+&lt;p&gt;Now that's out of the way, there are a few things from the workshop I'd like to share. Of course, the usual disclaimer applies: these are my thoughts on what was presented during the workshop. Any misrepresentations are my responsibility.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2012/some-thoughts-after-attending-the-getting-a-grip-on-exploratory-testing-workshop/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="exploration" label="exploration"/>
+    <category term="software-testing" label="software testing"/>
+    <category term="workshop" label="workshop"/>
+  </entry>
+  <entry>
+    <title>The irony of scripted testing</title>
+    <id>https://j19sch.github.io/blog/2012/the-irony-of-scripted-testing/</id>
+    <updated>2012-04-09T23:16:17+02:00</updated>
+    <published>2012-04-09T23:16:17+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2012/the-irony-of-scripted-testing/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;A bit over a week ago, &lt;a href="https://twitter.com/jamesmarcusbach/status/185816224075227137"&gt;James Bach posted on twitter&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"This video shows a nice simple contrast between heavy scripted testing and exploratory testing &lt;a href="http://youtu.be/PxTqjAwM2Pw"&gt;http://youtu.be/PxTqjAwM2Pw&lt;/a&gt;"&lt;br&gt;
+- James Bach (@jamesmarcusbach) March 30, 2012&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So I watched the video, hoping to see something that would make me go 'Cool!', but instead I went 'Hmmm.'&lt;/p&gt;
+&lt;p&gt;First let me say that this video does get a few things right:&lt;br&gt;
+- Exploratory testing can be structured by using charters.&lt;br&gt;
+- Exploratory testing allows you to easily change your test approach based on your test results.&lt;br&gt;
+- Exploratory testing is very adaptable when confronted with inaccurate or changing requirements.&lt;br&gt;
+Yet notice how the above only talks about exploratory testing, because for every thing the video gets right about exploratory testing, it gets something wrong about scripted testing – or rather about how scripted testing works in practice.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2012/the-irony-of-scripted-testing/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="exploration" label="exploration"/>
+    <category term="software-testing" label="software testing"/>
   </entry>
 </feed>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="https://j19sch.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>Joep Schuurkes (Posts about reviewing)</title>
+  <id>https://j19sch.github.io/categories/cat_reviewing.atom</id>
+  <updated>2021-04-18T15:15:57Z</updated>
+  <author>
+    <name>Joep Schuurkes</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://j19sch.github.io/categories/cat_reviewing.atom"/>
+  <link rel="alternate" type="text/html" href="https://j19sch.github.io/categories/cat_reviewing/"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Measuring review coverage</title>
+    <id>https://j19sch.github.io/blog/2012/measuring-review-coverage/</id>
+    <updated>2012-09-13T19:39:57+02:00</updated>
+    <published>2012-09-13T19:39:57+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2012/measuring-review-coverage/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Recently it occurred to me we have plenty of ways to measure test coverage, but there doesn't seem to be a way to measure review coverage. So today I decided to fix that. The result is the scale below with which you can measure review coverage. And just like all good scales, &lt;a href="http://www.youtube.com/watch?v=XuzpsO4ErOQ"&gt;it goes all the way up to 11&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;0) I'm sorry, what document?&lt;br&gt;
+1) I think I do remember someone mentioning that document.&lt;br&gt;
+2) I'm sure I have it somewhere – well, at least fairly sure...&lt;br&gt;
+3) Look, it's on my to do-pile!&lt;/p&gt;&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2012/measuring-review-coverage/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="coverage" label="coverage"/>
+    <category term="measurements" label="measurements"/>
+    <category term="reviews" label="reviews"/>
+  </entry>
+</feed>

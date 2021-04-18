@@ -10,6 +10,10 @@
   <lastmod>2021-03-28T13:38:00Z</lastmod>
  </url>
  <url>
+  <loc>https://j19sch.github.io/2012/</loc>
+  <lastmod>2021-04-18T14:59:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://j19sch.github.io/2013/</loc>
   <lastmod>2021-04-17T13:49:00Z</lastmod>
  </url>
@@ -47,15 +51,63 @@
  </url>
  <url>
   <loc>https://j19sch.github.io/archive.html</loc>
-  <lastmod>2021-04-18T10:09:00Z</lastmod>
+  <lastmod>2021-04-18T16:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/</loc>
-  <lastmod>2021-04-17T13:54:00Z</lastmod>
+  <lastmod>2021-04-18T15:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2012/dewt2-becoming-a-context-driven-tester/</loc>
+  <lastmod>2021-04-18T14:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2012/dewt3-experience-report/</loc>
+  <lastmod>2021-04-18T14:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2012/he-seven-basic-principles-of-the-context-driven-school-part-one/</loc>
+  <lastmod>2021-04-18T15:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2012/he-seven-basic-principles-of-the-context-driven-school-part-two/</loc>
+  <lastmod>2021-04-18T16:06:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2012/lets-test-2012-time-travel-advice/</loc>
+  <lastmod>2021-04-18T15:00:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2012/measuring-review-coverage/</loc>
+  <lastmod>2021-04-18T14:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2012/some-thoughts-after-attending-the-getting-a-grip-on-exploratory-testing-workshop/</loc>
+  <lastmod>2021-04-18T15:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2012/the-irony-of-scripted-testing/</loc>
+  <lastmod>2021-04-18T15:48:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2012/the-seven-basic-principles-of-the-context-driven-school-part-not-three/</loc>
+  <lastmod>2021-04-18T16:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2012/the-seven-basic-principles-of-the-context-driven-school-part-two/</loc>
+  <lastmod>2021-04-18T16:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2013/dewt3-experience-report/</loc>
+  <lastmod>2021-04-18T14:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/2013/five-leftover-thoughts-on-software-testing/</loc>
   <lastmod>2021-04-17T13:49:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2013/lessons-learned-in-some-test-automation/</loc>
+  <lastmod>2021-04-18T14:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/2013/test-cases-cant-do-m-no-more/</loc>
@@ -187,19 +239,23 @@
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/index-1.html</loc>
-  <lastmod>2021-04-18T10:09:00Z</lastmod>
+  <lastmod>2021-04-18T16:11:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/index-2.html</loc>
-  <lastmod>2021-04-18T10:09:00Z</lastmod>
+  <lastmod>2021-04-18T16:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/index-3.html</loc>
-  <lastmod>2021-04-18T10:09:00Z</lastmod>
+  <lastmod>2021-04-18T16:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/index-4.html</loc>
+  <lastmod>2021-04-18T16:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/</loc>
-  <lastmod>2021-04-17T14:14:00Z</lastmod>
+  <lastmod>2021-04-18T15:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/agile/</loc>
@@ -226,6 +282,10 @@
   <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
+  <loc>https://j19sch.github.io/categories/cat_conference/</loc>
+  <lastmod>2021-04-18T14:59:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://j19sch.github.io/categories/cat_exploration/</loc>
   <lastmod>2021-03-21T14:51:00Z</lastmod>
  </url>
@@ -244,6 +304,10 @@
  <url>
   <loc>https://j19sch.github.io/categories/cat_quality/</loc>
   <lastmod>2021-02-15T19:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/cat_reviewing/</loc>
+  <lastmod>2021-04-18T14:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/cat_test-automation/</loc>
@@ -274,8 +338,16 @@
   <lastmod>2020-05-09T07:30:00Z</lastmod>
  </url>
  <url>
+  <loc>https://j19sch.github.io/categories/conference/</loc>
+  <lastmod>2021-04-18T14:59:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://j19sch.github.io/categories/context-driven-testing/</loc>
   <lastmod>2021-03-21T15:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/coverage/</loc>
+  <lastmod>2021-04-18T14:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/data-analysis/</loc>
@@ -334,6 +406,10 @@
   <lastmod>2021-03-26T19:43:00Z</lastmod>
  </url>
  <url>
+  <loc>https://j19sch.github.io/categories/measurements/</loc>
+  <lastmod>2021-04-18T14:59:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://j19sch.github.io/categories/paradigms/</loc>
   <lastmod>2021-03-14T14:45:00Z</lastmod>
  </url>
@@ -362,6 +438,10 @@
   <lastmod>2021-03-14T16:05:00Z</lastmod>
  </url>
  <url>
+  <loc>https://j19sch.github.io/categories/reviews/</loc>
+  <lastmod>2021-04-18T14:59:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://j19sch.github.io/categories/selling/</loc>
   <lastmod>2021-02-28T13:23:00Z</lastmod>
  </url>
@@ -376,6 +456,10 @@
  <url>
   <loc>https://j19sch.github.io/categories/software-testing/</loc>
   <lastmod>2021-04-17T13:20:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/systems-thinking/</loc>
+  <lastmod>2021-04-18T14:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/test-automation/</loc>
@@ -410,6 +494,10 @@
   <lastmod>2021-02-15T19:52:00Z</lastmod>
  </url>
  <url>
+  <loc>https://j19sch.github.io/categories/vba/</loc>
+  <lastmod>2021-04-18T14:59:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://j19sch.github.io/categories/verification-and-validation/</loc>
   <lastmod>2021-04-11T13:34:00Z</lastmod>
  </url>
@@ -420,6 +508,10 @@
  <url>
   <loc>https://j19sch.github.io/categories/vipt/</loc>
   <lastmod>2021-04-17T13:20:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/workshop/</loc>
+  <lastmod>2021-04-18T15:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/my-lists/favorite-podcasts/</loc>
