@@ -140,20 +140,20 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/index.html", "Home"),
-        ("/my-projects", "Projects"),
-        ("/my-talks", "Talks"),
+        ("/my-projects/", "Projects"),
+        ("/my-talks/", "Talks"),
         (
             (
-                ("/my-lists/reading-list", "Reading list"),
-                ("/my-lists/recommended-reading", "Recommended reading"),
-                ("/my-lists/favorite-podcasts", "Favorite podcasts"),
-                ("/my-lists/fountain-pens", "Fountain pens"),
+                ("/my-lists/reading-list/", "Reading list"),
+                ("/my-lists/recommended-reading/", "Recommended reading"),
+                ("/my-lists/favorite-podcasts/", "Favorite podcasts"),
+                ("/my-lists/fountain-pens/", "Fountain pens"),
             ),
             "Lists"
         ),
         (
             (
-                ("/blog", "My blog"),
+                ("/blog/", "My blog"),
                 ("/categories/", "Categories and tags"),
                 ("/archive.html", "Archive"),
                 ("/blog/rss.xml", "RSS feed"),
