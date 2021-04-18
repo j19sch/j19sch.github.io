@@ -16,6 +16,8 @@ hidetitle: false
 - Kitchen Confidential, Adventures in the Culinary Underbelly - Anthony Bourdain
 - Agile Conversations, Transform Your Conversations, Transform Your Culture - Douglas Squirrel and Jeffrey Fredrick
 - The Freedom the be Free - Hannah Arendt
+- My Share of the Task - Stanley McChrystal
+- Agile Impressions - Jerry Weinberg (reread)
 
 
 ### 2020

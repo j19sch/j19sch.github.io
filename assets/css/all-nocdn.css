@@ -1271,6 +1271,10 @@ div.container#content {
   text-decoration: underline;
 }
 
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #0273ec;
+}
+
 nav.archivenav {
   margin-bottom: 1.3rem;
 }
