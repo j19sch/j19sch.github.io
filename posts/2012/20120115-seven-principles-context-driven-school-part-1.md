@@ -1,6 +1,6 @@
 <!--
 .. title: The Seven Basic Principles of the Context-Driven School - part one
-.. slug: he-seven-basic-principles-of-the-context-driven-school-part-one
+.. slug: the-seven-basic-principles-of-the-context-driven-school-part-one
 .. date: 2012-01-15 22:11:43 UTC+01:00
 .. tags: context-driven testing, software testing
 .. category: philosophy of testing
