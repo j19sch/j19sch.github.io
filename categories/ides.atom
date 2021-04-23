@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about IDEs)</title>
   <id>https://j19sch.github.io/categories/ides.atom</id>
-  <updated>2021-04-17T14:12:33Z</updated>
+  <updated>2021-04-23T11:11:39Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -27,6 +27,7 @@
     <category term="brave-clojure" label="brave clojure"/>
     <category term="clojure" label="clojure"/>
     <category term="ides" label="IDEs"/>
+    <category term="programming" label="programming"/>
     <category term="vim" label="vim"/>
   </entry>
   <entry>

@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about brave clojure)</title>
   <id>https://j19sch.github.io/categories/brave-clojure.atom</id>
-  <updated>2021-04-17T14:11:07Z</updated>
+  <updated>2021-04-23T11:11:39Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -33,6 +33,7 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
 &lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clojure/2020/clj5-loop-and-recur-into-and-conj/"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="brave-clojure" label="brave clojure"/>
     <category term="clojure" label="clojure"/>
+    <category term="programming" label="programming"/>
   </entry>
   <entry>
     <title>(clj 4) Learning about when, maps and closures</title>
@@ -57,6 +58,7 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
 &lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clojure/2020/clj4-learning-when-maps-closures/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="brave-clojure" label="brave clojure"/>
     <category term="clojure" label="clojure"/>
+    <category term="programming" label="programming"/>
   </entry>
   <entry>
     <title>(clj 3) Clojure's 'and' and 'or' are weird (but not really)</title>
@@ -93,7 +95,7 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
 &lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clojure/2020/clj3-and-or-being-weird/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="brave-clojure" label="brave clojure"/>
     <category term="clojure" label="clojure"/>
-    <category term="logic" label="logic"/>
+    <category term="programming" label="programming"/>
   </entry>
   <entry>
     <title>(clj 1) Deciding on a Clojure editor</title>
@@ -111,7 +113,8 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
 &lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clojure/2020/clj1-deciding-on-an-editor/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="brave-clojure" label="brave clojure"/>
     <category term="clojure" label="clojure"/>
-    <category term="text-editors" label="text editors"/>
+    <category term="ides" label="IDEs"/>
+    <category term="programming" label="programming"/>
     <category term="vim" label="vim"/>
   </entry>
   <entry>
@@ -131,5 +134,6 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
     <category term="brave-clojure" label="brave clojure"/>
     <category term="clojure" label="clojure"/>
     <category term="koans" label="koans"/>
+    <category term="programming" label="programming"/>
   </entry>
 </feed>

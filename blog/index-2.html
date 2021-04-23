@@ -90,98 +90,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2015/test-automation-five-questions-leading-to-five-heuristics/" class="u-url">Test automation - five questions leading to five heuristics</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2015/test-automation-five-questions-leading-to-five-heuristics/" rel="bookmark">
-            <time class="published dt-published" datetime="2015-03-24T20:53:24+01:00" itemprop="datePublished" title="24 March 2015">24 March 2015</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>(I wrote a follow-up to this post in June 2019: <a href="2019/how-this-tester-writes-code/">how this tester writes code</a>.)</p>
-<p>In 1984 Abelson and Sussman said in the Preface to '<a href="https://mitpress.mit.edu/sicp/">Structure and Interpretation of Computer Programs</a>':</p>
-<blockquote>
-<p>Our design of this introductory computer-science subject reflects two major concerns. First, we want to establish the idea that a computer language is not just a way of getting a computer to perform operations but rather that it is a novel formal medium for expressing ideas about methodology. <strong>Thus, programs must be written for people to read, and only incidentally for machines to execute.</strong> Second, we believe that the essential material to be addressed by a subject at this level is not the syntax of particular programming-language constructs, nor clever algorithms for computing particular functions efficiently, nor even the mathematical analysis of algorithms and the foundations of computing, but rather the techniques used to control the intellectual complexity of large software systems. [emphasis mine]</p>
-</blockquote>
-<p>This oft-quoted sentence I emphasized, is even more true if the purpose of our programs is test automation<sup id="fnref:1"><a class="footnote-ref" href="2015/test-automation-five-questions-leading-to-five-heuristics/#fn:1">1</a></sup>. So let's say you run your test automation program and the result is a list of passes and fails.  The purpose of testing is to produce information. You could say that this list of results qualifies as information and I would disagree. I would say it is data, data in need of interpretation. When we attempt this interpretation, we should consider the following five questions.</p>
-<p class="more"><a href="2015/test-automation-five-questions-leading-to-five-heuristics/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2015/three-arguments-against-the-verification-validation-dichotomy/" class="u-url">Three arguments against the verification-validation dichotomy</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2015/three-arguments-against-the-verification-validation-dichotomy/" rel="bookmark">
-            <time class="published dt-published" datetime="2015-03-24T20:53:24+01:00" itemprop="datePublished" title="24 March 2015">24 March 2015</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>Last week while talking with two colleagues, one of them mentioned the verification/validation thing. And I noticed it made me feel uneasy. Because I know well enough what is meant by the distinction, but on a practical level I simply can't relate to it. When I think about what I do as a software tester and how verification versus validation applies to it, nothing happens. Blank mind. Crickets. Tumbleweed.
-So after giving it some thought, I present you with three arguments against the verification-validation dichotomy.</p>
-<p>First of course, we have the obligatory interlude of defining these two terms. A place to start is the Wikipedia page on <a href="http://en.wikipedia.org/wiki/Software_verification_and_validation">Software verification and validation</a>. Unfortunately it contains conflicting definitions, so if anyone cares enough, please do fix. Luckily there's also the general <a href="http://en.wikipedia.org/wiki/Verification_and_validation">Verification and validation</a> page of Wikipedia, which gives us (among others) the tl;dr version of the distinction:</p>
-<ul>
-<li>Verification: <em>Are we building the product right?</em>
-</li>
-<li>Validation: <em>Are we building the right product?</em>
-</li>
-</ul>
-<p>Finally there's the <a href="http://www.istqb.org/downloads/finish/20/145.html">ISTQB glossary v2.4</a> that borrows from ISO 9000:</p>
-<ul>
-<li>Verification: <em>Confirmation by examination and through provision of objective evidence that specified requirements have been fulfilled.</em>
-</li>
-<li>Validation: <em>Confirmation by examination and through provision of objective evidence that the requirements for a specific intended use or application have been fulfilled.</em>
-</li>
-</ul>
-<p>Now on to the three arguments.</p>
-<p class="more"><a href="2015/three-arguments-against-the-verification-validation-dichotomy/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2015/the-test-case-an-epistemological-deconstruction/" class="u-url">The test case - an epistemological deconstruction</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2015/the-test-case-an-epistemological-deconstruction/" rel="bookmark">
-            <time class="published dt-published" datetime="2015-02-01T22:19:55+01:00" itemprop="datePublished" title="1 February 2015">1 February 2015</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p><em>(This article was first published in Dutch in <a href="https://www.testnet.org/testnet/home">TestNet</a> Nieuws 18. The article below is a translation with minor changes. Many thanks to Joris Meerts and Ruud Cox for reviewing the original version.)</em></p>
-<h3>Testing as an information problem</h3>
-<p>Testing is an information problem. We are in search of certain information, of an answer to the question: does this application fulfill the relevant explicit and implicit expectations? The exact way in which we can answer this question, however, is not immediately clear. First we will need to decide which questions to ask, how to ask them and how to evaluate the responses. Hence, testing is an information problem.</p>
-<p>For the traditional test methodologies (ISTQB and TMap being the most well-known) the test case is a large part of the solution. So let's take this solution apart epistemologically and see what it is we have in front of us. If the traditional test case is our solution, what information does a test case contain? What changes occur after executing it? And also, where is the understanding in all of this that's happening?</p>
-<p>In this article, I will first describe how a typical test case is created and how it is used. Then we shall take a look at which kinds of information a test case contains. Finally, we will analyze where the understanding of what happens during testing, is present and where it is not.</p>
-<p class="more"><a href="2015/the-test-case-an-epistemological-deconstruction/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2014/joining-the-fray-on-iso-29119/" class="u-url">Joining the fray on ISO 29119</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2014/joining-the-fray-on-iso-29119/" rel="bookmark">
-            <time class="published dt-published" datetime="2014-08-23T10:04:08+02:00" itemprop="datePublished" title="23 August 2014">23 August 2014</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>For those of you who weren't aware yet: something happened at CAST 2014 regarding the ISO/IEC/IEEE 29119 Software Testing. For instance, first <a href="http://www.youtube.com/watch?v=A721ltyVw3o&amp;list=PLQB4l9iafcelXpJnK6IyDsoFeEb1icqrl">this</a> happened, which resulted in <a href="http://www.ipetitions.com/petition/stop29119">this</a> and <a href="http://www.professionaltestersmanifesto.org/">this</a> and a whole bunch of other initiatives.</p>
-<p>And then someone on twitter (forgot who, apologies) suggested watching Stuard Reid's Eurostar webinar "ISO 29119 – the new set of international standards on software testing" which can be found <a href="https://www.youtube.com/watch?v=c4W-jWRldj0">here</a>. Since I liked to learn more about the standard, but not enough to pay almost 500€ to <a href="http://www.nen.nl/Zoekresultaten.htm?q=iso+29119">NEN</a> (Dutch standards organisation) for parts 1 to 3, I began watching the webinar.
-And truth be told, I didn't watch all of it. Some parts were boring, some parts sounded quite reasonable and some parts I..euh..skipped. And that's ok because all I want to discuss is this one particular quote that begins at 33:25:</p>
-<p class="more"><a href="2014/joining-the-fray-on-iso-29119/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2014/information-debt/" class="u-url">Information debt</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2014/information-debt/" class="u-url">Information debt</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
@@ -304,6 +213,84 @@ And truth be told, I didn't watch all of it. Some parts were boring, some parts 
 <p>Typical test advice is to do a Product Risk Analysis (PRA, mind the capitalisation!) and based on that you decide what to test and how thoroughly. The most common way to do a PRA is with a workshop. Put some people in a room with a lot of stickies, let them list all the risks they can think of and then have them score them. Et voilà, Product Risk Analysis is done!</p>
 <p>But that doesn't really make sense, now does it? If someone were to give you an object and asked you "What could possibly go wrong with this?", what would you do? Gather a bunch of people with some knowledge of the object, yet no actual experience with it and do a workshop imagining things that could go wrong? That's not an Analysis (capital A!), that's a SWAG – a scientific wild ass guess.</p>
 <p class="more"><a href="2013/why-your-product-risk-analysis-isnt/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2013/dewt3-experience-report/" class="u-url">DEWT3 experience report</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2013/dewt3-experience-report/" rel="bookmark">
+            <time class="published dt-published" datetime="2013-04-28T15:32:02+02:00" itemprop="datePublished" title="28 April 2013">28 April 2013</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Last weekend the third Dutch Exploratory Workshop in Testing (DEWT3 for short) took place. The ingredients were: a very nice hotel in the woods, lots of talk about testing, beer, whiskey, a small to moderate amount of sleep, stickies and a group of fun and interesting people (You can see them <a href="http://dewt.wordpress.com/2013/04/24/dewt3-experience-reports/">here</a>.)</p>
+<p>On Saturday the talks (and thus discussions) were about systems thinking. A few years ago I did read Jerry Weinberg's "An Introduction to General Systems Thinking" and although a very interesting read, w.r.t. to applying it to testing I never got further then: Software is (part of) a system, so you can apply systems thinking to it. Of course, that's very much true, but it's also quite a vague piece of advice.</p>
+<h3>A primer on systems thinking</h3>
+<p>Enter James Bach, who kicked off DEWT3 with a primer on systems thinking. Systems thinking is just a way of thinking - just like logical thinking, analogical thinking, creative thinking, etc. - in which we approach a situation as being a system. So what's a system? It's a set of things in a meaningful interaction with each other.
+This definition raises all sorts of questions relevant in systems thinking:</p>
+<p class="more"><a href="2013/dewt3-experience-report/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2013/lessons-learned-in-some-test-automation/" class="u-url">Lessons learned in some test automation</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2013/lessons-learned-in-some-test-automation/" rel="bookmark">
+            <time class="published dt-published" datetime="2013-02-18T21:46:02+01:00" itemprop="datePublished" title="18 February 2013">18 February 2013</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>In the past two weeks I built a test tool in VBA (Visual Basic for Applications). I did this, because two weeks ago my fellow tester showed me an important test we have to do at least once for each major release. The test consists of having the application generate three reports in Excel format. On two of these reports you apply a set of filters and take the sum of a few columns, rinse and repeat. Then you add several of those sums together and the results of those calculations should match the numbers in the third report. So basically, the point of the test is to check if the numbers in the three reports add up. And it's a lot of work, i.e. about two days.</p>
+<p>After being shown how to perform the test, the first thought that popped into my head, was: "Boring!" The second thought was: "It's automatable!" And since there was little else to do - delivery of the new test environments was delayed - I changed it from automatable to automated.</p>
+<p>So now, after two weeks, I have this tool in VBA. For each of the three reports it contains a sheet in which you define the sets of filters and sums. If you click a big button, the report is opened and the filters and sums are applied. There's also a fourth sheet to do the second set of calculations and to do the check if the numbers match. This last part is not done in VBA; it's all formulas in Excel.</p>
+<p class="more"><a href="2013/lessons-learned-in-some-test-automation/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2012/dewt2-becoming-a-context-driven-tester/" class="u-url">DEWT2 - Becoming a context-driven tester</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2012/dewt2-becoming-a-context-driven-tester/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-11-08T23:14:57+01:00" itemprop="datePublished" title="8 November 2012">8 November 2012</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>About a month ago ago (October 5th - 6th) I was in Driebergen to attend <a href="http://dewt.wordpress.com/2012/10/07/dewt2-was-a-blast/">DEWT2</a>, a peer workshop with as theme "Implementing Context-Driven Testing". As it turns out, implementing context-driven testing is not easy to do. That should not come as a surprise: it requires people to change and that is difficult. Luckily, I'm not a manager wanting to implement context-driven testing, so I can dodge most of that problem.</p>
+<p>However, I do like 'spreading the word' on context-driven testing, because I would like for there to be more context-driven testers in the Netherlands (and Europe and the world, of course). So to promote context-driven testing I think there are three things I can do: <br>
+1) set an example,<br>
+2) be available to other people,<br>
+3) leave bread crumbs.</p>
+<p class="more"><a href="2012/dewt2-becoming-a-context-driven-tester/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2012/measuring-review-coverage/" class="u-url">Measuring review coverage</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2012/measuring-review-coverage/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-09-13T19:39:57+02:00" itemprop="datePublished" title="13 September 2012">13 September 2012</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Recently it occurred to me we have plenty of ways to measure test coverage, but there doesn't seem to be a way to measure review coverage. So today I decided to fix that. The result is the scale below with which you can measure review coverage. And just like all good scales, <a href="http://www.youtube.com/watch?v=XuzpsO4ErOQ">it goes all the way up to 11</a>.</p>
+<p>0) I'm sorry, what document?<br>
+1) I think I do remember someone mentioning that document.<br>
+2) I'm sure I have it somewhere – well, at least fairly sure...<br>
+3) Look, it's on my to do-pile!</p>
+<p class="more"><a href="2012/measuring-review-coverage/">Read more…</a></p>
 </div>
                 </div>
             </article>

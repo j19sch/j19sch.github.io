@@ -156,6 +156,90 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <p class="more"><a href="2019/your-ci-cd-pipeline-does-not-run-regression-tests/">Read more…</a></p>
 </div>
                 </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2019/how-this-tester-writes-code/" class="u-url">How this tester writes code</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2019/how-this-tester-writes-code/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-06-08T18:21:38+02:00" itemprop="datePublished" title="8 June 2019">8 June 2019</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>A long time ago (March 2015) I wrote a post titled "<a href="https://testingcurve.wordpress.com/2015/03/24/test-automation-five-questions-leading-to-five-heuristics/">Test automation - five questions leading to five heuristics</a>". Later that year <a href="https://twitter.com/richrtesting">Rich Rogers</a> asked for a follow-up. To which I replied I should do a follow-up post (ahum) "soon".
+Then last Wednesday <a href="https://twitter.com/noahsussman">Noah Sussman</a> said on <a href="https://twitter.com/noahsussman/status/1136288062651142149">twitter</a>: <em>'I don't know that I've *ever* seen "this is how testers write code"'</em>. To which I replied "challenge accepted", so now here we are, me writing a blog post about how I as a tester write code.</p>
+<p>The format of this post turned out to be advice based on my experiences, so the usual disclaimers apply. And feel free to leave a comment if you have any feedback!</p>
+<h3>The basics</h3>
+<h4>use an IDE</h4>
+<p>An IDE is not just an advanced text editor. It understands your code - to a degree, since it's not interpreting, compiling or executing the code. So not only allows an IDE you to manipulate your code as text, it also allows you to manipulate your code as code.</p>
+<p class="more"><a href="2019/how-this-tester-writes-code/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2019/solving-black-box-puzzle-31-with-data-analysis/" class="u-url">Solving Black Box Puzzle 31 with data analysis</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2019/solving-black-box-puzzle-31-with-data-analysis/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-04-28T13:16:34+02:00" itemprop="datePublished" title="28 April 2019">28 April 2019</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p><a href="https://twitter.com/workroomprds">James Lyndsay</a> has created a number of amazing <a href="http://blackboxpuzzles.workroomprds.com/">Black Box Puzzles</a>: tiny applications that challenge you to figure out what they do. (You can support him in creating more of these at <a href="https://www.patreon.com/workroomprds">his Patreon page</a>.) Two of these Puzzles, <a href="http://blackboxpuzzles.workroomprds.com/puzzle29/">29</a> and <a href="http://blackboxpuzzles.workroomprds.com/puzzle31/">31</a>, not only have a GUI to explore, but also an API.</p>
+<p>And that gave me an idea. If you explore these Puzzles through their GUI, you start from the inputs. You try out different inputs in the hope of discovering a pattern in the outputs. And then that pattern feeds back into your exploration.<br>
+With an API, however - and because of the nature of Puzzle 31 - it becomes easy to get the outputs for all possible combinations of inputs. Which means you can start your exploration from the outputs instead of the inputs.</p>
+<p>Before I tell you how and what I did, three important remarks.<br>
+First of all, I will be spoiling the solution to the Puzzle in this blog post. So this is the right moment to go and solve <a href="http://blackboxpuzzles.workroomprds.com/puzzle31/">Puzzle 31</a> for yourself first. Or at least go play a bit with it, so you have an idea what the inputs and outputs are.<br>
+Secondly, I had already solved the Puzzle through the GUI a few months ago. So it was more of a "Can I find the solution this way as well?" than a "Can I find the solution?" thing.<br>
+Finally, the code and the spreadsheet I created (linked throughout, also available on GitHub <a href="https://github.com/j19sch/blackbox-puzzle-31">here</a>), are not very clean. I thought about tidying them up, but my two reasons for not doing so are (1) laziness; (2) the way they are now gives a more honest picture of what I did.</p>
+<p class="more"><a href="2019/solving-black-box-puzzle-31-with-data-analysis/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2019/test-strategy-primer/" class="u-url">Test strategy primer</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2019/test-strategy-primer/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-01-29T21:34:19+01:00" itemprop="datePublished" title="29 January 2019">29 January 2019</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p><em>I originally wrote this primer to share with people at work. The first section is intended to be generally applicable; the second not necessarily so. The main influences on this primer are:</em><br><em>- Rapid Software Testing's <a href="https://www.satisfice.com/tools/htsm.pdf">Heuristic Test Strategy Model</a></em><br><em>- James Lyndsay's <a href="http://www.workroom-productions.com/papers/Exploration%20and%20Strategy.pdf">Why Exploration has a place in any Strategy</a></em><br><em>- Rikard Edgren's <a href="http://www.thetesteye.com/papers/TheLittleBlackBookOnTestDesign.pdf">Little Black Book on Test Design</a></em></p>
+<p>This document contains two sections:</p>
+<ul>
+<li>Why have a test strategy? - what is a test strategy and what's its purpose</li>
+<li>Test strategy checklist - checklist for describing your test strategy</li>
+</ul>
+<h3>Why have a test strategy?</h3>
+<p>The purpose of a test strategy is to answer the question: "How do we know that what we are building, is good enough?" As such, every team has a test strategy, even if it's only implicitly defined through the actions of the team members.</p>
+<p class="more"><a href="2019/test-strategy-primer/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2018/reflections-on-my-testing-manifesto/" class="u-url">Reflections on my testing manifesto</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2018/reflections-on-my-testing-manifesto/" rel="bookmark">
+            <time class="published dt-published" datetime="2018-12-22T17:43:10+01:00" itemprop="datePublished" title="22 December 2018">22 December 2018</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Earlier this month I published my <a href="2018/manifesto-for-software-testing/">Manifesto for software testing</a>. This manifesto is my attempt to bring together what I have learned about testing from the context-driven, agile and DevOps communities. Below you can find the manifesto with my reflections on it.</p>
+<h5>1. Testing is investigating in order to evaluate a product.</h5>
+<p>This definition is clearly influenced by James Bach's "questioning a product in order to evaluate it". I'm not sure at which point I started misremembering his definition as "investigating a product...", but it works well with a change I did make intentionally: moving "a product" to the second part of the definition. As explained in 6. I believe that in order to evaluate the product, we need to investigate a number of different things, not only the product.</p>
+<p class="more"><a href="2018/reflections-on-my-testing-manifesto/">Read more…</a></p>
+</div>
+                </div>
             </article>
 </div>
             <ul class="pager postindexpager clearfix">

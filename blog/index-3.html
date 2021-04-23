@@ -90,91 +90,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2019/how-this-tester-writes-code/" class="u-url">How this tester writes code</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2019/how-this-tester-writes-code/" rel="bookmark">
-            <time class="published dt-published" datetime="2019-06-08T18:21:38+02:00" itemprop="datePublished" title="8 June 2019">8 June 2019</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>A long time ago (March 2015) I wrote a post titled "<a href="https://testingcurve.wordpress.com/2015/03/24/test-automation-five-questions-leading-to-five-heuristics/">Test automation - five questions leading to five heuristics</a>". Later that year <a href="https://twitter.com/richrtesting">Rich Rogers</a> asked for a follow-up. To which I replied I should do a follow-up post (ahum) "soon".
-Then last Wednesday <a href="https://twitter.com/noahsussman">Noah Sussman</a> said on <a href="https://twitter.com/noahsussman/status/1136288062651142149">twitter</a>: <em>'I don't know that I've *ever* seen "this is how testers write code"'</em>. To which I replied "challenge accepted", so now here we are, me writing a blog post about how I as a tester write code.</p>
-<p>The format of this post turned out to be advice based on my experiences, so the usual disclaimers apply. And feel free to leave a comment if you have any feedback!</p>
-<h3>The basics</h3>
-<h4>use an IDE</h4>
-<p>An IDE is not just an advanced text editor. It understands your code - to a degree, since it's not interpreting, compiling or executing the code. So not only allows an IDE you to manipulate your code as text, it also allows you to manipulate your code as code.</p>
-<p class="more"><a href="2019/how-this-tester-writes-code/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2019/solving-black-box-puzzle-31-with-data-analysis/" class="u-url">Solving Black Box Puzzle 31 with data analysis</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2019/solving-black-box-puzzle-31-with-data-analysis/" rel="bookmark">
-            <time class="published dt-published" datetime="2019-04-28T13:16:34+02:00" itemprop="datePublished" title="28 April 2019">28 April 2019</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p><a href="https://twitter.com/workroomprds">James Lyndsay</a> has created a number of amazing <a href="http://blackboxpuzzles.workroomprds.com/">Black Box Puzzles</a>: tiny applications that challenge you to figure out what they do. (You can support him in creating more of these at <a href="https://www.patreon.com/workroomprds">his Patreon page</a>.) Two of these Puzzles, <a href="http://blackboxpuzzles.workroomprds.com/puzzle29/">29</a> and <a href="http://blackboxpuzzles.workroomprds.com/puzzle31/">31</a>, not only have a GUI to explore, but also an API.</p>
-<p>And that gave me an idea. If you explore these Puzzles through their GUI, you start from the inputs. You try out different inputs in the hope of discovering a pattern in the outputs. And then that pattern feeds back into your exploration.<br>
-With an API, however - and because of the nature of Puzzle 31 - it becomes easy to get the outputs for all possible combinations of inputs. Which means you can start your exploration from the outputs instead of the inputs.</p>
-<p>Before I tell you how and what I did, three important remarks.<br>
-First of all, I will be spoiling the solution to the Puzzle in this blog post. So this is the right moment to go and solve <a href="http://blackboxpuzzles.workroomprds.com/puzzle31/">Puzzle 31</a> for yourself first. Or at least go play a bit with it, so you have an idea what the inputs and outputs are.<br>
-Secondly, I had already solved the Puzzle through the GUI a few months ago. So it was more of a "Can I find the solution this way as well?" than a "Can I find the solution?" thing.<br>
-Finally, the code and the spreadsheet I created (linked throughout, also available on GitHub <a href="https://github.com/j19sch/blackbox-puzzle-31">here</a>), are not very clean. I thought about tidying them up, but my two reasons for not doing so are (1) laziness; (2) the way they are now gives a more honest picture of what I did.</p>
-<p class="more"><a href="2019/solving-black-box-puzzle-31-with-data-analysis/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2019/test-strategy-primer/" class="u-url">Test strategy primer</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2019/test-strategy-primer/" rel="bookmark">
-            <time class="published dt-published" datetime="2019-01-29T21:34:19+01:00" itemprop="datePublished" title="29 January 2019">29 January 2019</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p><em>I originally wrote this primer to share with people at work. The first section is intended to be generally applicable; the second not necessarily so. The main influences on this primer are:</em><br><em>- Rapid Software Testing's <a href="https://www.satisfice.com/tools/htsm.pdf">Heuristic Test Strategy Model</a></em><br><em>- James Lyndsay's <a href="http://www.workroom-productions.com/papers/Exploration%20and%20Strategy.pdf">Why Exploration has a place in any Strategy</a></em><br><em>- Rikard Edgren's <a href="http://www.thetesteye.com/papers/TheLittleBlackBookOnTestDesign.pdf">Little Black Book on Test Design</a></em></p>
-<p>This document contains two sections:</p>
-<ul>
-<li>Why have a test strategy? - what is a test strategy and what's its purpose</li>
-<li>Test strategy checklist - checklist for describing your test strategy</li>
-</ul>
-<h3>Why have a test strategy?</h3>
-<p>The purpose of a test strategy is to answer the question: "How do we know that what we are building, is good enough?" As such, every team has a test strategy, even if it's only implicitly defined through the actions of the team members.</p>
-<p class="more"><a href="2019/test-strategy-primer/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2018/reflections-on-my-testing-manifesto/" class="u-url">Reflections on my testing manifesto</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2018/reflections-on-my-testing-manifesto/" rel="bookmark">
-            <time class="published dt-published" datetime="2018-12-22T17:43:10+01:00" itemprop="datePublished" title="22 December 2018">22 December 2018</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>Earlier this month I published my <a href="2018/manifesto-for-software-testing/">Manifesto for software testing</a>. This manifesto is my attempt to bring together what I have learned about testing from the context-driven, agile and DevOps communities. Below you can find the manifesto with my reflections on it.</p>
-<h5>1. Testing is investigating in order to evaluate a product.</h5>
-<p>This definition is clearly influenced by James Bach's "questioning a product in order to evaluate it". I'm not sure at which point I started misremembering his definition as "investigating a product...", but it works well with a change I did make intentionally: moving "a product" to the second part of the definition. As explained in 6. I believe that in order to evaluate the product, we need to investigate a number of different things, not only the product.</p>
-<p class="more"><a href="2018/reflections-on-my-testing-manifesto/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2018/manifesto-for-software-testing/" class="u-url">Manifesto for software testing</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2018/manifesto-for-software-testing/" class="u-url">Manifesto for software testing</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
@@ -289,6 +205,97 @@ This <a href="http://gerrardconsulting.com/?q=node/659">article by Paul Gerrard<
 <h3>The answers I got</h3>
 <p>So I figured I'd ask twitter in all its infinite testing wisdom and lo and behold, not only did people reply, a discussion ensued with the following people (listed in no particular order) participating in different configurations: <a href="https://twitter.com/eddybruin">@eddybruin</a>, <a href="https://twitter.com/mariakedemo">@mariakedemo</a>, <a href="https://twitter.com/SandroIbig">@SandroIbig</a>, <a href="https://twitter.com/TestPappy">@TestPappy</a>, <a href="https://twitter.com/dwiersma">@dwiersma</a>, <a href="https://twitter.com/ilarihenrik">@ilarihenrik</a>, <a href="https://twitter.com/PhilipHoeben">@PhilipHoeben</a>, <a href="https://twitter.com/huibschoots">@huibschoots</a> and <a href="https://twitter.com/deefex">@deefex</a>. Thank you all!</p>
 <p class="more"><a href="2015/whats-the-word-for-the-part-of-testing-thats-not-checking/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2015/test-automation-five-questions-leading-to-five-heuristics/" class="u-url">Test automation - five questions leading to five heuristics</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2015/test-automation-five-questions-leading-to-five-heuristics/" rel="bookmark">
+            <time class="published dt-published" datetime="2015-03-24T20:53:24+01:00" itemprop="datePublished" title="24 March 2015">24 March 2015</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>(I wrote a follow-up to this post in June 2019: <a href="2019/how-this-tester-writes-code/">how this tester writes code</a>.)</p>
+<p>In 1984 Abelson and Sussman said in the Preface to '<a href="https://mitpress.mit.edu/sicp/">Structure and Interpretation of Computer Programs</a>':</p>
+<blockquote>
+<p>Our design of this introductory computer-science subject reflects two major concerns. First, we want to establish the idea that a computer language is not just a way of getting a computer to perform operations but rather that it is a novel formal medium for expressing ideas about methodology. <strong>Thus, programs must be written for people to read, and only incidentally for machines to execute.</strong> Second, we believe that the essential material to be addressed by a subject at this level is not the syntax of particular programming-language constructs, nor clever algorithms for computing particular functions efficiently, nor even the mathematical analysis of algorithms and the foundations of computing, but rather the techniques used to control the intellectual complexity of large software systems. [emphasis mine]</p>
+</blockquote>
+<p>This oft-quoted sentence I emphasized, is even more true if the purpose of our programs is test automation<sup id="fnref:1"><a class="footnote-ref" href="2015/test-automation-five-questions-leading-to-five-heuristics/#fn:1">1</a></sup>. So let's say you run your test automation program and the result is a list of passes and fails.  The purpose of testing is to produce information. You could say that this list of results qualifies as information and I would disagree. I would say it is data, data in need of interpretation. When we attempt this interpretation, we should consider the following five questions.</p>
+<p class="more"><a href="2015/test-automation-five-questions-leading-to-five-heuristics/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2015/three-arguments-against-the-verification-validation-dichotomy/" class="u-url">Three arguments against the verification-validation dichotomy</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2015/three-arguments-against-the-verification-validation-dichotomy/" rel="bookmark">
+            <time class="published dt-published" datetime="2015-03-24T20:53:24+01:00" itemprop="datePublished" title="24 March 2015">24 March 2015</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Last week while talking with two colleagues, one of them mentioned the verification/validation thing. And I noticed it made me feel uneasy. Because I know well enough what is meant by the distinction, but on a practical level I simply can't relate to it. When I think about what I do as a software tester and how verification versus validation applies to it, nothing happens. Blank mind. Crickets. Tumbleweed.
+So after giving it some thought, I present you with three arguments against the verification-validation dichotomy.</p>
+<p>First of course, we have the obligatory interlude of defining these two terms. A place to start is the Wikipedia page on <a href="http://en.wikipedia.org/wiki/Software_verification_and_validation">Software verification and validation</a>. Unfortunately it contains conflicting definitions, so if anyone cares enough, please do fix. Luckily there's also the general <a href="http://en.wikipedia.org/wiki/Verification_and_validation">Verification and validation</a> page of Wikipedia, which gives us (among others) the tl;dr version of the distinction:</p>
+<ul>
+<li>Verification: <em>Are we building the product right?</em>
+</li>
+<li>Validation: <em>Are we building the right product?</em>
+</li>
+</ul>
+<p>Finally there's the <a href="http://www.istqb.org/downloads/finish/20/145.html">ISTQB glossary v2.4</a> that borrows from ISO 9000:</p>
+<ul>
+<li>Verification: <em>Confirmation by examination and through provision of objective evidence that specified requirements have been fulfilled.</em>
+</li>
+<li>Validation: <em>Confirmation by examination and through provision of objective evidence that the requirements for a specific intended use or application have been fulfilled.</em>
+</li>
+</ul>
+<p>Now on to the three arguments.</p>
+<p class="more"><a href="2015/three-arguments-against-the-verification-validation-dichotomy/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2015/the-test-case-an-epistemological-deconstruction/" class="u-url">The test case - an epistemological deconstruction</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2015/the-test-case-an-epistemological-deconstruction/" rel="bookmark">
+            <time class="published dt-published" datetime="2015-02-01T22:19:55+01:00" itemprop="datePublished" title="1 February 2015">1 February 2015</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p><em>(This article was first published in Dutch in <a href="https://www.testnet.org/testnet/home">TestNet</a> Nieuws 18. The article below is a translation with minor changes. Many thanks to Joris Meerts and Ruud Cox for reviewing the original version.)</em></p>
+<h3>Testing as an information problem</h3>
+<p>Testing is an information problem. We are in search of certain information, of an answer to the question: does this application fulfill the relevant explicit and implicit expectations? The exact way in which we can answer this question, however, is not immediately clear. First we will need to decide which questions to ask, how to ask them and how to evaluate the responses. Hence, testing is an information problem.</p>
+<p>For the traditional test methodologies (ISTQB and TMap being the most well-known) the test case is a large part of the solution. So let's take this solution apart epistemologically and see what it is we have in front of us. If the traditional test case is our solution, what information does a test case contain? What changes occur after executing it? And also, where is the understanding in all of this that's happening?</p>
+<p>In this article, I will first describe how a typical test case is created and how it is used. Then we shall take a look at which kinds of information a test case contains. Finally, we will analyze where the understanding of what happens during testing, is present and where it is not.</p>
+<p class="more"><a href="2015/the-test-case-an-epistemological-deconstruction/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2014/joining-the-fray-on-iso-29119/" class="u-url">Joining the fray on ISO 29119</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2014/joining-the-fray-on-iso-29119/" rel="bookmark">
+            <time class="published dt-published" datetime="2014-08-23T10:04:08+02:00" itemprop="datePublished" title="23 August 2014">23 August 2014</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>For those of you who weren't aware yet: something happened at CAST 2014 regarding the ISO/IEC/IEEE 29119 Software Testing. For instance, first <a href="http://www.youtube.com/watch?v=A721ltyVw3o&amp;list=PLQB4l9iafcelXpJnK6IyDsoFeEb1icqrl">this</a> happened, which resulted in <a href="http://www.ipetitions.com/petition/stop29119">this</a> and <a href="http://www.professionaltestersmanifesto.org/">this</a> and a whole bunch of other initiatives.</p>
+<p>And then someone on twitter (forgot who, apologies) suggested watching Stuard Reid's Eurostar webinar "ISO 29119 – the new set of international standards on software testing" which can be found <a href="https://www.youtube.com/watch?v=c4W-jWRldj0">here</a>. Since I liked to learn more about the standard, but not enough to pay almost 500€ to <a href="http://www.nen.nl/Zoekresultaten.htm?q=iso+29119">NEN</a> (Dutch standards organisation) for parts 1 to 3, I began watching the webinar.
+And truth be told, I didn't watch all of it. Some parts were boring, some parts sounded quite reasonable and some parts I..euh..skipped. And that's ok because all I want to discuss is this one particular quote that begins at 33:25:</p>
+<p class="more"><a href="2014/joining-the-fray-on-iso-29119/">Read more…</a></p>
 </div>
                 </div>
             </article>

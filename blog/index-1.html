@@ -89,82 +89,87 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2013/dewt3-experience-report/" class="u-url">DEWT3 experience report</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2012/vipt-how-to-teach-software-testing/" class="u-url">VIPT - how to teach software testing</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
                     </span></p>
             <p class="dateline">
-            <a href="2013/dewt3-experience-report/" rel="bookmark">
-            <time class="published dt-published" datetime="2013-04-28T15:32:02+02:00" itemprop="datePublished" title="28 April 2013">28 April 2013</time></a>
+            <a href="2012/vipt-how-to-teach-software-testing/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-07-29T16:24:51+02:00" itemprop="datePublished" title="29 July 2012">29 July 2012</time></a>
             </p>
                 </div>
             </header><div class="p-summary entry-summary">
                     <div>
-<p>Last weekend the third Dutch Exploratory Workshop in Testing (DEWT3 for short) took place. The ingredients were: a very nice hotel in the woods, lots of talk about testing, beer, whiskey, a small to moderate amount of sleep, stickies and a group of fun and interesting people (You can see them <a href="http://dewt.wordpress.com/2013/04/24/dewt3-experience-reports/">here</a>.)</p>
-<p>On Saturday the talks (and thus discussions) were about systems thinking. A few years ago I did read Jerry Weinberg's "An Introduction to General Systems Thinking" and although a very interesting read, w.r.t. to applying it to testing I never got further then: Software is (part of) a system, so you can apply systems thinking to it. Of course, that's very much true, but it's also quite a vague piece of advice.</p>
-<h3>A primer on systems thinking</h3>
-<p>Enter James Bach, who kicked off DEWT3 with a primer on systems thinking. Systems thinking is just a way of thinking - just like logical thinking, analogical thinking, creative thinking, etc. - in which we approach a situation as being a system. So what's a system? It's a set of things in a meaningful interaction with each other.
-This definition raises all sorts of questions relevant in systems thinking:</p>
-<p class="more"><a href="2013/dewt3-experience-report/">Read more…</a></p>
+<p>In this final post on VIPT (Value-Information-Processes-Tools) it's time to take a look at teaching software testing. My previous posts on VIPT can be found <a href="https://testingcurve.wordpress.com/2012/07/09/yet-another-testing-model-value-information-processes-value/">here</a>, <a href="https://testingcurve.wordpress.com/2012/07/15/vipt-intermezzo-models-and-the-unix-philosophy/">here</a> and <a href="https://testingcurve.wordpress.com/2012/07/17/vipt-bottom-up-or-top-down/">here</a>.</p>
+<h3>A typical software testing course</h3>
+<p>A typical traditional software testing course (at least in the way I have taught them) has three elements: theory, stories and exercises.</p>
+<p>The first element is all about definitions (testing, test cases, defects, etc.), process descriptions and testing techniques (mostly test design). So basically what happens is that students get a brief introduction about testing in general and then we move on to the main part: teaching a specifc testing method.</p>
+<p>The second element of the course are the stories. These are mostly stories aobut how testing in the real world does not work as described in the theory. At best they are stories containing all four elements of VIPT. Most of the time, however, they are just real-world examples of a certain definition or technique.</p>
+<p>Finally, there are exercises. As with the techniques, these are mostly about test design. Unfortunately they are also very linear. There is only one correct answer and often only one correct way to get to that answer. So the main gist seems to be: "I taught you a trick, now show me you can perform the trick." But shouldn't learning about testing be more than learning to jump through a hoop on command?</p>
+<p class="more"><a href="2012/vipt-how-to-teach-software-testing/">Read more…</a></p>
 </div>
                 </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2013/lessons-learned-in-some-test-automation/" class="u-url">Lessons learned in some test automation</a></h1>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2012/vipt-bottom-up-or-top-down/" class="u-url">VIPT - bottom-up or top-down</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
                     </span></p>
             <p class="dateline">
-            <a href="2013/lessons-learned-in-some-test-automation/" rel="bookmark">
-            <time class="published dt-published" datetime="2013-02-18T21:46:02+01:00" itemprop="datePublished" title="18 February 2013">18 February 2013</time></a>
+            <a href="2012/vipt-bottom-up-or-top-down/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-07-17T20:02:42+02:00" itemprop="datePublished" title="17 July 2012">17 July 2012</time></a>
             </p>
                 </div>
             </header><div class="p-summary entry-summary">
                     <div>
-<p>In the past two weeks I built a test tool in VBA (Visual Basic for Applications). I did this, because two weeks ago my fellow tester showed me an important test we have to do at least once for each major release. The test consists of having the application generate three reports in Excel format. On two of these reports you apply a set of filters and take the sum of a few columns, rinse and repeat. Then you add several of those sums together and the results of those calculations should match the numbers in the third report. So basically, the point of the test is to check if the numbers in the three reports add up. And it's a lot of work, i.e. about two days.</p>
-<p>After being shown how to perform the test, the first thought that popped into my head, was: "Boring!" The second thought was: "It's automatable!" And since there was little else to do - delivery of the new test environments was delayed - I changed it from automatable to automated.</p>
-<p>So now, after two weeks, I have this tool in VBA. For each of the three reports it contains a sheet in which you define the sets of filters and sums. If you click a big button, the report is opened and the filters and sums are applied. There's also a fourth sheet to do the second set of calculations and to do the check if the numbers match. This last part is not done in VBA; it's all formulas in Excel.</p>
-<p class="more"><a href="2013/lessons-learned-in-some-test-automation/">Read more…</a></p>
+<p>In this second post on VIPT I want to talk about bottom-up vs. top-down. The original plan for this post was to talk about the distance between tools and value, but in the past few days I figured out that bottom-up vs. top-down is a better approach.
+If you don't know what VIPT is, please read <a href="https://testingcurve.wordpress.com/2012/07/09/yet-another-testing-model-value-information-processes-value/">this previous post</a>. Don't worry, I'll wait.</p>
+<h3>VIPT is a top-down model</h3>
+<p>For me as a context-driven tester the VIPT model is very much a top-down thing. You analyze the context, find out what value you should/can deliver and then you proceed to information, processes and tools. Of course, that's easier said than done. Going through this for everything you do, requires a lot of time and effort. So most of the time you do quick analysis of the context, decide that it sufficiently resembles a context you encountered earlier and you use the same tools you used then. Most of the time that's ok - as long as you stay alert to any signs that you misread the context.<sup id="fnref:1"><a class="footnote-ref" href="2012/vipt-bottom-up-or-top-down/#fn:1">1</a></sup></p>
+<p class="more"><a href="2012/vipt-bottom-up-or-top-down/">Read more…</a></p>
 </div>
                 </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2012/dewt2-becoming-a-context-driven-tester/" class="u-url">DEWT2 - Becoming a context-driven tester</a></h1>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2012/vipt-intermezzo-models-and-the-unix-philosophy/" class="u-url">VIPT Intermezzo - Models and the Unix philosophy</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
                     </span></p>
             <p class="dateline">
-            <a href="2012/dewt2-becoming-a-context-driven-tester/" rel="bookmark">
-            <time class="published dt-published" datetime="2012-11-08T23:14:57+01:00" itemprop="datePublished" title="8 November 2012">8 November 2012</time></a>
+            <a href="2012/vipt-intermezzo-models-and-the-unix-philosophy/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-07-15T20:25:03+02:00" itemprop="datePublished" title="15 July 2012">15 July 2012</time></a>
             </p>
                 </div>
             </header><div class="p-summary entry-summary">
                     <div>
-<p>About a month ago ago (October 5th - 6th) I was in Driebergen to attend <a href="http://dewt.wordpress.com/2012/10/07/dewt2-was-a-blast/">DEWT2</a>, a peer workshop with as theme "Implementing Context-Driven Testing". As it turns out, implementing context-driven testing is not easy to do. That should not come as a surprise: it requires people to change and that is difficult. Luckily, I'm not a manager wanting to implement context-driven testing, so I can dodge most of that problem.</p>
-<p>However, I do like 'spreading the word' on context-driven testing, because I would like for there to be more context-driven testers in the Netherlands (and Europe and the world, of course). So to promote context-driven testing I think there are three things I can do: <br>
-1) set an example,<br>
-2) be available to other people,<br>
-3) leave bread crumbs.</p>
-<p class="more"><a href="2012/dewt2-becoming-a-context-driven-tester/">Read more…</a></p>
+<p>Thanks to <a href="https://testingcurve.wordpress.com/2012/07/09/yet-another-testing-model-value-information-processes-value/#comments">Neil Thompson's comments</a> on my previous post, I started thinking about what I want to do with the VIPT model. Do I want to expand and refine it to a grand unified theory of testing? And if not, then what?</p>
+<h3>The Unix philosophy</h3>
+<p>After some thinking I realized that with regard to models, I adhere to the <a href="http://www.faqs.org/docs/artu/ch01s06.html">Unix philosophy</a>.</p>
+<h4>Do one thing and do it well</h4>
+<p>Particularly I am thinking about the following quote from Doug McIlroy:</p>
+<blockquote>
+<p>"This is the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface."</p>
+</blockquote>
+<p class="more"><a href="2012/vipt-intermezzo-models-and-the-unix-philosophy/">Read more…</a></p>
 </div>
                 </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2012/measuring-review-coverage/" class="u-url">Measuring review coverage</a></h1>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2012/yet-another-testing-model-value-information-processes-value/" class="u-url">Yet Another Testing Model: Value - Information - Processes - Tools</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
                     </span></p>
             <p class="dateline">
-            <a href="2012/measuring-review-coverage/" rel="bookmark">
-            <time class="published dt-published" datetime="2012-09-13T19:39:57+02:00" itemprop="datePublished" title="13 September 2012">13 September 2012</time></a>
+            <a href="2012/yet-another-testing-model-value-information-processes-value/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-07-09T20:21:44+02:00" itemprop="datePublished" title="9 July 2012">9 July 2012</time></a>
             </p>
                 </div>
             </header><div class="p-summary entry-summary">
                     <div>
-<p>Recently it occurred to me we have plenty of ways to measure test coverage, but there doesn't seem to be a way to measure review coverage. So today I decided to fix that. The result is the scale below with which you can measure review coverage. And just like all good scales, <a href="http://www.youtube.com/watch?v=XuzpsO4ErOQ">it goes all the way up to 11</a>.</p>
-<p>0) I'm sorry, what document?<br>
-1) I think I do remember someone mentioning that document.<br>
-2) I'm sure I have it somewhere – well, at least fairly sure...<br>
-3) Look, it's on my to do-pile!</p>
-<p class="more"><a href="2012/measuring-review-coverage/">Read more…</a></p>
+<p>During Let's Test 2012 some ideas clicked in my mind with the result of yet another testing model:
+Value - Information - Processes - Tools.</p>
+<p>For me this model really is a culmination of being part of the context-driven testing community. If you have been reading about context-driven testing, I'm sure you'll be able to spot plenty ideas I stole from others. ;-) So thank you so much to all of you!<br>
+Secondly, I have trouble believing I am the first one to come up with this simple model - although a google search didn't turn up anything.<sup id="fnref:1"><a class="footnote-ref" href="2012/yet-another-testing-model-value-information-processes-value/#fn:1">1</a></sup> So if any of you know of similar models, please leave a comment!</p>
+<p>And now to the actual model. Since you can't have a model without a drawing, here's a not so spectacular one:</p>
+<p class="more"><a href="2012/yet-another-testing-model-value-information-processes-value/">Read more…</a></p>
 </div>
                 </div>
             </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2012/lets-test-2012-time-travel-advice/" class="u-url">Let's Test 2012 - time travel advice</a></h1>
@@ -268,13 +273,13 @@ So below you can find some of the thoughts I had on the principles and the story
 <p class="more"><a href="2012/the-seven-basic-principles-of-the-context-driven-school-part-two/">Read more…</a></p>
 </div>
                 </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2012/he-seven-basic-principles-of-the-context-driven-school-part-one/" class="u-url">The Seven Basic Principles of the Context-Driven School - part one</a></h1>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2012/the-seven-basic-principles-of-the-context-driven-school-part-one/" class="u-url">The Seven Basic Principles of the Context-Driven School - part one</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
                     </span></p>
             <p class="dateline">
-            <a href="2012/he-seven-basic-principles-of-the-context-driven-school-part-one/" rel="bookmark">
+            <a href="2012/the-seven-basic-principles-of-the-context-driven-school-part-one/" rel="bookmark">
             <time class="published dt-published" datetime="2012-01-15T22:11:43+01:00" itemprop="datePublished" title="15 January 2012">15 January 2012</time></a>
             </p>
                 </div>
@@ -283,7 +288,7 @@ So below you can find some of the thoughts I had on the principles and the story
 <p>In the next several posts, I'd like to take a look at the seven basic principles of the Context-Driven School of software testing. The main reason for this is that I like what people belonging to this school say about testing, but I don't 'get' the seven basic principles. I do understand the principles when I read them, but I don't feel like I 'own' them.</p>
 <p>So in the first few posts I will explore the principles as such. After that I will take a look at what other people have said about these principles. So please leave a comment if you know some good secondary sources on these principles!</p>
 <p>The seven basic principles can be found here: <a href="http://www.context-driven-testing.com">http://www.context-driven-testing.com</a>. They are also present as an appendix in "Lessons learned in software testing" by Cem Kaner, James Bach, Bret Pettichord, publised in 2002. This means that these principles were written in a context I'm not familiar with. They are at least four years older than my career in software testing, which began in 2006. And they were written by people from the USA, while I live and work in Western Europe.</p>
-<p class="more"><a href="2012/he-seven-basic-principles-of-the-context-driven-school-part-one/">Read more…</a></p>
+<p class="more"><a href="2012/the-seven-basic-principles-of-the-context-driven-school-part-one/">Read more…</a></p>
 </div>
                 </div>
             </article>
