@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about software testing)</title>
   <id>https://j19sch.github.io/categories/software-testing.atom</id>
-  <updated>2021-04-23T11:11:38Z</updated>
+  <updated>2021-04-25T10:42:48Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -182,7 +182,7 @@ Yet notice how the above only talks about exploratory testing, because for every
       <name>Joep Schuurkes</name>
     </author>
     <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2012/the-seven-basic-principles-of-the-context-driven-school-part-two/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;After the introductory post (to be found &lt;a href="https://testingcurve.wordpress.com/2012/01/15/the-seven-basic-principles-of-the-context-driven-school-part-one/"&gt;here&lt;/a&gt;) it's time to take a closer look at each of &lt;a href="http://www.context-driven-testing.com/"&gt;the basic principles&lt;/a&gt;. In the past weeks I found out that it's quite possible to take any one of these principles as a starting point for several different trains of thought. More importantly I discovered a story&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://j19sch.github.io/blog/2012/the-seven-basic-principles-of-the-context-driven-school-part-two/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; to the principles: the first five principles are ways in which software testing is intellectually challenging, as stated by principle six. And principle seven then wraps it all up.
+    <summary type="html">&lt;div&gt;&lt;p&gt;After the introductory post (to be found &lt;a href="https://j19sch.github.io/blog/2012/the-seven-basic-principles-of-the-context-driven-school-part-one/"&gt;here&lt;/a&gt;) it's time to take a closer look at each of &lt;a href="http://www.context-driven-testing.com/"&gt;the basic principles&lt;/a&gt;. In the past weeks I found out that it's quite possible to take any one of these principles as a starting point for several different trains of thought. More importantly I discovered a story&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://j19sch.github.io/blog/2012/the-seven-basic-principles-of-the-context-driven-school-part-two/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; to the principles: the first five principles are ways in which software testing is intellectually challenging, as stated by principle six. And principle seven then wraps it all up.
 So below you can find some of the thoughts I had on the principles and the story I discovered.&lt;/p&gt;
 &lt;h4&gt;1. The value of any practice depends on its context.&lt;/h4&gt;
 &lt;p&gt;To get a better understanding of this principle I started thinking: what if the value of a practice did not depend on context? What else coud it depend on?&lt;/p&gt;

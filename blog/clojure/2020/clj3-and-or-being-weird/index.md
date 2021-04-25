@@ -149,7 +149,7 @@ So I suppose the conclusion is that even though it may feel a bit weird to have 
 As a postscript to this post, I'll share some smaller things I noticed and/or learned about Clojure and vim.
 
 ### Notes on Clojure
-In a previous post [(clj 1)](/blog/clj1-deciding-on-an-editor/) I wrote I have a vague notion of what a "form" is, but wouldn't be able to explain it. Well, chapter 3 of the Brave and True-book explains that "form" refers to valid code and that it will sometimes use "expression" as a synonym. I had actually read this before writing that earlier blog post, so that shows the value of re-reading.
+In a previous post [(clj 1)](link://slug/clj1-deciding-on-an-editor) I wrote I have a vague notion of what a "form" is, but wouldn't be able to explain it. Well, chapter 3 of the Brave and True-book explains that "form" refers to valid code and that it will sometimes use "expression" as a synonym. I had actually read this before writing that earlier blog post, so that shows the value of re-reading.
 
 When I created a new `clj`-file to play around in with `and` and `or` and tried to evaluate a form, I got the following error:  
 `FileNotFoundException Could not locate clojure_noob/namespace__init.class or clojure_noob/namespace.clj on classpath.

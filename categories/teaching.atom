@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about teaching)</title>
   <id>https://j19sch.github.io/categories/teaching.atom</id>
-  <updated>2021-04-23T11:41:57Z</updated>
+  <updated>2021-04-25T10:42:47Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -19,7 +19,7 @@
       <name>Joep Schuurkes</name>
     </author>
     <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2012/vipt-how-to-teach-software-testing/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;In this final post on VIPT (Value-Information-Processes-Tools) it's time to take a look at teaching software testing. My previous posts on VIPT can be found &lt;a href="https://testingcurve.wordpress.com/2012/07/09/yet-another-testing-model-value-information-processes-value/"&gt;here&lt;/a&gt;, &lt;a href="https://testingcurve.wordpress.com/2012/07/15/vipt-intermezzo-models-and-the-unix-philosophy/"&gt;here&lt;/a&gt; and &lt;a href="https://testingcurve.wordpress.com/2012/07/17/vipt-bottom-up-or-top-down/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+    <summary type="html">&lt;div&gt;&lt;p&gt;In this final post on VIPT (Value-Information-Processes-Tools) it's time to take a look at teaching software testing. My previous posts on VIPT can be found &lt;a href="https://j19sch.github.io/blog/2012/yet-another-testing-model-value-information-processes-value/"&gt;here&lt;/a&gt;, &lt;a href="https://j19sch.github.io/blog/2012/vipt-intermezzo-models-and-the-unix-philosophy/"&gt;here&lt;/a&gt; and &lt;a href="https://j19sch.github.io/blog/2012/vipt-bottom-up-or-top-down/"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;A typical software testing course&lt;/h3&gt;
 &lt;p&gt;A typical traditional software testing course (at least in the way I have taught them) has three elements: theory, stories and exercises.&lt;/p&gt;
 &lt;p&gt;The first element is all about definitions (testing, test cases, defects, etc.), process descriptions and testing techniques (mostly test design). So basically what happens is that students get a brief introduction about testing in general and then we move on to the main part: teaching a specifc testing method.&lt;/p&gt;

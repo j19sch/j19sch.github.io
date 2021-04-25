@@ -9,7 +9,7 @@
 .. type: text
 -->
 
-In this final post on VIPT (Value-Information-Processes-Tools) it's time to take a look at teaching software testing. My previous posts on VIPT can be found [here](https://testingcurve.wordpress.com/2012/07/09/yet-another-testing-model-value-information-processes-value/), [here](https://testingcurve.wordpress.com/2012/07/15/vipt-intermezzo-models-and-the-unix-philosophy/) and [here](https://testingcurve.wordpress.com/2012/07/17/vipt-bottom-up-or-top-down/).
+In this final post on VIPT (Value-Information-Processes-Tools) it's time to take a look at teaching software testing. My previous posts on VIPT can be found [here](link://slug/yet-another-testing-model-value-information-processes-value), [here](link://slug/vipt-intermezzo-models-and-the-unix-philosophy) and [here](link://slug/vipt-bottom-up-or-top-down).
 
 
 ## A typical software testing course

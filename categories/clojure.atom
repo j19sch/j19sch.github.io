@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about clojure)</title>
   <id>https://j19sch.github.io/categories/clojure.atom</id>
-  <updated>2021-04-06T19:47:26Z</updated>
+  <updated>2021-04-25T10:42:48Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -31,12 +31,9 @@ and then revisiting my code and notes later to write a blog post, does seem to r
 &lt;p&gt;The section I tackled in September is "Pulling It All Together" from Chapter 3, which describes the construction of a 
 piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit in different body parts.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clojure/2020/clj5-loop-and-recur-into-and-conj/"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="brave-true" label="brave-true"/>
+    <category term="brave-clojure" label="brave clojure"/>
     <category term="clojure" label="clojure"/>
-    <category term="conj" label="conj"/>
-    <category term="into" label="into"/>
-    <category term="loop" label="loop"/>
-    <category term="recur" label="recur"/>
+    <category term="programming" label="programming"/>
   </entry>
   <entry>
     <title>(clj 4) Learning about when, maps and closures</title>
@@ -49,7 +46,7 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
     <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/clojure/2020/clj4-learning-when-maps-closures/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;It's been more than two months since I did any Clojure - for the obvious reasons. Luckily I did take notes as I proceeded with chapter 3 of "&lt;a href="https://www.braveclojure.com/"&gt;Clojure for the Brave and True&lt;/a&gt;". So the plan is to process these notes into a blog post, which means this post will cover the sections "Data Structures" and "Functions" of that third chapter. Leaving me ready to proceed with the rest of the chapter, i.e. "Pulling It All Together" and the summary and exercises.&lt;/p&gt;
 &lt;h3&gt;Why is there a &lt;code&gt;when&lt;/code&gt;?&lt;/h3&gt;
-&lt;p&gt;The part about control flow is actually before the part about &lt;code&gt;and&lt;/code&gt; and &lt;code&gt;or&lt;/code&gt; which I talked about in my &lt;a href="https://j19sch.github.io/blog/clj3-and-or-being-weird"&gt;previous post&lt;/a&gt;, but according to my notes I returned to it. I don't remember why to be honest.&lt;/p&gt;
+&lt;p&gt;The part about control flow is actually before the part about &lt;code&gt;and&lt;/code&gt; and &lt;code&gt;or&lt;/code&gt; which I talked about in my &lt;a href="https://j19sch.github.io/blog/clojure/2020/clj3-and-or-being-weird/"&gt;previous post&lt;/a&gt;, but according to my notes I returned to it. I don't remember why to be honest.&lt;/p&gt;
 &lt;p&gt;The book provides the following example of &lt;code&gt;when&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;when &lt;/span&gt;&lt;span class="nv"&gt;true&lt;/span&gt;
     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;println &lt;/span&gt;&lt;span class="s"&gt;"Success!"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -59,11 +56,9 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clojure/2020/clj4-learning-when-maps-closures/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="brave-true" label="brave-true"/>
+    <category term="brave-clojure" label="brave clojure"/>
     <category term="clojure" label="clojure"/>
-    <category term="closures" label="closures"/>
-    <category term="maps" label="maps"/>
-    <category term="when" label="when"/>
+    <category term="programming" label="programming"/>
   </entry>
   <entry>
     <title>(clj 3) Clojure's 'and' and 'or' are weird (but not really)</title>
@@ -98,9 +93,9 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
 
 &lt;p&gt;What I found remarkable about this is that &lt;code&gt;and&lt;/code&gt; and &lt;code&gt;or&lt;/code&gt; do not return a boolean in all cases. Before I go into that, let's back up a second and cover their basics in a little more depth first.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clojure/2020/clj3-and-or-being-weird/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="booleans" label="booleans"/>
-    <category term="brave-true" label="brave-true"/>
+    <category term="brave-clojure" label="brave clojure"/>
     <category term="clojure" label="clojure"/>
+    <category term="programming" label="programming"/>
   </entry>
   <entry>
     <title>(clj 2) Setting up Vim for Clojure</title>
@@ -111,13 +106,14 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
       <name>Joep Schuurkes</name>
     </author>
     <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/clojure/2020/clj2-setting-up-vim/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;As mentioned in my &lt;a href="https://j19sch.github.io/blog/clj1-deciding-on-an-editor"&gt;previous post&lt;/a&gt; I've decided to use &lt;a href="https://www.vim.org/"&gt;Vim&lt;/a&gt; as my Clojure editor. That leaves me with three things to do: getting reacquainted with Vim, updating my Vim config in the .&lt;code&gt;vimrc&lt;/code&gt; file, and installing both general and Clojure-specific Vim plugins.&lt;/p&gt;
+    <summary type="html">&lt;div&gt;&lt;p&gt;As mentioned in my &lt;a href="https://j19sch.github.io/blog/clojure/2020/clj1-deciding-on-an-editor/"&gt;previous post&lt;/a&gt; I've decided to use &lt;a href="https://www.vim.org/"&gt;Vim&lt;/a&gt; as my Clojure editor. That leaves me with three things to do: getting reacquainted with Vim, updating my Vim config in the .&lt;code&gt;vimrc&lt;/code&gt; file, and installing both general and Clojure-specific Vim plugins.&lt;/p&gt;
 &lt;h3&gt;Getting reacquainted with Vim&lt;/h3&gt;
 &lt;p&gt;Ever since I learned Vim basics a long time ago I have been using it once in a while to make small edits to a config file or a commit message, but not for anything more complicated than that. So that's the first thing I wanted to address: refresh my basics and make sure I know where to find more information when I need it.&lt;/p&gt;
 &lt;h4&gt;Vimtutor&lt;/h4&gt;
 &lt;p&gt;I figured that a good way to get back into Vim was the &lt;a href="https://vimhelp.org/usr_01.txt.html#vimtutor"&gt;Vimtutor&lt;/a&gt;. It's a 30-minute interactive tutorial where you edit a file with instructions with vim. I kept notes of what it covers, which you can find &lt;a href="https://j19sch.github.io/my-projects/vimtutor"&gt;here&lt;/a&gt;. Vim's help also includes a &lt;a href="https://vimhelp.org/quickref.txt.html"&gt;quickref&lt;/a&gt;, an "Overview of the most common commands you will use", which is intimidatingly long considering that description. As a reference to look things up in, it should be useful, though.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clojure/2020/clj2-setting-up-vim/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="clojure" label="clojure"/>
+    <category term="programming" label="programming"/>
     <category term="vim" label="vim"/>
   </entry>
   <entry>
@@ -134,10 +130,11 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
 &lt;p&gt;The &lt;a href="https://clojure.org/guides/repl/introduction"&gt;REPL&lt;/a&gt; is definitely a Thing™️ in Clojure. It gives you a prompt where you can type code and it will execute it immediately. You can also load files with code into it, interacting with the functions and data defined in those. So that's a signifcantly faster feedback loop than having to compile and then run - which is how you'd normally run something written in Clojure, since its primary platform is the JVM. There are &lt;a href="https://clojure.org/guides/repl/launching_a_basic_repl"&gt;different ways&lt;/a&gt; of launching a REPL, but most guides I found tell you to use &lt;a href="https://leiningen.org/"&gt;Leiningen&lt;/a&gt;. Oh, and REPL stands for Read-Evaluate-Print_Loop, because that's what the REPL does.&lt;/p&gt;
 &lt;p&gt;It definitely feels like this REPL is a bigger deal than I appreciate right now. Probably because I have only just begun learning Clojure. On the other hand, I may have also been spoiled by the quick feedback provided by Python and its &lt;a href="https://docs.python.org/3/library/idle.html"&gt;IDLE&lt;/a&gt;. On the third hand, it's only because of learning of the Clojure REPL, I looked into importing files into Python's IDLE and found out that's indeed a thing it can do.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clojure/2020/clj1-deciding-on-an-editor/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="brave-clojure" label="brave clojure"/>
     <category term="clojure" label="clojure"/>
-    <category term="emacs" label="emacs"/>
+    <category term="ides" label="IDEs"/>
+    <category term="programming" label="programming"/>
     <category term="vim" label="vim"/>
-    <category term="vscode" label="vscode"/>
   </entry>
   <entry>
     <title>(clj 0) Diving straight in with some koans</title>
@@ -153,8 +150,9 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
 &lt;p&gt;Some time later (don't remember when exactly either) I learned about the existence of Clojure and that it too, was something special. So I added it to the list of programming languages I wanted to learn some day.&lt;/p&gt;
 &lt;p&gt;Then, earlier this month, I felt the need to start a new project. To learn something new. So I figured I'd learn Lisp. That didn't last long though, as I found out that the recommended editor for Lisp is Emacs. And from trying out Emacs and vi about 20 years ago I knew that for some reason vi does fit with how my mind works, and Emacs doesn't.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clojure/2020/clj0-diving-straight-in/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="brave-true" label="brave-true"/>
+    <category term="brave-clojure" label="brave clojure"/>
     <category term="clojure" label="clojure"/>
     <category term="koans" label="koans"/>
+    <category term="programming" label="programming"/>
   </entry>
 </feed>

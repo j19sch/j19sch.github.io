@@ -112,7 +112,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
     <div>
 <p>It's been more than two months since I did any Clojure - for the obvious reasons. Luckily I did take notes as I proceeded with chapter 3 of "<a href="https://www.braveclojure.com/">Clojure for the Brave and True</a>". So the plan is to process these notes into a blog post, which means this post will cover the sections "Data Structures" and "Functions" of that third chapter. Leaving me ready to proceed with the rest of the chapter, i.e. "Pulling It All Together" and the summary and exercises.</p>
 <h3>Why is there a <code>when</code>?</h3>
-<p>The part about control flow is actually before the part about <code>and</code> and <code>or</code> which I talked about in my <a href="../../../clj3-and-or-being-weird">previous post</a>, but according to my notes I returned to it. I don't remember why to be honest.</p>
+<p>The part about control flow is actually before the part about <code>and</code> and <code>or</code> which I talked about in my <a href="../clj3-and-or-being-weird/">previous post</a>, but according to my notes I returned to it. I don't remember why to be honest.</p>
 <p>The book provides the following example of <code>when</code>:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">when </span><span class="nv">true</span>
     <span class="p">(</span><span class="nb">println </span><span class="s">"Success!"</span><span class="p">)</span>
@@ -232,7 +232,7 @@ decision.</p>
 <h4>Notes on blogging</h4>
 <p>Thanks to the combination of my notes, my play-around files and some re-playing around, it was fairly easy to write this blog post. I don't like leaving such a gap between learning and blogging, but it's good to know that when it happens, it's not a problem.</p>
 <h4>Notes on Vim</h4>
-<p>I had to relearn a few things. Vim-fireplace will not connect to the REPL if you don't start one with <code>lein repl</code> first. Use <code>"+</code> in Vim to copy-paste to the system clipboard (thank you past me for the <a href="(/my-projects/clojure-vim-cheatsheet)">cheatsheet</a>).</p>
+<p>I had to relearn a few things. Vim-fireplace will not connect to the REPL if you don't start one with <code>lein repl</code> first. Use <code>"+</code> in Vim to copy-paste to the system clipboard (thank you past me for the <a href="../../../../my-projects/clojure-vim-cheatsheet/">cheatsheet</a>).</p>
 <p>Changing to gruvbox as Vim theme was a good idea. I did have to move the colorscheme line in my <code>.vimrc</code> because the statusbar was not green in normal mode.</p>
 <p>In my previous post's postscrpit I was wondering how to get the result of an evaluation into my file. I have found a way, but it's quite a few keystrokes: copy the thing, paste the thing, evaluate it with <code>c!{motion}</code> which replaces it with the result of the evaluation, then <code>gcc</code> to make it into a comment. I might need to make a custom vim command to make that easier.</p>
 <p>According to my notes I used <code>ctrl+n</code> (next match) and <code>ctrl+p</code> (previous match) for auto-completion, so I added those to my cheatsheet.</p>

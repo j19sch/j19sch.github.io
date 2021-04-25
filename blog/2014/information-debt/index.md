@@ -28,7 +28,7 @@ In case you don't know what technical debt is, you might want to read [this](htt
 
 <!-- TEASER_END -->
 
-Information debt is the same but different. It's not about the code or the implementation, but it's about information, communication, models, documents and visualizations. Information debt is information being less available than you'd like it to be. Or relating it to [the VIPT model](https://testingcurve.wordpress.com/2012/07/09/yet-another-testing-model-value-information-processes-value/): information debt are your processes and/or tools making valuable information less available than you want it to be.
+Information debt is the same but different. It's not about the code or the implementation, but it's about information, communication, models, documents and visualizations. Information debt is information being less available than you'd like it to be. Or relating it to [the VIPT model](link://slug/yet-another-testing-model-value-information-processes-value): information debt are your processes and/or tools making valuable information less available than you want it to be.
 
 And it turns out information debt is everywhere:
 

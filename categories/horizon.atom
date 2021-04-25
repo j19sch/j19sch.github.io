@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about horizon)</title>
   <id>https://j19sch.github.io/categories/horizon.atom</id>
-  <updated>2021-04-06T19:56:32Z</updated>
+  <updated>2021-04-25T10:42:47Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -13,8 +13,8 @@
   <entry>
     <title>Thinking about quality: so what to do?</title>
     <id>https://j19sch.github.io/blog/2021/thinking-about-quality-so-what-to-do/</id>
-    <updated>2021-04-06T21:31:02+02:00</updated>
-    <published>2021-04-06T21:31:02+02:00</published>
+    <updated>2021-04-07T13:25:02+02:00</updated>
+    <published>2021-04-07T13:25:02+02:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
@@ -29,6 +29,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2021/thinking-about-quality-so-what-to-do/"&gt;Read more…&lt;/a&gt; (8 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="horizon" label="horizon"/>
+    <category term="leadership" label="leadership"/>
     <category term="peer-conference" label="peer conference"/>
     <category term="quality" label="quality"/>
     <category term="small-steps" label="small steps"/>

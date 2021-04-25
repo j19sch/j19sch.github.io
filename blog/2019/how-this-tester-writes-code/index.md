@@ -9,7 +9,7 @@
 .. type: text
 -->
 
-A long time ago (March 2015) I wrote a post titled "[Test automation - five questions leading to five heuristics](https://testingcurve.wordpress.com/2015/03/24/test-automation-five-questions-leading-to-five-heuristics/)". Later that year [Rich Rogers](https://twitter.com/richrtesting) asked for a follow-up. To which I replied I should do a follow-up post (ahum) "soon".
+A long time ago (March 2015) I wrote a post titled "[Test automation - five questions leading to five heuristics](link://slug/test-automation-five-questions-leading-to-five-heuristics)". Later that year [Rich Rogers](https://twitter.com/richrtesting) asked for a follow-up. To which I replied I should do a follow-up post (ahum) "soon".
 Then last Wednesday [Noah Sussman](https://twitter.com/noahsussman) said on [twitter](https://twitter.com/noahsussman/status/1136288062651142149): *'I don't know that I've \*ever\* seen "this is how testers write code"'*. To which I replied "challenge accepted", so now here we are, me writing a blog post about how I as a tester write code.
 
 The format of this post turned out to be advice based on my experiences, so the usual disclaimers apply. And feel free to leave a comment if you have any feedback!
@@ -145,7 +145,7 @@ Secondly, I think there's value for anyone who's part of software development, t
 
 
 ## Revisiting my blogpost from 2015
-As mentioned in the introduction, in 2015 I wrote a blogpost with the title "[Test automation - five questions leading to five heuristics](https://testingcurve.wordpress.com/2015/03/24/test-automation-five-questions-leading-to-five-heuristics/)". So let's see revisit those heuristics more than four years later.
+As mentioned in the introduction, in 2015 I wrote a blogpost with the title "[Test automation - five questions leading to five heuristics](link://slug/test-automation-five-questions-leading-to-five-heuristics)". So let's see revisit those heuristics more than four years later.
 
 **Heuristic 0: Don't call it test automation.**  
 I don't think I ever stopped calling it test automation. When I wrote the post, I was stricter in using the best possible words. Currently, my position is that if communication is happening, the words we are using are good enough. I do prefer the term "auto-tests" over "automated tests", since the latter still suggests to me that perhaps we might be able to "automate all the testing".

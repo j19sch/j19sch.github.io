@@ -9,7 +9,7 @@
 .. type: text
 -->
 
-As mentioned in my [previous post](/blog/clj1-deciding-on-an-editor) I've decided to use [Vim](https://www.vim.org/) as my Clojure editor. That leaves me with three things to do: getting reacquainted with Vim, updating my Vim config in the .`vimrc` file, and installing both general and Clojure-specific Vim plugins.
+As mentioned in my [previous post](link://slug/clj1-deciding-on-an-editor) I've decided to use [Vim](https://www.vim.org/) as my Clojure editor. That leaves me with three things to do: getting reacquainted with Vim, updating my Vim config in the .`vimrc` file, and installing both general and Clojure-specific Vim plugins.
 
 
 ## Getting reacquainted with Vim

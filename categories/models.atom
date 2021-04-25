@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about models)</title>
   <id>https://j19sch.github.io/categories/models.atom</id>
-  <updated>2021-04-23T11:41:57Z</updated>
+  <updated>2021-04-25T10:42:47Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -19,7 +19,7 @@
       <name>Joep Schuurkes</name>
     </author>
     <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2012/vipt-how-to-teach-software-testing/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;In this final post on VIPT (Value-Information-Processes-Tools) it's time to take a look at teaching software testing. My previous posts on VIPT can be found &lt;a href="https://testingcurve.wordpress.com/2012/07/09/yet-another-testing-model-value-information-processes-value/"&gt;here&lt;/a&gt;, &lt;a href="https://testingcurve.wordpress.com/2012/07/15/vipt-intermezzo-models-and-the-unix-philosophy/"&gt;here&lt;/a&gt; and &lt;a href="https://testingcurve.wordpress.com/2012/07/17/vipt-bottom-up-or-top-down/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+    <summary type="html">&lt;div&gt;&lt;p&gt;In this final post on VIPT (Value-Information-Processes-Tools) it's time to take a look at teaching software testing. My previous posts on VIPT can be found &lt;a href="https://j19sch.github.io/blog/2012/yet-another-testing-model-value-information-processes-value/"&gt;here&lt;/a&gt;, &lt;a href="https://j19sch.github.io/blog/2012/vipt-intermezzo-models-and-the-unix-philosophy/"&gt;here&lt;/a&gt; and &lt;a href="https://j19sch.github.io/blog/2012/vipt-bottom-up-or-top-down/"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;A typical software testing course&lt;/h3&gt;
 &lt;p&gt;A typical traditional software testing course (at least in the way I have taught them) has three elements: theory, stories and exercises.&lt;/p&gt;
 &lt;p&gt;The first element is all about definitions (testing, test cases, defects, etc.), process descriptions and testing techniques (mostly test design). So basically what happens is that students get a brief introduction about testing in general and then we move on to the main part: teaching a specifc testing method.&lt;/p&gt;
@@ -41,7 +41,7 @@
     </author>
     <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2012/vipt-bottom-up-or-top-down/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;In this second post on VIPT I want to talk about bottom-up vs. top-down. The original plan for this post was to talk about the distance between tools and value, but in the past few days I figured out that bottom-up vs. top-down is a better approach.
-If you don't know what VIPT is, please read &lt;a href="https://testingcurve.wordpress.com/2012/07/09/yet-another-testing-model-value-information-processes-value/"&gt;this previous post&lt;/a&gt;. Don't worry, I'll wait.&lt;/p&gt;
+If you don't know what VIPT is, please read &lt;a href="https://j19sch.github.io/blog/2012/yet-another-testing-model-value-information-processes-value/"&gt;this previous post&lt;/a&gt;. Don't worry, I'll wait.&lt;/p&gt;
 &lt;h3&gt;VIPT is a top-down model&lt;/h3&gt;
 &lt;p&gt;For me as a context-driven tester the VIPT model is very much a top-down thing. You analyze the context, find out what value you should/can deliver and then you proceed to information, processes and tools. Of course, that's easier said than done. Going through this for everything you do, requires a lot of time and effort. So most of the time you do quick analysis of the context, decide that it sufficiently resembles a context you encountered earlier and you use the same tools you used then. Most of the time that's ok - as long as you stay alert to any signs that you misread the context.&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://j19sch.github.io/blog/2012/vipt-bottom-up-or-top-down/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2012/vipt-bottom-up-or-top-down/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>

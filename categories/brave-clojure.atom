@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about brave clojure)</title>
   <id>https://j19sch.github.io/categories/brave-clojure.atom</id>
-  <updated>2021-04-23T11:11:39Z</updated>
+  <updated>2021-04-25T10:42:48Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -46,7 +46,7 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
     <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/clojure/2020/clj4-learning-when-maps-closures/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;It's been more than two months since I did any Clojure - for the obvious reasons. Luckily I did take notes as I proceeded with chapter 3 of "&lt;a href="https://www.braveclojure.com/"&gt;Clojure for the Brave and True&lt;/a&gt;". So the plan is to process these notes into a blog post, which means this post will cover the sections "Data Structures" and "Functions" of that third chapter. Leaving me ready to proceed with the rest of the chapter, i.e. "Pulling It All Together" and the summary and exercises.&lt;/p&gt;
 &lt;h3&gt;Why is there a &lt;code&gt;when&lt;/code&gt;?&lt;/h3&gt;
-&lt;p&gt;The part about control flow is actually before the part about &lt;code&gt;and&lt;/code&gt; and &lt;code&gt;or&lt;/code&gt; which I talked about in my &lt;a href="https://j19sch.github.io/blog/clj3-and-or-being-weird"&gt;previous post&lt;/a&gt;, but according to my notes I returned to it. I don't remember why to be honest.&lt;/p&gt;
+&lt;p&gt;The part about control flow is actually before the part about &lt;code&gt;and&lt;/code&gt; and &lt;code&gt;or&lt;/code&gt; which I talked about in my &lt;a href="https://j19sch.github.io/blog/clojure/2020/clj3-and-or-being-weird/"&gt;previous post&lt;/a&gt;, but according to my notes I returned to it. I don't remember why to be honest.&lt;/p&gt;
 &lt;p&gt;The book provides the following example of &lt;code&gt;when&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;when &lt;/span&gt;&lt;span class="nv"&gt;true&lt;/span&gt;
     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;println &lt;/span&gt;&lt;span class="s"&gt;"Success!"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;

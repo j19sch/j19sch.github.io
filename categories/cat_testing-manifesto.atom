@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about testing manifesto)</title>
   <id>https://j19sch.github.io/categories/cat_testing-manifesto.atom</id>
-  <updated>2021-04-05T08:24:13Z</updated>
+  <updated>2021-04-25T10:42:48Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -24,10 +24,10 @@
 &lt;p&gt;This definition is clearly influenced by James Bach's "questioning a product in order to evaluate it". I'm not sure at which point I started misremembering his definition as "investigating a product...", but it works well with a change I did make intentionally: moving "a product" to the second part of the definition. As explained in 6. I believe that in order to evaluate the product, we need to investigate a number of different things, not only the product.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2018/reflections-on-my-testing-manifesto/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="agile" label="agile"/>
-    <category term="context-driven" label="context-driven"/>
+    <category term="context-driven-testing" label="context-driven testing"/>
     <category term="devops" label="devops"/>
     <category term="manifesto" label="manifesto"/>
-    <category term="testing" label="testing"/>
+    <category term="software-testing" label="software testing"/>
   </entry>
   <entry>
     <title>Manifesto for software testing</title>
@@ -44,9 +44,9 @@
 &lt;p&gt;4. As such, testing is an exploratory and open-ended activity, requiring continuous evaluation of and experimentation with our practices.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2018/manifesto-for-software-testing/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="agile" label="agile"/>
-    <category term="context-driven" label="context-driven"/>
+    <category term="context-driven-testing" label="context-driven testing"/>
     <category term="devops" label="devops"/>
     <category term="manifesto" label="manifesto"/>
-    <category term="testing" label="testing"/>
+    <category term="software-testing" label="software testing"/>
   </entry>
 </feed>

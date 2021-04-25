@@ -96,7 +96,7 @@ A possible solution is to use a test coverage matrix. However, it's a limited so
 So the gain is limited. So both of these approaches (linking test cases to either test strategy or to test basis) bring along their own share of problems. Perhaps that's why there is a third and easier solution: having faith in the work that has been done earlier.
 
 ### Where is the understanding?
-If we now take a step back to get a good overview, one thing that stands out is the dispersedness of information. Information is less available, not as easily accessible, as we would want it to be. (See [my earlier post on information debt](https://testingcurve.wordpress.com/2014/07/13/information-debt/) for some more thoughts on this.)
+If we now take a step back to get a good overview, one thing that stands out is the dispersedness of information. Information is less available, not as easily accessible, as we would want it to be. (See [my earlier post on information debt](link://slug/information-debt) for some more thoughts on this.)
 
 Not only that, the understanding of what and how we are testing, is equally dispersed. Strategy and operations are separated by the implicit tactics of test design techniques. In the test operations the middle part of the OODA-loop, orientation and decision, have been separated from the other two elements, observation and action. The first two are part of test design; the latter two of test execution. And in fact the observation is strongly directed by test design. So only the action as such (marking the test case as passed or failed) happens completely inside the test execution activities.
 
