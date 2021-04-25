@@ -13,7 +13,7 @@ It's been more than two months since I did any Clojure - for the obvious reasons
 
 
 ## Why is there a `when`?
-The part about control flow is actually before the part about `and` and `or` which I talked about in my [previous post](/blog/clj3-and-or-being-weird), but according to my notes I returned to it. I don't remember why to be honest.
+The part about control flow is actually before the part about `and` and `or` which I talked about in my [previous post](link://slug/clj3-and-or-being-weird), but according to my notes I returned to it. I don't remember why to be honest.
 
 The book provides the following example of `when`:
 ```clojure
@@ -152,7 +152,7 @@ As I did in my previous post, this postscript contains some smaller things I not
 Thanks to the combination of my notes, my play-around files and some re-playing around, it was fairly easy to write this blog post. I don't like leaving such a gap between learning and blogging, but it's good to know that when it happens, it's not a problem.
 
 ### Notes on Vim
-I had to relearn a few things. Vim-fireplace will not connect to the REPL if you don't start one with `lein repl` first. Use `"+` in Vim to copy-paste to the system clipboard (thank you past me for the [cheatsheet]((/my-projects/clojure-vim-cheatsheet))).
+I had to relearn a few things. Vim-fireplace will not connect to the REPL if you don't start one with `lein repl` first. Use `"+` in Vim to copy-paste to the system clipboard (thank you past me for the [cheatsheet](link://slug/clojure-vim-cheatsheet)).
 
 Changing to gruvbox as Vim theme was a good idea. I did have to move the colorscheme line in my `.vimrc` because the statusbar was not green in normal mode.
 

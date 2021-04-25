@@ -10,7 +10,7 @@
 -->
 
 In this second post on VIPT I want to talk about bottom-up vs. top-down. The original plan for this post was to talk about the distance between tools and value, but in the past few days I figured out that bottom-up vs. top-down is a better approach.
-If you don't know what VIPT is, please read [this previous post](https://testingcurve.wordpress.com/2012/07/09/yet-another-testing-model-value-information-processes-value/). Don't worry, I'll wait.
+If you don't know what VIPT is, please read [this previous post](link://slug/yet-another-testing-model-value-information-processes-value). Don't worry, I'll wait.
 
 ## VIPT is a top-down model
 
@@ -43,7 +43,7 @@ A great example of this are defect management tools. More specifically, defect m
 
 Now it's not that hard to imagine why you would configure your tool like that. You want to keep proper track of defects. So you want to have correct information. This means that certain processes need to be followed. So you get a tool to facilitate this. And then you realize that people may make mistakes or that people take short cuts to make life easier for themselves. So you configure the tool not only to facilitate the processes you want, but also to enforce them. This does not work. Like the internet does with censorship, people see it as damage and route around it. Your plan backfires and instead of good, you get awfull information in your bug tracking tool.
 
-I was supposed to say a few things about teaching testing in relation to VIPT, but I'm saving that for the [next post](https://testingcurve.wordpress.com/2012/07/29/vipt-how-to-teach-software-testing/).
+I was supposed to say a few things about teaching testing in relation to VIPT, but I'm saving that for the [next post](link://slug/vipt-how-to-teach-software-testing).
 
 ---
 

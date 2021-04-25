@@ -46,7 +46,7 @@ Since it's hard to read the principles in both ways simultaneously, this may be 
 Secondly, the principles do not contain practical advice as in telling you what to do. This makes sense because of the "no best practices". And they are principles, not guidelines or commandments. This abstract nature of the principles does make it easy to go over the principles too quickly, though.
 
 Thirdly,  the principles are not verbose. They contain few adjectives. So the principles are more about things than the qualities of those things. I'm not sure if that actually means anything. What I do know is that it's easy to read such a terse text to fast. You just read it and go "Oh, okay."
-That's also one of the reasons I'm writing this set of posts: to make me pauze at each principle and think about it. And in the [next post](https://testingcurve.wordpress.com/2012/02/05/the-seven-basic-principles-of-the-context-driven-school-part-two/), I'll do exactly that.
+That's also one of the reasons I'm writing this set of posts: to make me pauze at each principle and think about it. And in the [next post](link://slug/the-seven-basic-principles-of-the-context-driven-school-part-two), I'll do exactly that.
 
 ---
 

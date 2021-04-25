@@ -9,7 +9,7 @@
 .. type: text
 -->
 
-After the introductory post (to be found [here](https://testingcurve.wordpress.com/2012/01/15/the-seven-basic-principles-of-the-context-driven-school-part-one/)) it's time to take a closer look at each of [the basic principles](http://www.context-driven-testing.com/). In the past weeks I found out that it's quite possible to take any one of these principles as a starting point for several different trains of thought. More importantly I discovered a story[^1] to the principles: the first five principles are ways in which software testing is intellectually challenging, as stated by principle six. And principle seven then wraps it all up.
+After the introductory post (to be found [here](link://slug/the-seven-basic-principles-of-the-context-driven-school-part-one)) it's time to take a closer look at each of [the basic principles](http://www.context-driven-testing.com/). In the past weeks I found out that it's quite possible to take any one of these principles as a starting point for several different trains of thought. More importantly I discovered a story[^1] to the principles: the first five principles are ways in which software testing is intellectually challenging, as stated by principle six. And principle seven then wraps it all up.
 So below you can find some of the thoughts I had on the principles and the story I discovered.
 
 ### 1. The value of any practice depends on its context.

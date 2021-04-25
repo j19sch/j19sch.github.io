@@ -60,7 +60,7 @@ One of the most inmportant things to note about this model is that only tools ca
 
 Or to put it differently. It's possible to share a tool: I can give you the requirements document. It's possible to partly share a process: we can review the requirements document together. It's possible to share filtered information: you can interpret what I say. It's possible to share translated value: I can tell you what I find valuable.  
 
-So basically, what we care about is value, but all we really 'have' are tools. And to get from tools to value, we need to go through processes that generate information. This distance between tools and value can make a life as tester a bit complicated sometimes. This problem is what [part two](https://testingcurve.wordpress.com/2012/07/17/vipt-bottom-up-or-top-down/) of this post will be about.
+So basically, what we care about is value, but all we really 'have' are tools. And to get from tools to value, we need to go through processes that generate information. This distance between tools and value can make a life as tester a bit complicated sometimes. This problem is what [part two](link://slug/vipt-bottom-up-or-top-down) of this post will be about.
 
 ---
 
