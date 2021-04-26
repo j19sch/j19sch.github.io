@@ -3,13 +3,37 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about teaching)</title>
   <id>https://j19sch.github.io/categories/teaching.atom</id>
-  <updated>2021-04-25T10:42:47Z</updated>
+  <updated>2021-04-26T15:47:56Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://j19sch.github.io/categories/teaching.atom"/>
   <link rel="alternate" type="text/html" href="https://j19sch.github.io/categories/teaching/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>An approach to teaching Agile 20 years after the Agile Manifesto</title>
+    <id>https://j19sch.github.io/blog/2021/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto/</id>
+    <updated>2021-04-26T16:54:34+02:00</updated>
+    <published>2021-04-26T16:54:34+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2021/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;For a few weeks I've been thinking about how I would teach Agile&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://j19sch.github.io/blog/2021/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; in 2021, 20 years after the &lt;a href="https://agilemanifesto.org/"&gt;Agile Manifesto&lt;/a&gt; was published. After sharing my thoughts at &lt;a href="https://citconf.com/virtual2021/"&gt;CitCon Europe 2021 Virtual&lt;/a&gt; and having an interesting conversation about the state of Agile and how to teach it, I feel it's time to share my thoughts here as well.&lt;/p&gt;
+&lt;h3&gt;Why I started thinking about this&lt;/h3&gt;
+&lt;p&gt;As Allan Kelly stated in a &lt;a href="https://www.allankellyassociates.co.uk/archives/2762/agile-won-the-war-but-lost-the-peace/"&gt;2018 blog post&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"Agile won the war but lost the peace."&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Everyone is doing Agile, even though very few people are living the dream promised by Agile. This makes it very difficult to use "Agile" as a label, as a name for something. When someone says "Agile", are they referring to what you're already doing or to something they think you should be doing?&lt;/p&gt;
+&lt;p&gt;Additionally, the &lt;a href="https://agilemanifesto.org/"&gt;Agile Manifesto&lt;/a&gt; was &lt;a href="https://agilemanifesto.org/history.html"&gt;written in 2001&lt;/a&gt;, based on what its authors were doing in the 1990s in response to the common ways of doing software development of that time. And since the Manifesto we've seen the introduction of Lean, of DevOps, and of CI/CD. So the amount of history that comes with Agile is large and it raises the question how much (if any) we should teach - especially since a lot of it is folklore instead of history&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="https://j19sch.github.io/blog/2021/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto/#fn:2"&gt;2&lt;/a&gt;&lt;/sup&gt;. Doing Agile's history justice would probably cost more time than makes sense if your goal is to teach people how to develop software in an Agile way&lt;sup id="fnref:3"&gt;&lt;a class="footnote-ref" href="https://j19sch.github.io/blog/2021/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto/#fn:3"&gt;3&lt;/a&gt;&lt;/sup&gt;. And a lot of that history was a relatively long time ago, which is why I titled my CitCon session "Teaching Agile to people younger than the Manifesto".&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2021/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="agile" label="agile"/>
+    <category term="cicd" label="ci/cd"/>
+    <category term="devops" label="devops"/>
+    <category term="lean" label="lean"/>
+    <category term="teaching" label="teaching"/>
+  </entry>
   <entry>
     <title>VIPT - how to teach software testing</title>
     <id>https://j19sch.github.io/blog/2012/vipt-how-to-teach-software-testing/</id>
