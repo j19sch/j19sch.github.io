@@ -54,5 +54,5 @@ hidetitle: false
 - `:Eval`: eval/print the outermost form for the current line
 - `:%Eval`: eval/print whole file
 - `cpp`: eval/print the innermost form at the cursor
-- `cp{motion}`: eval/print motion, e.g. `$` or `_`
+- `cp{motion}`: eval/print motion, e.g. `$` (end of line) or `_` (1st non-blank char on line)
 - `K`: show Clojure docs for symbol under cursor
