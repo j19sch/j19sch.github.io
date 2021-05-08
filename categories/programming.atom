@@ -3,13 +3,31 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about programming)</title>
   <id>https://j19sch.github.io/categories/programming.atom</id>
-  <updated>2021-04-25T11:02:47Z</updated>
+  <updated>2021-05-08T11:14:02Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://j19sch.github.io/categories/programming.atom"/>
   <link rel="alternate" type="text/html" href="https://j19sch.github.io/categories/programming/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>(clj 6) Three chapters in one year</title>
+    <id>https://j19sch.github.io/blog/clojure/2021/clj6-three-chapters-in-one-year/</id>
+    <updated>2021-05-08T10:53:25+02:00</updated>
+    <published>2021-05-08T10:53:25+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/clojure/2021/clj6-three-chapters-in-one-year/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;It's been a bit more than a year since I posted my &lt;a href="https://j19sch.github.io/blog/clojure/2020/clj0-diving-straight-in/"&gt;first blog post&lt;/a&gt; about learning Clojure. And it's been five months since my &lt;a href="https://j19sch.github.io/blog/clojure/2021/clj6-three-chapters-in-one-year/clj5-loop-and-recur-into-and-conj"&gt;last blog post&lt;/a&gt; about it. So far I've made it through the first three chapters&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://j19sch.github.io/blog/clojure/2021/clj6-three-chapters-in-one-year/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; of "&lt;a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/"&gt;Clojure for the Brave and True&lt;/a&gt;". Instead of commenting on my learning pace at the start of every post, I've decided that this pace is the pace that works for me at this time, so there's no need to keep revisiting the topic.&lt;/p&gt;
+&lt;p&gt;Something I do want to mention is that one thing that triggered me to do some more Clojure was &lt;a href="https://itrevolution.com/the-idealcast-episode-10/"&gt;this episode&lt;/a&gt; of Gene Kim's excellent &lt;a href="https://itrevolution.com/the-idealcast-podcast/"&gt;Idealcast&lt;/a&gt; podcast with &lt;a href="https://www.michaelnygard.com/"&gt;Michael Nygard&lt;/a&gt;, in which they spend some time talking about Clojure.&lt;/p&gt;
+&lt;h3&gt;Vim macros&lt;/h3&gt;
+&lt;p&gt;The exercises got me to try out a lot of things, so I got bored having to type in the commands to copy a line (&lt;code&gt;yy&lt;/code&gt;), paste it (&lt;code&gt;p&lt;/code&gt;), replace it by its evaluation (&lt;code&gt;c!$&lt;/code&gt;), comment it out (&lt;code&gt;gcc&lt;/code&gt;), and add a "&lt;code&gt;=&amp;gt;&lt;/code&gt;" to markt it as output. So I learned about Vim macros and recorded that sequence to run when I hit &lt;code&gt;@c&lt;/code&gt;. At the end of my &lt;a href="https://j19sch.github.io/"&gt;(clj 4)&lt;/a&gt; post I mentioned I might have to do this. Guess that moment came sooner than I expected.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clojure/2021/clj6-three-chapters-in-one-year/"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="brave-clojure" label="brave clojure"/>
+    <category term="clojure" label="clojure"/>
+    <category term="programming" label="programming"/>
+  </entry>
   <entry>
     <title>(clj 5) Loop and recur, into and conj</title>
     <id>https://j19sch.github.io/blog/clojure/2020/clj5-loop-and-recur-into-and-conj/</id>
@@ -218,22 +236,5 @@ Then last Wednesday &lt;a href="https://twitter.com/noahsussman"&gt;Noah Sussman
     <category term="programming" label="programming"/>
     <category term="test-automation" label="test automation"/>
     <category term="testing-and-checking" label="testing and checking"/>
-  </entry>
-  <entry>
-    <title>Lessons learned in some test automation</title>
-    <id>https://j19sch.github.io/blog/2013/lessons-learned-in-some-test-automation/</id>
-    <updated>2013-02-18T21:46:02+01:00</updated>
-    <published>2013-02-18T21:46:02+01:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2013/lessons-learned-in-some-test-automation/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;In the past two weeks I built a test tool in VBA (Visual Basic for Applications). I did this, because two weeks ago my fellow tester showed me an important test we have to do at least once for each major release. The test consists of having the application generate three reports in Excel format. On two of these reports you apply a set of filters and take the sum of a few columns, rinse and repeat. Then you add several of those sums together and the results of those calculations should match the numbers in the third report. So basically, the point of the test is to check if the numbers in the three reports add up. And it's a lot of work, i.e. about two days.&lt;/p&gt;
-&lt;p&gt;After being shown how to perform the test, the first thought that popped into my head, was: "Boring!" The second thought was: "It's automatable!" And since there was little else to do - delivery of the new test environments was delayed - I changed it from automatable to automated.&lt;/p&gt;
-&lt;p&gt;So now, after two weeks, I have this tool in VBA. For each of the three reports it contains a sheet in which you define the sets of filters and sums. If you click a big button, the report is opened and the filters and sums are applied. There's also a fourth sheet to do the second set of calculations and to do the check if the numbers match. This last part is not done in VBA; it's all formulas in Excel.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2013/lessons-learned-in-some-test-automation/"&gt;Read more…&lt;/a&gt; (8 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="programming" label="programming"/>
-    <category term="test-automation" label="test automation"/>
-    <category term="vba" label="VBA"/>
   </entry>
 </feed>
