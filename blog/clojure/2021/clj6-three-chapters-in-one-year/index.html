@@ -112,7 +112,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <p>It's been a bit more than a year since I posted my <a href="../../2020/clj0-diving-straight-in/">first blog post</a> about learning Clojure. And it's been five months since my <a href="clj5-loop-and-recur-into-and-conj">last blog post</a> about it. So far I've made it through the first three chapters<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> of "<a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">Clojure for the Brave and True</a>". Instead of commenting on my learning pace at the start of every post, I've decided that this pace is the pace that works for me at this time, so there's no need to keep revisiting the topic.</p>
 <p>Something I do want to mention is that one thing that triggered me to do some more Clojure was <a href="https://itrevolution.com/the-idealcast-episode-10/">this episode</a> of Gene Kim's excellent <a href="https://itrevolution.com/the-idealcast-podcast/">Idealcast</a> podcast with <a href="https://www.michaelnygard.com/">Michael Nygard</a>, in which they spend some time talking about Clojure.</p>
 <h3>Vim macros</h3>
-<p>The exercises got me to try out a lot of things, so I got bored having to type in the commands to copy a line (<code>yy</code>), paste it (<code>p</code>), replace it by its evaluation (<code>c!$</code>), comment it out (<code>gcc</code>), and add a "<code>=&gt;</code>" to markt it as output. So I learned about Vim macros and recorded that sequence to run when I hit <code>@c</code>. At the end of my <a href="../../../../">(clj 4)</a> post I mentioned I might have to do this. Guess that moment came sooner than I expected.</p>
+<p>The exercises at the end of chapter 3 got me to try out a lot of things, so I got bored having to type in the commands to copy a line (<code>yy</code>), paste it (<code>p</code>), replace it by its evaluation (<code>c!$</code>), comment it out (<code>gcc</code>), and add a "<code>=&gt;</code>" to mark it as output. So I learned about Vim macros and recorded that sequence to run when I hit <code>@c</code>. At the end of my <a href="../../../../">(clj 4)</a> post I mentioned I might have to do this. Guess that moment came sooner than I expected.</p>
 <!-- TEASER_END -->
 
 <p>The macro works great as long as you don't try to evaluate a line that throws an exception. You do get the same weird line of output every time (i.e. <code>a =&gt;</code>), so it's easy enough to recognize. Wondering if and how Vim macros are stored, I was glad to discover they are stored automatically if you run Vim in noncompatible mode (which I do). So I haven't bothered yet to store the macro in my <code>.vimrc</code> with the <code>let</code> command.</p>
@@ -212,7 +212,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 
 <h4>Revisiting the concept of closures</h4>
 <p>However, the book shows you the <code>inc-maker</code> function to illustrate how a returned function is a "closure". And as you can read in <a href="../../../../">(clj 4)</a>, I did not understand the explanation, when I first came across it. Since it still bugged me that I don't understand, I decided to give it another try.</p>
-<p>The explanation in the Brave and True-book is as follows:</p>
+<p>The explanation in the book is as follows:</p>
 <blockquote>
 <p>By now you’ve seen that functions can return other functions. The returned functions are <em>closures</em>, which means that they can access all the variables that were in scope when the function was created.</p>
 <p>Here, <code>inc-by</code> is in scope, so the returned function has access to it even when the returned function is used outside <code>inc-maker</code>.</p>
@@ -231,7 +231,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <span class="nv">=&gt;</span> <span class="nv">clojure_noob.core$def_dec9</span>
 </code></pre>
 
-<p>Having revisited all of this, the concept "closures" of does make a little more sense to me, although I still wouldn't be able to really explain it. I did a search in the Brave and True-book and "closure" occurs twice: once in the explanation of <code>inc-maker</code> and once in the index. So I should be fine with my current understanding.</p>
+<p>Having revisited all of this, the concept "closures" of does make a little more sense to me, although I still wouldn't be able to really explain it. I did a search in the book and "closure" occurs twice: once in the explanation of <code>inc-maker</code> and once in the index. So I should be fine with my current understanding - or my lack thereof.</p>
 <div class="footnote">
 <hr>
 <ol>
@@ -239,7 +239,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <p>I've only done the first three exercises at the end of chapter 3, but the authors said it's fine to skip the other three exercises and revisit them after chapters 4 and 5. I tried solving exercise 4 for a bit and decided it's better to skip and revisit. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
 </li>
 <li id="fn:2">
-<p>I checked the explanation on lists in "Clojure for the Brave and True". It does tell you to use the single quote, but for an explanation it says that will be covered in Chapter 7. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+<p>I checked the explanation on lists in "Clojure for the Brave and True". It does tell you to use the single quote, but it also says the explanation won't be covered until Chapter 7. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
 </li>
 <li id="fn:3">
 <p>Which got me curious about providing more than two arguments to the <code>-</code> function. Turns out it works as you'd expect. <code>(- 10 1 2)</code> gives you 7. <code>(- 10 1 -2)</code> gives you 11. <code>(- 10 -1 2)</code> gives you 9.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>

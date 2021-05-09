@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about koans)</title>
   <id>https://j19sch.github.io/categories/koans.atom</id>
-  <updated>2020-12-26T09:02:19Z</updated>
+  <updated>2021-04-25T11:02:47Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -24,8 +24,9 @@
 &lt;p&gt;Some time later (don't remember when exactly either) I learned about the existence of Clojure and that it too, was something special. So I added it to the list of programming languages I wanted to learn some day.&lt;/p&gt;
 &lt;p&gt;Then, earlier this month, I felt the need to start a new project. To learn something new. So I figured I'd learn Lisp. That didn't last long though, as I found out that the recommended editor for Lisp is Emacs. And from trying out Emacs and vi about 20 years ago I knew that for some reason vi does fit with how my mind works, and Emacs doesn't.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://j19sch.github.io/blog/clojure/2020/clj0-diving-straight-in/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="brave-true" label="brave-true"/>
+    <category term="brave-clojure" label="brave clojure"/>
     <category term="clojure" label="clojure"/>
     <category term="koans" label="koans"/>
+    <category term="programming" label="programming"/>
   </entry>
 </feed>

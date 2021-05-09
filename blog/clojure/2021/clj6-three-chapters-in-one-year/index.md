@@ -15,7 +15,7 @@ Something I do want to mention is that one thing that triggered me to do some mo
 
 
 ## Vim macros
-The exercises got me to try out a lot of things, so I got bored having to type in the commands to copy a line (`yy`), paste it (`p`), replace it by its evaluation (`c!$`), comment it out (`gcc`), and add a "`=>`" to markt it as output. So I learned about Vim macros and recorded that sequence to run when I hit `@c`. At the end of my [(clj 4)](link://slug/clj4-learning-when-maps-closures/) post I mentioned I might have to do this. Guess that moment came sooner than I expected.
+The exercises at the end of chapter 3 got me to try out a lot of things, so I got bored having to type in the commands to copy a line (`yy`), paste it (`p`), replace it by its evaluation (`c!$`), comment it out (`gcc`), and add a "`=>`" to mark it as output. So I learned about Vim macros and recorded that sequence to run when I hit `@c`. At the end of my [(clj 4)](link://slug/clj4-learning-when-maps-closures/) post I mentioned I might have to do this. Guess that moment came sooner than I expected.
 
 <!-- TEASER_END -->
 
@@ -143,7 +143,7 @@ Exercise 3 wants you to take the `inc-maker` function shown earlier in the chapt
 
 However, the book shows you the `inc-maker` function to illustrate how a returned function is a "closure". And as you can read in [(clj 4)](link://slug/clj4-learning-when-maps-closures/), I did not understand the explanation, when I first came across it. Since it still bugged me that I don't understand, I decided to give it another try.
 
-The explanation in the Brave and True-book is as follows:
+The explanation in the book is as follows:
 > By now you’ve seen that functions can return other functions. The returned functions are *closures*, which means that they can access all the variables that were in scope when the function was created.
 
 > Here, `inc-by` is in scope, so the returned function has access to it even when the returned function is used outside `inc-maker`.
@@ -167,13 +167,13 @@ So that's a different syntax from the `inc-maker`/`dec-maker` example. Using Clo
 
 ```
 
-Having revisited all of this, the concept "closures" of does make a little more sense to me, although I still wouldn't be able to really explain it. I did a search in the Brave and True-book and "closure" occurs twice: once in the explanation of `inc-maker` and once in the index. So I should be fine with my current understanding.
+Having revisited all of this, the concept "closures" of does make a little more sense to me, although I still wouldn't be able to really explain it. I did a search in the book and "closure" occurs twice: once in the explanation of `inc-maker` and once in the index. So I should be fine with my current understanding - or my lack thereof.
 
 
 
 [^1]: I've only done the first three exercises at the end of chapter 3, but the authors said it's fine to skip the other three exercises and revisit them after chapters 4 and 5. I tried solving exercise 4 for a bit and decided it's better to skip and revisit.
 
-[^2]: I checked the explanation on lists in "Clojure for the Brave and True". It does tell you to use the single quote, but for an explanation it says that will be covered in Chapter 7.
+[^2]: I checked the explanation on lists in "Clojure for the Brave and True". It does tell you to use the single quote, but it also says the explanation won't be covered until Chapter 7.
 
 [^3]: Which got me curious about providing more than two arguments to the `-` function. Turns out it works as you'd expect. `(- 10 1 2)` gives you 7. `(- 10 1 -2)` gives you 11. `(- 10 -1 2)` gives you 9.[^4]
 
