@@ -11,7 +11,7 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/blog/rss.xml</loc>
-  <lastmod>2021-05-09T07:55:00Z</lastmod>
+  <lastmod>2021-05-09T09:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/agile.atom</loc>
@@ -27,7 +27,7 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/automation.xml</loc>
-  <lastmod>2021-04-25T11:02:00Z</lastmod>
+  <lastmod>2021-05-09T09:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/black-box-puzzle.atom</loc>
@@ -35,7 +35,7 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/black-box-puzzle.xml</loc>
-  <lastmod>2021-04-25T11:02:00Z</lastmod>
+  <lastmod>2021-05-09T09:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/brave-clojure.atom</loc>
@@ -83,7 +83,7 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_exploration.xml</loc>
-  <lastmod>2021-04-25T11:02:00Z</lastmod>
+  <lastmod>2021-05-09T09:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_leadership.atom</loc>
@@ -211,7 +211,7 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/data-analysis.xml</loc>
-  <lastmod>2021-04-25T11:02:00Z</lastmod>
+  <lastmod>2021-05-09T09:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/devops.atom</loc>
@@ -243,7 +243,7 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/exploration.xml</loc>
-  <lastmod>2021-04-25T11:02:00Z</lastmod>
+  <lastmod>2021-05-09T09:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/horizon.atom</loc>
@@ -375,11 +375,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/python.atom</loc>
-  <lastmod>2021-04-25T11:02:00Z</lastmod>
+  <lastmod>2021-05-09T09:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/python.xml</loc>
-  <lastmod>2021-04-25T11:02:00Z</lastmod>
+  <lastmod>2021-05-09T09:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/quality.atom</loc>
@@ -559,6 +559,6 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/sitemap.xml</loc>
-  <lastmod>2021-05-09T07:55:00Z</lastmod>
+  <lastmod>2021-05-09T09:04:00Z</lastmod>
  </sitemap>
 </sitemapindex>
