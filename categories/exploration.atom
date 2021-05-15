@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about exploration)</title>
   <id>https://j19sch.github.io/categories/exploration.atom</id>
-  <updated>2021-04-25T11:02:47Z</updated>
+  <updated>2021-05-15T14:42:12Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -31,6 +31,7 @@ Finally, the code and the spreadsheet I created (linked throughout, also availab
     <category term="black-box-puzzle" label="black box puzzle"/>
     <category term="data-analysis" label="data analysis"/>
     <category term="exploration" label="exploration"/>
+    <category term="python" label="python"/>
   </entry>
   <entry>
     <title>Three arguments against the verification-validation dichotomy</title>

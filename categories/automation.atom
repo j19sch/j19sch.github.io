@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about automation)</title>
   <id>https://j19sch.github.io/categories/automation.atom</id>
-  <updated>2021-04-25T11:02:46Z</updated>
+  <updated>2021-05-15T14:42:13Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -31,5 +31,6 @@ Finally, the code and the spreadsheet I created (linked throughout, also availab
     <category term="black-box-puzzle" label="black box puzzle"/>
     <category term="data-analysis" label="data analysis"/>
     <category term="exploration" label="exploration"/>
+    <category term="python" label="python"/>
   </entry>
 </feed>
