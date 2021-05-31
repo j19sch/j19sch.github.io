@@ -18,6 +18,9 @@ hidetitle: false
 - The Freedom the be Free - Hannah Arendt
 - My Share of the Task - Stanley McChrystal
 - Agile Impressions - Jerry Weinberg (reread)
+- Becoming a Technical Leader: An Organic Problem-Solving Approach - Jerry Weinberg (reread, book club)
+- Researching Your Own Practice: The Discipline of Noticing - John Mason
+- Nobody Ever Gets Credit for Fixing Problems that Never Happened: Creating and Sustaining Process Improvement - Nelson P. Repenning, John D. Sterman (reread, book club)
 
 
 ### 2020
