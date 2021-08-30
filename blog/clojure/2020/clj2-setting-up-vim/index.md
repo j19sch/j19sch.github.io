@@ -50,7 +50,7 @@ First of all a warning: you can spend hours upon hours looking into Vim's config
 So after spending a few hours exploring Vim settings and plugins, I decided to keep my configuration and especially my plugins as limited and simple as possible - despite all the promises of shiny new toys I could add. That way I might actually get around again to playing with Clojure and writing a blog post about that sometime soon.
 
 ### The `.vimrc` file
-Vim configuration happens via a file in the user's home directory, `.vimrc`. You can find mine [here](https://github.com/j19sch/dotfiles/blob/b1b62a2169058edd8a0f5069e694b8717890a1fb/vimrc). I might have updated it since writing this though, so if you want to see the current version, go [here](https://github.com/j19sch/dotfiles/blob/master/vimrc).
+Vim configuration happens via a file in the user's home directory, `.vimrc`. You can find mine [here](https://gist.github.com/j19sch/778a936b564d5ef4f4c5f1eefd2cebe0).
 
 There are plenty of good resources on what to put in your `.vimrc`-file. Here are three I took inspiration from:
 

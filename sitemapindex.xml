@@ -11,7 +11,7 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/blog/rss.xml</loc>
-  <lastmod>2021-05-15T14:42:00Z</lastmod>
+  <lastmod>2021-08-30T12:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/agile.atom</loc>
@@ -63,11 +63,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_clojure.atom</loc>
-  <lastmod>2021-05-15T14:42:00Z</lastmod>
+  <lastmod>2021-08-30T12:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_clojure.xml</loc>
-  <lastmod>2021-05-15T14:42:00Z</lastmod>
+  <lastmod>2021-08-30T12:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_conference.atom</loc>
@@ -175,11 +175,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/clojure.atom</loc>
-  <lastmod>2021-05-15T14:42:00Z</lastmod>
+  <lastmod>2021-08-30T12:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/clojure.xml</loc>
-  <lastmod>2021-05-15T14:42:00Z</lastmod>
+  <lastmod>2021-08-30T12:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/conference.atom</loc>
@@ -367,11 +367,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/programming.atom</loc>
-  <lastmod>2021-05-15T14:42:00Z</lastmod>
+  <lastmod>2021-08-30T12:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/programming.xml</loc>
-  <lastmod>2021-05-15T14:42:00Z</lastmod>
+  <lastmod>2021-08-30T12:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/python.atom</loc>
@@ -535,11 +535,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/vim.atom</loc>
-  <lastmod>2021-05-15T14:42:00Z</lastmod>
+  <lastmod>2021-08-30T12:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/vim.xml</loc>
-  <lastmod>2021-05-15T14:42:00Z</lastmod>
+  <lastmod>2021-08-30T12:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/vipt.atom</loc>
@@ -559,6 +559,6 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/sitemap.xml</loc>
-  <lastmod>2021-05-15T14:44:00Z</lastmod>
+  <lastmod>2021-08-30T12:10:00Z</lastmod>
  </sitemap>
 </sitemapindex>
