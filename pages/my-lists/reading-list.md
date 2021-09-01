@@ -21,6 +21,8 @@ hidetitle: false
 - Becoming a Technical Leader: An Organic Problem-Solving Approach - Jerry Weinberg (reread, book club)
 - Researching Your Own Practice: The Discipline of Noticing - John Mason
 - Nobody Ever Gets Credit for Fixing Problems that Never Happened: Creating and Sustaining Process Improvement - Nelson P. Repenning, John D. Sterman (reread, book club)
+- Resilient Management - Lara Hogan (book club)
+- Agile Software Development - Alistair Cockburn
 
 
 ### 2020
