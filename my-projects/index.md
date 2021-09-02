@@ -11,8 +11,8 @@ hidetitle: false
 
 <div markdown="1">
 
-## TestCraftCamp
-With some other fine people I organise an annual testing unconference in the Netherlands: [TestCraftCamp](https://testcraftcamp.nl/).
+## FroGS conf
+With some other fine people I organise the Friends of Good Software ([FroGS](https://frogsconf.nl/)) conference. It's an open space conference focusing on quality and software. And it's the successor of [TestCraftCamp](https://testcraftcamp.nl/).
 
 <div style='margin-bottom: 1.8rem' markdown="1"></div>
 
