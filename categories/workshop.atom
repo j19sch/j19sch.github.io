@@ -3,13 +3,32 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about workshop)</title>
   <id>https://j19sch.github.io/categories/workshop.atom</id>
-  <updated>2021-05-15T14:42:11Z</updated>
+  <updated>2021-10-03T19:49:48Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://j19sch.github.io/categories/workshop.atom"/>
   <link rel="alternate" type="text/html" href="https://j19sch.github.io/categories/workshop/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Two times remote Elephant Carpaccio</title>
+    <id>https://j19sch.github.io/blog/2021/two-times-remote-elephant-carpaccio/</id>
+    <updated>2021-10-03T21:28:50+02:00</updated>
+    <published>2021-10-03T21:28:50+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2021/two-times-remote-elephant-carpaccio/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;A while ago I asked the teams in my department which parts of agile software development they wanted to learn more about. One of the topics that stood out, was: you have a high-level description of a new feature, then what? That's still quite a wide topic, so the question become on what part of that problem would I focus first.&lt;/p&gt;
+&lt;p&gt;Quite quickly I settled on feature slicing - for several reasons. First of all, I had noticed teams delivering somewhat big chunks of functionality, split up into development tasks instead of vertical slices. Secondly, a team I had worked with on feature slicing, had gained some valuable planning flexibility because of it. And they continued the practice, breaking up projects vertically. Finally, I was aware that there was a workshop called "Elephant Carpaccio", focused on feature slicing. So I could use that, or build on it, but at least I wouldn't have to come up with something from scratch.&lt;/p&gt;
+&lt;h3&gt;The Elephant Carpaccio exercise&lt;/h3&gt;
+&lt;p&gt;The Elephant Carpaccio exercise was invented by Alistair Cockburn&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://j19sch.github.io/blog/2021/two-times-remote-elephant-carpaccio/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;. Its purpose is to get people to practice &lt;em&gt;"nano-incremental"&lt;/em&gt; development, i.e. slicing something small enough you can program it in 15-30 minutes. The exercise tries to bring home its point through exageration: you are asked to slice a very simple application in 15-20 slices, where you would normally do it in 2-3 slices. Then you get five iterations of 8 minutes to build those slices. To me that's the coolest part of the exercise: you actually get to experience what's it like to work with such small slices. As Alistair Cockburn himself says about the exercise: &lt;em&gt;"the true learning is the actual programming section"&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2021/two-times-remote-elephant-carpaccio/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="agile" label="agile"/>
+    <category term="elephant-carpaccio" label="elephant carpaccio"/>
+    <category term="slices" label="slices"/>
+    <category term="workshop" label="workshop"/>
+  </entry>
   <entry>
     <title>Some thoughts after attending the 'Getting a Grip on Exploratory Testing' workshop</title>
     <id>https://j19sch.github.io/blog/2012/some-thoughts-after-attending-the-getting-a-grip-on-exploratory-testing-workshop/</id>

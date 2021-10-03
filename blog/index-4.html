@@ -90,7 +90,45 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2020/clj2-setting-up-vim/" class="u-url">(clj 2) Setting up Vim for Clojure</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2020/clj3-and-or-being-weird/" class="u-url">(clj 3) Clojure's 'and' and 'or' are weird (but not really)</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="clojure/2020/clj3-and-or-being-weird/" rel="bookmark">
+            <time class="published dt-published" datetime="2020-05-16T21:25:15+02:00" itemprop="datePublished" title="16 May 2020">16 May 2020</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Early in <a href="https://www.braveclojure.com/do-things/#Control_Flow">chapter 3</a> of the <a href="https://www.braveclojure.com/">Brave and True</a>-book the Boolean operators <code>and</code> and <code>or</code> are introduced:</p>
+<blockquote>
+<p>Clojure uses the Boolean operators <code>or</code> and <code>and</code>. <code>or</code> returns either the first truthy value or the last value. <code>and</code> returns the first falsey value or, if no values are falsey, the last truthy value.</p>
+</blockquote>
+<p>This explanation is followed by some examples:</p>
+<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nf">or</span> <span class="nv">false</span> <span class="nv">nil</span> <span class="ss">:large_I_mean_venti</span> <span class="ss">:why_cant_I_just_say_large</span><span class="p">)</span>
+<span class="c1">; =&gt; :large_I_mean_venti</span>
+
+<span class="p">(</span><span class="nf">or</span> <span class="p">(</span><span class="nf">=</span> <span class="mi">0</span> <span class="mi">1</span><span class="p">)</span> <span class="p">(</span><span class="nf">=</span> <span class="s">"yes"</span> <span class="s">"no"</span><span class="p">))</span>
+<span class="c1">; =&gt; false</span>
+
+<span class="p">(</span><span class="nf">or</span> <span class="nv">nil</span><span class="p">)</span>
+<span class="c1">; =&gt; nil</span>
+</code></pre>
+
+<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nf">and</span> <span class="ss">:free_wifi</span> <span class="ss">:hot_coffee</span><span class="p">)</span>
+<span class="c1">; =&gt; :hot_coffee</span>
+
+<span class="p">(</span><span class="nf">and</span> <span class="ss">:feelin_super_cool</span> <span class="nv">nil</span> <span class="nv">false</span><span class="p">)</span>
+<span class="c1">; =&gt; nil</span>
+</code></pre>
+
+<p>What I found remarkable about this is that <code>and</code> and <code>or</code> do not return a boolean in all cases. Before I go into that, let's back up a second and cover their basics in a little more depth first.</p>
+<p class="more"><a href="clojure/2020/clj3-and-or-being-weird/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2020/clj2-setting-up-vim/" class="u-url">(clj 2) Setting up Vim for Clojure</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
