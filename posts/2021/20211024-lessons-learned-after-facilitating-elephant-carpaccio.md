@@ -1,5 +1,5 @@
 <!--
-.. title: Lessons learned after faciliating remote Elephant Carpaccio
+.. title: Lessons learned after facilitating remote Elephant Carpaccio
 .. slug: lessons-learned-after-facilitating-elephant-carpaccio
 .. date: 2021-10-24 17:36:50 UTC+02:00
 .. tags: workshop, elephant carpaccio, facilitation
