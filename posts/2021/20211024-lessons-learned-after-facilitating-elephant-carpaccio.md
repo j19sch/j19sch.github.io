@@ -9,12 +9,12 @@
 .. type: text
 -->
 
-In my previous blog post I shared my experience of facilitating remote Elephant Carpaccio  twice. In this second post I want to share some things I learned through that experience that apply to facilitating remote experiential workshops in general.
+In my [previous blog post](link://slug/two-times-remote-elephant-carpaccio) I shared my experience of facilitating remote Elephant Carpaccio  twice. In this second post I want to share some things I learned through that experience that apply to facilitating remote experiential workshops in general.
 
 ## The facilitation guide
 The Elephant Carpaccio exercise has a detailed [facilitation guide](https://docs.google.com/document/d/1TCuuu-8Mm14oxsOnlk8DqfZAA1cvtYu9WGv67Yj_sSk/pub), created by [Henrik Kniberg](https://twitter.com/henrikkniberg) and [Alistair Cockburn](https://twitter.com/totheralistair) (also inventor of the exercise). This guide really is a blessing and a curse. It's great to have guidance on how to run the exercise. However, there's also only so much such a guide can do. As I was writing the blog post of me running the exercise twice, I looked at the facilitation guide again, and it made so much more sense to me. Instead of it being instructions about something new, I could connect the contents to my own experiences. And that experience does make me wonder how advisable it is to facilitate an exercise you have never done or seen based on a luckily excellent and very detailed faciliation guide.
 
-The level of detail in the facilitation guide also had me walk into the trap of relying on it too much. Instead of taking my own context fully into account, I though I could follow the guide with a few tweaks. As you could read in my previous post, the first time I ran the exercise, it got away from me a little. In this sense I find it interesting that Oliver Spann seems to have had [a similar experience](https://medium.com/@olivercecilspann/elephant-carpaccio-exercise-an-experience-report-207f0cc79c34) facilitating Elephant Carpaccio for the first time:
+The level of detail in the facilitation guide also had me walk into the trap of relying on it too much. Instead of taking my own context fully into account, I though I could follow the guide with a few tweaks. As you could read in my [previous post](link://slug/two-times-remote-elephant-carpaccio), the first time I ran the exercise, it got away from me a little. In this sense I find it interesting that Oliver Spann seems to have had [a similar experience](https://medium.com/@olivercecilspann/elephant-carpaccio-exercise-an-experience-report-207f0cc79c34) facilitating Elephant Carpaccio for the first time:
 
 <!-- TEASER_END -->
 
