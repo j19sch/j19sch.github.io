@@ -3,7 +3,7 @@
 &lt;a href="http://creativecommons.org/licenses/by/4.0/"&gt;
 &lt;img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /&gt;
 &lt;/a&gt;
-</copyright><lastBuildDate>Sat, 15 May 2021 14:42:13 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Getting [name] from "Name: [name]" in Python - an engineering problem</title><link>https://j19sch.github.io/blog/2019/getting-name-from-name-name-in-python-an-engineering-problem/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;Today I was presented with an interesting engineering problem. (Important later: context was the code of an auto-test.) Given a string of the format "Name: [name]", what's the best way to get the [name] in Python?&lt;/p&gt;
+</copyright><lastBuildDate>Sun, 03 Oct 2021 19:34:27 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Getting [name] from "Name: [name]" in Python - an engineering problem</title><link>https://j19sch.github.io/blog/2019/getting-name-from-name-name-in-python-an-engineering-problem/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;Today I was presented with an interesting engineering problem. (Important later: context was the code of an auto-test.) Given a string of the format "Name: [name]", what's the best way to get the [name] in Python?&lt;/p&gt;
 &lt;p&gt;There are several options:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;lstrip()&lt;/code&gt;&lt;/li&gt;
