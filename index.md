@@ -15,10 +15,10 @@ hidetitle: true
 		<p>Somewhere along his journey (some say it was 2013) he started speaking at conferences. Outside of work his thoughts tend to revolve around coffee, fountain pens and bouldering.</p>
 		<p>Other online places you can find me at:</p>
 		<ul>
-			<li><a href="https://twitter.com/j19sch">twitter</a></li>
-			<li><a href="https://github.com/j19sch">GitHub</a></li>
-			<li><a href="https://testingcurve.wordpress.com">WordPress</a></li>
-			<li><a href="https://mstdn.io/@j19sch">mastodon</a></li>
+			<li><a href="https://twitter.com/j19sch" target="_blank">Twitter</a></li>
+			<li><a href="https://github.com/j19sch" target="_blank">GitHub</a></li>
+			<li><a href="https://www.linkedin.com/in/joepschuurkes/" target="_blank">LinkedIn</a></li>
+			<li><a href="https://mstdn.io/@j19sch" target="_blank">Mastodon</a></li>
 		</ul>
 	</div>
 	<div style="max-width:200px">
