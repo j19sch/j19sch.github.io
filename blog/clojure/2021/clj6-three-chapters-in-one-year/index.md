@@ -9,13 +9,13 @@
 .. type: text
 -->
 
-It's been a bit more than a year since I posted my [first blog post](link://slug/clj0-diving-straight-in) about learning Clojure. And it's been five months since my [last blog post](clj5-loop-and-recur-into-and-conj) about it. So far I've made it through the first three chapters[^1] of "[Clojure for the Brave and True](https://www.braveclojure.com/clojure-for-the-brave-and-true/)". Instead of commenting on my learning pace at the start of every post, I've decided that this pace is the pace that works for me at this time, so there's no need to keep revisiting the topic.
+It's been a bit more than a year since I posted my [first blog post](link://slug/clj0-diving-straight-in) about learning Clojure. And it's been five months since my [last blog post](link://slug/clj5-loop-and-recur-into-and-conj) about it. So far I've made it through the first three chapters[^1] of "[Clojure for the Brave and True](https://www.braveclojure.com/clojure-for-the-brave-and-true/)". Instead of commenting on my learning pace at the start of every post, I've decided that this pace is the pace that works for me at this time, so there's no need to keep revisiting the topic.
 
 Something I do want to mention is that one thing that triggered me to do some more Clojure was [this episode](https://itrevolution.com/the-idealcast-episode-10/) of Gene Kim's excellent [Idealcast](https://itrevolution.com/the-idealcast-podcast/) podcast with [Michael Nygard](https://www.michaelnygard.com/), in which they spend some time talking about Clojure.
 
 
 ## Vim macros
-The exercises at the end of chapter 3 got me to try out a lot of things, so I got bored having to type in the commands to copy a line (`yy`), paste it (`p`), replace it by its evaluation (`c!$`), comment it out (`gcc`), and add a "`=>`" to mark it as output. So I learned about Vim macros and recorded that sequence to run when I hit `@c`. At the end of my [(clj 4)](link://slug/clj4-learning-when-maps-closures/) post I mentioned I might have to do this. Guess that moment came sooner than I expected.
+The exercises at the end of chapter 3 got me to try out a lot of things, so I got bored having to type in the commands to copy a line (`yy`), paste it (`p`), replace it by its evaluation (`c!$`), comment it out (`gcc`), and add a "`=>`" to mark it as output. So I learned about Vim macros and recorded that sequence to run when I hit `@c`. At the end of my [(clj 4)](link://slug/clj4-learning-when-maps-closures) post I mentioned I might have to do this. Guess that moment came sooner than I expected.
 
 <!-- TEASER_END -->
 
