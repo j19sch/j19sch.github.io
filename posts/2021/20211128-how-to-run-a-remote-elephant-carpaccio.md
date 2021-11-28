@@ -18,9 +18,9 @@ I should be clear on one thing, though. This post is not a full facilitation gui
 ## The preparation
 Take your time to prep. Taking [as much time as the duration](link://slug/lessons-learned-after-facilitating-elephant-carpaccio#take-your-time-for-the-before-and-after) of the workshop is a good start. (That's assuming you are already familiar with the Elephant Carpaccio exercise, though. So if you're not, do that first.) Get a clear picture in your head what you want to achieve with the workshop. Run through it in your mind in detail. Decide which options you have in which parts of the workshop to make changes as the workshop happens.
 
-Set up all the practical stuff: the invite, the video conferencing link, the virtual whiteboard. How early you do this, depends on how much you expect participants to do before the actual workshop. Since it's a remote workshop my advice is to have them to do as much in advance as possible. I've had good experiences with asking participants to do two things in advance.
+<!-- TEASER_END -->
 
-<!-- TEASER_END -->  
+Set up all the practical stuff: the invite, the video conferencing link, the virtual whiteboard. How early you do this, depends on how much you expect participants to do before the actual workshop. Since it's a remote workshop my advice is to have them to do as much in advance as possible. I've had good experiences with asking participants to do two things in advance.
 
 Firstly, to form into groups, decide on a programming language and set up a dev environment. To be fair, I've been running the workshop with people all working in the same department, so I simply asked them to do this. If people don't know each other that well, you probably should facilitate this more.
 
