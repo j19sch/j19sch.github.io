@@ -7,19 +7,19 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://j19sch.github.io/blog/feed.atom</loc>
-  <lastmod>2021-11-28T15:04:00Z</lastmod>
+  <lastmod>2021-11-28T21:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/blog/rss.xml</loc>
-  <lastmod>2021-11-28T15:04:00Z</lastmod>
+  <lastmod>2021-11-28T21:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/agile.atom</loc>
-  <lastmod>2021-11-28T15:04:00Z</lastmod>
+  <lastmod>2021-11-28T21:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/agile.xml</loc>
-  <lastmod>2021-11-28T15:04:00Z</lastmod>
+  <lastmod>2021-11-28T21:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/automation.atom</loc>
@@ -167,11 +167,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_workshop.atom</loc>
-  <lastmod>2021-11-28T15:04:00Z</lastmod>
+  <lastmod>2021-11-28T21:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_workshop.xml</loc>
-  <lastmod>2021-11-28T15:04:00Z</lastmod>
+  <lastmod>2021-11-28T21:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cicd.atom</loc>
@@ -239,11 +239,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/elephant-carpaccio.atom</loc>
-  <lastmod>2021-11-28T15:04:00Z</lastmod>
+  <lastmod>2021-11-28T21:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/elephant-carpaccio.xml</loc>
-  <lastmod>2021-11-28T15:04:00Z</lastmod>
+  <lastmod>2021-11-28T21:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/epistemology.atom</loc>
@@ -263,11 +263,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/facilitation.atom</loc>
-  <lastmod>2021-11-28T15:04:00Z</lastmod>
+  <lastmod>2021-11-28T21:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/facilitation.xml</loc>
-  <lastmod>2021-11-28T15:04:00Z</lastmod>
+  <lastmod>2021-11-28T21:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/horizon.atom</loc>
@@ -447,11 +447,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/slices.atom</loc>
-  <lastmod>2021-11-28T15:04:00Z</lastmod>
+  <lastmod>2021-11-28T21:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/slices.xml</loc>
-  <lastmod>2021-11-28T15:04:00Z</lastmod>
+  <lastmod>2021-11-28T21:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/small-steps.atom</loc>
@@ -583,14 +583,14 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/workshop.atom</loc>
-  <lastmod>2021-11-28T15:04:00Z</lastmod>
+  <lastmod>2021-11-28T21:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/workshop.xml</loc>
-  <lastmod>2021-11-28T15:04:00Z</lastmod>
+  <lastmod>2021-11-28T21:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/sitemap.xml</loc>
-  <lastmod>2021-11-28T15:04:00Z</lastmod>
+  <lastmod>2021-11-28T21:09:00Z</lastmod>
  </sitemap>
 </sitemapindex>
