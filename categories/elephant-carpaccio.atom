@@ -3,13 +3,34 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about elephant carpaccio)</title>
   <id>https://j19sch.github.io/categories/elephant-carpaccio.atom</id>
-  <updated>2021-11-26T19:09:04Z</updated>
+  <updated>2021-11-28T21:06:25Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://j19sch.github.io/categories/elephant-carpaccio.atom"/>
   <link rel="alternate" type="text/html" href="https://j19sch.github.io/categories/elephant-carpaccio/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>How to run a remote Elephant Carpaccio</title>
+    <id>https://j19sch.github.io/blog/2021/how-to-run-a-remote-elephant-carpaccio/</id>
+    <updated>2021-11-28T13:35:16+01:00</updated>
+    <published>2021-11-28T13:35:16+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2021/how-to-run-a-remote-elephant-carpaccio/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;In a &lt;a href="https://j19sch.github.io/blog/2021/two-times-remote-elephant-carpaccio/"&gt;previous post&lt;/a&gt; I promised to write a blog post on how I would run remote &lt;a href="https://web.archive.org/web/20171114154855/http://alistair.cockburn.us/Elephant+Carpaccio+exercise"&gt;Elephant Carpaccio&lt;/a&gt; if I get the opportunity to run it a third time. This is that post, but not exactly. In the mean time I got the opportunity to run the workshop one more time. That gave me the opportunity to try out some new things and write this blog post on how to run a remote Elephant Carpaccio.&lt;/p&gt;
+&lt;p&gt;I should be clear on one thing, though. This post is not a full facilitation guide. It can't be with the limited experience I have. I do hope and think that reading the official(?) &lt;a href="https://docs.google.com/document/d/1TCuuu-8Mm14oxsOnlk8DqfZAA1cvtYu9WGv67Yj_sSk/pub"&gt;facilitation guide&lt;/a&gt; and this blog post, gives you a solid base to start running the Elephant Carpaccio exercise remotely yourself.&lt;/p&gt;
+&lt;h3&gt;The preparation&lt;/h3&gt;
+&lt;p&gt;Take your time to prep. Taking &lt;a href="https://j19sch.github.io/blog/2021/lessons-learned-after-facilitating-elephant-carpaccio/#take-your-time-for-the-before-and-after"&gt;as much time as the duration&lt;/a&gt; of the workshop is a good start. (That's assuming you are already familiar with the Elephant Carpaccio exercise, though. So if you're not, do that first.) Get a clear picture in your head what you want to achieve with the workshop. Run through it in your mind in detail. Decide which options you have in which parts of the workshop to make changes as the workshop happens.&lt;/p&gt;
+&lt;p&gt;Set up all the practical stuff: the invite, the video conferencing link, the virtual whiteboard. How early you do this, depends on how much you expect participants to do before the actual workshop. Since it's a remote workshop my advice is to have them to do as much in advance as possible. I've had good experiences with asking participants to do two things in advance.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2021/how-to-run-a-remote-elephant-carpaccio/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="agile" label="agile"/>
+    <category term="elephant-carpaccio" label="elephant carpaccio"/>
+    <category term="facilitation" label="facilitation"/>
+    <category term="slices" label="slices"/>
+    <category term="workshop" label="workshop"/>
+  </entry>
   <entry>
     <title>Lessons learned after facilitating remote Elephant Carpaccio</title>
     <id>https://j19sch.github.io/blog/2021/lessons-learned-after-facilitating-elephant-carpaccio/</id>
