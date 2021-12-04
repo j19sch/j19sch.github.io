@@ -23,6 +23,7 @@ hidetitle: false
 - Nobody Ever Gets Credit for Fixing Problems that Never Happened: Creating and Sustaining Process Improvement - Nelson P. Repenning, John D. Sterman (reread, book club)
 - Resilient Management - Lara Hogan (book club)
 - Agile Software Development - Alistair Cockburn
+- Why Do So Many Incompetent Men Become Leaders? (And How to Fix It) - Tomas Chamorro-Premuzic (book club)
 
 
 ### 2020

@@ -11,8 +11,9 @@ hidetitle: true
 
 <div class="d-flex flex-wrap justify-content-between">
 	<div style="max-width:70%" class="mr-5">
-		<p>Joep wandered into testing in 2006. Two years later he discovered context-driven and realized that testing is actually not that bad a fit for a philosopher. In 2015 he joined Mendix, one reason being that he wanted to increase his technical skills. Since then he’s become more and more involved in automation, while also taking on the roles of scrum master. Later he moved on to become a team lead, then a tech lead testing, and currently he is a program manager.</p>
-		<p>Somewhere along his journey (some say it was 2013) he started speaking at conferences. Outside of work his thoughts tend to revolve around coffee, fountain pens and bouldering.</p>
+		<p>Joep wandered into software testing in 2006. Two years later, he discovered context-driven testing and realized that testing is actually a good fit for someone with a degree in philosophy. Later he explored his technical interests further by building test automation and tooling.</p>
+		<p>However, after a decade in testing, Joep's focus shifted towards a bigger question: how can teams and organizations build and deliver good software? To answer that question, he has been exploring topics such as technical leadership, agile coaching, and software methodologies. You can see this development reflected in <a href="/blog/" target="_blank">his blog posts</a>.</p>
+		<p>Joep has given <a href="/my-talks/" target="_blank">talks and workshops</a> at conferences throughout Europe. He's also one of the organizers of the <a href="https://frogsconf.nl/" target="_blank">Friends of Good Software</a> unconference. He likes to drink coffee and write with a fountain pen.</p>
 		<p>Other online places you can find me at:</p>
 		<ul>
 			<li><a href="https://twitter.com/j19sch" target="_blank">Twitter</a></li>
