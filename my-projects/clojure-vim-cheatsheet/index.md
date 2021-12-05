@@ -29,15 +29,22 @@ hidetitle: false
 - `ctrl+n`: find next match
 - `ctrl+p`: find previous match
 
+### macros
+- `@{key}`: run macro, so e.g. `@c` to run the macro mapped to `c`
+
+
 ### NerdTree
 - open/close with `ctrl+n` (.vimrc)
 - `?` while open for keybindings
 
+
 ### GitGutter
 - see diff: `<Leader>hp`
 
+
 ### vim-commentary
 - `gcc` (un)comment line
+
 
 ### vim-sexp
 - `cse(`,`cse)`: surround element in parentheses
