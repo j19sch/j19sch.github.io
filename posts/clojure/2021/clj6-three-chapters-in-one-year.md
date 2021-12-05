@@ -141,7 +141,7 @@ Exercise 3 wants you to take the `inc-maker` function shown earlier in the chapt
 
 ### Revisiting the concept of closures
 
-However, the book shows you the `inc-maker` function to illustrate how a returned function is a "closure". And as you can read in [(clj 4)](link://slug/clj4-learning-when-maps-closures/), I did not understand the explanation, when I first came across it. Since it still bugged me that I don't understand, I decided to give it another try.
+However, the book shows you the `inc-maker` function to illustrate how a returned function is a "closure". And as you can read in [(clj 4)](link://slug/clj4-learning-when-maps-closures), I did not understand the explanation, when I first came across it. Since it still bugged me that I don't understand, I decided to give it another try.
 
 The explanation in the book is as follows:
 > By now you’ve seen that functions can return other functions. The returned functions are *closures*, which means that they can access all the variables that were in scope when the function was created.
