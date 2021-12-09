@@ -5,7 +5,7 @@
 .. tags: workshop, elephant carpaccio, slices, agile, facilitation
 .. category: workshop
 .. link: 
-.. description: Advice on how to run the the Elephant Carpaccio workshop remotely based on my experiences of running it three times.
+.. description:
 .. type: text
 -->
 
