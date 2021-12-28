@@ -24,6 +24,9 @@ hidetitle: false
 - Resilient Management - Lara Hogan (book club)
 - Agile Software Development - Alistair Cockburn
 - Why Do So Many Incompetent Men Become Leaders? (And How to Fix It) - Tomas Chamorro-Premuzic (book club)
+- The Art of Gathering: How We Meet and Why It Matters - Priya Parker
+- The agile comms handbook: How to clearly, creatively work in the open - Giles Turnbull
+- How Design Makes the World - Scott Berkun
 
 
 ### 2020
