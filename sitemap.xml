@@ -51,7 +51,7 @@
  </url>
  <url>
   <loc>https://j19sch.github.io/archive.html</loc>
-  <lastmod>2021-12-05T19:46:00Z</lastmod>
+  <lastmod>2021-12-28T11:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/</loc>
@@ -226,6 +226,10 @@
   <lastmod>2021-12-05T19:46:00Z</lastmod>
  </url>
  <url>
+  <loc>https://j19sch.github.io/blog/2021/site-analytics-comparing-clicky-and-plausible/</loc>
+  <lastmod>2021-12-28T10:09:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://j19sch.github.io/blog/2021/thinking-about-quality-so-what-to-do/</loc>
   <lastmod>2021-12-05T19:46:00Z</lastmod>
  </url>
@@ -291,11 +295,11 @@
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/index-5.html</loc>
-  <lastmod>2021-12-05T19:46:00Z</lastmod>
+  <lastmod>2021-12-28T11:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/</loc>
-  <lastmod>2021-12-05T19:46:00Z</lastmod>
+  <lastmod>2021-12-28T10:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/agile/</loc>
@@ -308,6 +312,10 @@
  <url>
   <loc>https://j19sch.github.io/categories/black-box-puzzle/</loc>
   <lastmod>2021-12-05T19:46:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/blogging/</loc>
+  <lastmod>2021-12-28T10:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/brave-clojure/</loc>
@@ -336,6 +344,10 @@
  <url>
   <loc>https://j19sch.github.io/categories/cat_leadership/</loc>
   <lastmod>2021-12-05T19:46:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/cat_meta/</loc>
+  <lastmod>2021-12-28T10:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/cat_philosophy-of-testing/</loc>
@@ -470,6 +482,10 @@
   <lastmod>2021-12-05T19:46:00Z</lastmod>
  </url>
  <url>
+  <loc>https://j19sch.github.io/categories/meta/</loc>
+  <lastmod>2021-12-28T10:10:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://j19sch.github.io/categories/models/</loc>
   <lastmod>2021-12-05T19:46:00Z</lastmod>
  </url>
@@ -512,6 +528,10 @@
  <url>
   <loc>https://j19sch.github.io/categories/semantics/</loc>
   <lastmod>2021-12-05T19:46:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/site/</loc>
+  <lastmod>2021-12-28T10:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/slices/</loc>
