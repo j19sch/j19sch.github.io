@@ -1252,8 +1252,6 @@ GENERATE_ATOM = True
 # before </head>
 # (translatable)
 EXTRA_HEAD_DATA = """
-<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101252313);</script>
-<script async src="//static.getclicky.com/js"></script>
 <script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script>
 """
 # Google Analytics or whatever else you use. Added to the bottom of <body>
