@@ -51,7 +51,7 @@
  </url>
  <url>
   <loc>https://j19sch.github.io/archive.html</loc>
-  <lastmod>2021-12-28T11:49:00Z</lastmod>
+  <lastmod>2021-12-29T13:04:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/</loc>
@@ -226,8 +226,12 @@
   <lastmod>2021-12-05T19:46:00Z</lastmod>
  </url>
  <url>
-  <loc>https://j19sch.github.io/blog/2021/site-analytics-comparing-clicky-and-plausible/</loc>
-  <lastmod>2021-12-28T10:09:00Z</lastmod>
+  <loc>https://j19sch.github.io/blog/2021/site-analytics-if-you-have-two-clocks/</loc>
+  <lastmod>2021-12-29T12:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2021/site-analytics-if-you-have-two-watches/</loc>
+  <lastmod>2021-12-29T12:44:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/2021/thinking-about-quality-so-what-to-do/</loc>
@@ -279,27 +283,27 @@
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/index-1.html</loc>
-  <lastmod>2021-12-05T19:46:00Z</lastmod>
+  <lastmod>2021-12-29T13:04:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/index-2.html</loc>
-  <lastmod>2021-12-05T19:46:00Z</lastmod>
+  <lastmod>2021-12-29T13:04:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/index-3.html</loc>
-  <lastmod>2021-12-05T19:46:00Z</lastmod>
+  <lastmod>2021-12-29T13:04:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/index-4.html</loc>
-  <lastmod>2021-12-05T19:46:00Z</lastmod>
+  <lastmod>2021-12-29T13:04:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/index-5.html</loc>
-  <lastmod>2021-12-28T11:49:00Z</lastmod>
+  <lastmod>2021-12-29T13:04:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/</loc>
-  <lastmod>2021-12-28T10:10:00Z</lastmod>
+  <lastmod>2021-12-29T12:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/agile/</loc>
@@ -315,7 +319,7 @@
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/blogging/</loc>
-  <lastmod>2021-12-28T10:10:00Z</lastmod>
+  <lastmod>2021-12-29T12:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/brave-clojure/</loc>
@@ -347,7 +351,7 @@
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/cat_meta/</loc>
-  <lastmod>2021-12-28T10:10:00Z</lastmod>
+  <lastmod>2021-12-29T12:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/cat_philosophy-of-testing/</loc>
@@ -482,10 +486,6 @@
   <lastmod>2021-12-05T19:46:00Z</lastmod>
  </url>
  <url>
-  <loc>https://j19sch.github.io/categories/meta/</loc>
-  <lastmod>2021-12-28T10:10:00Z</lastmod>
- </url>
- <url>
   <loc>https://j19sch.github.io/categories/models/</loc>
   <lastmod>2021-12-05T19:46:00Z</lastmod>
  </url>
@@ -531,7 +531,7 @@
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/site/</loc>
-  <lastmod>2021-12-28T10:10:00Z</lastmod>
+  <lastmod>2021-12-29T12:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/slices/</loc>

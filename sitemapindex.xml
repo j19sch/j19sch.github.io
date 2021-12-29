@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://j19sch.github.io/blog/feed.atom</loc>
-  <lastmod>2021-12-28T11:49:00Z</lastmod>
+  <lastmod>2021-12-29T12:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/blog/rss.xml</loc>
-  <lastmod>2021-12-28T11:49:00Z</lastmod>
+  <lastmod>2021-12-29T12:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/agile.atom</loc>
@@ -39,11 +39,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/blogging.atom</loc>
-  <lastmod>2021-12-28T11:36:00Z</lastmod>
+  <lastmod>2021-12-29T12:43:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/blogging.xml</loc>
-  <lastmod>2021-12-28T11:36:00Z</lastmod>
+  <lastmod>2021-12-29T12:44:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/brave-clojure.atom</loc>
@@ -103,11 +103,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_meta.atom</loc>
-  <lastmod>2021-12-28T11:36:00Z</lastmod>
+  <lastmod>2021-12-29T12:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_meta.xml</loc>
-  <lastmod>2021-12-28T11:36:00Z</lastmod>
+  <lastmod>2021-12-29T12:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_philosophy-of-testing.atom</loc>
@@ -374,14 +374,6 @@
   <lastmod>2021-12-05T19:46:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://j19sch.github.io/categories/meta.atom</loc>
-  <lastmod>2021-12-28T10:10:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://j19sch.github.io/categories/meta.xml</loc>
-  <lastmod>2021-12-28T10:10:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>https://j19sch.github.io/categories/models.atom</loc>
   <lastmod>2021-12-05T19:46:00Z</lastmod>
  </sitemap>
@@ -471,11 +463,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/site.atom</loc>
-  <lastmod>2021-12-28T11:36:00Z</lastmod>
+  <lastmod>2021-12-29T12:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/site.xml</loc>
-  <lastmod>2021-12-28T11:36:00Z</lastmod>
+  <lastmod>2021-12-29T12:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/slices.atom</loc>
@@ -623,6 +615,6 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/sitemap.xml</loc>
-  <lastmod>2021-12-28T11:49:00Z</lastmod>
+  <lastmod>2021-12-29T13:04:00Z</lastmod>
  </sitemap>
 </sitemapindex>

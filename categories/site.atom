@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="https://j19sch.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>Joep Schuurkes (Posts about site)</title>
+  <id>https://j19sch.github.io/categories/site.atom</id>
+  <updated>2021-12-29T19:34:41Z</updated>
+  <author>
+    <name>Joep Schuurkes</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://j19sch.github.io/categories/site.atom"/>
+  <link rel="alternate" type="text/html" href="https://j19sch.github.io/categories/site/"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Site analytics: if you have two watches...</title>
+    <id>https://j19sch.github.io/blog/2021/site-analytics-if-you-have-two-watches/</id>
+    <updated>2021-12-28T11:08:16+01:00</updated>
+    <published>2021-12-28T11:08:16+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2021/site-analytics-if-you-have-two-watches/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;When I moved my blog to this site, I added &lt;a href="https://clicky.com/"&gt;Clicky&lt;/a&gt; as a privacy-friendly way to collect analytics. About a month ago I added &lt;a href="https://plausible.io/"&gt;Plausible&lt;/a&gt; analytics, because I wanted to compare the two.&lt;/p&gt;
+&lt;p&gt;My reasons to consider an alternative to Clicky, and Plausible in particular, were varied. Plausible looks nicer. Clicky's free plan only lets you track one site, I want analytics for this site and for my &lt;a href="https://context-of-agile.org/"&gt;Context of Agile&lt;/a&gt; site. I'd like to have more than 30 days of history for my data. Those last two wishes require a paid plan (regardless if Clicky or Plausible) and Plausible is cheaper than Clicky.&lt;/p&gt;
+&lt;p&gt;So I got a 30-day trial with Plausible, added its script to my site, while Clicky also kept collecting data. With the trial now over, it's time to take a look at the data they both collected over the period from 28 November to 27 December 2021. I've added some thoughts after each table with data and at the end of this post I've added some more general thoughts.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2021/site-analytics-if-you-have-two-watches/"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="site" label="site"/>
+  </entry>
+</feed>

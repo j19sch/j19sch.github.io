@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Site analytics: if you have two watches... | Joep Schuurkes</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../feed.atom">
+<link rel="canonical" href="https://j19sch.github.io/blog/2021/site-analytics-if-you-have-two-watches/">
+<link rel="icon" href="../../../assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="../../../assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../assets/favicons/favicon-96x96.png" sizes="96x96">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../../clojure/2021/clj7-programming-to-abstractions-with-sequence-functions/" title="(clj 7) Programming to abstractions with sequence functions" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="Site analytics: if you have two watches...">
+<meta property="og:url" content="https://j19sch.github.io/blog/2021/site-analytics-if-you-have-two-watches/">
+<meta property="og:description" content="When I moved my blog to this site, I added Clicky as a privacy-friendly way to collect analytics. About a month ago I added Plausible analytics, because I wanted to compare the two.
+My reasons to cons">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2021-12-28T11:08:16+01:00">
+<meta property="article:tag" content="site">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-projects/" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-talks/" class="nav-link">Talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../../my-lists/reading-list/" class="dropdown-item">Reading list</a>
+                    <a href="../../../my-lists/recommended-reading/" class="dropdown-item">Recommended reading</a>
+                    <a href="../../../my-lists/favorite-podcasts/" class="dropdown-item">Favorite podcasts</a>
+                    <a href="../../../my-lists/fountain-pens/" class="dropdown-item">Fountain pens</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../" class="dropdown-item">My blog</a>
+                    <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../rss.xml" class="dropdown-item">RSS feed</a>
+                    <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Site analytics: if you have two watches...</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2021-12-28T11:08:16+01:00" itemprop="datePublished" title="28 December 2021">28 December 2021</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>When I moved my blog to this site, I added <a href="https://clicky.com/">Clicky</a> as a privacy-friendly way to collect analytics. About a month ago I added <a href="https://plausible.io/">Plausible</a> analytics, because I wanted to compare the two.</p>
+<p>My reasons to consider an alternative to Clicky, and Plausible in particular, were varied. Plausible looks nicer. Clicky's free plan only lets you track one site, I want analytics for this site and for my <a href="https://context-of-agile.org/">Context of Agile</a> site. I'd like to have more than 30 days of history for my data. Those last two wishes require a paid plan (regardless if Clicky or Plausible) and Plausible is cheaper than Clicky.</p>
+<p>So I got a 30-day trial with Plausible, added its script to my site, while Clicky also kept collecting data. With the trial now over, it's time to take a look at the data they both collected over the period from 28 November to 27 December 2021. I've added some thoughts after each table with data and at the end of this post I've added some more general thoughts.</p>
+<!-- TEASER_END -->
+
+<h3>Visitor metrics</h3>
+<p>Let's start with some basic site metrics.</p>
+<table class="table table-bordered table-sm" style="max-width:500px">
+<thead class="thead-light"><tr>
+<th scope="col">metric</th>
+      <th scope="col" class="text-right">Clicky</th>
+      <th scope="col" class="text-right">Plausible</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td>unique visitors</td>
+        <td class="text-right">273</td>
+        <td class="text-right">296</td>
+    </tr>
+<tr>
+<td>visit duration</td>
+        <td class="text-right">51s</td>
+        <td class="text-right">81s</td>
+    </tr>
+<tr>
+<td>bounce rate</td>
+        <td class="text-right">79%</td>
+        <td class="text-right">75%</td>
+    </tr>
+</tbody>
+</table>
+<p>Starting with the first metric, unique visitors, there's already a significant difference between Clicky and Plausible. The average visit duration is also sobering: few if any of my blog posts can be read in 51 or 81 seconds. My first reaction to the bounce rate was that it was rather high, but then I realized that for a site that's mostly a blog, it makes sense. Most visitors follow a link to a specific blog post, read it (or skim it, based on the visit duration), and move on.</p>
+<p>There's one stat I didn't include in the table, because Clicky and Plausible don't measure it in the same way. Clicky measured 434 actions, of which 90+% should be page views. Plausible counted 525 page views. So also quite a gap there even if we consider all Clicky actions as page views.</p>
+<h3>Sources and search</h3>
+<p>Next set of data: where do visitors come from? Are they referred via another site? Or did they find the site via a search engine?</p>
+<table class="table table-bordered table-sm" style="max-width:500px">
+<thead class="thead-light"><tr>
+<th scope="col">sources</th>
+      <th scope="col" class="text-right">Clicky</th>
+      <th scope="col" class="text-right">Plausible</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td>direct</td>
+        <td class="text-right">154</td>
+        <td class="text-right">175</td>
+    </tr>
+<tr>
+<td>Twitter</td>
+        <td class="text-right">45</td>
+        <td class="text-right">40</td>
+    </tr>
+<tr>
+<td>LinkedIn</td>
+        <td class="text-right">25</td>
+        <td class="text-right">23</td>
+    </tr>
+<tr>
+<td>Ministry of Testing</td>
+        <td class="text-right">5</td>
+        <td class="text-right">6</td>
+    </tr>
+<tr>
+<td>testingcurve.wordpress.com</td>
+        <td class="text-right">3</td>
+        <td class="text-right">3</td>
+    </tr>
+</tbody>
+</table>
+<p><em>Note: there were some more small sources. I left those out, because I don't think they add to this analysis.</em></p>
+<p>The first thing that strikes me is the large number of direct visits. Since most of my page views are for specific blog posts, that either means people are typing or copy-pasting the full url to a blog post into their browser, or that people are coming from a source that can't be tracked. My bet is on the latter.</p>
+<p>The other thing that's interesting about the data is the difference between Clicky and Plausible. Plausible has more direct visitors; Clicky has more referrals. They don't cancel each other out, however. Both Clicky and Plausible reported 84 referred visitors in total, so the difference is in the counts for the individual source sites.</p>
+<p>Finally, testingcurve.wordpress.com is my old Wordpress blog. Apparently some people still find that site first, so perhaps I should do some search engine optimization for this site.</p>
+<p>On to search engines:</p>
+<table class="table table-bordered table-sm" style="max-width:500px">
+<thead class="thead-light"><tr>
+<th scope="col">search</th>
+      <th scope="col" class="text-right">Clicky</th>
+      <th scope="col" class="text-right">Plausible</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td>google</td>
+        <td class="text-right">28</td>
+        <td class="text-right">24</td>
+    </tr>
+<tr>
+<td>bing</td>
+        <td class="text-right">8</td>
+        <td class="text-right">7</td>
+    </tr>
+<tr>
+<td>duckduckgo</td>
+        <td class="text-right">2</td>
+        <td class="text-right">9</td>
+    </tr>
+<tr>
+<td>yahoo</td>
+        <td class="text-right">1</td>
+        <td class="text-right">1</td>
+    </tr>
+<tr>
+<td>ecosia</td>
+        <td class="text-right">6</td>
+        <td class="text-right">1</td>
+    </tr>
+</tbody>
+</table>
+<p>The theme is probably becoming clear by now: the numbers are different, but there is no clear pattern to the differences.</p>
+<h3>Countries</h3>
+<p>This theme continues with the countries visitors are from. Plausible has significantly more visitors from the Unites States and the Netherlands, but significantly fewer from China and Canada than Clicky.</p>
+<table class="table table-bordered table-sm" style="max-width:500px">
+<thead class="thead-light"><tr>
+<th scope="col">country</th>
+      <th scope="col" class="text-right">Clicky</th>
+      <th scope="col" class="text-right">Plausible</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td>United States</td>
+        <td class="text-right">59</td>
+        <td class="text-right">89</td>
+    </tr>
+<tr>
+<td>Netherlands</td>
+        <td class="text-right">41</td>
+        <td class="text-right">52</td>
+    </tr>
+<tr>
+<td>China</td>
+        <td class="text-right">35</td>
+        <td class="text-right">3</td>
+    </tr>
+<tr>
+<td>Canada</td>
+        <td class="text-right">11</td>
+        <td class="text-right">4</td>
+    </tr>
+<tr>
+<td>Switzerland</td>
+        <td class="text-right">11</td>
+        <td class="text-right">11</td>
+    </tr>
+<tr>
+<td>United Kingdom</td>
+        <td class="text-right">11</td>
+        <td class="text-right">13</td>
+    </tr>
+<tr>
+<td>Germany</td>
+        <td class="text-right">8</td>
+        <td class="text-right">11</td>
+    </tr>
+</tbody>
+</table>
+<p><em>Note: I only included countries for which either Clicky or Plausible counted 10 or more visitors.</em></p>
+<p>At this point I started to wonder if the total number of countries matches the total number of visitors. Plausible counted 296 country entries, which matches the number of unique visitors it reports. Clicky counted 293 country entries, which matches the number of visitors it counted, but not the number of unique visitors (273). So it looks like I should not be comparing the numbers the way I am in the table above: Plausible records the country for each unique visitor; Clicky for each visitor.</p>
+<h3>Pages</h3>
+<p>The data on which pages were visited, is no different from the previous tables. Plausible and Clicky never seem to agree.</p>
+<table class="table table-bordered table-sm" style="max-width:720px">
+<thead class="thead-light"><tr>
+<th scope="col">page</th>
+      <th scope="col" class="text-right">Clicky</th>
+      <th scope="col" class="text-right">Plausible</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td><a href="../../clojure/2021/clj7-programming-to-abstractions-with-sequence-functions/">(clj 7) Programming to abstractions with sequence functions</a></td>
+        <td class="text-right">92</td>
+        <td class="text-right">111</td>
+    </tr>
+<tr>
+<td>
+<a href="../how-to-run-a-remote-elephant-carpaccio/">How to run a remote Elephant Carpaccio</a><a></a>
+</td>
+        <td class="text-right">53</td>
+        <td class="text-right">56</td>
+    </tr>
+<tr>
+<td><a href="../../../">/</a></td>
+        <td class="text-right">48</td>
+        <td class="text-right">43</td>
+    </tr>
+<tr>
+<td><a href="../../">/blog</a></td>
+        <td class="text-right">37</td>
+        <td class="text-right">32</td>
+    </tr>
+<tr>
+<td><a href="../../2019/test-strategy-primer/">Test strategy primer</a></td>
+        <td class="text-right">24</td>
+        <td class="text-right">22</td>
+    </tr>
+<tr>
+<td><a href="../two-times-remote-elephant-carpaccio/">Two times remote Elephant Carpaccio</a></td>
+        <td class="text-right">20</td>
+        <td class="text-right">21</td>
+    </tr>
+<tr>
+<td><a href="../lessons-learned-after-facilitating-elephant-carpaccio/">Lessons learned after facilitating remote Elephant Carpaccio</a></td>
+        <td class="text-right">14</td>
+        <td class="text-right">12</td>
+    </tr>
+<tr>
+<td><a href="../../../my-projects/learning-clojure/">Learning Clojure</a></td>
+        <td class="text-right">9</td>
+        <td class="text-right">10</td>
+    </tr>
+<tr>
+<td><a href="../../clojure/2020/clj5-loop-and-recur-into-and-conj/">(clj 5) Loop and recur, into and conj</a></td>
+        <td class="text-right">7</td>
+        <td class="text-right">10</td>
+    </tr>
+</tbody>
+</table>
+<p><em>Note: I only included pages for which either Clicky or Plausible counted 10 or more visitors.</em></p>
+<p>These numbers mostly makes sense to me. The first two are posts I published in the reporting period. The one about remote Elephant Carpaccio links to two post from October about the same topic, so they also show up in the data. My home page and blog page are in 3rd and 4th place. The "Test strategy primer" is from 2019, but I shared it in at least one Slack workspace. Which leaves the bottom two entries, both related to Clojure. I'm not sure why they got those views. I did publish a Clojure blog post in the reporting period, but it links to neither of those two pages.</p>
+<h3>My thoughts</h3>
+<p>After all of this I feel like I have more questions than before I started looking into this.</p>
+<p>Are Clicky and Plausible reporting the same things? I know they're not when Clicky labels something as "actions" and Plausible as "page views", but when they are labeled the same? For countries, one counted unique visitors, while the other counted visitors. Perhaps something similar is going on with other numbers that are labeled the same?</p>
+<p>One step deeper is the question: are they measuring the same things? Probably not, considering the differences in their numbers. And there have to be differences in implementation between Clicky and Plausible, since they were built by different people. Thirdly, both Clicky and Plausible depend on visitors allowing their script to be executed. Since that is some JavaScript served from Clicky's or Plausible's domain<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> instead of the visited site, some browsers and plugins will block it, depending on their settings. So some visitors will have both Clicky and Plausible blocked, some just one of them, some neither.</p>
+<p>Which brings us to the law<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> I referred to in the title:</p>
+<blockquote>
+<p>"A man with a watch knows what time it is. A man with two watches is never sure."</p>
+</blockquote>
+<p>Someone with two watches can't escape the question: is one of my watches correct, or if not, at least more correct than the other one? And without a third watch that's known to be correct, there's no way to tell. Of course, someone with a single watch has no guarantee that their watch tells time correctly either, but at least they don't have a second watch constantly reminding them of that fact. The same with site analytics.</p>
+<p>I still had to make a decision, though, and decide whether to keep either Clicky or Plausible. I went with Plausible for the reasons I stated at the start of this post. With the next bill date in 12 months, that gives me ample time to reflect on some other questions. How important are site analytics to me? How useful? Is it worth the money I'm paying? And the biggest question: could it be that I sometimes care a bit too much about my site's numbers?</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>There are ways around this. One is to proxy the script so it seems to originate from the same domain. Another one is to track analytics server-side, which has other challenges, e.g. excluding crawlers and bots. (They tend to not execute any JavaScript, so won't be counted via a client-side analytics script.) <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>This law is known as <a href="https://en.wikipedia.org/wiki/Segal%27s_law">Segal's law</a>. That's a misattribution, though. Apparently it was coined by the San Diego Union. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/site/" rel="tag">site</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../clojure/2021/clj7-programming-to-abstractions-with-sequence-functions/" rel="prev" title="(clj 7) Programming to abstractions with sequence functions">Previous post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2021     
+<a href="http://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a>
+    <a href="mailto:j19sch@hey.com">Joep Schuurkes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>
