@@ -8,6 +8,9 @@ hidetitle: false
 
 # Reading list
 
+### 2022
+- Sooner Safer Happier: Antipatterns and Patterns for Business Agility - Jonathan Smart with Zsolt Berend, Myles Ogilvie and Simon Rohre (book club)
+
 ### 2021
 - Practical Ways to Lead an Innovative Organization: Modern Management Made Easy, Book 3 - Johanna Rothman
 - Roundtable on Project Management: A Shape Forum Dialogue  - James Bullock, Marie Benesh, Jerry Weinberg
