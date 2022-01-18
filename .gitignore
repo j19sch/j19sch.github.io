@@ -3,6 +3,7 @@ output/
 cache/
 __pycache__
 .doit.db
+.doit.db.*
 
 # python
 venv/
