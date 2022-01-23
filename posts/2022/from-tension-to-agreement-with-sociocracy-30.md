@@ -11,7 +11,7 @@
 
 Earlier this month I started my new job at a small consultancy. During my onboarding I noticed something that I thought could be improved. So I figured I should come up with a proposal to address that. It also made me wonder how me proposing this improvement would go over with my new colleagues. And then I remembered I learned about a good way of doing this in a workshop[^6] at the 2016 [XP Days Benelux](https://xpdaysbenelux.nl/) conference. That workshop was about [Sociocracy 3.0](https://sociocracy30.org/) (S3 for short). So I ended up proposing two things in the meeting: my improvement, but also a way to come to an agreement about my proposal.
 
-The reactions to my proposal about how to come to agreements, were mostly positive. One person asked a very good question though: *"Is this solving a problem we are having? Or is this a solution looking for a problem? What would be the reasons for adopting this?"* In response I expanded on my reasons for wanting this and we decided to give it a try. My dual proposal hepled here: let's try the S3 patterns I shared on the improvement I proposed.
+The reactions to my proposal about how to come to agreements, were mostly positive. One person asked a very good question though: *"Is this solving a problem we are having? Or is this a solution looking for a problem? What would be the reasons for adopting this?"* In response I expanded on my reasons for wanting this and we decided to give it a try. My dual proposal helped here: let's try the S3 patterns I shared on the improvement I proposed.
 
 Looking back, I'm happy with my reply to those questions and I also feel I can do better. Which makes this the perfect opportunity for my first blog post of 2022. I'll start with a brief introduction on Sociocracy 3.0, then I'll share the proposal I made based on S3, and finally I'll talk about why I like this form of decision-making.
 
@@ -26,7 +26,7 @@ Looking back, I'm happy with my reply to those questions and I also feel I can d
 
 As the "3.0" suggests, there is some [history to Sociocracy](https://patterns.sociocracy30.org/history.html), as illustrated by this diagram from the S3 site:
 
-![history of Socioracy up to Sociocracy 3.0](/images/2022/from-tension-to-agreement/s3-history.png)
+![history of Sociocracy up to Sociocracy 3.0](/images/2022/from-tension-to-agreement/s3-history.png)
 
 The first version of Sociocracy 3.0 was published in 2015 by [James Priest](https://twitter.com/jamespriest_s3) and [Bernhard Bockelbrink](https://twitter.com/b_bockelbrink) -  with [Liliana David](https://twitter.com/lilidavidis) joining the team soon after. On the [history page](https://patterns.sociocracy30.org/history.html) they describe their intent was co-creating
 
@@ -58,7 +58,7 @@ Those first three words, "a personal experience", are important. Sometimes a ten
 ## Driver
 A driver is
 
-> A person’s or a group's motive for responding to a specific situation.[^3]
+> A person's or a group's motive for responding to a specific situation.[^3]
 
 A simple way to [describe a driver](https://patterns.sociocracy30.org/describe-organizational-drivers.html) is to split it up into two parts:
 
@@ -89,9 +89,9 @@ Proposals become [agreements](https://patterns.sociocracy30.org/agreement.html) 
 
 The key part of this pattern is asking everyone if they consent to the proposal, or if they have concerns or objections. This can be done through [hand signals](https://www.youtube.com/watch?v=NW0ZkEH81Vg) so everyone can express their position at the same time.
 
-The difference between a concern and an [objection](https://patterns.sociocracy30.org/objection.html) is that an objection is an argument that the proposal is not good enough yet or safe enough yet. It's an argument,so there is reasoning or evidence to back it up. A concern is similar to an objection, but it can't be backed up in that way. For that reason, objects are blockers to coming to an agreement; concerns are not. That does not mean however, that concerns are ignored. Sometimes concerns can be alleviated by making a change to the proposal. If that does not work out, they can be recorded in the agreement near the evaluation criteria.
+The difference between a concern and an [objection](https://patterns.sociocracy30.org/objection.html) is that an objection is an argument that the proposal is not good enough yet or safe enough yet. It's an argument, so there is reasoning or evidence to back it up. A concern is similar to an objection, but it can't be backed up in that way. For that reason, objects are blockers to coming to an agreement; concerns are not. That does not mean however, that concerns are ignored. Sometimes concerns can be alleviated by making a change to the proposal. If that does not work out, they can be recorded in the agreement near the evaluation criteria.
 
-Once all objections have been resolved, you have succesfully created an agreement and it's time to celebrate!
+Once all objections have been resolved, you have successfully created an agreement and it's time to celebrate!
 
 
 ## We have an agreement, now what?
@@ -100,7 +100,7 @@ Of course, it doesn't end with creating agreements. Agreements should be [record
 As to people following agreements, S3 strongly believes in [self-accountability](https://patterns.sociocracy30.org/principle-accountability.html):
 > Overall accountability for an agreement lies with the people that make them.[^5]
 
-Finally, there's a S3-pattern explicity about [breaking agreements](https://patterns.sociocracy30.org/breaking-agreements.html). Sometimes the benefits of breaking an agreement outweigh the cost of waiting to change the agreement.
+Finally, there's a S3-pattern explicitly about [breaking agreements](https://patterns.sociocracy30.org/breaking-agreements.html). Sometimes the benefits of breaking an agreement outweigh the cost of waiting to change the agreement.
 
 
 # What I like about these patterns
@@ -115,7 +115,7 @@ I think this allows an organization to keep a good handle on its drivers and to 
 
 
 ## Agreements are a result of co-creation
-Often people respond to proposals from an adversial stance. The author of the proposal has to convince the others of its merits and defend the proposal against their criticisms. The overall attitude is more a *"no, but..."* than a *"yes, and"*. As a result, the one with the proposal might spend a lot of time preparing the proposal, trying to anticipate as many of the criticisms as possible.
+Often people respond to proposals from an adversarial stance. The author of the proposal has to convince the others of its merits and defend the proposal against their criticisms. The overall attitude is more a *"no, but..."* than a *"yes, and"*. As a result, the one with the proposal might spend a lot of time preparing the proposal, trying to anticipate as many of the criticisms as possible.
 
 That's very different from S3's co-creation of agreements. As mentioned above: raising an objection is a gift, it's contributing a means to improve the proposal.
 
@@ -131,11 +131,11 @@ With *"postive space"* I mean a space that has positive liberty. As I [tweeted](
 
 > "Creating space for others can take very different forms. One option is to create a space that is no more than a void others are allowed to fill. Another option is to create a space that actually welcomes and supports others to contribute."
 
-I think Sociocracy 3.0 does an excellent job here. Instead of the negative space of *"If you'd like some things to be different, just bring in a proposal."*, it cretaes a positive space in which people can collaborate in moving from a tension to an agreement.
+I think Sociocracy 3.0 does an excellent job here. Instead of the negative space of *"If you'd like some things to be different, just bring in a proposal."*, it creates a positive space in which people can collaborate in moving from a tension to an agreement.
 
 ---
 
-[^6]: That workshop was facilitated (co-faciliated?) by Jef Cumps, who wrote *["Sociocracy 3.0 - The Novel"](https://www.lannoo.be/nl/sociocracy-30-novel)*. It's also available [in Dutch](https://www.lannoo.be/nl/sociocratie-30).
+[^6]: That workshop was facilitated (co-facilitated?) by Jef Cumps, who wrote *["Sociocracy 3.0 - The Novel"](https://www.lannoo.be/nl/sociocracy-30-novel)*. It's also available [in Dutch](https://www.lannoo.be/nl/sociocratie-30).
 
 [^1]: [https://patterns.sociocracy30.org/patterns.html](https://patterns.sociocracy30.org/patterns.html)
 
