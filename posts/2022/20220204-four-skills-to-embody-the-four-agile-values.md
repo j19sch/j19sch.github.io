@@ -65,7 +65,7 @@ The first chapter of [Jocko Willink](https://en.wikipedia.org/wiki/Jocko_Willink
 > "The question is, pragmatically, how do you do it?  
 > Step one is to be aware. Pay attention to yourself and what is happening around you. Make it a goal to avoid being fully absorbed in the minute details of any situation. Don't let it happen. If you are staying aware, checking yourself, you will be likelier to avoid getting tunnel vision." (p 18)
 
-In "[Extreme Ownership](https://us.macmillan.com/books/9781250184726/extremeownership)" (by Jocko Willink and [Leif Babin](https://twitter.com/LeifBabin)) this takes the form of the instruction: *"Relax, look around, make a call."* (p 161)
+In "[Extreme Ownership](https://app.thestorygraph.com/books/f730d0d6-e182-4560-b91d-2372ceaf2553)" (by Jocko Willink and [Leif Babin](https://twitter.com/LeifBabin)) this takes the form of the instruction: *"Relax, look around, make a call."* (p 161)
 
 Detaching seems to me a crucial skill to be able to apply the value of **working software over comprehensive documentation**. Taking a step back, seeing the bigger picture, and making the call where to focus efforts next[^9].
 
@@ -97,7 +97,7 @@ I think we need a similar skill in software development for **responding to chan
 
 
 [^1]: Although those are the two most well-known Agile methodologies, they are not the only ones. I looked up some of the others, but none seem to list a set of values. DSDM has eight principles. The Crystal family has three properties. Adaptive Software Development does not seem to have any overarching principles or values. It might actually be an interesting research project to look into the distinction between values, principles, and properties across these methodologies.  
-(While looking all of this up, I found an [this article by Dirk Riehle]((https://riehle.org/computer-science/research/2000/xp-2000.pdf)): *"A Comparison of the Value Systems of Adaptive Software Development and Extreme Programming: How Methodologies May Learn from Each Other"*)
+(While looking all of this up, I found an [this article by Dirk Riehle](https://riehle.org/computer-science/research/2000/xp-2000.pdf): *"A Comparison of the Value Systems of Adaptive Software Development and Extreme Programming: How Methodologies May Learn from Each Other"*)
 
 [^11]: Although Scrum and XP predate the Agile Manifesto, the Scrum Guide only [introduced the Scrum Values](https://scrumguides.org/revisions.html) in Version 5, published July 2016. The first edition (1999) of "Extreme Programming Explained" recognized four values: communication, simplicity, feedback, and courage. The second edition (2004) added the value of respect.
 
