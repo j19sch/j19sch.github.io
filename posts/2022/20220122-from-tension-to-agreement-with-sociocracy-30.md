@@ -32,7 +32,7 @@ The first version of Sociocracy 3.0 was published in 2015 by [James Priest](http
 
 > a body of Creative Commons licensed learning resources, synthesizing ideas from Sociocracy, Agile and Lean.
 
-Sociocracy 3.0 consists of [7 principles](https://patterns.sociocracy30.org/principles.html) and [74 patterns](https://patterns.sociocracy30.org/pattern-index.html) organized into [10 categories](https://patterns.sociocracy30.org/patterns.html). That's a lot, so luckily they also created a [map of S3](https://patterns.sociocracy30.org/map.html) that gives an overview of the principles and patterns.
+Sociocracy 3.0 consists (at the time of this writing) of [7 principles](https://patterns.sociocracy30.org/principles.html) and [74 patterns](https://patterns.sociocracy30.org/pattern-index.html) organized into [10 categories](https://patterns.sociocracy30.org/patterns.html). That's a lot, so luckily they also created a [map of S3](https://patterns.sociocracy30.org/map.html) that gives an overview of the principles and patterns.
 
 ## Patterns in S3
 
@@ -46,7 +46,7 @@ That's still a lot to digest, so I summarized that for myself as: patterns are *
 
 # From tension to agreement
 
-The proposal I presented to my colleagues was (rather recursively) about how to come to an agreement about a proposal. Most of the relevant patterns to this are from the [Co-Creation and Evolution](https://patterns.sociocracy30.org/co-creation-and-evolution.html) category. They describe how to get from a *tension* to a *driver*, then to a *proposal* to finally arrive at an *agreement*.
+The proposal I presented to my colleagues was (rather recursively) about how to come to an agreement about a proposal. Most of the relevant patterns to this are from the ~~Co-Creation and Evolution~~ [Sense-Making and Decision-Making](https://patterns.sociocracy30.org/sense-making-and-decision-making.html)[^7] category. They describe how to get from a *tension* to a *driver*, then to a *proposal* to finally arrive at an *agreement*.
 
 ## Tension
 A tension is
@@ -138,6 +138,8 @@ I think Sociocracy 3.0 does an excellent job here. Instead of the negative space
 [^6]: That workshop was facilitated (co-facilitated?) by Jef Cumps, who wrote *["Sociocracy 3.0 - The Novel"](https://www.lannoo.be/nl/sociocracy-30-novel)*. It's also available [in Dutch](https://www.lannoo.be/nl/sociocratie-30).
 
 [^1]: [https://patterns.sociocracy30.org/patterns.html](https://patterns.sociocracy30.org/patterns.html)
+
+[^7]: The name of the category was [changed on 27 January 2022](https://patterns.sociocracy30.org/changelog.html).
 
 [^2]: [https://patterns.sociocracy30.org/glossary.html](https://patterns.sociocracy30.org/glossary.html)
 
