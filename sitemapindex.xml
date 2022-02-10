@@ -7,27 +7,19 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://j19sch.github.io/blog/feed.atom</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-02-06T16:35:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/blog/rss.xml</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://j19sch.github.io/categories/agile-manifesto.atom</loc>
-  <lastmod>2022-02-06T16:03:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://j19sch.github.io/categories/agile-manifesto.xml</loc>
-  <lastmod>2022-02-06T16:03:00Z</lastmod>
+  <lastmod>2022-02-06T16:35:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/agile.atom</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-02-06T16:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/agile.xml</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-02-06T16:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/automation.atom</loc>
@@ -55,11 +47,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_agile.atom</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-02-06T16:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_agile.xml</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-02-06T16:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_cicd.atom</loc>
@@ -143,11 +135,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_sociocracy-30.atom</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-02-06T16:35:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_sociocracy-30.xml</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-02-06T16:35:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_test-automation.atom</loc>
@@ -335,11 +327,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/leadership.atom</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-02-06T16:35:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/leadership.xml</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-02-06T16:35:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/lean.atom</loc>
@@ -455,11 +447,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/self-organization.atom</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-02-06T16:35:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/self-organization.xml</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-02-06T16:35:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/selling.atom</loc>
@@ -487,11 +479,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/skills.atom</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-02-06T16:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/skills.xml</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-02-06T16:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/slices.atom</loc>
@@ -511,11 +503,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/sociocracy-30.atom</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-02-06T16:35:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/sociocracy-30.xml</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-02-06T16:35:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/software-testing.atom</loc>
@@ -607,11 +599,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/values.atom</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-02-06T16:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/values.xml</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-02-06T16:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/vba.atom</loc>
@@ -655,6 +647,6 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/sitemap.xml</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-02-10T16:40:00Z</lastmod>
  </sitemap>
 </sitemapindex>
