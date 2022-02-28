@@ -11,6 +11,8 @@ hidetitle: false
 ### 2022
 - Sooner Safer Happier: Antipatterns and Patterns for Business Agility - Jonathan Smart with Zsolt Berend, Myles Ogilvie and Simon Rohre
 - The Pathless Path: Imagining a New Story For Work & Life - Paul Millerd
+- Sociocratie 3.0: De businessnovelle die het beste uit mens en organisatie haalt - Jef Cumps
+- The Utopia Of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy -  David Graeber
 
 ### 2021
 - Practical Ways to Lead an Innovative Organization: Modern Management Made Easy, Book 3 - Johanna Rothman
