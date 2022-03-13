@@ -379,6 +379,14 @@ NEW_POST_DATE_PATH_FORMAT = '%Y'
 # The URL may be relative to the site root.
 # LOGO_URL = ''
 
+# When linking posts to social media, Nikola provides Open Graph metadata
+# which is used to show a nice preview. This includes an image preview
+# taken from the post's previewimage metadata field.
+# This option lets you use an image to be used if the post doesn't have it.
+# The default is None, valid values are URLs or output paths like
+# "/images/foo.jpg"
+DEFAULT_PREVIEW_IMAGE = "/images/default-preview.jpeg"
+
 # If you want to hide the title of your website (for example, if your logo
 # already contains the text), set this to False.
 # SHOW_BLOG_TITLE = True
