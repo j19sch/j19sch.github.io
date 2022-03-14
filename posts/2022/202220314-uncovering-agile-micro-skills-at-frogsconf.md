@@ -1,7 +1,7 @@
 <!--
 .. title: Uncovering Agile micro-skills at FroGS conf
 .. slug: uncovering-agile-micro-skills-at-frogsconf
-.. date: 2022-03-13 11:26:09 UTC+01:00
+.. date: 2022-03-14 16:56:09 UTC+01:00
 .. tags: agile, skills, values, conference
 .. category: agile
 .. link: 
@@ -9,7 +9,7 @@
 .. type: text
 -->
 
-At the second [FroGS conf Open Space](https://frogsconf.nl/) on 12 March 2022 I facilitated a session based on my blog post [*"Four skills to embody the four Agile values"*](link://slug/four-skills-to-embody-the-four-agile-values). My goal with the session was to uncover more Agile (micro-)skills. In this post I'll share what we did during the session and I'll close off with some thoughts on the biggest challenge of this exercise: too many skills. Before I start however: a big thank you to everyone who participated in the session!
+At the second [FroGS conf Open Space](https://frogsconf.nl/) on 12 March 2022 I facilitated a session based on my blog post [*"Four skills to embody the four Agile values"*](link://slug/four-skills-to-embody-the-four-agile-values). My goal with the session was to uncover more Agile (micro-)skills. In this post I'll share what we did during the session and I'll close off with some thoughts on the biggest challenge of this exercise: too many skills. Before I start however, a big thank you to everyone who participated in the session!
 
 
 # What we value
