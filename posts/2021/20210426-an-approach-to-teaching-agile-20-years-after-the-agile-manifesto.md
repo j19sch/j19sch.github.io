@@ -9,7 +9,7 @@
 .. type: text
 -->
 
-For a few weeks I've been thinking about how I would teach Agile[^1] in 2021, 20 years after the [Agile Manifesto](https://agilemanifesto.org/) was published. After sharing my thoughts at [CitCon Europe 2021 Virtual](https://citconf.com/virtual2021/) and having an interesting conversation about the state of Agile and how to teach it, I feel it's time to share my thoughts here as well.
+For a few weeks I've been thinking about how I would teach Agile[^1] in 2021, 20 years after the [Agile Manifesto](https://agilemanifesto.org/) was published. After sharing my thoughts at [CitCon Europe 2021 Virtual](https://citconf.com/virtual2021/) and having an interesting conversation about the state of Agile and how to teach it, I figured it's time to write a blog post about it.
 
 ## Why I started thinking about this
 
