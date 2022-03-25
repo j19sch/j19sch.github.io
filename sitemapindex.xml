@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://j19sch.github.io/blog/feed.atom</loc>
-  <lastmod>2022-03-25T12:37:00Z</lastmod>
+  <lastmod>2022-03-25T18:08:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/blog/rss.xml</loc>
-  <lastmod>2022-03-25T12:37:00Z</lastmod>
+  <lastmod>2022-03-25T18:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/agile.atom</loc>
@@ -87,11 +87,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_facilitation.atom</loc>
-  <lastmod>2022-03-25T12:37:00Z</lastmod>
+  <lastmod>2022-03-25T18:08:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_facilitation.xml</loc>
-  <lastmod>2022-03-25T12:37:00Z</lastmod>
+  <lastmod>2022-03-25T18:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_leadership.atom</loc>
@@ -287,11 +287,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/facilitation.atom</loc>
-  <lastmod>2022-03-25T12:37:00Z</lastmod>
+  <lastmod>2022-03-25T18:08:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/facilitation.xml</loc>
-  <lastmod>2022-03-25T12:37:00Z</lastmod>
+  <lastmod>2022-03-25T18:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/horizon.atom</loc>
@@ -399,11 +399,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/peer-conference.atom</loc>
-  <lastmod>2022-03-25T12:37:00Z</lastmod>
+  <lastmod>2022-03-25T18:08:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/peer-conference.xml</loc>
-  <lastmod>2022-03-25T12:37:00Z</lastmod>
+  <lastmod>2022-03-25T18:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/problems.atom</loc>
@@ -655,6 +655,6 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/sitemap.xml</loc>
-  <lastmod>2022-03-25T12:37:00Z</lastmod>
+  <lastmod>2022-03-25T18:17:00Z</lastmod>
  </sitemap>
 </sitemapindex>
