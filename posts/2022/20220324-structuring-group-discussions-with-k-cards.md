@@ -1,7 +1,7 @@
 <!--
 .. title: Structuring group discussions with K-cards
 .. slug: structuring-group-discussions-with-k-cards
-.. date: 2022-03-25 13:02:30 UTC+01:00
+.. date: 2022-03-25 18:27:30 UTC+01:00
 .. tags: facilitation, peer conference
 .. category: facilitation
 .. link: 
@@ -11,14 +11,24 @@
 
 K-cards are often used at peer conferences to facilitate the discussion after someone has presented their experience report. Some people really hate them. In my experience they're a great tool to enable rich conversations. Since the facilitator uses the K-cards to structure the discussion in threads, K-cards allow the group to drill down to the details of the experience report. This instead of the conversation jumping around as person 1 broaches topic A, person 2 introduces topic B, and person 3 wants to return to topic A.
 
-The explanation of these K-cards often takes the form of "This is what each card means." instead of "This is when to use this card for what purpose." And despite the elegance of the K-cards system, when you learn about them during the opening of a peer conference, it's a lot of information to digest. So I hope this blog post will be useful as a written explanation of how to use K-cards.
+The explanation of these K-cards often takes the form of *"This is what each card means."* instead of *"This is when to use this card for what purpose."* And despite the elegance of the K-cards system, when you learn about them during the opening of a peer conference, it's a lot of information to digest. So I hope this blog post will be useful as a written explanation of how to use K-cards.
 
 <!-- TEASER_END -->
 
 
 # K-cards?
 
-K-cards are a set of colored cards - at least three (green, yellow, red), sometimes more - given to the participants of a peer conference. Each set also has a unique number written on it to identify its owner. This makes the life of the facilitator easier, since they need to keep track of who raises which card when. They were invented by Paul Holland (except for the actual cards part, ironically) as he describes in [*"The history of K-Cards"*](https://testingthoughts.com/blog/26).
+K-cards are a set of colored cards - at least three (green, yellow, red), sometimes more - given to the participants of a peer conference. Each set also has a unique number written on it to identify its owner. This makes the life of the facilitator easier, since they need to keep track of who raises which card when.
+
+<div class="d-flex justify-content-center">
+	<figure class="figure" style="width:60%">
+		<img src="/images/2022/k-cards/k-cards.jpeg" class="figure-img img-fluid rounded"
+			alt="Two sets of K-cards"/>
+		<figcaption class="figure-caption text-center">two sets of K-cards</figcaption>
+	</figure>
+</div>
+
+K-cards were invented by Paul Holland (except for the actual cards part, ironically) as he describes in [*"The history of K-Cards"*](https://testingthoughts.com/blog/26).
 
 
 # Green cards (mostly) after the presentation
@@ -43,45 +53,42 @@ Red cards are the least used ones and for a good reason. A red card means you ha
 - you have trouble hearing whoever is speaking
 - you're unfamiliar with a term or abbreviation that's key to understanding what's being said
 - someone shares something that's factually wrong and that needs to be addressed immediately
-- there's some kind of emergency, e.g. "Is that smoke I'm smelling?"
+- there's some kind of emergency, e.g. *"Is that smoke I'm smelling?"*
 
 This means the red card can be used both during the presentation of the experience report, as during the discussion that follows.
 
-Since there's a risk of people abusing the red card, for example to make a point in the discussion, the facilitator has the power in such cases to take away someone's card.
+Since there's a risk of people abusing the red card, for example to make a point in the discussion, the facilitator has the power to take away someone's red card.
 
 
 # When your card is being covered in a different thread
-It might happen that the topic of your green or yellow card gets addressed in a different thread. (Great minds think alike, after all.) Or that a thread comes really close to your topic. In that case you have two options.
+It might happen that the topic of your green or yellow card gets addressed in a different thread. (Great minds think alike, after all.) Or that a thread comes really close to your original topic. In that case you have two options.
 
-The simplest option is to raise your yellow card, so the facilitator notes you down for the current thread. Later, when the facilitator gets to your original green or yellow card, simply say "Never mind." or something to that effect. The facilitator will move on and give the floor to the next person. You can also do this if for whatever reason you no longer want to say what you wanted to say when you raised your card.
+The simplest option is to raise your yellow card, so the facilitator notes you down for the current thread. Later, when the facilitator gets to your original green or yellow card, simply say *"Never mind."* or something to that effect. The facilitator will move on and give the floor to the next person. You can also do this if for whatever reason you no longer want to say what you wanted to say when you raised your card.
 
-The other option is to raise your yellow card and indicate to the facilitator it replaces your other card. If it replaces your green card, you can make a swapping gesture with both cards. In rare occasions, you might want to replace a yellow card with a yellow card. In that case it's best to wait until you get to speak and after gesture to the facilitator to drop your card. A common gesture for this is similar to the ["cut" hand signal as used in broadcasting](https://www.streamsemester.com/articles/floor-director-hand-signals), but with the hand moving back and forth a few times from the wrist. You can use the same gesture if for whatever reason you no longer want to say what you wanted to say when you raised a green or yellow card.
+The other option is to raise your yellow card and indicate to the facilitator it replaces your other card. If it replaces your green card, you can make a swapping gesture with both cards. In rare occasions, you might want to replace a yellow card with a yellow card - moving your yellow card from one sub-thread to a different one. In that case it's best to wait until you get to speak and after that gesture to the facilitator to drop your original yellow card. A common gesture for this is similar to the ["cut" hand signal as used in broadcasting](https://www.streamsemester.com/articles/floor-director-hand-signals), but with the hand moving back and forth a few times from the wrist. You can use the same gesture if for whatever reason you no longer want to say what you wanted to say when you raised a green or yellow card.
 
 
-# The job of the facilitator
-The main job of the facilitator is to keep track of who wants to speak and to decide who gets to speak next. So it's not the order of when cards were raised, that determines who gets to speak when. The facilitator makes this decision based on several factors. Out of time considerations they might (temporarily) abandon a thread that has had quite some discussion and move on to a different (sub-)thread. They might (should, actually) give people who haven't spoken a lot yet precendence over people who have. So the facilitator tries to optimize the value of the discussion for all participants, even if that means that some people's cards never become part of the discussion. As a participant it's helpful to take the same perspective: will this contribute to the conversation?[^1] And not: what can I add to the discussion? What can I insert into the discussion?
+# Facilitators will facilitate
+The main job of the facilitator is to keep track of who wants to speak and to decide who gets to speak next. So it's not the order of when cards were raised, that determines who gets to speak when. The facilitator makes this decision based on the flow of the conversation. They might (temporarily) abandon a thread that has had quite some discussion already and move on to a different (sub-)thread to keep the discussion fresh. They might (should, actually) give people who haven't spoken a lot yet precedence over people who have. So the facilitator tries to optimize the value of the discussion for all participants, even if that means that some people's cards never become part of the discussion. As a participant it's helpful to take the same perspective: *Will this contribute to the conversation?*[^1] And not: *What can I add to this discussion?*
 
-For the same reason, the facilitator should avoid long back-and-forths between the presenter and a single participant. Some facilitators allows no back-and-forth. A participant gets the floor, the presenter responds, and if the participant wants to react to that response, they have to raise their yellow card. Other facilitators are more lenient and allow a short exchange. In any case, what you don't want to happen is that instead of a group conversation, you get a lengthy discussion between the presenter and a single participant.
+For the same reason, the facilitator should avoid long back-and-forths between the presenter and a single participant. Some facilitators allow no back-and-forth. A participant gets the floor, the presenter responds, and if the participant wants to react to that response, they have to raise their yellow card. Other facilitators are more lenient and allow a short exchange. In any case, what you don't want to happen is that instead of a group conversation, you get a lengthy discussion between the presenter and a single participant.
 
 All of this gives the facilitator quite some power. And not all participants might be entirely comfortable with having to wait to speak until they're given the floor by the facilitator. What helps here, besides clearly explaining the rules upfront, is for the facilitator to communicate well. Give a clear nod when you write someone's card down, so they know you've seen them. Give a status update once in a while about the remaining open green and yellow cards, and whose cards they are. Explain why you give the floor to someone, e.g. because you haven't heard much from them yet. This shows to the participants that you have the overview and are deliberate in your facilitation. Do this and it's a lot less likely that participants will start to feel that they're dependent on your whims as a facilitator.
 
 As a facilitator you only catch half of the discussion. Or at least, that's my experience. My focus is on facilitating the group conversation, which means I can't pay full attention on what's being said. It can happen, however, that you hear something that makes you want to contribute to the conversation. In that case, you can add yourself to the open cards and decide when it's a good moment for you to speak. I would recommend however to prioritize other people's contributions over your own.
 
-If you want to read more about facilitating a peer conference (including the non-K-cards parts), I recommend Paul Holland's [*"A Guide to Peer Conference Facilitation"*](https://testingthoughts.com/blog/28).
+If you want to read more about how to facilitate a peer conference (including the non-K-cards parts), I recommend Paul Holland's [*"A Guide to Peer Conference Facilitation"*](https://testingthoughts.com/blog/28).
 
 
 # Advice for your first encounter with K-cards
 Encountering K-cards for the first time may be a bit overwhelming. The system as such is simple and straightforward, but explaining it takes quite a few words. (I'm surprised myself with how long this blog post has become.) Try not to worry too much. No one expects you to get it perfectly right from the start. It's ok to make honest mistakes. And in the end it's not your job, but the facilitator's to guide the conversation. In my experience, most people get the hang of K-cards after one discussion. So pay attention, do your best, and you will be fine.
 
 
-# Possible improvements to K-cards
-Writing this blog post made me realize there are a few ways in which K-cards can be improved.
+# A suggestion to improve to K-cards
+Writing this blog post made me realize there is something about K-cards that should be improved. The choice of card colors (green, yellow, red) is not colorblind-friendly. Solving this is not as straightforward as swapping out either the red or the green card. There are [different types of colorblindness](https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness/types-color-blindness): red-green, blue-yellow, and complete. So changing the red card to a blue one, solves the problem for red-green colorblindness, but might create a problem for blue-yellow colorblindness.
 
-The most important one is that the choice of card colors (green, yellow, red) is not colorblind-friendly. Solving this is not as straightforward as swapping out either the red or the green card. There are [different types of colorblindness](https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness/types-color-blindness): red-green, blue-yellow, and complete. So changing the red card to a blue one, solves the problem for red-green colorblindess, but might create a problem for blue-yellow colorblindness. The solution is to [design a specific color palette](https://davidmathlogic.com/colorblind/#%23D81B60-%231E88E5-%23FFC107-%23004D40) that works for all types of colorblindness. That's easy enough when doing things digitally, but when you need physical K-cards, I'm not sure if there's a cheap enough way to source paper with the exact right colors. The best solution here might be one of the standard recommendations to make things accessible: don't rely only on color to communicate.
+The solution is to [design a specific color palette](https://davidmathlogic.com/colorblind/#%23D81B60-%231E88E5-%23FFC107-%23004D40) that works for all types of colorblindness. That's easy enough when doing things digitally, but when you need physical K-cards, I'm not sure if there's a cheap enough way to source paper with the exact right colors. The best solution here might be one of the standard recommendations to make things accessible for colorblindness: don't rely only on color to communicate.
 
-A smaller improvement is something I noticed when trying to describe the gesture for asking the facilitator to drop your card. You point your fingers at your throat and move your fingers back and forth. It's a variant of the throat-slitting gesture, where you draw your index finger along your throat. Now, I only made that association when trying to figure out what the gesture is called, but I'd prefer a gesture that lacks that association.
-
-Finally, I've participated in two online peer conferences, where we used Slack messages instead of physical K-cards. I didn't really enjoy the experience. The main problem for me was that it was hard for people not to engage in side-discussions via Slack. Those were either actual side-discussions or side-discussions masquerading as the raising of a card. Someone would post a message with a yellow square and a few words about what they wanted to say. Another person would read the message and post a similar message to respond to it - even though that first person hadn't spoken yet. I'm not sure if having people only post a card color would be a solution. Perhaps we need a different online tool to get K-cards to work better for online peer conferences.
 
 
 
