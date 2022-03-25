@@ -7,19 +7,19 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://j19sch.github.io/blog/feed.atom</loc>
-  <lastmod>2022-03-14T15:12:00Z</lastmod>
+  <lastmod>2022-03-25T12:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/blog/rss.xml</loc>
-  <lastmod>2022-03-14T15:12:00Z</lastmod>
+  <lastmod>2022-03-25T12:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/agile.atom</loc>
-  <lastmod>2022-03-14T15:12:00Z</lastmod>
+  <lastmod>2022-03-24T20:57:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/agile.xml</loc>
-  <lastmod>2022-03-14T15:12:00Z</lastmod>
+  <lastmod>2022-03-24T20:57:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/automation.atom</loc>
@@ -47,11 +47,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_agile.atom</loc>
-  <lastmod>2022-03-14T15:12:00Z</lastmod>
+  <lastmod>2022-03-24T20:57:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_agile.xml</loc>
-  <lastmod>2022-03-14T15:12:00Z</lastmod>
+  <lastmod>2022-03-24T20:57:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_cicd.atom</loc>
@@ -84,6 +84,14 @@
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_exploration.xml</loc>
   <lastmod>2022-02-06T16:27:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/cat_facilitation.atom</loc>
+  <lastmod>2022-03-25T12:37:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://j19sch.github.io/categories/cat_facilitation.xml</loc>
+  <lastmod>2022-03-25T12:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cat_leadership.atom</loc>
@@ -191,11 +199,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cicd.atom</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-03-14T15:18:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/cicd.xml</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-03-14T15:18:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/clojure.atom</loc>
@@ -207,11 +215,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/conference.atom</loc>
-  <lastmod>2022-03-14T15:12:00Z</lastmod>
+  <lastmod>2022-03-24T20:57:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/conference.xml</loc>
-  <lastmod>2022-03-14T15:12:00Z</lastmod>
+  <lastmod>2022-03-24T20:57:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/context-driven-testing.atom</loc>
@@ -239,11 +247,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/devops.atom</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-03-14T15:18:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/devops.xml</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-03-14T15:18:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/dewt.atom</loc>
@@ -279,11 +287,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/facilitation.atom</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-03-25T12:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/facilitation.xml</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-03-25T12:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/horizon.atom</loc>
@@ -335,11 +343,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/lean.atom</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-03-14T15:18:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/lean.xml</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-03-14T15:18:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/management.atom</loc>
@@ -391,11 +399,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/peer-conference.atom</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-03-25T12:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/peer-conference.xml</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-03-25T12:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/problems.atom</loc>
@@ -479,11 +487,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/skills.atom</loc>
-  <lastmod>2022-03-14T15:12:00Z</lastmod>
+  <lastmod>2022-03-24T20:57:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/skills.xml</loc>
-  <lastmod>2022-03-14T15:12:00Z</lastmod>
+  <lastmod>2022-03-24T20:57:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/slices.atom</loc>
@@ -527,11 +535,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/teaching.atom</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-03-14T15:18:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/teaching.xml</loc>
-  <lastmod>2022-02-06T16:27:00Z</lastmod>
+  <lastmod>2022-03-14T15:18:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/test-automation.atom</loc>
@@ -599,11 +607,11 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/values.atom</loc>
-  <lastmod>2022-03-14T15:12:00Z</lastmod>
+  <lastmod>2022-03-24T20:57:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/values.xml</loc>
-  <lastmod>2022-03-14T15:12:00Z</lastmod>
+  <lastmod>2022-03-24T20:57:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/categories/vba.atom</loc>
@@ -647,6 +655,6 @@
  </sitemap>
  <sitemap>
   <loc>https://j19sch.github.io/sitemap.xml</loc>
-  <lastmod>2022-03-14T15:12:00Z</lastmod>
+  <lastmod>2022-03-25T12:37:00Z</lastmod>
  </sitemap>
 </sitemapindex>

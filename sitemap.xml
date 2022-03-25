@@ -55,7 +55,7 @@
  </url>
  <url>
   <loc>https://j19sch.github.io/archive.html</loc>
-  <lastmod>2022-03-13T10:41:00Z</lastmod>
+  <lastmod>2022-03-25T12:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/</loc>
@@ -246,20 +246,20 @@
   <lastmod>2022-02-06T16:27:00Z</lastmod>
  </url>
  <url>
-  <loc>https://j19sch.github.io/blog/2022/agile-micro-skills-at-frogsconf/</loc>
-  <lastmod>2022-03-13T10:41:00Z</lastmod>
- </url>
- <url>
-  <loc>https://j19sch.github.io/blog/2022/exploring-agile-micro-skills-at-frogsconf/</loc>
-  <lastmod>2022-03-14T14:42:00Z</lastmod>
- </url>
- <url>
   <loc>https://j19sch.github.io/blog/2022/four-skills-to-embody-the-four-agile-values/</loc>
   <lastmod>2022-02-06T16:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/2022/from-tension-to-agreement-with-sociocracy-30/</loc>
   <lastmod>2022-02-06T16:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2022/structuring-discussions-with-k-cards/</loc>
+  <lastmod>2022-03-24T20:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/blog/2022/structuring-group-discussions-with-k-cards/</loc>
+  <lastmod>2022-03-25T12:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/2022/uncovering-agile-micro-skills-at-frogsconf/</loc>
@@ -319,11 +319,11 @@
  </url>
  <url>
   <loc>https://j19sch.github.io/blog/index-5.html</loc>
-  <lastmod>2022-03-13T10:41:00Z</lastmod>
+  <lastmod>2022-03-25T12:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/</loc>
-  <lastmod>2022-02-06T16:38:00Z</lastmod>
+  <lastmod>2022-03-25T12:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/agile/</loc>
@@ -360,6 +360,10 @@
  <url>
   <loc>https://j19sch.github.io/categories/cat_exploration/</loc>
   <lastmod>2022-02-06T16:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://j19sch.github.io/categories/cat_facilitation/</loc>
+  <lastmod>2022-03-25T12:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://j19sch.github.io/categories/cat_leadership/</loc>

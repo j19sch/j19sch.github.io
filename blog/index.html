@@ -88,7 +88,24 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2022/uncovering-agile-micro-skills-at-frogsconf/" class="u-url">Uncovering Agile micro-skills at FroGS conf</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2022/structuring-group-discussions-with-k-cards/" class="u-url">Structuring group discussions with K-cards</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2022/structuring-group-discussions-with-k-cards/" rel="bookmark">
+            <time class="published dt-published" datetime="2022-03-25T18:27:30+01:00" itemprop="datePublished" title="25 March 2022">25 March 2022</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>K-cards are often used at peer conferences to facilitate the discussion after someone has presented their experience report. Some people really hate them. In my experience they're a great tool to enable rich conversations. Since the facilitator uses the K-cards to structure the discussion in threads, K-cards allow the group to drill down to the details of the experience report. This instead of the conversation jumping around as person 1 broaches topic A, person 2 introduces topic B, and person 3 wants to return to topic A.</p>
+<p>The explanation of these K-cards often takes the form of <em>"This is what each card means."</em> instead of <em>"This is when to use this card for what purpose."</em> And despite the elegance of the K-cards system, when you learn about them during the opening of a peer conference, it's a lot of information to digest. So I hope this blog post will be useful as a written explanation of how to use K-cards.</p>
+<p class="more"><a href="2022/structuring-group-discussions-with-k-cards/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2022/uncovering-agile-micro-skills-at-frogsconf/" class="u-url">Uncovering Agile micro-skills at FroGS conf</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
@@ -260,29 +277,6 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <h3>Vim macros</h3>
 <p>The exercises at the end of chapter 3 got me to try out a lot of things, so I got bored having to type in the commands to copy a line (<code>yy</code>), paste it (<code>p</code>), replace it by its evaluation (<code>c!$</code>), comment it out (<code>gcc</code>), and add a "<code>=&gt;</code>" to mark it as output. So I learned about Vim macros and recorded that sequence to run when I hit <code>@c</code>. At the end of my <a href="clojure/2020/clj4-learning-when-maps-closures/">(clj 4)</a> post I mentioned I might have to do this. Guess that moment came sooner than I expected.</p>
 <p class="more"><a href="clojure/2021/clj6-three-chapters-in-one-year/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2021/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto/" class="u-url">An approach to teaching Agile 20 years after the Agile Manifesto</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2021/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto/" rel="bookmark">
-            <time class="published dt-published" datetime="2021-04-26T16:54:34+02:00" itemprop="datePublished" title="26 April 2021">26 April 2021</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>For a few weeks I've been thinking about how I would teach Agile<sup id="fnref:1"><a class="footnote-ref" href="2021/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto/#fn:1">1</a></sup> in 2021, 20 years after the <a href="https://agilemanifesto.org/">Agile Manifesto</a> was published. After sharing my thoughts at <a href="https://citconf.com/virtual2021/">CitCon Europe 2021 Virtual</a> and having an interesting conversation about the state of Agile and how to teach it, I figured it's time to write a blog post about it.</p>
-<h3>Why I started thinking about this</h3>
-<p>As Allan Kelly stated in a <a href="https://www.allankellyassociates.co.uk/archives/2762/agile-won-the-war-but-lost-the-peace/">2018 blog post</a>:</p>
-<blockquote>
-<p>"Agile won the war but lost the peace."</p>
-</blockquote>
-<p>Everyone is doing Agile, even though very few people are living the dream promised by Agile. This makes it very difficult to use "Agile" as a label, as a name for something. When someone says "Agile", are they referring to what you're already doing or to something they think you should be doing?</p>
-<p>Additionally, the <a href="https://agilemanifesto.org/">Agile Manifesto</a> was <a href="https://agilemanifesto.org/history.html">written in 2001</a>, based on what its authors were doing in the 1990s in response to the common ways of doing software development of that time. And since the Manifesto we've seen the introduction of Lean, of DevOps, and of CI/CD. So the amount of history that comes with Agile is large and it raises the question how much (if any) we should teach - especially since a lot of it is folklore instead of history<sup id="fnref:2"><a class="footnote-ref" href="2021/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto/#fn:2">2</a></sup>. Doing Agile's history justice would probably cost more time than makes sense if your goal is to teach people how to develop software in an Agile way<sup id="fnref:3"><a class="footnote-ref" href="2021/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto/#fn:3">3</a></sup>. And a lot of that history was a relatively long time ago, which is why I titled my CitCon session "Teaching Agile to people younger than the Manifesto".</p>
-<p class="more"><a href="2021/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto/">Read more…</a></p>
 </div>
                 </div>
             </article>
