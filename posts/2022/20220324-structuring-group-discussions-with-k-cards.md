@@ -7,6 +7,7 @@
 .. link: 
 .. description: 
 .. type: text
+.. previewimage: /images/2022/k-cards/k-cards.jpeg
 -->
 
 K-cards are often used at peer conferences to facilitate the discussion after someone has presented their experience report. Some people really hate them. In my experience they're a great tool to enable rich conversations. Since the facilitator uses the K-cards to structure the discussion in threads, K-cards allow the group to drill down to the details of the experience report. This instead of the conversation jumping around as person 1 broaches topic A, person 2 introduces topic B, and person 3 wants to return to topic A.
