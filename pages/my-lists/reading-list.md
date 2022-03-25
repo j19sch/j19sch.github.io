@@ -12,7 +12,9 @@ hidetitle: false
 - Sooner Safer Happier: Antipatterns and Patterns for Business Agility - Jonathan Smart with Zsolt Berend, Myles Ogilvie and Simon Rohre
 - The Pathless Path: Imagining a New Story For Work & Life - Paul Millerd
 - Sociocratie 3.0: De businessnovelle die het beste uit mens en organisatie haalt - Jef Cumps
-- The Utopia Of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy -  David Graeber
+- The Utopia Of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy - David Graeber
+- The Bright Ages: A New History of Medieval Europe - Matthew Gabriele & David M Perry
+- The Four Tendencies: The Indispensable Personality Profiles That Reveal How to Make Your Life Better (and Other People's Lives Better, Too) - Gretchen Rubin
 
 ### 2021
 - Practical Ways to Lead an Innovative Organization: Modern Management Made Easy, Book 3 - Johanna Rothman
