@@ -88,7 +88,25 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2022/structuring-group-discussions-with-k-cards/" class="u-url">Structuring group discussions with K-cards</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2022/clj-8-some-notes-on-lazy-sequences-and-function-parameters/" class="u-url">(clj 8) Some notes on lazy sequences and function parameters</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="clojure/2022/clj-8-some-notes-on-lazy-sequences-and-function-parameters/" rel="bookmark">
+            <time class="published dt-published" datetime="2022-04-18T14:16:36+02:00" itemprop="datePublished" title="18 April 2022">18 April 2022</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Almost done with the chapter 4 <em>"Core Functions in Depth"</em> of "<a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">Clojure for the Brave and True</a>"! Before wrapping up the chapter with a longer example, a summary, and some exercises, the book goes into lazy sequences, the collection abstraction, and function functions. In this post I will share some notes on infinite lazy sequences and function parameters, making comparisons between Clojure and Python.</p>
+<h2>Infinite lazy sequences</h2>
+<p>A lazy sequence is a sequence whose members aren't computed until you try to access them. One advantage is that it's more efficient: the whole sequence doesn't have to be calculated and kept in memory from the start. Another advantage is that it allows you to create infinite sequences. Do that with a normal sequence and your program would never want to stop calculating.</p>
+<p class="more"><a href="clojure/2022/clj-8-some-notes-on-lazy-sequences-and-function-parameters/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2022/structuring-group-discussions-with-k-cards/" class="u-url">Structuring group discussions with K-cards</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
@@ -258,25 +276,6 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <h3>The Elephant Carpaccio exercise</h3>
 <p>The Elephant Carpaccio exercise was invented by Alistair Cockburn<sup id="fnref:1"><a class="footnote-ref" href="2021/two-times-remote-elephant-carpaccio/#fn:1">1</a></sup>. Its purpose is to get people to practice <em>"nano-incremental"</em> development, i.e. slicing something small enough you can program it in 15-30 minutes. The exercise tries to bring home its point through exageration: you are asked to slice a very simple application in 15-20 slices, where you would normally do it in 2-3 slices. Then you get five iterations of 8 minutes to build those slices. To me that's the coolest part of the exercise: you actually get to experience what's it like to work with such small slices. As Alistair Cockburn himself says about the exercise: <em>"the true learning is the actual programming section"</em>.</p>
 <p class="more"><a href="2021/two-times-remote-elephant-carpaccio/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2021/clj6-three-chapters-in-one-year/" class="u-url">(clj 6) Three chapters in one year</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="clojure/2021/clj6-three-chapters-in-one-year/" rel="bookmark">
-            <time class="published dt-published" datetime="2021-05-08T10:53:25+02:00" itemprop="datePublished" title="8 May 2021">8 May 2021</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>It's been a bit more than a year since I posted my <a href="clojure/2020/clj0-diving-straight-in/">first blog post</a> about learning Clojure. And it's been five months since my <a href="clojure/2020/clj5-loop-and-recur-into-and-conj/">last blog post</a> about it. So far I've made it through the first three chapters<sup id="fnref:1"><a class="footnote-ref" href="clojure/2021/clj6-three-chapters-in-one-year/#fn:1">1</a></sup> of "<a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">Clojure for the Brave and True</a>". Instead of commenting on my learning pace at the start of every post, I've decided that this pace is the pace that works for me at this time, so there's no need to keep revisiting the topic.</p>
-<p>Something I do want to mention is that one thing that triggered me to do some more Clojure was <a href="https://itrevolution.com/the-idealcast-episode-10/">this episode</a> of Gene Kim's excellent <a href="https://itrevolution.com/the-idealcast-podcast/">Idealcast</a> podcast with <a href="https://www.michaelnygard.com/">Michael Nygard</a>, in which they spend some time talking about Clojure.</p>
-<h3>Vim macros</h3>
-<p>The exercises at the end of chapter 3 got me to try out a lot of things, so I got bored having to type in the commands to copy a line (<code>yy</code>), paste it (<code>p</code>), replace it by its evaluation (<code>c!$</code>), comment it out (<code>gcc</code>), and add a "<code>=&gt;</code>" to mark it as output. So I learned about Vim macros and recorded that sequence to run when I hit <code>@c</code>. At the end of my <a href="clojure/2020/clj4-learning-when-maps-closures/">(clj 4)</a> post I mentioned I might have to do this. Guess that moment came sooner than I expected.</p>
-<p class="more"><a href="clojure/2021/clj6-three-chapters-in-one-year/">Read more…</a></p>
 </div>
                 </div>
             </article>
