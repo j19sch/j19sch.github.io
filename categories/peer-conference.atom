@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about peer conference)</title>
   <id>https://j19sch.github.io/categories/peer-conference.atom</id>
-  <updated>2022-04-17T15:47:41Z</updated>
+  <updated>2022-03-25T18:08:09Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -19,7 +19,7 @@
       <name>Joep Schuurkes</name>
     </author>
     <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2022/structuring-group-discussions-with-k-cards/"/>
-    <summary type="html">&lt;figure&gt;&lt;img src="https://j19sch.github.io/images/2022/k-cards/k-cards.jpeg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;K-cards are often used at peer conferences to facilitate the discussion after someone has presented their experience report. Some people really hate them. In my experience they're a great tool to enable rich conversations. Since the facilitator uses the K-cards to structure the discussion in threads, K-cards allow the group to drill down to the details of the experience report. This instead of the conversation jumping around as person 1 broaches topic A, person 2 introduces topic B, and person 3 wants to return to topic A.&lt;/p&gt;
+    <summary type="html">&lt;div&gt;&lt;p&gt;K-cards are often used at peer conferences to facilitate the discussion after someone has presented their experience report. Some people really hate them. In my experience they're a great tool to enable rich conversations. Since the facilitator uses the K-cards to structure the discussion in threads, K-cards allow the group to drill down to the details of the experience report. This instead of the conversation jumping around as person 1 broaches topic A, person 2 introduces topic B, and person 3 wants to return to topic A.&lt;/p&gt;
 &lt;p&gt;The explanation of these K-cards often takes the form of &lt;em&gt;"This is what each card means."&lt;/em&gt; instead of &lt;em&gt;"This is when to use this card for what purpose."&lt;/em&gt; And despite the elegance of the K-cards system, when you learn about them during the opening of a peer conference, it's a lot of information to digest. So I hope this blog post will be useful as a written explanation of how to use K-cards.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2022/structuring-group-discussions-with-k-cards/"&gt;Read more…&lt;/a&gt; (8 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="facilitation" label="facilitation"/>

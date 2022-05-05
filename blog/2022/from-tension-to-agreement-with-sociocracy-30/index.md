@@ -105,7 +105,7 @@ Finally, there's a S3-pattern explicitly about [breaking agreements](https://pat
 
 # What I like about these patterns
 
-When I started listing out the things I like about these (and related) patterns, I ended up with quite a few. I like how it's build around the [principle of equivalence](https://patterns.sociocracy30.org/principle-equivalence.html) and [involving those affected](https://patterns.sociocracy30.org/involve-those-affected.html). I like how objections are considered as a gift, as someone sharing wisdom to help approve the proposal. And I really like the ideas of consent and of *"good enough for now, safe enough to try"*. Having listed those, that leaves me with three more things I like, on which I like to spend a few more sentences.
+When I started listing out the things I like about these (and related) patterns, I ended up with quite a few. I like how it's build around the [principle of equivalence](https://patterns.sociocracy30.org/principle-equivalence.html) and [involving those affected](https://patterns.sociocracy30.org/involve-those-affected.html). I like how objections are considered as a gift, as someone sharing wisdom to help improve the proposal. And I really like the ideas of consent and of *"good enough for now, safe enough to try"*. Having listed those, that leaves me with three more things I like, on which I like to spend a few more sentences.
 
 
 ## Start with exploring the driver
