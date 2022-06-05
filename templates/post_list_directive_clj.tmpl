@@ -6,7 +6,7 @@
         {% for post in posts %}
             <li class="post-list-item">
             <a href="{{ post.permalink(lang) }}">{{ post.title(lang) | split_blog_title(1) | e }}</a>
-            {{ post.title(lang) | split_blog_title(2) | e }}
+            {{ post.title(lang) | split_blog_title(2) | e }} [{{ post.formatted_date('MMM Y')}}]
             </li>
         {% endfor %}
     </ul>
