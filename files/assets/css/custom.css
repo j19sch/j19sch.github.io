@@ -229,6 +229,11 @@ h5 + ul {
   margin-bottom: 0.2rem;
 }
 
+code {
+  /*same as syntax highlighting orange*/
+  color: #e05a29;
+}
+
 /*.body-content h6 {
   font-size: 0.9rem;
 }*/
