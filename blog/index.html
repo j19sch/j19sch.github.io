@@ -88,7 +88,24 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2022/clj-8-some-notes-on-lazy-sequences-and-function-parameters/" class="u-url">(clj 8) Some notes on lazy sequences and function parameters</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2022/clj-9-how-to-figure-out-what-a-function-does/" class="u-url">(clj 9) How to figure out what a function does</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="clojure/2022/clj-9-how-to-figure-out-what-a-function-does/" rel="bookmark">
+            <time class="published dt-published" datetime="2022-06-12T15:01:36+02:00" itemprop="datePublished" title="12 June 2022">12 June 2022</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Chapter 4 of "<a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">Clojure for the Brave and True</a>" concludes with a <em>Vampire Data Analysis Program</em>, serving as a summary of the chapter. The book shows some code, explains it, moves on to the next bit of code, etc. I'm not sure why, but I decided I wanted to figure out the code on my own and then read the explanation to see if I got it right. Afterwards I realized it might make a good blog post: both explaining what the program does and what techniques (for lack of a better word) I used to figure it out.</p>
+<p>With most of the work in the program being done by a function called <code>mapify</code>, this blog post will focus on that single function. As it turns out, it took me more than 2000 words (footnotes not included) to describe what this function consisting of only 9 lines does. So feel free to read all of it, skim through it, or skip straight ahead to the <a href="clojure/2022/clj-9-how-to-figure-out-what-a-function-does/#techniques">techniques</a> and some <a href="clojure/2022/clj-9-how-to-figure-out-what-a-function-does/#reflections">reflections</a>.</p>
+<p class="more"><a href="clojure/2022/clj-9-how-to-figure-out-what-a-function-does/">Read more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2022/clj-8-some-notes-on-lazy-sequences-and-function-parameters/" class="u-url">(clj 8) Some notes on lazy sequences and function parameters</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep Schuurkes
@@ -257,25 +274,6 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <p>The Elephant Carpaccio exercise has a detailed <a href="https://docs.google.com/document/d/1TCuuu-8Mm14oxsOnlk8DqfZAA1cvtYu9WGv67Yj_sSk/pub">facilitation guide</a>, created by <a href="https://twitter.com/henrikkniberg">Henrik Kniberg</a> and <a href="https://twitter.com/totheralistair">Alistair Cockburn</a> (also inventor of the exercise). This guide really is a blessing and a curse. It's great to have guidance on how to run the exercise. However, there's also only so much such a guide can do. As I was writing the blog post of me running the exercise twice, I looked at the facilitation guide again, and it made so much more sense to me. Instead of it being instructions about something new, I could connect the contents to my own experiences. And that experience does make me wonder how advisable it is to facilitate an exercise you have never done or seen based on a luckily excellent and very detailed faciliation guide.</p>
 <p>The level of detail in the facilitation guide also had me walk into the trap of relying on it too much. Instead of taking my own context fully into account, I though I could follow the guide with a few tweaks. As you could read in my <a href="2021/two-times-remote-elephant-carpaccio/">previous post</a>, the first time I ran the exercise, it got away from me a little. In this sense I find it interesting that Oliver Spann seems to have had <a href="https://medium.com/@olivercecilspann/elephant-carpaccio-exercise-an-experience-report-207f0cc79c34">a similar experience</a> facilitating Elephant Carpaccio for the first time:</p>
 <p class="more"><a href="2021/lessons-learned-after-facilitating-elephant-carpaccio/">Read more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2021/two-times-remote-elephant-carpaccio/" class="u-url">Two times remote Elephant Carpaccio</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2021/two-times-remote-elephant-carpaccio/" rel="bookmark">
-            <time class="published dt-published" datetime="2021-10-03T21:28:50+02:00" itemprop="datePublished" title="3 October 2021">3 October 2021</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>A while ago I asked the teams in my department which parts of agile software development they wanted to learn more about. One of the topics that stood out, was: you have a high-level description of a new feature, then what? That's still quite a wide topic, so the question become on what part of that problem would I focus first.</p>
-<p>Quite quickly I settled on feature slicing - for several reasons. First of all, I had noticed teams delivering somewhat big chunks of functionality, split up into development tasks instead of vertical slices. Secondly, a team I had worked with on feature slicing, had gained some valuable planning flexibility because of it. And they continued the practice, breaking up projects vertically. Finally, I was aware that there was a workshop called "Elephant Carpaccio", focused on feature slicing. So I could use that, or build on it, but at least I wouldn't have to come up with something from scratch.</p>
-<h3>The Elephant Carpaccio exercise</h3>
-<p>The Elephant Carpaccio exercise was invented by Alistair Cockburn<sup id="fnref:1"><a class="footnote-ref" href="2021/two-times-remote-elephant-carpaccio/#fn:1">1</a></sup>. Its purpose is to get people to practice <em>"nano-incremental"</em> development, i.e. slicing something small enough you can program it in 15-30 minutes. The exercise tries to bring home its point through exageration: you are asked to slice a very simple application in 15-20 slices, where you would normally do it in 2-3 slices. Then you get five iterations of 8 minutes to build those slices. To me that's the coolest part of the exercise: you actually get to experience what's it like to work with such small slices. As Alistair Cockburn himself says about the exercise: <em>"the true learning is the actual programming section"</em>.</p>
-<p class="more"><a href="2021/two-times-remote-elephant-carpaccio/">Read more…</a></p>
 </div>
                 </div>
             </article>
