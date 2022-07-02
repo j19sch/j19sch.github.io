@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<?xml-stylesheet href="https://j19sch.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<?xml-stylesheet href="https://smallsheds.garden/assets/xml/atom.xsl" type="text/xsl media="all"?>
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about elephant carpaccio)</title>
-  <id>https://j19sch.github.io/categories/elephant-carpaccio.atom</id>
-  <updated>2022-01-23T10:16:32Z</updated>
+  <id>https://smallsheds.garden/categories/elephant-carpaccio.atom</id>
+  <updated>2022-07-02T14:16:02Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
-  <link rel="self" type="application/atom+xml" href="https://j19sch.github.io/categories/elephant-carpaccio.atom"/>
-  <link rel="alternate" type="text/html" href="https://j19sch.github.io/categories/elephant-carpaccio/"/>
+  <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/elephant-carpaccio.atom"/>
+  <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/elephant-carpaccio/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
     <title>How to run a remote Elephant Carpaccio</title>
-    <id>https://j19sch.github.io/blog/2021/how-to-run-a-remote-elephant-carpaccio/</id>
+    <id>https://smallsheds.garden/blog/2021/how-to-run-a-remote-elephant-carpaccio/</id>
     <updated>2021-11-28T13:35:16+01:00</updated>
     <published>2021-11-28T13:35:16+01:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2021/how-to-run-a-remote-elephant-carpaccio/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;In a &lt;a href="https://j19sch.github.io/blog/2021/two-times-remote-elephant-carpaccio/"&gt;previous post&lt;/a&gt; I promised to write a blog post on how I would run remote &lt;a href="https://web.archive.org/web/20171114154855/http://alistair.cockburn.us/Elephant+Carpaccio+exercise"&gt;Elephant Carpaccio&lt;/a&gt; if I get the opportunity to run it a third time. This is that post, but not exactly. In the mean time I got the opportunity to run the workshop one more time. That gave me the opportunity to try out some new things and write this blog post on how to run a remote Elephant Carpaccio.&lt;/p&gt;
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2021/how-to-run-a-remote-elephant-carpaccio/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;In a &lt;a href="https://smallsheds.garden/blog/2021/two-times-remote-elephant-carpaccio/"&gt;previous post&lt;/a&gt; I promised to write a blog post on how I would run remote &lt;a href="https://web.archive.org/web/20171114154855/http://alistair.cockburn.us/Elephant+Carpaccio+exercise"&gt;Elephant Carpaccio&lt;/a&gt; if I get the opportunity to run it a third time. This is that post, but not exactly. In the mean time I got the opportunity to run the workshop one more time. That gave me the opportunity to try out some new things and write this blog post on how to run a remote Elephant Carpaccio.&lt;/p&gt;
 &lt;p&gt;I should be clear on one thing, though. This post is not a full facilitation guide. It can't be with the limited experience I have. I do hope and think that reading the official(?) &lt;a href="https://docs.google.com/document/d/1TCuuu-8Mm14oxsOnlk8DqfZAA1cvtYu9WGv67Yj_sSk/pub"&gt;facilitation guide&lt;/a&gt; and this blog post, gives you a solid base to start running the Elephant Carpaccio exercise remotely yourself.&lt;/p&gt;
 &lt;h3&gt;The preparation&lt;/h3&gt;
-&lt;p&gt;Take your time to prep. Taking &lt;a href="https://j19sch.github.io/blog/2021/lessons-learned-after-facilitating-elephant-carpaccio/#take-your-time-for-the-before-and-after"&gt;as much time as the duration&lt;/a&gt; of the workshop is a good start. (That's assuming you are already familiar with the Elephant Carpaccio exercise, though. So if you're not, do that first.) Get a clear picture in your head what you want to achieve with the workshop. Run through it in your mind in detail. Decide which options you have in which parts of the workshop to make changes as the workshop happens.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2021/how-to-run-a-remote-elephant-carpaccio/"&gt;Read more…&lt;/a&gt; (8 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;Take your time to prep. Taking &lt;a href="https://smallsheds.garden/blog/2021/lessons-learned-after-facilitating-elephant-carpaccio/#take-your-time-for-the-before-and-after"&gt;as much time as the duration&lt;/a&gt; of the workshop is a good start. (That's assuming you are already familiar with the Elephant Carpaccio exercise, though. So if you're not, do that first.) Get a clear picture in your head what you want to achieve with the workshop. Run through it in your mind in detail. Decide which options you have in which parts of the workshop to make changes as the workshop happens.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2021/how-to-run-a-remote-elephant-carpaccio/"&gt;Read more…&lt;/a&gt; (8 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="agile" label="agile"/>
     <category term="elephant-carpaccio" label="elephant carpaccio"/>
     <category term="facilitation" label="facilitation"/>
@@ -32,36 +32,36 @@
   </entry>
   <entry>
     <title>Lessons learned after facilitating remote Elephant Carpaccio</title>
-    <id>https://j19sch.github.io/blog/2021/lessons-learned-after-facilitating-elephant-carpaccio/</id>
+    <id>https://smallsheds.garden/blog/2021/lessons-learned-after-facilitating-elephant-carpaccio/</id>
     <updated>2021-10-24T17:36:50+02:00</updated>
     <published>2021-10-24T17:36:50+02:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2021/lessons-learned-after-facilitating-elephant-carpaccio/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;In my &lt;a href="https://j19sch.github.io/blog/2021/two-times-remote-elephant-carpaccio/"&gt;previous blog post&lt;/a&gt; I shared my experience of facilitating remote Elephant Carpaccio  twice. In this second post I want to share some things I learned through that experience that apply to facilitating remote experiential workshops in general.&lt;/p&gt;
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2021/lessons-learned-after-facilitating-elephant-carpaccio/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;In my &lt;a href="https://smallsheds.garden/blog/2021/two-times-remote-elephant-carpaccio/"&gt;previous blog post&lt;/a&gt; I shared my experience of facilitating remote Elephant Carpaccio  twice. In this second post I want to share some things I learned through that experience that apply to facilitating remote experiential workshops in general.&lt;/p&gt;
 &lt;h3&gt;The facilitation guide&lt;/h3&gt;
 &lt;p&gt;The Elephant Carpaccio exercise has a detailed &lt;a href="https://docs.google.com/document/d/1TCuuu-8Mm14oxsOnlk8DqfZAA1cvtYu9WGv67Yj_sSk/pub"&gt;facilitation guide&lt;/a&gt;, created by &lt;a href="https://twitter.com/henrikkniberg"&gt;Henrik Kniberg&lt;/a&gt; and &lt;a href="https://twitter.com/totheralistair"&gt;Alistair Cockburn&lt;/a&gt; (also inventor of the exercise). This guide really is a blessing and a curse. It's great to have guidance on how to run the exercise. However, there's also only so much such a guide can do. As I was writing the blog post of me running the exercise twice, I looked at the facilitation guide again, and it made so much more sense to me. Instead of it being instructions about something new, I could connect the contents to my own experiences. And that experience does make me wonder how advisable it is to facilitate an exercise you have never done or seen based on a luckily excellent and very detailed faciliation guide.&lt;/p&gt;
-&lt;p&gt;The level of detail in the facilitation guide also had me walk into the trap of relying on it too much. Instead of taking my own context fully into account, I though I could follow the guide with a few tweaks. As you could read in my &lt;a href="https://j19sch.github.io/blog/2021/two-times-remote-elephant-carpaccio/"&gt;previous post&lt;/a&gt;, the first time I ran the exercise, it got away from me a little. In this sense I find it interesting that Oliver Spann seems to have had &lt;a href="https://medium.com/@olivercecilspann/elephant-carpaccio-exercise-an-experience-report-207f0cc79c34"&gt;a similar experience&lt;/a&gt; facilitating Elephant Carpaccio for the first time:&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2021/lessons-learned-after-facilitating-elephant-carpaccio/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;The level of detail in the facilitation guide also had me walk into the trap of relying on it too much. Instead of taking my own context fully into account, I though I could follow the guide with a few tweaks. As you could read in my &lt;a href="https://smallsheds.garden/blog/2021/two-times-remote-elephant-carpaccio/"&gt;previous post&lt;/a&gt;, the first time I ran the exercise, it got away from me a little. In this sense I find it interesting that Oliver Spann seems to have had &lt;a href="https://medium.com/@olivercecilspann/elephant-carpaccio-exercise-an-experience-report-207f0cc79c34"&gt;a similar experience&lt;/a&gt; facilitating Elephant Carpaccio for the first time:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2021/lessons-learned-after-facilitating-elephant-carpaccio/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="elephant-carpaccio" label="elephant carpaccio"/>
     <category term="facilitation" label="facilitation"/>
     <category term="workshop" label="workshop"/>
   </entry>
   <entry>
     <title>Two times remote Elephant Carpaccio</title>
-    <id>https://j19sch.github.io/blog/2021/two-times-remote-elephant-carpaccio/</id>
+    <id>https://smallsheds.garden/blog/2021/two-times-remote-elephant-carpaccio/</id>
     <updated>2021-10-03T21:28:50+02:00</updated>
     <published>2021-10-03T21:28:50+02:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2021/two-times-remote-elephant-carpaccio/"/>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2021/two-times-remote-elephant-carpaccio/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;A while ago I asked the teams in my department which parts of agile software development they wanted to learn more about. One of the topics that stood out, was: you have a high-level description of a new feature, then what? That's still quite a wide topic, so the question become on what part of that problem would I focus first.&lt;/p&gt;
 &lt;p&gt;Quite quickly I settled on feature slicing - for several reasons. First of all, I had noticed teams delivering somewhat big chunks of functionality, split up into development tasks instead of vertical slices. Secondly, a team I had worked with on feature slicing, had gained some valuable planning flexibility because of it. And they continued the practice, breaking up projects vertically. Finally, I was aware that there was a workshop called "Elephant Carpaccio", focused on feature slicing. So I could use that, or build on it, but at least I wouldn't have to come up with something from scratch.&lt;/p&gt;
 &lt;h3&gt;The Elephant Carpaccio exercise&lt;/h3&gt;
-&lt;p&gt;The Elephant Carpaccio exercise was invented by Alistair Cockburn&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://j19sch.github.io/blog/2021/two-times-remote-elephant-carpaccio/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;. Its purpose is to get people to practice &lt;em&gt;"nano-incremental"&lt;/em&gt; development, i.e. slicing something small enough you can program it in 15-30 minutes. The exercise tries to bring home its point through exageration: you are asked to slice a very simple application in 15-20 slices, where you would normally do it in 2-3 slices. Then you get five iterations of 8 minutes to build those slices. To me that's the coolest part of the exercise: you actually get to experience what's it like to work with such small slices. As Alistair Cockburn himself says about the exercise: &lt;em&gt;"the true learning is the actual programming section"&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2021/two-times-remote-elephant-carpaccio/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;The Elephant Carpaccio exercise was invented by Alistair Cockburn&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2021/two-times-remote-elephant-carpaccio/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;. Its purpose is to get people to practice &lt;em&gt;"nano-incremental"&lt;/em&gt; development, i.e. slicing something small enough you can program it in 15-30 minutes. The exercise tries to bring home its point through exageration: you are asked to slice a very simple application in 15-20 slices, where you would normally do it in 2-3 slices. Then you get five iterations of 8 minutes to build those slices. To me that's the coolest part of the exercise: you actually get to experience what's it like to work with such small slices. As Alistair Cockburn himself says about the exercise: &lt;em&gt;"the true learning is the actual programming section"&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2021/two-times-remote-elephant-carpaccio/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="agile" label="agile"/>
     <category term="elephant-carpaccio" label="elephant carpaccio"/>
     <category term="facilitation" label="facilitation"/>

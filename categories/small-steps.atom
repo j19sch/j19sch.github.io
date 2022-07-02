@@ -1,33 +1,33 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<?xml-stylesheet href="https://j19sch.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<?xml-stylesheet href="https://smallsheds.garden/assets/xml/atom.xsl" type="text/xsl media="all"?>
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about small steps)</title>
-  <id>https://j19sch.github.io/categories/small-steps.atom</id>
-  <updated>2021-11-28T15:04:55Z</updated>
+  <id>https://smallsheds.garden/categories/small-steps.atom</id>
+  <updated>2022-07-02T14:16:03Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
-  <link rel="self" type="application/atom+xml" href="https://j19sch.github.io/categories/small-steps.atom"/>
-  <link rel="alternate" type="text/html" href="https://j19sch.github.io/categories/small-steps/"/>
+  <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/small-steps.atom"/>
+  <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/small-steps/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
     <title>Thinking about quality: so what to do?</title>
-    <id>https://j19sch.github.io/blog/2021/thinking-about-quality-so-what-to-do/</id>
+    <id>https://smallsheds.garden/blog/2021/thinking-about-quality-so-what-to-do/</id>
     <updated>2021-04-07T13:25:02+02:00</updated>
     <published>2021-04-07T13:25:02+02:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2021/thinking-about-quality-so-what-to-do/"/>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2021/thinking-about-quality-so-what-to-do/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;On 30 January 2021 I participated in the Quality Acceleration Peer Conference organized by Huib Schoots and Joost Voskuil. Participants were &lt;a href="https://twitter.com/alanpage"&gt;Alan Page&lt;/a&gt;, &lt;a href="https://twitter.com/unremarkableQA"&gt;Areti Panou&lt;/a&gt;, &lt;a href="https://twitter.com/northern_tester"&gt;Ash Winter&lt;/a&gt;, &lt;a href="https://twitter.com/btknaack"&gt;Bart Knaack&lt;/a&gt;, &lt;a href="https://twitter.com/conorfi"&gt;Conor Fitzgerald&lt;/a&gt;, &lt;a href="https://twitter.com/roukedejong"&gt;Rouke de Jong&lt;/a&gt;, &lt;a href="https://twitter.com/gwendiagram"&gt;Gwen Diagram&lt;/a&gt;, &lt;a href="https://twitter.com/gdinwiddie"&gt;George Dinwiddie&lt;/a&gt;, &lt;a href="https://twitter.com/janetgregoryca"&gt;Janet Gregory&lt;/a&gt;, &lt;a href="https://twitter.com/joost_voskuil"&gt;Joost Voskuil&lt;/a&gt;, &lt;a href="https://twitter.com/jpjwolli"&gt;Joost van Wollingen&lt;/a&gt;, &lt;a href="https://twitter.com/mmeijeri"&gt;Martijn Meijering&lt;/a&gt;, &lt;a href="https://twitter.com/robmeaney"&gt;Rob Meaney&lt;/a&gt;, &lt;a href="https://twitter.com/vinwijnl"&gt;Vincent Wijnen&lt;/a&gt; - with &lt;a href="https://twitter.com/huibschoots"&gt;Huib Schoots&lt;/a&gt; facilitating the peer conference. The main topics mentioned in the invite were: "How can you sell quality?", "How can you convince people that quality can accelerate software delivery?", and "What limitations or barriers do you hit?"&lt;/p&gt;
 &lt;p&gt;Reflecting during and after our discussions on these topics, I realized there are some interesting things going on about how we talk about quality and how to sell it. Enough interesting things to fill more than one blog post, so this will be a four-part series. And I might expand on some ideas in the series after that.&lt;/p&gt;
-&lt;p&gt;The first three parts covered rather philosophical topics: &lt;a href="https://j19sch.github.io/blog/2021/choosing-your-value-system/"&gt;choosing your value system&lt;/a&gt;, &lt;a href="https://j19sch.github.io/blog/2021/who-doesnt-want-quality/"&gt;exploring what it means to sell quality&lt;/a&gt;, and &lt;a href="https://j19sch.github.io/blog/2021/management-paradigms-and-quality/"&gt;how management paradigms affect quality&lt;/a&gt;. At the end of the third post I brought up the main question for this fourth and last post: so now what? If you expect me to get very concrete and specific in this post, I'm afraid I have to disappoint you. What I will do, is share a way to think about actions that has been helpful to me.&lt;/p&gt;
+&lt;p&gt;The first three parts covered rather philosophical topics: &lt;a href="https://smallsheds.garden/blog/2021/choosing-your-value-system/"&gt;choosing your value system&lt;/a&gt;, &lt;a href="https://smallsheds.garden/blog/2021/who-doesnt-want-quality/"&gt;exploring what it means to sell quality&lt;/a&gt;, and &lt;a href="https://smallsheds.garden/blog/2021/management-paradigms-and-quality/"&gt;how management paradigms affect quality&lt;/a&gt;. At the end of the third post I brought up the main question for this fourth and last post: so now what? If you expect me to get very concrete and specific in this post, I'm afraid I have to disappoint you. What I will do, is share a way to think about actions that has been helpful to me.&lt;/p&gt;
 &lt;h3&gt;Quality is something emergent&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://twitter.com/charrett"&gt;Anne-Marie Charrett&lt;/a&gt; says in a blog post titled "&lt;a href="https://mavericktester.com/2018/12/04/emergent-quality/"&gt;Emergent Quality&lt;/a&gt;":&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;"My hypothesis is that quality is an emergent behaviour. It relies on a whole set of independent systems coming together to create this emergent property. We can never truly know what quality is. It’s constantly changing and morphing into different things. For sure, we can provide examples, but know quality itself? I’m not convinced."&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2021/thinking-about-quality-so-what-to-do/"&gt;Read more…&lt;/a&gt; (8 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2021/thinking-about-quality-so-what-to-do/"&gt;Read more…&lt;/a&gt; (8 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="horizon" label="horizon"/>
     <category term="leadership" label="leadership"/>
     <category term="peer-conference" label="peer conference"/>

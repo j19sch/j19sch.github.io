@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<?xml-stylesheet href="https://j19sch.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<?xml-stylesheet href="https://smallsheds.garden/assets/xml/atom.xsl" type="text/xsl media="all"?>
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about philosophy of testing)</title>
-  <id>https://j19sch.github.io/categories/cat_philosophy-of-testing.atom</id>
-  <updated>2021-11-28T15:04:54Z</updated>
+  <id>https://smallsheds.garden/categories/cat_philosophy-of-testing.atom</id>
+  <updated>2022-07-02T14:16:03Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
-  <link rel="self" type="application/atom+xml" href="https://j19sch.github.io/categories/cat_philosophy-of-testing.atom"/>
-  <link rel="alternate" type="text/html" href="https://j19sch.github.io/categories/cat_philosophy-of-testing/"/>
+  <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/cat_philosophy-of-testing.atom"/>
+  <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/cat_philosophy-of-testing/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
     <title>Why the testing/checking debate is so messy - a fruit salad analogy</title>
-    <id>https://j19sch.github.io/blog/2015/why-the-testingchecking-debate-is-so-messy-a-fruit-salad-analogy/</id>
+    <id>https://smallsheds.garden/blog/2015/why-the-testingchecking-debate-is-so-messy-a-fruit-salad-analogy/</id>
     <updated>2015-11-15T12:17:12+01:00</updated>
     <published>2015-11-15T12:17:12+01:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2015/why-the-testingchecking-debate-is-so-messy-a-fruit-salad-analogy/"/>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2015/why-the-testingchecking-debate-is-so-messy-a-fruit-salad-analogy/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;Five days ago James Thomas posted &lt;a href="https://www.linkedin.com/grp/post/55636-6069749695687770112?trk=groups-post-b-title"&gt;the following&lt;/a&gt; in the Software Testing &amp;amp; Quality Assurance group on LinkedIn:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Are Testing and Checking different or not?&lt;/strong&gt;&lt;br&gt;
@@ -28,43 +28,43 @@ This &lt;a href="http://gerrardconsulting.com/?q=node/659"&gt;article by Paul Ge
 &lt;p&gt;Let's imagine the following scene: Alice and Bob are preparing a fruit salad together.&lt;br&gt;
 &lt;em&gt;Alice&lt;/em&gt;: "Ok, let's make a nice fruit salad. We need some apples and some fruit."&lt;br&gt;
 &lt;em&gt;Bob&lt;/em&gt;: "Euh, aren't apples fruit?"&lt;br&gt;
-&lt;em&gt;Alice&lt;/em&gt;: "Yes. Of course. But when I say 'fruit', I mean 'non-apple fruit'."&lt;/p&gt;&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2015/why-the-testingchecking-debate-is-so-messy-a-fruit-salad-analogy/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;em&gt;Alice&lt;/em&gt;: "Yes. Of course. But when I say 'fruit', I mean 'non-apple fruit'."&lt;/p&gt;&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2015/why-the-testingchecking-debate-is-so-messy-a-fruit-salad-analogy/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="context-driven-testing" label="context-driven testing"/>
     <category term="semantics" label="semantics"/>
     <category term="testing-and-checking" label="testing and checking"/>
   </entry>
   <entry>
     <title>What's the word for the part of testing that's not checking?</title>
-    <id>https://j19sch.github.io/blog/2015/whats-the-word-for-the-part-of-testing-thats-not-checking/</id>
+    <id>https://smallsheds.garden/blog/2015/whats-the-word-for-the-part-of-testing-thats-not-checking/</id>
     <updated>2015-08-17T20:19:25+02:00</updated>
     <published>2015-08-17T20:19:25+02:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2015/whats-the-word-for-the-part-of-testing-thats-not-checking/"/>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2015/whats-the-word-for-the-part-of-testing-thats-not-checking/"/>
     <summary type="html">&lt;div&gt;&lt;h3&gt;The question I asked&lt;/h3&gt;
 &lt;p&gt;Yesterday &lt;a href="https://twitter.com/j19sch/status/632910141751447552"&gt;I asked on twitter&lt;/a&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Question: what's the proper word for the part of testing that's not checking? #cdt #testing #semantics&lt;br&gt;
 - Joep Schuurkes (@j19sch) August 16, 2015&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;The reason I asked, is that I noticed I needed that word in discussions about testing and checking. If checking is part of testing - and in the RST namespace it most definitely is, see '&lt;a href="http://www.satisfice.com/blog/archives/856"&gt;Testing and checking refined&lt;/a&gt;' -, then what can I contrast checking with? Contrasting checking with testing (as in 'checking versus testing') isn't going to work: there's one thing that's checking and then there's this other thing, testing, that contains that one thing and some other stuff&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://j19sch.github.io/blog/2015/whats-the-word-for-the-part-of-testing-thats-not-checking/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;, but it's like a completely different thing. See the difference? Conceptually that just doesn't work - at least not in my mind.&lt;/p&gt;
+&lt;p&gt;The reason I asked, is that I noticed I needed that word in discussions about testing and checking. If checking is part of testing - and in the RST namespace it most definitely is, see '&lt;a href="http://www.satisfice.com/blog/archives/856"&gt;Testing and checking refined&lt;/a&gt;' -, then what can I contrast checking with? Contrasting checking with testing (as in 'checking versus testing') isn't going to work: there's one thing that's checking and then there's this other thing, testing, that contains that one thing and some other stuff&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2015/whats-the-word-for-the-part-of-testing-thats-not-checking/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;, but it's like a completely different thing. See the difference? Conceptually that just doesn't work - at least not in my mind.&lt;/p&gt;
 &lt;h3&gt;The answers I got&lt;/h3&gt;
 &lt;p&gt;So I figured I'd ask twitter in all its infinite testing wisdom and lo and behold, not only did people reply, a discussion ensued with the following people (listed in no particular order) participating in different configurations: &lt;a href="https://twitter.com/eddybruin"&gt;@eddybruin&lt;/a&gt;, &lt;a href="https://twitter.com/mariakedemo"&gt;@mariakedemo&lt;/a&gt;, &lt;a href="https://twitter.com/SandroIbig"&gt;@SandroIbig&lt;/a&gt;, &lt;a href="https://twitter.com/TestPappy"&gt;@TestPappy&lt;/a&gt;, &lt;a href="https://twitter.com/dwiersma"&gt;@dwiersma&lt;/a&gt;, &lt;a href="https://twitter.com/ilarihenrik"&gt;@ilarihenrik&lt;/a&gt;, &lt;a href="https://twitter.com/PhilipHoeben"&gt;@PhilipHoeben&lt;/a&gt;, &lt;a href="https://twitter.com/huibschoots"&gt;@huibschoots&lt;/a&gt; and &lt;a href="https://twitter.com/deefex"&gt;@deefex&lt;/a&gt;. Thank you all!&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2015/whats-the-word-for-the-part-of-testing-thats-not-checking/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2015/whats-the-word-for-the-part-of-testing-thats-not-checking/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="context-driven-testing" label="context-driven testing"/>
     <category term="semantics" label="semantics"/>
     <category term="testing-and-checking" label="testing and checking"/>
   </entry>
   <entry>
     <title>Three arguments against the verification-validation dichotomy</title>
-    <id>https://j19sch.github.io/blog/2015/three-arguments-against-the-verification-validation-dichotomy/</id>
+    <id>https://smallsheds.garden/blog/2015/three-arguments-against-the-verification-validation-dichotomy/</id>
     <updated>2015-03-24T20:53:24+01:00</updated>
     <published>2015-03-24T20:53:24+01:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2015/three-arguments-against-the-verification-validation-dichotomy/"/>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2015/three-arguments-against-the-verification-validation-dichotomy/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;Last week while talking with two colleagues, one of them mentioned the verification/validation thing. And I noticed it made me feel uneasy. Because I know well enough what is meant by the distinction, but on a practical level I simply can't relate to it. When I think about what I do as a software tester and how verification versus validation applies to it, nothing happens. Blank mind. Crickets. Tumbleweed.
 So after giving it some thought, I present you with three arguments against the verification-validation dichotomy.&lt;/p&gt;
 &lt;p&gt;First of course, we have the obligatory interlude of defining these two terms. A place to start is the Wikipedia page on &lt;a href="http://en.wikipedia.org/wiki/Software_verification_and_validation"&gt;Software verification and validation&lt;/a&gt;. Unfortunately it contains conflicting definitions, so if anyone cares enough, please do fix. Luckily there's also the general &lt;a href="http://en.wikipedia.org/wiki/Verification_and_validation"&gt;Verification and validation&lt;/a&gt; page of Wikipedia, which gives us (among others) the tl;dr version of the distinction:&lt;/p&gt;
@@ -78,56 +78,56 @@ So after giving it some thought, I present you with three arguments against the 
 &lt;li&gt;Validation: &lt;em&gt;Confirmation by examination and through provision of objective evidence that the requirements for a specific intended use or application have been fulfilled.&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Now on to the three arguments.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2015/three-arguments-against-the-verification-validation-dichotomy/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2015/three-arguments-against-the-verification-validation-dichotomy/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="exploration" label="exploration"/>
     <category term="semantics" label="semantics"/>
     <category term="verification-and-validation" label="verification and validation"/>
   </entry>
   <entry>
     <title>The test case - an epistemological deconstruction</title>
-    <id>https://j19sch.github.io/blog/2015/the-test-case-an-epistemological-deconstruction/</id>
+    <id>https://smallsheds.garden/blog/2015/the-test-case-an-epistemological-deconstruction/</id>
     <updated>2015-02-01T22:19:55+01:00</updated>
     <published>2015-02-01T22:19:55+01:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2015/the-test-case-an-epistemological-deconstruction/"/>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2015/the-test-case-an-epistemological-deconstruction/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;&lt;em&gt;(This article was first published in Dutch in &lt;a href="https://www.testnet.org/testnet/home"&gt;TestNet&lt;/a&gt; Nieuws 18. The article below is a translation with minor changes. Many thanks to Joris Meerts and Ruud Cox for reviewing the original version.)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Testing as an information problem&lt;/h3&gt;
 &lt;p&gt;Testing is an information problem. We are in search of certain information, of an answer to the question: does this application fulfill the relevant explicit and implicit expectations? The exact way in which we can answer this question, however, is not immediately clear. First we will need to decide which questions to ask, how to ask them and how to evaluate the responses. Hence, testing is an information problem.&lt;/p&gt;
 &lt;p&gt;For the traditional test methodologies (ISTQB and TMap being the most well-known) the test case is a large part of the solution. So let's take this solution apart epistemologically and see what it is we have in front of us. If the traditional test case is our solution, what information does a test case contain? What changes occur after executing it? And also, where is the understanding in all of this that's happening?&lt;/p&gt;
 &lt;p&gt;In this article, I will first describe how a typical test case is created and how it is used. Then we shall take a look at which kinds of information a test case contains. Finally, we will analyze where the understanding of what happens during testing, is present and where it is not.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2015/the-test-case-an-epistemological-deconstruction/"&gt;Read more…&lt;/a&gt; (10 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2015/the-test-case-an-epistemological-deconstruction/"&gt;Read more…&lt;/a&gt; (10 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="epistemology" label="epistemology"/>
     <category term="information-debt" label="information debt"/>
     <category term="test-cases" label="test cases"/>
   </entry>
   <entry>
     <title>Joining the fray on ISO 29119</title>
-    <id>https://j19sch.github.io/blog/2014/joining-the-fray-on-iso-29119/</id>
+    <id>https://smallsheds.garden/blog/2014/joining-the-fray-on-iso-29119/</id>
     <updated>2014-08-23T10:04:08+02:00</updated>
     <published>2014-08-23T10:04:08+02:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2014/joining-the-fray-on-iso-29119/"/>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2014/joining-the-fray-on-iso-29119/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;For those of you who weren't aware yet: something happened at CAST 2014 regarding the ISO/IEC/IEEE 29119 Software Testing. For instance, first &lt;a href="http://www.youtube.com/watch?v=A721ltyVw3o&amp;amp;list=PLQB4l9iafcelXpJnK6IyDsoFeEb1icqrl"&gt;this&lt;/a&gt; happened, which resulted in &lt;a href="http://www.ipetitions.com/petition/stop29119"&gt;this&lt;/a&gt; and &lt;a href="http://www.professionaltestersmanifesto.org/"&gt;this&lt;/a&gt; and a whole bunch of other initiatives.&lt;/p&gt;
 &lt;p&gt;And then someone on twitter (forgot who, apologies) suggested watching Stuard Reid's Eurostar webinar "ISO 29119 – the new set of international standards on software testing" which can be found &lt;a href="https://www.youtube.com/watch?v=c4W-jWRldj0"&gt;here&lt;/a&gt;. Since I liked to learn more about the standard, but not enough to pay almost 500€ to &lt;a href="http://www.nen.nl/Zoekresultaten.htm?q=iso+29119"&gt;NEN&lt;/a&gt; (Dutch standards organisation) for parts 1 to 3, I began watching the webinar.
 And truth be told, I didn't watch all of it. Some parts were boring, some parts sounded quite reasonable and some parts I..euh..skipped. And that's ok because all I want to discuss is this one particular quote that begins at 33:25:&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2014/joining-the-fray-on-iso-29119/"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2014/joining-the-fray-on-iso-29119/"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="context-driven-testing" label="context-driven testing"/>
     <category term="iso-29119" label="ISO 29119"/>
     <category term="test-management" label="test management"/>
   </entry>
   <entry>
     <title>Information debt</title>
-    <id>https://j19sch.github.io/blog/2014/information-debt/</id>
+    <id>https://smallsheds.garden/blog/2014/information-debt/</id>
     <updated>2014-07-13T16:50:21+02:00</updated>
     <published>2014-07-13T16:50:21+02:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2014/information-debt/"/>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2014/information-debt/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;Last week ago the following happened on twitter:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;New word of the day: "information debt". It's like technical debt, but related to information, communication, models, docs, visualisations.&lt;br&gt;
@@ -146,64 +146,64 @@ And truth be told, I didn't watch all of it. Some parts were boring, some parts 
 &lt;em&gt;- Joep Schuurkes (@j19sch) &lt;a href="https://twitter.com/j19sch/statuses/486555404089188352"&gt;July 8, 2014&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;In case you don't know what technical debt is, you might want to read &lt;a href="http://techblog.net-a-porter.com/2011/10/agile-tetris/"&gt;this&lt;/a&gt; first. (It's the oldest source I could find of the technical debt-tetris analogy, by the way. If you know of an older one, please leave a comment.)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2014/information-debt/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2014/information-debt/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="information-debt" label="information debt"/>
     <category term="software-testing" label="software testing"/>
     <category term="vipt" label="VIPT"/>
   </entry>
   <entry>
     <title>Why I am context-driven</title>
-    <id>https://j19sch.github.io/blog/2014/why-i-am-context-driven/</id>
+    <id>https://smallsheds.garden/blog/2014/why-i-am-context-driven/</id>
     <updated>2014-06-30T07:06:21+02:00</updated>
     <published>2014-06-30T07:06:21+02:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2014/why-i-am-context-driven/"/>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2014/why-i-am-context-driven/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;&lt;em&gt;(This post was first published on the DEWT site as part of a &lt;a href="https://dewt.wordpress.com/category/why-am-i-context-driven/"&gt;blog post series&lt;/a&gt; by the DEWT members .)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Why am I context-driven? Because it's more fun.&lt;/p&gt;
 &lt;p&gt;That's all there is to it.&lt;/p&gt;
 &lt;p&gt;Of course I could argue that becoming context-driven has made me a better tester and I do think it has. Yet it's not the reason I became a context-driven tester. Besides, how would I prove it made me a better tester?&lt;/p&gt;
 &lt;p&gt;So no, I am context-driven because it's more fun. Because it sees testing as an intellectual challenge. Because it allows human uncertainty to be at the core of what it is. Because it tells me that I'm in charge of what I do and how I do it. Because it encourages me to dive in at the deep end of some complex problem, trusting on my skills to get out on top and enjoying every step of the way.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2014/why-i-am-context-driven/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2014/why-i-am-context-driven/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="context-driven-testing" label="context-driven testing"/>
     <category term="dewt" label="DEWT"/>
   </entry>
   <entry>
     <title>DEWT2 - Becoming a context-driven tester</title>
-    <id>https://j19sch.github.io/blog/2012/dewt2-becoming-a-context-driven-tester/</id>
+    <id>https://smallsheds.garden/blog/2012/dewt2-becoming-a-context-driven-tester/</id>
     <updated>2012-11-08T23:14:57+01:00</updated>
     <published>2012-11-08T23:14:57+01:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2012/dewt2-becoming-a-context-driven-tester/"/>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2012/dewt2-becoming-a-context-driven-tester/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;About a month ago ago (October 5th - 6th) I was in Driebergen to attend &lt;a href="http://dewt.wordpress.com/2012/10/07/dewt2-was-a-blast/"&gt;DEWT2&lt;/a&gt;, a peer workshop with as theme "Implementing Context-Driven Testing". As it turns out, implementing context-driven testing is not easy to do. That should not come as a surprise: it requires people to change and that is difficult. Luckily, I'm not a manager wanting to implement context-driven testing, so I can dodge most of that problem.&lt;/p&gt;
 &lt;p&gt;However, I do like 'spreading the word' on context-driven testing, because I would like for there to be more context-driven testers in the Netherlands (and Europe and the world, of course). So to promote context-driven testing I think there are three things I can do: &lt;br&gt;
 1) set an example,&lt;br&gt;
 2) be available to other people,&lt;br&gt;
 3) leave bread crumbs.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2012/dewt2-becoming-a-context-driven-tester/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2012/dewt2-becoming-a-context-driven-tester/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="context-driven-testing" label="context-driven testing"/>
     <category term="dewt" label="DEWT"/>
     <category term="peer-conference" label="peer conference"/>
   </entry>
   <entry>
     <title>VIPT - how to teach software testing</title>
-    <id>https://j19sch.github.io/blog/2012/vipt-how-to-teach-software-testing/</id>
+    <id>https://smallsheds.garden/blog/2012/vipt-how-to-teach-software-testing/</id>
     <updated>2012-07-29T16:24:51+02:00</updated>
     <published>2012-07-29T16:24:51+02:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2012/vipt-how-to-teach-software-testing/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;In this final post on VIPT (Value-Information-Processes-Tools) it's time to take a look at teaching software testing. My previous posts on VIPT can be found &lt;a href="https://j19sch.github.io/blog/2012/yet-another-testing-model-value-information-processes-value/"&gt;here&lt;/a&gt;, &lt;a href="https://j19sch.github.io/blog/2012/vipt-intermezzo-models-and-the-unix-philosophy/"&gt;here&lt;/a&gt; and &lt;a href="https://j19sch.github.io/blog/2012/vipt-bottom-up-or-top-down/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2012/vipt-how-to-teach-software-testing/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;In this final post on VIPT (Value-Information-Processes-Tools) it's time to take a look at teaching software testing. My previous posts on VIPT can be found &lt;a href="https://smallsheds.garden/blog/2012/yet-another-testing-model-value-information-processes-value/"&gt;here&lt;/a&gt;, &lt;a href="https://smallsheds.garden/blog/2012/vipt-intermezzo-models-and-the-unix-philosophy/"&gt;here&lt;/a&gt; and &lt;a href="https://smallsheds.garden/blog/2012/vipt-bottom-up-or-top-down/"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;A typical software testing course&lt;/h3&gt;
 &lt;p&gt;A typical traditional software testing course (at least in the way I have taught them) has three elements: theory, stories and exercises.&lt;/p&gt;
 &lt;p&gt;The first element is all about definitions (testing, test cases, defects, etc.), process descriptions and testing techniques (mostly test design). So basically what happens is that students get a brief introduction about testing in general and then we move on to the main part: teaching a specifc testing method.&lt;/p&gt;
 &lt;p&gt;The second element of the course are the stories. These are mostly stories aobut how testing in the real world does not work as described in the theory. At best they are stories containing all four elements of VIPT. Most of the time, however, they are just real-world examples of a certain definition or technique.&lt;/p&gt;
 &lt;p&gt;Finally, there are exercises. As with the techniques, these are mostly about test design. Unfortunately they are also very linear. There is only one correct answer and often only one correct way to get to that answer. So the main gist seems to be: "I taught you a trick, now show me you can perform the trick." But shouldn't learning about testing be more than learning to jump through a hoop on command?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2012/vipt-how-to-teach-software-testing/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2012/vipt-how-to-teach-software-testing/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="context-driven-testing" label="context-driven testing"/>
     <category term="models" label="models"/>
     <category term="teaching" label="teaching"/>
@@ -211,18 +211,18 @@ And truth be told, I didn't watch all of it. Some parts were boring, some parts 
   </entry>
   <entry>
     <title>VIPT - bottom-up or top-down</title>
-    <id>https://j19sch.github.io/blog/2012/vipt-bottom-up-or-top-down/</id>
+    <id>https://smallsheds.garden/blog/2012/vipt-bottom-up-or-top-down/</id>
     <updated>2012-07-17T20:02:42+02:00</updated>
     <published>2012-07-17T20:02:42+02:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2012/vipt-bottom-up-or-top-down/"/>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2012/vipt-bottom-up-or-top-down/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;In this second post on VIPT I want to talk about bottom-up vs. top-down. The original plan for this post was to talk about the distance between tools and value, but in the past few days I figured out that bottom-up vs. top-down is a better approach.
-If you don't know what VIPT is, please read &lt;a href="https://j19sch.github.io/blog/2012/yet-another-testing-model-value-information-processes-value/"&gt;this previous post&lt;/a&gt;. Don't worry, I'll wait.&lt;/p&gt;
+If you don't know what VIPT is, please read &lt;a href="https://smallsheds.garden/blog/2012/yet-another-testing-model-value-information-processes-value/"&gt;this previous post&lt;/a&gt;. Don't worry, I'll wait.&lt;/p&gt;
 &lt;h3&gt;VIPT is a top-down model&lt;/h3&gt;
-&lt;p&gt;For me as a context-driven tester the VIPT model is very much a top-down thing. You analyze the context, find out what value you should/can deliver and then you proceed to information, processes and tools. Of course, that's easier said than done. Going through this for everything you do, requires a lot of time and effort. So most of the time you do quick analysis of the context, decide that it sufficiently resembles a context you encountered earlier and you use the same tools you used then. Most of the time that's ok - as long as you stay alert to any signs that you misread the context.&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://j19sch.github.io/blog/2012/vipt-bottom-up-or-top-down/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2012/vipt-bottom-up-or-top-down/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;For me as a context-driven tester the VIPT model is very much a top-down thing. You analyze the context, find out what value you should/can deliver and then you proceed to information, processes and tools. Of course, that's easier said than done. Going through this for everything you do, requires a lot of time and effort. So most of the time you do quick analysis of the context, decide that it sufficiently resembles a context you encountered earlier and you use the same tools you used then. Most of the time that's ok - as long as you stay alert to any signs that you misread the context.&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2012/vipt-bottom-up-or-top-down/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2012/vipt-bottom-up-or-top-down/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="context-driven-testing" label="context-driven testing"/>
     <category term="models" label="models"/>
     <category term="vipt" label="VIPT"/>

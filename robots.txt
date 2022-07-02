@@ -1,4 +1,4 @@
-Sitemap: https://j19sch.github.io/sitemapindex.xml
+Sitemap: https://smallsheds.garden/sitemapindex.xml
 
 User-Agent: *
-Host: j19sch.github.io
+Host: smallsheds.garden

@@ -1,31 +1,31 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<?xml-stylesheet href="https://j19sch.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<?xml-stylesheet href="https://smallsheds.garden/assets/xml/atom.xsl" type="text/xsl media="all"?>
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about models)</title>
-  <id>https://j19sch.github.io/categories/models.atom</id>
-  <updated>2021-11-28T15:04:54Z</updated>
+  <id>https://smallsheds.garden/categories/models.atom</id>
+  <updated>2022-07-02T14:16:03Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
-  <link rel="self" type="application/atom+xml" href="https://j19sch.github.io/categories/models.atom"/>
-  <link rel="alternate" type="text/html" href="https://j19sch.github.io/categories/models/"/>
+  <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/models.atom"/>
+  <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/models/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
     <title>VIPT - how to teach software testing</title>
-    <id>https://j19sch.github.io/blog/2012/vipt-how-to-teach-software-testing/</id>
+    <id>https://smallsheds.garden/blog/2012/vipt-how-to-teach-software-testing/</id>
     <updated>2012-07-29T16:24:51+02:00</updated>
     <published>2012-07-29T16:24:51+02:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2012/vipt-how-to-teach-software-testing/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;In this final post on VIPT (Value-Information-Processes-Tools) it's time to take a look at teaching software testing. My previous posts on VIPT can be found &lt;a href="https://j19sch.github.io/blog/2012/yet-another-testing-model-value-information-processes-value/"&gt;here&lt;/a&gt;, &lt;a href="https://j19sch.github.io/blog/2012/vipt-intermezzo-models-and-the-unix-philosophy/"&gt;here&lt;/a&gt; and &lt;a href="https://j19sch.github.io/blog/2012/vipt-bottom-up-or-top-down/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2012/vipt-how-to-teach-software-testing/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;In this final post on VIPT (Value-Information-Processes-Tools) it's time to take a look at teaching software testing. My previous posts on VIPT can be found &lt;a href="https://smallsheds.garden/blog/2012/yet-another-testing-model-value-information-processes-value/"&gt;here&lt;/a&gt;, &lt;a href="https://smallsheds.garden/blog/2012/vipt-intermezzo-models-and-the-unix-philosophy/"&gt;here&lt;/a&gt; and &lt;a href="https://smallsheds.garden/blog/2012/vipt-bottom-up-or-top-down/"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;A typical software testing course&lt;/h3&gt;
 &lt;p&gt;A typical traditional software testing course (at least in the way I have taught them) has three elements: theory, stories and exercises.&lt;/p&gt;
 &lt;p&gt;The first element is all about definitions (testing, test cases, defects, etc.), process descriptions and testing techniques (mostly test design). So basically what happens is that students get a brief introduction about testing in general and then we move on to the main part: teaching a specifc testing method.&lt;/p&gt;
 &lt;p&gt;The second element of the course are the stories. These are mostly stories aobut how testing in the real world does not work as described in the theory. At best they are stories containing all four elements of VIPT. Most of the time, however, they are just real-world examples of a certain definition or technique.&lt;/p&gt;
 &lt;p&gt;Finally, there are exercises. As with the techniques, these are mostly about test design. Unfortunately they are also very linear. There is only one correct answer and often only one correct way to get to that answer. So the main gist seems to be: "I taught you a trick, now show me you can perform the trick." But shouldn't learning about testing be more than learning to jump through a hoop on command?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2012/vipt-how-to-teach-software-testing/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2012/vipt-how-to-teach-software-testing/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="context-driven-testing" label="context-driven testing"/>
     <category term="models" label="models"/>
     <category term="teaching" label="teaching"/>
@@ -33,31 +33,31 @@
   </entry>
   <entry>
     <title>VIPT - bottom-up or top-down</title>
-    <id>https://j19sch.github.io/blog/2012/vipt-bottom-up-or-top-down/</id>
+    <id>https://smallsheds.garden/blog/2012/vipt-bottom-up-or-top-down/</id>
     <updated>2012-07-17T20:02:42+02:00</updated>
     <published>2012-07-17T20:02:42+02:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2012/vipt-bottom-up-or-top-down/"/>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2012/vipt-bottom-up-or-top-down/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;In this second post on VIPT I want to talk about bottom-up vs. top-down. The original plan for this post was to talk about the distance between tools and value, but in the past few days I figured out that bottom-up vs. top-down is a better approach.
-If you don't know what VIPT is, please read &lt;a href="https://j19sch.github.io/blog/2012/yet-another-testing-model-value-information-processes-value/"&gt;this previous post&lt;/a&gt;. Don't worry, I'll wait.&lt;/p&gt;
+If you don't know what VIPT is, please read &lt;a href="https://smallsheds.garden/blog/2012/yet-another-testing-model-value-information-processes-value/"&gt;this previous post&lt;/a&gt;. Don't worry, I'll wait.&lt;/p&gt;
 &lt;h3&gt;VIPT is a top-down model&lt;/h3&gt;
-&lt;p&gt;For me as a context-driven tester the VIPT model is very much a top-down thing. You analyze the context, find out what value you should/can deliver and then you proceed to information, processes and tools. Of course, that's easier said than done. Going through this for everything you do, requires a lot of time and effort. So most of the time you do quick analysis of the context, decide that it sufficiently resembles a context you encountered earlier and you use the same tools you used then. Most of the time that's ok - as long as you stay alert to any signs that you misread the context.&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://j19sch.github.io/blog/2012/vipt-bottom-up-or-top-down/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2012/vipt-bottom-up-or-top-down/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;For me as a context-driven tester the VIPT model is very much a top-down thing. You analyze the context, find out what value you should/can deliver and then you proceed to information, processes and tools. Of course, that's easier said than done. Going through this for everything you do, requires a lot of time and effort. So most of the time you do quick analysis of the context, decide that it sufficiently resembles a context you encountered earlier and you use the same tools you used then. Most of the time that's ok - as long as you stay alert to any signs that you misread the context.&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2012/vipt-bottom-up-or-top-down/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2012/vipt-bottom-up-or-top-down/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="context-driven-testing" label="context-driven testing"/>
     <category term="models" label="models"/>
     <category term="vipt" label="VIPT"/>
   </entry>
   <entry>
     <title>VIPT Intermezzo - Models and the Unix philosophy</title>
-    <id>https://j19sch.github.io/blog/2012/vipt-intermezzo-models-and-the-unix-philosophy/</id>
+    <id>https://smallsheds.garden/blog/2012/vipt-intermezzo-models-and-the-unix-philosophy/</id>
     <updated>2012-07-15T20:25:03+02:00</updated>
     <published>2012-07-15T20:25:03+02:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2012/vipt-intermezzo-models-and-the-unix-philosophy/"/>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2012/vipt-intermezzo-models-and-the-unix-philosophy/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;Thanks to &lt;a href="https://testingcurve.wordpress.com/2012/07/09/yet-another-testing-model-value-information-processes-value/#comments"&gt;Neil Thompson's comments&lt;/a&gt; on my previous post, I started thinking about what I want to do with the VIPT model. Do I want to expand and refine it to a grand unified theory of testing? And if not, then what?&lt;/p&gt;
 &lt;h3&gt;The Unix philosophy&lt;/h3&gt;
 &lt;p&gt;After some thinking I realized that with regard to models, I adhere to the &lt;a href="http://www.faqs.org/docs/artu/ch01s06.html"&gt;Unix philosophy&lt;/a&gt;.&lt;/p&gt;
@@ -66,26 +66,26 @@ If you don't know what VIPT is, please read &lt;a href="https://j19sch.github.io
 &lt;blockquote&gt;
 &lt;p&gt;"This is the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface."&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2012/vipt-intermezzo-models-and-the-unix-philosophy/"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2012/vipt-intermezzo-models-and-the-unix-philosophy/"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="context-driven-testing" label="context-driven testing"/>
     <category term="models" label="models"/>
     <category term="vipt" label="VIPT"/>
   </entry>
   <entry>
     <title>Yet Another Testing Model: Value - Information - Processes - Tools</title>
-    <id>https://j19sch.github.io/blog/2012/yet-another-testing-model-value-information-processes-value/</id>
+    <id>https://smallsheds.garden/blog/2012/yet-another-testing-model-value-information-processes-value/</id>
     <updated>2012-07-09T20:21:44+02:00</updated>
     <published>2012-07-09T20:21:44+02:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2012/yet-another-testing-model-value-information-processes-value/"/>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2012/yet-another-testing-model-value-information-processes-value/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;During Let's Test 2012 some ideas clicked in my mind with the result of yet another testing model:
 Value - Information - Processes - Tools.&lt;/p&gt;
 &lt;p&gt;For me this model really is a culmination of being part of the context-driven testing community. If you have been reading about context-driven testing, I'm sure you'll be able to spot plenty ideas I stole from others. ;-) So thank you so much to all of you!&lt;br&gt;
-Secondly, I have trouble believing I am the first one to come up with this simple model - although a google search didn't turn up anything.&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://j19sch.github.io/blog/2012/yet-another-testing-model-value-information-processes-value/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; So if any of you know of similar models, please leave a comment!&lt;/p&gt;
+Secondly, I have trouble believing I am the first one to come up with this simple model - although a google search didn't turn up anything.&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2012/yet-another-testing-model-value-information-processes-value/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; So if any of you know of similar models, please leave a comment!&lt;/p&gt;
 &lt;p&gt;And now to the actual model. Since you can't have a model without a drawing, here's a not so spectacular one:&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2012/yet-another-testing-model-value-information-processes-value/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2012/yet-another-testing-model-value-information-processes-value/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="context-driven-testing" label="context-driven testing"/>
     <category term="models" label="models"/>
     <category term="vipt" label="VIPT"/>

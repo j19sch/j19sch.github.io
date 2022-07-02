@@ -1,30 +1,30 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<?xml-stylesheet href="https://j19sch.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<?xml-stylesheet href="https://smallsheds.garden/assets/xml/atom.xsl" type="text/xsl media="all"?>
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about management)</title>
-  <id>https://j19sch.github.io/categories/management.atom</id>
-  <updated>2021-11-28T15:04:55Z</updated>
+  <id>https://smallsheds.garden/categories/management.atom</id>
+  <updated>2022-07-02T14:16:04Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
-  <link rel="self" type="application/atom+xml" href="https://j19sch.github.io/categories/management.atom"/>
-  <link rel="alternate" type="text/html" href="https://j19sch.github.io/categories/management/"/>
+  <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/management.atom"/>
+  <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/management/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
     <title>Thinking about quality: management paradigms and quality</title>
-    <id>https://j19sch.github.io/blog/2021/management-paradigms-and-quality/</id>
+    <id>https://smallsheds.garden/blog/2021/management-paradigms-and-quality/</id>
     <updated>2021-03-15T09:32:08+01:00</updated>
     <published>2021-03-15T09:32:08+01:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2021/management-paradigms-and-quality/"/>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2021/management-paradigms-and-quality/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;On 30 January 2021 I participated in the Quality Acceleration Peer Conference organized by Huib Schoots and Joost Voskuil. Participants were &lt;a href="https://twitter.com/alanpage"&gt;Alan Page&lt;/a&gt;, &lt;a href="https://twitter.com/unremarkableQA"&gt;Areti Panou&lt;/a&gt;, &lt;a href="https://twitter.com/northern_tester"&gt;Ash Winter&lt;/a&gt;, &lt;a href="https://twitter.com/btknaack"&gt;Bart Knaack&lt;/a&gt;, &lt;a href="https://twitter.com/conorfi"&gt;Conor Fitzgerald&lt;/a&gt;, &lt;a href="https://twitter.com/roukedejong"&gt;Rouke de Jong&lt;/a&gt;, &lt;a href="https://twitter.com/gwendiagram"&gt;Gwen Diagram&lt;/a&gt;, &lt;a href="https://twitter.com/gdinwiddie"&gt;George Dinwiddie&lt;/a&gt;, &lt;a href="https://twitter.com/janetgregoryca"&gt;Janet Gregory&lt;/a&gt;, &lt;a href="https://twitter.com/joost_voskuil"&gt;Joost Voskuil&lt;/a&gt;, &lt;a href="https://twitter.com/jpjwolli"&gt;Joost van Wollingen&lt;/a&gt;, &lt;a href="https://twitter.com/mmeijeri"&gt;Martijn Meijering&lt;/a&gt;, &lt;a href="https://twitter.com/robmeaney"&gt;Rob Meaney&lt;/a&gt;, &lt;a href="https://twitter.com/vinwijnl"&gt;Vincent Wijnen&lt;/a&gt; - with &lt;a href="https://twitter.com/huibschoots"&gt;Huib Schoots&lt;/a&gt; facilitating the peer conference. The main topics mentioned in the invite were: "How can you sell quality?", "How can you convince people that quality can accelerate software delivery?", and "What limitations or barriers do you hit?"&lt;/p&gt;
 &lt;p&gt;Reflecting during and after our discussions on these topics, I realized there are some interesting things going on about how we talk about quality and how to sell it. Enough interesting things to fill more than one blog post, so this will be a four-part series. And I might expand on some ideas in the series after that.&lt;/p&gt;
-&lt;p&gt;This is the third part, exploring five different management paradigms as identified by &lt;a href="https://twitter.com/carolsanford"&gt;Carol Sanford&lt;/a&gt; in her book "&lt;a href="https://carolsanford.com/the-regenerative-business/"&gt;The Regenerative Business&lt;/a&gt;" and how they affect quality. The first part was about choosing your value system can be found &lt;a href="https://j19sch.github.io/blog/2021/choosing-your-value-system/"&gt;here&lt;/a&gt;. The second part about selling quality can be found &lt;a href="https://j19sch.github.io/blog/2021/who-doesnt-want-quality/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is the third part, exploring five different management paradigms as identified by &lt;a href="https://twitter.com/carolsanford"&gt;Carol Sanford&lt;/a&gt; in her book "&lt;a href="https://carolsanford.com/the-regenerative-business/"&gt;The Regenerative Business&lt;/a&gt;" and how they affect quality. The first part was about choosing your value system can be found &lt;a href="https://smallsheds.garden/blog/2021/choosing-your-value-system/"&gt;here&lt;/a&gt;. The second part about selling quality can be found &lt;a href="https://smallsheds.garden/blog/2021/who-doesnt-want-quality/"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Psychological cover and psychological safety&lt;/h3&gt;
 &lt;p&gt;If the challenge of quality is getting several things right (perception, desire, and means) and getting to an agreement among people, how we organize ourselves becomes a crucial topic. As W. Edwards Deming said: "A bad system will beat a good person every time." Or as Kurt Lewin said in a more neutral way: "Behavior is a function of the Person and the Environment." An important part of any environment is psychological safety. In &lt;a href="https://www.conversationaltransformation.com/blog/we're-the-aliens-three-ways-to-seek-safety/"&gt;episode 155&lt;/a&gt; of their &lt;a href="https://www.conversationaltransformation.com/troubleshooting-agile-podcast/"&gt;Troubleshooting Agile&lt;/a&gt; podcast &lt;a href="https://twitter.com/Jtf"&gt;Jeffrey Fredrick&lt;/a&gt; and &lt;a href="https://twitter.com/douglassquirrel"&gt;Douglas Squirrel&lt;/a&gt; make an interesting distinction between psychological cover and psychological safety.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2021/management-paradigms-and-quality/"&gt;Read more…&lt;/a&gt; (8 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2021/management-paradigms-and-quality/"&gt;Read more…&lt;/a&gt; (8 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="management" label="management"/>
     <category term="paradigms" label="paradigms"/>
     <category term="peer-conference" label="peer conference"/>

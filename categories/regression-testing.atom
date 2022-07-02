@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<?xml-stylesheet href="https://j19sch.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<?xml-stylesheet href="https://smallsheds.garden/assets/xml/atom.xsl" type="text/xsl media="all"?>
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about regression testing)</title>
-  <id>https://j19sch.github.io/categories/regression-testing.atom</id>
-  <updated>2021-11-28T15:04:56Z</updated>
+  <id>https://smallsheds.garden/categories/regression-testing.atom</id>
+  <updated>2022-07-02T14:16:04Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
-  <link rel="self" type="application/atom+xml" href="https://j19sch.github.io/categories/regression-testing.atom"/>
-  <link rel="alternate" type="text/html" href="https://j19sch.github.io/categories/regression-testing/"/>
+  <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/regression-testing.atom"/>
+  <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/regression-testing/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
     <title>Your CI/CD pipeline does not run regression tests</title>
-    <id>https://j19sch.github.io/blog/2019/your-ci-cd-pipeline-does-not-run-regression-tests/</id>
+    <id>https://smallsheds.garden/blog/2019/your-ci-cd-pipeline-does-not-run-regression-tests/</id>
     <updated>2019-08-05T23:47:51+02:00</updated>
     <published>2019-08-05T23:47:51+02:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2019/your-ci-cd-pipeline-does-not-run-regression-tests/"/>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2019/your-ci-cd-pipeline-does-not-run-regression-tests/"/>
     <summary type="html">&lt;div&gt;&lt;h3&gt;CI/CD pipelines&lt;/h3&gt;
 &lt;p&gt;The purpose of a CI/CD pipeline is to allow you to deliver small changes in a fast and controlled way. Without any tests in your pipeline you would gain a lot of speed. You'd also lose a lot control, which is why people in general do run tests in their pipeline. The purpose of these tests is to check if that stage of the pipeline meets the minimum level of acceptable quality for that stage.&lt;/p&gt;
 &lt;p&gt;For example, commit stage tests will consist of mostly unit tests, a few integration tests, and even fewer end-to-end tests, because early in the pipeline speed is more important than comprehensiveness. When I commit my changes, I want the results fast enough so that I will wait for them - ready to fix any issue that might occur.&lt;/p&gt;
@@ -26,7 +26,7 @@
 &lt;p&gt;There are many definitions of regression testing, as you can read in &lt;a href="https://arborosa.org/2015/07/31/regression-testing/"&gt;Arborosa's blog post on the topic&lt;/a&gt;. I have always defined regression testing along the lines of "testing the parts that weren't impacted by a change to see if they really weren't impacted." (Which is really weird if you start thinking about it: something is regression testing depending on your knowledge of the system and the change.)&lt;/p&gt;
 &lt;h3&gt;The tests in your pipeline are regression tests, …&lt;/h3&gt;
 &lt;p&gt;Most of the tests that run in your pipeline are regression tests. Your commits are small and you have a lot of tests, so most of those will cover parts of the system that shouldn't have been impacted by your changes. So yes, regression tests.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2019/your-ci-cd-pipeline-does-not-run-regression-tests/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2019/your-ci-cd-pipeline-does-not-run-regression-tests/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="cicd" label="ci/cd"/>
     <category term="devops" label="devops"/>
     <category term="regression-testing" label="regression testing"/>
@@ -35,16 +35,16 @@
   </entry>
   <entry>
     <title>Regression testing, it means less than you think</title>
-    <id>https://j19sch.github.io/blog/2016/regression-testing-it-means-less-than-you-think/</id>
+    <id>https://smallsheds.garden/blog/2016/regression-testing-it-means-less-than-you-think/</id>
     <updated>2016-01-03T19:42:26+01:00</updated>
     <published>2016-01-03T19:42:26+01:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://j19sch.github.io/blog/2016/regression-testing-it-means-less-than-you-think/"/>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2016/regression-testing-it-means-less-than-you-think/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;The past weeks I have made several attempts at a blog post about regression testing. About how we use it to refer to different things: tests running on a CI server, people executing test scripts, etc. And about how often the term really doesn't mean much at all, yet nobody questions you when you use it: "What are you doing?" "Regression testing." "Oh good, carry on." The point of the post would be to argue we should use the term 'regression testing' a lot less, because most of the time we can be more specific without having to be more verbose.&lt;/p&gt;
-&lt;p&gt;However, the more I thought about (what I would qualify as) proper regression testing, the more I felt that regression versus progression (or progressive) testing is a distinction without difference. One interesting observation in this regard is that "regression testing" returns 30 times more results on Google than "progression testing" and "progressive testing" combined. So what's going on here if we have a dichotomy with one member producing so much more discussion than the other? And there's more: regression testing is commonly contrasted with test types like functional testing and usability testing. But how then should I categorize a regression test focusing on functionality&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://j19sch.github.io/blog/2016/regression-testing-it-means-less-than-you-think/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://j19sch.github.io/blog/2016/regression-testing-it-means-less-than-you-think/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;However, the more I thought about (what I would qualify as) proper regression testing, the more I felt that regression versus progression (or progressive) testing is a distinction without difference. One interesting observation in this regard is that "regression testing" returns 30 times more results on Google than "progression testing" and "progressive testing" combined. So what's going on here if we have a dichotomy with one member producing so much more discussion than the other? And there's more: regression testing is commonly contrasted with test types like functional testing and usability testing. But how then should I categorize a regression test focusing on functionality&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2016/regression-testing-it-means-less-than-you-think/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2016/regression-testing-it-means-less-than-you-think/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="regression-testing" label="regression testing"/>
     <category term="semantics" label="semantics"/>
     <category term="test-management" label="test management"/>
