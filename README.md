@@ -1,6 +1,6 @@
 # README
 
-site built with [Nikola](https://getnikola.com/) hosted on <https://smalsheds.garden>
+site built with [Nikola](https://getnikola.com/) hosted on <https://smallsheds.garden>
 
 ## Useful commands
 - `nikola auto --browser`
