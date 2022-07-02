@@ -20,7 +20,7 @@ BLOG_AUTHOR = "Joep Schuurkes"  # (translatable)
 BLOG_TITLE = "Joep Schuurkes"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "https://j19sch.github.io/"
+SITE_URL = "https://smallsheds.garden/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://j19sch.github.io/"
