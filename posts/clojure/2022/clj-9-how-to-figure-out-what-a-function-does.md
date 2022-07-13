@@ -39,7 +39,7 @@ To figure out what this `mapify` function does, we need to break it up into part
 The function definition starts and ends with a parenthesis, making it a list. Clojure is part of the [Lisp](https://en.wikipedia.org/wiki/Lisp_(programming_language))-family of languages and that means almost everything is a list and thus you get lots of parentheses. Next we have `defn` which tells Clojure we want to define a function. Then there's `mapify`, the name of the function. The part between double quotes is a docstring, describing what the function does. The line after that, `[rows]`, is the input parameter of the function. So if we want to call the `mapify` function, we need to provide it with an argument for this `rows` parameter[^8]. And everything after that is the function body, the part that defines what the functional actually does.
 
 
-## <a name="breaking-up-the-function-body">Breaking up the function body
+## <a id="breaking-up-the-function-body">Breaking up the function body
 To figure out how to break up the function body, we need to do two things. We need to match opening parentheses with closing parentheses, so we know the overall structure. We need to look up the syntax of the functions being used in the different part, so we can make sense of the different parts - similar to what we did with `mapify` and the function syntax.
 
 The function body starts with a `map`. On [`map`'s ClojureDocs page](https://clojuredocs.org/clojure.core/map) we can see that `map` takes two 'groups' of parameters: a function and one or more [collections](https://clojure.org/guides/learn/sequential_colls). Collections are things like lists and maps, so things that collect multiple values. To apply this to our code snippet, we need to take a good look at which opening parenthesis match with which closing ones. The opening parenthesis after `map` has its matching closing parenthesis at the end of the second-to-last line of the snippet. So `(fn ... unmapped-row)))` is the first argument of `map`. The `rows` on the last line is the second argument, followed by two closing parentheses: one for the function body and one for the whole function definition.
@@ -200,7 +200,7 @@ We can check our understanding, by isolating the `reduce` function and providing
 
 
 
-# The `mapify` function, `map`ping the `reduce`
+# <a id="the-mapify-function">The `mapify` function, `map`ping the `reduce`
 Now that we understand the `reduce`, we can actually guess what the `map` that uses this `reduce`, does. The `reduce` works on a single row, but our data consists of several rows. So the `map` must be the thing that loops through the rows, providing them one-by-one to the `reduce`.
 
 Of course, we want to do better than guessing. So let's revisit [`map`](https://clojuredocs.org/clojure.core/map). It takes a function and at least one collection. It will apply the function to the set of first items in the collections, then to the second, etc. The function is the `reduce` we just figured out. And as we saw when [breaking up the function body](#breaking-up-the-function-body), the `map` in the `mapify` has only one collection-parameter, called `rows`. So that confirms our guess: `map` loops through the `rows`[^7] and transforms them via the `reduce`.
@@ -254,9 +254,11 @@ mapify(rows)
 # {'name': 'Charlie Swan', 'glitter-index': 0}, {'name': 'Jacob Black', 'glitter-index': 3},
 # {'name': 'Carlisle Cullen', 'glitter-index': 6}]
 ```
+**edit 13 July 2022**  
+The Clojure and Python versions are not as equivalent as I thought, see my follow-up post [(clj 10) The mapify function of (clj 9) revisited](link://slug/clj-10-the-mapify-function-of-clj-9-revisited).
 
 
-# <a name="techniques"></a>Techniques I used in figuring all of this out
+# <a id="techniques"></a>Techniques I used in figuring all of this out
 1. break things down in parts, understand the parts, put it all back together again
 1. focus on the current level and ignore the specifics of the levels above and below
 1. read ClojureDocs
@@ -271,7 +273,7 @@ mapify(rows)
 1. rewrite the code in a different language
 1. write this blog post (arguable also a rewrite in a different language)
 
-# <a name="reflections"></a>Reflections
+# <a id="reflections"></a>Reflections
 Writing this blog post was harder and took a lot more time (and words) than I thought. Luckily, I also learned a lot.
 
 The Clojure code is very nested with functions inside of functions inside of functions. It looks and feels different from the Python code I'm used to. The explanation must be the difference in programming paradigms: [functional](https://en.wikipedia.org/wiki/Functional_programming) ([Clojure](https://en.wikipedia.org/wiki/Clojure)) versus [procedural](https://en.wikipedia.org/wiki/Procedural_programming) ([Python](https://en.wikipedia.org/wiki/Python_(programming_language))). In procedural programming you define a sequence of steps, in functional programming you have functions nested in other functions. (Note: Python supports more paradigms than procedural, but I've mostly used in a procedural paradigm.)
