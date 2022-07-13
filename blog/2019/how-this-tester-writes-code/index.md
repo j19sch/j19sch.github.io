@@ -84,7 +84,7 @@ If your code only allows you to run your tests as they are, you're missing out.
 
 ## Building good tests
 
-### <a name="test-should-do-one-thing"></a>a test should do one thing and one thing only
+### <a id="test-should-do-one-thing"></a>a test should do one thing and one thing only
 This is separation of concerns applied to tests: a test should do one thing, not multiple. Of course, depending on the type of test, the size of that one thing will vary. A test on the unit level will be smaller than a test going through the whole stack.
 
 Tests doing one thing only also makes naming easier. Name the test for the thing it is testing. And by this I mean: capture the intention of the test, not the implementation. The implementation I can get by reading the code, the intention I might be able to deduce from the code, but there's a good chance I can't.
@@ -96,7 +96,7 @@ Sidenote: ideally your setup and teardown do not have asserts, but will throw ex
 So we have separated our interface code from our test code and most likely we are using some library (e.g. Selenium WebDriver) to do the actual interfacing. Life is easy and code is readable. However… how exactly are we interfacing with the software we're testing? Do we know what our test is actually doing to the thing we're testing?
 That's why I want interfaces to strike a balance between ease-of-use and transparency. I do want to say "do a GET on this url" without having to worry about the actual HTTP implementation, but I also want to know what my HTTP library puts in the headers of the requests.
 
-### <a name="write-tests-for-tests"></a>do you have to write tests for your tests?
+### <a id="write-tests-for-tests"></a>do you have to write tests for your tests?
 *(After I accepted Noah's challenge, I asked if there was any topics in particular he wanted me to cover. This is [one of them](https://twitter.com/noahsussman/status/1136390636632981504). Follow [this link](https://twitter.com/pgonzalezr/status/1136391331217993728) to read [Pedro Gonzalez](https://twitter.com/pgonzalezr)‘s response and Noah's reaction.)*
 
 If you feel the need to write tests for your tests, that suggests your tests are too complicated. So no, don't write tests for your tests. I am in favor, however, of testing your tests. This testing can take many forms: a review by you or (even better) someone else, making the test fail through a change in the test or the software under test, mutation testing. You can also consider your tests as implicit tests for your other tests. Do note that how much coverage you get from this implicit testing can vary a lot depending on the kind of tests.
@@ -111,7 +111,7 @@ Now what would a meta-test look like? It's good test design to have the meta-tes
 And that train of thought gave me an idea. Perhaps it could be a good practice to start building a test by giving it a name and writing the asserts you want for that test. If you'd run that test, it would fail horribly, because there's nothing to assert yet. Then you add code to the test until the asserts can evaluate what they need to evaluate.
 As I said, right now this is only an idea. If you decide to try it out, please let me know how it went.
 
-### <a name="ok-to-have-conditional-logic"></a>is it ok to have conditional logic in your tests?
+### <a id="ok-to-have-conditional-logic"></a>is it ok to have conditional logic in your tests?
 *(After I accepted Noah's challenge, I asked if there was any topic in particular he wanted me to cover. This is [the other one](https://twitter.com/noahsussman/status/1136391367935123457). He answers this question himself [here](https://twitter.com/noahsussman/status/1136428406982225926).)*
 
 Needing conditional logic in your tests suggests to me that you're lacking control somewhere. That your tests are not as deterministic as they should be, so you add conditional logic to remedy that. This really should be a last resort where no other solution is feasible, and the value of the test outweighs it being only half-deterministic.

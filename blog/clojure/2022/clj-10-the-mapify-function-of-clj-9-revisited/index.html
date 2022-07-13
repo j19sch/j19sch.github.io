@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>(clj 10) The mapify function of (clj 9) revisited | Joep Schuurkes</title>
+<link href="../../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../../feed.atom">
+<link rel="canonical" href="https://smallsheds.garden/blog/clojure/2022/clj-10-the-mapify-function-of-clj-9-revisited/">
+<link rel="icon" href="../../../../assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="../../../../assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../../assets/favicons/favicon-96x96.png" sizes="96x96">
+<!--[if lt IE 9]><script src="../../../../assets/js/html5.js"></script><![endif]--><script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../clj-9-how-to-figure-out-what-a-function-does/" title="(clj 9) How to figure out what a function does" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="(clj 10) The mapify function of (clj 9) revisited">
+<meta property="og:url" content="https://smallsheds.garden/blog/clojure/2022/clj-10-the-mapify-function-of-clj-9-revisited/">
+<meta property="og:description" content='In my previous Clojure post I covered the code example at the end of Chapter 4 of "Clojure for the Brave and True". Or rather, I focused on a single function in the example, called mapify, and describ'>
+<meta property="og:image" content="https://smallsheds.garden/images/default-preview.jpeg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-07-13T21:02:36+02:00">
+<meta property="article:tag" content="brave clojure">
+<meta property="article:tag" content="clojure">
+<meta property="article:tag" content="programming">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../../../my-projects/" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../../my-talks/" class="nav-link">Talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../../../my-lists/reading-list/" class="dropdown-item">Reading list</a>
+                    <a href="../../../../my-lists/recommended-reading/" class="dropdown-item">Recommended reading</a>
+                    <a href="../../../../my-lists/favorite-podcasts/" class="dropdown-item">Favorite podcasts</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../../" class="dropdown-item">My blog</a>
+                    <a href="../../../../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="../../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../../rss.xml" class="dropdown-item">RSS feed</a>
+                    <a href="../../../feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">(clj 10) The mapify function of (clj 9) revisited</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2022-07-13T21:02:36+02:00" itemprop="datePublished" title="13 July 2022">13 July 2022</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>In my <a href="../clj-9-how-to-figure-out-what-a-function-does/">previous Clojure post</a> I covered the code example at the end of Chapter 4 of <a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">"Clojure for the Brave and True"</a>. Or rather, I focused on a single function in the example, called <code>mapify</code>, and described how I figured out what it does. At the <a href="../clj-9-how-to-figure-out-what-a-function-does/#the-mapify-function">end of that post</a> I shared my disappointment:</p>
+<blockquote>
+<p>Having done all this work (and writing) I can't help but feel a bit disappointed. In the end, the function does not seem to do a lot.</p>
+</blockquote>
+<p>And I shared a Python version of that same function, claiming that it basically does the same thing<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<p>However, less than a week after publishing the post, I got a very kind email by someone named Martin. And <em>"in defence of clojure and to maybe reduce your disappointment"</em> Martin pointed out the two versions are not as equivalent as I claimed, because the Clojure version is more general than the Python version. So I looked at the two version again and the way they are different turned out to be quite interesting - interesting enough to write a follow-up post.</p>
+<!-- TEASER_END -->
+
+<h2>The Cojure version of <code>mapify</code>
+</h2>
+<p>The Clojure version looks like this:</p>
+<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">mapify</span>
+  <span class="p">[</span><span class="nv">rows</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">map </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">unmapped-row</span><span class="p">]</span>
+         <span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">row-map</span> <span class="p">[</span><span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">]]</span>
+                   <span class="p">(</span><span class="nb">assoc </span><span class="nv">row-map</span> <span class="nv">vamp-key</span> <span class="p">(</span><span class="nf">convert</span> <span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">)))</span>
+                 <span class="p">{}</span>
+                 <span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span> <span class="nv">unmapped-row</span><span class="p">)))</span>
+       <span class="nv">rows</span><span class="p">))</span>
+</code></pre>
+
+<p>It expects an argument similar to:</p>
+<pre class="code literal-block"><span></span><code><span class="p">([</span><span class="s">"Edward Cullen"</span> <span class="s">"10"</span><span class="p">]</span> <span class="p">[</span><span class="s">"Bella Swan"</span> <span class="s">"0"</span><span class="p">])</span>
+</code></pre>
+
+<p>and transforms it into a sequence of maps:</p>
+<pre class="code literal-block"><span></span><code><span class="p">[{</span><span class="ss">:name</span> <span class="s">"Edward Cullen"</span> <span class="ss">:glitter-index</span> <span class="mi">10</span><span class="p">}</span> <span class="p">{</span><span class="ss">:name</span> <span class="s">"Bella Swan"</span> <span class="ss">:glitter-index</span> <span class="mi">0</span><span class="p">}]</span>
+</code></pre>
+
+<p>The main thing to note about the Clojure version are the <code>vamp-keys</code> and the <code>convert</code>, which were defined earlier in <a href="https://www.braveclojure.com/core-functions-in-depth/#A_Vampire_Data_Analysis_Program_for_the_FWPD">the example</a>.</p>
+<p>The <code>vamp-keys</code> lists the keys that are used to transform each sequence of the input argument to a map:</p>
+<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">vamp-keys</span> <span class="p">[</span><span class="ss">:name</span> <span class="ss">:glitter-index</span><span class="p">])</span>
+</code></pre>
+
+<p>So this variable describes our expectations of the input: a name and a glitter index.</p>
+<p>The <code>convert</code> function uses the <code>conversions</code> variable to convert a value in our map:</p>
+<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">conversions</span> <span class="p">{</span><span class="ss">:name</span> <span class="nv">identity</span>
+                  <span class="ss">:glitter-index</span> <span class="nv">str-&gt;int</span><span class="p">})</span>
+
+<span class="p">(</span><span class="kd">defn </span><span class="nv">convert</span>
+  <span class="p">[</span><span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">]</span>
+  <span class="p">((</span><span class="nb">get </span><span class="nv">conversions</span> <span class="nv">vamp-key</span><span class="p">)</span> <span class="nv">value</span><span class="p">))</span>
+</code></pre>
+
+<p>If the key is <code>:name</code>, it applies the <a href="https://clojuredocs.org/clojure.core/identity"><code>identity</code></a> function, i.e. the value is unchanged. If they key is <code>:glitter-index</code>, it converts the value from a string to an integer. That's needed, because as you can see above, the argument to <code>mapify</code> has the glitter index still as a string. So the <code>conversions</code> variable describes if/how we want to convert the values in our map.</p>
+<p>The result of having <code>vamp-keys</code> and <code>convert</code> defined separately in this way is that, as Martin writes:</p>
+<blockquote>
+<p>The clojure code is more general and allows to add new columns/keys by just adding the key to the vamp-keys and the column to the data - and probably a conversion to conversions.</p>
+</blockquote>
+<h2>The Python version of <code>mapify</code>
+</h2>
+<p>My Python version looks like this:</p>
+<pre class="code literal-block"><span></span><code><span class="n">vamp_keys</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"name"</span><span class="p">,</span> <span class="s2">"glitter-index"</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">mapify</span><span class="p">(</span><span class="n">rows</span><span class="p">):</span>
+  <span class="k">return</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="n">vamp_keys</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+      <span class="n">vamp_keys</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="p">}</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span>
+  <span class="p">]</span>
+</code></pre>
+
+<p>Let's start with the conversion: there is no separate <code>convert</code> function in my Python version. The conversion happens inside the function. (Inside the <code>return</code> statement even!)</p>
+<p>There is a separate <code>vamp_keys</code> variable as in the Clojure version, but that variable is not used in the same way. The Python version refers to the items in <code>vamp_keys</code> by their index, e.g. <code>vamp_keys[0]</code>. The Clojure version on the other hand, uses <code>map</code> to loop through the <code>vamp-keys</code> and the <code>unmapped-row</code>.</p>
+<p>What this means is that if you'd want to add for instance "age" to the data, in the Clojure version you'd only need to add <code>"age"</code> to <code>vamp-keys</code> and <code>:age str-&gt;int</code> to <code>conversions</code>. The <code>mapify</code> function can remain exactly the same. That would not be the case in the Python version. There you'd need to update both <code>vamp_keys</code> and the <code>mapify</code> function. A truly equivalent version in Python would provide that same flexibility, instead of taking the shortcut as in my version<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
+<h2>Why does this difference matter?</h2>
+<p>So the Clojure version is more general and can accommodate changes in the data structure without any changes to the <code>mapify</code> function. Does that matter?</p>
+<p>In a weird sense it doesn't. The whole code example is meant as a summary of chapter 4 of <a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">"Clojure for the Brave and True"</a>. So it doesn't need to be general, it needs to illustrate the contents of that chapter.</p>
+<p>And yet I find the difference between the two versions intriguing. Not as in my previous post where I was a little disappointed that my simpler Python version basically does the same thing as the Clojure version<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>. It's clear to me now that that's not true. (Unless you want to make the "basically" do a lot of work.) Rather, I'm intrigued by the difference in what information is stored where in the two versions.</p>
+<p>The Clojure version has the information about what kind of argument the <code>mapify</code> function expects, in <code>vamp-keys</code> and <code>conversions</code>. This means that once you understand the code, you can forget most of it again. All you have to remember is what <code>mapify</code> does on a very high level and that changes to the function's argument require changes to <code>vamp-keys</code> and <code>conversions</code>.</p>
+<p>That's not the case with the Python version. There you do have to understand what the <code>mapify</code> function does in detail, so you can update it together with the <code>vamp_keys</code>. For this particular code example that might not be that big a deal, because the function is rather straightforward. Yet it does still illustrate an important question about structuring your code: where do you put the key elements?</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>I did also add this footnote: <em>"The Python code does do the <code>convert</code> in a separate function. It would also return a different result than the Clojure code if the data would have more than two items per row."</em> <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>In my defense, this difference did cross my mind very briefly. I dismissed it without giving it much thought, though. Which is a valuable reminder to not just dismiss that little voice in the back of your head. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+<li id="fn:3">
+<p>Martin also shared a Clojure code equivalent to my Python version, so without that flexibility, and lo and behold, they look very similar. <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../../categories/brave-clojure/" rel="tag">brave clojure</a></li>
+            <li><a class="tag p-category" href="../../../../categories/clojure/" rel="tag">clojure</a></li>
+            <li><a class="tag p-category" href="../../../../categories/programming/" rel="tag">programming</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../clj-9-how-to-figure-out-what-a-function-does/" rel="prev" title="(clj 9) How to figure out what a function does">Previous post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2022     
+<a href="https://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by/4.0/80x15.png"></a>
+    <a href="mailto:j19sch@hey.com">Joep Schuurkes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

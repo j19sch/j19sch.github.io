@@ -57,7 +57,7 @@ That last sentence reminds of the distinction between "Power Over" and "Power Wi
 In software development we see Power Over in the processes and tools. More so when they are mandated from above, but also still when they were chosen by the team. A process or a tool on its own cannot perform interpretive labor. That requires a human being who chooses to perform that labor, who chooses to interact with other human beings to try to understand them and where they are. So to embody the value of **individuals and interactions over processes and tools** we need the skill to choose to perform interpretive labor even when we have the option not to.
 
 
-# <a name="detaching"></a>Detaching
+# <a id="detaching"></a>Detaching
 The first chapter of [Jocko Willink](https://en.wikipedia.org/wiki/Jocko_Willink)'s book "[Leadership Strategy and Tactics](https://www.panmacmillan.com/authors/jocko-willink/leadership-strategy-and-tactics/9781529032970)" covers the topic of detaching:
 
 > "[...] - by detaching physically, even if only be a few inches, and, more important, detaching mentally from the problem at hand - I was able to see infinitely more than anyone else in my platoon. And since I was able to see everything, I was able to make a good decision, [...]" (p 17)

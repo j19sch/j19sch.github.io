@@ -3,13 +3,33 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about programming)</title>
   <id>https://smallsheds.garden/categories/programming.atom</id>
-  <updated>2022-07-02T14:16:04Z</updated>
+  <updated>2022-07-13T19:18:49Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/programming.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/programming/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>(clj 10) The mapify function of (clj 9) revisited</title>
+    <id>https://smallsheds.garden/blog/clojure/2022/clj-10-the-mapify-function-of-clj-9-revisited/</id>
+    <updated>2022-07-13T21:02:36+02:00</updated>
+    <published>2022-07-13T21:02:36+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/clojure/2022/clj-10-the-mapify-function-of-clj-9-revisited/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;In my &lt;a href="https://smallsheds.garden/blog/clojure/2022/clj-9-how-to-figure-out-what-a-function-does/"&gt;previous Clojure post&lt;/a&gt; I covered the code example at the end of Chapter 4 of &lt;a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/"&gt;"Clojure for the Brave and True"&lt;/a&gt;. Or rather, I focused on a single function in the example, called &lt;code&gt;mapify&lt;/code&gt;, and described how I figured out what it does. At the &lt;a href="https://smallsheds.garden/blog/clojure/2022/clj-9-how-to-figure-out-what-a-function-does/#the-mapify-function"&gt;end of that post&lt;/a&gt; I shared my disappointment:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Having done all this work (and writing) I can't help but feel a bit disappointed. In the end, the function does not seem to do a lot.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And I shared a Python version of that same function, claiming that it basically does the same thing&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/clojure/2022/clj-10-the-mapify-function-of-clj-9-revisited/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;However, less than a week after publishing the post, I got a very kind email by someone named Martin. And &lt;em&gt;"in defence of clojure and to maybe reduce your disappointment"&lt;/em&gt; Martin pointed out the two versions are not as equivalent as I claimed, because the Clojure version is more general than the Python version. So I looked at the two version again and the way they are different turned out to be quite interesting - interesting enough to write a follow-up post.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/clojure/2022/clj-10-the-mapify-function-of-clj-9-revisited/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="brave-clojure" label="brave clojure"/>
+    <category term="clojure" label="clojure"/>
+    <category term="programming" label="programming"/>
+  </entry>
   <entry>
     <title>(clj 9) How to figure out what a function does</title>
     <id>https://smallsheds.garden/blog/clojure/2022/clj-9-how-to-figure-out-what-a-function-does/</id>
@@ -206,24 +226,5 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
     <category term="ides" label="IDEs"/>
     <category term="programming" label="programming"/>
     <category term="vim" label="vim"/>
-  </entry>
-  <entry>
-    <title>(clj 0) Diving straight in with some koans</title>
-    <id>https://smallsheds.garden/blog/clojure/2020/clj0-diving-straight-in/</id>
-    <updated>2020-04-27T21:00:15+02:00</updated>
-    <published>2020-04-27T21:00:15+02:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/clojure/2020/clj0-diving-straight-in/"/>
-    <summary type="html">&lt;div&gt;&lt;h3&gt;Why Clojure?&lt;/h3&gt;
-&lt;p&gt;A long time ago (meaning I don't remember when but it's been a while) I learned about a programming language called Lisp. It was said that by studying this language you'd gain &lt;a href="https://twobithistory.org/2018/10/14/lisp.html"&gt;deep insights&lt;/a&gt; into programming and you'd never write code the same way again. That definitely piqued my interest.&lt;/p&gt;
-&lt;p&gt;Some time later (don't remember when exactly either) I learned about the existence of Clojure and that it too, was something special. So I added it to the list of programming languages I wanted to learn some day.&lt;/p&gt;
-&lt;p&gt;Then, earlier this month, I felt the need to start a new project. To learn something new. So I figured I'd learn Lisp. That didn't last long though, as I found out that the recommended editor for Lisp is Emacs. And from trying out Emacs and vi about 20 years ago I knew that for some reason vi does fit with how my mind works, and Emacs doesn't.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/clojure/2020/clj0-diving-straight-in/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="brave-clojure" label="brave clojure"/>
-    <category term="clojure" label="clojure"/>
-    <category term="koans" label="koans"/>
-    <category term="programming" label="programming"/>
   </entry>
 </feed>

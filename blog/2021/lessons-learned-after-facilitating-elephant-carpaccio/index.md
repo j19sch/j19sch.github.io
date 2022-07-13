@@ -21,7 +21,7 @@ The level of detail in the facilitation guide also had me walk into the trap of 
 > "I facilitated this exercise and can recommend it to every development team working with user stories - but be prepared that it won’t work out as given in the facilitation guide."
 
 
-## <a name="guidance-on-experiential-workshops"></a> Guidance on experiential workshops
+## <a id="guidance-on-experiential-workshops"></a> Guidance on experiential workshops
 The Elephant Carpaccio exercise is an experiential workshop. You get to slice an application and then deliver some of those slices. How many slices you deliver doesn't really matter. What matters is how much and how well you reflect, and what conversations you have with your fellow participants about your experience. A core idea behind these kinds of workshops is that there's more value in a few smaller lived lessons than in sharing lots of information you won't remember, let alone connect with.
 
 However, there is an element of skill involved in participating in such workshops. It requires you to move your focus from the task at hand (delivering a piece of software) to what you can learn from reflecting on that task as you perform it. Personally, it took me a while to learn that skill to a level that I started to enjoy and appreciate experiential workshops. Before that, as I was learning this skill, I remember leaving such workshops with the feeling I hadn't gotten a lot of value from them and that the instructors should be doing more.
@@ -35,7 +35,7 @@ This lessons probably comes as a surprise to no one. Remote is slower than in pe
 Remote is also more opaque, which mostly is a challenge for the facilitator. You can't scan the room to get an overview of how everyone is doing. Even with everyone in the same virtual room, there's a limit to how many faces you can see at the same time - especially when screen sharing. If everyone is in breakout rooms, you have to enter the separate breakout rooms to get an idea of what's going on. Having everyone work on the same online whiteboard, will help a little, but rather as an aide which breakout room to visit next than as a way to actually know how a group is doing. So not only group size needs to be kept small, the total number of groups shouldn't be too large either. By coincidence I ended up with four groups in both workshops. For the Elephant Carpaccio exercise that still feels like the right number.
 
 
-## <a name="take-your-time-for-the-before-and-after"></a> Take your time for the before and after
+## <a id="take-your-time-for-the-before-and-after"></a> Take your time for the before and after
 
 Last but definitely not least, investing time in preparation before and reflection after the workshop makes a large difference. Even if the workshop starts to diverge from your preparation, it's your preparation that allows you to adapt in the moment, to make changes without cutting anything essential. And the reflection after is the first step in your preparation for the next time. Even if you're not sure when that next time will be, it's important to at least complete that first step of reflection. Because the longer you wait, the vaguer your memories will be and the less rich your reflection.
 

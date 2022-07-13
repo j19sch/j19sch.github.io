@@ -18,6 +18,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <link rel="icon" href="../../../../assets/favicons/favicon-96x96.png" sizes="96x96">
 <!--[if lt IE 9]><script src="../../../../assets/js/html5.js"></script><![endif]--><script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script><meta name="author" content="Joep Schuurkes">
 <link rel="prev" href="../clj-8-some-notes-on-lazy-sequences-and-function-parameters/" title="(clj 8) Some notes on lazy sequences and function parameters" type="text/html">
+<link rel="next" href="../clj-10-the-mapify-function-of-clj-9-revisited/" title="(clj 10) The mapify function of (clj 9) revisited" type="text/html">
 <meta property="og:site_name" content="Joep Schuurkes">
 <meta property="og:title" content="(clj 9) How to figure out what a function does">
 <meta property="og:url" content="https://smallsheds.garden/blog/clojure/2022/clj-9-how-to-figure-out-what-a-function-does/">
@@ -130,7 +131,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <p>To figure out what this <code>mapify</code> function does, we need to break it up into parts. For that we need to know how you write a function in Clojure, i.e. the syntax of a function in Clojure. So let's go through the function step-by-step and identify its parts.</p>
 <h3>Clojure function syntax</h3>
 <p>The function definition starts and ends with a parenthesis, making it a list. Clojure is part of the <a href="https://en.wikipedia.org/wiki/Lisp_(programming_language)">Lisp</a>-family of languages and that means almost everything is a list and thus you get lots of parentheses. Next we have <code>defn</code> which tells Clojure we want to define a function. Then there's <code>mapify</code>, the name of the function. The part between double quotes is a docstring, describing what the function does. The line after that, <code>[rows]</code>, is the input parameter of the function. So if we want to call the <code>mapify</code> function, we need to provide it with an argument for this <code>rows</code> parameter<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">1</a></sup>. And everything after that is the function body, the part that defines what the functional actually does.</p>
-<h3><a name="breaking-up-the-function-body">Breaking up the function body</a></h3>
+<h3><a id="breaking-up-the-function-body">Breaking up the function body</a></h3>
 <p>To figure out how to break up the function body, we need to do two things. We need to match opening parentheses with closing parentheses, so we know the overall structure. We need to look up the syntax of the functions being used in the different part, so we can make sense of the different parts - similar to what we did with <code>mapify</code> and the function syntax.</p>
 <p>The function body starts with a <code>map</code>. On <a href="https://clojuredocs.org/clojure.core/map"><code>map</code>'s ClojureDocs page</a> we can see that <code>map</code> takes two 'groups' of parameters: a function and one or more <a href="https://clojure.org/guides/learn/sequential_colls">collections</a>. Collections are things like lists and maps, so things that collect multiple values. To apply this to our code snippet, we need to take a good look at which opening parenthesis match with which closing ones. The opening parenthesis after <code>map</code> has its matching closing parenthesis at the end of the second-to-last line of the snippet. So <code>(fn ... unmapped-row)))</code> is the first argument of <code>map</code>. The <code>rows</code> on the last line is the second argument, followed by two closing parentheses: one for the function body and one for the whole function definition.</p>
 <p>In summary, our <code>mapify</code> function is a function that performs <code>map</code> on <code>rows</code> using a function that spans most of the lines in the code snippet. So now we have to figure out what happens inside this function:</p>
@@ -250,8 +251,7 @@ Carlisle Cullen,6
 <span class="c1">; =&gt; {:name "Edward Cullen", :glitter-index 10}</span>
 </code></pre>
 
-<h2>The <code>mapify</code> function, <code>map</code>ping the <code>reduce</code>
-</h2>
+<h2><a id="the-mapify-function">The <code>mapify</code> function, <code>map</code>ping the <code>reduce</code></a></h2>
 <p>Now that we understand the <code>reduce</code>, we can actually guess what the <code>map</code> that uses this <code>reduce</code>, does. The <code>reduce</code> works on a single row, but our data consists of several rows. So the <code>map</code> must be the thing that loops through the rows, providing them one-by-one to the <code>reduce</code>.</p>
 <p>Of course, we want to do better than guessing. So let's revisit <a href="https://clojuredocs.org/clojure.core/map"><code>map</code></a>. It takes a function and at least one collection. It will apply the function to the set of first items in the collections, then to the second, etc. The function is the <code>reduce</code> we just figured out. And as we saw when <a href="#breaking-up-the-function-body">breaking up the function body</a>, the <code>map</code> in the <code>mapify</code> has only one collection-parameter, called <code>rows</code>. So that confirms our guess: <code>map</code> loops through the <code>rows</code><sup id="fnref:7"><a class="footnote-ref" href="#fn:7">8</a></sup> and transforms them via the <code>reduce</code>.</p>
 <p>In conclusion, all this figuring out let's us look at this:</p>
@@ -296,8 +296,10 @@ Carlisle Cullen,6
 <span class="c1"># {'name': 'Carlisle Cullen', 'glitter-index': 6}]</span>
 </code></pre>
 
+<p><strong>edit 13 July 2022</strong><br>
+The Clojure and Python versions are not as equivalent as I thought, see my follow-up post <a href="../clj-10-the-mapify-function-of-clj-9-revisited/">(clj 10) The mapify function of (clj 9) revisited</a>.</p>
 <h2>
-<a name="techniques"></a>Techniques I used in figuring all of this out</h2>
+<a id="techniques"></a>Techniques I used in figuring all of this out</h2>
 <ol>
 <li>break things down in parts, understand the parts, put it all back together again</li>
 <li>focus on the current level and ignore the specifics of the levels above and below</li>
@@ -314,7 +316,7 @@ Carlisle Cullen,6
 <li>write this blog post (arguable also a rewrite in a different language)</li>
 </ol>
 <h2>
-<a name="reflections"></a>Reflections</h2>
+<a id="reflections"></a>Reflections</h2>
 <p>Writing this blog post was harder and took a lot more time (and words) than I thought. Luckily, I also learned a lot.</p>
 <p>The Clojure code is very nested with functions inside of functions inside of functions. It looks and feels different from the Python code I'm used to. The explanation must be the difference in programming paradigms: <a href="https://en.wikipedia.org/wiki/Functional_programming">functional</a> (<a href="https://en.wikipedia.org/wiki/Clojure">Clojure</a>) versus <a href="https://en.wikipedia.org/wiki/Procedural_programming">procedural</a> (<a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>). In procedural programming you define a sequence of steps, in functional programming you have functions nested in other functions. (Note: Python supports more paradigms than procedural, but I've mostly used in a procedural paradigm.)</p>
 <p>Another related difference between the two versions is that to me the Clojure version looks more complicated than the Python version<sup id="fnref:10"><a class="footnote-ref" href="#fn:10">10</a></sup>. Part of the explanation is the difference in paradigm I mentioned above. Another part is a difference in how the syntactical work happens. Not just for example parentheses (Clojure) and whitespace (Python), but also <a href="https://clojuredocs.org/clojure.core/filter"><code>filter</code></a> and <a href="https://clojuredocs.org/clojure.core/map"><code>map</code></a> (Clojure) and <a href="https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions">list comprehension</a> (Python). A great illustration of this is <a href="https://www.artima.com/weblogs/viewpost.jsp?thread=98196">Guido van Rossum arguing</a> to remove <code>reduce()</code>, <code>filter()</code>, and <code>map()</code> from Python's standard library.<br>
@@ -366,6 +368,9 @@ I wrote about the sequence abstraction in <a href="../../2021/clj7-programming-t
 <ul class="pager hidden-print">
 <li class="previous">
                 <a href="../clj-8-some-notes-on-lazy-sequences-and-function-parameters/" rel="prev" title="(clj 8) Some notes on lazy sequences and function parameters">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../clj-10-the-mapify-function-of-clj-9-revisited/" rel="next" title="(clj 10) The mapify function of (clj 9) revisited">Next post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer">
             Contents © 2022     
