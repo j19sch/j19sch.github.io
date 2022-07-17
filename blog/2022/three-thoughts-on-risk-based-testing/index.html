@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Three thoughts on risk-basked testing | Joep Schuurkes</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../feed.atom">
+<link rel="canonical" href="https://smallsheds.garden/blog/2022/three-thoughts-on-risk-based-testing/">
+<link rel="icon" href="../../../assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="../../../assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../assets/favicons/favicon-96x96.png" sizes="96x96">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../../clojure/2022/clj-10-the-mapify-function-of-clj-9-revisited/" title="(clj 10) The mapify function of (clj 9) revisited" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="Three thoughts on risk-basked testing">
+<meta property="og:url" content="https://smallsheds.garden/blog/2022/three-thoughts-on-risk-based-testing/">
+<meta property="og:description" content="The past month I've been thinking about risk-based testing. This post collects three thoughts on risk-based testing I kept returning to.
+If not based on risks, then based on what?
+About a month ago I ">
+<meta property="og:image" content="https://smallsheds.garden/images/default-preview.jpeg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-07-17T11:56:30+02:00">
+<meta property="article:tag" content="coverage">
+<meta property="article:tag" content="software testing">
+<meta property="article:tag" content="test management">
+<meta property="article:tag" content="test strategy">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-projects/" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-talks/" class="nav-link">Talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../../my-lists/reading-list/" class="dropdown-item">Reading list</a>
+                    <a href="../../../my-lists/recommended-reading/" class="dropdown-item">Recommended reading</a>
+                    <a href="../../../my-lists/favorite-podcasts/" class="dropdown-item">Favorite podcasts</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../" class="dropdown-item">My blog</a>
+                    <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../rss.xml" class="dropdown-item">RSS feed</a>
+                    <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Three thoughts on risk-basked testing</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2022-07-17T11:56:30+02:00" itemprop="datePublished" title="17 July 2022">17 July 2022</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>The past month I've been thinking about risk-based testing. This post collects three thoughts on risk-based testing I kept returning to.</p>
+<h2>If not based on risks, then based on what?</h2>
+<p>About a month ago I <a href="https://twitter.com/j19sch/status/1533760354647523330">tweeted</a>:</p>
+<blockquote>
+<p>What are the alternatives to risk-based testing?<br>
+Requirements-based? I'd argue that's a subset of risk-based.<br>
+Unguided? That's either a bad idea ("we hope to get lucky") or aimed at the risk of unknown unknowns.<br>
+Any other options? Because something about the term is bothering me.</p>
+</blockquote>
+<p>My question was inspired by the <a href="https://smallsheds.garden/slides/rtc2019-testing-types.html#/15/0/1">"opposite" heuristic</a> from my talk about <a href="https://smallsheds.garden/slides/rtc2019-testing-types.html#/">testing types</a>: if we have some kind of category, what's the name for the things not in that category? Applied to risk-based testing: what's the name for testing that's not risk-based?</p>
+<!-- TEASER_END -->
+
+<p>From the responses to my tweet it became clear I was not the only one bothered by the term. My plan was to write a blog post inspired by these responses. However, one of the people who replied, <a href="http://twitter.com/qahiccupps">James Thomas</a>, beat me to it. He wrote a great blog post titled <a href="https://qahiccupps.blogspot.com/2022/06/risk-based-testing-averse.html">"Risk-Based Testing Averse"</a>. In it he accepts <a href="https://twitter.com/StooCrock/status/1533769843572453378">the point</a> made by <a href="https://twitter.com/StooCrock">Stu Crock</a> that everything is risk-based. If that's all there is to it, however, "risk-based testing" becomes a meaningless term:</p>
+<blockquote>
+<p>"If risk is endemic then it loses any explanatory value."</p>
+</blockquote>
+<p>And that's not how James uses the term "risk" in relation to his work:</p>
+<blockquote>
+<p>"I want conversations about <a href="https://qahiccupps.blogspot.com/2019/09/of-what-to-who-when.html">the risk of what, to who, and when</a>. If I'm doing (what I would call) risk-based testing I'm operating at this lower level."</p>
+</blockquote>
+<p>I'm still not sure if I'll actually start using the term "risk-based testing" any time soon, but the usage as described by James does make sense to me.</p>
+<h2>Different forms of risk-based testing</h2>
+<p>Recently I was asked to guide teams towards risk-based testing. I responded by asking which of the four following forms of risk-based testing they were interested in.</p>
+<p><strong>1. prioritize test case execution based on risk</strong><br>
+You add a "risk level" to each test case and after you have selected the test cases you want to execute, you sort them on "risk level" to determine the order of execution.</p>
+<p><strong>2. test approach for stories and/or epics based on risks</strong><br>
+Based on your understanding<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> of a story or epic, you come up with risks, i.e. scenarios that you either want to happen or want to avoid from happening. You then design your tests based on those risks or scenarios.</p>
+<p><strong>3. (pre-)refinement of stories and/or epics based on risks</strong><br>
+Instead of waiting until you almost need to start testing as in the previous form, you come up with the risks during (pre-)refinement. The risks are then not only input for testing, but also for design and development.</p>
+<p><strong>4. test strategy for a project based on risks</strong><br>
+This is similar to option 2, but with a larger scope: the whole project instead of a story or an epic. As a result the risks will also be more high-level. This makes this form of risk analysis less useful as input for test design. It can be useful to direct the testing effort as a whole based on risks.</p>
+<h2>More to it than impact times likelihood</h2>
+<p>A long time ago I was taught to determine the risk level by thinking about impact and likelihood<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. Impact was the impact on the user or on the business. Likelihood could be split into chance of failure and frequency of usage.</p>
+<p>Thinking about risk-based testing made me remember this lesson and made me realize I've been using a more fine-grained list to think about how big and bad a risk is:</p>
+<ul>
+<li>impact<ul>
+<li>impact on the user and/or customer</li>
+<li>impact on the company</li>
+<li>ease/speed of discovery when something goes wrong</li>
+<li>ease/speed of recovery after something went wrong</li>
+<li>ease/speed of putting a workaround in place</li>
+<li>ease/speed of fixing the underlying issue</li>
+</ul>
+</li>
+<li>chance of failure<ul>
+<li>level of complexity of the process</li>
+<li>level of complexity of the code</li>
+<li>number of dependencies in the code</li>
+<li>number of recent code changes in this area</li>
+<li>amount of technical debt</li>
+</ul>
+</li>
+<li>frequency of usage or of occurrence</li>
+</ul>
+<p>Without a doubt this list is far from complete. It does illustrate, however, that if you discuss risk only at the level of impact and likelihood, you are going to miss things.</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>A good understanding requires a variety of perspectives. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>Sometimes people assign numerical values to both and multiply these to determine the risk level. I think that's problematic, but won't go into that today. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/coverage/" rel="tag">coverage</a></li>
+            <li><a class="tag p-category" href="../../../categories/software-testing/" rel="tag">software testing</a></li>
+            <li><a class="tag p-category" href="../../../categories/test-management/" rel="tag">test management</a></li>
+            <li><a class="tag p-category" href="../../../categories/test-strategy/" rel="tag">test strategy</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../clojure/2022/clj-10-the-mapify-function-of-clj-9-revisited/" rel="prev" title="(clj 10) The mapify function of (clj 9) revisited">Previous post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2022     
+<a href="https://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by/4.0/80x15.png"></a>
+    <a href="mailto:j19sch@hey.com">Joep Schuurkes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>
