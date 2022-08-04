@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes</title>
   <id>https://smallsheds.garden/blog/feed.atom</id>
-  <updated>2022-07-17T09:59:43Z</updated>
+  <updated>2022-08-04T10:54:29Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -11,7 +11,25 @@
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
-    <title>Three thoughts on risk-basked testing</title>
+    <title>"Tester" is an overloaded variable</title>
+    <id>https://smallsheds.garden/blog/2022/tester-is-an-overloaded-variable/</id>
+    <updated>2022-08-04T11:39:25+02:00</updated>
+    <published>2022-08-04T11:39:25+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2022/tester-is-an-overloaded-variable/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Yesterday I came across a post on LinkedIn explaining why there are no testers in Scrum&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2022/tester-is-an-overloaded-variable/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;. What struck me most about the post was the amount of work the word "tester" was doing. In one sentence it meant one thing (a role in a team), in the next sentence something else (a step in the process), and so on. Hence the title of this post: the word "tester" was being used as an overloaded variable. So let's do some unpacking.&lt;/p&gt;
+&lt;h2&gt;Testers to people management&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;"Having a tester"&lt;/em&gt; means that there are people with the official title of "tester" or "QA engineer" or whatever within the company. For the purposes of people management&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2022/tester-is-an-overloaded-variable/#fn:2"&gt;2&lt;/a&gt;&lt;/sup&gt;, there's a distinction between this role and the other roles in the company. This allows for more specific expectations about the role, for different career paths and salary scales, etc.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2022/tester-is-an-overloaded-variable/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="management" label="management"/>
+    <category term="semantics" label="semantics"/>
+    <category term="software-testing" label="software testing"/>
+    <category term="test-management" label="test management"/>
+  </entry>
+  <entry>
+    <title>Three thoughts on risk-based testing</title>
     <id>https://smallsheds.garden/blog/2022/three-thoughts-on-risk-based-testing/</id>
     <updated>2022-07-17T11:56:30+02:00</updated>
     <published>2022-07-17T11:56:30+02:00</published>
@@ -174,25 +192,5 @@ Any other options? Because something about the term is bothering me.&lt;/p&gt;
 &lt;p&gt;So I got a 30-day trial with Plausible, added its script to my site, while Clicky also kept collecting data. With the trial now over, it's time to take a look at the data they both collected over the period from 28 November to 27 December 2021. I've added some thoughts after each table with data and at the end of this post I've added some more general thoughts.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2021/site-analytics-if-you-have-two-watches/"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="site" label="site"/>
-  </entry>
-  <entry>
-    <title>(clj 7) Programming to abstractions with sequence functions</title>
-    <id>https://smallsheds.garden/blog/clojure/2021/clj7-programming-to-abstractions-with-sequence-functions/</id>
-    <updated>2021-12-05T13:40:36+01:00</updated>
-    <published>2021-12-05T13:40:36+01:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/clojure/2021/clj7-programming-to-abstractions-with-sequence-functions/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;Looking at my progress so far, I realized it's time re-evaluate this whole learning Clojure-thing. After looking through the table of contents of "&lt;a href="https://www.braveclojure.com/"&gt;Clojure for the Brave and True&lt;/a&gt;" and giving it some thought, I decided to make two changes to how I'll proceed:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;I will start writing shorter posts and write them more often.&lt;/li&gt;
-&lt;li&gt;My goal is to finish &lt;em&gt;"Part II: Language Fundamentals"&lt;/em&gt;. I don't have to do &lt;em&gt;"Part III: Advanced Topics"&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Completing Part II will still take quite some work. I've worked through the two first sections of chapter 4 (5 sections left in that chapter) and Part II goes up to chapter 8. So no time to waste: let's take a look at sequence functions and programming to abstractions.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/clojure/2021/clj7-programming-to-abstractions-with-sequence-functions/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="brave-clojure" label="brave clojure"/>
-    <category term="clojure" label="clojure"/>
-    <category term="programming" label="programming"/>
   </entry>
 </feed>
