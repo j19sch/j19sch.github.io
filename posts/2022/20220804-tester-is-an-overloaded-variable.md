@@ -58,13 +58,13 @@ For this reason I think that this setup is in many ways the same as having a sep
 ## Tester of the team
 *"Having a tester of the team"* means that there is a team member who spends most of their time doing testing. All members of the team do all sorts of things, including testing. The tester of the team, however, has testing as their main focus, similar to how other team members have their own areas of focus.
 
-[Maaret Pyhäjärvi](https://twitter.com/maaretp)'s blog post ["Tester roles and services"](https://visible-quality.blogspot.com/2021/07/tester-roles-and-services.html) does a great job illustrating this way of working. She disintguishes 15 different testing hats and shows how each of the four team members either never wear that specific that, occasionally engage in that hat's activity, or are focused on it. Today she reposted the [diagram on LinkedIn](https://www.linkedin.com/posts/maaret_it-is-possible-to-both-have-a-tester-in-the-activity-6960845948419747840-NKpv), saying: *"It is possible to both have a tester in the team and have full team testing."*
+[Maaret Pyhäjärvi](https://twitter.com/maaretp)'s blog post ["Tester roles and services"](https://visible-quality.blogspot.com/2021/07/tester-roles-and-services.html) does a great job illustrating this way of working. She distinguishes 15 different testing hats and shows how each of the four team members either never wear that specific that, occasionally engage in that hat's activity, or are focused on it. Today she re-posted the [diagram on LinkedIn](https://www.linkedin.com/posts/maaret_it-is-possible-to-both-have-a-tester-in-the-activity-6960845948419747840-NKpv), saying: *"It is possible to both have a tester in the team and have full team testing."*
 
-[^7]:It's always interesting to see which kinds of testing do happen inside that columnd and which kinds don't.
+[^7]:It's always interesting to see which kinds of testing do happen inside that column and which kinds don't.
 
 [^8]: Two good definitions of teams: *"If some of us can win, while others lose, we're not a team."* (source?) and *"A team is a group of people that share a problem."* ([Douglas Squirrel](https://twitter.com/douglassquirrel))
 
-[^9]: They are not the same for activities that don't fit in the "testing" column. A tester inside the team, even if it's a for-the-team tester, will have more oppurtunities to participate in other team activities than a tester who's in a separate testing team.
+[^9]: They are not the same for activities that don't fit in the "testing" column. A tester inside the team, even if it's a for-the-team tester, will have more opportunities to participate in other team activities than a tester who's in a separate testing team.
 
 
 <div style="margin-top: 2.7rem" />
