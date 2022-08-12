@@ -15,6 +15,12 @@ hidetitle: false
 - The Utopia Of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy - David Graeber
 - The Bright Ages: A New History of Medieval Europe - Matthew Gabriele & David M Perry
 - The Four Tendencies: The Indispensable Personality Profiles That Reveal How to Make Your Life Better (and Other People's Lives Better, Too) - Gretchen Rubin
+- Anarchism: A Very Short Introduction - Colin Ward
+- Sit Down and Shut Up: Punk Rock Commentaries on Buddha, God, Truth, Sex, Death, and Dogen's Treasury of the Right Dharma Eye - Brad Warner
+- Battle Scars: A Story of War and All That Follows - Jason Fox
+- De zeven vinkjes: Hoe mannen zoals ik de baas spelen - Joris Luyendijk
+- Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed - James C. Scott
+
 
 ### 2021
 - Practical Ways to Lead an Innovative Organization: Modern Management Made Easy, Book 3 - Johanna Rothman
