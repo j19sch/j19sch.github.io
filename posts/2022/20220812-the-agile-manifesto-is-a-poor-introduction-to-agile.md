@@ -2,7 +2,7 @@
 .. title: The Agile Manifesto is a poor introduction to Agile
 .. slug: the-agile-manifesto-is-a-poor-introduction-to-agile
 .. date: 2022-08-12 09:37:25 UTC+02:00
-.. tags: agile, agile manifesto, metis, teaching, skills
+.. tags: agile, agile manifesto, mētis, teaching
 .. category: agile
 .. link: 
 .. description: 
@@ -17,7 +17,7 @@ My first thought was: "The Agile Manifesto!" After a second thought, though, I r
 
 > And I would recommend against reading the Agile Manifesto without consulting any secondary sources, except if you read it in the same way as you would visit a historical site "just to see where it all happened".
 
-As I wrote this, I could not really put my finger as to why exactly I felt this way. The best I could come up with was that the Agile Manifesto is hard to understand on its own. You need some historical context and pracitical experience to make sense of it. Conincidentally I'm currently reading ["Seeing Like a State"](https://en.wikipedia.org/wiki/Seeing_Like_a_State) by [James C. Scott](https://en.wikipedia.org/wiki/James_C._Scott). In chapter 9 he discusses the Greek concept of *mētis* (μῆτις) and how it relates to rules of thumb. Turns out that this explains why the Agile Manifesto is a poor introduction to Agile.
+As I wrote this, I could not really put my finger on why exactly I felt this way. The best I could come up with was that the Agile Manifesto is hard to understand on its own. You need some historical context and practical experience to make sense of it. Serendipity came to the rescue, though, as I'm currently reading [*Seeing Like a State*](https://en.wikipedia.org/wiki/Seeing_Like_a_State) by [James C. Scott](https://en.wikipedia.org/wiki/James_C._Scott). In chapter 9 he discusses the Greek concept of *mētis* (μῆτις) and how it relates to rules of thumb. Turns out that this explains why the Agile Manifesto is a poor introduction to Agile.
 
 <!-- TEASER_END -->
 
@@ -25,7 +25,7 @@ As I wrote this, I could not really put my finger as to why exactly I felt this 
 
 # Mētis and rules of thumb
 
-In *"Chapter 9. Thin Simplifications and Practical Knowledge: Mētis"* of "Seeing Like a State" James C. Scott explains[^1] mētis like this:
+In *"Chapter 9. Thin Simplifications and Practical Knowledge: Mētis"* of *Seeing Like a State* James C. Scott explains[^1] mētis like this:
 
 > The concept comes to us from the ancient Greeks. Odysseus was frequently praised for having mētis in abundance and for using it to outwit his enemies and make his way home. Mētis is typically translated into English as "cunning" or "cunning intelligence." While not wrong, this translation fails to do justice to the range of knowledge and skills represented by mētis. __Broadly understood, mētis represents a wide array of practical skills and acquired intelligence in responding to a constantly changing natural and human environment.__ Odysseus's mētis was in evidence, not only in his deceiving of Circe, the Cyclops, and Polyphemus and in binding himself to the mast to avoid the Sirens, but also in holding his men together, in repairing his ship, and in improvising tactics to get his men out of one tight spot after another. The emphasis is both on Odysseus's ability to adapt successfully to a constantly shifting situation and on his capacity to understand, and hence outwit, his human and divine adversaries. *(p. 313) [emphasis mine]*
 
@@ -49,60 +49,29 @@ Which has James C. Scott asking the question: "Why are the rules of thumb that c
 
 # The Agile Manifesto as rules of thumb based on mētis
 
+All of the above, in my opinion, applies to Agile software development and the Agile Manifesto. The Manifesto are rules of thumb codified by its authors based on their mētis of lightweight methods of developing software.
 
+As [Alistair Cockburn tells it](https://youtu.be/fG6N-QNDblM?t=2677) in *3 Decades of History and Stories about Agile with Alistair Cockburn*, the 2001 gathering in Snowbird that resulted in the Manifesto, started with a short opening statement by Bob Martin. In that statement he said that he invited everyone because even though they have some differences, he also believed they have something in common. So it would be good to write a manifesto, since a rising tide raises all boats.
 
+So who where these invitees and what had they been doing? They were representatives of several lightweight methods that were created in the '90s: Adaptive Software Development, Crystal, Extreme Programming (XP), Pragmatic Programming (PP), and Scrum. As Alistair Cockburn says [earlier in that same video](https://youtu.be/fG6N-QNDblM?t=1280):
 
-rules of thumb are derived from mētis, they don't teach mētis
+> We didn't have to make up stuff. We had been doing stuff, for all of us, for five, eight, ten years, whatever the number might have been.
 
-the authors as representatives of lightweight methodologies had mētis
-Adaptive Software Development
-Crystal
-Extreme Programming (XP)
-Pragmatic Programming (PP)
-Scrum
+Which is also reflected by the start of [the Manifesto](https://agilemanifesto.org/):
 
+> We are uncovering better ways of developing software by doing it and helping others do it. Through this work we have come to value:
 
-the Manifesto (4 values and 12 principles) are rules of thumb based on their mētis
+So it was the mētis acquired by these 17 people, that got codified into the Agile Manifesto as four values and twelve principles, i.e. as general rules of thumb. As mentioned above, these general rules require a translation based on local knowledge if they are to be applied successfully. And the more general the rule, the more translation is required. The Agile Manifesto is a set of very general rules, since they codify the rules of thumb common to five lightweight methods, each of which is already a codification of the mētis of its creators. In that sense, the Manifesto is twice removed from actual practice.
 
-opening of the Manifesto:
-> We are uncovering better ways of developing  
-software by doing it and helping others do it.  
-Through this work we have come to value:
-
-sharing the rules of thumb (esp. since they are so general, see quote above) is not very helpful
+This to me is the reason why the Agile Manifesto is not a good introduction to Agile. The translation from the Manifesto to local circumstances is too great for someone who is looking for an introduction to the topic. This is I think not only true when it comes to applying the Manifesto in practice. It already comes into play when trying to understand on a conceptual level what the Manifesto is saying. The only reason I would share the Manifesto is as a historical document. To show it and say: "This is the origin of Agile."
 
 
 
 # So how do you introduce someone to Agile?
-My [first reply](https://twitter.com/j19sch/status/1557618194927476736), excerpt from James Shore's book
+If not through the Agile Manifesto, then how do you introduce? Next to my comment about the Manifesto, I also [replied this](https://twitter.com/j19sch/status/1557618194927476736) to Elizabeth's question:
 
-> "First https://jamesshore.com/v2/books/aoad2/what_is_agile to get the big picture, then 'Agile Conversations' by Douglas Squirrel and Jeffrey Fredrick, so they can have good conversations with colleagues about how to agile."
+> First [https://jamesshore.com/v2/books/aoad2/what_is_agile](https://www.jamesshore.com/v2/books/aoad2/what_is_agile) to get the big picture, then "Agile Conversations" by Douglas Squirrel and Jeffrey Fredrick, so they can have good conversations with colleagues about how to agile.
 
-Don't spend too much time on it:
+That link leads to the first chapter of [*The Art of Agile Software Development (2nd ed)*](https://www.jamesshore.com/v2/books/aoad2) by [James Shore](https://twitter.com/jamesshore). The chapter does reproduce the Manifesto, but it also explains what it means. It provides historical context. It explains why Agile won, why it works, and why it fails. As far as short introductions go, I think it's hard to do much better. And for anyone who wants a more in-depth introduction, there are the remaining 470 pages of the book.
 
-- 70s-80s-90s heavyweight methodologies
-- 90s lightweight methodologies
-- 2001 Agile Manifesto
-- past 20 years lots happened: used, misused, misinterpreted, but also DevOps, Lean
-- basically everyone is Agile now, so don't worry about it
-- further reading at https://context-of-agile.org/ (disclaimer: I own that site)
-
-
-
-# all the quotes in order of appearance in the book
-> The concept comes to us from the ancient Greeks. Odysseus was frequently praised for having mētis in abundance and for using it to outwit his enemies and make his way home. Mētis is typically translated into English as 'cunning' or 'cunning intelligence.' While not wrong, this translation fails to do justice to the range of knowledge and skills represented by mētis. Broadly understood, mētis represents a wide array of practical skills and acquired intelligence in responding to a constantly changing natural and human environment. Odysseus's mētis was in evidence, not only in his deceiving of Circe, the Cyclops, and Polyphemus and in binding himself to the mast to avoid the Sirens, but also in holding his men together, in repairing his ship, and in improvising tactics to get his men out of one tight spot after another. The emphasis is both on Odysseus's ability to adapt successfully to a constantly shifting situation and on his capacity to understand, and hence outwit, his human and divine adversaries. (p. 313)
-
-> One powerful indication that they all require mētis is that they are exceptionally difficult to teach apart from engaging in the activity itself. (p.313)
-
-> The skills of mētis may well involve rules of thumb, but such rules are largely acquired through practice (often in formal apprenticeship) and a developed feel or knack for strategy. Mētis resists simplification into deductive principles which can successfully be transmitted through book learning, because the environments in which it is exercised are so complex and nonrepeatable that formal procedures of rational decision making are impossible to apply. (p. 316)
-
-> Why are the rules of thumb that can be derived from any skilled craft still woefully inadequate to its practice? Artists or cooks, Michael Oakeshott has noted, may in fact write about their art and try to boil it down to technical knowledge, but what they write represents not much of what they know but rather only that small part of their knowledge that can be reduced to exposition. Knowing a craft’s shorthand rules is a very long way from its accomplished performance: 'These rules and principles are mere abridgements of the activity itself; they do not exist in advance of the activity, they cannot properly be said to govern it and they cannot provide the impetus of the activity. A complete mastery of the principles may exist alongside a complete inability to pursue the activity to which they refer, for the pursuit of the activity does not consist in the application of these principles; and even if it did, the knowledge of how to apply them (the knowledge of actually pursuing the activity) is not given in a knowledge of them.' (Michael Oakeshott, Rationalism in Politics and Other Essays) (p. 316)
-
-> Knowing how and when to apply the rules of thumb in a concrete situation is the essence of mētis. The subtleties of application are important precisely because mētis is most valuable in settings that are mutable, indeterminant (some facts are unknown), and particular. (p. 316)
-
-> While something can indeed be said about forestry, revolution, urban planning, agriculture, and rural settlement in general, this will take us only so far in understanding this forest, this revolution, this farm. All farming takes place in a unique space (fields, soil, crops) and at a unique time (weather pattern, season, cycle in pest populations) and for unique ends (this family with its needs and tastes). A mechanical application of generic rules that ignores these particularities is an invitation to practical failure, social disillusionment, or most likely both. The generic formula does not and cannot supply the local knowledge that will allow a successful translation of the necessarily crude general understandings to successful, nuanced, local applications. The more general the rules, the more they require in the way of translation if they are to be locally successful. Nor is it simply a matter of the captain or navigator realizing at what point his rules of thumb are inferior to the intimate local knowledge of the pilot. Rather, it is a matter of recognizing that the rules of thumb themselves are largely a codification derived from the actual practices of sailing and piloting. (p. 318)
-
-> One last analogy may help to clarify the relationship between gen|||eral rules of thumb and mētis. Mētis is not merely the specification of local values (such as the local mean temperature and rainfall) made in order to successfully apply a generic formula to a local case. Taking language as a parallel, I believe that the rule of thumb is akin to formal grammar, whereas mētis is more like actual speech. Mētis is no more derivative of general rules than speech is derivative of grammar. (p. 318-319)
-
-> Even the part of mētis that can be conveyed by rules of thumb is the codification of practical experience. (p. 330)
-
+An alternative way to introduce people to Agile would be to not spend much time on it at all. Give a brief historical overview by mentioning the heavyweight methods of the '70s-'80s-'90s, the lightweight methods of the '90s, and the resulting Agile Manifesto of 2001. Explain that a lot has happened in the 20+ years since. Agile has been used and misused in a multitude of ways. There's also DevOps and Lean now. With everyone (or close to it) claiming to be Agile now, there's not much use in worrying about what is or isn't Agile. These days, it's basically a synonym for software development. And if despite that, you're still curious, go read some of the articles listed at [Context of Agile](https://context-of-agile.org/). *(Disclaimer: I own that site.)*
