@@ -3,13 +3,37 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes</title>
   <id>https://smallsheds.garden/blog/feed.atom</id>
-  <updated>2022-08-04T15:02:44Z</updated>
+  <updated>2022-08-12T13:08:47Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/blog/feed.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>The Agile Manifesto is a poor introduction to Agile</title>
+    <id>https://smallsheds.garden/blog/2022/the-agile-manifesto-is-a-poor-introduction-to-agile/</id>
+    <updated>2022-08-12T09:37:25+02:00</updated>
+    <published>2022-08-12T09:37:25+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2022/the-agile-manifesto-is-a-poor-introduction-to-agile/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Last week &lt;a href="https://twitter.com/ezagroba"&gt;Elizabeth Zagroba&lt;/a&gt; &lt;a href="https://twitter.com/ezagroba/status/1557608861690912772"&gt;asked on Twitter&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If someone was completely new to working on software on an Agile team, what would you want them to read about Agile first?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;My first thought was: "The Agile Manifesto!" After a second thought, though, I reconsidered and &lt;a href="https://twitter.com/j19sch/status/1557650105930579968"&gt;replied&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;And I would recommend against reading the Agile Manifesto without consulting any secondary sources, except if you read it in the same way as you would visit a historical site "just to see where it all happened".&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As I wrote this, I could not really put my finger on why exactly I felt this way. The best I could come up with was that the Agile Manifesto is hard to understand on its own. You need some historical context and practical experience to make sense of it. Serendipity came to the rescue, though, as I'm currently reading &lt;a href="https://en.wikipedia.org/wiki/Seeing_Like_a_State"&gt;&lt;em&gt;Seeing Like a State&lt;/em&gt;&lt;/a&gt; by &lt;a href="https://en.wikipedia.org/wiki/James_C._Scott"&gt;James C. Scott&lt;/a&gt;. Chapter 9 of the book focuses on the Greek concept of &lt;em&gt;mētis&lt;/em&gt; (μῆτις) and how it relates to rules of thumb. Turns out that this explains why the Agile Manifesto is a poor introduction to Agile.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2022/the-agile-manifesto-is-a-poor-introduction-to-agile/"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="agile" label="agile"/>
+    <category term="agile-manifesto" label="agile manifesto"/>
+    <category term="metis" label="mētis"/>
+    <category term="teaching" label="teaching"/>
+  </entry>
   <entry>
     <title>"Tester" is an overloaded variable</title>
     <id>https://smallsheds.garden/blog/2022/tester-is-an-overloaded-variable/</id>
@@ -177,20 +201,5 @@ Any other options? Because something about the term is bothering me.&lt;/p&gt;
     <category term="leadership" label="leadership"/>
     <category term="self-organization" label="self-organization"/>
     <category term="sociocracy-30" label="sociocracy 3.0"/>
-  </entry>
-  <entry>
-    <title>Site analytics: if you have two watches...</title>
-    <id>https://smallsheds.garden/blog/2021/site-analytics-if-you-have-two-watches/</id>
-    <updated>2021-12-28T11:08:16+01:00</updated>
-    <published>2021-12-28T11:08:16+01:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2021/site-analytics-if-you-have-two-watches/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;When I moved my blog to this site, I added &lt;a href="https://clicky.com/"&gt;Clicky&lt;/a&gt; as a privacy-friendly way to collect analytics. About a month ago I added &lt;a href="https://plausible.io/"&gt;Plausible&lt;/a&gt; analytics, because I wanted to compare the two.&lt;/p&gt;
-&lt;p&gt;My reasons to consider an alternative to Clicky, and Plausible in particular, were varied. Plausible looks nicer. Clicky's free plan only lets you track one site, I want analytics for this site and for my &lt;a href="https://context-of-agile.org/"&gt;Context of Agile&lt;/a&gt; site. I'd like to have more than 30 days of history for my data. Those last two wishes require a paid plan (regardless if Clicky or Plausible) and Plausible is cheaper than Clicky.&lt;/p&gt;
-&lt;p&gt;So I got a 30-day trial with Plausible, added its script to my site, while Clicky also kept collecting data. With the trial now over, it's time to take a look at the data they both collected over the period from 28 November to 27 December 2021. I've added some thoughts after each table with data and at the end of this post I've added some more general thoughts.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2021/site-analytics-if-you-have-two-watches/"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="site" label="site"/>
   </entry>
 </feed>

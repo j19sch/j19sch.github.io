@@ -41,7 +41,7 @@ It is true there is always some testing you can only do after you believe all th
 
 [^5]: Ensembling (mob programming/testing) is an excellent way to eliminate handovers.
 
-[^6]: These benefits extend beyond the topic of this section "checking stuff at the end", btw.
+[^6]: The benefits a tester can provide, extend beyond the current topic of "checking stuff at the end", btw.
 
 
 

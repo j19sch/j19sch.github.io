@@ -55,7 +55,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/archive.html</loc>
-  <lastmod>2022-08-03T15:13:00Z</lastmod>
+  <lastmod>2022-08-12T07:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/</loc>
@@ -262,6 +262,10 @@
   <lastmod>2022-08-03T15:13:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/blog/2022/the-agile-manifesto-is-a-poor-introduction-to-agile/</loc>
+  <lastmod>2022-08-12T07:43:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/blog/2022/three-thoughts-on-risk-based-testing/</loc>
   <lastmod>2022-07-16T15:12:00Z</lastmod>
  </url>
@@ -339,11 +343,15 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-6.html</loc>
-  <lastmod>2022-08-03T15:13:00Z</lastmod>
+  <lastmod>2022-08-12T07:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/</loc>
-  <lastmod>2022-08-04T10:07:00Z</lastmod>
+  <lastmod>2022-08-12T07:45:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/categories/agile-manifesto/</loc>
+  <lastmod>2022-08-12T07:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/agile/</loc>
@@ -532,6 +540,10 @@
  <url>
   <loc>https://smallsheds.garden/categories/measurements/</loc>
   <lastmod>2021-10-24T15:40:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/categories/metis/</loc>
+  <lastmod>2022-08-12T07:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/models/</loc>

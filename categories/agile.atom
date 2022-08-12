@@ -3,13 +3,37 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about agile)</title>
   <id>https://smallsheds.garden/categories/agile.atom</id>
-  <updated>2022-07-13T19:11:18Z</updated>
+  <updated>2022-08-12T13:08:47Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/agile.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/agile/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>The Agile Manifesto is a poor introduction to Agile</title>
+    <id>https://smallsheds.garden/blog/2022/the-agile-manifesto-is-a-poor-introduction-to-agile/</id>
+    <updated>2022-08-12T09:37:25+02:00</updated>
+    <published>2022-08-12T09:37:25+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2022/the-agile-manifesto-is-a-poor-introduction-to-agile/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Last week &lt;a href="https://twitter.com/ezagroba"&gt;Elizabeth Zagroba&lt;/a&gt; &lt;a href="https://twitter.com/ezagroba/status/1557608861690912772"&gt;asked on Twitter&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If someone was completely new to working on software on an Agile team, what would you want them to read about Agile first?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;My first thought was: "The Agile Manifesto!" After a second thought, though, I reconsidered and &lt;a href="https://twitter.com/j19sch/status/1557650105930579968"&gt;replied&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;And I would recommend against reading the Agile Manifesto without consulting any secondary sources, except if you read it in the same way as you would visit a historical site "just to see where it all happened".&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As I wrote this, I could not really put my finger on why exactly I felt this way. The best I could come up with was that the Agile Manifesto is hard to understand on its own. You need some historical context and practical experience to make sense of it. Serendipity came to the rescue, though, as I'm currently reading &lt;a href="https://en.wikipedia.org/wiki/Seeing_Like_a_State"&gt;&lt;em&gt;Seeing Like a State&lt;/em&gt;&lt;/a&gt; by &lt;a href="https://en.wikipedia.org/wiki/James_C._Scott"&gt;James C. Scott&lt;/a&gt;. Chapter 9 of the book focuses on the Greek concept of &lt;em&gt;mētis&lt;/em&gt; (μῆτις) and how it relates to rules of thumb. Turns out that this explains why the Agile Manifesto is a poor introduction to Agile.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2022/the-agile-manifesto-is-a-poor-introduction-to-agile/"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="agile" label="agile"/>
+    <category term="agile-manifesto" label="agile manifesto"/>
+    <category term="metis" label="mētis"/>
+    <category term="teaching" label="teaching"/>
+  </entry>
   <entry>
     <title>Uncovering Agile micro-skills at FroGS conf</title>
     <id>https://smallsheds.garden/blog/2022/uncovering-agile-micro-skills-at-frogsconf/</id>
