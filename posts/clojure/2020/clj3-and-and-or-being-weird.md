@@ -2,7 +2,7 @@
 .. title: (clj 3) Clojure's 'and' and 'or' are weird (but not really)
 .. slug: clj3-and-or-being-weird
 .. date: 2020-05-16 21:25:15 UTC+02:00
-.. tags: clojure, programming, brave clojure
+.. tags: clojure, programming, brave clojure, python
 .. category: clojure
 .. link: 
 .. description:

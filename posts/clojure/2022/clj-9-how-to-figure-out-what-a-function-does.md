@@ -2,7 +2,7 @@
 .. title: (clj 9) How to figure out what a function does
 .. slug: clj-9-how-to-figure-out-what-a-function-does
 .. date: 2022-06-12 15:01:36 UTC+02:00
-.. tags: clojure, programming, brave clojure
+.. tags: clojure, programming, brave clojure, python
 .. category: clojure
 .. link: 
 .. description: 
