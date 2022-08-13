@@ -29,6 +29,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <meta property="article:tag" content="brave clojure">
 <meta property="article:tag" content="clojure">
 <meta property="article:tag" content="programming">
+<meta property="article:tag" content="python">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -79,7 +80,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
                     <a href="../../../" class="dropdown-item">My blog</a>
                     <a href="../../../../categories/" class="dropdown-item">Categories and tags</a>
                     <a href="../../../../archive.html" class="dropdown-item">Archive</a>
-                    <a href="../../../rss.xml" class="dropdown-item">RSS feed</a>
+                    <a href="../../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
                     <a href="../../../feed.atom" class="dropdown-item">Atom feed</a>
             </div>
 
@@ -95,11 +96,11 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
     <div class="body-content">
         <!--Body content-->
         
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">(clj 8) Some notes on lazy sequences and function parameters</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">(clj 8) Some notes on lazy sequences and function&nbsp;parameters</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    Joep Schuurkes
+                    Joep&nbsp;Schuurkes
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -110,12 +111,12 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<p>Almost done with the chapter 4 <em>"Core Functions in Depth"</em> of "<a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">Clojure for the Brave and True</a>"! Before wrapping up the chapter with a longer example, a summary, and some exercises, the book goes into lazy sequences, the collection abstraction, and function functions. In this post I will share some notes on infinite lazy sequences and function parameters, making comparisons between Clojure and Python.</p>
-<h2>Infinite lazy sequences</h2>
-<p>A lazy sequence is a sequence whose members aren't computed until you try to access them. One advantage is that it's more efficient: the whole sequence doesn't have to be calculated and kept in memory from the start. Another advantage is that it allows you to create infinite sequences. Do that with a normal sequence and your program would never want to stop calculating.</p>
+<p>Almost done with the chapter 4 <em>&#8220;Core Functions in Depth&#8221;</em> of &#8220;<a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">Clojure for the Brave and True</a>&#8220;! Before wrapping up the chapter with a longer example, a summary, and some exercises, the book goes into lazy sequences, the collection abstraction, and function functions. In this post I will share some notes on infinite lazy sequences and function parameters, making comparisons between Clojure and&nbsp;Python.</p>
+<h2>Infinite lazy&nbsp;sequences</h2>
+<p>A lazy sequence is a sequence whose members aren&#8217;t computed until you try to access them. One advantage is that it&#8217;s more efficient: the whole sequence doesn&#8217;t have to be calculated and kept in memory from the start. Another advantage is that it allows you to create infinite sequences. Do that with a normal sequence and your program would never want to stop&nbsp;calculating.</p>
 <!-- TEASER_END -->
 
-<p>The book has the following example of an infinite sequence to calculate all even numbers:</p>
+<p>The book has the following example of an infinite sequence to calculate all even&nbsp;numbers:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">even-numbers</span>
   <span class="p">([]</span> <span class="p">(</span><span class="nf">even-numbers</span> <span class="mi">0</span><span class="p">))</span>
   <span class="p">([</span><span class="nv">n</span><span class="p">]</span> <span class="p">(</span><span class="nb">cons </span><span class="nv">n</span> <span class="p">(</span><span class="nf">lazy-seq</span> <span class="p">(</span><span class="nf">even-numbers</span> <span class="p">(</span><span class="nb">+ </span><span class="nv">n</span> <span class="mi">2</span><span class="p">))))))</span>
@@ -125,7 +126,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <span class="c1">; =&gt; (0 2 4 6 8 10 12 14 16 18)</span>
 </code></pre>
 
-<p>I wondered how to do the same in Python and with <a href="https://stackoverflow.com/questions/51858765/generating-an-infinite-list/51859030#51859030">some help from stackoverflow</a>, I got:</p>
+<p>I wondered how to do the same in Python and with <a href="https://stackoverflow.com/questions/51858765/generating-an-infinite-list/51859030#51859030">some help from stackoverflow</a>, I&nbsp;got:</p>
 <pre class="code literal-block"><span></span><code><span class="k">def</span> <span class="nf">even_numbers</span><span class="p">(</span><span class="n">numb</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
   <span class="n">numb</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">numb</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">numb</span>
 
@@ -138,14 +139,14 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <span class="c1"># =&gt; [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]</span>
 </code></pre>
 
-<p>What I find interesting is how they accomplish the same thing but in a different way.</p>
-<p>Clojure's <a href="https://clojuredocs.org/clojure.core/lazy-seq"><code>lazy-seq</code></a> is a function that: <em>"Takes a body of expressions that returns an ISeq or nil, and yields a Seqable object that will invoke the body only the first time seq is called, and will cache the result and return it on all subsequent seq calls."</em></p>
-<p>Python's <a href="https://docs.python.org/3/reference/expressions.html#yieldexpr"><code>yield</code></a> is used inside a function instead of the <code>return</code>, which makes that function a <a href="https://docs.python.org/3/glossary.html#term-generator">generator function</a>, which means the function returns a <a href="https://docs.python.org/3/glossary.html#term-generator-iterator">generator iterator</a>:<br><em>"Each yield temporarily suspends processing, remembering the location execution state (including local variables and pending try-statements). When the generator iterator resumes, it picks up where it left off (in contrast to functions which start fresh on every invocation)."</em></p>
-<p>So in essence, they do the same thing. Calculate the next step and cache. Rinse and repeat on demand. The syntax you need is a little different, though.</p>
-<p>Clojure uses a recursive function. I tried a similar implementation in Python, but that didn't work. If I use <code>yield</code>, it only returns the result of the first step, not of multiple. If I use a <code>return</code> instead, I get a <code>RecursionError</code>. That makes sense, since I needed the <code>yield</code> to not have an infinitely recursive function.</p>
-<p>The working solution in Python is to create an infinite loop with a <code>yield</code>, so that it's an infinite loop you actually have some control over. I thought about trying to implement something similar in Clojure, but decided that wouldn't work. Clojure does not have a <code>yield</code>, it does not even have a <code>return</code>. Clojure returns the last form in the function it evaluates<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
-<h3>Function parameters</h3>
-<p>"<a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">Clojure for the Brave and True</a>" has the following example for the <a href="https://clojure.org/guides/learn/functions#_apply"><code>apply</code></a> function:</p>
+<p>What I find interesting is how they accomplish the same thing but in a different&nbsp;way.</p>
+<p>Clojure&#8217;s <a href="https://clojuredocs.org/clojure.core/lazy-seq"><code>lazy-seq</code></a> is a function that: <em>&#8220;Takes a body of expressions that returns an ISeq or nil, and yields a Seqable object that will invoke the body only the first time seq is called, and will cache the result and return it on all subsequent seq&nbsp;calls.&#8221;</em></p>
+<p>Python&#8217;s <a href="https://docs.python.org/3/reference/expressions.html#yieldexpr"><code>yield</code></a> is used inside a function instead of&nbsp;the <code>return</code>, which makes that function a <a href="https://docs.python.org/3/glossary.html#term-generator">generator function</a>, which means the function returns a <a href="https://docs.python.org/3/glossary.html#term-generator-iterator">generator iterator</a>:<br><em>&#8220;Each yield temporarily suspends processing, remembering the location execution state (including local variables and pending try-statements). When the generator iterator resumes, it picks up where it left off (in contrast to functions which start fresh on every&nbsp;invocation).&#8221;</em></p>
+<p>So in essence, they do the same thing. Calculate the next step and cache. Rinse and repeat on demand. The syntax you need is a little different,&nbsp;though.</p>
+<p>Clojure uses a recursive function. I tried a similar implementation in Python, but that didn&#8217;t work. If I&nbsp;use <code>yield</code>, it only returns the result of the first step, not of multiple. If I use&nbsp;a <code>return</code> instead, I get&nbsp;a <code>RecursionError</code>. That makes sense, since I needed&nbsp;the <code>yield</code> to not have an infinitely recursive&nbsp;function.</p>
+<p>The working solution in Python is to create an infinite loop with&nbsp;a <code>yield</code>, so that it&#8217;s an infinite loop you actually have some control over. I thought about trying to implement something similar in Clojure, but decided that wouldn&#8217;t work. Clojure does not have&nbsp;a <code>yield</code>, it does not even have&nbsp;a <code>return</code>. Clojure returns the last form in the function it evaluates<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<h3>Function&nbsp;parameters</h3>
+<p><span class="dquo">&#8220;</span><a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">Clojure for the Brave and True</a>&#8221; has the following example for the <a href="https://clojure.org/guides/learn/functions#_apply"><code>apply</code></a>&nbsp;function:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">max </span><span class="mi">0</span> <span class="mi">1</span> <span class="mi">2</span><span class="p">)</span>
 <span class="c1">; =&gt; 2</span>
 
@@ -156,7 +157,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <span class="c1">; =&gt; 2)</span>
 </code></pre>
 
-<p>As usual, I wondered how Python approached this and turns out it doesn't care for <a href="https://docs.python.org/3/library/functions.html#max"><code>max()</code></a>:</p>
+<p>As usual, I wondered how Python approached this and turns out it doesn&#8217;t care for <a href="https://docs.python.org/3/library/functions.html#max"><code>max()</code></a>:</p>
 <pre class="code literal-block"><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
 <span class="mi">2</span>
 
@@ -164,7 +165,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <span class="mi">2</span>
 </code></pre>
 
-<p>Python does care for <a href="https://docs.python.org/3/library/functions.html#sum"><code>sum()</code></a>, although I don't see why the decision was made to have it behave differently from <code>max()</code>:</p>
+<p>Python does care for <a href="https://docs.python.org/3/library/functions.html#sum"><code>sum()</code></a>, although I don&#8217;t see why the decision was made to have it behave differently&nbsp;from <code>max()</code>:</p>
 <pre class="code literal-block"><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
   <span class="n">File</span> <span class="s2">"&lt;stdin&gt;"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
@@ -174,8 +175,8 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <span class="mi">3</span>
 </code></pre>
 
-<h3>Rest parameters</h3>
-<p>The examples in the book used an <code>&amp;</code> in the function parameters. I had forgotten what that did, but quickly relearned that the parameter after the <code>&amp;</code> is a rest parameter. Let's say you call a function with 4 arguments. The function has one parameter and a rest parameter. The first argument will be mapped to the one parameter, all the other arguments will be put in the rest parameter:</p>
+<h3>Rest&nbsp;parameters</h3>
+<p>The examples in the book used&nbsp;an <code>&amp;</code> in the function parameters. I had forgotten what that did, but quickly relearned that the parameter after&nbsp;the <code>&amp;</code> is a rest parameter. Let&#8217;s say you call a function with 4 arguments. The function has one parameter and a rest parameter. The first argument will be mapped to the one parameter, all the other arguments will be put in the rest&nbsp;parameter:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">favorite-things</span>
   <span class="p">[</span><span class="nb">name </span><span class="o">&amp;</span> <span class="nv">things</span><span class="p">]</span>
   <span class="p">(</span><span class="nb">str </span><span class="s">"Hi, "</span> <span class="nb">name </span><span class="s">", here are my favorite things: "</span>
@@ -186,7 +187,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <span class="c1">; =&gt; "Hi, Doreen, here are my favorite things: gum, shoes, kara-te"</span>
 </code></pre>
 
-<p>My first thought was that Python does not have such a thing as rest parameters, but then I remembered <code>*args</code>. And looking it up, I found out <a href="https://docs.python.org/3/glossary.html#term-parameter">you don't even need to name the rest parameter <code>args</code></a>!</p>
+<p>My first thought was that Python does not have such a thing as rest parameters, but then I&nbsp;remembered <code>*args</code>. And looking it up, I found out <a href="https://docs.python.org/3/glossary.html#term-parameter">you don&#8217;t even need to name the rest&nbsp;parameter <code>args</code></a>!</p>
 <pre class="code literal-block"><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">favorite_things</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="o">*</span><span class="n">things</span><span class="p">):</span>
 <span class="o">...</span>     <span class="k">return</span> <span class="sa">f</span><span class="s2">"Hi, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">, here are my favorite things: </span><span class="si">{</span><span class="s1">', '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">things</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span>
 <span class="o">...</span> 
@@ -194,28 +195,29 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <span class="s1">'Hi, Doreen, here are my favorite things: gum, shoes, kara-te'</span>
 </code></pre>
 
-<p>My instincts tell me that Clojure has more use of such a rest parameter than Python, but I could be completely wrong. Time will tell as I learn more.</p>
+<p>My instincts tell me that Clojure has more use of such a rest parameter than Python, but I could be completely wrong. Time will tell as I learn&nbsp;more.</p>
 <div class="footnote">
 <hr>
 <ol>
 <li id="fn:1">
-<p>Which is an interesting choice. In languages such as Python that do have a <code>return</code>, there is the question if it's ok to use a <code>return</code> somewhere else than in the last line of the function. The argument against it is that you don't want to make people look for all the <code>return</code>s in a function. It should be easy to find them and be sure you have found them all. Looks like Clojure solved the problem by avoiding the problem altogether: you don't get to decide where to <code>return</code> (or <code>yield</code>) what. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+<p>Which is an interesting choice. In languages such as Python that do have&nbsp;a <code>return</code>, there is the question if it&#8217;s ok to use&nbsp;a <code>return</code> somewhere else than in the last line of the function. The argument against it is that you don&#8217;t want to make people look for all&nbsp;the <code>return</code>s in a function. It should be easy to find them and be sure you have found them all. Looks like Clojure solved the problem by avoiding the problem altogether: you don&#8217;t get to decide where&nbsp;to <code>return</code> (or <code>yield</code>) what. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
 </li>
 </ol>
 </div>
 </div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../../../categories/brave-clojure/" rel="tag">brave clojure</a></li>
+<li><a class="tag p-category" href="../../../../categories/brave-clojure/" rel="tag">brave&nbsp;clojure</a></li>
             <li><a class="tag p-category" href="../../../../categories/clojure/" rel="tag">clojure</a></li>
             <li><a class="tag p-category" href="../../../../categories/programming/" rel="tag">programming</a></li>
+            <li><a class="tag p-category" href="../../../../categories/python/" rel="tag">python</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../../../2022/structuring-group-discussions-with-k-cards/" rel="prev" title="Structuring group discussions with K-cards">Previous post</a>
+                <a href="../../../2022/structuring-group-discussions-with-k-cards/" rel="prev" title="Structuring group discussions with K-cards">Previous&nbsp;post</a>
             </li>
             <li class="next">
-                <a href="../clj-9-how-to-figure-out-what-a-function-does/" rel="next" title="(clj 9) How to figure out what a function does">Next post</a>
+                <a href="../clj-9-how-to-figure-out-what-a-function-does/" rel="next" title="(clj 9) How to figure out what a function does">Next&nbsp;post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer">
             Contents © 2022     

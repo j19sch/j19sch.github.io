@@ -82,7 +82,7 @@ About a month ago I ">
                     <a href="../../" class="dropdown-item">My blog</a>
                     <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
                     <a href="../../../archive.html" class="dropdown-item">Archive</a>
-                    <a href="../../rss.xml" class="dropdown-item">RSS feed</a>
+                    <a href="../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
                     <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
             </div>
 
@@ -98,11 +98,11 @@ About a month ago I ">
     <div class="body-content">
         <!--Body content-->
         
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Three thoughts on risk-based testing</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Three thoughts on risk-based&nbsp;testing</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    Joep Schuurkes
+                    Joep&nbsp;Schuurkes
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -113,61 +113,61 @@ About a month ago I ">
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<p>The past month I've been thinking about risk-based testing. This post collects three thoughts on risk-based testing I kept returning to.</p>
-<h2>If not based on risks, then based on what?</h2>
+<p>The past month I&#8217;ve been thinking about risk-based testing. This post collects three thoughts on risk-based testing I kept returning&nbsp;to.</p>
+<h2>If not based on risks, then based on&nbsp;what?</h2>
 <p>About a month ago I <a href="https://twitter.com/j19sch/status/1533760354647523330">tweeted</a>:</p>
 <blockquote>
 <p>What are the alternatives to risk-based testing?<br>
-Requirements-based? I'd argue that's a subset of risk-based.<br>
-Unguided? That's either a bad idea ("we hope to get lucky") or aimed at the risk of unknown unknowns.<br>
-Any other options? Because something about the term is bothering me.</p>
+Requirements-based? I&#8217;d argue that&#8217;s a subset of risk-based.<br>
+Unguided? That&#8217;s either a bad idea (&#8220;we hope to get lucky&#8221;) or aimed at the risk of unknown unknowns.<br>
+Any other options? Because something about the term is bothering&nbsp;me.</p>
 </blockquote>
-<p>My question was inspired by the <a href="https://smallsheds.garden/slides/rtc2019-testing-types.html#/15/0/1">"opposite" heuristic</a> from my talk about <a href="https://smallsheds.garden/slides/rtc2019-testing-types.html#/">testing types</a>: if we have some kind of category, what's the name for the things not in that category? Applied to risk-based testing: what's the name for testing that's not risk-based?</p>
+<p>My question was inspired by the <a href="https://smallsheds.garden/slides/rtc2019-testing-types.html#/15/0/1">&#8220;opposite&#8221; heuristic</a> from my talk about <a href="https://smallsheds.garden/slides/rtc2019-testing-types.html#/">testing types</a>: if we have some kind of category, what&#8217;s the name for the things not in that category? Applied to risk-based testing: what&#8217;s the name for testing that&#8217;s not&nbsp;risk-based?</p>
 <!-- TEASER_END -->
 
-<p>From the responses to my tweet it became clear I was not the only one bothered by the term. My plan was to write a blog post inspired by these responses. However, one of the people who replied, <a href="http://twitter.com/qahiccupps">James Thomas</a>, beat me to it. He wrote a great blog post titled <a href="https://qahiccupps.blogspot.com/2022/06/risk-based-testing-averse.html">"Risk-Based Testing Averse"</a>. In it he accepts <a href="https://twitter.com/StooCrock/status/1533769843572453378">the point</a> made by <a href="https://twitter.com/StooCrock">Stu Crock</a> that everything is risk-based. If that's all there is to it, however, "risk-based testing" becomes a meaningless term:</p>
+<p>From the responses to my tweet it became clear I was not the only one bothered by the term. My plan was to write a blog post inspired by these responses. However, one of the people who replied, <a href="http://twitter.com/qahiccupps">James Thomas</a>, beat me to it. He wrote a great blog post titled <a href="https://qahiccupps.blogspot.com/2022/06/risk-based-testing-averse.html">&#8220;Risk-Based Testing Averse&#8221;</a>. In it he accepts <a href="https://twitter.com/StooCrock/status/1533769843572453378">the point</a> made by <a href="https://twitter.com/StooCrock">Stu Crock</a> that everything is risk-based. If that&#8217;s all there is to it, however, &#8220;risk-based testing&#8221; becomes a meaningless&nbsp;term:</p>
 <blockquote>
-<p>"If risk is endemic then it loses any explanatory value."</p>
+<p><span class="dquo">&#8220;</span>If risk is endemic then it loses any explanatory&nbsp;value.&#8221;</p>
 </blockquote>
-<p>And that's not how James uses the term "risk" in relation to his work:</p>
+<p>And that&#8217;s not how James uses the term &#8220;risk&#8221; in relation to his&nbsp;work:</p>
 <blockquote>
-<p>"I want conversations about <a href="https://qahiccupps.blogspot.com/2019/09/of-what-to-who-when.html">the risk of what, to who, and when</a>. If I'm doing (what I would call) risk-based testing I'm operating at this lower level."</p>
+<p><span class="dquo">&#8220;</span>I want conversations about <a href="https://qahiccupps.blogspot.com/2019/09/of-what-to-who-when.html">the risk of what, to who, and when</a>. If I&#8217;m doing (what I would call) risk-based testing I&#8217;m operating at this lower&nbsp;level.&#8221;</p>
 </blockquote>
-<p>I'm still not sure if I'll actually start using the term "risk-based testing" any time soon, but the usage as described by James does make sense to me.</p>
-<h2>Different forms of risk-based testing</h2>
-<p>Recently I was asked to guide teams towards risk-based testing. I responded by asking which of the four following forms of risk-based testing they were interested in.</p>
+<p>I&#8217;m still not sure if I&#8217;ll actually start using the term &#8220;risk-based testing&#8221; any time soon, but the usage as described by James does make sense to&nbsp;me.</p>
+<h2>Different forms of risk-based&nbsp;testing</h2>
+<p>Recently I was asked to guide teams towards risk-based testing. I responded by asking which of the four following forms of risk-based testing they were interested&nbsp;in.</p>
 <p><strong>1. prioritize test case execution based on risk</strong><br>
-You add a "risk level" to each test case and after you have selected the test cases you want to execute, you sort them on "risk level" to determine the order of execution.</p>
+You add a &#8220;risk level&#8221; to each test case and after you have selected the test cases you want to execute, you sort them on &#8220;risk level&#8221; to determine the order of&nbsp;execution.</p>
 <p><strong>2. test approach for stories and/or epics based on risks</strong><br>
-Based on your understanding<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> of a story or epic, you come up with risks, i.e. scenarios that you either want to happen or want to avoid from happening. You then design your tests based on those risks or scenarios.</p>
+Based on your understanding<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> of a story or epic, you come up with risks, i.e. scenarios that you either want to happen or want to avoid from happening. You then design your tests based on those risks or&nbsp;scenarios.</p>
 <p><strong>3. (pre-)refinement of stories and/or epics based on risks</strong><br>
-Instead of waiting until you almost need to start testing as in the previous form, you come up with the risks during (pre-)refinement. The risks are then not only input for testing, but also for design and development.</p>
+Instead of waiting until you almost need to start testing as in the previous form, you come up with the risks during (pre-)refinement. The risks are then not only input for testing, but also for design and&nbsp;development.</p>
 <p><strong>4. test strategy for a project based on risks</strong><br>
-This is similar to option 2, but with a larger scope: the whole project instead of a story or an epic. As a result the risks will also be more high-level. This makes this form of risk analysis less useful as input for test design. It can be useful to direct the testing effort as a whole based on risks.</p>
-<h2>More to it than impact times likelihood</h2>
-<p>A long time ago I was taught to determine the risk level by thinking about impact and likelihood<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. Impact was the impact on the user or on the business. Likelihood could be split into chance of failure and frequency of usage.</p>
-<p>Thinking about risk-based testing made me remember this lesson and made me realize I've been using a more fine-grained list to think about how big and bad a risk is:</p>
+This is similar to option 2, but with a larger scope: the whole project instead of a story or an epic. As a result the risks will also be more high-level. This makes this form of risk analysis less useful as input for test design. It can be useful to direct the testing effort as a whole based on&nbsp;risks.</p>
+<h2>More to it than impact times&nbsp;likelihood</h2>
+<p>A long time ago I was taught to determine the risk level by thinking about impact and likelihood<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. Impact was the impact on the user or on the business. Likelihood could be split into chance of failure and frequency of&nbsp;usage.</p>
+<p>Thinking about risk-based testing made me remember this lesson and made me realize I&#8217;ve been using a more fine-grained list to think about how big and bad a risk&nbsp;is:</p>
 <ul>
 <li>impact<ul>
-<li>impact on the user and/or customer</li>
-<li>impact on the company</li>
-<li>ease/speed of discovery when something goes wrong</li>
-<li>ease/speed of recovery after something went wrong</li>
-<li>ease/speed of putting a workaround in place</li>
-<li>ease/speed of fixing the underlying issue</li>
+<li>impact on the user and/or&nbsp;customer</li>
+<li>impact on the&nbsp;company</li>
+<li>ease/speed of discovery when something goes&nbsp;wrong</li>
+<li>ease/speed of recovery after something went&nbsp;wrong</li>
+<li>ease/speed of putting a workaround in&nbsp;place</li>
+<li>ease/speed of fixing the underlying&nbsp;issue</li>
 </ul>
 </li>
 <li>chance of failure<ul>
-<li>level of complexity of the process</li>
-<li>level of complexity of the code</li>
-<li>number of dependencies in the code</li>
-<li>number of recent code changes in this area</li>
-<li>amount of technical debt</li>
+<li>level of complexity of the&nbsp;process</li>
+<li>level of complexity of the&nbsp;code</li>
+<li>number of dependencies in the&nbsp;code</li>
+<li>number of recent code changes in this&nbsp;area</li>
+<li>amount of technical&nbsp;debt</li>
 </ul>
 </li>
-<li>frequency of usage or of occurrence</li>
+<li>frequency of usage or of&nbsp;occurrence</li>
 </ul>
-<p>Without a doubt this list is far from complete. It does illustrate, however, that if you discuss risk only at the level of impact and likelihood, you are going to miss things.</p>
+<p>Without a doubt this list is far from complete. It does illustrate, however, that if you discuss risk only at the level of impact and likelihood, you are going to miss&nbsp;things.</p>
 <div class="footnote">
 <hr>
 <ol>
@@ -175,7 +175,7 @@ This is similar to option 2, but with a larger scope: the whole project instead 
 <p>A good understanding requires a variety of perspectives. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
 </li>
 <li id="fn:2">
-<p>Sometimes people assign numerical values to both and multiply these to determine the risk level. I think that's problematic, but won't go into that today. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+<p>Sometimes people assign numerical values to both and multiply these to determine the risk level. I think that&#8217;s problematic, but won&#8217;t go into that today. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
 </li>
 </ol>
 </div>
@@ -183,16 +183,16 @@ This is similar to option 2, but with a larger scope: the whole project instead 
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../../categories/coverage/" rel="tag">coverage</a></li>
-            <li><a class="tag p-category" href="../../../categories/software-testing/" rel="tag">software testing</a></li>
-            <li><a class="tag p-category" href="../../../categories/test-management/" rel="tag">test management</a></li>
-            <li><a class="tag p-category" href="../../../categories/test-strategy/" rel="tag">test strategy</a></li>
+            <li><a class="tag p-category" href="../../../categories/software-testing/" rel="tag">software&nbsp;testing</a></li>
+            <li><a class="tag p-category" href="../../../categories/test-management/" rel="tag">test&nbsp;management</a></li>
+            <li><a class="tag p-category" href="../../../categories/test-strategy/" rel="tag">test&nbsp;strategy</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../../clojure/2022/clj-10-the-mapify-function-of-clj-9-revisited/" rel="prev" title="(clj 10) The mapify function of (clj 9) revisited">Previous post</a>
+                <a href="../../clojure/2022/clj-10-the-mapify-function-of-clj-9-revisited/" rel="prev" title="(clj 10) The mapify function of (clj 9) revisited">Previous&nbsp;post</a>
             </li>
             <li class="next">
-                <a href="../tester-is-an-overloaded-variable/" rel="next" title='"Tester" is an overloaded variable'>Next post</a>
+                <a href="../tester-is-an-overloaded-variable/" rel="next" title='"Tester" is an overloaded variable'>Next&nbsp;post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer">
             Contents © 2022     

@@ -2,7 +2,7 @@
 .. title: (clj 8) Some notes on lazy sequences and function parameters
 .. slug: clj-8-some-notes-on-lazy-sequences-and-function-parameters
 .. date: 2022-04-18 14:16:36 UTC+02:00
-.. tags: clojure, programming, brave clojure
+.. tags: clojure, programming, brave clojure, python
 .. category: clojure
 .. link: 
 .. description: 

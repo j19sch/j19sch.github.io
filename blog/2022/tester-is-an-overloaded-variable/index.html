@@ -80,7 +80,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
                     <a href="../../" class="dropdown-item">My blog</a>
                     <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
                     <a href="../../../archive.html" class="dropdown-item">Archive</a>
-                    <a href="../../rss.xml" class="dropdown-item">RSS feed</a>
+                    <a href="../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
                     <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
             </div>
 
@@ -96,11 +96,11 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
     <div class="body-content">
         <!--Body content-->
         
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">"Tester" is an overloaded variable</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url"><span class="dquo">&#8220;</span>Tester&#8221; is an overloaded&nbsp;variable</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    Joep Schuurkes
+                    Joep&nbsp;Schuurkes
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -111,38 +111,38 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<p>Yesterday I came across a post on LinkedIn explaining why there are no testers in Scrum<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. What struck me most about the post was the amount of work the word "tester" was doing. In one sentence it meant one thing (a role in a team), in the next sentence something else (a step in the process), and so on. Hence the title of this post: the word "tester" was being used as an overloaded variable. So let's do some unpacking.</p>
-<h2>Testers to people management</h2>
-<p><em>"Having a tester"</em> means that there are people with the official title of "tester" or "QA engineer" or whatever within the company. For the purposes of people management<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>, there's a distinction between this role and the other roles in the company. This allows for more specific expectations about the role, for different career paths and salary scales, etc.</p>
+<p>Yesterday I came across a post on LinkedIn explaining why there are no testers in Scrum<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. What struck me most about the post was the amount of work the word &#8220;tester&#8221; was doing. In one sentence it meant one thing (a role in a team), in the next sentence something else (a step in the process), and so on. Hence the title of this post: the word &#8220;tester&#8221; was being used as an overloaded variable. So let&#8217;s do some&nbsp;unpacking.</p>
+<h2>Testers to people&nbsp;management</h2>
+<p><em><span class="dquo">&#8220;</span>Having a tester&#8221;</em> means that there are people with the official title of &#8220;tester&#8221; or &#8220;<span class="caps">QA</span> engineer&#8221; or whatever within the company. For the purposes of people management<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>, there&#8217;s a distinction between this role and the other roles in the company. This allows for more specific expectations about the role, for different career paths and salary scales,&nbsp;etc.</p>
 <!-- TEASER_END -->
 
-<p>However, it tells you little about how what these testers do, is organized. There might be a separate reporting chain for testing all the way up the to the CTO or CIO. There might be a matrix structure, where people management is separated from work management. Or every member in the team reports to the same engineering manager or team lead. It also does not tell you if testers are part of the development teams<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> and if so, in what way exactly. The only thing it really tells you is that some people got a contract that lists for example "test engineer" as their job.</p>
-<h2>Testers as a process step</h2>
-<p><em>"Having a tester"</em> means there is a testing phase after the development phase - implying a large and information-poor handover from development to testing<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>. As is often the case, the specifics matter here.</p>
-<p>It is true there is always some testing you can only do after you believe all the code has been written. And if you have a tester, there's usually<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup> some handover to that tester. However, the timescale and the level of collaboration make all the difference here. A handover of 3 weeks of programming work via poor documentation is a very different beast from a handover of 3 hours of programming work via a short pairing session. The former type of handover leads to a world of pain, while the latter reaps the benefits that testers can provide<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>.</p>
-<h2>Testers and their team</h2>
-<p><em>"Having a tester"</em> means someone with the role of tester is involved in at least part of software development and delivery. This can take on two quite different forms: being a tester for the team versus being a tester of the team.</p>
-<h3>Tester for the team</h3>
-<p><em>"Having a tester for the team"</em> means there is someone responsible for the work labeled as "testing". If this tester is a member of the development team, they tend to be the sole owner of the "testing" column<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup> on the team's board. So in a very real sense, this team is operating as two teams: a development team and a testing team<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup>.</p>
-<p>For this reason I think that this setup is in many ways the same as having a separate team of testers<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup>. It's not the team that's doing the testing; testers are doing the testing for the team. If the tester is not available, little to no testing will happen.</p>
-<h3>Tester of the team</h3>
-<p><em>"Having a tester of the team"</em> means that there is a team member who spends most of their time doing testing. All members of the team do all sorts of things, including testing. The tester of the team, however, has testing as their main focus, similar to how other team members have their own areas of focus.</p>
-<p><a href="https://twitter.com/maaretp">Maaret Pyhäjärvi</a>'s blog post <a href="https://visible-quality.blogspot.com/2021/07/tester-roles-and-services.html">"Tester roles and services"</a> does a great job illustrating this way of working. She distinguishes 15 different testing hats and shows how each of the four team members either never wear that specific that, occasionally engage in that hat's activity, or are focused on it. Today she re-posted the <a href="https://www.linkedin.com/posts/maaret_it-is-possible-to-both-have-a-tester-in-the-activity-6960845948419747840-NKpv">diagram on LinkedIn</a>, saying: <em>"It is possible to both have a tester in the team and have full team testing."</em></p>
+<p>However, it tells you little about how what these testers do, is organized. There might be a separate reporting chain for testing all the way up the to the <span class="caps">CTO</span> or <span class="caps">CIO</span>. There might be a matrix structure, where people management is separated from work management. Or every member in the team reports to the same engineering manager or team lead. It also does not tell you if testers are part of the development teams<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> and if so, in what way exactly. The only thing it really tells you is that some people got a contract that lists for example &#8220;test engineer&#8221; as their&nbsp;job.</p>
+<h2>Testers as a process&nbsp;step</h2>
+<p><em><span class="dquo">&#8220;</span>Having a tester&#8221;</em> means there is a testing phase after the development phase - implying a large and information-poor handover from development to testing<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>. As is often the case, the specifics matter&nbsp;here.</p>
+<p>It is true there is always some testing you can only do after you believe all the code has been written. And if you have a tester, there&#8217;s usually<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup> some handover to that tester. However, the timescale and the level of collaboration make all the difference here. A handover of 3 weeks of programming work via poor documentation is a very different beast from a handover of 3 hours of programming work via a short pairing session. The former type of handover leads to a world of pain, while the latter reaps the benefits that testers can provide<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>.</p>
+<h2>Testers and their&nbsp;team</h2>
+<p><em><span class="dquo">&#8220;</span>Having a tester&#8221;</em> means someone with the role of tester is involved in at least part of software development and delivery. This can take on two quite different forms: being a tester for the team versus being a tester of the&nbsp;team.</p>
+<h3>Tester for the&nbsp;team</h3>
+<p><em><span class="dquo">&#8220;</span>Having a tester for the team&#8221;</em> means there is someone responsible for the work labeled as &#8220;testing&#8221;. If this tester is a member of the development team, they tend to be the sole owner of the &#8220;testing&#8221; column<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup> on the team&#8217;s board. So in a very real sense, this team is operating as two teams: a development team and a testing team<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup>.</p>
+<p>For this reason I think that this setup is in many ways the same as having a separate team of testers<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup>. It&#8217;s not the team that&#8217;s doing the testing; testers are doing the testing for the team. If the tester is not available, little to no testing will&nbsp;happen.</p>
+<h3>Tester of the&nbsp;team</h3>
+<p><em><span class="dquo">&#8220;</span>Having a tester of the team&#8221;</em> means that there is a team member who spends most of their time doing testing. All members of the team do all sorts of things, including testing. The tester of the team, however, has testing as their main focus, similar to how other team members have their own areas of&nbsp;focus.</p>
+<p><a href="https://twitter.com/maaretp">Maaret Pyhäjärvi</a>&#8216;s blog post <a href="https://visible-quality.blogspot.com/2021/07/tester-roles-and-services.html">&#8220;Tester roles and services&#8221;</a> does a great job illustrating this way of working. She distinguishes 15 different testing hats and shows how each of the four team members either never wear that specific that, occasionally engage in that hat&#8217;s activity, or are focused on it. Today she re-posted the <a href="https://www.linkedin.com/posts/maaret_it-is-possible-to-both-have-a-tester-in-the-activity-6960845948419747840-NKpv">diagram on LinkedIn</a>, saying: <em>&#8220;It is possible to both have a tester in the team and have full team&nbsp;testing.&#8221;</em></p>
 <div style="margin-top: 2.7rem"></div>
 
-<p>So all of this to say what exactly? I guess nothing more than this: if you say that you have testers or that you don't have testers, that does not tell me a lot. So I'd be curious to hear more about how you do software.</p>
+<p>So all of this to say what exactly? I guess nothing more than this: if you say that you have testers or that you don&#8217;t have testers, that does not tell me a lot. So I&#8217;d be curious to hear more about how you do&nbsp;software.</p>
 <div class="footnote">
 <hr>
 <ol>
 <li id="fn:1">
-<p>Which I don't think is true. The 2020 <a href="https://scrumguides.org/scrum-guide.html">Scrum Guide</a> says <em>"Scrum Teams are cross-functional, meaning the members have all the skills necessary to create value each Sprint."</em> and <em>"Developers are the people in the Scrum Team that are committed to creating any aspect of a usable Increment each Sprint. The specific skills needed by the Developers are often broad and will vary with the domain of work."</em><br>
-It does not say that every single Developer should have all the skills necessary. Nor does it not limit Scrum's Developer-role to specific skills or activities. The Scrum Guide also states early on <em>"We use the word "developers" in Scrum not to exclude, but to simplify. If you get value from Scrum, consider yourself included."</em> <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+<p>Which I don&#8217;t think is true. The 2020 <a href="https://scrumguides.org/scrum-guide.html">Scrum Guide</a> says <em>&#8220;Scrum Teams are cross-functional, meaning the members have all the skills necessary to create value each Sprint.&#8221;</em> and <em>&#8220;Developers are the people in the Scrum Team that are committed to creating any aspect of a usable Increment each Sprint. The specific skills needed by the Developers are often broad and will vary with the domain of work.&#8221;</em><br>
+It does not say that every single Developer should have all the skills necessary. Nor does it not limit Scrum&#8217;s Developer-role to specific skills or activities. The Scrum Guide also states early on <em>&#8220;We use the word &#8220;developers&#8221; in Scrum not to exclude, but to simplify. If you get value from Scrum, consider yourself included.&#8221;</em> <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
 </li>
 <li id="fn:2">
-<p>I refuse to call it Human Resources. <a href="https://emilywebber.co.uk/">Emily Webber</a> has a great blog post (and flowchart) on this topic: <a href="https://emilywebber.co.uk/should-you-call-people-resources/">"Should you call people resources?"</a> <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+<p>I refuse to call it Human Resources. <a href="https://emilywebber.co.uk/">Emily Webber</a> has a great blog post (and flowchart) on this topic: <a href="https://emilywebber.co.uk/should-you-call-people-resources/">&#8220;Should you call people resources?&#8221;</a> <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
 </li>
 <li id="fn:3">
-<p>This tends to be called "embedded testers", which I find increasingly odd. It makes it sound you're not a real team member, but someone inserted into the team from the outside. <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
+<p>This tends to be called &#8220;embedded testers&#8221;, which I find increasingly odd. It makes it sound you&#8217;re not a real team member, but someone inserted into the team from the outside. <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
 </li>
 <li id="fn:4">
 <p>What rarely gets mentioned in this context is the handover of bug reports from testing to development and the handover of fixes from development to testing. <a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">↩</a></p>
@@ -151,16 +151,16 @@ It does not say that every single Developer should have all the skills necessary
 <p>Ensembling (mob programming/testing) is an excellent way to eliminate handovers. <a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">↩</a></p>
 </li>
 <li id="fn:6">
-<p>The benefits a tester can provide, extend beyond the current topic of "checking stuff at the end", btw. <a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">↩</a></p>
+<p>The benefits a tester can provide, extend beyond the current topic of &#8220;checking stuff at the end&#8221;, btw. <a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">↩</a></p>
 </li>
 <li id="fn:7">
-<p>It's always interesting to see which kinds of testing do happen inside that column and which kinds don't. <a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">↩</a></p>
+<p>It&#8217;s always interesting to see which kinds of testing do happen inside that column and which kinds don&#8217;t. <a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">↩</a></p>
 </li>
 <li id="fn:8">
-<p>Two good definitions of teams: <em>"If some of us can win, while others lose, we're not a team."</em> (source?) and <em>"A team is a group of people that share a problem."</em> (<a href="https://twitter.com/douglassquirrel">Douglas Squirrel</a>) <a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">↩</a></p>
+<p>Two good definitions of teams: <em>&#8220;If some of us can win, while others lose, we&#8217;re not a team.&#8221;</em> (source?) and <em>&#8220;A team is a group of people that share a problem.&#8221;</em> (<a href="https://twitter.com/douglassquirrel">Douglas Squirrel</a>) <a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">↩</a></p>
 </li>
 <li id="fn:9">
-<p>They are not the same for activities that don't fit in the "testing" column. A tester inside the team, even if it's a for-the-team tester, will have more opportunities to participate in other team activities than a tester who's in a separate testing team. <a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">↩</a></p>
+<p>They are not the same for activities that don&#8217;t fit in the &#8220;testing&#8221; column. A tester inside the team, even if it&#8217;s a for-the-team tester, will have more opportunities to participate in other team activities than a tester who&#8217;s in a separate testing team. <a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">↩</a></p>
 </li>
 </ol>
 </div>
@@ -169,15 +169,15 @@ It does not say that every single Developer should have all the skills necessary
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../../categories/management/" rel="tag">management</a></li>
             <li><a class="tag p-category" href="../../../categories/semantics/" rel="tag">semantics</a></li>
-            <li><a class="tag p-category" href="../../../categories/software-testing/" rel="tag">software testing</a></li>
-            <li><a class="tag p-category" href="../../../categories/test-management/" rel="tag">test management</a></li>
+            <li><a class="tag p-category" href="../../../categories/software-testing/" rel="tag">software&nbsp;testing</a></li>
+            <li><a class="tag p-category" href="../../../categories/test-management/" rel="tag">test&nbsp;management</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../three-thoughts-on-risk-based-testing/" rel="prev" title="Three thoughts on risk-based testing">Previous post</a>
+                <a href="../three-thoughts-on-risk-based-testing/" rel="prev" title="Three thoughts on risk-based testing">Previous&nbsp;post</a>
             </li>
             <li class="next">
-                <a href="../the-agile-manifesto-is-a-poor-introduction-to-agile/" rel="next" title="The Agile Manifesto is a poor introduction to Agile">Next post</a>
+                <a href="../the-agile-manifesto-is-a-poor-introduction-to-agile/" rel="next" title="The Agile Manifesto is a poor introduction to Agile">Next&nbsp;post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer">
             Contents © 2022     

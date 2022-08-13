@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about brave clojure)</title>
   <id>https://smallsheds.garden/categories/brave-clojure.atom</id>
-  <updated>2022-07-13T19:18:49Z</updated>
+  <updated>2022-08-13T12:49:40Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -45,6 +45,7 @@
     <category term="brave-clojure" label="brave clojure"/>
     <category term="clojure" label="clojure"/>
     <category term="programming" label="programming"/>
+    <category term="python" label="python"/>
   </entry>
   <entry>
     <title>(clj 8) Some notes on lazy sequences and function parameters</title>
@@ -62,6 +63,7 @@
     <category term="brave-clojure" label="brave clojure"/>
     <category term="clojure" label="clojure"/>
     <category term="programming" label="programming"/>
+    <category term="python" label="python"/>
   </entry>
   <entry>
     <title>(clj 7) Programming to abstractions with sequence functions</title>
@@ -82,6 +84,7 @@
     <category term="brave-clojure" label="brave clojure"/>
     <category term="clojure" label="clojure"/>
     <category term="programming" label="programming"/>
+    <category term="python" label="python"/>
   </entry>
   <entry>
     <title>(clj 6) Three chapters in one year</title>
@@ -125,6 +128,7 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
     <category term="brave-clojure" label="brave clojure"/>
     <category term="clojure" label="clojure"/>
     <category term="programming" label="programming"/>
+    <category term="python" label="python"/>
   </entry>
   <entry>
     <title>(clj 4) Learning about when, maps and closures</title>
@@ -187,6 +191,7 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
     <category term="brave-clojure" label="brave clojure"/>
     <category term="clojure" label="clojure"/>
     <category term="programming" label="programming"/>
+    <category term="python" label="python"/>
   </entry>
   <entry>
     <title>(clj 1) Deciding on a Clojure editor</title>

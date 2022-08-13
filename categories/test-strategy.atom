@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about test strategy)</title>
   <id>https://smallsheds.garden/categories/test-strategy.atom</id>
-  <updated>2022-07-17T09:59:43Z</updated>
+  <updated>2022-08-13T12:49:40Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -11,7 +11,7 @@
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/test-strategy/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
-    <title>Three thoughts on risk-basked testing</title>
+    <title>Three thoughts on risk-based testing</title>
     <id>https://smallsheds.garden/blog/2022/three-thoughts-on-risk-based-testing/</id>
     <updated>2022-07-17T11:56:30+02:00</updated>
     <published>2022-07-17T11:56:30+02:00</published>

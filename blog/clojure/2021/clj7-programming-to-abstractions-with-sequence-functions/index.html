@@ -29,6 +29,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <meta property="article:tag" content="brave clojure">
 <meta property="article:tag" content="clojure">
 <meta property="article:tag" content="programming">
+<meta property="article:tag" content="python">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -79,7 +80,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
                     <a href="../../../" class="dropdown-item">My blog</a>
                     <a href="../../../../categories/" class="dropdown-item">Categories and tags</a>
                     <a href="../../../../archive.html" class="dropdown-item">Archive</a>
-                    <a href="../../../rss.xml" class="dropdown-item">RSS feed</a>
+                    <a href="../../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
                     <a href="../../../feed.atom" class="dropdown-item">Atom feed</a>
             </div>
 
@@ -95,11 +96,11 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
     <div class="body-content">
         <!--Body content-->
         
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">(clj 7) Programming to abstractions with sequence functions</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">(clj 7) Programming to abstractions with sequence&nbsp;functions</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    Joep Schuurkes
+                    Joep&nbsp;Schuurkes
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -110,18 +111,18 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<p>Looking at my progress so far, I realized it's time re-evaluate this whole learning Clojure-thing. After looking through the table of contents of "<a href="https://www.braveclojure.com/">Clojure for the Brave and True</a>" and giving it some thought, I decided to make two changes to how I'll proceed:</p>
+<p>Looking at my progress so far, I realized it&#8217;s time re-evaluate this whole learning Clojure-thing. After looking through the table of contents of &#8220;<a href="https://www.braveclojure.com/">Clojure for the Brave and True</a>&#8221; and giving it some thought, I decided to make two changes to how I&#8217;ll&nbsp;proceed:</p>
 <ul>
-<li>I will start writing shorter posts and write them more often.</li>
-<li>My goal is to finish <em>"Part II: Language Fundamentals"</em>. I don't have to do <em>"Part III: Advanced Topics"</em>.</li>
+<li>I will start writing shorter posts and write them more&nbsp;often.</li>
+<li>My goal is to finish <em>&#8220;Part <span class="caps">II</span>: Language Fundamentals&#8221;</em>. I don&#8217;t have to do <em>&#8220;Part <span class="caps">III</span>: Advanced Topics&#8221;</em>.</li>
 </ul>
-<p>Completing Part II will still take quite some work. I've worked through the two first sections of chapter 4 (5 sections left in that chapter) and Part II goes up to chapter 8. So no time to waste: let's take a look at sequence functions and programming to abstractions.</p>
+<p>Completing Part <span class="caps">II</span> will still take quite some work. I&#8217;ve worked through the two first sections of chapter 4 (5 sections left in that chapter) and Part <span class="caps">II</span> goes up to chapter 8. So no time to waste: let&#8217;s take a look at sequence functions and programming to&nbsp;abstractions.</p>
 <!-- TEASER_END -->
 
-<h3>Programming to abstractions</h3>
-<p>Sequence functions are functions such as <code>map</code>, <code>filter</code>, and <code>reduce</code> that work on anything that Clojure considers to be a sequence. In practice those sequences will be lists, vectors, sets, or maps. They could be other data structures, though, since the only thing Clojure cares about is that the data structure responds to the functions <code>first</code>, <code>rest</code>, and <code>cons</code>. <code>first</code> returns the first item of a sequence. <code>rest</code> returns everything after the first item. <code>cons</code> adds a new item to the beginning of the sequence (or rather: it returns a new sequence).<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<h3>Programming to&nbsp;abstractions</h3>
+<p>Sequence functions are functions such&nbsp;as <code>map</code>, <code>filter</code>,&nbsp;and <code>reduce</code> that work on anything that Clojure considers to be a sequence. In practice those sequences will be lists, vectors, sets, or maps. They could be other data structures, though, since the only thing Clojure cares about is that the data structure responds to the&nbsp;functions <code>first</code>, <code>rest</code>,&nbsp;and <code>cons</code>. <code>first</code> returns the first item of a&nbsp;sequence. <code>rest</code> returns everything after the first&nbsp;item. <code>cons</code> adds a new item to the beginning of the sequence (or rather: it returns a new sequence).<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
 <p>This way of doing things is called programming to abstractions. And apparently it’s a central tenet of Clojure philosophy. Luckily I was familiar with this concept (not with the name though) from Python and its <a href="https://rszalski.github.io/magicmethods/">magic methods</a><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
-<p>In Python you can use the <code>+</code> operator on several data structures, but not on all of them:</p>
+<p>In Python you can use&nbsp;the <code>+</code> operator on several data structures, but not on all of&nbsp;them:</p>
 <pre class="code literal-block"><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="s2">"a"</span> <span class="o">+</span> <span class="s2">"b"</span>
 <span class="s1">'ab'</span>
 
@@ -145,17 +146,17 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <span class="ne">TypeError</span><span class="p">:</span> <span class="n">unsupported</span> <span class="n">operand</span> <span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">for</span> <span class="o">+</span><span class="p">:</span> <span class="s1">'set'</span> <span class="ow">and</span> <span class="s1">'set'</span>
 </code></pre>
 
-<p>If <code>+</code> works or not, depends on the data structure having implemented the magic method <code>__add__(self, other)</code>. And yes, that means you can create your own custom class, implement <code>__add__</code> for it and then <code>+</code> two instances of it<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>. </p>
-<h3>Sequence functions</h3>
-<p>After explaining the idea of programming to abstractions, the Brave and True-book goes through a list of functions that rely on Clojure’s sequence abstraction: <code>map</code>, <code>reduce</code>, <code>take</code>, <code>drop</code>, <code>take-while</code>, <code>drop-while</code>, <code>filter</code>, <code>some</code>, <code>sort</code>, <code>sort-by</code>, and <code>concat</code>. I'm not going to cover all of these; I will just share some notes I made on <code>map</code> and <code>drop-while</code>/<code>take-while</code>.</p>
+<p>If <code>+</code> works or not, depends on the data structure having implemented the magic&nbsp;method <code>__add__(self, other)</code>. And yes, that means you can create your own custom class,&nbsp;implement <code>__add__</code> for it and&nbsp;then <code>+</code> two instances of it<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>. </p>
+<h3>Sequence&nbsp;functions</h3>
+<p>After explaining the idea of programming to abstractions, the Brave and True-book goes through a list of functions that rely on Clojure’s sequence&nbsp;abstraction: <code>map</code>, <code>reduce</code>, <code>take</code>, <code>drop</code>, <code>take-while</code>, <code>drop-while</code>, <code>filter</code>, <code>some</code>, <code>sort</code>, <code>sort-by</code>,&nbsp;and <code>concat</code>. I&#8217;m not going to cover all of these; I will just share some notes I made&nbsp;on <code>map</code> and <code>drop-while</code>/<code>take-while</code>.</p>
 <h4>
-<code>map</code> works either way</h4>
-<p>The most obvious usage of the <code>map</code> function is to apply a function to a sequence of items:</p>
+<code>map</code> works either&nbsp;way</h4>
+<p>The most obvious usage of&nbsp;the <code>map</code> function is to apply a function to a sequence of&nbsp;items:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">map str </span><span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">])</span>
 <span class="c1">; =&gt; ("1" "2" "3")</span>
 </code></pre>
 
-<p>Applying it to multiple sequences works as well:</p>
+<p>Applying it to multiple sequences works as&nbsp;well:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">map str </span><span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">]</span> <span class="p">[</span><span class="mi">6</span> <span class="mi">7</span> <span class="mi">8</span><span class="p">])</span>
 <span class="c1">; =&gt; ("16" "27" "38")</span>
 
@@ -166,45 +167,45 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <span class="c1">; =&gt; ("16" "27" "38")</span>
 </code></pre>
 
-<p>However, instead of applying a function to one or more sequences, you can also do it the other way around:</p>
+<p>However, instead of applying a function to one or more sequences, you can also do it the other way&nbsp;around:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">map </span><span class="o">#</span><span class="p">(</span><span class="nf">%</span> <span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">)</span> <span class="p">[</span><span class="nb">str </span><span class="nv">+</span><span class="p">])</span>
 <span class="c1">; =&gt; ("123" 6)</span>
 </code></pre>
 
-<p><code>"123"</code> is the result of applying <code>str</code> to <code>1 2 3</code> and <code>6</code> is the result of applying <code>+</code> to <code>1 2 3</code>. Although this result is the other way around - as if we <code>map</code>ped two functions to a sequence of data -, syntactically that's not the case. <code>#(% 1 2 3)</code> is a function (an anonymous one) and <code>[str +]</code> is a sequence. To illustrate, here's the first example but rewritten with this syntax:</p>
+<p><code>"123"</code> is the result of&nbsp;applying <code>str</code> to <code>1 2 3</code> and <code>6</code> is the result of&nbsp;applying <code>+</code> to <code>1 2 3</code>. Although this result is the other way around - as if&nbsp;we <code>map</code>ped two functions to a sequence of data -, syntactically that&#8217;s not the&nbsp;case. <code>#(% 1 2 3)</code> is a function (an anonymous one)&nbsp;and <code>[str +]</code> is a sequence. To illustrate, here&#8217;s the first example but rewritten with this&nbsp;syntax:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">map </span><span class="o">#</span><span class="p">(</span><span class="nb">str </span><span class="nv">%</span><span class="p">)</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">])</span>
 <span class="c1">; =&gt; ("1" "2" "3")</span>
 </code></pre>
 
-<p>I think that's a really cool feature of Clojure.</p>
+<p>I think that&#8217;s a really cool feature of&nbsp;Clojure.</p>
 <h4>
-<code>drop-while</code> before <code>take-while</code> or the other way around?</h4>
-<p>After explaining <code>take-while</code> (take items from a sequence while a condition is true) and <code>drop-while</code> (drop items from a sequence while a condition is true), the book shares an example of how to use the two together. After making it work on a vector of numbers instead of on a hash map, it looks like this:</p>
+<code>drop-while</code> before <code>take-while</code> or the other way&nbsp;around?</h4>
+<p>After&nbsp;explaining <code>take-while</code> (take items from a sequence while a condition is true)&nbsp;and <code>drop-while</code> (drop items from a sequence while a condition is true), the book shares an example of how to use the two together. After making it work on a vector of numbers instead of on a hash map, it looks like&nbsp;this:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">take-while </span><span class="o">#</span><span class="p">(</span><span class="nb">&lt; </span><span class="nv">%</span> <span class="mi">6</span><span class="p">)</span>
   <span class="p">(</span><span class="nb">drop-while </span><span class="o">#</span><span class="p">(</span><span class="nb">&lt; </span><span class="nv">%</span> <span class="mi">2</span><span class="p">)</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span> <span class="mi">5</span> <span class="mi">6</span> <span class="mi">7</span><span class="p">]))</span>
 <span class="c1">; =&gt; (2 3 4 5)</span>
 </code></pre>
 
-<p>Which made me wonder, why not do it the other way around:</p>
+<p>Which made me wonder, why not do it the other way&nbsp;around:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">drop-while </span><span class="o">#</span><span class="p">(</span><span class="nb">&lt; </span><span class="nv">%</span> <span class="mi">2</span><span class="p">)</span>
   <span class="p">(</span><span class="nb">take-while </span><span class="o">#</span><span class="p">(</span><span class="nb">&lt; </span><span class="nv">%</span> <span class="mi">6</span><span class="p">)</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span> <span class="mi">5</span> <span class="mi">6</span> <span class="mi">7</span><span class="p">]))</span>
 <span class="c1">; =&gt; (2 3 4 5)</span>
 </code></pre>
 
-<p>As you can see, the result is the same. I wonder if performance could be a consideration, that you first want to do the operation that reduces the length of the sequence the most. Might be that the next section about lazy sequences sheds some light on that.</p>
-<p>Another way to look at this, is from a readability perspective. Conceptually it makes sense to <code>drop-while</code> first to get to the first number you want to keep, then use <code>take-while</code> to stop at the last number of the sequence you need. So reading from left-to-right the second example makes more sense, because you read the <code>drop-while</code> before the <code>take-while</code>. However, reading in order of execution the first example makes more sense for exactly the same reason: <code>drop-while</code> before the <code>take-while</code><sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>. It was interesting to notice myself making that transition from reading left-to-right to reading in order of execution, and then deciding the example in the book made more sense than the alternative I had come up with.</p>
-<p>Finally, these examples with <code>drop-while</code> and <code>take-while</code> made me wonder what data being immutable means for operations like this. That's something the book will cover in <a href="https://www.braveclojure.com/functional-programming/">chapter 5</a>.</p>
+<p>As you can see, the result is the same. I wonder if performance could be a consideration, that you first want to do the operation that reduces the length of the sequence the most. Might be that the next section about lazy sequences sheds some light on&nbsp;that.</p>
+<p>Another way to look at this, is from a readability perspective. Conceptually it makes sense&nbsp;to <code>drop-while</code> first to get to the first number you want to keep, then&nbsp;use <code>take-while</code> to stop at the last number of the sequence you need. So reading from left-to-right the second example makes more sense, because you read&nbsp;the <code>drop-while</code> before&nbsp;the <code>take-while</code>. However, reading in order of execution the first example makes more sense for exactly the same&nbsp;reason: <code>drop-while</code> before&nbsp;the <code>take-while</code><sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>. It was interesting to notice myself making that transition from reading left-to-right to reading in order of execution, and then deciding the example in the book made more sense than the alternative I had come up&nbsp;with.</p>
+<p>Finally, these examples&nbsp;with <code>drop-while</code> and <code>take-while</code> made me wonder what data being immutable means for operations like this. That&#8217;s something the book will cover in <a href="https://www.braveclojure.com/functional-programming/">chapter 5</a>.</p>
 <h3>Implementing <code>map</code>, <code>filter</code> and <code>some</code> using <code>reduce</code>
 </h3>
-<p>After explaining <code>reduce</code> the book says:</p>
+<p>After&nbsp;explaining <code>reduce</code> the book&nbsp;says:</p>
 <blockquote>
-<p>The takeaway here is that <code>reduce</code> is a more flexible function than it first appears. Whenever you want to derive a new value from a seqable data structure, <code>reduce</code> will usually be able to do what you need. If you want an exercise that will really blow your hair back, try implementing <code>map</code> using <code>reduce</code>, and then do the same for <code>filter</code> and <code>some</code> after you read about them later in this chapter.</p>
+<p>The takeaway here is&nbsp;that <code>reduce</code> is a more flexible function than it first appears. Whenever you want to derive a new value from a seqable data&nbsp;structure, <code>reduce</code> will usually be able to do what you need. If you want an exercise that will really blow your hair back, try&nbsp;implementing <code>map</code> using <code>reduce</code>, and then do the same&nbsp;for <code>filter</code> and <code>some</code> after you read about them later in this&nbsp;chapter.</p>
 </blockquote>
-<p>So I gave that a try.</p>
+<p>So I gave that a&nbsp;try.</p>
 <h4>
 <code>map</code> using <code>reduce</code>
 </h4>
-<p>For <code>map</code> I wrote the following function, deciding being able to deal with a single collection was sufficient:</p>
+<p>For <code>map</code> I wrote the following function, deciding being able to deal with a single collection was&nbsp;sufficient:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">my-map</span> <span class="p">[</span><span class="nv">func</span> <span class="nv">inp</span><span class="p">]</span>
   <span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">vect</span> <span class="nv">number</span><span class="p">]</span>
             <span class="p">(</span><span class="nb">concat </span><span class="nv">vect</span> <span class="p">[(</span><span class="nf">func</span> <span class="nv">number</span><span class="p">)]))</span>
@@ -221,7 +222,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <h4>
 <code>filter</code> using <code>reduce</code>
 </h4>
-<p>Implementing <code>filter</code> was quite a struggle. As a starting point I took an example from the book: it turned out that the explanation about <code>reduce</code> already contained <code>filter</code> implemented with <code>reduce</code>. Simplified to work on a vector of numbers instead of on a hash map, it looks like this:</p>
+<p>Implementing <code>filter</code> was quite a struggle. As a starting point I took an example from the book: it turned out that the explanation&nbsp;about <code>reduce</code> already&nbsp;contained <code>filter</code> implemented&nbsp;with <code>reduce</code>. Simplified to work on a vector of numbers instead of on a hash map, it looks like&nbsp;this:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">my-simple-filter</span> <span class="p">[</span><span class="nv">inp</span><span class="p">]</span>
   <span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">vect</span> <span class="nv">numb</span><span class="p">]</span>
             <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">&lt; </span><span class="nv">numb</span> <span class="mi">4</span><span class="p">)</span>
@@ -235,15 +236,15 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <span class="nv">=&gt;</span> <span class="p">(</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">)</span>
 </code></pre>
 
-<p>What I wanted to do, was to have the <code>(&lt; numb 4)</code> as one of the arguments to a <code>filter-as-reduce</code> function. I tried to do that in numerous different ways, but none of them worked. The function would run, but the output was <code>(1 2 3 4 5)</code> instead of <code>(1 2 3)</code>. My best guess as to why is that my input argument was not executed as a function, but evaluated as truthy.</p>
-<p>What I did get to work, was to have the whole function for the <code>reduce</code> as an argument to the <code>filter-as-reduce</code> function. So that's close, but not exactly what I set out to do. And I'm sure it can be done, just not by me right at this moment.</p>
+<p>What I wanted to do, was to have&nbsp;the <code>(&lt; numb 4)</code> as one of the arguments to&nbsp;a <code>filter-as-reduce</code> function. I tried to do that in numerous different ways, but none of them worked. The function would run, but the output&nbsp;was <code>(1 2 3 4 5)</code> instead&nbsp;of <code>(1 2 3)</code>. My best guess as to why is that my input argument was not executed as a function, but evaluated as&nbsp;truthy.</p>
+<p>What I did get to work, was to have the whole function for&nbsp;the <code>reduce</code> as an argument to&nbsp;the <code>filter-as-reduce</code> function. So that&#8217;s close, but not exactly what I set out to do. And I&#8217;m sure it can be done, just not by me right at this&nbsp;moment.</p>
 <h4>
 <code>some</code> using <code>reduce</code>
 </h4>
-<p>Finally, for <code>some</code> I decided not to bother, because I started to feel this exercise does not mesh well with the way I'm working through this book. So I figured that <code>some</code> would be very similar to <code>filter</code>, with the exception that it should not return a collection of values matching the filter, but instead return <code>true</code> on the first match (if any) and else return <code>false</code>.</p>
-<h3>Some vim stuff related to macros</h3>
-<p>I added the macro I mentioned in <a href="../clj6-three-chapters-in-one-year/">my previous post</a>, to my <code>.vimrc</code> file: <code>let @c='yypc!$gcca =&gt;</code>. The biggest challenge was to figure out how to put an <code>escape</code> in the macro to switch from command mode to insert mode, so that I could type the "=&gt;". The solution turned out to be <code>ctrl+v Esc</code>, where <code>ctrl+v</code> is "insert next non-digit literally".</p>
-<p>Another thing I figured out about the macro is that there's an issue with indentation. You should run it on the last line of a function to get the result on the line right below the function. However, if that line has indentation, the result has that same indentation. Something to fix some other time...</p>
+<p>Finally,&nbsp;for <code>some</code> I decided not to bother, because I started to feel this exercise does not mesh well with the way I&#8217;m working through this book. So I figured&nbsp;that <code>some</code> would be very similar&nbsp;to <code>filter</code>, with the exception that it should not return a collection of values matching the filter, but instead&nbsp;return <code>true</code> on the first match (if any) and else&nbsp;return <code>false</code>.</p>
+<h3>Some vim stuff related to&nbsp;macros</h3>
+<p>I added the macro I mentioned in <a href="../clj6-three-chapters-in-one-year/">my previous post</a>, to&nbsp;my <code>.vimrc</code> file: <code>let @c='yypc!$gcca =&gt;</code>. The biggest challenge was to figure out how to put&nbsp;an <code>escape</code> in the macro to switch from command mode to insert mode, so that I could type the &#8220;=&gt;&#8221;. The solution turned out to&nbsp;be <code>ctrl+v Esc</code>,&nbsp;where <code>ctrl+v</code> is &#8220;insert next non-digit&nbsp;literally&#8221;.</p>
+<p>Another thing I figured out about the macro is that there&#8217;s an issue with indentation. You should run it on the last line of a function to get the result on the line right below the function. However, if that line has indentation, the result has that same indentation. Something to fix some other&nbsp;time&#8230;</p>
 <div class="footnote">
 <hr>
 <ol>
@@ -252,10 +253,10 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <a href="https://twitter.com/hillelogram">Hillel Wayne</a>: <a href="https://www.hillelwayne.com/post/linked-lists/">Why do interviewers ask linked list questions?</a> <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
 </li>
 <li id="fn:2">
-<p>They're also called dunder methods, short for "double underscore methods", because their names start and end with a double underscore. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+<p>They&#8217;re also called dunder methods, short for &#8220;double underscore methods&#8221;, because their names start and end with a double underscore. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
 </li>
 <li id="fn:3">
-<p>The sensible recommendation here would be to have <code>+</code> then do something that is some sort of addition, but I must admit I'm tempted to recommend doing the opposite. <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
+<p>The sensible recommendation here would be to&nbsp;have <code>+</code> then do something that is some sort of addition, but I must admit I&#8217;m tempted to recommend doing the opposite. <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
 </li>
 <li id="fn:4">
 <p>Going through my cryptic notes on this from several months ago, it looks like I came to the same conclusion about this as my past self. <a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">↩</a></p>
@@ -265,16 +266,17 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 </div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../../../categories/brave-clojure/" rel="tag">brave clojure</a></li>
+<li><a class="tag p-category" href="../../../../categories/brave-clojure/" rel="tag">brave&nbsp;clojure</a></li>
             <li><a class="tag p-category" href="../../../../categories/clojure/" rel="tag">clojure</a></li>
             <li><a class="tag p-category" href="../../../../categories/programming/" rel="tag">programming</a></li>
+            <li><a class="tag p-category" href="../../../../categories/python/" rel="tag">python</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../../../2021/how-to-run-a-remote-elephant-carpaccio/" rel="prev" title="How to run a remote Elephant Carpaccio">Previous post</a>
+                <a href="../../../2021/how-to-run-a-remote-elephant-carpaccio/" rel="prev" title="How to run a remote Elephant Carpaccio">Previous&nbsp;post</a>
             </li>
             <li class="next">
-                <a href="../../../2021/site-analytics-if-you-have-two-watches/" rel="next" title="Site analytics: if you have two watches...">Next post</a>
+                <a href="../../../2021/site-analytics-if-you-have-two-watches/" rel="next" title="Site analytics: if you have two watches...">Next&nbsp;post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer">
             Contents © 2022     

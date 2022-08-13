@@ -81,7 +81,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
                     <a href="../../" class="dropdown-item">My blog</a>
                     <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
                     <a href="../../../archive.html" class="dropdown-item">Archive</a>
-                    <a href="../../rss.xml" class="dropdown-item">RSS feed</a>
+                    <a href="../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
                     <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
             </div>
 
@@ -97,11 +97,11 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
     <div class="body-content">
         <!--Body content-->
         
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">The irony of scripted testing</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">The irony of scripted&nbsp;testing</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    Joep Schuurkes
+                    Joep&nbsp;Schuurkes
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -114,47 +114,47 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
     <div>
 <p>A bit over a week ago, <a href="https://twitter.com/jamesmarcusbach/status/185816224075227137">James Bach posted on twitter</a>:</p>
 <blockquote>
-<p>"This video shows a nice simple contrast between heavy scripted testing and exploratory testing <a href="http://youtu.be/PxTqjAwM2Pw">http://youtu.be/PxTqjAwM2Pw</a>"<br>
-- James Bach (@jamesmarcusbach) March 30, 2012</p>
+<p><span class="dquo">&#8220;</span>This video shows a nice simple contrast between heavy scripted testing and exploratory testing <a href="http://youtu.be/PxTqjAwM2Pw">http://youtu.be/PxTqjAwM2Pw</a>&#8221;<br>
+- James Bach (@jamesmarcusbach) March 30,&nbsp;2012</p>
 </blockquote>
-<p>So I watched the video, hoping to see something that would make me go 'Cool!', but instead I went 'Hmmm.'</p>
+<p>So I watched the video, hoping to see something that would make me go &#8216;Cool!&#8217;, but instead I went&nbsp;&#8216;Hmmm.&#8217;</p>
 <p>First let me say that this video does get a few things right:<br>
 - Exploratory testing can be structured by using charters.<br>
 - Exploratory testing allows you to easily change your test approach based on your test results.<br>
 - Exploratory testing is very adaptable when confronted with inaccurate or changing requirements.<br>
-Yet notice how the above only talks about exploratory testing, because for every thing the video gets right about exploratory testing, it gets something wrong about scripted testing – or rather about how scripted testing works in practice.</p>
+Yet notice how the above only talks about exploratory testing, because for every thing the video gets right about exploratory testing, it gets something wrong about scripted testing – or rather about how scripted testing works in&nbsp;practice.</p>
 <!-- TEASER_END -->
 
-<h4>1. The exploratory test team starts testing earlier than the scripted test team.</h4>
-<p>At the start, the exploratory team makes a high-level plan and then starts testing. The scripted team takes more time to create a detailed plan, so starts testing later.</p>
-<p>Of course, that's only what happens if the software is deliverd on the first day the test team goes to work. I know this still does happen, but in my experience that's now how it usually goes. Most of the time, project managers realize that the test team needs time to prepare the tests and that the best time to do this is before the software is delivered. So in that respect this video is not an honest comparison between the two approaches.</p>
-<p>What if I turn the dishonest comparison around and add some time to prepare testing? You would see the scripted test team preparing their test cases. And you would see the exploratory test team sitting idle, because there is no software to explore. (In a less dishonest comparison, I'm sure the exploratory team would find something useful to do, though.) Finally when the software is delivered, both test teams would start at the same time with the actual testing.</p>
-<h4>2. When the requirements turn out to be incorrect, the scripted team needs to stop and update the plan.</h4>
-<p>In the video the incorrect requirement is the bridge that's not on the left side, but on the right side. Unfortunately, before the red team can do anything, they all have to gather at the place the bridge was supposed to be.</p>
-<p>First of all, if you are going to use a scripted approach, you're not supposed to start with the script that does detailed testing of the first screen. You're supposed to start with an intake test. The reason is simple: if there are any big problems, like a bridge that's not where you expected, you want to find out as early as possible.</p>
-<p>Now let's ignore that. Let's assume one of the testers figures out the bridge is not where he expected to be. He'll tell the other testers and the captain. They discuss how to solve it and at the same time the captain is updating the plan, the testers update the test scripts. (If you have good testers, they will have scripts that are easily updateable.) There really is no need to do it like in the video, i.e. first all gather at the wrong place and only then change the plan.</p>
-<h4>3. A bug is missed, because it was not in the plan.</h4>
-<p>Near the end there's the following dialogue in the scripted team. Captain: "Number two, look to your right! There's a huge bug right there." Number two: "No can do, Captain. That's not in the plan. We must stay on the path."
-With that kind of attitude, I'm amazed Number two got far enough in his career to actually become Number two. I cannot think of any 'Captain' that would tolerate this response.</p>
-<p>It doesn't matter if your approach is scripted or exploratory – for all I care you don't even have anything that is worthy of the term 'approach'. If someone points out a bug, you do something with it. Log it, fix it, whatever. But don't ignore it. If it does get ignored, fire the guy who hired your testers in the first place.</p>
+<h4>1. The exploratory test team starts testing earlier than the scripted test&nbsp;team.</h4>
+<p>At the start, the exploratory team makes a high-level plan and then starts testing. The scripted team takes more time to create a detailed plan, so starts testing&nbsp;later.</p>
+<p>Of course, that&#8217;s only what happens if the software is deliverd on the first day the test team goes to work. I know this still does happen, but in my experience that&#8217;s now how it usually goes. Most of the time, project managers realize that the test team needs time to prepare the tests and that the best time to do this is before the software is delivered. So in that respect this video is not an honest comparison between the two&nbsp;approaches.</p>
+<p>What if I turn the dishonest comparison around and add some time to prepare testing? You would see the scripted test team preparing their test cases. And you would see the exploratory test team sitting idle, because there is no software to explore. (In a less dishonest comparison, I&#8217;m sure the exploratory team would find something useful to do, though.) Finally when the software is delivered, both test teams would start at the same time with the actual&nbsp;testing.</p>
+<h4>2. When the requirements turn out to be incorrect, the scripted team needs to stop and update the&nbsp;plan.</h4>
+<p>In the video the incorrect requirement is the bridge that&#8217;s not on the left side, but on the right side. Unfortunately, before the red team can do anything, they all have to gather at the place the bridge was supposed to&nbsp;be.</p>
+<p>First of all, if you are going to use a scripted approach, you&#8217;re not supposed to start with the script that does detailed testing of the first screen. You&#8217;re supposed to start with an intake test. The reason is simple: if there are any big problems, like a bridge that&#8217;s not where you expected, you want to find out as early as&nbsp;possible.</p>
+<p>Now let&#8217;s ignore that. Let&#8217;s assume one of the testers figures out the bridge is not where he expected to be. He&#8217;ll tell the other testers and the captain. They discuss how to solve it and at the same time the captain is updating the plan, the testers update the test scripts. (If you have good testers, they will have scripts that are easily updateable.) There really is no need to do it like in the video, i.e. first all gather at the wrong place and only then change the&nbsp;plan.</p>
+<h4>3. A bug is missed, because it was not in the&nbsp;plan.</h4>
+<p>Near the end there&#8217;s the following dialogue in the scripted team. Captain: &#8220;Number two, look to your right! There&#8217;s a huge bug right there.&#8221; Number two: &#8220;No can do, Captain. That&#8217;s not in the plan. We must stay on the path.&#8221;
+With that kind of attitude, I&#8217;m amazed Number two got far enough in his career to actually become Number two. I cannot think of any &#8216;Captain&#8217; that would tolerate this&nbsp;response.</p>
+<p>It doesn&#8217;t matter if your approach is scripted or exploratory – for all I care you don&#8217;t even have anything that is worthy of the term &#8216;approach&#8217;. If someone points out a bug, you do something with it. Log it, fix it, whatever. But don&#8217;t ignore it. If it does get ignored, fire the guy who hired your testers in the first&nbsp;place.</p>
 <p><br></p>
-<p>So there you go, three big misrepresentations of how to do scripted testing. Now I realize I'm being a bit harsh on this video, as it is intended to sell exploratory testing. And one of the tricks it uses to do this, is make the competitor, scripted testing, look bad. On the other hand, what if the potential customer looking at this video has the same reaction as I did: "That's not how you do scripted testing!" He probably won't be a potential customer for exploratory testing much longer.</p>
-<p>To close off, let me present a different way to look at it, because there's something funny going on with scripted testing. I have never seen a scripted testing approach that does not have some exploratory elements in it. To give one example: with a scripted approach a fair amount of my best testing ideas come to me during the actual testing. When that happens, I act on those ideas and afterwards add the relevant test cases to the scripts ('reverse scripting'?). So basically I deviate from the script to do exploratory testing.
-And that exactly is the irony of scripted testing: the way to make a difference as a scripted tester is by doing stuff beyond the scripted testing ... stuff like exploratory testing.</p>
+<p>So there you go, three big misrepresentations of how to do scripted testing. Now I realize I&#8217;m being a bit harsh on this video, as it is intended to sell exploratory testing. And one of the tricks it uses to do this, is make the competitor, scripted testing, look bad. On the other hand, what if the potential customer looking at this video has the same reaction as I did: &#8220;That&#8217;s not how you do scripted testing!&#8221; He probably won&#8217;t be a potential customer for exploratory testing much&nbsp;longer.</p>
+<p>To close off, let me present a different way to look at it, because there&#8217;s something funny going on with scripted testing. I have never seen a scripted testing approach that does not have some exploratory elements in it. To give one example: with a scripted approach a fair amount of my best testing ideas come to me during the actual testing. When that happens, I act on those ideas and afterwards add the relevant test cases to the scripts (&#8216;reverse scripting&#8217;?). So basically I deviate from the script to do exploratory testing.
+And that exactly is the irony of scripted testing: the way to make a difference as a scripted tester is by doing stuff beyond the scripted testing &#8230; stuff like exploratory&nbsp;testing.</p>
 <hr>
 <p><em>This post was originally published <a href="https://testingcurve.wordpress.com/2012/04/09/the-irony-of-scripted-testing/">here</a>.</em></p>
 </div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../../categories/exploration/" rel="tag">exploration</a></li>
-            <li><a class="tag p-category" href="../../../categories/software-testing/" rel="tag">software testing</a></li>
+            <li><a class="tag p-category" href="../../../categories/software-testing/" rel="tag">software&nbsp;testing</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../the-seven-basic-principles-of-the-context-driven-school-part-not-three/" rel="prev" title="The Seven Basic Principles of the Context-Driven School - part not-three">Previous post</a>
+                <a href="../the-seven-basic-principles-of-the-context-driven-school-part-not-three/" rel="prev" title="The Seven Basic Principles of the Context-Driven School - part not-three">Previous&nbsp;post</a>
             </li>
             <li class="next">
-                <a href="../some-thoughts-after-attending-the-getting-a-grip-on-exploratory-testing-workshop/" rel="next" title="Some thoughts after attending the 'Getting a Grip on Exploratory Testing' workshop">Next post</a>
+                <a href="../some-thoughts-after-attending-the-getting-a-grip-on-exploratory-testing-workshop/" rel="next" title="Some thoughts after attending the 'Getting a Grip on Exploratory Testing' workshop">Next&nbsp;post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer">
             Contents © 2022     

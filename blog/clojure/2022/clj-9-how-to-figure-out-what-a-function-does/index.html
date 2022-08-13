@@ -29,6 +29,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <meta property="article:tag" content="brave clojure">
 <meta property="article:tag" content="clojure">
 <meta property="article:tag" content="programming">
+<meta property="article:tag" content="python">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -79,7 +80,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
                     <a href="../../../" class="dropdown-item">My blog</a>
                     <a href="../../../../categories/" class="dropdown-item">Categories and tags</a>
                     <a href="../../../../archive.html" class="dropdown-item">Archive</a>
-                    <a href="../../../rss.xml" class="dropdown-item">RSS feed</a>
+                    <a href="../../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
                     <a href="../../../feed.atom" class="dropdown-item">Atom feed</a>
             </div>
 
@@ -95,11 +96,11 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
     <div class="body-content">
         <!--Body content-->
         
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">(clj 9) How to figure out what a function does</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">(clj 9) How to figure out what a function&nbsp;does</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    Joep Schuurkes
+                    Joep&nbsp;Schuurkes
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -110,12 +111,12 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<p>Chapter 4 of "<a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">Clojure for the Brave and True</a>" concludes with a <em>Vampire Data Analysis Program</em>, serving as a summary of the chapter. The book shows some code, explains it, moves on to the next bit of code, etc. I'm not sure why, but I decided I wanted to figure out the code on my own and then read the explanation to see if I got it right. Afterwards I realized it might make a good blog post: both explaining what the program does and what techniques (for lack of a better word) I used to figure it out.</p>
-<p>With most of the work in the program being done by a function called <code>mapify</code>, this blog post will focus on that single function. As it turns out, it took me more than 2000 words (footnotes not included) to describe what this function consisting of only 9 lines does. So feel free to read all of it, skim through it, or skip straight ahead to the <a href="#techniques">techniques</a> and some <a href="#reflections">reflections</a>.</p>
+<p>Chapter 4 of &#8220;<a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">Clojure for the Brave and True</a>&#8221; concludes with a <em>Vampire Data Analysis Program</em>, serving as a summary of the chapter. The book shows some code, explains it, moves on to the next bit of code, etc. I&#8217;m not sure why, but I decided I wanted to figure out the code on my own and then read the explanation to see if I got it right. Afterwards I realized it might make a good blog post: both explaining what the program does and what techniques (for lack of a better word) I used to figure it&nbsp;out.</p>
+<p>With most of the work in the program being done by a function&nbsp;called <code>mapify</code>, this blog post will focus on that single function. As it turns out, it took me more than 2000 words (footnotes not included) to describe what this function consisting of only 9 lines does. So feel free to read all of it, skim through it, or skip straight ahead to the <a href="#techniques">techniques</a> and some <a href="#reflections">reflections</a>.</p>
 <!-- TEASER_END -->
 
-<h2>The function</h2>
-<p>This is <code>mapify</code>, the main function of the <em>Vampire Data Analysis Program</em> program:</p>
+<h2>The&nbsp;function</h2>
+<p>This&nbsp;is <code>mapify</code>, the main function of the <em>Vampire Data Analysis Program</em>&nbsp;program:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">mapify</span>
   <span class="s">"Return a seq of maps like {:name \"Edward Cullen\" :glitter-index 10}"</span>
   <span class="p">[</span><span class="nv">rows</span><span class="p">]</span>
@@ -127,14 +128,14 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
        <span class="nv">rows</span><span class="p">))</span>
 </code></pre>
 
-<h2>Breaking up the function in its parts</h2>
-<p>To figure out what this <code>mapify</code> function does, we need to break it up into parts. For that we need to know how you write a function in Clojure, i.e. the syntax of a function in Clojure. So let's go through the function step-by-step and identify its parts.</p>
-<h3>Clojure function syntax</h3>
-<p>The function definition starts and ends with a parenthesis, making it a list. Clojure is part of the <a href="https://en.wikipedia.org/wiki/Lisp_(programming_language)">Lisp</a>-family of languages and that means almost everything is a list and thus you get lots of parentheses. Next we have <code>defn</code> which tells Clojure we want to define a function. Then there's <code>mapify</code>, the name of the function. The part between double quotes is a docstring, describing what the function does. The line after that, <code>[rows]</code>, is the input parameter of the function. So if we want to call the <code>mapify</code> function, we need to provide it with an argument for this <code>rows</code> parameter<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">1</a></sup>. And everything after that is the function body, the part that defines what the functional actually does.</p>
-<h3><a id="breaking-up-the-function-body">Breaking up the function body</a></h3>
-<p>To figure out how to break up the function body, we need to do two things. We need to match opening parentheses with closing parentheses, so we know the overall structure. We need to look up the syntax of the functions being used in the different part, so we can make sense of the different parts - similar to what we did with <code>mapify</code> and the function syntax.</p>
-<p>The function body starts with a <code>map</code>. On <a href="https://clojuredocs.org/clojure.core/map"><code>map</code>'s ClojureDocs page</a> we can see that <code>map</code> takes two 'groups' of parameters: a function and one or more <a href="https://clojure.org/guides/learn/sequential_colls">collections</a>. Collections are things like lists and maps, so things that collect multiple values. To apply this to our code snippet, we need to take a good look at which opening parenthesis match with which closing ones. The opening parenthesis after <code>map</code> has its matching closing parenthesis at the end of the second-to-last line of the snippet. So <code>(fn ... unmapped-row)))</code> is the first argument of <code>map</code>. The <code>rows</code> on the last line is the second argument, followed by two closing parentheses: one for the function body and one for the whole function definition.</p>
-<p>In summary, our <code>mapify</code> function is a function that performs <code>map</code> on <code>rows</code> using a function that spans most of the lines in the code snippet. So now we have to figure out what happens inside this function:</p>
+<h2>Breaking up the function in its&nbsp;parts</h2>
+<p>To figure out what&nbsp;this <code>mapify</code> function does, we need to break it up into parts. For that we need to know how you write a function in Clojure, i.e. the syntax of a function in Clojure. So let&#8217;s go through the function step-by-step and identify its&nbsp;parts.</p>
+<h3>Clojure function&nbsp;syntax</h3>
+<p>The function definition starts and ends with a parenthesis, making it a list. Clojure is part of the <a href="https://en.wikipedia.org/wiki/Lisp_(programming_language)">Lisp</a>-family of languages and that means almost everything is a list and thus you get lots of parentheses. Next we&nbsp;have <code>defn</code> which tells Clojure we want to define a function. Then&nbsp;there&#8217;s <code>mapify</code>, the name of the function. The part between double quotes is a docstring, describing what the function does. The line after&nbsp;that, <code>[rows]</code>, is the input parameter of the function. So if we want to call&nbsp;the <code>mapify</code> function, we need to provide it with an argument for&nbsp;this <code>rows</code> parameter<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">1</a></sup>. And everything after that is the function body, the part that defines what the functional actually&nbsp;does.</p>
+<h3><a id="breaking-up-the-function-body">Breaking up the function&nbsp;body</a></h3>
+<p>To figure out how to break up the function body, we need to do two things. We need to match opening parentheses with closing parentheses, so we know the overall structure. We need to look up the syntax of the functions being used in the different part, so we can make sense of the different parts - similar to what we did&nbsp;with <code>mapify</code> and the function&nbsp;syntax.</p>
+<p>The function body starts with&nbsp;a <code>map</code>. On <a href="https://clojuredocs.org/clojure.core/map"><code>map</code><span class="quo">&#8216;</span>s ClojureDocs page</a> we can see&nbsp;that <code>map</code> takes two &#8216;groups&#8217; of parameters: a function and one or more <a href="https://clojure.org/guides/learn/sequential_colls">collections</a>. Collections are things like lists and maps, so things that collect multiple values. To apply this to our code snippet, we need to take a good look at which opening parenthesis match with which closing ones. The opening parenthesis&nbsp;after <code>map</code> has its matching closing parenthesis at the end of the second-to-last line of the snippet.&nbsp;So <code>(fn ... unmapped-row)))</code> is the first argument&nbsp;of <code>map</code>.&nbsp;The <code>rows</code> on the last line is the second argument, followed by two closing parentheses: one for the function body and one for the whole function&nbsp;definition.</p>
+<p>In summary,&nbsp;our <code>mapify</code> function is a function that&nbsp;performs <code>map</code> on <code>rows</code> using a function that spans most of the lines in the code snippet. So now we have to figure out what happens inside this&nbsp;function:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">unmapped-row</span><span class="p">]</span>
          <span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">row-map</span> <span class="p">[</span><span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">]]</span>
                    <span class="p">(</span><span class="nb">assoc </span><span class="nv">row-map</span> <span class="nv">vamp-key</span> <span class="p">(</span><span class="nf">convert</span> <span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">)))</span>
@@ -142,32 +143,32 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
                  <span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span> <span class="nv">unmapped-row</span><span class="p">)))</span>
 </code></pre>
 
-<p>You might have noticed that this function looks a bit different than the <code>mapify</code> function. That's because this is a an anonymous function, while <code>mapify</code> is a named function. An anonymous function does not have a name<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">2</a></sup>, so it's used in-place instead of being called from somewhere else in the code. Most of the syntax is the same though. <code>[unmapped-row]</code> is the function parameter and all that follows is the function body.</p>
-<p>The function body start with a <code>reduce</code>. We can also see it takes three parameters (because matching brackets): an anonymous function (first two lines), an empty map (the <code>{}</code>), and whatever is returned by the last line (<code>map vector ...</code>). <code>reduce</code>'s <a href="https://clojuredocs.org/clojure.core/reduce">ClojureDocs page</a> tells us that <code>reduce</code> either takes the form of <code>(reduce f coll)</code> or <code>(reduce f val coll)</code>, so that last line must be returning a collection. And <a href="https://clojuredocs.org/clojure.core/map"><code>map</code>'s ClojureDocs</a> confirms this: <code>map</code> returns a lazy sequence, which is a collection<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">3</a></sup>.</p>
-<p>So what have we figured out so far? We have the <code>mapify</code> function, which does a <code>map</code>, which does a <code>reduce</code>. And this <code>reduce</code> does something with a function and two pieces of data. Let's figure out what exactly that is.</p>
-<h2>Understanding what the <code>reduce</code> does</h2>
-<p>The <a href="https://clojuredocs.org/clojure.core/reduce"><code>reduce</code> ClojureDocs</a> almost are a piece of code by itself:</p>
-<p><em><code>(reduce f coll) (reduce f val coll)</code></em><br><em>f should be a function of 2 arguments. If val is not supplied, returns the result of applying f to the first 2 items in coll, then applying f to that result and the 3rd item, etc. If coll contains no items, f must accept no arguments as well, and reduce returns the result of calling f with no arguments.  If coll has only 1 item, it is returned and f is not called. If val is supplied, returns the result of applying f to val and the first item in coll, then applying f to that result and the 2nd item, etc. If coll contains no items, returns val and f is not called.</em></p>
-<p>We can ignore most of it, though. We do supply a <code>val</code> and our <code>coll</code> should not be empty. That leaves us with a single relevant sentence: <em>"If val is supplied, returns the result of applying f to val and the first item in coll, then applying f to that result and the 2nd item, etc."</em> Moreover, the <code>val</code> is an empty map and the <a href="https://www.braveclojure.com/core-functions-in-depth/#reduce">book's explanation of <code>reduce</code></a> is two examples with an empty map as <code>val</code>. Both examples are about taking an existing map and creating either a map with updated values, or filtering an existing map. So this <code>reduce</code> must be doing something similar.</p>
-<p>That leaves us with two questions:</p>
+<p>You might have noticed that this function looks a bit different than&nbsp;the <code>mapify</code> function. That&#8217;s because this is a an anonymous function,&nbsp;while <code>mapify</code> is a named function. An anonymous function does not have a name<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">2</a></sup>, so it&#8217;s used in-place instead of being called from somewhere else in the code. Most of the syntax is the same&nbsp;though. <code>[unmapped-row]</code> is the function parameter and all that follows is the function&nbsp;body.</p>
+<p>The function body start with&nbsp;a <code>reduce</code>. We can also see it takes three parameters (because matching brackets): an anonymous function (first two lines), an empty map&nbsp;(the <code>{}</code>), and whatever is returned by the last line&nbsp;(<code>map vector ...</code>). <code>reduce</code><span class="quo">&#8216;</span>s <a href="https://clojuredocs.org/clojure.core/reduce">ClojureDocs page</a> tells us&nbsp;that <code>reduce</code> either takes the form&nbsp;of <code>(reduce f coll)</code> or <code>(reduce f val coll)</code>, so that last line must be returning a collection. And <a href="https://clojuredocs.org/clojure.core/map"><code>map</code><span class="quo">&#8216;</span>s ClojureDocs</a> confirms&nbsp;this: <code>map</code> returns a lazy sequence, which is a collection<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">3</a></sup>.</p>
+<p>So what have we figured out so far? We have&nbsp;the <code>mapify</code> function, which does&nbsp;a <code>map</code>, which does&nbsp;a <code>reduce</code>. And&nbsp;this <code>reduce</code> does something with a function and two pieces of data. Let&#8217;s figure out what exactly that&nbsp;is.</p>
+<h2>Understanding what&nbsp;the <code>reduce</code> does</h2>
+<p>The <a href="https://clojuredocs.org/clojure.core/reduce"><code>reduce</code> ClojureDocs</a> almost are a piece of code by&nbsp;itself:</p>
+<p><em><code>(reduce f coll) (reduce f val coll)</code></em><br><em>f should be a function of 2 arguments. If val is not supplied, returns the result of applying f to the first 2 items in coll, then applying f to that result and the 3rd item, etc. If coll contains no items, f must accept no arguments as well, and reduce returns the result of calling f with no arguments.  If coll has only 1 item, it is returned and f is not called. If val is supplied, returns the result of applying f to val and the first item in coll, then applying f to that result and the 2nd item, etc. If coll contains no items, returns val and f is not&nbsp;called.</em></p>
+<p>We can ignore most of it, though. We do supply&nbsp;a <code>val</code> and&nbsp;our <code>coll</code> should not be empty. That leaves us with a single relevant sentence: <em>&#8220;If val is supplied, returns the result of applying f to val and the first item in coll, then applying f to that result and the 2nd item, etc.&#8221;</em> Moreover,&nbsp;the <code>val</code> is an empty map and the <a href="https://www.braveclojure.com/core-functions-in-depth/#reduce">book&#8217;s explanation&nbsp;of <code>reduce</code></a> is two examples with an empty map&nbsp;as <code>val</code>. Both examples are about taking an existing map and creating either a map with updated values, or filtering an existing map. So&nbsp;this <code>reduce</code> must be doing something&nbsp;similar.</p>
+<p>That leaves us with two&nbsp;questions:</p>
 <ul>
-<li>What does the function of the <code>reduce</code> do?</li>
-<li>What data does the <code>reduce</code> operate on?</li>
+<li>What does the function of&nbsp;the <code>reduce</code> do?</li>
+<li>What data does&nbsp;the <code>reduce</code> operate&nbsp;on?</li>
 </ul>
-<p>Let's start with the second one, figuring out what data the <code>reduce</code> is operating on and then see how the function transforms that data.</p>
-<h3>What data does the <code>reduce</code> operate on?</h3>
-<p>The data provided to the <code>reduce</code> (the <code>coll</code> in the paragraph above), is whatever is returned by:</p>
+<p>Let&#8217;s start with the second one, figuring out what data&nbsp;the <code>reduce</code> is operating on and then see how the function transforms that&nbsp;data.</p>
+<h3>What data does&nbsp;the <code>reduce</code> operate&nbsp;on?</h3>
+<p>The data provided to&nbsp;the <code>reduce</code> (the <code>coll</code> in the paragraph above), is whatever is returned&nbsp;by:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span> <span class="nv">unmapped-row</span><span class="p">)</span>
 </code></pre>
 
-<p>Ideally we'd break this up in parts as we have been doing. That's now what I did however. I first looked into the last two things, <code>vamp-keys</code> and <code>unmapped-row</code>, and then moved to the <code>map</code> and <code>vector</code>.</p>
-<h4>The <code>vamp-keys</code> and the <code>unmapped-row</code>
+<p>Ideally we&#8217;d break this up in parts as we have been doing. That&#8217;s now what I did however. I first looked into the last two&nbsp;things, <code>vamp-keys</code> and <code>unmapped-row</code>, and then moved to&nbsp;the <code>map</code> and <code>vector</code>.</p>
+<h4>The <code>vamp-keys</code> and&nbsp;the <code>unmapped-row</code>
 </h4>
-<p><code>vamp-keys</code> was defined earlier in the example code as:</p>
+<p><code>vamp-keys</code> was defined earlier in the example code&nbsp;as:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">vamp-keys</span> <span class="p">[</span><span class="ss">:name</span> <span class="ss">:glitter-index</span><span class="p">])</span>
 </code></pre>
 
-<p>For <code>unmapped-row</code> we need to track back a bit to the <code>map</code> in the <code>mapify</code> function:</p>
+<p>For <code>unmapped-row</code> we need to track back a bit to&nbsp;the <code>map</code> in&nbsp;the <code>mapify</code> function:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">map </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">unmapped-row</span><span class="p">]</span>
        <span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="nv">...</span><span class="p">)</span>
                <span class="p">{}</span>
@@ -175,8 +176,8 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
      <span class="nv">rows</span><span class="p">)</span>
 </code></pre>
 
-<p>As mentioned above, this <code>map</code> has two parameters: an anonymous function and a collection called <code>rows</code>. What <code>map</code> will do in case of a <a href="https://clojuredocs.org/clojure.core/map">single collection argument</a>, is apply the function to the first item in the collection, then to second, etc. So the anonymous function will get one row from <code>rows</code> at a time from <code>map</code>, i.e. the <code>unmapped-row</code> parameter on the first line in the snippet above.</p>
-<p>That still leaves the question what these <code>rows</code> are. The answer to that is vampire names and their glitter index:</p>
+<p>As mentioned above,&nbsp;this <code>map</code> has two parameters: an anonymous function and a collection&nbsp;called <code>rows</code>.&nbsp;What <code>map</code> will do in case of a <a href="https://clojuredocs.org/clojure.core/map">single collection argument</a>, is apply the function to the first item in the collection, then to second, etc. So the anonymous function will get one row&nbsp;from <code>rows</code> at a time&nbsp;from <code>map</code>, i.e.&nbsp;the <code>unmapped-row</code> parameter on the first line in the snippet&nbsp;above.</p>
+<p>That still leaves the question what&nbsp;these <code>rows</code> are. The answer to that is vampire names and their glitter&nbsp;index:</p>
 <pre class="code literal-block"><span></span><code>Edward Cullen,10
 Bella Swan,0
 Charlie Swan,0
@@ -184,47 +185,47 @@ Jacob Black,3
 Carlisle Cullen,6
 </code></pre>
 
-<p>Or rather, that's what's in the <code>.csv</code> file, which after parsing<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">4</a></sup> is provided to the <code>mapify</code> function like this:</p>
+<p>Or rather, that&#8217;s what&#8217;s in&nbsp;the <code>.csv</code> file, which after parsing<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">4</a></sup> is provided to&nbsp;the <code>mapify</code> function like&nbsp;this:</p>
 <pre class="code literal-block"><span></span><code><span class="p">([</span><span class="s">"Edward Cullen"</span> <span class="s">"10"</span><span class="p">]</span> <span class="p">[</span><span class="s">"Bella Swan"</span> <span class="s">"0"</span><span class="p">]</span> <span class="p">[</span><span class="s">"Charlie Swan"</span> <span class="s">"0"</span><span class="p">]</span>
   <span class="p">[</span><span class="s">"Jacob Black"</span> <span class="s">"3"</span><span class="p">]</span> <span class="p">[</span><span class="s">"Carlisle Cullen"</span> <span class="s">"6"</span><span class="p">])</span>
 </code></pre>
 
-<h4>The <code>vector</code> and the <code>map</code>
+<h4>The <code>vector</code> and&nbsp;the <code>map</code>
 </h4>
-<p><code>vector</code> takes whatever you give it and puts it in a vector (a vector is basically a list or array):</p>
+<p><code>vector</code> takes whatever you give it and puts it in a vector (a vector is basically a list or&nbsp;array):</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">unmapped-row</span> <span class="p">[</span><span class="s">"Edward Cullen"</span> <span class="s">"10"</span><span class="p">])</span>
 <span class="p">(</span><span class="nb">vector </span><span class="nv">vamp-keys</span> <span class="nv">unmapped-row</span><span class="p">)</span>
 <span class="c1">; =&gt; [[:name :glitter-index] ["Edward Cullen" "10"]]</span>
 </code></pre>
 
-<p>However that's not what <code>(map vector vamp-keys unmapped-row)</code> does. Hence my comment earlier that I should have broken down this function based on its syntax and not simply started at the end and work my way to the front. What's not happening here is that <code>map</code> is applied to what's returned by <code>vector</code>. Then the code should have been <code>(map (vector vamp-keys unmapped-row))</code>. What's happening instead is that <code>vector</code>, <code>vamp-keys</code>, and <code>unmapped-row</code> are arguments for the <code>map</code> function.</p>
-<p>Earlier we had a <code>map</code> with a function and one collection as parameters. Now we have a function (<code>vector</code>) and two collections (<code>vamp-keys</code>, and <code>unmapped-row</code>). How <code>map</code> <a href="https://clojuredocs.org/clojure.core/map">works in this case</a> is that it will take the first item in <code>vamp-keys</code> and the first item in <code>unmapped-row</code> and apply <code>vector</code> to it. Then it'll do the same for the second items, etc. until one of the two collections is exhausted:</p>
+<p>However that&#8217;s not&nbsp;what <code>(map vector vamp-keys unmapped-row)</code> does. Hence my comment earlier that I should have broken down this function based on its syntax and not simply started at the end and work my way to the front. What&#8217;s not happening here is&nbsp;that <code>map</code> is applied to what&#8217;s returned&nbsp;by <code>vector</code>. Then the code should have&nbsp;been <code>(map (vector vamp-keys unmapped-row))</code>. What&#8217;s happening instead is&nbsp;that <code>vector</code>, <code>vamp-keys</code>,&nbsp;and <code>unmapped-row</code> are arguments for&nbsp;the <code>map</code> function.</p>
+<p>Earlier we had&nbsp;a <code>map</code> with a function and one collection as parameters. Now we have a function&nbsp;(<code>vector</code>) and two collections&nbsp;(<code>vamp-keys</code>,&nbsp;and <code>unmapped-row</code>).&nbsp;How <code>map</code> <a href="https://clojuredocs.org/clojure.core/map">works in this case</a> is that it will take the first item&nbsp;in <code>vamp-keys</code> and the first item&nbsp;in <code>unmapped-row</code> and&nbsp;apply <code>vector</code> to it. Then it&#8217;ll do the same for the second items, etc. until one of the two collections is&nbsp;exhausted:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span> <span class="nv">unmapped-row</span><span class="p">)</span>
 <span class="c1">; =&gt; ([:name "Edward Cullen"] [:glitter-index "10"])</span>
 </code></pre>
 
 <h4>Recap</h4>
-<p>The <code>mapify</code> function is using a <code>reduce</code> to create a new map based on some data it's getting and a function. We now know what that data looks like. It's a set of rows with a single row looking like this: <code>([:name "Edward Cullen"] [:glitter-index "10"])</code>. Next step is figuring out what the function provided to the <code>reduce</code> does with these rows.</p>
-<h3>What does the function of the <code>reduce</code> do?</h3>
-<p>The function of our <code>reduce</code> is:</p>
+<p>The <code>mapify</code> function is using&nbsp;a <code>reduce</code> to create a new map based on some data it&#8217;s getting and a function. We now know what that data looks like. It&#8217;s a set of rows with a single row looking like&nbsp;this: <code>([:name "Edward Cullen"] [:glitter-index "10"])</code>. Next step is figuring out what the function provided to&nbsp;the <code>reduce</code> does with these&nbsp;rows.</p>
+<h3>What does the function of&nbsp;the <code>reduce</code> do?</h3>
+<p>The function of&nbsp;our <code>reduce</code> is:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">row-map</span> <span class="p">[</span><span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">]]</span>
                    <span class="p">(</span><span class="nb">assoc </span><span class="nv">row-map</span> <span class="nv">vamp-key</span> <span class="p">(</span><span class="nf">convert</span> <span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">)))</span>
 </code></pre>
 
-<p>To understand what this function does, it's helpful to know what arguments will be provided to it, i.e. what will be used for <code>[row-map [vamp-key value]]</code>. With this function being used in the <code>reduce</code> that means its arguments are provided by that <code>reduce</code>. So we're a bit stuck in a loop: to understand this function we need to understand the <code>reduce</code> and to understand the <code>reduce</code> we need to understand this function.</p>
-<p>To escape that loop, we're not going into how <code>reduce</code> works just yet. Instead, I'm going to say (simplified so not entirely correct) that <code>row-map</code> is the second argument provided to the <code>reduce</code>, i.e. the empty map <code>{}</code>. And that <code>[vamp-key value]</code> is the first item in our collection (see above), i.e. <code>[:name "Edward Cullen"]</code>.</p>
-<p>That leaves us with two words to explain in this anonymous function: <code>assoc</code> and <code>convert</code>.</p>
-<p>The <code>convert</code> function was defined earlier in the code example<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">5</a></sup>. What it does, is that if <code>vamp-key</code> is <code>:glitter-index</code>, it converts the <code>value</code> from a string to an integer, e.g. from <code>"10"</code> to <code>10</code>.</p>
-<p><a href="https://clojuredocs.org/clojure.core/assoc"><code>assoc</code></a> is a way to add or update an existing map<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">6</a></sup>. For example:</p>
+<p>To understand what this function does, it&#8217;s helpful to know what arguments will be provided to it, i.e. what will be used&nbsp;for <code>[row-map [vamp-key value]]</code>. With this function being used in&nbsp;the <code>reduce</code> that means its arguments are provided by&nbsp;that <code>reduce</code>. So we&#8217;re a bit stuck in a loop: to understand this function we need to understand&nbsp;the <code>reduce</code> and to understand&nbsp;the <code>reduce</code> we need to understand this&nbsp;function.</p>
+<p>To escape that loop, we&#8217;re not going into&nbsp;how <code>reduce</code> works just yet. Instead, I&#8217;m going to say (simplified so not entirely correct)&nbsp;that <code>row-map</code> is the second argument provided to&nbsp;the <code>reduce</code>, i.e. the empty&nbsp;map <code>{}</code>. And&nbsp;that <code>[vamp-key value]</code> is the first item in our collection (see above),&nbsp;i.e. <code>[:name "Edward Cullen"]</code>.</p>
+<p>That leaves us with two words to explain in this anonymous&nbsp;function: <code>assoc</code> and <code>convert</code>.</p>
+<p>The <code>convert</code> function was defined earlier in the code example<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">5</a></sup>. What it does, is that&nbsp;if <code>vamp-key</code> is <code>:glitter-index</code>, it converts&nbsp;the <code>value</code> from a string to an integer, e.g.&nbsp;from <code>"10"</code> to <code>10</code>.</p>
+<p><a href="https://clojuredocs.org/clojure.core/assoc"><code>assoc</code></a> is a way to add or update an existing map<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">6</a></sup>. For&nbsp;example:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">assoc </span><span class="p">{}</span> <span class="ss">:name</span> <span class="s">"Edward Cullen"</span><span class="p">)</span>
 <span class="c1">; =&gt; {:name "Edward Cullen"}</span>
 <span class="p">(</span><span class="nb">assoc </span><span class="p">{</span><span class="ss">:name</span> <span class="s">"Edward Cullen"</span><span class="p">}</span> <span class="ss">:glitter-index</span> <span class="mi">10</span> <span class="p">)</span>
 <span class="c1">; =&gt; {:name "Edward Cullen" :glitter-index 10}</span>
 </code></pre>
 
-<p>Now we have all the elements to figure out what this function used by the <code>reduce</code> does. It takes an existing map (<code>row-map</code>) and a key-value pair (e.g. <code>:name "Edward Cullen"</code>). It converts the value of the key-value pair to an integer if the key equals <code>:glitter-index</code>. Then it creates a new map that contains both the existing map and the post-conversion key-value pair.</p>
-<h3>Putting the pieces of the <code>reduce</code> back together</h3>
-<p>Now that we understand the parts of the <code>reduce</code>, we should be able to put them together again to understand the whole:</p>
+<p>Now we have all the elements to figure out what this function used by&nbsp;the <code>reduce</code> does. It takes an existing map&nbsp;(<code>row-map</code>) and a key-value pair&nbsp;(e.g. <code>:name "Edward Cullen"</code>). It converts the value of the key-value pair to an integer if the key&nbsp;equals <code>:glitter-index</code>. Then it creates a new map that contains both the existing map and the post-conversion key-value&nbsp;pair.</p>
+<h3>Putting the pieces of&nbsp;the <code>reduce</code> back&nbsp;together</h3>
+<p>Now that we understand the parts of&nbsp;the <code>reduce</code>, we should be able to put them together again to understand the&nbsp;whole:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">unmapped-row</span><span class="p">]</span>
          <span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">row-map</span> <span class="p">[</span><span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">]]</span>
                    <span class="p">(</span><span class="nb">assoc </span><span class="nv">row-map</span> <span class="nv">vamp-key</span> <span class="p">(</span><span class="nf">convert</span> <span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">)))</span>
@@ -232,17 +233,17 @@ Carlisle Cullen,6
                  <span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span> <span class="nv">unmapped-row</span><span class="p">)))</span>
 </code></pre>
 
-<p>To summarize, those parts are:</p>
+<p>To summarize, those parts&nbsp;are:</p>
 <ul>
 <li>
-<code>reduce</code> takes an <code>f</code>, a <code>val</code>, and a <code>coll</code>. It returns the result of applying <code>f</code> to <code>val</code> and the first item in <code>coll</code>, then applying <code>f</code> to that result and the 2nd item, etc.</li>
-<li>the <code>f</code> converts the <code>:glitter-index</code> value from a string to an integer</li>
-<li>the <code>val</code> is an empty map, <code>{}</code>, at least initially</li>
-<li>the <code>coll</code> is a parsed row from the <code>.csv</code> file, e.g. <code>([:name "Edward Cullen"] [:glitter-index "10"])</code>
+<code>reduce</code> takes&nbsp;an <code>f</code>,&nbsp;a <code>val</code>, and&nbsp;a <code>coll</code>. It returns the result of&nbsp;applying <code>f</code> to <code>val</code> and the first item&nbsp;in <code>coll</code>, then&nbsp;applying <code>f</code> to that result and the 2nd item,&nbsp;etc.</li>
+<li>the <code>f</code> converts&nbsp;the <code>:glitter-index</code> value from a string to an&nbsp;integer</li>
+<li>the <code>val</code> is an empty&nbsp;map, <code>{}</code>, at least&nbsp;initially</li>
+<li>the <code>coll</code> is a parsed row from&nbsp;the <code>.csv</code> file,&nbsp;e.g. <code>([:name "Edward Cullen"] [:glitter-index "10"])</code>
 </li>
 </ul>
-<p>This means <code>reduce</code> will execute the function twice. The first time it adds the <code>name</code> key-value pair to the empty map<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">7</a></sup>. The second time it adds the <code>glitter-index</code> key-value pair (including converting the value to an integer) to that same map. So we end up with both the <code>name</code> and <code>glitter-index</code> key-value pairs in the map.</p>
-<p>We can check our understanding, by isolating the <code>reduce</code> function and providing it with an <code>unmapped-row</code>:</p>
+<p>This&nbsp;means <code>reduce</code> will execute the function twice. The first time it adds&nbsp;the <code>name</code> key-value pair to the empty map<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">7</a></sup>. The second time it adds&nbsp;the <code>glitter-index</code> key-value pair (including converting the value to an integer) to that same map. So we end up with both&nbsp;the <code>name</code> and <code>glitter-index</code> key-value pairs in the&nbsp;map.</p>
+<p>We can check our understanding, by isolating&nbsp;the <code>reduce</code> function and providing it with&nbsp;an <code>unmapped-row</code>:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">unmapped-row</span> <span class="p">[</span><span class="s">"Edward Cullen"</span> <span class="s">"10"</span><span class="p">])</span>
 <span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">row-map</span> <span class="p">[</span><span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">]]</span>
          <span class="p">(</span><span class="nb">assoc </span><span class="nv">row-map</span> <span class="nv">vamp-key</span> <span class="p">(</span><span class="nf">convert</span> <span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">)))</span>
@@ -251,10 +252,10 @@ Carlisle Cullen,6
 <span class="c1">; =&gt; {:name "Edward Cullen", :glitter-index 10}</span>
 </code></pre>
 
-<h2><a id="the-mapify-function">The <code>mapify</code> function, <code>map</code>ping the <code>reduce</code></a></h2>
-<p>Now that we understand the <code>reduce</code>, we can actually guess what the <code>map</code> that uses this <code>reduce</code>, does. The <code>reduce</code> works on a single row, but our data consists of several rows. So the <code>map</code> must be the thing that loops through the rows, providing them one-by-one to the <code>reduce</code>.</p>
-<p>Of course, we want to do better than guessing. So let's revisit <a href="https://clojuredocs.org/clojure.core/map"><code>map</code></a>. It takes a function and at least one collection. It will apply the function to the set of first items in the collections, then to the second, etc. The function is the <code>reduce</code> we just figured out. And as we saw when <a href="#breaking-up-the-function-body">breaking up the function body</a>, the <code>map</code> in the <code>mapify</code> has only one collection-parameter, called <code>rows</code>. So that confirms our guess: <code>map</code> loops through the <code>rows</code><sup id="fnref:7"><a class="footnote-ref" href="#fn:7">8</a></sup> and transforms them via the <code>reduce</code>.</p>
-<p>In conclusion, all this figuring out let's us look at this:</p>
+<h2><a id="the-mapify-function">The <code>mapify</code> function, <code>map</code>ping&nbsp;the <code>reduce</code></a></h2>
+<p>Now that we understand&nbsp;the <code>reduce</code>, we can actually guess what&nbsp;the <code>map</code> that uses&nbsp;this <code>reduce</code>, does.&nbsp;The <code>reduce</code> works on a single row, but our data consists of several rows. So&nbsp;the <code>map</code> must be the thing that loops through the rows, providing them one-by-one to&nbsp;the <code>reduce</code>.</p>
+<p>Of course, we want to do better than guessing. So let&#8217;s revisit <a href="https://clojuredocs.org/clojure.core/map"><code>map</code></a>. It takes a function and at least one collection. It will apply the function to the set of first items in the collections, then to the second, etc. The function is&nbsp;the <code>reduce</code> we just figured out. And as we saw when <a href="#breaking-up-the-function-body">breaking up the function body</a>,&nbsp;the <code>map</code> in&nbsp;the <code>mapify</code> has only one collection-parameter,&nbsp;called <code>rows</code>. So that confirms our&nbsp;guess: <code>map</code> loops through&nbsp;the <code>rows</code><sup id="fnref:7"><a class="footnote-ref" href="#fn:7">8</a></sup> and transforms them via&nbsp;the <code>reduce</code>.</p>
+<p>In conclusion, all this figuring out let&#8217;s us look at&nbsp;this:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">mapify</span>
   <span class="s">"Return a seq of maps like {:name \"Edward Cullen\" :glitter-index 10}"</span>
   <span class="p">[</span><span class="nv">rows</span><span class="p">]</span>
@@ -266,7 +267,7 @@ Carlisle Cullen,6
        <span class="nv">rows</span><span class="p">))</span>
 </code></pre>
 
-<p>and think of it like this:</p>
+<p>and think of it like&nbsp;this:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">mapify</span>
   <span class="s">"Return a seq of maps like {:name \"Edward Cullen\" :glitter-index 10}"</span>
   <span class="p">[</span><span class="nv">rows</span><span class="p">]</span>
@@ -274,8 +275,8 @@ Carlisle Cullen,6
        <span class="nv">rows</span><span class="p">))</span>
 </code></pre>
 
-<p>Where we know that <code>do-stuff</code> changes the rows into maps with keys <code>:name</code> and <code>:glitter-index</code> and that it converts the value of the <code>:glitter-index</code> from a string to an integer. Looking at the function fully written out, we'll probably remember that the <code>(map vector vamp-keys unmapped-row)</code> does the former and that the function of the <code>reduce</code> does the latter. And if we want to know how exactly it does these things, we'll have to re-figure it out. Or scroll back up a bit and read it there.</p>
-<p>Having done all this work (and writing) I can't help but feel a bit disappointed. In the end, the function does not seem to do a lot. To illustrate, in Python you'd write this to do basically<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup> the same thing:</p>
+<p>Where we know&nbsp;that <code>do-stuff</code> changes the rows into maps with&nbsp;keys <code>:name</code> and <code>:glitter-index</code> and that it converts the value of&nbsp;the <code>:glitter-index</code> from a string to an integer. Looking at the function fully written out, we&#8217;ll probably remember that&nbsp;the <code>(map vector vamp-keys unmapped-row)</code> does the former and that the function of&nbsp;the <code>reduce</code> does the latter. And if we want to know how exactly it does these things, we&#8217;ll have to re-figure it out. Or scroll back up a bit and read it&nbsp;there.</p>
+<p>Having done all this work (and writing) I can&#8217;t help but feel a bit disappointed. In the end, the function does not seem to do a lot. To illustrate, in Python you&#8217;d write this to do basically<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup> the same&nbsp;thing:</p>
 <pre class="code literal-block"><span></span><code><span class="k">def</span> <span class="nf">mapify</span><span class="p">(</span><span class="n">rows</span><span class="p">):</span>
   <span class="k">return</span> <span class="p">[</span>
     <span class="p">{</span>
@@ -299,78 +300,79 @@ Carlisle Cullen,6
 <p><strong>edit 13 July 2022</strong><br>
 The Clojure and Python versions are not as equivalent as I thought, see my follow-up post <a href="../clj-10-the-mapify-function-of-clj-9-revisited/">(clj 10) The mapify function of (clj 9) revisited</a>.</p>
 <h2>
-<a id="techniques"></a>Techniques I used in figuring all of this out</h2>
+<a id="techniques"></a>Techniques I used in figuring all of this&nbsp;out</h2>
 <ol>
-<li>break things down in parts, understand the parts, put it all back together again</li>
-<li>focus on the current level and ignore the specifics of the levels above and below</li>
-<li>read ClojureDocs</li>
-<li>decide what the argument provided to a function is, because I know what the function expects as parameter</li>
-<li>make an educated guess to fill in a gap (this <code>map</code> must be how the code loops trough the rows)</li>
-<li>understand the code in context, i.e. with the data provided in the example, instead of in a more general way</li>
-<li>not worry too much about abstract data structures (collections and sequences)</li>
-<li>figure out the first iteration of a loop (for the <code>reduce</code>) before looking into the looping</li>
-<li>simplify what a function does based on the number of parameters, e.g. think of <code>map</code> with one <code>col</code> as a loop</li>
-<li>recognize patterns, e.g. a <code>reduce</code> with an empty map as <code>val</code> is a way to transform an existing map</li>
-<li>take part of the function and run it to see what it does</li>
-<li>rewrite the code in a different language</li>
-<li>write this blog post (arguable also a rewrite in a different language)</li>
+<li>break things down in parts, understand the parts, put it all back together&nbsp;again</li>
+<li>focus on the current level and ignore the specifics of the levels above and&nbsp;below</li>
+<li>read&nbsp;ClojureDocs</li>
+<li>decide what the argument provided to a function is, because I know what the function expects as&nbsp;parameter</li>
+<li>make an educated guess to fill in a gap&nbsp;(this <code>map</code> must be how the code loops trough the&nbsp;rows)</li>
+<li>understand the code in context, i.e. with the data provided in the example, instead of in a more general&nbsp;way</li>
+<li>not worry too much about abstract data structures (collections and&nbsp;sequences)</li>
+<li>figure out the first iteration of a loop (for&nbsp;the <code>reduce</code>) before looking into the&nbsp;looping</li>
+<li>simplify what a function does based on the number of parameters, e.g. think&nbsp;of <code>map</code> with&nbsp;one <code>col</code> as a&nbsp;loop</li>
+<li>recognize patterns, e.g.&nbsp;a <code>reduce</code> with an empty map&nbsp;as <code>val</code> is a way to transform an existing&nbsp;map</li>
+<li>take part of the function and run it to see what it&nbsp;does</li>
+<li>rewrite the code in a different&nbsp;language</li>
+<li>write this blog post (arguable also a rewrite in a different&nbsp;language)</li>
 </ol>
 <h2>
 <a id="reflections"></a>Reflections</h2>
-<p>Writing this blog post was harder and took a lot more time (and words) than I thought. Luckily, I also learned a lot.</p>
-<p>The Clojure code is very nested with functions inside of functions inside of functions. It looks and feels different from the Python code I'm used to. The explanation must be the difference in programming paradigms: <a href="https://en.wikipedia.org/wiki/Functional_programming">functional</a> (<a href="https://en.wikipedia.org/wiki/Clojure">Clojure</a>) versus <a href="https://en.wikipedia.org/wiki/Procedural_programming">procedural</a> (<a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>). In procedural programming you define a sequence of steps, in functional programming you have functions nested in other functions. (Note: Python supports more paradigms than procedural, but I've mostly used in a procedural paradigm.)</p>
-<p>Another related difference between the two versions is that to me the Clojure version looks more complicated than the Python version<sup id="fnref:10"><a class="footnote-ref" href="#fn:10">10</a></sup>. Part of the explanation is the difference in paradigm I mentioned above. Another part is a difference in how the syntactical work happens. Not just for example parentheses (Clojure) and whitespace (Python), but also <a href="https://clojuredocs.org/clojure.core/filter"><code>filter</code></a> and <a href="https://clojuredocs.org/clojure.core/map"><code>map</code></a> (Clojure) and <a href="https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions">list comprehension</a> (Python). A great illustration of this is <a href="https://www.artima.com/weblogs/viewpost.jsp?thread=98196">Guido van Rossum arguing</a> to remove <code>reduce()</code>, <code>filter()</code>, and <code>map()</code> from Python's standard library.<br>
-A third part of the explanation - and I think the most interesting part, is that I read them in a different way. For example, when I came across <code>(map vector vamp-keys unmapped-row)</code> in Clojure, I had to figure it out step-by-step. In Python on the other hand, I can read and understand e.g. a list comprehension (the <code>[ { ... } for row in rows]</code>) without much effort. I immediately see the whole, I recognize the pattern of a list comprehension. So the main difference might be that I need more practice reading Clojure, until there too I can see the patterns.</p>
+<p>Writing this blog post was harder and took a lot more time (and words) than I thought. Luckily, I also learned a&nbsp;lot.</p>
+<p>The Clojure code is very nested with functions inside of functions inside of functions. It looks and feels different from the Python code I&#8217;m used to. The explanation must be the difference in programming paradigms: <a href="https://en.wikipedia.org/wiki/Functional_programming">functional</a> (<a href="https://en.wikipedia.org/wiki/Clojure">Clojure</a>) versus <a href="https://en.wikipedia.org/wiki/Procedural_programming">procedural</a> (<a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>). In procedural programming you define a sequence of steps, in functional programming you have functions nested in other functions. (Note: Python supports more paradigms than procedural, but I&#8217;ve mostly used in a procedural&nbsp;paradigm.)</p>
+<p>Another related difference between the two versions is that to me the Clojure version looks more complicated than the Python version<sup id="fnref:10"><a class="footnote-ref" href="#fn:10">10</a></sup>. Part of the explanation is the difference in paradigm I mentioned above. Another part is a difference in how the syntactical work happens. Not just for example parentheses (Clojure) and whitespace (Python), but also <a href="https://clojuredocs.org/clojure.core/filter"><code>filter</code></a> and <a href="https://clojuredocs.org/clojure.core/map"><code>map</code></a> (Clojure) and <a href="https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions">list comprehension</a> (Python). A great illustration of this is <a href="https://www.artima.com/weblogs/viewpost.jsp?thread=98196">Guido van Rossum arguing</a> to&nbsp;remove <code>reduce()</code>, <code>filter()</code>,&nbsp;and <code>map()</code> from Python&#8217;s standard library.<br>
+A third part of the explanation - and I think the most interesting part, is that I read them in a different way. For example, when I came&nbsp;across <code>(map vector vamp-keys unmapped-row)</code> in Clojure, I had to figure it out step-by-step. In Python on the other hand, I can read and understand e.g. a list comprehension&nbsp;(the <code>[ { ... } for row in rows]</code>) without much effort. I immediately see the whole, I recognize the pattern of a list comprehension. So the main difference might be that I need more practice reading Clojure, until there too I can see the&nbsp;patterns.</p>
 <div class="footnote">
 <hr>
 <ol>
 <li id="fn:8">
-<p>It probably does not aid in readability, but I've decided to maintain the distinction between parameters and arguments. A parameter is a variable that's part of the function definition. An argument is a variable or expression that's used when calling a function. Bonus points to you if you find a place where I missed this up in this blog post. <a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 1 in the text">↩</a></p>
+<p>It probably does not aid in readability, but I&#8217;ve decided to maintain the distinction between parameters and arguments. A parameter is a variable that&#8217;s part of the function definition. An argument is a variable or expression that&#8217;s used when calling a function. Bonus points to you if you find a place where I missed this up in this blog post. <a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 1 in the text">↩</a></p>
 </li>
 <li id="fn:1">
 <p>Although it turns out you can <a href="https://clojuredocs.org/clojure.core/fn#example-542692c7c026201cdc326977">name an anonymous function</a>. This can be <a href="https://stackoverflow.com/questions/41683672/clojure-named-anonymous-function">useful</a> for readability and in stack traces. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 2 in the text">↩</a></p>
 </li>
 <li id="fn:2">
-<p>Writing all of this out makes me appreciate how complicated and multi-layered all of this is. As <em>"Clojure for the Brave and True"</em> says in chapter 4:<br><em>"The collection abstraction is closely related to the sequence abstraction. All of Clojure’s core data structures - vectors, maps, lists, and sets - take part in both abstractions. The sequence abstraction is about operating on members individually, whereas the collection abstraction is about the data structure as a whole."</em><br><br>
-So we're dealing with an abstract data structure, the collection, which tells us something about what we can do with it as a whole. We're also dealing with a different abstract data structure, the lazy sequence, which tells us something about what we can do with its individual members, i.e. <a href="https://clojure.org/reference/sequences">sequencey</a> things, while it also tells us something about how this is implemented, i.e. <a href="https://clojuredocs.org/clojure.core/lazy-seq">lazily</a>. So now I'm wondering if I am correct in calling a lazy sequence a collection...<br>
+<p>Writing all of this out makes me appreciate how complicated and multi-layered all of this is. As <em>&#8220;Clojure for the Brave and True&#8221;</em> says in chapter 4:<br><em>&#8220;The collection abstraction is closely related to the sequence abstraction. All of Clojure’s core data structures - vectors, maps, lists, and sets - take part in both abstractions. The sequence abstraction is about operating on members individually, whereas the collection abstraction is about the data structure as a whole.&#8221;</em><br><br>
+So we&#8217;re dealing with an abstract data structure, the collection, which tells us something about what we can do with it as a whole. We&#8217;re also dealing with a different abstract data structure, the lazy sequence, which tells us something about what we can do with its individual members, i.e. <a href="https://clojure.org/reference/sequences">sequencey</a> things, while it also tells us something about how this is implemented, i.e. <a href="https://clojuredocs.org/clojure.core/lazy-seq">lazily</a>. So now I&#8217;m wondering if I am correct in calling a lazy sequence a collection&#8230;<br>
 I wrote about the sequence abstraction in <a href="../../2021/clj7-programming-to-abstractions-with-sequence-functions/">(clj 7)</a> and about the lazy sequences in <a href="../clj-8-some-notes-on-lazy-sequences-and-function-parameters/">(clj 8)</a>. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 3 in the text">↩</a></p>
 </li>
 <li id="fn:3">
 <p>If you want to know how the parsing works, you can read it in the <a href="https://www.braveclojure.com/core-functions-in-depth/#A_Vampire_Data_Analysis_Program_for_the_FWPD">online version of the book</a>. <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 4 in the text">↩</a></p>
 </li>
 <li id="fn:4">
-<p>See the <a href="https://www.braveclojure.com/core-functions-in-depth/#A_Vampire_Data_Analysis_Program_for_the_FWPD">online version of the book</a>, if you're curious about the <code>convert</code>. <a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 5 in the text">↩</a></p>
+<p>See the <a href="https://www.braveclojure.com/core-functions-in-depth/#A_Vampire_Data_Analysis_Program_for_the_FWPD">online version of the book</a>, if you&#8217;re curious about&nbsp;the <code>convert</code>. <a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 5 in the text">↩</a></p>
 </li>
 <li id="fn:5">
-<p>For completeness sake: data in Clojure is immutable, so <code>assoc</code> will not change the existing map, it returns a new one. <a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 6 in the text">↩</a></p>
+<p>For completeness sake: data in Clojure is immutable,&nbsp;so <code>assoc</code> will not change the existing map, it returns a new one. <a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 6 in the text">↩</a></p>
 </li>
 <li id="fn:6">
-<p>Data is immutable in Clojure, so to be correct I should say that Clojure creates a new map. I don't think this matters here and conceptually it's easier to think of things being added to the map. <a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 7 in the text">↩</a></p>
+<p>Data is immutable in Clojure, so to be correct I should say that Clojure creates a new map. I don&#8217;t think this matters here and conceptually it&#8217;s easier to think of things being added to the map. <a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 7 in the text">↩</a></p>
 </li>
 <li id="fn:7">
-<p>In this sense <code>map</code> with one <code>coll</code> parameter feels different to me than with multiple <code>coll</code> parameters. With a single one, it acts like a for-loop. Take the first thing and apply the function, take the second thing and apply the function, etc. With multiple <code>coll</code>s it takes all the first things and applies the function to them, then all the second things, etc. until one of the <code>coll</code>s is exhausted. Described like this, these are two different things. However, from a more abstract viewpoint, I also see that the single <code>coll</code> is not fundamentally different, it's a kind of special case of the multiple <code>coll</code> situation. <a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 8 in the text">↩</a></p>
+<p>In this&nbsp;sense <code>map</code> with&nbsp;one <code>coll</code> parameter feels different to me than with&nbsp;multiple <code>coll</code> parameters. With a single one, it acts like a for-loop. Take the first thing and apply the function, take the second thing and apply the function, etc. With&nbsp;multiple <code>coll</code>s it takes all the first things and applies the function to them, then all the second things, etc. until one of&nbsp;the <code>coll</code>s is exhausted. Described like this, these are two different things. However, from a more abstract viewpoint, I also see that the&nbsp;single <code>coll</code> is not fundamentally different, it&#8217;s a kind of special case of the&nbsp;multiple <code>coll</code> situation. <a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 8 in the text">↩</a></p>
 </li>
 <li id="fn:9">
-<p>The Python code does do the <code>convert</code> in a separate function. It would also return a different result than the Clojure code if the data would have more than two items per row. <a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">↩</a></p>
+<p>The Python code does do&nbsp;the <code>convert</code> in a separate function. It would also return a different result than the Clojure code if the data would have more than two items per row. <a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">↩</a></p>
 </li>
 <li id="fn:10">
-<p>It makes me wonder if the example is fully idiomatic Clojure. It probably is, though, because it's from a book teaching Clojure. <a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 10 in the text">↩</a></p>
+<p>It makes me wonder if the example is fully idiomatic Clojure. It probably is, though, because it&#8217;s from a book teaching Clojure. <a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 10 in the text">↩</a></p>
 </li>
 </ol>
 </div>
 </div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../../../categories/brave-clojure/" rel="tag">brave clojure</a></li>
+<li><a class="tag p-category" href="../../../../categories/brave-clojure/" rel="tag">brave&nbsp;clojure</a></li>
             <li><a class="tag p-category" href="../../../../categories/clojure/" rel="tag">clojure</a></li>
             <li><a class="tag p-category" href="../../../../categories/programming/" rel="tag">programming</a></li>
+            <li><a class="tag p-category" href="../../../../categories/python/" rel="tag">python</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../clj-8-some-notes-on-lazy-sequences-and-function-parameters/" rel="prev" title="(clj 8) Some notes on lazy sequences and function parameters">Previous post</a>
+                <a href="../clj-8-some-notes-on-lazy-sequences-and-function-parameters/" rel="prev" title="(clj 8) Some notes on lazy sequences and function parameters">Previous&nbsp;post</a>
             </li>
             <li class="next">
-                <a href="../clj-10-the-mapify-function-of-clj-9-revisited/" rel="next" title="(clj 10) The mapify function of (clj 9) revisited">Next post</a>
+                <a href="../clj-10-the-mapify-function-of-clj-9-revisited/" rel="next" title="(clj 10) The mapify function of (clj 9) revisited">Next&nbsp;post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer">
             Contents © 2022     

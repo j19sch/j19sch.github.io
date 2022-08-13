@@ -79,7 +79,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
                     <a href="../../../" class="dropdown-item">My blog</a>
                     <a href="../../../../categories/" class="dropdown-item">Categories and tags</a>
                     <a href="../../../../archive.html" class="dropdown-item">Archive</a>
-                    <a href="../../../rss.xml" class="dropdown-item">RSS feed</a>
+                    <a href="../../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
                     <a href="../../../feed.atom" class="dropdown-item">Atom feed</a>
             </div>
 
@@ -95,11 +95,11 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
     <div class="body-content">
         <!--Body content-->
         
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">(clj 2) Setting up Vim for Clojure</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">(clj 2) Setting up Vim for&nbsp;Clojure</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    Joep Schuurkes
+                    Joep&nbsp;Schuurkes
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -110,93 +110,93 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<p>As mentioned in my <a href="../clj1-deciding-on-an-editor/">previous post</a> I've decided to use <a href="https://www.vim.org/">Vim</a> as my Clojure editor. That leaves me with three things to do: getting reacquainted with Vim, updating my Vim config in the .<code>vimrc</code> file, and installing both general and Clojure-specific Vim plugins.</p>
-<h3>Getting reacquainted with Vim</h3>
-<p>Ever since I learned Vim basics a long time ago I have been using it once in a while to make small edits to a config file or a commit message, but not for anything more complicated than that. So that's the first thing I wanted to address: refresh my basics and make sure I know where to find more information when I need it.</p>
+<p>As mentioned in my <a href="../clj1-deciding-on-an-editor/">previous post</a> I&#8217;ve decided to use <a href="https://www.vim.org/">Vim</a> as my Clojure editor. That leaves me with three things to do: getting reacquainted with Vim, updating my Vim config in the&nbsp;.<code>vimrc</code> file, and installing both general and Clojure-specific Vim&nbsp;plugins.</p>
+<h3>Getting reacquainted with&nbsp;Vim</h3>
+<p>Ever since I learned Vim basics a long time ago I have been using it once in a while to make small edits to a config file or a commit message, but not for anything more complicated than that. So that&#8217;s the first thing I wanted to address: refresh my basics and make sure I know where to find more information when I need&nbsp;it.</p>
 <h4>Vimtutor</h4>
-<p>I figured that a good way to get back into Vim was the <a href="https://vimhelp.org/usr_01.txt.html#vimtutor">Vimtutor</a>. It's a 30-minute interactive tutorial where you edit a file with instructions with vim. I kept notes of what it covers, which you can find <a href="../../../../my-projects/vimtutor">here</a>. Vim's help also includes a <a href="https://vimhelp.org/quickref.txt.html">quickref</a>, an "Overview of the most common commands you will use", which is intimidatingly long considering that description. As a reference to look things up in, it should be useful, though.</p>
+<p>I figured that a good way to get back into Vim was the <a href="https://vimhelp.org/usr_01.txt.html#vimtutor">Vimtutor</a>. It&#8217;s a 30-minute interactive tutorial where you edit a file with instructions with vim. I kept notes of what it covers, which you can find <a href="../../../../my-projects/vimtutor">here</a>. Vim&#8217;s help also includes a <a href="https://vimhelp.org/quickref.txt.html">quickref</a>, an &#8220;Overview of the most common commands you will use&#8221;, which is intimidatingly long considering that description. As a reference to look things up in, it should be useful,&nbsp;though.</p>
 <!-- TEASER_END -->
 
-<p>Going through the Vimtutor to refresh my Vim felt good. Something about Vim keybindings just feels right to me. However, me liking Vim dies not mean that I automatically remember all the keybindings and commands and capabilities of Vim. So I decided that if I wanted this project of both learning Vim and Clojure to work, I should make a <a href="../../../../my-projects/clojure-vim-cheatsheet">Clojure-Vim cheatsheet</a> to help me. The plan is to keep updating this sheet as I do more with Vim and Clojure.</p>
-<h4>Using Vim's <code>:help</code> command</h4>
-<p>Another great resource are Vim's help files, which can be found <a href="https://vimhelp.org/">online</a> and by typing <code>:help&lt;Enter&gt;</code> or <code>&lt;F1&gt;</code> in Vim itself. You can also see help on specific topics by doing <code>:help {topic}&lt;Enter&gt;</code>, or do <code>:help {topic}&lt;ctrl+d&gt;</code> to see entries matching what you have typed so far.</p>
-<p>When you do that, you'll notice that Vim will open the relevant help file in a separate <a href="https://vimhelp.org/windows.txt.html">window,</a>, i.e. the vim screen is now split in half. (Vim also has <a href="https://vimhelp.org/tabpage.txt.html">tabs</a>, with tabs containing one or multiple windows.) So that makes right now the right time to learn some basic Vim window management:</p>
+<p>Going through the Vimtutor to refresh my Vim felt good. Something about Vim keybindings just feels right to me. However, me liking Vim dies not mean that I automatically remember all the keybindings and commands and capabilities of Vim. So I decided that if I wanted this project of both learning Vim and Clojure to work, I should make a <a href="../../../../my-projects/clojure-vim-cheatsheet">Clojure-Vim cheatsheet</a> to help me. The plan is to keep updating this sheet as I do more with Vim and&nbsp;Clojure.</p>
+<h4>Using&nbsp;Vim&#8217;s <code>:help</code> command</h4>
+<p>Another great resource are Vim&#8217;s help files, which can be found <a href="https://vimhelp.org/">online</a> and by&nbsp;typing <code>:help&lt;Enter&gt;</code> or <code>&lt;F1&gt;</code> in Vim itself. You can also see help on specific topics by&nbsp;doing <code>:help {topic}&lt;Enter&gt;</code>, or&nbsp;do <code>:help {topic}&lt;ctrl+d&gt;</code> to see entries matching what you have typed so&nbsp;far.</p>
+<p>When you do that, you&#8217;ll notice that Vim will open the relevant help file in a separate <a href="https://vimhelp.org/windows.txt.html">window,</a>, i.e. the vim screen is now split in half. (Vim also has <a href="https://vimhelp.org/tabpage.txt.html">tabs</a>, with tabs containing one or multiple windows.) So that makes right now the right time to learn some basic Vim window&nbsp;management:</p>
 <ul>
-<li>close the active window with <code>:q</code> (closes Vim if that leaves you with 0 active windows)</li>
-<li>make the active window take up all vertical space with <code>ctrl+w _</code> or all horizontal space with <code>ctrl+w |</code>
+<li>close the active window&nbsp;with <code>:q</code> (closes Vim if that leaves you with 0 active&nbsp;windows)</li>
+<li>make the active window take up all vertical space&nbsp;with <code>ctrl+w _</code> or all horizontal space&nbsp;with <code>ctrl+w |</code>
 </li>
-<li>split equally again with <code>ctrl+w =</code>
+<li>split equally again&nbsp;with <code>ctrl+w =</code>
 </li>
-<li>move to the next window with <code>ctrl+w w</code>
+<li>move to the next window&nbsp;with <code>ctrl+w w</code>
 </li>
-<li>move to the window in a specific direction with <code>ctrl+w {direction}</code>, with direction being one of <code>h j k l</code>
+<li>move to the window in a specific direction&nbsp;with <code>ctrl+w {direction}</code>, with direction being one&nbsp;of <code>h j k l</code>
 </li>
-<li>snap the window to a side with <code>ctrl+w shift+{direction}</code>, with direction again being one of <code>h j k l</code>
+<li>snap the window to a side&nbsp;with <code>ctrl+w shift+{direction}</code>, with direction again being one&nbsp;of <code>h j k l</code>
 </li>
 </ul>
-<p>With basic window management out of the way, there are also a few keybindings to learn to help with text navigation:</p>
+<p>With basic window management out of the way, there are also a few keybindings to learn to help with text&nbsp;navigation:</p>
 <ul>
-<li>to look up whatever word is under the cursor hit <code>ctrl+]</code> (works for topics and with section titles)</li>
-<li>to jump back to where you were use <code>ctrl+o</code>
+<li>to look up whatever word is under the cursor&nbsp;hit <code>ctrl+]</code> (works for topics and with section&nbsp;titles)</li>
+<li>to jump back to where you were&nbsp;use <code>ctrl+o</code>
 </li>
-<li>to jump forward again use <code>ctrl+i</code>
+<li>to jump forward again&nbsp;use <code>ctrl+i</code>
 </li>
 </ul>
-<p>That should be enough to make Vim's help files a useful resource. Or at least I hope it is, because the above is the result of me looking up the things I expect to need to be able to use Vim's help files.</p>
-<h3>Updating my Vim configuration</h3>
-<p>First of all a warning: you can spend hours upon hours looking into Vim's configuration settings, plugins, and color schemes - without using Vim to write a single line of... let's say Clojure. If you want to know how deep that rabbit hole goes, I recommend reading this <a href="http://karolis.koncevicius.lt/posts/porn_zen_and_vimrc/">blog post</a> by Karolis Koncevičius, where he shares "Lessons learned during my 5 year adventure in fiddling with Vim configuration files".</p>
-<p>So after spending a few hours exploring Vim settings and plugins, I decided to keep my configuration and especially my plugins as limited and simple as possible - despite all the promises of shiny new toys I could add. That way I might actually get around again to playing with Clojure and writing a blog post about that sometime soon.</p>
+<p>That should be enough to make Vim&#8217;s help files a useful resource. Or at least I hope it is, because the above is the result of me looking up the things I expect to need to be able to use Vim&#8217;s help&nbsp;files.</p>
+<h3>Updating my Vim&nbsp;configuration</h3>
+<p>First of all a warning: you can spend hours upon hours looking into Vim&#8217;s configuration settings, plugins, and color schemes - without using Vim to write a single line of&#8230; let&#8217;s say Clojure. If you want to know how deep that rabbit hole goes, I recommend reading this <a href="http://karolis.koncevicius.lt/posts/porn_zen_and_vimrc/">blog post</a> by Karolis Koncevičius, where he shares &#8220;Lessons learned during my 5 year adventure in fiddling with Vim configuration&nbsp;files&#8221;.</p>
+<p>So after spending a few hours exploring Vim settings and plugins, I decided to keep my configuration and especially my plugins as limited and simple as possible - despite all the promises of shiny new toys I could add. That way I might actually get around again to playing with Clojure and writing a blog post about that sometime&nbsp;soon.</p>
 <h4>The <code>.vimrc</code> file</h4>
-<p>Vim configuration happens via a file in the user's home directory, <code>.vimrc</code>. You can find mine <a href="https://gist.github.com/j19sch/778a936b564d5ef4f4c5f1eefd2cebe0">here</a>.</p>
-<p>There are plenty of good resources on what to put in your <code>.vimrc</code>-file. Here are three I took inspiration from:</p>
+<p>Vim configuration happens via a file in the user&#8217;s home&nbsp;directory, <code>.vimrc</code>. You can find mine <a href="https://gist.github.com/j19sch/778a936b564d5ef4f4c5f1eefd2cebe0">here</a>.</p>
+<p>There are plenty of good resources on what to put in&nbsp;your <code>.vimrc</code>-file. Here are three I took inspiration&nbsp;from:</p>
 <ul>
 <li>
-<a href="https://dougblack.io/words/a-good-vimrc.html">A Good Vimrc</a> by Doug Black</li>
+<a href="https://dougblack.io/words/a-good-vimrc.html">A Good Vimrc</a> by Doug&nbsp;Black</li>
 <li>
-<a href="https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim">Basic vimrc</a> by Amir Salihefendic</li>
+<a href="https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim">Basic vimrc</a> by Amir&nbsp;Salihefendic</li>
 <li>
-<a href="https://www.shortcutfoo.com/blog/top-50-vim-configuration-options/">Top 50 Vim Configuration Options</a> from shortcutFoo</li>
+<a href="https://www.shortcutfoo.com/blog/top-50-vim-configuration-options/">Top 50 Vim Configuration Options</a> from&nbsp;shortcutFoo</li>
 </ul>
-<p>That should be more than enough to get you going. As part of this blog post, I do want to highlight a few settings that you might not think of changing while using Vim. First, there's <code>set wildmenu</code>, which will display the tab completion of Vim's command line as a menu instead of as one completion at a time. Secondly, <code>set scrolloff=5</code> means Vim will always try to display 5 lines above and below the cursor and <code>set display+=lastline</code> will try to show as much as possible of the last line in the window instead of a column of "@". Finally, I disabled backup and swap files with <code>set nobackup</code>, <code>set nowritebackup</code>, and <code>set noswapfile</code> for multiple reasons. It saves writes to my SSD, for version control I use GitHub, and it allows me to set <code>updatetime=300</code> so that the GitGutter plugin feels more responsive.</p>
-<h4>Vim plugins</h4>
-<p>The main question for Vim plugins is: which Vim plugin do you use to manage your Vim plugins? A few years ago when looking into Vim as Python editor, I decided to go with <a href="https://github.com/junegunn/vim-plug">vim-plug</a>. I can't remember why, but it could be because it says it's a "minimalist Vim plugin manager". Two popular alternatives are <a href="https://github.com/VundleVim/Vundle.vim">Vundle</a> and <a href="https://github.com/tpope/vim-pathogen">Pathogen</a>. Since Vim 8 there's also native support for <a href="https://vimhelp.org/repeat.txt.html#packages">packages</a>.</p>
-<h5>General plugins</h5>
-<p>I ended up installing the following general plugins:</p>
+<p>That should be more than enough to get you going. As part of this blog post, I do want to highlight a few settings that you might not think of changing while using Vim. First,&nbsp;there&#8217;s <code>set wildmenu</code>, which will display the tab completion of Vim&#8217;s command line as a menu instead of as one completion at a time.&nbsp;Secondly, <code>set scrolloff=5</code> means Vim will always try to display 5 lines above and below the cursor&nbsp;and <code>set display+=lastline</code> will try to show as much as possible of the last line in the window instead of a column of &#8220;@&#8221;. Finally, I disabled backup and swap files&nbsp;with <code>set nobackup</code>, <code>set nowritebackup</code>,&nbsp;and <code>set noswapfile</code> for multiple reasons. It saves writes to my <span class="caps">SSD</span>, for version control I use GitHub, and it allows me to&nbsp;set <code>updatetime=300</code> so that the GitGutter plugin feels more&nbsp;responsive.</p>
+<h4>Vim&nbsp;plugins</h4>
+<p>The main question for Vim plugins is: which Vim plugin do you use to manage your Vim plugins? A few years ago when looking into Vim as Python editor, I decided to go with <a href="https://github.com/junegunn/vim-plug">vim-plug</a>. I can&#8217;t remember why, but it could be because it says it&#8217;s a &#8220;minimalist Vim plugin manager&#8221;. Two popular alternatives are <a href="https://github.com/VundleVim/Vundle.vim">Vundle</a> and <a href="https://github.com/tpope/vim-pathogen">Pathogen</a>. Since Vim 8 there&#8217;s also native support for <a href="https://vimhelp.org/repeat.txt.html#packages">packages</a>.</p>
+<h5>General&nbsp;plugins</h5>
+<p>I ended up installing the following general&nbsp;plugins:</p>
 <ul>
 <li>
-<a href="https://github.com/airblade/vim-gitgutter">GitGutter</a> to show git diff markers in the sign column and see the diff</li>
+<a href="https://github.com/airblade/vim-gitgutter">GitGutter</a> to show git diff markers in the sign column and see the&nbsp;diff</li>
 <li>
-<a href="https://github.com/Yggdroot/indentLine">indentLine</a> to display indentation levels</li>
+<a href="https://github.com/Yggdroot/indentLine">indentLine</a> to display indentation&nbsp;levels</li>
 <li>
-<a href="https://github.com/itchyny/lightline.vim">Lightline</a> to configure the statusline</li>
+<a href="https://github.com/itchyny/lightline.vim">Lightline</a> to configure the&nbsp;statusline</li>
 <li>
-<a href="https://github.com/preservim/nerdtree">NerdTree</a> to have a tree explorer</li>
+<a href="https://github.com/preservim/nerdtree">NerdTree</a> to have a tree&nbsp;explorer</li>
 <li>
-<a href="https://github.com/tpope/vim-commentary">vim-commentary</a> to easily (un)comment lines</li>
+<a href="https://github.com/tpope/vim-commentary">vim-commentary</a> to easily (un)comment&nbsp;lines</li>
 <li>
-<a href="https://github.com/tpope/vim-fugitive">vim-fugitive</a> to show the current branch in the statusline (it can do lots more than that)</li>
+<a href="https://github.com/tpope/vim-fugitive">vim-fugitive</a> to show the current branch in the statusline (it can do lots more than&nbsp;that)</li>
 <li>
-<a href="https://github.com/junegunn/vim-plug">vim-plug</a> to manage installing and removing plugins as mentioned above</li>
+<a href="https://github.com/junegunn/vim-plug">vim-plug</a> to manage installing and removing plugins as mentioned&nbsp;above</li>
 </ul>
 <p>Of course all of these come with their own commands. The ones I expect to use are in my <a href="../../../../my-projects/clojure-vim-cheatsheet/">Clojure-Vim cheatsheet</a>.</p>
-<h5>Clojure plugins</h5>
-<p>For Clojure-specific plugins I mostly followed Keith Smiley's <a href="https://thoughtbot.com/blog/writing-clojure-in-vim">advice</a> and went with these:</p>
+<h5>Clojure&nbsp;plugins</h5>
+<p>For Clojure-specific plugins I mostly followed Keith Smiley&#8217;s <a href="https://thoughtbot.com/blog/writing-clojure-in-vim">advice</a> and went with&nbsp;these:</p>
 <ul>
 <li>
-<a href="https://github.com/guns/vim-clojure-highlight">vim-clojure-highlight</a> for syntax highlighting to referred and aliased vars in Clojure buffers</li>
+<a href="https://github.com/guns/vim-clojure-highlight">vim-clojure-highlight</a> for syntax highlighting to referred and aliased vars in Clojure&nbsp;buffers</li>
 <li>
-<a href="https://github.com/tpope/vim-fireplace">vim-fireplace</a> as REPL plugin</li>
+<a href="https://github.com/tpope/vim-fireplace">vim-fireplace</a> as <span class="caps">REPL</span>&nbsp;plugin</li>
 <li>
-<a href="https://github.com/guns/vim-sexp">vim-sexp</a> for precision editing to S-expressions</li>
+<a href="https://github.com/guns/vim-sexp">vim-sexp</a> for precision editing to&nbsp;S-expressions</li>
 <li>
-<a href="https://github.com/tpope/vim-sexp-mappings-for-regular-people">vim-sexp-mappings-for-regular-people</a> for supposedly better vim-sexp key mappings</li>
+<a href="https://github.com/tpope/vim-sexp-mappings-for-regular-people">vim-sexp-mappings-for-regular-people</a> for supposedly better vim-sexp key&nbsp;mappings</li>
 </ul>
-<p>I have barely used these plugins - if at all, actually, in the case if vim-sexp -, so my cheatsheet won't have much on these yet.</p>
-<p>As far as I know there are two alternatives to vim-fireplace: <a href="https://github.com/liquidz/vim-iced">vim-iced</a> and <a href="https://github.com/Olical/conjure">conjure</a>, with the latter only actively supporting <a href="https://neovim.io/">Neovim</a>. I am curious about those, but am going to postpone exploring them until I have some experience with vim-fireplace - and with Clojure itself.</p>
-<h5>Color schemes</h5>
-<p>The color scheme I enabled last time I was looking into Vim is <a href="https://dikiaap.id/">Diki Ananta</a>'s <a href="https://github.com/dikiaap/minimalist">minimalist</a>. I still like it, so that saved me the time of looking for a good color scheme. I would like to have a good light color scheme as well, though...</p>
+<p>I have barely used these plugins - if at all, actually, in the case if vim-sexp -, so my cheatsheet won&#8217;t have much on these&nbsp;yet.</p>
+<p>As far as I know there are two alternatives to vim-fireplace: <a href="https://github.com/liquidz/vim-iced">vim-iced</a> and <a href="https://github.com/Olical/conjure">conjure</a>, with the latter only actively supporting <a href="https://neovim.io/">Neovim</a>. I am curious about those, but am going to postpone exploring them until I have some experience with vim-fireplace - and with Clojure&nbsp;itself.</p>
+<h5>Color&nbsp;schemes</h5>
+<p>The color scheme I enabled last time I was looking into Vim is <a href="https://dikiaap.id/">Diki Ananta</a>&#8216;s <a href="https://github.com/dikiaap/minimalist">minimalist</a>. I still like it, so that saved me the time of looking for a good color scheme. I would like to have a good light color scheme as well,&nbsp;though&#8230;</p>
 <div style="margin-bottom: 1.8rem"></div>
-<p>And with all of that done, I think I'm ready to return to the third chapter of <a href="https://www.braveclojure.com/">Clojure for the Brave and True</a>.</p>
+<p>And with all of that done, I think I&#8217;m ready to return to the third chapter of <a href="https://www.braveclojure.com/">Clojure for the Brave and True</a>.</p>
 </div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
@@ -206,10 +206,10 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../clj1-deciding-on-an-editor/" rel="prev" title="(clj 1) Deciding on a Clojure editor">Previous post</a>
+                <a href="../clj1-deciding-on-an-editor/" rel="prev" title="(clj 1) Deciding on a Clojure editor">Previous&nbsp;post</a>
             </li>
             <li class="next">
-                <a href="../clj3-and-or-being-weird/" rel="next" title="(clj 3) Clojure's 'and' and 'or' are weird (but not really)">Next post</a>
+                <a href="../clj3-and-or-being-weird/" rel="next" title="(clj 3) Clojure's 'and' and 'or' are weird (but not really)">Next&nbsp;post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer">
             Contents © 2022     

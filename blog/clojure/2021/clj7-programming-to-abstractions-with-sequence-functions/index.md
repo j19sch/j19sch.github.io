@@ -2,7 +2,7 @@
 .. title: (clj 7) Programming to abstractions with sequence functions
 .. slug: clj7-programming-to-abstractions-with-sequence-functions
 .. date: 2021-12-05 13:40:36 UTC+01:00
-.. tags: clojure, programming, brave clojure
+.. tags: clojure, programming, brave clojure, python
 .. category: clojure
 .. link: 
 .. description:

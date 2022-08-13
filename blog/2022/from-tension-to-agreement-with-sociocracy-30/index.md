@@ -89,7 +89,7 @@ Proposals become [agreements](https://patterns.sociocracy30.org/agreement.html) 
 
 The key part of this pattern is asking everyone if they consent to the proposal, or if they have concerns or objections. This can be done through [hand signals](https://www.youtube.com/watch?v=NW0ZkEH81Vg) so everyone can express their position at the same time.
 
-The difference between a concern and an [objection](https://patterns.sociocracy30.org/objection.html) is that an objection is an argument that the proposal is not good enough yet or safe enough yet. It's an argument, so there is reasoning or evidence to back it up. A concern is similar to an objection, but it can't be backed up in that way. For that reason, objects are blockers to coming to an agreement; concerns are not. That does not mean however, that concerns are ignored. Sometimes concerns can be alleviated by making a change to the proposal. If that does not work out, they can be recorded in the agreement near the evaluation criteria.
+The difference between a concern and an [objection](https://patterns.sociocracy30.org/objection.html) is that an objection is an argument that the proposal is not good enough yet or safe enough yet. It's an argument, so there is reasoning or evidence to back it up. A concern is similar to an objection, but it can't be backed up in that way. For that reason, objections are blockers to coming to an agreement; concerns are not. That does not mean however, that concerns are ignored. Sometimes concerns can be alleviated by making a change to the proposal. If that does not work out, they can be recorded in the agreement near the evaluation criteria.
 
 Once all objections have been resolved, you have successfully created an agreement and it's time to celebrate!
 

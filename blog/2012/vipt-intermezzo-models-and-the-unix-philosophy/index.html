@@ -79,7 +79,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
                     <a href="../../" class="dropdown-item">My blog</a>
                     <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
                     <a href="../../../archive.html" class="dropdown-item">Archive</a>
-                    <a href="../../rss.xml" class="dropdown-item">RSS feed</a>
+                    <a href="../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
                     <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
             </div>
 
@@ -95,11 +95,11 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
     <div class="body-content">
         <!--Body content-->
         
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">VIPT Intermezzo - Models and the Unix philosophy</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url"><span class="caps">VIPT</span> Intermezzo - Models and the Unix&nbsp;philosophy</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    Joep Schuurkes
+                    Joep&nbsp;Schuurkes
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -110,13 +110,13 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<p>Thanks to <a href="https://testingcurve.wordpress.com/2012/07/09/yet-another-testing-model-value-information-processes-value/#comments">Neil Thompson's comments</a> on my previous post, I started thinking about what I want to do with the VIPT model. Do I want to expand and refine it to a grand unified theory of testing? And if not, then what?</p>
-<h3>The Unix philosophy</h3>
+<p>Thanks to <a href="https://testingcurve.wordpress.com/2012/07/09/yet-another-testing-model-value-information-processes-value/#comments">Neil Thompson&#8217;s comments</a> on my previous post, I started thinking about what I want to do with the <span class="caps">VIPT</span> model. Do I want to expand and refine it to a grand unified theory of testing? And if not, then&nbsp;what?</p>
+<h3>The Unix&nbsp;philosophy</h3>
 <p>After some thinking I realized that with regard to models, I adhere to the <a href="http://www.faqs.org/docs/artu/ch01s06.html">Unix philosophy</a>.</p>
-<h4>Do one thing and do it well</h4>
-<p>Particularly I am thinking about the following quote from Doug McIlroy:</p>
+<h4>Do one thing and do it&nbsp;well</h4>
+<p>Particularly I am thinking about the following quote from Doug&nbsp;McIlroy:</p>
 <blockquote>
-<p>"This is the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface."</p>
+<p><span class="dquo">&#8220;</span>This is the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal&nbsp;interface.&#8221;</p>
 </blockquote>
 <!-- TEASER_END -->
 
@@ -124,33 +124,33 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <pre class="code literal-block"><span></span><code>cat apple.txt <span class="p">|</span> wc <span class="p">|</span> mail -s <span class="s2">"The count"</span> nobody@december.com
 </code></pre>
 
-<p>By piping the output of the first command to the second and then to the third, you get a small 'program' that counts the characters, words, and lines of the apple.txt file, then mails the results to nobody@december.com with the subject line "The count."</p>
-<h4>Worse is better</h4>
-<p>Another part of the Unix philosophy according to Richard P. Gabriel is "Worse is better." (As can be read <a href="http://www.dreamsongs.com/RiseOfWorseIsBetter.html">here</a>.) Simplicity is more important than other attributes - including correctness, consistency, and completeness. Basically you want something that's good enough for you to have a use for it and simple enough for you to understand it. Quite similar to the ultimate toolbox actually: duct tape and WD40. If it moves and it shouldn't, you need duct tape. And if it doesn't move and it should, you need WD40. No need to worry if you want to use glue, a nail or a screw and of what kind, just duct tape.</p>
-<h3>Applying the Unix philosophy to models</h3>
-<p>Translating this to models, we get the following three principles:</p>
+<p>By piping the output of the first command to the second and then to the third, you get a small &#8216;program&#8217; that counts the characters, words, and lines of the apple.txt file, then mails the results to nobody@december.com with the subject line &#8220;The&nbsp;count.&#8221;</p>
+<h4>Worse is&nbsp;better</h4>
+<p>Another part of the Unix philosophy according to Richard P. Gabriel is &#8220;Worse is better.&#8221; (As can be read <a href="http://www.dreamsongs.com/RiseOfWorseIsBetter.html">here</a>.) Simplicity is more important than other attributes - including correctness, consistency, and completeness. Basically you want something that&#8217;s good enough for you to have a use for it and simple enough for you to understand it. Quite similar to the ultimate toolbox actually: duct tape and <span class="caps">WD40</span>. If it moves and it shouldn&#8217;t, you need duct tape. And if it doesn&#8217;t move and it should, you need <span class="caps">WD40</span>. No need to worry if you want to use glue, a nail or a screw and of what kind, just duct&nbsp;tape.</p>
+<h3>Applying the Unix philosophy to&nbsp;models</h3>
+<p>Translating this to models, we get the following three&nbsp;principles:</p>
 <ul>
-<li>Create models that do one thing and do it well.</li>
-<li>Create models that work together.</li>
-<li>Prefer simplicity in your models over correctness, consistency and completeness.</li>
+<li>Create models that do one thing and do it&nbsp;well.</li>
+<li>Create models that work&nbsp;together.</li>
+<li>Prefer simplicity in your models over correctness, consistency and&nbsp;completeness.</li>
 </ul>
-<p>This certainly won't get us to a grand unified theory of testing. It also won't give us any definitive models. What it does give us, is a big set of simple models. Sometimes we need only one model; sometimes we need to take a few and make them work together. Other times we may find none of our models are good enough, so we just build a new one and add it to our collection. And since models are always limited and thus fallible, let's keep them simple, because what we never will achieve is correctness, consistency or completeness.</p>
-<p>As such a model is very much a tool in the VIPT model. On its own it doesn't do anything. When part of a process, it can provide valuable information - or not.</p>
+<p>This certainly won&#8217;t get us to a grand unified theory of testing. It also won&#8217;t give us any definitive models. What it does give us, is a big set of simple models. Sometimes we need only one model; sometimes we need to take a few and make them work together. Other times we may find none of our models are good enough, so we just build a new one and add it to our collection. And since models are always limited and thus fallible, let&#8217;s keep them simple, because what we never will achieve is correctness, consistency or&nbsp;completeness.</p>
+<p>As such a model is very much a tool in the <span class="caps">VIPT</span> model. On its own it doesn&#8217;t do anything. When part of a process, it can provide valuable information - or&nbsp;not.</p>
 <hr>
 <p><em>This post was originally published <a href="https://testingcurve.wordpress.com/2012/07/15/vipt-intermezzo-models-and-the-unix-philosophy/">here</a>.</em></p>
 </div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../../categories/context-driven-testing/" rel="tag">context-driven testing</a></li>
+<li><a class="tag p-category" href="../../../categories/context-driven-testing/" rel="tag">context-driven&nbsp;testing</a></li>
             <li><a class="tag p-category" href="../../../categories/models/" rel="tag">models</a></li>
-            <li><a class="tag p-category" href="../../../categories/vipt/" rel="tag">VIPT</a></li>
+            <li><a class="tag p-category" href="../../../categories/vipt/" rel="tag"><span class="caps">VIPT</span></a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../yet-another-testing-model-value-information-processes-value/" rel="prev" title="Yet Another Testing Model: Value - Information - Processes - Tools">Previous post</a>
+                <a href="../yet-another-testing-model-value-information-processes-value/" rel="prev" title="Yet Another Testing Model: Value - Information - Processes - Tools">Previous&nbsp;post</a>
             </li>
             <li class="next">
-                <a href="../vipt-bottom-up-or-top-down/" rel="next" title="VIPT - bottom-up or top-down">Next post</a>
+                <a href="../vipt-bottom-up-or-top-down/" rel="next" title="VIPT - bottom-up or top-down">Next&nbsp;post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer">
             Contents © 2022     

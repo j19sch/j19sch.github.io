@@ -2,7 +2,7 @@
 .. title: (clj 5) Loop and recur, into and conj
 .. slug: clj5-loop-and-recur-into-and-conj
 .. date: 2020-12-26 10:09:08 UTC+01:00
-.. tags: clojure, programming, brave clojure
+.. tags: clojure, programming, brave clojure, python
 .. category: clojure
 .. link: 
 .. description:

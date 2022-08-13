@@ -79,7 +79,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
                     <a href="../../../" class="dropdown-item">My blog</a>
                     <a href="../../../../categories/" class="dropdown-item">Categories and tags</a>
                     <a href="../../../../archive.html" class="dropdown-item">Archive</a>
-                    <a href="../../../rss.xml" class="dropdown-item">RSS feed</a>
+                    <a href="../../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
                     <a href="../../../feed.atom" class="dropdown-item">Atom feed</a>
             </div>
 
@@ -95,11 +95,11 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
     <div class="body-content">
         <!--Body content-->
         
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">(clj 6) Three chapters in one year</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">(clj 6) Three chapters in one&nbsp;year</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    Joep Schuurkes
+                    Joep&nbsp;Schuurkes
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -110,15 +110,15 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<p>It's been a bit more than a year since I posted my <a href="../../2020/clj0-diving-straight-in/">first blog post</a> about learning Clojure. And it's been five months since my <a href="../../2020/clj5-loop-and-recur-into-and-conj/">last blog post</a> about it. So far I've made it through the first three chapters<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> of "<a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">Clojure for the Brave and True</a>". Instead of commenting on my learning pace at the start of every post, I've decided that this pace is the pace that works for me at this time, so there's no need to keep revisiting the topic.</p>
-<p>Something I do want to mention is that one thing that triggered me to do some more Clojure was <a href="https://itrevolution.com/the-idealcast-episode-10/">this episode</a> of Gene Kim's excellent <a href="https://itrevolution.com/the-idealcast-podcast/">Idealcast</a> podcast with <a href="https://www.michaelnygard.com/">Michael Nygard</a>, in which they spend some time talking about Clojure.</p>
-<h3>Vim macros</h3>
-<p>The exercises at the end of chapter 3 got me to try out a lot of things, so I got bored having to type in the commands to copy a line (<code>yy</code>), paste it (<code>p</code>), replace it by its evaluation (<code>c!$</code>), comment it out (<code>gcc</code>), and add a "<code>=&gt;</code>" to mark it as output. So I learned about Vim macros and recorded that sequence to run when I hit <code>@c</code>. At the end of my <a href="../../2020/clj4-learning-when-maps-closures/">(clj 4)</a> post I mentioned I might have to do this. Guess that moment came sooner than I expected.</p>
+<p>It&#8217;s been a bit more than a year since I posted my <a href="../../2020/clj0-diving-straight-in/">first blog post</a> about learning Clojure. And it&#8217;s been five months since my <a href="../../2020/clj5-loop-and-recur-into-and-conj/">last blog post</a> about it. So far I&#8217;ve made it through the first three chapters<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> of &#8220;<a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">Clojure for the Brave and True</a>&#8220;. Instead of commenting on my learning pace at the start of every post, I&#8217;ve decided that this pace is the pace that works for me at this time, so there&#8217;s no need to keep revisiting the&nbsp;topic.</p>
+<p>Something I do want to mention is that one thing that triggered me to do some more Clojure was <a href="https://itrevolution.com/the-idealcast-episode-10/">this episode</a> of Gene Kim&#8217;s excellent <a href="https://itrevolution.com/the-idealcast-podcast/">Idealcast</a> podcast with <a href="https://www.michaelnygard.com/">Michael Nygard</a>, in which they spend some time talking about&nbsp;Clojure.</p>
+<h3>Vim&nbsp;macros</h3>
+<p>The exercises at the end of chapter 3 got me to try out a lot of things, so I got bored having to type in the commands to copy a line&nbsp;(<code>yy</code>), paste it&nbsp;(<code>p</code>), replace it by its evaluation&nbsp;(<code>c!$</code>), comment it out&nbsp;(<code>gcc</code>), and add a&nbsp;&#8221;<code>=&gt;</code>&#8221; to mark it as output. So I learned about Vim macros and recorded that sequence to run when I&nbsp;hit <code>@c</code>. At the end of my <a href="../../2020/clj4-learning-when-maps-closures/">(clj 4)</a> post I mentioned I might have to do this. Guess that moment came sooner than I&nbsp;expected.</p>
 <!-- TEASER_END -->
 
-<p>The macro works great as long as you don't try to evaluate a line that throws an exception. You do get the same weird line of output every time (i.e. <code>a =&gt;</code>), so it's easy enough to recognize. Wondering if and how Vim macros are stored, I was glad to discover they are stored automatically if you run Vim in noncompatible mode (which I do). So I haven't bothered yet to store the macro in my <code>.vimrc</code> with the <code>let</code> command.</p>
-<h3>Exercise 1 - using some functions</h3>
-<p>The first exercise asks you to use the <code>str</code>, <code>vector</code>, <code>list</code>, <code>hash-map</code>, and <code>hash-set</code> functions. I remembered to hit <code>shift+k</code> to read the documentation on <code>str</code> and that reminded me to try using these functions with different numbers of arguments:</p>
+<p>The macro works great as long as you don&#8217;t try to evaluate a line that throws an exception. You do get the same weird line of output every time&nbsp;(i.e. <code>a =&gt;</code>), so it&#8217;s easy enough to recognize. Wondering if and how Vim macros are stored, I was glad to discover they are stored automatically if you run Vim in noncompatible mode (which I do). So I haven&#8217;t bothered yet to store the macro in&nbsp;my <code>.vimrc</code> with&nbsp;the <code>let</code> command.</p>
+<h3>Exercise 1 - using some&nbsp;functions</h3>
+<p>The first exercise asks you to use&nbsp;the <code>str</code>, <code>vector</code>, <code>list</code>, <code>hash-map</code>,&nbsp;and <code>hash-set</code> functions. I remembered to&nbsp;hit <code>shift+k</code> to read the documentation&nbsp;on <code>str</code> and that reminded me to try using these functions with different numbers of&nbsp;arguments:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nf">str</span><span class="p">)</span> 
 <span class="c1">; =&gt; ""</span>
 <span class="p">(</span><span class="nb">str </span><span class="mi">1</span><span class="p">)</span>
@@ -127,20 +127,20 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <span class="c1">; =&gt; "1a"</span>
 </code></pre>
 
-<p>I'm still amazed by this behavior. It gives me a feeling of simplicity and clarity.</p>
-<h4>Lists and list literals</h4>
-<p>One problem I ran into is applying those functions on a list:</p>
+<p>I&#8217;m still amazed by this behavior. It gives me a feeling of simplicity and&nbsp;clarity.</p>
+<h4>Lists and list&nbsp;literals</h4>
+<p>One problem I ran into is applying those functions on a&nbsp;list:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">str </span><span class="mi">1</span> <span class="p">(</span><span class="mi">2</span> <span class="mi">3</span><span class="p">))</span> 
 <span class="c1">; ClassCastException class java.lang.Long cannot be cast to class clojure.lang.IFn</span>
 </code></pre>
 
-<p>Luckily, I wanted to double-check I was using the word "list" correctly in this blog post, which led me to the Clojure documentation on <a href="https://clojure.org/guides/learn/sequential_colls#_lists">lists</a> and to the solution<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. Lists are evaluated by invoking the first element as a function, so you need to quote it to prevent evaluation:</p>
+<p>Luckily, I wanted to double-check I was using the word &#8220;list&#8221; correctly in this blog post, which led me to the Clojure documentation on <a href="https://clojure.org/guides/learn/sequential_colls#_lists">lists</a> and to the solution<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. Lists are evaluated by invoking the first element as a function, so you need to quote it to prevent&nbsp;evaluation:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">str </span><span class="mi">1</span> <span class="o">'</span><span class="p">(</span><span class="mi">2</span> <span class="mi">3</span><span class="p">))</span>
 <span class="c1">; =&gt; "1(2 3)"</span>
 </code></pre>
 
-<h4>Non-keywords as keys in hash maps</h4>
-<p>Using the <code>hash-map</code> function had me wonder why the book consistenly uses keywords (e.g. <code>:name</code>) as the key in a hash map and not something else like a string or an integer. So I tried it out:</p>
+<h4>Non-keywords as keys in hash&nbsp;maps</h4>
+<p>Using&nbsp;the <code>hash-map</code> function had me wonder why the book consistenly uses keywords&nbsp;(e.g. <code>:name</code>) as the key in a hash map and not something else like a string or an integer. So I tried it&nbsp;out:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">hash-map </span><span class="mi">1</span> <span class="mi">2</span><span class="p">)</span>
 <span class="c1">; =&gt; {1 2}</span>
 <span class="p">(</span><span class="nb">hash-map </span><span class="ss">:1</span> <span class="mi">2</span><span class="p">)</span>
@@ -149,7 +149,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <span class="c1">; =&gt; {"a" "b"}</span>
 </code></pre>
 
-<p>Seems to work just fine, right? But then I remembered there are different ways to retrieve something from a hash map, so I tried those out.</p>
+<p>Seems to work just fine, right? But then I remembered there are different ways to retrieve something from a hash map, so I tried those&nbsp;out.</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">my-hash</span> <span class="p">(</span><span class="nb">hash-map </span><span class="mi">1</span> <span class="mi">2</span><span class="p">))</span>
 
 <span class="nv">my-hash</span>
@@ -170,11 +170,11 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <span class="c1">; =&gt; 2</span>
 </code></pre>
 
-<p>In <a href="../../2020/clj4-learning-when-maps-closures/">(clj 4)</a> I mentioned I was surprised about the three different ways to get a value from a map in Clojure. I don't think the example above explains why there's three, but it does show that by using keywords as keys in hash maps, at least you keep your options open.</p>
-<h3>Exercise 2 - writing a simple function</h3>
-<p>Exercise 2 asks you to write function that takes a number and adds 100 to it. It had me think briefly if I should write <code>(+ 100 number)</code> or <code>(+ number 100)</code>. The former made more sense to me. I'm doing <code>+ 100</code> to the number rather than <code>+</code> the number to <code>100</code>, but that might just be how my mind works.</p>
-<h4>Arity overloading</h4>
-<p>I ended up with this function:</p>
+<p>In <a href="../../2020/clj4-learning-when-maps-closures/">(clj 4)</a> I mentioned I was surprised about the three different ways to get a value from a map in Clojure. I don&#8217;t think the example above explains why there&#8217;s three, but it does show that by using keywords as keys in hash maps, at least you keep your options&nbsp;open.</p>
+<h3>Exercise 2 - writing a simple&nbsp;function</h3>
+<p>Exercise 2 asks you to write function that takes a number and adds 100 to it. It had me think briefly if I should&nbsp;write <code>(+ 100 number)</code> or <code>(+ number 100)</code>. The former made more sense to me. I&#8217;m&nbsp;doing <code>+ 100</code> to the number rather&nbsp;than <code>+</code> the number&nbsp;to <code>100</code>, but that might just be how my mind&nbsp;works.</p>
+<h4>Arity&nbsp;overloading</h4>
+<p>I ended up with this&nbsp;function:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">plus-100-arity-overloading</span>
   <span class="s">" add 100 to a number; return 100 if no argument given"</span>
   <span class="p">([</span><span class="nv">number</span><span class="p">]</span>
@@ -184,7 +184,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
   <span class="p">)</span>
 </code></pre>
 
-<p>As you can see, inspired by some of the functions from Exercise 1, I used arity overloading so that if you call the function without any arguments, it returns <code>100</code>. In my first version I returned <code>100</code> directly if the function was called withour arguments. After checking the section about arity overloading in the book, I realized that you want the function to call itself, filling in the omitted argument (<code>number</code> in this case). Not that it doesn't work if you don't, but you could get some unexpected behaviors:</p>
+<p>As you can see, inspired by some of the functions from Exercise 1, I used arity overloading so that if you call the function without any arguments, it&nbsp;returns <code>100</code>. In my first version I&nbsp;returned <code>100</code> directly if the function was called withour arguments. After checking the section about arity overloading in the book, I realized that you want the function to call itself, filling in the omitted argument&nbsp;(<code>number</code> in this case). Not that it doesn&#8217;t work if you don&#8217;t, but you could get some unexpected&nbsp;behaviors:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">plus-100-messed-up</span>
   <span class="p">([]</span>
    <span class="s">"one hundred"</span><span class="p">)</span>
@@ -199,8 +199,8 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <span class="c1">; =&gt; 100</span>
 </code></pre>
 
-<h3>Exercise 3 - change the function inc-maker to dec-maker</h3>
-<p>Exercise 3 wants you to take the <code>inc-maker</code> function shown earlier in the chapter and change it into a <code>dec-maker</code>. That's easy enough: copy-paste the <code>inc-maker</code>, rename it, and change a <code>+</code> into a <code>-</code>:<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
+<h3>Exercise 3 - change the function inc-maker to&nbsp;dec-maker</h3>
+<p>Exercise 3 wants you to take&nbsp;the <code>inc-maker</code> function shown earlier in the chapter and change it into&nbsp;a <code>dec-maker</code>. That&#8217;s easy enough: copy-paste&nbsp;the <code>inc-maker</code>, rename it, and change&nbsp;a <code>+</code> into&nbsp;a <code>-</code>:<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">dec-maker</span>
   <span class="p">[</span><span class="nv">dec-by</span><span class="p">]</span>
   <span class="o">#</span><span class="p">(</span><span class="nb">- </span><span class="nv">%</span> <span class="nv">dec-by</span><span class="p">))</span>
@@ -211,20 +211,20 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <span class="c1">; =&gt; 1</span>
 </code></pre>
 
-<h4>Revisiting the concept of closures</h4>
-<p>However, the book shows you the <code>inc-maker</code> function to illustrate how a returned function is a "closure". And as you can read in <a href="../../2020/clj4-learning-when-maps-closures/">(clj 4)</a>, I did not understand the explanation, when I first came across it. Since it still bugged me that I don't understand, I decided to give it another try.</p>
-<p>The explanation in the book is as follows:</p>
+<h4>Revisiting the concept of&nbsp;closures</h4>
+<p>However, the book shows you&nbsp;the <code>inc-maker</code> function to illustrate how a returned function is a &#8220;closure&#8221;. And as you can read in <a href="../../2020/clj4-learning-when-maps-closures/">(clj 4)</a>, I did not understand the explanation, when I first came across it. Since it still bugged me that I don&#8217;t understand, I decided to give it another&nbsp;try.</p>
+<p>The explanation in the book is as&nbsp;follows:</p>
 <blockquote>
-<p>By now you’ve seen that functions can return other functions. The returned functions are <em>closures</em>, which means that they can access all the variables that were in scope when the function was created.</p>
-<p>Here, <code>inc-by</code> is in scope, so the returned function has access to it even when the returned function is used outside <code>inc-maker</code>.</p>
+<p>By now you’ve seen that functions can return other functions. The returned functions are <em>closures</em>, which means that they can access all the variables that were in scope when the function was&nbsp;created.</p>
+<p>Here, <code>inc-by</code> is in scope, so the returned function has access to it even when the returned function is used&nbsp;outside <code>inc-maker</code>.</p>
 </blockquote>
-<p>What I noticed back then and re-noticed just now is that <code>inc-maker</code> and <code>dec-maker</code> are defined with <code>defn</code>, so as a function. However, <code>inc3</code> from the book and <code>dec9</code> from the exercise (see above) are defined with <code>def</code>, which is used to bind a name to a value. So I checked the <a href="https://clojuredocs.org/clojure.core/defn">Clojure documentation on <code>defn</code></a> and it says <code>defn</code> is the same as <code>(def name (fn [params* ] exprs*))</code>:</p>
+<p>What I noticed back then and re-noticed just now is&nbsp;that <code>inc-maker</code> and <code>dec-maker</code> are defined&nbsp;with <code>defn</code>, so as a function.&nbsp;However, <code>inc3</code> from the book&nbsp;and <code>dec9</code> from the exercise (see above) are defined&nbsp;with <code>def</code>, which is used to bind a name to a value. So I checked the <a href="https://clojuredocs.org/clojure.core/defn">Clojure documentation&nbsp;on <code>defn</code></a> and it&nbsp;says <code>defn</code> is the same&nbsp;as <code>(def name (fn [params* ] exprs*))</code>:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">def-dec9</span> <span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">num</span><span class="p">]</span> <span class="p">(</span><span class="nb">- </span><span class="nv">num</span> <span class="mi">9</span><span class="p">)))</span>
 <span class="p">(</span><span class="nf">def-dec9</span> <span class="mi">10</span><span class="p">)</span>
 <span class="c1">; =&gt; 1</span>
 </code></pre>
 
-<p>So that's a different syntax from the <code>inc-maker</code>/<code>dec-maker</code> example. Using Clojure's <a href="https://clojuredocs.org/clojure.core/type"><code>type</code></a> confirms this difference, but I have no idea what it means exactly:</p>
+<p>So that&#8217;s a different syntax from&nbsp;the <code>inc-maker</code>/<code>dec-maker</code> example. Using Clojure&#8217;s <a href="https://clojuredocs.org/clojure.core/type"><code>type</code></a> confirms this difference, but I have no idea what it means&nbsp;exactly:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nf">type</span> <span class="nv">dec9</span><span class="p">)</span>
 <span class="c1">; =&gt; clojure_noob.core$dec_maker$fn__1458</span>
 
@@ -232,18 +232,18 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <span class="nv">=&gt;</span> <span class="nv">clojure_noob.core$def_dec9</span>
 </code></pre>
 
-<p>Having revisited all of this, the concept "closures" of does make a little more sense to me, although I still wouldn't be able to really explain it. I did a search in the book and "closure" occurs twice: once in the explanation of <code>inc-maker</code> and once in the index. So I should be fine with my current understanding - or my lack thereof.</p>
+<p>Having revisited all of this, the concept &#8220;closures&#8221; of does make a little more sense to me, although I still wouldn&#8217;t be able to really explain it. I did a search in the book and &#8220;closure&#8221; occurs twice: once in the explanation&nbsp;of <code>inc-maker</code> and once in the index. So I should be fine with my current understanding - or my lack&nbsp;thereof.</p>
 <div class="footnote">
 <hr>
 <ol>
 <li id="fn:1">
-<p>I've only done the first three exercises at the end of chapter 3, but the authors said it's fine to skip the other three exercises and revisit them after chapters 4 and 5. I tried solving exercise 4 for a bit and decided it's better to skip and revisit. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+<p>I&#8217;ve only done the first three exercises at the end of chapter 3, but the authors said it&#8217;s fine to skip the other three exercises and revisit them after chapters 4 and 5. I tried solving exercise 4 for a bit and decided it&#8217;s better to skip and revisit. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
 </li>
 <li id="fn:2">
-<p>I checked the explanation on lists in "Clojure for the Brave and True". It does tell you to use the single quote, but it also says the explanation won't be covered until Chapter 7. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+<p>I checked the explanation on lists in &#8220;Clojure for the Brave and True&#8221;. It does tell you to use the single quote, but it also says the explanation won&#8217;t be covered until Chapter 7. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
 </li>
 <li id="fn:3">
-<p>Which got me curious about providing more than two arguments to the <code>-</code> function. Turns out it works as you'd expect. <code>(- 10 1 2)</code> gives you 7. <code>(- 10 1 -2)</code> gives you 11. <code>(- 10 -1 2)</code> gives you 9.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
+<p>Which got me curious about providing more than two arguments to&nbsp;the <code>-</code> function. Turns out it works as you&#8217;d&nbsp;expect. <code>(- 10 1 2)</code> gives you&nbsp;7. <code>(- 10 1 -2)</code> gives you&nbsp;11. <code>(- 10 -1 2)</code> gives you 9.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
 </li>
 <li id="fn:4">
 <p>Turns out code blocks do not work in footnotes, but footnotes in footnotes do. <a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">↩</a></p>
@@ -253,16 +253,16 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 </div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../../../categories/brave-clojure/" rel="tag">brave clojure</a></li>
+<li><a class="tag p-category" href="../../../../categories/brave-clojure/" rel="tag">brave&nbsp;clojure</a></li>
             <li><a class="tag p-category" href="../../../../categories/clojure/" rel="tag">clojure</a></li>
             <li><a class="tag p-category" href="../../../../categories/programming/" rel="tag">programming</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../../../2021/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto/" rel="prev" title="An approach to teaching Agile 20 years after the Agile Manifesto">Previous post</a>
+                <a href="../../../2021/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto/" rel="prev" title="An approach to teaching Agile 20 years after the Agile Manifesto">Previous&nbsp;post</a>
             </li>
             <li class="next">
-                <a href="../../../2021/two-times-remote-elephant-carpaccio/" rel="next" title="Two times remote Elephant Carpaccio">Next post</a>
+                <a href="../../../2021/two-times-remote-elephant-carpaccio/" rel="next" title="Two times remote Elephant Carpaccio">Next&nbsp;post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer">
             Contents © 2022     

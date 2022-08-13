@@ -80,7 +80,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
                     <a href="../../" class="dropdown-item">My blog</a>
                     <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
                     <a href="../../../archive.html" class="dropdown-item">Archive</a>
-                    <a href="../../rss.xml" class="dropdown-item">RSS feed</a>
+                    <a href="../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
                     <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
             </div>
 
@@ -96,11 +96,11 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
     <div class="body-content">
         <!--Body content-->
         
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Regression testing, it means less than you think</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Regression testing, it means less than you&nbsp;think</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    Joep Schuurkes
+                    Joep&nbsp;Schuurkes
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -111,73 +111,73 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<p>The past weeks I have made several attempts at a blog post about regression testing. About how we use it to refer to different things: tests running on a CI server, people executing test scripts, etc. And about how often the term really doesn't mean much at all, yet nobody questions you when you use it: "What are you doing?" "Regression testing." "Oh good, carry on." The point of the post would be to argue we should use the term 'regression testing' a lot less, because most of the time we can be more specific without having to be more verbose.</p>
-<p>However, the more I thought about (what I would qualify as) proper regression testing, the more I felt that regression versus progression (or progressive) testing is a distinction without difference. One interesting observation in this regard is that "regression testing" returns 30 times more results on Google than "progression testing" and "progressive testing" combined. So what's going on here if we have a dichotomy with one member producing so much more discussion than the other? And there's more: regression testing is commonly contrasted with test types like functional testing and usability testing. But how then should I categorize a regression test focusing on functionality<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>?</p>
+<p>The past weeks I have made several attempts at a blog post about regression testing. About how we use it to refer to different things: tests running on a <span class="caps">CI</span> server, people executing test scripts, etc. And about how often the term really doesn&#8217;t mean much at all, yet nobody questions you when you use it: &#8220;What are you doing?&#8221; &#8220;Regression testing.&#8221; &#8220;Oh good, carry on.&#8221; The point of the post would be to argue we should use the term &#8216;regression testing&#8217; a lot less, because most of the time we can be more specific without having to be more&nbsp;verbose.</p>
+<p>However, the more I thought about (what I would qualify as) proper regression testing, the more I felt that regression versus progression (or progressive) testing is a distinction without difference. One interesting observation in this regard is that &#8220;regression testing&#8221; returns 30 times more results on Google than &#8220;progression testing&#8221; and &#8220;progressive testing&#8221; combined. So what&#8217;s going on here if we have a dichotomy with one member producing so much more discussion than the other? And there&#8217;s more: regression testing is commonly contrasted with test types like functional testing and usability testing. But how then should I categorize a regression test focusing on functionality<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>?</p>
 <!-- TEASER_END -->
 
-<p>Anyhow, more thinking followed and the result is what you are reading here. A blog post describing four different things you could call regression testing. The first two I don't consider to be regression testing, the third one I find confusing and in the fourth I am reluctant to use the term at all.</p>
-<p>Oh wait, I do have to provide a definition of regression testing for within this blog post, so here you go: Regression testing is testing the things you don't expect to observe any changes in.</p>
-<h4>Regression testing as part of continuous integration</h4>
-<p>Situation: your regression test is a bunch of automated checks running on your CI server.</p>
-<p>Although I see great value in this, it's debatable if this qualifies as testing. You commit your code and check if the build is green or red. If it goes red, you know there is a problem somewhere. If it stays green, you know the checks did not detect anything alarming and you move on. This is why people refer to these checks as change detectors<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. Because so far, no real testing is going on. On the other hand, you likely will do testing when you are investigating why the build went red. And testing was involved when you wrote the checks, and arguably when people decided how to run which checks on the CI server. So whether running these checks should be considered testing or not strongly depends on your choice of perspective.</p>
-<p>More important for this blog post and referring back to the definition, the decision which checks to run has no relation to where we don't expect to see any changes. The checks that are run are simply the checks that the CI server has been configured to run. And some of those checks are checks you changed or created because of the code changes in your commit. So there really is no consideration for changed versus unchanged areas here, which means there is no good reason to call running these checks regression testing.</p>
-<p>(Not directly relevant, but related and interesting: for a critique of the fully automated approach to regression testing, watch this short Whiteboard Testing video "<a href="https://www.youtube.com/watch?v=P2PUXqasvGI">Regression Testing, the F.A.R.T Model</a>".)</p>
-<h4>Regression testing with a suite of regression test scripts</h4>
-<p>Situation: you have a suite of test scripts you execute every time you perform a regression test.</p>
-<p>The problem here is that you have the worst of two worlds: people trying to be like CI servers, executing the same test scripts every time, while that's not what people are good at. So it's time to make a choice: either go machine-centric and automate it all, or go human-centric and give them more freedom<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>. In any case, what's going on here, is not regression testing. It's slow, error-prone change detection, again with no consideration what has and what hasn't been changed.</p>
-<h4>Regression testing by doing actual testing</h4>
-<p>Situation: you identify the things you don't expect to observe any changes in and you test those.</p>
-<p>This is the part where my thoughts become a little messy. Let's start with some questions:</p>
+<p>Anyhow, more thinking followed and the result is what you are reading here. A blog post describing four different things you could call regression testing. The first two I don&#8217;t consider to be regression testing, the third one I find confusing and in the fourth I am reluctant to use the term at&nbsp;all.</p>
+<p>Oh wait, I do have to provide a definition of regression testing for within this blog post, so here you go: Regression testing is testing the things you don&#8217;t expect to observe any changes&nbsp;in.</p>
+<h4>Regression testing as part of continuous&nbsp;integration</h4>
+<p>Situation: your regression test is a bunch of automated checks running on your <span class="caps">CI</span>&nbsp;server.</p>
+<p>Although I see great value in this, it&#8217;s debatable if this qualifies as testing. You commit your code and check if the build is green or red. If it goes red, you know there is a problem somewhere. If it stays green, you know the checks did not detect anything alarming and you move on. This is why people refer to these checks as change detectors<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. Because so far, no real testing is going on. On the other hand, you likely will do testing when you are investigating why the build went red. And testing was involved when you wrote the checks, and arguably when people decided how to run which checks on the <span class="caps">CI</span> server. So whether running these checks should be considered testing or not strongly depends on your choice of&nbsp;perspective.</p>
+<p>More important for this blog post and referring back to the definition, the decision which checks to run has no relation to where we don&#8217;t expect to see any changes. The checks that are run are simply the checks that the <span class="caps">CI</span> server has been configured to run. And some of those checks are checks you changed or created because of the code changes in your commit. So there really is no consideration for changed versus unchanged areas here, which means there is no good reason to call running these checks regression&nbsp;testing.</p>
+<p>(Not directly relevant, but related and interesting: for a critique of the fully automated approach to regression testing, watch this short Whiteboard Testing video &#8220;<a href="https://www.youtube.com/watch?v=P2PUXqasvGI">Regression Testing, the <span class="caps">F.A.R.</span>T Model</a>&#8220;.)</p>
+<h4>Regression testing with a suite of regression test&nbsp;scripts</h4>
+<p>Situation: you have a suite of test scripts you execute every time you perform a regression&nbsp;test.</p>
+<p>The problem here is that you have the worst of two worlds: people trying to be like <span class="caps">CI</span> servers, executing the same test scripts every time, while that&#8217;s not what people are good at. So it&#8217;s time to make a choice: either go machine-centric and automate it all, or go human-centric and give them more freedom<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>. In any case, what&#8217;s going on here, is not regression testing. It&#8217;s slow, error-prone change detection, again with no consideration what has and what hasn&#8217;t been&nbsp;changed.</p>
+<h4>Regression testing by doing actual&nbsp;testing</h4>
+<p>Situation: you identify the things you don&#8217;t expect to observe any changes in and you test&nbsp;those.</p>
+<p>This is the part where my thoughts become a little messy. Let&#8217;s start with some&nbsp;questions:</p>
 <ul>
 <li>How do you decide that something is a thing<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>?</li>
-<li>When deciding what is a thing and what isn't, why do we so strongly prefer modules and interfaces as things<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>?</li>
-<li>How do we decide that a change in thing A should not have any effect on thing B?</li>
-<li>How do we know which observations are needed to decide that thing B is not affected by a change in thing A?</li>
+<li>When deciding what is a thing and what isn&#8217;t, why do we so strongly prefer modules and interfaces as things<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>?</li>
+<li>How do we decide that a change in thing A should not have any effect on thing&nbsp;B?</li>
+<li>How do we know which observations are needed to decide that thing B is not affected by a change in thing&nbsp;A?</li>
 </ul>
-<p>The answer to all of these questions is: a model. You need a model for all three activities: mapping out the application, deciding the impact of a change, and designing your tests. However, if my model predicts there are no changes, how can that same model inform my test design? It provides me with no information whatsoever about what to focus my testing on. Wich shows that we should not be using the same model for all three activities. Even more, we should be using different models within all three activities.</p>
-<p>However, that does not solve the problem of 'regression testing', the definition of which largely depends on the second activity: deciding where you don't expect any changes. And this decision is fully dependent on which model you use. What is regression testing according to one model, might be progression testing to a different model. So actually the distinction between regression and progression testing is based on our lack of knowledge and/or imagination to predict a change.</p>
-<p>And this is where my understanding of 'regression testing' starts to break down. If you are testing a refactored feature, are you regression testing or progression testing? The code changed, so that's progression testing, but the behaviour of the feature hasn't, so you're regression testing. If you are testing a feature and you find no bugs in the feature as such, but you do find a regression bug related to the feature, would you say the feature works? If so, how does that even make sense? If one part of a workflow changes and I am testing the whole workflow, am I progression or regression testing? Or does that depend on where I find a bug, if any?</p>
-<p>Ok, enough questions. Let's go over this one more time. A change was made in area A and none of my models predict an impact on area B. Why would I want to regression test area B? Two possible reasons: either I do not sufficiently trust my judgement, or Area B is so important, my judgement doesn't matter. So what I am acutally saying when I want to regression test area B, is that I have identified a low-risk area that's important enough that I want to test it. But then... how is this different from testing in general? Why would it need a separate term? Well, that's why we have a fourth and last section in this blog post.</p>
-<h4>Regression testing without regression testing</h4>
-<p>Situation: whenever you test something, you consider what needs testing and you test it. Which is to say: you're testing a feature, a release, or a whatever, and you decide what testing will give you the information you're looking for.</p>
-<p>This is what in my opinion we should be doing: test the things that are important enough to test. The notion 'regression testing' is not relevant in that discussion.</p>
-<p>Does this mean that the term 'regression testing' is meaningless within this approach? No, it doesn't. It does mean that 'regression testing' is a lot less important as a concept. You might be testing a feature, focusing on usability. And you might not expect to find any issues, because it's a regression test, i.e. you don't expect the changes that were made, to have had any impact. Then it makes perfect sense to use the term, but at best 'regression test' is the fourth thing you mention, because only in the context of those other three things, it has any meaning.</p>
+<p>The answer to all of these questions is: a model. You need a model for all three activities: mapping out the application, deciding the impact of a change, and designing your tests. However, if my model predicts there are no changes, how can that same model inform my test design? It provides me with no information whatsoever about what to focus my testing on. Wich shows that we should not be using the same model for all three activities. Even more, we should be using different models within all three&nbsp;activities.</p>
+<p>However, that does not solve the problem of &#8216;regression testing&#8217;, the definition of which largely depends on the second activity: deciding where you don&#8217;t expect any changes. And this decision is fully dependent on which model you use. What is regression testing according to one model, might be progression testing to a different model. So actually the distinction between regression and progression testing is based on our lack of knowledge and/or imagination to predict a&nbsp;change.</p>
+<p>And this is where my understanding of &#8216;regression testing&#8217; starts to break down. If you are testing a refactored feature, are you regression testing or progression testing? The code changed, so that&#8217;s progression testing, but the behaviour of the feature hasn&#8217;t, so you&#8217;re regression testing. If you are testing a feature and you find no bugs in the feature as such, but you do find a regression bug related to the feature, would you say the feature works? If so, how does that even make sense? If one part of a workflow changes and I am testing the whole workflow, am I progression or regression testing? Or does that depend on where I find a bug, if&nbsp;any?</p>
+<p>Ok, enough questions. Let&#8217;s go over this one more time. A change was made in area A and none of my models predict an impact on area B. Why would I want to regression test area B? Two possible reasons: either I do not sufficiently trust my judgement, or Area B is so important, my judgement doesn&#8217;t matter. So what I am acutally saying when I want to regression test area B, is that I have identified a low-risk area that&#8217;s important enough that I want to test it. But then&#8230; how is this different from testing in general? Why would it need a separate term? Well, that&#8217;s why we have a fourth and last section in this blog&nbsp;post.</p>
+<h4>Regression testing without regression&nbsp;testing</h4>
+<p>Situation: whenever you test something, you consider what needs testing and you test it. Which is to say: you&#8217;re testing a feature, a release, or a whatever, and you decide what testing will give you the information you&#8217;re looking&nbsp;for.</p>
+<p>This is what in my opinion we should be doing: test the things that are important enough to test. The notion &#8216;regression testing&#8217; is not relevant in that&nbsp;discussion.</p>
+<p>Does this mean that the term &#8216;regression testing&#8217; is meaningless within this approach? No, it doesn&#8217;t. It does mean that &#8216;regression testing&#8217; is a lot less important as a concept. You might be testing a feature, focusing on usability. And you might not expect to find any issues, because it&#8217;s a regression test, i.e. you don&#8217;t expect the changes that were made, to have had any impact. Then it makes perfect sense to use the term, but at best &#8216;regression test&#8217; is the fourth thing you mention, because only in the context of those other three things, it has any&nbsp;meaning.</p>
 <hr>
 <p><em>This post was originally published <a href="https://testingcurve.wordpress.com/2016/01/03/regression-testing-it-means-less-than-you-think/">here</a>.</em></p>
 <div class="footnote">
 <hr>
 <ol>
 <li id="fn:1">
-<p>I'm definitely not the first one to notice this peculiarity, see e.g. <a href="http://arborosa.org/2015/07/31/regression-testing/">Arborosa's blog post about regression testing</a>: "such a definition [...] only provides the intention of this type, or should I say activity, of testing. Regression testing could still encompass any other testing type in practice." <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+<p>I&#8217;m definitely not the first one to notice this peculiarity, see e.g. <a href="http://arborosa.org/2015/07/31/regression-testing/">Arborosa&#8217;s blog post about regression testing</a>: &#8220;such a definition [&#8230;] only provides the intention of this type, or should I say activity, of testing. Regression testing could still encompass any other testing type in practice.&#8221; <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
 </li>
 <li id="fn:2">
-<p>I am not sure who first used the term 'change detector' in this way. The oldest reference I could find is from 2005: Regression testing by Cem Kaner and James Bach. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+<p>I am not sure who first used the term &#8216;change detector&#8217; in this way. The oldest reference I could find is from 2005: Regression testing by Cem Kaner and James Bach. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
 </li>
 <li id="fn:3">
-<p>Just to be clear: machine-centric will involve humans and human-centric will involve machines. The question is: what's the focus? Humans supporting machines (i.e. machine-centric) or machines supporting humans (i.e. human-centric). And of course, until our robotic overlords are here, at the highest level what you do will be human-centric. (Afterwards too, actually, I hope.) <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
+<p>Just to be clear: machine-centric will involve humans and human-centric will involve machines. The question is: what&#8217;s the focus? Humans supporting machines (i.e. machine-centric) or machines supporting humans (i.e. human-centric). And of course, until our robotic overlords are here, at the highest level what you do will be human-centric. (Afterwards too, actually, I hope.) <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
 </li>
 <li id="fn:4">
 <p>Some further explanation for the less philosophically inclined: according to a city map, streets and buildings are things, but people and the weather are not. If your application is a city, what kind of map would you draw? What elements would it include and which would it omit? <a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">↩</a></p>
 </li>
 <li id="fn:5">
-<p>There's a more general blog post hidden in this question, expanding into the philosophical: why are most Western ontologies focused on things instead of processes? <a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">↩</a></p>
+<p>There&#8217;s a more general blog post hidden in this question, expanding into the philosophical: why are most Western ontologies focused on things instead of processes? <a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">↩</a></p>
 </li>
 </ol>
 </div>
 </div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../../categories/regression-testing/" rel="tag">regression testing</a></li>
+<li><a class="tag p-category" href="../../../categories/regression-testing/" rel="tag">regression&nbsp;testing</a></li>
             <li><a class="tag p-category" href="../../../categories/semantics/" rel="tag">semantics</a></li>
-            <li><a class="tag p-category" href="../../../categories/test-management/" rel="tag">test management</a></li>
-            <li><a class="tag p-category" href="../../../categories/test-strategy/" rel="tag">test strategy</a></li>
+            <li><a class="tag p-category" href="../../../categories/test-management/" rel="tag">test&nbsp;management</a></li>
+            <li><a class="tag p-category" href="../../../categories/test-strategy/" rel="tag">test&nbsp;strategy</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../../2015/why-the-testingchecking-debate-is-so-messy-a-fruit-salad-analogy/" rel="prev" title="Why the testing/checking debate is so messy - a fruit salad analogy">Previous post</a>
+                <a href="../../2015/why-the-testingchecking-debate-is-so-messy-a-fruit-salad-analogy/" rel="prev" title="Why the testing/checking debate is so messy - a fruit salad analogy">Previous&nbsp;post</a>
             </li>
             <li class="next">
-                <a href="../../2017/testing-maturity-in-an-agilecdt-context/" rel="next" title="Testing maturity in an agile/CDT context">Next post</a>
+                <a href="../../2017/testing-maturity-in-an-agilecdt-context/" rel="next" title="Testing maturity in an agile/CDT context">Next&nbsp;post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer">
             Contents © 2022     

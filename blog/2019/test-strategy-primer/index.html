@@ -80,7 +80,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
                     <a href="../../" class="dropdown-item">My blog</a>
                     <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
                     <a href="../../../archive.html" class="dropdown-item">Archive</a>
-                    <a href="../../rss.xml" class="dropdown-item">RSS feed</a>
+                    <a href="../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
                     <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
             </div>
 
@@ -96,11 +96,11 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
     <div class="body-content">
         <!--Body content-->
         
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Test strategy primer</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Test strategy&nbsp;primer</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    Joep Schuurkes
+                    Joep&nbsp;Schuurkes
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -111,135 +111,135 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<p><em>I originally wrote this primer to share with people at work. The first section is intended to be generally applicable; the second not necessarily so. The main influences on this primer are:</em><br><em>- Rapid Software Testing's <a href="https://www.satisfice.com/tools/htsm.pdf">Heuristic Test Strategy Model</a></em><br><em>- James Lyndsay's <a href="http://www.workroom-productions.com/papers/Exploration%20and%20Strategy.pdf">Why Exploration has a place in any Strategy</a></em><br><em>- Rikard Edgren's <a href="http://www.thetesteye.com/papers/TheLittleBlackBookOnTestDesign.pdf">Little Black Book on Test Design</a></em></p>
-<p>This document contains two sections:</p>
+<p><em>I originally wrote this primer to share with people at work. The first section is intended to be generally applicable; the second not necessarily so. The main influences on this primer are:</em><br><em>- Rapid Software Testing&#8217;s <a href="https://www.satisfice.com/tools/htsm.pdf">Heuristic Test Strategy Model</a></em><br><em>- James Lyndsay&#8217;s <a href="http://www.workroom-productions.com/papers/Exploration%20and%20Strategy.pdf">Why Exploration has a place in any Strategy</a></em><br><em>- Rikard Edgren&#8217;s <a href="http://www.thetesteye.com/papers/TheLittleBlackBookOnTestDesign.pdf">Little Black Book on Test&nbsp;Design</a></em></p>
+<p>This document contains two&nbsp;sections:</p>
 <ul>
-<li>Why have a test strategy? - what is a test strategy and what's its purpose</li>
-<li>Test strategy checklist - checklist for describing your test strategy</li>
+<li>Why have a test strategy? - what is a test strategy and what&#8217;s its&nbsp;purpose</li>
+<li>Test strategy checklist - checklist for describing your test&nbsp;strategy</li>
 </ul>
-<h3>Why have a test strategy?</h3>
-<p>The purpose of a test strategy is to answer the question: "How do we know that what we are building, is good enough?" As such, every team has a test strategy, even if it's only implicitly defined through the actions of the team members.</p>
+<h3>Why have a test&nbsp;strategy?</h3>
+<p>The purpose of a test strategy is to answer the question: &#8220;How do we know that what we are building, is good enough?&#8221; As such, every team has a test strategy, even if it&#8217;s only implicitly defined through the actions of the team&nbsp;members.</p>
 <!-- TEASER_END -->
 
-<p>The value of documenting your test strategy is to create an explicit shared understanding of your strategy among your stakeholders (that includes you as team members) . So your test strategy document should be a living document, a tool that helps you deliver software better.</p>
-<p>A good test strategy is characterized by diverse half-measures: diversity is often more important than depth.</p>
-<h4>"How do we know that what we are building, is good enough?"</h4>
-<h5>"what we are building"</h5>
-<p>You can look at what we are building from different perspectives:</p>
+<p>The value of documenting your test strategy is to create an explicit shared understanding of your strategy among your stakeholders (that includes you as team members) . So your test strategy document should be a living document, a tool that helps you deliver software&nbsp;better.</p>
+<p>A good test strategy is characterized by diverse half-measures: diversity is often more important than&nbsp;depth.</p>
+<h4><span class="dquo">&#8220;</span>How do we know that what we are building, is good&nbsp;enough?&#8221;</h4>
+<h5><span class="dquo">&#8220;</span>what we are&nbsp;building&#8221;</h5>
+<p>You can look at what we are building from different&nbsp;perspectives:</p>
 <ul>
-<li>a piece of code</li>
-<li>one or more components</li>
-<li>a feature</li>
-<li>a capability</li>
-<li>a product</li>
+<li>a piece of&nbsp;code</li>
+<li>one or more&nbsp;components</li>
+<li>a&nbsp;feature</li>
+<li>a&nbsp;capability</li>
+<li>a&nbsp;product</li>
 </ul>
-<h5>"good"</h5>
-<p>A good way to approach this is to split up "good" in different quality attributes such as capability, security, maintainability. Two good checklists with quality attributes are:</p>
+<h5><span class="dquo">&#8220;</span>good&#8221;</h5>
+<p>A good way to approach this is to split up &#8220;good&#8221; in different quality attributes such as capability, security, maintainability. Two good checklists with quality attributes&nbsp;are:</p>
 <ul>
-<li>The Test Eye's <a href="http://thetesteye.com/posters/TheTestEye_SoftwareQualityCharacteristics.pdf">Software Quality Characteristics</a>
+<li>The Test Eye&#8217;s <a href="http://thetesteye.com/posters/TheTestEye_SoftwareQualityCharacteristics.pdf">Software Quality&nbsp;Characteristics</a>
 </li>
-<li>The Heuristic Test Strategy Model's <a href="https://www.satisfice.com/tools/htsm.pdf">Quality Criteria Categories</a> (page 5)</li>
+<li>The Heuristic Test Strategy Model&#8217;s <a href="https://www.satisfice.com/tools/htsm.pdf">Quality Criteria Categories</a> (page&nbsp;5)</li>
 </ul>
-<h5>"good enough"</h5>
-<p>Something is good enough when it provides sufficient value at low enough risk. Exactly where to draw that line, is a decision for the team's stakeholders.</p>
-<p>Evaluating value starts from our expectations, e.g. acceptance criteria. It's about showing that something works, that it provides the value we want it to provide. Scripted approaches, i.e. the test is largely or completely defined beforehand, work well in this area - especially when you can define these in code instead of manual instructions.</p>
-<p>Evaluating risk starts from the thing we are building. It's about looking for problems, that what we're building is not doing things we don't want it to do. Exploratory approaches work well in this area, because you don't know beforehand what exactly you are looking for.</p>
-<p>A few important things to note:</p>
+<h5><span class="dquo">&#8220;</span>good&nbsp;enough&#8221;</h5>
+<p>Something is good enough when it provides sufficient value at low enough risk. Exactly where to draw that line, is a decision for the team&#8217;s&nbsp;stakeholders.</p>
+<p>Evaluating value starts from our expectations, e.g. acceptance criteria. It&#8217;s about showing that something works, that it provides the value we want it to provide. Scripted approaches, i.e. the test is largely or completely defined beforehand, work well in this area - especially when you can define these in code instead of manual&nbsp;instructions.</p>
+<p>Evaluating risk starts from the thing we are building. It&#8217;s about looking for problems, that what we&#8217;re building is not doing things we don&#8217;t want it to do. Exploratory approaches work well in this area, because you don&#8217;t know beforehand what exactly you are looking&nbsp;for.</p>
+<p>A few important things to&nbsp;note:</p>
 <ul>
-<li>The two approaches (scripted versus exploratory) exist in a continuum. When testing, you move within this continuum.</li>
-<li>Both approaches can be applied to any level or across levels of your stack.</li>
-<li>Both approaches benefit greatly from using different kinds of tools.</li>
+<li>The two approaches (scripted versus exploratory) exist in a continuum. When testing, you move within this&nbsp;continuum.</li>
+<li>Both approaches can be applied to any level or across levels of your&nbsp;stack.</li>
+<li>Both approaches benefit greatly from using different kinds of&nbsp;tools.</li>
 </ul>
-<h5>"how do we know"</h5>
-<p>What are the things we do?</p>
+<h5><span class="dquo">&#8220;</span>how do we&nbsp;know&#8221;</h5>
+<p>What are the things we&nbsp;do?</p>
 <ul>
-<li>static testing (code does not need to run), examples: code review, code analysis.</li>
-<li>dynamic testing (code needs to run), examples: unit testing, system testing, performance testing.</li>
-<li>monitoring (product is used by customers), examples: log alerts, server monitoring, support tickets dashboard.</li>
+<li>static testing (code does not need to run), examples: code review, code&nbsp;analysis.</li>
+<li>dynamic testing (code needs to run), examples: unit testing, system testing, performance&nbsp;testing.</li>
+<li>monitoring (product is used by customers), examples: log alerts, server monitoring, support tickets&nbsp;dashboard.</li>
 </ul>
-<h3>Test strategy checklist</h3>
-<h4>Products &amp; components</h4>
+<h3>Test strategy&nbsp;checklist</h3>
+<h4>Products <span class="amp">&amp;</span>&nbsp;components</h4>
 <ul>
-<li>What product(s) do we contribute to?</li>
-<li>Why would our company want to have these products?</li>
-<li>What components of those products are we responsible for?</li>
+<li>What product(s) do we contribute&nbsp;to?</li>
+<li>Why would our company want to have these&nbsp;products?</li>
+<li>What components of those products are we responsible&nbsp;for?</li>
 <li>Critical dependencies of our components:<ul>
-<li>What do our components depend on?</li>
-<li>What has dependencies on our components?</li>
+<li>What do our components depend&nbsp;on?</li>
+<li>What has dependencies on our&nbsp;components?</li>
 </ul>
 </li>
 </ul>
-<h4>Feature testing</h4>
+<h4>Feature&nbsp;testing</h4>
 <ul>
 <li>What testing is done while developing a feature?<ul>
-<li>which quality characteristics do you focus on?</li>
-<li>what levels of the stack and/or which components are part of the test?</li>
-<li>what testing is done as part of a pipeline (see below)?</li>
+<li>which quality characteristics do you focus&nbsp;on?</li>
+<li>what levels of the stack and/or which components are part of the&nbsp;test?</li>
+<li>what testing is done as part of a pipeline (see&nbsp;below)?</li>
 </ul>
 </li>
-<li>What testing have you decided <strong>not</strong> to do, i.e. is not in scope?</li>
+<li>What testing have you decided <strong>not</strong> to do, i.e. is not in&nbsp;scope?</li>
 </ul>
-<h4>Release testing</h4>
+<h4>Release&nbsp;testing</h4>
 <ul>
 <li>What testing is performed on the release candidate?<ul>
-<li>which quality characteristics do you focus on?</li>
-<li>what levels of the stack and/or which components are part of the test?</li>
-<li>what testing is done as part of a pipeline (see below)?</li>
+<li>which quality characteristics do you focus&nbsp;on?</li>
+<li>what levels of the stack and/or which components are part of the&nbsp;test?</li>
+<li>what testing is done as part of a pipeline (see&nbsp;below)?</li>
 </ul>
 </li>
-<li>To what degree do you repeat your feature testing during release testing?</li>
-<li>What testing have you decided <strong>not</strong> to do, i.e. is not in scope?</li>
+<li>To what degree do you repeat your feature testing during release&nbsp;testing?</li>
+<li>What testing have you decided <strong>not</strong> to do, i.e. is not in&nbsp;scope?</li>
 </ul>
-<h4>CI/CD pipeline(s)</h4>
+<h4><span class="caps">CI</span>/<span class="caps">CD</span>&nbsp;pipeline(s)</h4>
 <ul>
 <li>What is covered by the pipeline(s)?<ul>
-<li>code analysis</li>
+<li>code&nbsp;analysis</li>
 <li>auto-tests</li>
 <li>deployment</li>
 </ul>
 </li>
 <li>When/how are they triggered?<ul>
 <li>schedule</li>
-<li>commits, merge requests, ...</li>
+<li>commits, merge requests,&nbsp;&#8230;</li>
 </ul>
 </li>
-<li>Is there a dashboard?</li>
-<li>What happens if a pipeline goes red?</li>
+<li>Is there a&nbsp;dashboard?</li>
+<li>What happens if a pipeline goes&nbsp;red?</li>
 </ul>
-<h4>Testing done by others</h4>
+<h4>Testing done by&nbsp;others</h4>
 <ul>
 <li>What testing is done by others?<ul>
-<li>Examples: security testing by a 3rd party, beta-releases.</li>
+<li>Examples: security testing by a 3rd party,&nbsp;beta-releases.</li>
 </ul>
 </li>
 </ul>
 <h4>Monitoring</h4>
 <ul>
 <li>How do you monitor your production environment(s)?<ul>
-<li>Examples: server metrics, logs, user analytics, support tickets.</li>
+<li>Examples: server metrics, logs, user analytics, support&nbsp;tickets.</li>
 </ul>
 </li>
 </ul>
 <h4>Impediments</h4>
 <ul>
 <li>What is slowing down your testing?<ul>
-<li>Examples: architecture, design, skills, tools, team capacity.</li>
+<li>Examples: architecture, design, skills, tools, team&nbsp;capacity.</li>
 </ul>
 </li>
 </ul>
 </div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../../categories/context-driven-testing/" rel="tag">context-driven testing</a></li>
-            <li><a class="tag p-category" href="../../../categories/test-management/" rel="tag">test management</a></li>
-            <li><a class="tag p-category" href="../../../categories/test-strategy/" rel="tag">test strategy</a></li>
+<li><a class="tag p-category" href="../../../categories/context-driven-testing/" rel="tag">context-driven&nbsp;testing</a></li>
+            <li><a class="tag p-category" href="../../../categories/test-management/" rel="tag">test&nbsp;management</a></li>
+            <li><a class="tag p-category" href="../../../categories/test-strategy/" rel="tag">test&nbsp;strategy</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../../2018/reflections-on-my-testing-manifesto/" rel="prev" title="Reflections on my testing manifesto">Previous post</a>
+                <a href="../../2018/reflections-on-my-testing-manifesto/" rel="prev" title="Reflections on my testing manifesto">Previous&nbsp;post</a>
             </li>
             <li class="next">
-                <a href="../solving-black-box-puzzle-31-with-data-analysis/" rel="next" title="Solving Black Box Puzzle 31 with data analysis">Next post</a>
+                <a href="../solving-black-box-puzzle-31-with-data-analysis/" rel="next" title="Solving Black Box Puzzle 31 with data analysis">Next&nbsp;post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer">
             Contents © 2022     
