@@ -55,7 +55,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/archive.html</loc>
-  <lastmod>2022-08-13T12:49:00Z</lastmod>
+  <lastmod>2022-08-24T17:41:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/</loc>
@@ -246,12 +246,20 @@
   <lastmod>2021-10-24T15:40:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/blog/2022/different-definitions-for-different-purposes/</loc>
+  <lastmod>2022-08-24T17:41:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/blog/2022/four-skills-to-embody-the-four-agile-values/</loc>
   <lastmod>2022-03-13T14:51:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/2022/from-tension-to-agreement-with-sociocracy-30/</loc>
   <lastmod>2022-01-23T10:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/blog/2022/quality-different-purposes-different-definitions/</loc>
+  <lastmod>2022-08-24T20:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/2022/structuring-group-discussions-with-k-cards/</loc>
@@ -343,11 +351,11 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-6.html</loc>
-  <lastmod>2022-08-13T12:49:00Z</lastmod>
+  <lastmod>2022-08-24T17:41:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/</loc>
-  <lastmod>2022-08-12T07:45:00Z</lastmod>
+  <lastmod>2022-08-24T19:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/agile-manifesto/</loc>
@@ -614,6 +622,10 @@
   <lastmod>2022-01-23T10:17:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/categories/software-development/</loc>
+  <lastmod>2022-08-24T19:35:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/categories/software-testing/</loc>
   <lastmod>2021-10-24T15:40:00Z</lastmod>
  </url>
@@ -648,6 +660,10 @@
  <url>
   <loc>https://smallsheds.garden/categories/testing-and-checking/</loc>
   <lastmod>2021-10-24T15:40:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/categories/testing/</loc>
+  <lastmod>2022-08-24T19:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/tools/</loc>

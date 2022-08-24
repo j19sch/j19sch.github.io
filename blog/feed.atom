@@ -3,13 +3,33 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes</title>
   <id>https://smallsheds.garden/blog/feed.atom</id>
-  <updated>2022-08-13T13:00:58Z</updated>
+  <updated>2022-08-24T20:10:17Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/blog/feed.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Quality: different purposes, different definitions</title>
+    <id>https://smallsheds.garden/blog/2022/quality-different-purposes-different-definitions/</id>
+    <updated>2022-08-24T19:41:25+02:00</updated>
+    <published>2022-08-24T19:41:25+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2022/quality-different-purposes-different-definitions/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;For years when asked to define quality, I've said "value to a person who matters"&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2022/quality-different-purposes-different-definitions/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;. Not too long ago I used that definition in the &lt;a href="https://smallsheds.garden/blog/2021/choosing-your-value-system/"&gt;first post&lt;/a&gt; of my four-part series "Thinking about quality". However, in the &lt;a href="https://smallsheds.garden/blog/2021/thinking-about-quality-so-what-to-do/"&gt;fourth post&lt;/a&gt; of that series I also said that quality is something emergent. And I continued with:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We can have long discussions about what quality is, but that's a different question from how do you get quality?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Today I took this one step further, when I realized that depending on the context, I talk very differently about quality. And while I may not define 'quality' explicitly in every conversation, implicitly I'm still using different definitions. That alone, I think is interesting: instead of a single, general definition of quality that always applies, I have different definitions depending on their purpose&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2022/quality-different-purposes-different-definitions/#fn:2"&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2022/quality-different-purposes-different-definitions/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="quality" label="quality"/>
+    <category term="semantics" label="semantics"/>
+    <category term="software-development" label="software development"/>
+    <category term="software-testing" label="software testing"/>
+  </entry>
   <entry>
     <title>The Agile Manifesto is a poor introduction to Agile</title>
     <id>https://smallsheds.garden/blog/2022/the-agile-manifesto-is-a-poor-introduction-to-agile/</id>
@@ -186,22 +206,5 @@ Any other options? Because something about the term is bothering me.&lt;/p&gt;
     <category term="agile" label="agile"/>
     <category term="skills" label="skills"/>
     <category term="values" label="values"/>
-  </entry>
-  <entry>
-    <title>From tension to agreement with Sociocracy 3.0</title>
-    <id>https://smallsheds.garden/blog/2022/from-tension-to-agreement-with-sociocracy-30/</id>
-    <updated>2022-01-22T11:27:13+01:00</updated>
-    <published>2022-01-22T11:27:13+01:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2022/from-tension-to-agreement-with-sociocracy-30/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;Earlier this month I started my new job at a small consultancy. During my onboarding I noticed something that I thought could be improved. So I figured I should come up with a proposal to address that. It also made me wonder how me proposing this improvement would go over with my new colleagues. And then I remembered I learned about a good way of doing this in a workshop&lt;sup id="fnref:6"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2022/from-tension-to-agreement-with-sociocracy-30/#fn:6"&gt;1&lt;/a&gt;&lt;/sup&gt; at the 2016 &lt;a href="https://xpdaysbenelux.nl/"&gt;XP Days Benelux&lt;/a&gt; conference. That workshop was about &lt;a href="https://sociocracy30.org/"&gt;Sociocracy 3.0&lt;/a&gt; (S3 for short). So I ended up proposing two things in the meeting: my improvement, but also a way to come to an agreement about my proposal.&lt;/p&gt;
-&lt;p&gt;The reactions to my proposal about how to come to agreements, were mostly positive. One person asked a very good question though: &lt;em&gt;"Is this solving a problem we are having? Or is this a solution looking for a problem? What would be the reasons for adopting this?"&lt;/em&gt; In response I expanded on my reasons for wanting this and we decided to give it a try. My dual proposal helped here: let's try the S3 patterns I shared on the improvement I proposed.&lt;/p&gt;
-&lt;p&gt;Looking back, I'm happy with my reply to those questions and I also feel I can do better. Which makes this the perfect opportunity for my first blog post of 2022. I'll start with a brief introduction on Sociocracy 3.0, then I'll share the proposal I made based on S3, and finally I'll talk about why I like this form of decision-making.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2022/from-tension-to-agreement-with-sociocracy-30/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="leadership" label="leadership"/>
-    <category term="self-organization" label="self-organization"/>
-    <category term="sociocracy-30" label="sociocracy 3.0"/>
   </entry>
 </feed>
