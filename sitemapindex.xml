@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://smallsheds.garden/blog/feed.atom</loc>
-  <lastmod>2022-08-24T20:08:00Z</lastmod>
+  <lastmod>2022-08-24T20:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/blog/rss.xml</loc>
@@ -135,7 +135,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_quality.atom</loc>
-  <lastmod>2022-08-24T20:08:00Z</lastmod>
+  <lastmod>2022-08-24T20:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_quality.xml</loc>
@@ -455,7 +455,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/quality.atom</loc>
-  <lastmod>2022-08-24T20:08:00Z</lastmod>
+  <lastmod>2022-08-24T20:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/quality.xml</loc>
@@ -495,7 +495,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/semantics.atom</loc>
-  <lastmod>2022-08-24T20:08:00Z</lastmod>
+  <lastmod>2022-08-24T20:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/semantics.xml</loc>
@@ -543,7 +543,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/software-development.atom</loc>
-  <lastmod>2022-08-24T20:08:00Z</lastmod>
+  <lastmod>2022-08-24T20:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/software-development.xml</loc>
@@ -551,7 +551,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/software-testing.atom</loc>
-  <lastmod>2022-08-24T20:08:00Z</lastmod>
+  <lastmod>2022-08-24T20:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/software-testing.xml</loc>
@@ -622,14 +622,6 @@
   <lastmod>2022-08-13T12:49:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://smallsheds.garden/categories/testing.atom</loc>
-  <lastmod>2022-08-24T19:35:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://smallsheds.garden/categories/testing.xml</loc>
-  <lastmod>2022-08-24T19:36:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>https://smallsheds.garden/categories/tools.atom</loc>
   <lastmod>2022-08-13T12:49:00Z</lastmod>
  </sitemap>
@@ -695,6 +687,6 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/sitemap.xml</loc>
-  <lastmod>2022-08-24T20:10:00Z</lastmod>
+  <lastmod>2022-11-01T19:46:00Z</lastmod>
  </sitemap>
 </sitemapindex>
