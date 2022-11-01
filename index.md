@@ -16,10 +16,10 @@ hidetitle: true
 		<p>Joep has given <a href="/my-talks/" target="_blank">talks and workshops</a> at conferences throughout Europe. He's also one of the organizers of the <a href="https://frogsconf.nl/" target="_blank">Friends of Good Software</a> unconference. He likes to drink coffee and write with a fountain pen.</p>
 		<p>Other online places you can find me at:</p>
 		<ul>
-			<li><a href="https://twitter.com/j19sch" target="_blank">Twitter</a></li>
-			<li><a href="https://github.com/j19sch" target="_blank">GitHub</a></li>
-			<li><a href="https://www.linkedin.com/in/joepschuurkes/" target="_blank">LinkedIn</a></li>
 			<li><a href="https://chaos.social/@joeposaurus" target="_blank" rel="me">Mastodon</a></li>
+			<li><a href="https://github.com/j19sch" target="_blank">GitHub</a></li>
+			<li><a href="https://twitter.com/j19sch" target="_blank">Twitter</a></li>
+			<li><a href="https://www.linkedin.com/in/joepschuurkes/" target="_blank">LinkedIn</a></li>
 		</ul>
 	</div>
 	<div style="max-width:200px">
