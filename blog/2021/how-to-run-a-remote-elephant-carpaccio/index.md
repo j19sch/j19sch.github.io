@@ -90,3 +90,7 @@ Next time I think I'll ask each group for a short demo (an advantage of screen s
 
 ## The debrief
 As always with these kinds of workshops the debrief is the hardest and most important part. Of the three times I've ran this workshop, two times participants stuck around after to talk some more about feature slicing. If you run the workshop with a group of people gathered purely for the workshop, I think that's fine. If on the other hand it's with the group of people that work together, that share a context, I think it's better to do something more. Something to assist the participants to bridge the gap between what they experienced in the workshop and their daily work. That can either be a longer debrief with a focus to applying what was learned, or a follow-up session one or two weeks later.
+
+----
+
+*(edit 6 November 2022)* [Elizabeth Zagroba](https://elizabethzagroba.com/) recently shared her experiences facilitating Elephant Carpaccio in her blog post ["Story Slicing Workshops"](https://elizabethzagroba.com/posts/2022/10_31_story_slicing_workshops/).
