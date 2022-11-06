@@ -3,13 +3,32 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about agile)</title>
   <id>https://smallsheds.garden/categories/agile.atom</id>
-  <updated>2022-08-13T12:51:40Z</updated>
+  <updated>2022-11-06T15:47:27Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/agile.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/agile/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Agile tester or quality engineer, who's to say?</title>
+    <id>https://smallsheds.garden/blog/2022/agile-tester-or-quality-engineer-whos-to-say/</id>
+    <updated>2022-11-06T16:29:25+01:00</updated>
+    <published>2022-11-06T16:29:25+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2022/agile-tester-or-quality-engineer-whos-to-say/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;In her article &lt;a href="https://web.archive.org/web/20041001003124/http://www.qualitytree.com/feature/btwq.pdf"&gt;"Better Testing, Worse Quality?"&lt;/a&gt; &lt;a href="https://ruby.social/@testobsessed"&gt;Elisabeth Hendrickson&lt;/a&gt; makes an interesting case about independent testing, i.e. testing done by an independent test team. She discovered that beyond a certain point, investigating more in independent testing will make both quality and speed go down, not up. In &lt;a href="https://itrevolution.com/podcast/the-idealcast-episode-3/"&gt;episode 3&lt;/a&gt; of the &lt;a href="https://itrevolution.com/podcast/"&gt;Idealcast&lt;/a&gt;, she summarizes her article as follows:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"[...] when you ramp up the amount of investment in an independent test group, then given the amount of pressure that's already on the developers to deliver, it is so easy&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2022/agile-tester-or-quality-engineer-whos-to-say/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; for the developers to say, this isn't my problem anymore. Thank goodness we've got the professionals over here. It's their job to test." &lt;em&gt;(00:11:21)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Later in the article, Elisabeth Hendrickson gives advice on how to avoid or escape this spiral of decreasing quality and speed. There are four dials you can turn either up or down:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2022/agile-tester-or-quality-engineer-whos-to-say/"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="agile" label="agile"/>
+    <category term="quality-engineering" label="quality engineering"/>
+    <category term="software-testing" label="software testing"/>
+  </entry>
   <entry>
     <title>The Agile Manifesto is a poor introduction to Agile</title>
     <id>https://smallsheds.garden/blog/2022/the-agile-manifesto-is-a-poor-introduction-to-agile/</id>

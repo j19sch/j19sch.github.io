@@ -55,7 +55,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/archive.html</loc>
-  <lastmod>2022-08-24T17:41:00Z</lastmod>
+  <lastmod>2022-11-05T20:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/</loc>
@@ -246,6 +246,18 @@
   <lastmod>2021-10-24T15:40:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/blog/2022/agile-tester-or-quality-engineer-whos-to-say/</loc>
+  <lastmod>2022-11-06T15:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/blog/2022/agile-tester-or-quality-engineer/</loc>
+  <lastmod>2022-11-06T15:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/blog/2022/better-testing-worse-quality/</loc>
+  <lastmod>2022-11-05T20:12:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/blog/2022/four-skills-to-embody-the-four-agile-values/</loc>
   <lastmod>2022-03-13T14:51:00Z</lastmod>
  </url>
@@ -347,11 +359,11 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-6.html</loc>
-  <lastmod>2022-08-24T17:41:00Z</lastmod>
+  <lastmod>2022-11-05T20:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/</loc>
-  <lastmod>2022-08-24T20:11:00Z</lastmod>
+  <lastmod>2022-11-05T20:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/agile-manifesto/</loc>
@@ -412,6 +424,10 @@
  <url>
   <loc>https://smallsheds.garden/categories/cat_programming/</loc>
   <lastmod>2021-10-24T15:40:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/categories/cat_quality-engineering/</loc>
+  <lastmod>2022-11-05T20:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/cat_quality/</loc>
@@ -572,6 +588,10 @@
  <url>
   <loc>https://smallsheds.garden/categories/python/</loc>
   <lastmod>2021-10-24T15:40:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/categories/quality-engineering/</loc>
+  <lastmod>2022-11-05T20:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/quality/</loc>
