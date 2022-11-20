@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://smallsheds.garden/blog/feed.atom</loc>
-  <lastmod>2022-11-06T15:44:00Z</lastmod>
+  <lastmod>2022-11-20T10:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/blog/rss.xml</loc>
-  <lastmod>2022-11-06T15:57:00Z</lastmod>
+  <lastmod>2022-11-20T10:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/agile-manifesto.atom</loc>
@@ -135,11 +135,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_quality-engineering.atom</loc>
-  <lastmod>2022-11-06T15:44:00Z</lastmod>
+  <lastmod>2022-11-20T10:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_quality-engineering.xml</loc>
-  <lastmod>2022-11-06T15:47:00Z</lastmod>
+  <lastmod>2022-11-20T10:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_quality.atom</loc>
@@ -147,7 +147,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_quality.xml</loc>
-  <lastmod>2022-08-24T20:10:00Z</lastmod>
+  <lastmod>2022-11-20T09:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_reviewing.atom</loc>
@@ -323,7 +323,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/horizon.xml</loc>
-  <lastmod>2022-08-13T12:49:00Z</lastmod>
+  <lastmod>2022-11-20T09:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/ides.atom</loc>
@@ -363,7 +363,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/leadership.xml</loc>
-  <lastmod>2022-08-13T12:49:00Z</lastmod>
+  <lastmod>2022-11-20T09:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/lean.atom</loc>
@@ -379,7 +379,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/management.xml</loc>
-  <lastmod>2022-08-13T13:00:00Z</lastmod>
+  <lastmod>2022-11-20T09:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/manifesto.atom</loc>
@@ -427,7 +427,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/paradigms.xml</loc>
-  <lastmod>2022-08-13T12:49:00Z</lastmod>
+  <lastmod>2022-11-20T09:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/peer-conference.atom</loc>
@@ -435,7 +435,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/peer-conference.xml</loc>
-  <lastmod>2022-08-13T12:49:00Z</lastmod>
+  <lastmod>2022-11-20T09:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/problems.atom</loc>
@@ -443,7 +443,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/problems.xml</loc>
-  <lastmod>2022-08-13T12:49:00Z</lastmod>
+  <lastmod>2022-11-20T09:39:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/programming.atom</loc>
@@ -463,11 +463,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/quality-engineering.atom</loc>
-  <lastmod>2022-11-06T15:44:00Z</lastmod>
+  <lastmod>2022-11-20T10:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/quality-engineering.xml</loc>
-  <lastmod>2022-11-06T15:47:00Z</lastmod>
+  <lastmod>2022-11-20T10:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/quality.atom</loc>
@@ -475,7 +475,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/quality.xml</loc>
-  <lastmod>2022-11-06T15:47:00Z</lastmod>
+  <lastmod>2022-11-20T09:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/regression-testing.atom</loc>
@@ -507,7 +507,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/selling.xml</loc>
-  <lastmod>2022-08-13T12:49:00Z</lastmod>
+  <lastmod>2022-11-20T09:39:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/semantics.atom</loc>
@@ -515,7 +515,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/semantics.xml</loc>
-  <lastmod>2022-08-24T20:10:00Z</lastmod>
+  <lastmod>2022-11-20T09:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/site.atom</loc>
@@ -547,7 +547,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/small-steps.xml</loc>
-  <lastmod>2022-08-13T12:49:00Z</lastmod>
+  <lastmod>2022-11-20T09:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/sociocracy-30.atom</loc>
@@ -563,15 +563,15 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/software-development.xml</loc>
-  <lastmod>2022-08-24T20:10:00Z</lastmod>
+  <lastmod>2022-11-20T09:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/software-testing.atom</loc>
-  <lastmod>2022-11-06T15:44:00Z</lastmod>
+  <lastmod>2022-11-20T10:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/software-testing.xml</loc>
-  <lastmod>2022-11-06T15:47:00Z</lastmod>
+  <lastmod>2022-11-20T10:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/systems-thinking.atom</loc>
@@ -651,7 +651,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/value-systems.xml</loc>
-  <lastmod>2022-08-13T12:49:00Z</lastmod>
+  <lastmod>2022-11-20T09:39:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/values.atom</loc>
@@ -703,6 +703,6 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/sitemap.xml</loc>
-  <lastmod>2022-11-06T15:57:00Z</lastmod>
+  <lastmod>2022-11-20T10:03:00Z</lastmod>
  </sitemap>
 </sitemapindex>

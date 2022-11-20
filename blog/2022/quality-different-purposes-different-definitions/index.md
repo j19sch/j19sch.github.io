@@ -2,7 +2,7 @@
 .. title: Quality: different purposes, different definitions
 .. slug: quality-different-purposes-different-definitions
 .. date: 2022-08-24 19:41:25 UTC+02:00
-.. tags: quality, software testing, software development, semantics 
+.. tags: quality, software testing, software development, semantics, quality engineering
 .. category: quality
 .. link: 
 .. description: 

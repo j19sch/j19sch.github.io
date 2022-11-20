@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about quality engineering)</title>
   <id>https://smallsheds.garden/categories/quality-engineering.atom</id>
-  <updated>2022-11-06T15:44:02Z</updated>
+  <updated>2022-11-20T10:03:16Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -25,8 +25,115 @@
 &lt;/blockquote&gt;
 &lt;p&gt;Later in the article, Elisabeth Hendrickson gives advice on how to avoid or escape this spiral of decreasing quality and speed. There are four dials you can turn either up or down:&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2022/agile-tester-or-quality-engineer-whos-to-say/"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="quality" label="quality"/>
+    <category term="agile" label="agile"/>
     <category term="quality-engineering" label="quality engineering"/>
     <category term="software-testing" label="software testing"/>
+  </entry>
+  <entry>
+    <title>Quality: different purposes, different definitions</title>
+    <id>https://smallsheds.garden/blog/2022/quality-different-purposes-different-definitions/</id>
+    <updated>2022-08-24T19:41:25+02:00</updated>
+    <published>2022-08-24T19:41:25+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2022/quality-different-purposes-different-definitions/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;For years when asked to define quality, I've said "value to a person who matters"&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2022/quality-different-purposes-different-definitions/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;. Not too long ago I used that definition in the &lt;a href="https://smallsheds.garden/blog/2021/choosing-your-value-system/"&gt;first post&lt;/a&gt; of my four-part series "Thinking about quality". However, in the &lt;a href="https://smallsheds.garden/blog/2021/thinking-about-quality-so-what-to-do/"&gt;fourth post&lt;/a&gt; of that series I also said that quality is something emergent. And I continued with:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We can have long discussions about what quality is, but that's a different question from how do you get quality?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Today I took this one step further, when I realized that depending on the context, I talk very differently about quality. And while I may not define 'quality' explicitly in every conversation, implicitly I'm still using different definitions. That alone, I think is interesting: instead of a single, general definition of quality that always applies, I have different definitions depending on their purpose&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2022/quality-different-purposes-different-definitions/#fn:2"&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2022/quality-different-purposes-different-definitions/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="quality" label="quality"/>
+    <category term="quality-engineering" label="quality engineering"/>
+    <category term="semantics" label="semantics"/>
+    <category term="software-development" label="software development"/>
+    <category term="software-testing" label="software testing"/>
+  </entry>
+  <entry>
+    <title>Thinking about quality: so what to do?</title>
+    <id>https://smallsheds.garden/blog/2021/thinking-about-quality-so-what-to-do/</id>
+    <updated>2021-04-07T13:25:02+02:00</updated>
+    <published>2021-04-07T13:25:02+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2021/thinking-about-quality-so-what-to-do/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;On 30 January 2021 I participated in the Quality Acceleration Peer Conference organized by Huib Schoots and Joost Voskuil. Participants were &lt;a href="https://twitter.com/alanpage"&gt;Alan Page&lt;/a&gt;, &lt;a href="https://twitter.com/unremarkableQA"&gt;Areti Panou&lt;/a&gt;, &lt;a href="https://twitter.com/northern_tester"&gt;Ash Winter&lt;/a&gt;, &lt;a href="https://twitter.com/btknaack"&gt;Bart Knaack&lt;/a&gt;, &lt;a href="https://twitter.com/conorfi"&gt;Conor Fitzgerald&lt;/a&gt;, &lt;a href="https://twitter.com/roukedejong"&gt;Rouke de Jong&lt;/a&gt;, &lt;a href="https://twitter.com/gwendiagram"&gt;Gwen Diagram&lt;/a&gt;, &lt;a href="https://twitter.com/gdinwiddie"&gt;George Dinwiddie&lt;/a&gt;, &lt;a href="https://twitter.com/janetgregoryca"&gt;Janet Gregory&lt;/a&gt;, &lt;a href="https://twitter.com/joost_voskuil"&gt;Joost Voskuil&lt;/a&gt;, &lt;a href="https://twitter.com/jpjwolli"&gt;Joost van Wollingen&lt;/a&gt;, &lt;a href="https://twitter.com/mmeijeri"&gt;Martijn Meijering&lt;/a&gt;, &lt;a href="https://twitter.com/robmeaney"&gt;Rob Meaney&lt;/a&gt;, &lt;a href="https://twitter.com/vinwijnl"&gt;Vincent Wijnen&lt;/a&gt; - with &lt;a href="https://twitter.com/huibschoots"&gt;Huib Schoots&lt;/a&gt; facilitating the peer conference. The main topics mentioned in the invite were: "How can you sell quality?", "How can you convince people that quality can accelerate software delivery?", and "What limitations or barriers do you hit?"&lt;/p&gt;
+&lt;p&gt;Reflecting during and after our discussions on these topics, I realized there are some interesting things going on about how we talk about quality and how to sell it. Enough interesting things to fill more than one blog post, so this will be a four-part series. And I might expand on some ideas in the series after that.&lt;/p&gt;
+&lt;p&gt;The first three parts covered rather philosophical topics: &lt;a href="https://smallsheds.garden/blog/2021/choosing-your-value-system/"&gt;choosing your value system&lt;/a&gt;, &lt;a href="https://smallsheds.garden/blog/2021/who-doesnt-want-quality/"&gt;exploring what it means to sell quality&lt;/a&gt;, and &lt;a href="https://smallsheds.garden/blog/2021/management-paradigms-and-quality/"&gt;how management paradigms affect quality&lt;/a&gt;. At the end of the third post I brought up the main question for this fourth and last post: so now what? If you expect me to get very concrete and specific in this post, I'm afraid I have to disappoint you. What I will do, is share a way to think about actions that has been helpful to me.&lt;/p&gt;
+&lt;h3&gt;Quality is something emergent&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/charrett"&gt;Anne-Marie Charrett&lt;/a&gt; says in a blog post titled "&lt;a href="https://mavericktester.com/2018/12/04/emergent-quality/"&gt;Emergent Quality&lt;/a&gt;":&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"My hypothesis is that quality is an emergent behaviour. It relies on a whole set of independent systems coming together to create this emergent property. We can never truly know what quality is. It’s constantly changing and morphing into different things. For sure, we can provide examples, but know quality itself? I’m not convinced."&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2021/thinking-about-quality-so-what-to-do/"&gt;Read more…&lt;/a&gt; (8 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="horizon" label="horizon"/>
+    <category term="leadership" label="leadership"/>
+    <category term="peer-conference" label="peer conference"/>
+    <category term="quality" label="quality"/>
+    <category term="quality-engineering" label="quality engineering"/>
+    <category term="small-steps" label="small steps"/>
+  </entry>
+  <entry>
+    <title>Thinking about quality: management paradigms and quality</title>
+    <id>https://smallsheds.garden/blog/2021/management-paradigms-and-quality/</id>
+    <updated>2021-03-15T09:32:08+01:00</updated>
+    <published>2021-03-15T09:32:08+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2021/management-paradigms-and-quality/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;On 30 January 2021 I participated in the Quality Acceleration Peer Conference organized by Huib Schoots and Joost Voskuil. Participants were &lt;a href="https://twitter.com/alanpage"&gt;Alan Page&lt;/a&gt;, &lt;a href="https://twitter.com/unremarkableQA"&gt;Areti Panou&lt;/a&gt;, &lt;a href="https://twitter.com/northern_tester"&gt;Ash Winter&lt;/a&gt;, &lt;a href="https://twitter.com/btknaack"&gt;Bart Knaack&lt;/a&gt;, &lt;a href="https://twitter.com/conorfi"&gt;Conor Fitzgerald&lt;/a&gt;, &lt;a href="https://twitter.com/roukedejong"&gt;Rouke de Jong&lt;/a&gt;, &lt;a href="https://twitter.com/gwendiagram"&gt;Gwen Diagram&lt;/a&gt;, &lt;a href="https://twitter.com/gdinwiddie"&gt;George Dinwiddie&lt;/a&gt;, &lt;a href="https://twitter.com/janetgregoryca"&gt;Janet Gregory&lt;/a&gt;, &lt;a href="https://twitter.com/joost_voskuil"&gt;Joost Voskuil&lt;/a&gt;, &lt;a href="https://twitter.com/jpjwolli"&gt;Joost van Wollingen&lt;/a&gt;, &lt;a href="https://twitter.com/mmeijeri"&gt;Martijn Meijering&lt;/a&gt;, &lt;a href="https://twitter.com/robmeaney"&gt;Rob Meaney&lt;/a&gt;, &lt;a href="https://twitter.com/vinwijnl"&gt;Vincent Wijnen&lt;/a&gt; - with &lt;a href="https://twitter.com/huibschoots"&gt;Huib Schoots&lt;/a&gt; facilitating the peer conference. The main topics mentioned in the invite were: "How can you sell quality?", "How can you convince people that quality can accelerate software delivery?", and "What limitations or barriers do you hit?"&lt;/p&gt;
+&lt;p&gt;Reflecting during and after our discussions on these topics, I realized there are some interesting things going on about how we talk about quality and how to sell it. Enough interesting things to fill more than one blog post, so this will be a four-part series. And I might expand on some ideas in the series after that.&lt;/p&gt;
+&lt;p&gt;This is the third part, exploring five different management paradigms as identified by &lt;a href="https://twitter.com/carolsanford"&gt;Carol Sanford&lt;/a&gt; in her book "&lt;a href="https://carolsanford.com/the-regenerative-business/"&gt;The Regenerative Business&lt;/a&gt;" and how they affect quality. The first part was about choosing your value system can be found &lt;a href="https://smallsheds.garden/blog/2021/choosing-your-value-system/"&gt;here&lt;/a&gt;. The second part about selling quality can be found &lt;a href="https://smallsheds.garden/blog/2021/who-doesnt-want-quality/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Psychological cover and psychological safety&lt;/h3&gt;
+&lt;p&gt;If the challenge of quality is getting several things right (perception, desire, and means) and getting to an agreement among people, how we organize ourselves becomes a crucial topic. As W. Edwards Deming said: "A bad system will beat a good person every time." Or as Kurt Lewin said in a more neutral way: "Behavior is a function of the Person and the Environment." An important part of any environment is psychological safety. In &lt;a href="https://www.conversationaltransformation.com/blog/we're-the-aliens-three-ways-to-seek-safety/"&gt;episode 155&lt;/a&gt; of their &lt;a href="https://www.conversationaltransformation.com/troubleshooting-agile-podcast/"&gt;Troubleshooting Agile&lt;/a&gt; podcast &lt;a href="https://twitter.com/Jtf"&gt;Jeffrey Fredrick&lt;/a&gt; and &lt;a href="https://twitter.com/douglassquirrel"&gt;Douglas Squirrel&lt;/a&gt; make an interesting distinction between psychological cover and psychological safety.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2021/management-paradigms-and-quality/"&gt;Read more…&lt;/a&gt; (8 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="management" label="management"/>
+    <category term="paradigms" label="paradigms"/>
+    <category term="peer-conference" label="peer conference"/>
+    <category term="quality" label="quality"/>
+    <category term="quality-engineering" label="quality engineering"/>
+  </entry>
+  <entry>
+    <title>Thinking about quality: who doesn't want quality?</title>
+    <id>https://smallsheds.garden/blog/2021/who-doesnt-want-quality/</id>
+    <updated>2021-02-25T12:34:08+01:00</updated>
+    <published>2021-02-25T12:34:08+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2021/who-doesnt-want-quality/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;On 30 January 2021 I participated in the Quality Acceleration Peer Conference organized by Huib Schoots and Joost Voskuil. Participants were &lt;a href="https://twitter.com/alanpage"&gt;Alan Page&lt;/a&gt;, &lt;a href="https://twitter.com/unremarkableQA"&gt;Areti Panou&lt;/a&gt;, &lt;a href="https://twitter.com/northern_tester"&gt;Ash Winter&lt;/a&gt;, &lt;a href="https://twitter.com/btknaack"&gt;Bart Knaack&lt;/a&gt;, &lt;a href="https://twitter.com/conorfi"&gt;Conor Fitzgerald&lt;/a&gt;, &lt;a href="https://twitter.com/roukedejong"&gt;Rouke de Jong&lt;/a&gt;, &lt;a href="https://twitter.com/gwendiagram"&gt;Gwen Diagram&lt;/a&gt;, &lt;a href="https://twitter.com/gdinwiddie"&gt;George Dinwiddie&lt;/a&gt;, &lt;a href="https://twitter.com/janetgregoryca"&gt;Janet Gregory&lt;/a&gt;, &lt;a href="https://twitter.com/joost_voskuil"&gt;Joost Voskuil&lt;/a&gt;, &lt;a href="https://twitter.com/jpjwolli"&gt;Joost van Wollingen&lt;/a&gt;, &lt;a href="https://twitter.com/mmeijeri"&gt;Martijn Meijering&lt;/a&gt;, &lt;a href="https://twitter.com/robmeaney"&gt;Rob Meaney&lt;/a&gt;, &lt;a href="https://twitter.com/vinwijnl"&gt;Vincent Wijnen&lt;/a&gt; - with &lt;a href="https://twitter.com/huibschoots"&gt;Huib Schoots&lt;/a&gt; facilitating the peer conference. The main topics mentioned in the invite were: "How can you sell quality?", "How can you convince people that quality can accelerate software delivery?", and "What limitations or barriers do you hit?"&lt;/p&gt;
+&lt;p&gt;Reflecting during and after our discussions on these topics, I realized there are some interesting things going on about how we talk about quality and how to sell it. Enough interesting things to fill more than one blog post, so this will be a four-part series. And I might expand on some ideas in the series after that.&lt;/p&gt;
+&lt;p&gt;This is the second part. The first one about choosing your value system can be found &lt;a href="https://smallsheds.garden/blog/2021/choosing-your-value-system/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Everyone wants quality, right?&lt;/h3&gt;
+&lt;p&gt;In the previous post I distinguished two definitions of quality. If we proceed with the second and more interesting one, value to a person who matters, I would argue that everyone wants quality and is already doing their best to get it. The alternative would be that some people are not doing their best to get the things they value - which seems absurd to me.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2021/who-doesnt-want-quality/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="peer-conference" label="peer conference"/>
+    <category term="problems" label="problems"/>
+    <category term="quality" label="quality"/>
+    <category term="quality-engineering" label="quality engineering"/>
+    <category term="selling" label="selling"/>
+  </entry>
+  <entry>
+    <title>Thinking about quality: choosing your value system</title>
+    <id>https://smallsheds.garden/blog/2021/choosing-your-value-system/</id>
+    <updated>2021-02-15T20:09:08+01:00</updated>
+    <published>2021-02-15T20:09:08+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2021/choosing-your-value-system/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;On 30 January 2021 I participated in the Quality Acceleration Peer Conference organized by Huib Schoots and Joost Voskuil. Participants were &lt;a href="https://twitter.com/alanpage"&gt;Alan Page&lt;/a&gt;, &lt;a href="https://twitter.com/unremarkableQA"&gt;Areti Panou&lt;/a&gt;, &lt;a href="https://twitter.com/northern_tester"&gt;Ash Winter&lt;/a&gt;, &lt;a href="https://twitter.com/btknaack"&gt;Bart Knaack&lt;/a&gt;, &lt;a href="https://twitter.com/conorfi"&gt;Conor Fitzgerald&lt;/a&gt;, &lt;a href="https://twitter.com/roukedejong"&gt;Rouke de Jong&lt;/a&gt;, &lt;a href="https://twitter.com/gwendiagram"&gt;Gwen Diagram&lt;/a&gt;, &lt;a href="https://twitter.com/gdinwiddie"&gt;George Dinwiddie&lt;/a&gt;, &lt;a href="https://twitter.com/janetgregoryca"&gt;Janet Gregory&lt;/a&gt;, &lt;a href="https://twitter.com/joost_voskuil"&gt;Joost Voskuil&lt;/a&gt;, &lt;a href="https://twitter.com/jpjwolli"&gt;Joost van Wollingen&lt;/a&gt;, &lt;a href="https://twitter.com/mmeijeri"&gt;Martijn Meijering&lt;/a&gt;, &lt;a href="https://twitter.com/robmeaney"&gt;Rob Meaney&lt;/a&gt;, &lt;a href="https://twitter.com/vinwijnl"&gt;Vincent Wijnen&lt;/a&gt; - with &lt;a href="https://twitter.com/huibschoots"&gt;Huib Schoots&lt;/a&gt; facilitating the peer conference. The main topics mentioned in the invite were: "How can you sell quality?", "How can you convince people that quality can accelerate software delivery?", and "What limitations or barriers do you hit?"&lt;/p&gt;
+&lt;p&gt;Reflecting during and after our discussions on these topics, I realized there are some interesting things going on about how we talk about quality and how to sell it. Enough interesting things to fill more than one blog post, so this will be a four-part series. And I might expand on some ideas in the series after that.&lt;/p&gt;
+&lt;h3&gt;Quality has two different meanings&lt;/h3&gt;
+&lt;p&gt;On the one hand, we use quality when we talk about things that are obviously better. A &lt;a href="https://www.youtube.com/watch?v=-3mB4MBITEI"&gt;$3500 coffee grinder&lt;/a&gt; is obviously better than &lt;a href="https://www.youtube.com/watch?v=AVYGxext8XI"&gt;a £50 one&lt;/a&gt;. An application that does not crash on you is obviously better than one that does. Almost all other ways to input your phone number are better than &lt;a href="https://qz.com/679782/programmers-imagine-the-most-ridiculous-ways-to-input-a-phone-number/"&gt;these&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2021/choosing-your-value-system/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="peer-conference" label="peer conference"/>
+    <category term="quality" label="quality"/>
+    <category term="quality-engineering" label="quality engineering"/>
+    <category term="value-systems" label="value systems"/>
   </entry>
 </feed>

@@ -71,3 +71,7 @@ For this reason I think that this setup is in many ways the same as having a sep
 
 
 So all of this to say what exactly? I guess nothing more than this: if you say that you have testers or that you don't have testers, that does not tell me a lot. So I'd be curious to hear more about how you do software.
+
+---
+
+*This post was also published in the [November '22 issue](https://teatimewithtesters.com/wp-content/uploads/2022/11/TTwT_November_2022.pdf) of [Tea-time with Testers](https://teatimewithtesters.com/).*
