@@ -3,13 +3,27 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes</title>
   <id>https://smallsheds.garden/blog/feed.atom</id>
-  <updated>2022-11-20T10:06:55Z</updated>
+  <updated>2022-11-27T15:45:43Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/blog/feed.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Three lessons after three months of quality engineering</title>
+    <id>https://smallsheds.garden/blog/2022/three-lessons-after-three-months-of-quality-engineering/</id>
+    <updated>2022-11-27T16:41:25+01:00</updated>
+    <published>2022-11-27T16:41:25+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2022/three-lessons-after-three-months-of-quality-engineering/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Three months ago I started a new job as a quality engineer, supporting two teams. So far it's been an interesting challenge. The two teams were formed only a few months before I joined, although some team members had been working for the company before that. Each team has their own product manager. We also have an engineering manager, but he joined only two weeks before I did. And then I was added to the mix, with a job description that didn't give a lot more guidance than: support the team in things related to testing and quality.&lt;/p&gt;
+&lt;p&gt;So my first task in my new job was figuring out what my job was. Or rather, figure out what concrete things I could do that fit that job description. This was not made easier by the fact that we're a fully remote company. Not being in the same space throughout the day does make things harder when you're trying to find your place. Reflecting on the past three months made me realize there are three things that are really important: visibility, connections, and patience.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2022/three-lessons-after-three-months-of-quality-engineering/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="quality-engineering" label="quality engineering"/>
+  </entry>
   <entry>
     <title>Agile tester or quality engineer, who's to say?</title>
     <id>https://smallsheds.garden/blog/2022/agile-tester-or-quality-engineer-whos-to-say/</id>
@@ -186,23 +200,5 @@ Any other options? Because something about the term is bothering me.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2022/structuring-group-discussions-with-k-cards/"&gt;Read more…&lt;/a&gt; (8 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="facilitation" label="facilitation"/>
     <category term="peer-conference" label="peer conference"/>
-  </entry>
-  <entry>
-    <title>Uncovering Agile micro-skills at FroGS conf</title>
-    <id>https://smallsheds.garden/blog/2022/uncovering-agile-micro-skills-at-frogsconf/</id>
-    <updated>2022-03-14T16:56:09+01:00</updated>
-    <published>2022-03-14T16:56:09+01:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2022/uncovering-agile-micro-skills-at-frogsconf/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;At the second &lt;a href="https://frogsconf.nl/"&gt;FroGS conf Open Space&lt;/a&gt; on 12 March 2022 I facilitated a session based on my blog post &lt;a href="https://smallsheds.garden/blog/2022/four-skills-to-embody-the-four-agile-values/"&gt;&lt;em&gt;"Four skills to embody the four Agile values"&lt;/em&gt;&lt;/a&gt;. My goal with the session was to uncover more Agile (micro-)skills. In this post I'll share what we did during the session and I'll close off with some thoughts on the biggest challenge of this exercise: too many skills. Before I start however, a big thank you to everyone who participated in the session!&lt;/p&gt;
-&lt;h2&gt;What we value&lt;/h2&gt;
-&lt;p&gt;I opened the session with asking people to add stickies to the board of things they valued in Agile software development. When was I preparing the Miro board before the session, I labeled this part of the board "values". Then I remembered I had decided earlier to label it "what we value", so as to avoid the discussion about what values are and aren't. The topic did come up (i.e. the relation between values, ethics and morals), so I was glad I could respond by saying it's a great topic, but not for this session.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2022/uncovering-agile-micro-skills-at-frogsconf/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="agile" label="agile"/>
-    <category term="conference" label="conference"/>
-    <category term="skills" label="skills"/>
-    <category term="values" label="values"/>
   </entry>
 </feed>

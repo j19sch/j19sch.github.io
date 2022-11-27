@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Three lessons after three months of quality engineering | Joep Schuurkes</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../feed.atom">
+<link rel="canonical" href="https://smallsheds.garden/blog/2022/three-lessons-after-three-months-of-quality-engineering/">
+<link rel="icon" href="../../../assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="../../../assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../assets/favicons/favicon-96x96.png" sizes="96x96">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../agile-tester-or-quality-engineer-whos-to-say/" title="Agile tester or quality engineer, who's to say?" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="Three lessons after three months of quality engineering">
+<meta property="og:url" content="https://smallsheds.garden/blog/2022/three-lessons-after-three-months-of-quality-engineering/">
+<meta property="og:description" content="Three months ago I started a new job as a quality engineer, supporting two teams. So far it's been an interesting challenge. The two teams were formed only a few months before I joined, although some ">
+<meta property="og:image" content="https://smallsheds.garden/images/default-preview.jpeg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-11-27T16:41:25+01:00">
+<meta property="article:tag" content="quality engineering">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-projects/" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-talks/" class="nav-link">Talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../../my-lists/reading-list/" class="dropdown-item">Reading list</a>
+                    <a href="../../../my-lists/recommended-reading/" class="dropdown-item">Recommended reading</a>
+                    <a href="../../../my-lists/favorite-podcasts/" class="dropdown-item">Favorite podcasts</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../" class="dropdown-item">My blog</a>
+                    <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
+                    <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Three lessons after three months of quality&nbsp;engineering</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep&nbsp;Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2022-11-27T16:41:25+01:00" itemprop="datePublished" title="27 November 2022">27 November 2022</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>Three months ago I started a new job as a quality engineer, supporting two teams. So far it&#8217;s been an interesting challenge. The two teams were formed only a few months before I joined, although some team members had been working for the company before that. Each team has their own product manager. We also have an engineering manager, but he joined only two weeks before I did. And then I was added to the mix, with a job description that didn&#8217;t give a lot more guidance than: support the team in things related to testing and&nbsp;quality.</p>
+<p>So my first task in my new job was figuring out what my job was. Or rather, figure out what concrete things I could do that fit that job description. This was not made easier by the fact that we&#8217;re a fully remote company. Not being in the same space throughout the day does make things harder when you&#8217;re trying to find your place. Reflecting on the past three months made me realize there are three things that are really important: visibility, connections, and&nbsp;patience.</p>
+<!-- TEASER_END -->
+
+<h2>Visibility</h2>
+<p>The first lesson is visibility. When your work does not come down to &#8220;perform these steps in the process&#8221;, it&#8217;s easy to become a bit invisible. Not that your colleagues forget about you, but you&#8217;re not top of mind either as they go about their jobs. Especially if you&#8217;re working remotely, because it&#8217;s not as if people see you sitting behind your desk as a reminder that you&nbsp;joined.</p>
+<h3>Showing that you&#8217;re&nbsp;there</h3>
+<p>So the first part of visibility is literally that: showing that you&#8217;re there. Join all the meetings. Have your camera on. Say something or ask a question. Ask someone for more information or resources after the meeting. Similarly, be active on Slack (or Teams or &#8230;), even if it&#8217;s just an emoji reaction to what someone&nbsp;said.</p>
+<p>I&#8217;ve also started an experiment: writing a weekly internal blog. The inspiration came from <a href="https://gilest.org/">Giles Turnbull</a>&#8216;s <a href="https://agilecommshandbook.com/"><em>&#8220;The agile comms handbook&#8221;</em></a> and its idea of <em>&#8220;working in the open&#8221;</em>. Every Friday I take 30 minutes to write three paragraphs about my past week. It&#8217;s still an experiment-in-progress, but it&#8217;s been successful enough after six posts that I decided to stick with it. At some point I should probably dedicate a full post to this&nbsp;experiment.</p>
+<h3>Showing what you can&nbsp;do</h3>
+<p>The second part of visibility is showing what it is that you can do. Quality engineering is a very broad discipline. It&#8217;s also a young discipline. Few people have experience working with quality&nbsp;engineers.</p>
+<p>So I was faced with two&nbsp;questions:</p>
+<ol>
+<li>What is it that quality engineers&nbsp;do?</li>
+<li>What is it that you can&nbsp;do?</li>
+</ol>
+<p>The best way to show what you can do, is by doing things. That&#8217;s easier said than done, though, when you have to answer the two big questions above. Doing lots of small things is key here. One place to start is in meetings and conversations. Actively participating in those not only confirms you are there, it also lets you demonstrate your expertise through what you say or&nbsp;ask.</p>
+<p>For example, in a conversation about <span class="caps">API</span> design I brought up the differences between RESTful APIs and <span class="caps">RPC</span> APIs. Hopefully that made my colleagues realize I know a thing or two about <span class="caps">API</span> design. Similarly, when investigating a support ticket, I asked a developer if I could talk them through what I had found so far, because I was completely stuck. At some point in my story I said <em>&#8220;So I looked through the code, and &#8230;&#8221;</em>, which made the developer go <em>&#8220;Oh, You looked at the code?&#8221;</em> Hopefully that was enough for this developer to discover that&#8217;s something I can&nbsp;do.</p>
+<p>And if not, that&#8217;s fine. The point is not to make a great display of one of your skills that people will remember forever. The point is to consistently show in small ways where and how you can provide&nbsp;value.</p>
+<h2>Connections</h2>
+<p>The second lesson is connections. Working remotely means that all communication gets that little extra friction. You can clearly notice it during meetings, for example when two people start talking at the same time and they have to figure out who goes first. It&#8217;s less noticeable, but a bigger issue, when it comes to small and casual interactions. There are a lot fewer opportunities to have those than if you&#8217;re sharing an office. So you need to be more intentional about them, which can feel&nbsp;awkward.</p>
+<p>It&#8217;s definitely something I personally struggle with, because even at an office I&#8217;m not the greatest at those casual conversations. Sometimes it comes naturally, often enough it takes me active effort. What I find a lot easier is to connect with colleagues through doing work together or through having conversations about the work we&#8217;re doing. Unfortunately, if you&#8217;re still figuring out how you can contribute to the work, it&#8217;s not that&nbsp;easy.</p>
+<p>There are two things I&#8217;ve been doing to build connections. The first thing is to schedule some coffee chats. When I started, I had an introduction chat with everyone in the two teams. Since then, it&#8217;s the work that has been determining who I speak with and when. So I realized it was time to change&nbsp;that.</p>
+<p>A second thing is that I&#8217;ve been actively making conversation as we are waiting for a standup or other meeting to start<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. Even though it takes me some energy because it doesn&#8217;t come that naturally to me, I feel it&#8217;s a lot better than what would happen otherwise: people waiting in silence and/or doing something&nbsp;else.</p>
+<p>Finally, I should not forget to mention connecting with my fellow quality engineers. In a sense that&#8217;s been easier because of the &#8220;one of us&#8221;-effect. What also helps is that we have a Slack channel and an informal catch-up every other&nbsp;week.</p>
+<h2>Patience</h2>
+<p>The third lesson is patience. I have very high expectations of myself. With less than two months in, I was asking myself: am I doing enough? Shouldn&#8217;t I be having a bigger impact already? Part of me knew those expectations were unrealistic. And luckily some colleagues said I was doing fine. Yet that doesn&#8217;t make these feelings go away&nbsp;completely.</p>
+<p>So I have to remind myself to be patient. That my main focus might be on figuring out what my job is, but that in the meantime lots of other things are happening in the company as well. That yes, I need to be moving forward, but also that these things take time. I need to be patient with myself and with&nbsp;others.</p>
+<hr>
+<h3>Reflection</h3>
+<p>What I find interesting about these three lessons is that none of them are directly related to quality engineering or software development as such. Rather, they&#8217;re about entering a situation and figuring out how you, with your specific skills and knowledge, can add&nbsp;value.</p>
+<p>You could say that&#8217;s a problem, typical of roles that lack very clear expectations. I&#8217;d like to turn that around, though. I think that things get a lot better, when people can let their job description fade into the background and instead focus on where they can bring&nbsp;value.</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>There&#8217;s a special place <del>in hell</del> in my heart for people who make their colleagues stare at a <em>&#8220;your host has not started the meeting yet&#8221;</em> screen instead of letting them talk to each other. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/quality-engineering/" rel="tag">quality&nbsp;engineering</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../agile-tester-or-quality-engineer-whos-to-say/" rel="prev" title="Agile tester or quality engineer, who's to say?">Previous&nbsp;post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2022     
+<a href="https://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by/4.0/80x15.png"></a>
+    <a href="mailto:j19sch@hey.com">Joep Schuurkes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>
