@@ -2,7 +2,7 @@
 .. title: Three lessons after three months of quality engineering
 .. slug: three-lessons-after-three-months-of-quality-engineering
 .. date: 2022-11-27 16:41:25 UTC+01:00
-.. tags: quality engineering
+.. tags: quality engineering, skills, small steps
 .. category: quality engineering
 .. link: 
 .. description: 
