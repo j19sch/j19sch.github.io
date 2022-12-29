@@ -106,33 +106,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <blockquote>
 <p>Write a function, append, which will append a new suspect to your list of&nbsp;suspects.</p>
 </blockquote>
-<p>The list of suspects is part of the <a href="https://www.braveclojure.com/core-functions-in-depth/#A_Vampire_Data_Analysis_Program_for_the_FWPD">example program</a> at the end of chapter 4, which was the topic of my two previous posts <a href="clojure/2022/clj-9-how-to-figure-out-what-a-function-does/">(clj 9)</a> and <a href="clojure/2022/clj-10-the-mapify-function-of-clj-9-revisited/">(clj 10)</a>. This list is read from a csv file, so one way to interpret the exercise, is that you have to append them to the file. However, writing to the csv file is what exercise 4 is all&nbsp;about.</p>
-<p>Another possibility is to append when the file is read by the program. So I took inspiration from the example&#8217;s main&nbsp;function <code>glitter-filter</code>:</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nf">glitter-filter</span> <span class="mi">3</span> <span class="p">(</span><span class="nf">mapify</span> <span class="p">(</span><span class="nb">parse </span><span class="p">(</span><span class="nb">slurp </span><span class="nv">filename</span><span class="p">))))</span>
-</code></pre>
-
-<p>and changed it to&nbsp;this:</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">append</span>
-    <span class="p">[</span><span class="nb">name </span><span class="nv">glitter-index</span><span class="p">]</span>
-    <span class="p">(</span><span class="nb">conj </span><span class="p">(</span><span class="nf">mapify</span> <span class="p">(</span><span class="nb">parse </span><span class="p">(</span><span class="nb">slurp </span><span class="nv">filename</span><span class="p">)))</span> <span class="p">{</span><span class="ss">:name</span> <span class="nb">name </span><span class="ss">:glitter-index</span> <span class="nv">glitter-index</span><span class="p">})</span>
-    <span class="p">)</span>
-<span class="p">(</span><span class="nf">append</span> <span class="s">"Bob"</span> <span class="mi">5</span><span class="p">)</span>
-<span class="c1">; =&gt; ({:name "Bob", :glitter-index 5} {:name "Edward Cullen", :glitter-index 10}</span>
-<span class="c1">;   {:name "Bella Swan", :glitter-index 0} {:name "Charlie Swan", :glitter-index 0}</span>
-<span class="c1">;   {:name "Jacob Black", :glitter-index 3} {</span>
-</code></pre>
-
-<p>As you might have noticed, however, that&#8217;s a prepend, not an append. That can be solved by changing the list to a vector - as lists are made for prepending and vectors for appending - but why does the exercise require me to do&nbsp;this?</p>
-<p>And how does this solution work in the wider context of the program? Should I merge it with the&nbsp;original <code>glitter-filter</code> function so I can run it on the file plus one more&nbsp;suspect?</p>
-<h3>What&#8217;s the purpose of these&nbsp;exercises?</h3>
-<p>This led me to wonder about what the purpose of these exercises is. Are they about getting a (the?) correct solution? Or are they about getting you to explore Clojure a bit further by presenting you with a&nbsp;problem?</p>
-<p>The book unfortunately does not tell you. Exercises are first introduced in chapter 3 as <em>&#8220;a fun way to test your Clojure knowledge and to learn more Clojure functions&#8221;</em>. It&#8217;s unclear, however, if that also applies to exercises in subsequent chapters. Another hint to an answer is that the authors haven&#8217;t published the solutions. They are not in the book and they are not in the <a href="https://github.com/braveclojure/cftbat-code">repo</a> that reproduces the example code from the&nbsp;book.</p>
-<p>Other people have <a href="https://github.com/raverona/clojure-for-the-brave-and-true/blob/master/src/clojure_for_the_brave_and_true/chapter4/exercise2.clj">published</a> their <a href="https://github.com/dancrumb/clojure-brave-and-true/blob/master/src/clojure_brave_and_true/chapter4.clj">solutions</a> to the <a href="https://github.com/rafaeldelboni/clojure-brave-and-true/blob/master/src/clojure_brave_and_true/chapter4.clj">exercises</a>. Curiously, they&#8217;re all very different solutions to the same&nbsp;exercises.</p>
-<p>So it seems these exercises are more prompts to learn and practice than exercises with a very specific learning goal to each of&nbsp;them.</p>
-<h2>Deciding to move&nbsp;on</h2>
-<p>After spending a few hours on these exercises and going through the above thought process, I needed to decide what to do. Am I going to spend more time trying to tackle these exercises, even though I&#8217;m learning Clojure for fun and I&#8217;m having no&nbsp;fun?</p>
-<p>Then I realized there was another question hiding behind that question. If I learned things about Clojure by working on these exercises, but didn&#8217;t find a solution to most of them, isn&#8217;t that sufficient? Shouldn&#8217;t that be sufficient? I learned things, right? Especially if my goal is to understand Clojure and not (yet) to start using&nbsp;it?</p>
-<p>I wish I could wholeheartedly answer &#8220;yes&#8221; to that question. That&#8217;s not the case, though. So it is both confident I&#8217;m making the right decision and feeling a little sad and disappointed with myself, that I have decided to let these exercises be and move on to chapter&nbsp;5.</p>
+<p class="more"><a href="clojure/2022/clj-11-moving-on-from-some-unsolved-exercises/">Read&nbsp;more…</a></p>
 </div>
                 </div>
             </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2022/three-lessons-after-three-months-of-quality-engineering/" class="u-url">Three lessons after three months of quality&nbsp;engineering</a></h1>

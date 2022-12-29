@@ -18,6 +18,8 @@ A good example to talk about the challenge with these exercises is the second on
 
 >  Write a function, append, which will append a new suspect to your list of suspects.
 
+<!-- TEASER_END -->
+
 The list of suspects is part of the [example program](https://www.braveclojure.com/core-functions-in-depth/#A_Vampire_Data_Analysis_Program_for_the_FWPD) at the end of chapter 4, which was the topic of my two previous posts [(clj 9)](link://slug/clj-9-how-to-figure-out-what-a-function-does) and [(clj 10)](link://slug/clj-10-the-mapify-function-of-clj-9-revisited). This list is read from a csv file, so one way to interpret the exercise, is that you have to append them to the file. However, writing to the csv file is what exercise 4 is all about.
 
 Another possibility is to append when the file is read by the program. So I took inspiration from the example's main function `glitter-filter`:

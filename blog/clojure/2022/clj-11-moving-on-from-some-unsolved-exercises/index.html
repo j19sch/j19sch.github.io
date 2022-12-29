@@ -116,6 +116,8 @@ The challenge with th'>
 <blockquote>
 <p>Write a function, append, which will append a new suspect to your list of&nbsp;suspects.</p>
 </blockquote>
+<!-- TEASER_END -->
+
 <p>The list of suspects is part of the <a href="https://www.braveclojure.com/core-functions-in-depth/#A_Vampire_Data_Analysis_Program_for_the_FWPD">example program</a> at the end of chapter 4, which was the topic of my two previous posts <a href="../clj-9-how-to-figure-out-what-a-function-does/">(clj 9)</a> and <a href="../clj-10-the-mapify-function-of-clj-9-revisited/">(clj 10)</a>. This list is read from a csv file, so one way to interpret the exercise, is that you have to append them to the file. However, writing to the csv file is what exercise 4 is all&nbsp;about.</p>
 <p>Another possibility is to append when the file is read by the program. So I took inspiration from the example&#8217;s main&nbsp;function <code>glitter-filter</code>:</p>
 <pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nf">glitter-filter</span> <span class="mi">3</span> <span class="p">(</span><span class="nf">mapify</span> <span class="p">(</span><span class="nb">parse </span><span class="p">(</span><span class="nb">slurp </span><span class="nv">filename</span><span class="p">))))</span>

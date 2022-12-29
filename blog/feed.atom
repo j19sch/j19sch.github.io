@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes</title>
   <id>https://smallsheds.garden/blog/feed.atom</id>
-  <updated>2022-12-29T16:36:53Z</updated>
+  <updated>2022-12-29T16:42:27Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -25,33 +25,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;Write a function, append, which will append a new suspect to your list of suspects.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;The list of suspects is part of the &lt;a href="https://www.braveclojure.com/core-functions-in-depth/#A_Vampire_Data_Analysis_Program_for_the_FWPD"&gt;example program&lt;/a&gt; at the end of chapter 4, which was the topic of my two previous posts &lt;a href="https://smallsheds.garden/blog/clojure/2022/clj-9-how-to-figure-out-what-a-function-does/"&gt;(clj 9)&lt;/a&gt; and &lt;a href="https://smallsheds.garden/blog/clojure/2022/clj-10-the-mapify-function-of-clj-9-revisited/"&gt;(clj 10)&lt;/a&gt;. This list is read from a csv file, so one way to interpret the exercise, is that you have to append them to the file. However, writing to the csv file is what exercise 4 is all about.&lt;/p&gt;
-&lt;p&gt;Another possibility is to append when the file is read by the program. So I took inspiration from the example's main function &lt;code&gt;glitter-filter&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;glitter-filter&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;mapify&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;parse &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;slurp &lt;/span&gt;&lt;span class="nv"&gt;filename&lt;/span&gt;&lt;span class="p"&gt;))))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;and changed it to this:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;defn &lt;/span&gt;&lt;span class="nv"&gt;append&lt;/span&gt;
-    &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nb"&gt;name &lt;/span&gt;&lt;span class="nv"&gt;glitter-index&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;conj &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;mapify&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;parse &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;slurp &lt;/span&gt;&lt;span class="nv"&gt;filename&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="ss"&gt;:name&lt;/span&gt; &lt;span class="nb"&gt;name &lt;/span&gt;&lt;span class="ss"&gt;:glitter-index&lt;/span&gt; &lt;span class="nv"&gt;glitter-index&lt;/span&gt;&lt;span class="p"&gt;})&lt;/span&gt;
-    &lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;append&lt;/span&gt; &lt;span class="s"&gt;"Bob"&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="c1"&gt;; =&amp;gt; ({:name "Bob", :glitter-index 5} {:name "Edward Cullen", :glitter-index 10}&lt;/span&gt;
-&lt;span class="c1"&gt;;   {:name "Bella Swan", :glitter-index 0} {:name "Charlie Swan", :glitter-index 0}&lt;/span&gt;
-&lt;span class="c1"&gt;;   {:name "Jacob Black", :glitter-index 3} {&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;As you might have noticed, however, that's a prepend, not an append. That can be solved by changing the list to a vector - as lists are made for prepending and vectors for appending - but why does the exercise require me to do this?&lt;/p&gt;
-&lt;p&gt;And how does this solution work in the wider context of the program? Should I merge it with the original &lt;code&gt;glitter-filter&lt;/code&gt; function so I can run it on the file plus one more suspect?&lt;/p&gt;
-&lt;h3&gt;What's the purpose of these exercises?&lt;/h3&gt;
-&lt;p&gt;This led me to wonder about what the purpose of these exercises is. Are they about getting a (the?) correct solution? Or are they about getting you to explore Clojure a bit further by presenting you with a problem?&lt;/p&gt;
-&lt;p&gt;The book unfortunately does not tell you. Exercises are first introduced in chapter 3 as &lt;em&gt;"a fun way to test your Clojure knowledge and to learn more Clojure functions"&lt;/em&gt;. It's unclear, however, if that also applies to exercises in subsequent chapters. Another hint to an answer is that the authors haven't published the solutions. They are not in the book and they are not in the &lt;a href="https://github.com/braveclojure/cftbat-code"&gt;repo&lt;/a&gt; that reproduces the example code from the book.&lt;/p&gt;
-&lt;p&gt;Other people have &lt;a href="https://github.com/raverona/clojure-for-the-brave-and-true/blob/master/src/clojure_for_the_brave_and_true/chapter4/exercise2.clj"&gt;published&lt;/a&gt; their &lt;a href="https://github.com/dancrumb/clojure-brave-and-true/blob/master/src/clojure_brave_and_true/chapter4.clj"&gt;solutions&lt;/a&gt; to the &lt;a href="https://github.com/rafaeldelboni/clojure-brave-and-true/blob/master/src/clojure_brave_and_true/chapter4.clj"&gt;exercises&lt;/a&gt;. Curiously, they're all very different solutions to the same exercises.&lt;/p&gt;
-&lt;p&gt;So it seems these exercises are more prompts to learn and practice than exercises with a very specific learning goal to each of them.&lt;/p&gt;
-&lt;h2&gt;Deciding to move on&lt;/h2&gt;
-&lt;p&gt;After spending a few hours on these exercises and going through the above thought process, I needed to decide what to do. Am I going to spend more time trying to tackle these exercises, even though I'm learning Clojure for fun and I'm having no fun?&lt;/p&gt;
-&lt;p&gt;Then I realized there was another question hiding behind that question. If I learned things about Clojure by working on these exercises, but didn't find a solution to most of them, isn't that sufficient? Shouldn't that be sufficient? I learned things, right? Especially if my goal is to understand Clojure and not (yet) to start using it?&lt;/p&gt;
-&lt;p&gt;I wish I could wholeheartedly answer "yes" to that question. That's not the case, though. So it is both confident I'm making the right decision and feeling a little sad and disappointed with myself, that I have decided to let these exercises be and move on to chapter 5.&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/clojure/2022/clj-11-moving-on-from-some-unsolved-exercises/"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="brave-clojure" label="brave clojure"/>
     <category term="clojure" label="clojure"/>
     <category term="programming" label="programming"/>
