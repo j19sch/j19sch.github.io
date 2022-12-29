@@ -1397,7 +1397,7 @@ WARN_ABOUT_TAG_METADATA = False
 
 def split_blog_title(title, index):
     import re
-    return re.search("^(\(.*\)) (.*)$", title)[index]
+    return re.search("^(\(.*?\)) (.*)$", title)[index]
 
 TEMPLATE_FILTERS = {
     "split_blog_title": split_blog_title
