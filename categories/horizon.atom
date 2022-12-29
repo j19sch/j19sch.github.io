@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about horizon)</title>
   <id>https://smallsheds.garden/categories/horizon.atom</id>
-  <updated>2022-08-13T12:49:38Z</updated>
+  <updated>2022-12-29T16:36:54Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -32,6 +32,7 @@
     <category term="leadership" label="leadership"/>
     <category term="peer-conference" label="peer conference"/>
     <category term="quality" label="quality"/>
+    <category term="quality-engineering" label="quality engineering"/>
     <category term="small-steps" label="small steps"/>
   </entry>
 </feed>

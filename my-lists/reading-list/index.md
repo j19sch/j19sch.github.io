@@ -20,6 +20,10 @@ hidetitle: false
 - Battle Scars: A Story of War and All That Follows - Jason Fox
 - De zeven vinkjes: Hoe mannen zoals ik de baas spelen - Joris Luyendijk
 - Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed - James C. Scott
+- Free Your Inner Nonfiction Writer: Educate, Influence, and Entertain Your Readers - Johanna Rothman
+- Punk Rock Entrepeneur: Running a Business without Losing your Values - Caroline Moore
+- The Mission, the Men, and Me: Lessons from a Former Delta Force Commander - Pete Blaber
+- Agile Software Development Ecosystems - Jim Highsmith
 
 
 ### 2021
