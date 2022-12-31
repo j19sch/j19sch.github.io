@@ -24,7 +24,7 @@ SITE_URL = "https://smallsheds.garden/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://j19sch.github.io/"
-BLOG_EMAIL = "j19sch@hey.com"
+BLOG_EMAIL = "site@joep.slmail.me"
 BLOG_DESCRIPTION = "Joep Schuurkes"  # (translatable)
 
 # Nikola is multilingual!
