@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://smallsheds.garden/blog/feed.atom</loc>
-  <lastmod>2022-12-29T16:36:00Z</lastmod>
+  <lastmod>2022-12-29T16:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/blog/rss.xml</loc>
-  <lastmod>2022-12-29T16:36:00Z</lastmod>
+  <lastmod>2022-12-29T16:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/agile-manifesto.atom</loc>
@@ -47,11 +47,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/brave-clojure.atom</loc>
-  <lastmod>2022-12-29T16:36:00Z</lastmod>
+  <lastmod>2022-12-29T16:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/brave-clojure.xml</loc>
-  <lastmod>2022-12-29T16:36:00Z</lastmod>
+  <lastmod>2022-12-29T16:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_agile.atom</loc>
@@ -71,11 +71,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_clojure.atom</loc>
-  <lastmod>2022-12-29T16:36:00Z</lastmod>
+  <lastmod>2022-12-29T16:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_clojure.xml</loc>
-  <lastmod>2022-12-29T16:36:00Z</lastmod>
+  <lastmod>2022-12-29T16:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_conference.atom</loc>
@@ -231,11 +231,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/clojure.atom</loc>
-  <lastmod>2022-12-29T16:36:00Z</lastmod>
+  <lastmod>2022-12-29T16:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/clojure.xml</loc>
-  <lastmod>2022-12-29T16:36:00Z</lastmod>
+  <lastmod>2022-12-29T16:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/conference.atom</loc>
@@ -447,11 +447,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/programming.atom</loc>
-  <lastmod>2022-12-29T16:36:00Z</lastmod>
+  <lastmod>2022-12-29T16:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/programming.xml</loc>
-  <lastmod>2022-12-29T16:36:00Z</lastmod>
+  <lastmod>2022-12-29T16:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/python.atom</loc>
@@ -703,6 +703,6 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/sitemap.xml</loc>
-  <lastmod>2022-12-29T16:36:00Z</lastmod>
+  <lastmod>2022-12-31T12:52:00Z</lastmod>
  </sitemap>
 </sitemapindex>
