@@ -2,7 +2,7 @@
 .. title: How this tester writes code
 .. slug: how-this-tester-writes-code
 .. date: 2019-06-08 18:21:38 UTC+02:00
-.. tags: python, programming, IDEs
+.. tags: python, programming, IDEs, test automation
 .. category: programming
 .. link: 
 .. description:
@@ -144,7 +144,7 @@ First of all, a DSL is limited to its domain. If you want to do something it was
 Secondly, I think there's value for anyone who's part of software development, to have a basic understanding of programming. The best way to do that is to do things in code on a a regular basis - preferably as part of your job. Building tests is a great way for non-programmers to have that experience.
 
 
-## Revisiting my blogpost from 2015
+## Revisiting my blogpost from 2015 <a id="revisiting-my-blogpost-from-2105"></a>
 As mentioned in the introduction, in 2015 I wrote a blogpost with the title "[Test automation - five questions leading to five heuristics](link://slug/test-automation-five-questions-leading-to-five-heuristics)". So let's see revisit those heuristics more than four years later.
 
 **Heuristic 0: Don't call it test automation.**  

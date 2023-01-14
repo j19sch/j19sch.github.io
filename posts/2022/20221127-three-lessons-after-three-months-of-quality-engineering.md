@@ -68,3 +68,7 @@ So I have to remind myself to be patient. That my main focus might be on figurin
 What I find interesting about these three lessons is that none of them are directly related to quality engineering or software development as such. Rather, they're about entering a situation and figuring out how you, with your specific skills and knowledge, can add value.
 
 You could say that's a problem, typical of roles that lack very clear expectations. I'd like to turn that around, though. I think that things get a lot better, when people can let their job description fade into the background and instead focus on where they can bring value.
+
+---
+
+*This post was also published in the [January '23 issue](https://teatimewithtesters.com/wp-content/uploads/2023/01/TTwT_January_2023.pdf) of [Tea-time with Testers](https://teatimewithtesters.com/).*
