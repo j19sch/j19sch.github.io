@@ -9,7 +9,8 @@
 .. type: text
 -->
 
-(I wrote a follow-up to this post in June 2019: [how this tester writes code](link://slug/how-this-tester-writes-code).)
+*I wrote a [follow-up](link://slug/how-this-tester-writes-code) to this post in June 2019 in which I [revisit the heuristics](link://slug/how-this-tester-writes-code#revisiting-my-blogpost-from-2105) from this post.*
+
 
 In 1984 Abelson and Sussman said in the Preface to '[Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sicp/)':
 
@@ -40,7 +41,7 @@ So you have at least one test that doesn't return the result you want to have. T
 
 These four areas are relevant whether you're investigating automated tests or other tests. However, a major problem with automated tests is that this investigation is more difficult because two of the four areas are bigger. First of all there's the test execution area. Your translated test designs will be interpreted by a computer, which has a lot less interpretative flexibility than a human being. So your translation needs to be of a higher quality than if you were translating for another human being. Secondly, the test tooling area is bigger, simply because you have more tooling.
 
-**Question 5 (bonus meta-question): What understanding are you losing by automating?**  
+### Question 5 (bonus meta-question): What understanding are you losing by automating?
 Toyota is not unfamiliar with automation. And last year, they decided to replace a number of robots in their factories with human workers. Why? As project lead Mitsuru Kawai says:
 
 > We cannot simply depend on the machines that only repeat the same task over and over again. To be the master of the machine, you have to have the knowledge and the skills to teach the machine. (source: [Bloomberg](http://www.bloomberg.com/news/articles/2014-04-06/humans-replacing-robots-herald-toyota-s-vision-of-future))
