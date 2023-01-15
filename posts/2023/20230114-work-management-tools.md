@@ -1,5 +1,5 @@
 <!--
-.. title: Work management tools
+.. title: The affordances of our work management tools are not very agile
 .. slug: work-management-tools
 .. date: 2023-01-14 13:46:25 UTC+01:00
 .. tags: quality engineering, agile
@@ -9,17 +9,116 @@
 .. type: text
 -->
 
-# Intro
+About two weeks ago I had a thought that felt both serious and not serious, so [I asked Mastodon](https://chaos.social/@joeposaurus/109635747014542350) if I should write a post about it:
 
-Affordances and signifiers of our work management tools
+> Should I write a blog post about companies leaving money on the table by not leveraging their choice of work management tool (Jira, Shortcut, etc) as a competitive advantage?
+
+31% said "yes" and 54% said "a post about what now?", which I suppose reflects my own feelings about the topic. And it feels as an encouragement to write this post, especially because of that 54%. So let's talk about work management tools, the original (user) stories, affordances and signifiers, and how these tools are hurting agility. 
+
+
+
+Jira, Shortcut, YouTrack, Trello, Basecamp, Asana, ClickUp, Rally
+
+# The core idea (tl;dr)
+
+Current work management tools (Jira, Shortcut, Asana, YouTrack, etc):
+
+
+- try to be too many things
+- suggest a specific way of working without us noticing, with us thinking that's the default
+
 
 <!-- TEASER_END -->
 
-# Affordances
+
+# What do work management tools do?
+
+
+## The original (user) stories
+work management tools started with story cards and status groups/columns -> XP
+
+even if this is not historically true, it feels as the core functionality of these tools
+
+> Give stories short names in addition to a short prose or graphical description. Write the stories on index cards and put them on a frequently-passed wall. - p 45, Extreme Programming Explained 2nd ed, Kent Beck with Cynthia Andres
+
+p 40 idealized story wall with statuses: Done, This Week, This Release, To Be Estimated, Future
+
+### The art of agile development 2nd ed, James Shore
+
+> *Stories* are for planning. They're the playing pieces of the planning game. That's it! Alistair Cockburn calls them "promissory notes for future conversations." (p 13)
+
+> Because stories are just a reminder to have a conversation, the don't need to be detailed. (p 130)
+
+> The card  isn't meant to be a requirements document. (p 130)
+
+> Finally, another common change is to track stories in a spreadsheet, or issue tracking tool, rather than on index cards. That can make a list of stories easier to read, but it makes visualizations and collaboration more difficult. It's a net loss that's hard to appreciate without experience. Give cards at least three months before trying alternatives. Even if your team is remote, use virtual index cards on your virtual whiteboard rather than a spreadsheet or issue tracking tool. (p 138)
+
+> Creating users stories is a very common practice in Agile software development. They were first coined in 1998 by Alistair Cockburn (one of the great minds who signed the Agile Manifesto). In his own words, “A user story is a promise for a conversation.”. https://medium.com/paloit/how-to-write-a-proper-user-story-33d939e6f714
+
+
+> Back in 1998 Alistair Cockburn, the co-author of the Agile Manifesto, coined the phrase: “A user story is a promise for a conversation” https://www.evozon.com/the-importance-of-the-conversation-in-a-user-story/
+
+
+## What these tools have become
+
+current tools:
+stories
+and requirements
+and detailed status
+inc pipeline
+and documentation? kind of? but not really? but no other?
+and reporting (cycle time, etc)
+and ...?
+
+
+
+- assign to one, to many, to team
+- burn-up versus burn-down chart
+- dashboards, what metrics, what data
+	- reports and graphs and dashboards
+	- TFS pass/fail report: we don't care
+- epics -> stories -> tasks
+	- old-school work breakdown structure, kinda waterfall, although slices are more vertical
+- all the extra fields
+	- from managing work to capturing information / documentation
+	- to do list and done list and journal and documentation
+	- huge backlogs, afraid to delete stuff -> EZ post
+- should it be easy to manage a large backlog?
+	- Weinberg story about bug db performance
+
+> We have so many bugs, our bug database doesn't work efficiently. (p 40) - Perfect Software and Other Illusions about Testing, Jerry Weinberg
+
+
+## Work management becoming the work
+- managing the work versus managing the work (working the management?)
+- one is managing the actual work, the other is managing the work artefacts
+- isntead of a tool, something ancillary, the work management becomes a focus
+
+
+# Affordances -> how our tools shape us
+
+> We shape our tools and thereafter our tools shape us.[^1]
+
+[^1]: This quote is often ascribed to Marshall McLuhan, but that's [up for debate](https://quoteinvestigator.com/2016/06/26/shape/).
+
+
+
+Affordances and signifiers of our work management tools shape our behaviour.
+Affordances are tempting. Making decisions for us. -> If all you have is a hammer, ...
+
+It doesn't feel like a choice. It's the normal/default way of doing things.
+
+- Teams vs Slack: I can hang out in Slack, but not in MS Teams.
+- title vs description vs comments
+- assign to one, to many, to team
+- epics -> stories -> tasks
+	- old-school work breakdown structure, kinda waterfall, although slices are more vertical
+
+
 
 The Design of Everyday Things (revised and expanded) by Donald A. Norman
 
-
+classic example: door handles that through their shape (signifier) make it clear if they need to be pushed or pulled (affordance)
 
 > An affordance is a relationship between the properties of an object and the capabilities of the agent that determine just how the object could possibly be used. (p 11)
 
@@ -43,83 +142,29 @@ The Design of Everyday Things (revised and expanded) by Donald A. Norman
 
 
 constraints 73
+
 7 principles of design p 72-73
+
 > 7. Constraints. Providing physical, logical, semantic, and cultural constraints guides actions and eases interpretation. (p 73)
 
 
-# Maaret
-
-A No Jira Experiment
-https://visible-quality.blogspot.com/2022/12/a-no-jira-experiment.html
-
-What if not break down epics into stories in advance?
-Need someone like Maaret to come up with and try it. Goes against 20+ years of agile.
-
-
-# Our tools and us
-
-> We shape our tools and thereafter our tools shape us. (Emerson Brown, misquoting Winston Churchill)
-
-
-Quote Investigator - https://quoteinvestigator.com/2016/06/26/shape/
-
-
-# Examples
-
-- Teams vs Slack
-- Twitter vs Mastodon
-- title vs description vs comments
-- assign to one, to many, to team
-- burn-up versus burn-down chart
-- dashboards, what metrics, what data
-	- reports and graphs and dashboards
-	- TFS pass/fail report: we don't care
-- epics -> stories -> tasks
-	- old-school work breakdown structure, kinda waterfall, although slices are more vertical
-- all the extra fields
-	- from managing work to capturing information / documentation
-	- to do list and done list and journal and documentation
-	- huge backlogs, afraid to delete stuff -> EZ post
-- should it be easy to manage a large backlog?
-	- Weinberg story about bug db performance
-
-# Work management becoming the work
-- managing the work versus managing the work (working the management?)
-- one is managing the actual work, the other is managing the work artefacts
-
-> Creating users stories is a very common practice in Agile software development. They were first coined in 1998 by Alistair Cockburn (one of the great minds who signed the Agile Manifesto). In his own words, “A user story is a promise for a conversation.”.
-
-https://medium.com/paloit/how-to-write-a-proper-user-story-33d939e6f714
-
-
-> Back in 1998 Alistair Cockburn, the co-author of the Agile Manifesto, coined the phrase: “A user story is a promise for a conversation”
-
-https://www.evozon.com/the-importance-of-the-conversation-in-a-user-story/
-
-
-## Stories
-> Give stories short names in addition to a short prose or graphical description. Write the stories on index cards and put them on a frequently-passed wall. - p 45, Extreme Programming Explained 2nd ed, Kent Beck with Cynthia Andres
-
-p 40 idealized story wall with statuses: Done, This Week, This Release, To Be Estimated, Future
-
-### The art of agile development 2nd ed, James Shore
-
-> *Stories* are for planning. They're the playing pieces of the planning game. That's it! Alistair Cockburn calls them "promissory notes for future conversations." (p 13)
-
-> Because stories are just a reminder to have a conversation, the don't need to be detailed. (p 130)
-
-> The card  isn't meant to be a requirements document. (p 130)
-
-> Finally, another common change is to track stories in a spreadsheet, or issue tracking tool, rather than on index cards. That can make a list of stories easier to read, but it makes visualizations and collaboration more difficult. It's a net loss that's hard to appreciate without experience. Give cards at least three months before trying alternatives. Even if your team is remote, use virtual index cards on your virtual whiteboard rather than a spreadsheet or issue tracking tool. (p 138)
-
-
-## Leaving money on the table
+# how is this hurting agility?
 
 the tool is a commodity (Wardley mapping) -> the practices become too -> no competitive advantage
 
 should you? depends, but Accelerate convincing point of how crucial it is to be good at sw dev
 
 
-> Should I write a blog post about companies leaving money on the table by not leveraging their choice of work management tool (Jira, Shortcut, etc) as a competitive advantage?
+Individuals and interactions over processes and tools -> managing the work management tool
+Working software over comprehensive documentation -> managinf the work management tools
+https://agilemanifesto.org/
 
-https://chaos.social/@joeposaurus/109635747014542350
+
+
+# Maaret -> what different can look like
+
+A No Jira Experiment
+https://visible-quality.blogspot.com/2022/12/a-no-jira-experiment.html
+
+What if not break down epics into stories in advance?
+Need someone like Maaret to come up with and try it. Goes against 20+ years of agile.
