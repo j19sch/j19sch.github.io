@@ -7,7 +7,17 @@
 .. link: 
 .. description: 
 .. type: text
+.. previewimage: /images/2023/work-mgt-tools/fig4-stories-on-a-wall.jpg
 -->
+
+# ToDO
+
+- better title
+- tl;dr
+
+
+---
+
 
 About two weeks ago I had a thought that felt both serious and not serious, so [I asked Mastodon](https://chaos.social/@joeposaurus/109635747014542350) if I should write a post about it:
 
@@ -33,69 +43,103 @@ Current work management tools (Jira, Shortcut, Asana, YouTrack, etc):
 
 # What do work management tools do?
 
+At the core of any work management tool I've seen or used in software development, are cards representing work, grouped by status. Initially these were physical cards on a wall. As described for example in "Extreme Programming Explained (2nd ed)" (Kent Beck with Cynthia Andres):
 
-## The original (user) stories
-work management tools started with story cards and status groups/columns -> XP
+> Give stories short names in addition to a short prose or graphical description. Write the stories on index cards and put them on a frequently-passed wall. (p 45)
 
-even if this is not historically true, it feels as the core functionality of these tools
+What that looks like, with the cards sorted by statyus is shown on page 40 in figure 4:
 
-> Give stories short names in addition to a short prose or graphical description. Write the stories on index cards and put them on a frequently-passed wall. - p 45, Extreme Programming Explained 2nd ed, Kent Beck with Cynthia Andres
+<div class="d-flex justify-content-center">
+	<figure class="figure" style="width:65%">
+		<img src="/images/2023/work-mgt-tools/fig4-stories-on-a-wall.jpg" class="figure-img img-fluid rounded"
+			alt="Figure 4 Stories on a wall from Extreme Programming Explained 2nd ed. A wall with index cards grouped into Done, This Week, This Release, To Be Estimated, Future."/>
+	</figure>
+</div>
 
-p 40 idealized story wall with statuses: Done, This Week, This Release, To Be Estimated, Future
+Note that having physical cards on a physical wall was a conscious choice:
 
-### The art of agile development 2nd ed, James Shore
+> Every attempt I've seen to computerize stories has failed to provide a fraction of the value of having real cards on a real wall. If you need to report progress to other parts of the organization in a familiar format, translte the cards into that format periodically. (p 45)
 
-> *Stories* are for planning. They're the playing pieces of the planning game. That's it! Alistair Cockburn calls them "promissory notes for future conversations." (p 13)
-
-> Because stories are just a reminder to have a conversation, the don't need to be detailed. (p 130)
-
-> The card  isn't meant to be a requirements document. (p 130)
+With *"Extreme Programming Explained (2nd ed)"* being from 2004 this may seem outdated advice, but James Shore delivers the same message in the second edition of his *"The Art of Agile Development"* which was published in 2021:
 
 > Finally, another common change is to track stories in a spreadsheet, or issue tracking tool, rather than on index cards. That can make a list of stories easier to read, but it makes visualizations and collaboration more difficult. It's a net loss that's hard to appreciate without experience. Give cards at least three months before trying alternatives. Even if your team is remote, use virtual index cards on your virtual whiteboard rather than a spreadsheet or issue tracking tool. (p 138)
 
-> Creating users stories is a very common practice in Agile software development. They were first coined in 1998 by Alistair Cockburn (one of the great minds who signed the Agile Manifesto). In his own words, “A user story is a promise for a conversation.”. https://medium.com/paloit/how-to-write-a-proper-user-story-33d939e6f714
+And similar to Kent Beck he emphasizes limiting the information on a story or card:
+
+> *Stories* are for planning. They're the playing pieces of the planning game. That's it! Alistair Cockburn calls them "promissory notes for future conversations." (p 13)
+> Because stories are just a reminder to have a conversation, they don't need to be detailed. (p 130)
 
 
-> Back in 1998 Alistair Cockburn, the co-author of the Agile Manifesto, coined the phrase: “A user story is a promise for a conversation” https://www.evozon.com/the-importance-of-the-conversation-in-a-user-story/
+## The digitalization of work management tools
+
+However, that's not how most people work. They do use a computerized work management tool such as Jira, Shortcut, Asana, YouTrack, etc. And that allows you to do a lot more:
+
+- longer descriptions: requirements or acceptance criteria, implementation details, how to test, questions, risks
+- have a comments section
+- finegrained statuses with access control
+- use additional fields: component(s), issue type, project, priority, fix version, ...
+- assign stories to one or several team members
+- tracking epics and tasks together with the stories
+- integration with your version control, CI/CD pipeline
+- track relations between cards: relates to, blocks, depends on, ...
+- graphs (eg. burn-up/down chart), dashboards, and reports
+- maintain a large backlog
+- do all of this across teams / on department level
+
+So instead of a lightweight work management tool, we end up with a work adminstration system. Instead of a tool to enable conversations, we have a knowledge management application. And that leads to problems. I'll give a few examples below and then share the underlying bigger problem.
+
+### Work management tools used for documentation
+
+- documentation? kind of? but not really? but no other?
+- adding stuff in commments instead of description
 
 
-## What these tools have become
+### Work management tools used for backlogs
 
-current tools:
-stories
-and requirements
-and detailed status
-inc pipeline
-and documentation? kind of? but not really? but no other?
-and reporting (cycle time, etc)
-and ...?
+https://elizabethzagroba.com/posts/2022/11_19_half-life_for_your_backlog/
 
-
-
-- assign to one, to many, to team
-- burn-up versus burn-down chart
-- dashboards, what metrics, what data
-	- reports and graphs and dashboards
-	- TFS pass/fail report: we don't care
-- epics -> stories -> tasks
-	- old-school work breakdown structure, kinda waterfall, although slices are more vertical
-- all the extra fields
-	- from managing work to capturing information / documentation
-	- to do list and done list and journal and documentation
-	- huge backlogs, afraid to delete stuff -> EZ post
 - should it be easy to manage a large backlog?
 	- Weinberg story about bug db performance
 
 > We have so many bugs, our bug database doesn't work efficiently. (p 40) - Perfect Software and Other Illusions about Testing, Jerry Weinberg
 
 
-## Work management becoming the work
+### Work management tools used for work breakdown structures
+- epics -> stories -> tasks
+	- old-school work breakdown structure, kinda waterfall, although slices are more vertical
+
+
+## Managing the work management tool replaces doing the work
+
+- all the extra fields
+	- from managing work to capturing information / documentation
+	- to do list and done list and journal and documentation
+	- huge backlogs, afraid to delete stuff -> EZ post
+
+
+- alt title Managing the work management tool becoming work
 - managing the work versus managing the work (working the management?)
 - one is managing the actual work, the other is managing the work artefacts
 - isntead of a tool, something ancillary, the work management becomes a focus
 
 
-# Affordances -> how our tools shape us
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Intermezzo: Affordances. signifiers, and constraints
+
+## Affordances -> how our tools shape us
 
 > We shape our tools and thereafter our tools shape us.[^1]
 
@@ -161,10 +205,12 @@ https://agilemanifesto.org/
 
 
 
-# Maaret -> what different can look like
+## Maaret -> what different can look like
 
 A No Jira Experiment
 https://visible-quality.blogspot.com/2022/12/a-no-jira-experiment.html
+
+https://www.linkedin.com/feed/update/urn:li:activity:7021350602873913344/
 
 What if not break down epics into stories in advance?
 Need someone like Maaret to come up with and try it. Goes against 20+ years of agile.
