@@ -1,7 +1,7 @@
 <!--
-.. title: The affordances of our work management tools are not very agile
-.. slug: work-management-tools
-.. date: 2023-01-14 13:46:25 UTC+01:00
+.. title: Our work management tools are limiting our imagination
+.. slug: our-work-management-tools-are-limiting-our-imagination
+.. date: 2023-01-22 13:46:25 UTC+01:00
 .. tags: quality engineering, agile
 .. category: agile
 .. link: 
@@ -13,6 +13,7 @@
 # ToDO
 
 - better title
+	- Our work managment tools are limiting our imagination
 - tl;dr
 
 
@@ -67,6 +68,7 @@ With *"Extreme Programming Explained (2nd ed)"* being from 2004 this may seem ou
 And similar to Kent Beck he emphasizes limiting the information on a story or card:
 
 > *Stories* are for planning. They're the playing pieces of the planning game. That's it! Alistair Cockburn calls them "promissory notes for future conversations." (p 13)
+
 > Because stories are just a reminder to have a conversation, they don't need to be detailed. (p 130)
 
 
@@ -90,37 +92,31 @@ So instead of a lightweight work management tool, we end up with a work adminstr
 
 ### Work management tools used for documentation
 
-- documentation? kind of? but not really? but no other?
-- adding stuff in commments instead of description
+With the introduction of description fields, work managment tools allow us to capture a lot more detail for each story. So these work items become a kind of a documentation. Unfortunately, a poor kind at that.
 
+They are written before the work is done. Things we learn after refinement are often added in comments (if it all) instead of updated in the description. Work items are transient. The description of one feature might be linked to five work items, some of them ammending, changing, or removing parts of other work items. So getting a picture of the current state of a feature is a form of archeology. Finally, I suspect that filling the description field of a work item often is sufficient to satisfy our felt need for documentation. So we don't write any additional documenation.
 
 ### Work management tools used for backlogs
 
-https://elizabethzagroba.com/posts/2022/11_19_half-life_for_your_backlog/
+Managing a backlog on paper index cards comes with toil, but arguably that's a good thing. A digital backlog lets you keep adding and adding stuff. There's no incentive to be reluctant in adding things, or to clean it up, because there's just too much stuff in it. For some excellent practical advice on this topic, go read Elizabeth Zagroba's post [*"Half-Life For Your Backlog"*](https://elizabethzagroba.com/posts/2022/11_19_half-life_for_your_backlog/).)
 
-- should it be easy to manage a large backlog?
-	- Weinberg story about bug db performance
+It's a good thing we have been throwing some proper computing power at our backlogs, or many of us would have ended up as one of Jerry Weinberg's clients and their bug database:
 
-> We have so many bugs, our bug database doesn't work efficiently. (p 40) - Perfect Software and Other Illusions about Testing, Jerry Weinberg
+> We have so many bugs, our bug database doesn't work efficiently. (p 40, Perfect Software and Other Illusions about Testing, Jerry Weinberg)
 
 
 ### Work management tools used for work breakdown structures
-- epics -> stories -> tasks
-	- old-school work breakdown structure, kinda waterfall, although slices are more vertical
+
+Breaking down stories into tasks is nothing new. (Extreme Programming Explained 2nd ed describes it on page 46-47.) Digital tools do make it easier to do that well in advance, because it's easy enough to change them later. They also make it easy to group stories into epics and let you see all stories in an epic with a click of a button. Next there's the feature of tracking relations between stories, e.g. a dependency. Finally, we do all of this in one digital tool across all teams. And what we end up with is a reinvention of work breakdown structures, Gantt charts, and PERT charts. The only difference is the agile terminology and hopefully a more vertical work breakdown than in the waterfall days.
 
 
-## Managing the work management tool replaces doing the work
+## Managing the work in the work management tool becomes work
 
-- all the extra fields
-	- from managing work to capturing information / documentation
-	- to do list and done list and journal and documentation
-	- huge backlogs, afraid to delete stuff -> EZ post
+With all these additional features and uses of our work management tools, we also spend more time in those tools. Instead of an ancillary tool to facilitate doing the work, managing all the information in the tool becomes additional work. Instead of the tool being an aide for building software, we have to split our time between building software and the artefacts collected in our work management tools.
 
+Arguably that's fine. The work needs to be managed, artefacts and tools help us in that. However, there is the danger of the reifaction of those artefacts. We're no longer managing the work related to the story, we're managing the story artefact in our work management tool.
 
-- alt title Managing the work management tool becoming work
-- managing the work versus managing the work (working the management?)
-- one is managing the actual work, the other is managing the work artefacts
-- isntead of a tool, something ancillary, the work management becomes a focus
+And at that point we've come quite far from the [Agile Manifesto](https://agilemanifesto.org/)'s *"Individuals and interactions over processes and tools"* and *"Working software over comprehensive documentation"*.
 
 
 
@@ -130,14 +126,7 @@ https://elizabethzagroba.com/posts/2022/11_19_half-life_for_your_backlog/
 
 
 
-
-
-
-
-
-
-
-# Intermezzo: Affordances. signifiers, and constraints
+# Affordances. signifiers, and constraints (intermezzo / interlude)
 
 ## Affordances -> how our tools shape us
 
@@ -194,13 +183,18 @@ constraints 73
 
 # how is this hurting agility?
 
+we still need all (most) of this stuff right?
+we document more, but we need some documentation
+we track work across teams, but that needs to happen in some way
+etc etc
+
 the tool is a commodity (Wardley mapping) -> the practices become too -> no competitive advantage
 
 should you? depends, but Accelerate convincing point of how crucial it is to be good at sw dev
 
 
 Individuals and interactions over processes and tools -> managing the work management tool
-Working software over comprehensive documentation -> managinf the work management tools
+Working software over comprehensive documentation -> managing the work management tools
 https://agilemanifesto.org/
 
 
