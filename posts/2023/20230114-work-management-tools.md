@@ -114,44 +114,66 @@ Breaking down stories into tasks is nothing new. (Extreme Programming Explained 
 
 With all these additional features and uses of our work management tools, we also spend more time in those tools. Instead of an ancillary tool to facilitate doing the work, managing all the information in the tool becomes additional work. Instead of the tool being an aide for building software, we have to split our time between building software and the artefacts collected in our work management tools.
 
-Arguably that's fine. The work needs to be managed, artefacts and tools help us in that. However, there is the danger of the reifaction of those artefacts. We're no longer managing the work related to the story, we're managing the story artefact in our work management tool.
+Arguably that's fine. The work needs to be managed, artefacts and tools help us in that. However, there is the danger of the reifaction of those artefacts. We're no longer managing the work related to the story, we're managing the aretefacts related to the story in our work management tool.
 
-And at that point we've come quite far from the [Agile Manifesto](https://agilemanifesto.org/)'s *"Individuals and interactions over processes and tools"* and *"Working software over comprehensive documentation"*.
-
-
+And at that point we've strayed quite a bit from the [Agile Manifesto](https://agilemanifesto.org/)'s *"Individuals and interactions over processes and tools"* and *"Working software over comprehensive documentation"*.
 
 
 
+# Affordances, signifiers, and constraints
 
-
-
-
-# Affordances. signifiers, and constraints (intermezzo / interlude)
-
-## Affordances -> how our tools shape us
+To understand what's happening here, there's the quote:
 
 > We shape our tools and thereafter our tools shape us.[^1]
 
 [^1]: This quote is often ascribed to Marshall McLuhan, but that's [up for debate](https://quoteinvestigator.com/2016/06/26/shape/).
 
+To dig a bit deeper, I think *"The Design of Everyday Things (revised and expanded)"*" by Donald A. Norman is of use. More specifically, what he wrote about affordances, signifiers, and constraints.
 
+### Affordances and signifiers
+
+Norman summarizes the meaning of affordances and signifiers as:
+
+> Affordances are the possible interactions between people and the environment. Some affordances are perceivable, others are not.  
+> Perceived affordances often act as signifiers, but they can be ambiguous.  
+> Signifiers signal things, in particular what actions are possible and how they should be done. Signifiers must be perceivable, else they fail to function. (p 19)
+
+One of the classical examples from his book are doors and door handles. Sometimes you need to push a door to open it, sometimes you need to pull it, sometimes either works. Those are its affordances. But how do you know which of these three it is? That's where signifiers come in. A sign saying "push" or "pull" is a solution, but a better solution is to shape the door handle in a way that it's obvious whether you need to push or pull.
+
+One of my own favorite examples of affordances is comparing Slack with MS Teams. On the one hand, they share a lot of affordances. You can chat with people in channels, to give the most obivous example. On the other hand, they have a very different feel - at least to me. Slack is a place where I feel I can hang out, MS Teams is not.
+
+### Constraints
+
+Norman identifies seven fundamental principles of design in his book (p 72-73). Affordances and signifiers are numbers 4 and 5. Constraints are number 7: 
+
+> Constraints. Providing physical, logical, semantic, and cultural constraints guides actions and eases interpretation. (p 73)
+
+Although all four kinds of constraints are relevant here, I want to especially point out cultural constraints:
+
+> Cultural constraints and conventions are learned artificial restrictions on behavior that reduce the set of likely actions, in many cases leaving only one or two possibilities. (p 76)
+
+> Conventions are actually a form of cultural constraint, usually associated with how people behave. Some conventions determine what activities should be done; others prohibit or discourage actions. But in all cases, they provide those knowledgeable of the culture with powerful constraints of behavior. (p 131)
+
+
+### The self-reinforcing loop of affordances and constraints
+
+affordances -> usage -> conventions
+need -> new features -> affordances -> ...
+
+needs -> affordances -> usage: we shape our tools
+usage -> conventions: our tools shape us
 
 Affordances and signifiers of our work management tools shape our behaviour.
 Affordances are tempting. Making decisions for us. -> If all you have is a hammer, ...
 
 It doesn't feel like a choice. It's the normal/default way of doing things.
 
-- Teams vs Slack: I can hang out in Slack, but not in MS Teams.
-- title vs description vs comments
-- assign to one, to many, to team
-- epics -> stories -> tasks
-	- old-school work breakdown structure, kinda waterfall, although slices are more vertical
+
+---
 
 
 
-The Design of Everyday Things (revised and expanded) by Donald A. Norman
-
-classic example: door handles that through their shape (signifier) make it clear if they need to be pushed or pulled (affordance)
+Norman quote:
 
 > An affordance is a relationship between the properties of an object and the capabilities of the agent that determine just how the object could possibly be used. (p 11)
 
@@ -180,6 +202,7 @@ constraints 73
 
 > 7. Constraints. Providing physical, logical, semantic, and cultural constraints guides actions and eases interpretation. (p 73)
 
+---
 
 # how is this hurting agility?
 
