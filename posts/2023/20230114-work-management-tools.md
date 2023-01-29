@@ -1,7 +1,7 @@
 <!--
 .. title: Our work management tools are limiting our imagination
 .. slug: our-work-management-tools-are-limiting-our-imagination
-.. date: 2023-01-22 13:46:25 UTC+01:00
+.. date: 2023-01-29 13:46:25 UTC+01:00
 .. tags: quality engineering, agile
 .. category: agile
 .. link: 
@@ -120,7 +120,7 @@ And at that point we've strayed quite a bit from the [Agile Manifesto](https://a
 
 
 
-# Affordances, signifiers, and constraints
+# Affordances, signifiers, and constraints -> Affordances and contraints shape our tools and ourselves
 
 To understand what's happening here, there's the quote:
 
@@ -155,79 +155,35 @@ Although all four kinds of constraints are relevant here, I want to especially p
 > Conventions are actually a form of cultural constraint, usually associated with how people behave. Some conventions determine what activities should be done; others prohibit or discourage actions. But in all cases, they provide those knowledgeable of the culture with powerful constraints of behavior. (p 131)
 
 
-### The self-reinforcing loop of affordances and constraints
+### Affordances and contraints shape our tools and ourselves
 
-affordances -> usage -> conventions
-need -> new features -> affordances -> ...
+Affordances on the one hand, and contraints on the other, map very well to the quote I started this section with. We shape our tools by adding affordances to them; thereafter they shape us by becoming constraints. And then these constraints might lead us to identify new needs, which become new affordances, and round and round it goes.
 
-needs -> affordances -> usage: we shape our tools
-usage -> conventions: our tools shape us
-
-Affordances and signifiers of our work management tools shape our behaviour.
-Affordances are tempting. Making decisions for us. -> If all you have is a hammer, ...
-
-It doesn't feel like a choice. It's the normal/default way of doing things.
+Initially these constraints will be mostly on the physical, logical, and semantic level. The tool makes sense in its context. Then with enough adaption, cultural constraints will build around it. The tool will make certain ways to manage work obvious, and others unimaginable. In this sense I think our work management tools have played and are playing a significant role in the reduction of Agile to the bland flavor of Scrum most Agile teams seem to be using these days.
 
 
----
+### How are these constraints limiting us?
 
+I can think of two ways in which these constraints are limiting us. A larger one related to commoditization and innovation (shoutout to Wardley mapping). A smaller one related to ownership.
 
+Most (all?) work management tools are extremely similar, providing the features I listed above. They compete mostly on things like price and legitimacy, barely on feature sets. They're a commodity. And through their constraints they also commoditize the way people manage work, i.e. the bland scrum I mentioned earlier. So no innovation, but also no competitive advantage in how people manage work. Hence me using the words *"leaving money on the table"* in the question I started this post with.
 
-Norman quote:
+Of course, it's very well possible that in your context doing work management like everyone else is perfectly fine. That it doesn't make sense to be an innovator in this area. However, these constraints are still limiting you. They are limiting the ownership your team members feel when it comes to work management.
 
-> An affordance is a relationship between the properties of an object and the capabilities of the agent that determine just how the object could possibly be used. (p 11)
+To give one example, during a company Agile Guild meeting someone asked: "How do you do story points well?" And despite a colleague and me trying introduce the question "What would happen if you stopped using story point?" into the conversation, there was no interest. The person wanted to do story points and wanted to get them right.
 
-> The notion of affordance and the insights it provides originated with J. J. Gibson, an eminent psychologist [...] (p 12)
-
-> But just as I appropriated *affordance* to use in design in a manner somewhat different than its inventor had intended, [...] (p 14)
-
-> Perceived affordances help people figure out what actions are possible without the need for labels or instructions. I call the signalling component of affordances *signifiers*. (p 13)
-
-> The first edition of this book introduced the term *affordances* to the world of design. (p 13)
-
-> "Affordances determine what actions are possible. Signifiers communicate where the action should take place. We need both." (p 14)
-
-> Affordances represent the possibilities in the world for how an agent (a person, animal,or machine) can interact with something. Some affordances are perceivable, others are invisible. Signifiers are signals. (p 18)
-
-> "To summarize:
->
-> - Affordances are the possible interactions between people and the environment. Some affordances are perceivable, others are not.
-> - Perceived affordances often act as signifiers, but they can be ambiguous.
-> - Signifiers signal things, in particular what actions are possible and how they should be done. Signifiers must be perceivable, else they fail to function."" (p 19)
-
-
-constraints 73
-
-7 principles of design p 72-73
-
-> 7. Constraints. Providing physical, logical, semantic, and cultural constraints guides actions and eases interpretation. (p 73)
-
----
-
-# how is this hurting agility?
-
-we still need all (most) of this stuff right?
-we document more, but we need some documentation
-we track work across teams, but that needs to happen in some way
-etc etc
-
-the tool is a commodity (Wardley mapping) -> the practices become too -> no competitive advantage
-
-should you? depends, but Accelerate convincing point of how crucial it is to be good at sw dev
-
-
-Individuals and interactions over processes and tools -> managing the work management tool
-Working software over comprehensive documentation -> managing the work management tools
-https://agilemanifesto.org/
+Our tools are limiting us in imagining better ways to manage our work.
 
 
 
-## Maaret -> what different can look like
+# Let's reclaim our imagination
 
-A No Jira Experiment
-https://visible-quality.blogspot.com/2022/12/a-no-jira-experiment.html
+At this point it's important to distinguish two questions. If you ask me *"But we still need to do all the stuff these tools allows us to do right? We need to visualize work, we need documentation, we need cross-team coordination."* I'd say: *"Yes, we do"* But I'd also add the question: *"Do we need to do these things in the most obvious way as provided by our tools?"* Because I don't think we do.
 
-https://www.linkedin.com/feed/update/urn:li:activity:7021350602873913344/
+We don't need to accept the constraints created by our work management tools. And that can start small. Get rid of one of the many fields on your cards and see if anyone misses it. Create a virtual whiteboard for each epic and use that instead of the Description fields. Limit the number of "in progress"-columns (ideally to one), because if you can't remember the status of everything you're working on, you're probably doing too many things. Stop distinguishing bugs and features in your backlog, because once they're in the backlog, it matters what value they add to the product, not if they're a bug or a feature.
 
-What if not break down epics into stories in advance?
-Need someone like Maaret to come up with and try it. Goes against 20+ years of agile.
+And if you're ready for something larger, [Maaret Pyhäjärvi](https://maaretp.com/) is a great inspiration. She recently shared a [list of things](https://www.linkedin.com/feed/update/urn:li:activity:7021350602873913344/) she has done differently in the past, and she has published a [blog post](https://visible-quality.blogspot.com/2022/12/a-no-jira-experiment.html) about how she *"got to stop using Jira for planning and tracking of work"*.
+
+We need to reclaim our imagination, both in big and small ways. Uncover better[^2] ways of developing software by tring out different things. And perhaps it won't ever happen again that 17 people discovering these new ways get together and succeed in publishing a manifesto that captures the moment and shapes an industry. And that's ok. That too, shouldn't limit us in what we dare to imagine.
+
+[^2]: And sometimes worse ways. Then we dust ourselves off, learn, and try something else.
