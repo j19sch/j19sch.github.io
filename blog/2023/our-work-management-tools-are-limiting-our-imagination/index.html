@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our work management tools are limiting our imagination | Joep Schuurkes</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../feed.atom">
+<link rel="canonical" href="https://smallsheds.garden/blog/2023/our-work-management-tools-are-limiting-our-imagination/">
+<link rel="icon" href="../../../assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="../../../assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../assets/favicons/favicon-96x96.png" sizes="96x96">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../../clojure/2022/clj-11-moving-on-from-some-unsolved-exercises/" title="(clj 11) Moving on from some unsolved exercises" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="Our work management tools are limiting our imagination">
+<meta property="og:url" content="https://smallsheds.garden/blog/2023/our-work-management-tools-are-limiting-our-imagination/">
+<meta property="og:description" content="Several weeks ago I had a thought that felt both serious and not serious, so I asked on Mastodon:
+
+Should I write a blog post about companies leaving money on the table by not leveraging their choice ">
+<meta property="og:image" content="https://smallsheds.garden/images/2023/work-mgt-tools/fig4-stories-on-a-wall.jpg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2023-01-29T22:34:25+01:00">
+<meta property="article:tag" content="agile">
+<meta property="article:tag" content="agile manifesto">
+<meta property="article:tag" content="quality engineering">
+<meta property="article:tag" content="software development">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-projects/" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-talks/" class="nav-link">Talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../../my-lists/reading-list/" class="dropdown-item">Reading list</a>
+                    <a href="../../../my-lists/recommended-reading/" class="dropdown-item">Recommended reading</a>
+                    <a href="../../../my-lists/favorite-podcasts/" class="dropdown-item">Favorite podcasts</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../" class="dropdown-item">My blog</a>
+                    <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
+                    <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Our work management tools are limiting our&nbsp;imagination</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep&nbsp;Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2023-01-29T22:34:25+01:00" itemprop="datePublished" title="29 January 2023">29 January 2023</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>Several weeks ago I had a thought that felt both serious and not serious, so <a href="https://chaos.social/@joeposaurus/109635747014542350">I asked on Mastodon</a>:</p>
+<blockquote>
+<p>Should I write a blog post about companies leaving money on the table by not leveraging their choice of work management tool (Jira, Shortcut, etc) as a competitive&nbsp;advantage?</p>
+</blockquote>
+<p>31% said &#8220;yes&#8221; and 54% said &#8220;a post about what now?&#8221;, which I suppose reflects my own feelings about the topic. And it motivated me to write this post - especially that 54%. So let&#8217;s talk about work management tools, the original (user) stories, affordances and constraints, and how these tools are limiting our&nbsp;imagination. </p>
+<!-- TEASER_END -->
+
+<h2>What do work management tools&nbsp;do?</h2>
+<p>At the core of any work management tool I&#8217;ve ever seen or used in software development, are cards representing work, grouped by status. Initially these were physical cards on a wall, as described in <em>&#8220;Extreme Programming Explained (2nd ed)&#8221;</em> by Kent Beck and Cynthia&nbsp;Andres:</p>
+<blockquote>
+<p>Give stories short names in addition to a short prose or graphical description. Write the stories on index cards and put them on a frequently-passed wall. (p&nbsp;45)</p>
+</blockquote>
+<p>With the cards sorted by status, it looks like this (p&nbsp;40):</p>
+<div class="d-flex justify-content-center">
+    <figure class="figure" style="width:65%"><img src="../../../images/2023/work-mgt-tools/fig4-stories-on-a-wall.jpg" class="figure-img img-fluid rounded" alt="Figure 4 Stories on a wall from Extreme Programming Explained 2nd ed. A wall with index cards grouped into Done, This Week, This Release, To Be Estimated, Future."></figure>
+</div>
+
+<p>Note that having physical cards on a physical wall was a conscious&nbsp;choice:</p>
+<blockquote>
+<p>Every attempt I&#8217;ve seen to computerize stories has failed to provide a fraction of the value of having real cards on a real wall. If you need to report progress to other parts of the organization in a familiar format, translate the cards into that format periodically. (p&nbsp;45)</p>
+</blockquote>
+<p>With <em>&#8220;Extreme Programming Explained (2nd ed)&#8221;</em> being from 2004 this may seem outdated advice, but James Shore delivers the same message in the second edition of <em>&#8220;The Art of Agile Development&#8221;</em> from&nbsp;2021:</p>
+<blockquote>
+<p>Finally, another common change is to track stories in a spreadsheet, or issue tracking tool, rather than on index cards. That can make a list of stories easier to read, but it makes visualizations and collaboration more difficult. It&#8217;s a net loss that&#8217;s hard to appreciate without experience. Give cards at least three months before trying alternatives. Even if your team is remote, use virtual index cards on your virtual whiteboard rather than a spreadsheet or issue tracking tool. (p&nbsp;138)</p>
+</blockquote>
+<p>And similar to Kent Beck he emphasizes limiting the information on a story or&nbsp;card:</p>
+<blockquote>
+<p><em>Stories</em> are for planning. They&#8217;re the playing pieces of the planning game. That&#8217;s it! Alistair Cockburn calls them &#8220;promissory notes for future conversations.&#8221; (p&nbsp;13)</p>
+<p>Because stories are just a reminder to have a conversation, they don&#8217;t need to be detailed. (p&nbsp;130)</p>
+</blockquote>
+<h3>The digitalization of work management&nbsp;tools</h3>
+<p>However, that didn&#8217;t stop almost everyone from switching to computerized work management tools such as Jira, Shortcut, Asana, YouTrack, etc. And these tools allow you to do a lot more than cards on a wall&nbsp;do:</p>
+<ul>
+<li>longer descriptions: requirements or acceptance criteria, implementation details, how to test, questions, risks,&nbsp;etc.</li>
+<li>discuss things in a comments&nbsp;section</li>
+<li>fine-grained statuses with role-based&nbsp;permissions</li>
+<li>additional fields: component(s), issue type, project, priority, fix version,&nbsp;&#8230;</li>
+<li>assign stories to one or several team&nbsp;members</li>
+<li>tracking epics and tasks together with the&nbsp;stories</li>
+<li>track relations between cards: relates to, blocks, depends on,&nbsp;&#8230;</li>
+<li>integration with your version control and <span class="caps">CI</span>/<span class="caps">CD</span>&nbsp;pipeline</li>
+<li>graphs (e.g. burn-up/down chart), dashboards, and&nbsp;reports</li>
+<li>maintain a large&nbsp;backlog</li>
+<li>do all of the above across&nbsp;teams</li>
+</ul>
+<p>So instead of a lightweight work management tool, we end up with a work administration system. Instead of a tool to enable conversations, we have a knowledge management application. And that leads to problems. I&#8217;ll give three examples of problems below and then discuss an underlying bigger&nbsp;problem.</p>
+<h4>Work management tools used for&nbsp;documentation</h4>
+<p>With the introduction of description fields, work management tools allow us to capture a lot more detail for each story. So these work items become a form of a documentation. Most of the time a poor form.&nbsp;unfortunately.</p>
+<p>They are written before the work is done. Things we learn after refinement are often added in comments (if it all) instead of updated in the description. Work items are transient, you can forget about them once they&#8217;re done, while documentation is meant to last. And there is no straightforward mapping between work items and features. The description of one feature might be linked to five work items, some of them amending, changing, or removing parts of other work items. So getting a picture of the current state of a feature based on work items is a form of archeology. Finally, filling the description field of a work item often isn&#8217;t sufficient documentation, but since we did write down something, we don&#8217;t feel a strong need to create any additional&nbsp;documentation.</p>
+<h4>Work management tools used for&nbsp;backlogs</h4>
+<p>Managing a backlog on paper index cards takes some effort, but arguably that&#8217;s a good thing. A digital backlog lets you keep adding and adding stuff. There&#8217;s no incentive to think twice before adding something, no incentive to clean it up because it&#8217;s growing too large. (For some excellent practical advice on this topic, go read Elizabeth Zagroba&#8217;s post <a href="https://elizabethzagroba.com/posts/2022/11_19_half-life_for_your_backlog/"><em>&#8220;Half-Life For Your Backlog&#8221;</em></a>.)</p>
+<p>It&#8217;s a good thing we have been throwing some proper computing power at our backlogs, or many of us would have ended up as one of Jerry Weinberg&#8217;s clients and their bug&nbsp;database:</p>
+<blockquote>
+<p>We have so many bugs, our bug database doesn&#8217;t work efficiently. (p 40, Perfect Software and Other Illusions about Testing, Jerry&nbsp;Weinberg)</p>
+</blockquote>
+<h4>Work management tools used for work breakdown&nbsp;structures</h4>
+<p>Breaking down stories into tasks is nothing new. (<em>&#8220;Extreme Programming Explained, 2nd ed&#8221;</em> describes it on pages 46-47.) Digital tools do make it easier to do that well in advance, because it&#8217;s easy enough to update them later. They also make it easy to group stories into epics and let you see all stories in an epic with a click of a button. Then there&#8217;s the feature of tracking relations between stories, e.g. dependencies. Finally, we do all of this in one digital tool across all teams. And what we end up with is a reinvention of work breakdown structures, Gantt charts, and <span class="caps">PERT</span> charts. The only difference is the agile terminology and hopefully a more vertical way of breaking down work than in the waterfall&nbsp;days.</p>
+<h3>Managing the work in the work management tool becomes&nbsp;work</h3>
+<p>With all these additional features and uses of our work management tools, we also spend more time in these tools. Instead of an ancillary tool to facilitate doing the work, managing all the information in the tool becomes actual work. Instead of the tool being an aide for building software, we have to split our time between the software we&#8217;re building and the artifacts collected in our work management&nbsp;tools.</p>
+<p>Arguably that&#8217;s fine. The work needs to be managed, artifacts and tools help us to do so. However, there is the danger of the reifaction of those artifacts. We&#8217;re no longer managing the work related to the story, we&#8217;re managing the artifacts related to the work for the story. We&#8217;re not managing our activities, we&#8217;re managing our&nbsp;tickets.</p>
+<p>And at the point we&#8217;ve strayed quite a bit from the <a href="https://agilemanifesto.org/">Agile Manifesto</a>&#8216;s <em>&#8220;Individuals and interactions over processes and tools&#8221;</em> and <em>&#8220;Working software over comprehensive documentation&#8221;</em>. </p>
+<h2>Affordances, signifiers, and&nbsp;constraints</h2>
+<p>With all that said, there&#8217;s no getting around this&nbsp;quote:</p>
+<blockquote>
+<p>We shape our tools and thereafter our tools shape us.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+</blockquote>
+<p>To delve deeper into the meaning of that observation, we&#8217;ll turn to what Donald A. Norman said about affordances, signifiers, and constraints in the revised and expanded edition of <em>&#8220;The Design of Everyday Things&#8221;</em>.</p>
+<h4>Affordances and&nbsp;signifiers</h4>
+<p>Early in the book, Norman provides the following summary of affordances and&nbsp;signifiers:</p>
+<blockquote>
+<ul>
+<li>Affordances are the possible interactions between people and the environment. Some affordances are perceivable, others are&nbsp;not.  </li>
+<li>Perceived affordances often act as signifiers, but they can be&nbsp;ambiguous.  </li>
+<li>Signifiers signal things, in particular what actions are possible and how they should be done. Signifiers must be perceivable, else they fail to function. (p&nbsp;19)</li>
+</ul>
+</blockquote>
+<p>One of the classical examples from his book are doors and door handles. Sometimes you need to push a door to open it, sometimes you need to pull it, sometimes either works. Those are its affordances. But how do you know which of these three it is? That&#8217;s where signifiers come in. A sign saying &#8220;push&#8221; or &#8220;pull&#8221; is a solution, but a more intuitive solution is to shape the door handle in a way that it&#8217;s obvious whether you need to push or&nbsp;pull.</p>
+<p>One of my own favorite examples of affordances is comparing Slack with <span class="caps">MS</span> Teams. On the one hand, they share a lot of affordances. You can chat with people in channels, to give the most obvious example. On the other hand, they have a very different feel - at least to me. Slack is a place where I can hang out, it&#8217;s a social place. Not so with <span class="caps">MS</span> Teams, it&#8217;s a business and work&nbsp;place.</p>
+<h4>Constraints</h4>
+<p>Later in the book, Norman discusses another of the seven fundamental principles of design,&nbsp;constraints:</p>
+<blockquote>
+<p>Constraints. Providing physical, logical, semantic, and cultural constraints guides actions and eases interpretation. (p&nbsp;73)</p>
+</blockquote>
+<p>Although all four kinds of constraints are relevant here, I want to especially point out cultural&nbsp;constraints:</p>
+<blockquote>
+<p>Cultural constraints and conventions are learned artificial restrictions on behavior that reduce the set of likely actions, in many cases leaving only one or two possibilities. (p&nbsp;76)</p>
+<p>Conventions are actually a form of cultural constraint, usually associated with how people behave. Some conventions determine what activities should be done; others prohibit or discourage actions. But in all cases, they provide those knowledgeable of the culture with powerful constraints of behavior. (p&nbsp;131)</p>
+</blockquote>
+<h4>Affordances and constraints shape our tools and&nbsp;ourselves</h4>
+<p>Affordances on the one hand, and constraints on the other, map very well to the quote at the start of this section. We shape our tools by adding affordances to them; thereafter they shape us by becoming constraints. And then these constraints might lead us to identify new needs, which become new affordances, and round and round it&nbsp;goes.</p>
+<p>Initially these constraints will be mostly on the physical, logical, and semantic level. The tool makes sense in its context. Then with enough adoption, cultural constraints will build around it. The tool will make certain ways to manage work obvious, and others unimaginable. In this sense I think our work management tools have been playing a significant role in the reduction of Agile to the bland flavor of Scrum most Agile teams seem to be using these&nbsp;days.</p>
+<h3>The constraints of our tools are limiting&nbsp;us</h3>
+<p>I think there are at least two ways in which these constraints are limiting us. One relates to commoditization and innovation (shoutout to Wardley mapping), the other to&nbsp;ownership.</p>
+<p>Most (all?) work management tools are extremely similar, providing the features I listed above. They compete mostly on things like price and legitimacy<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">2</a></sup>, barely on feature sets. They&#8217;re a commodity. And through their constraints they also commoditize the way people manage work, i.e. the bland scrum I mentioned above. So no innovation, but also no competitive advantage in how people manage work. Hence me using the words <em>&#8220;leaving money on the table&#8221;</em> in the question I started this post&nbsp;with.</p>
+<p>Of course, it&#8217;s very well possible that in your context doing work management like everyone else is perfectly fine. That it doesn&#8217;t make sense to be an innovator in this area. However, these constraints are still limiting you. They are limiting the ownership your team members feel when it comes to work&nbsp;management.</p>
+<p>To give one example, during an Agile Guild meeting at a previous job someone asked: &#8220;How do you do story points well?&#8221; And despite a colleague and me trying to include the question &#8220;What would happen if you stopped using story point?&#8221; in the conversation, there was no interest. The person was focused on doing story points and doing them&nbsp;correctly..</p>
+<p>Our tools are limiting us in imagining better ways to manage our&nbsp;work.</p>
+<h2>Let&#8217;s reclaim our&nbsp;imagination</h2>
+<p>At this point it&#8217;s important to distinguish two questions. If you say to me <em>&#8220;But we still need to do all the stuff these tools allows us to do, right? We need to visualize work, we need documentation, we need cross-team coordination, etc.&#8221;</em> I&#8217;d reply: <em>&#8220;Yes, we do.&#8221;</em> But I&#8217;d also add the question: <em>&#8220;Do we need to do these things in the most obvious way according to our tools?&#8221;</em> Because I don&#8217;t think we&nbsp;do.</p>
+<p>We don&#8217;t need to accept the constraints created by our work management tools. And that can start small. Get rid of one of the many fields on your cards and see if anyone misses it. Create a virtual whiteboard for each epic and use that instead of the Description fields. Limit the number of &#8220;in progress&#8221;-columns (ideally to one), because if your team can&#8217;t remember the status of everything you&#8217;re working on, you&#8217;re probably doing too many things. Stop distinguishing bugs and features in your backlog, because once they&#8217;re in the backlog, it matters what value they add to the product, not if they&#8217;re a bug or a&nbsp;feature.</p>
+<p>And if you&#8217;re ready for something larger, <a href="https://maaretp.com/">Maaret Pyhäjärvi</a> is a great inspiration. She recently shared a <a href="https://www.linkedin.com/feed/update/urn:li:activity:7021350602873913344/">list of things</a> she has done differently in the past, and she has published a <a href="https://visible-quality.blogspot.com/2022/12/a-no-jira-experiment.html">blog post</a> about how she <em>&#8220;got to stop using Jira for planning and tracking of work&#8221;</em>. (And her, that post was definitely an inspiration for this&nbsp;one.)</p>
+<p>We need to reclaim our imagination, both in big and small ways. Uncover better ways of developing software by trying out different things.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">3</a></sup> And perhaps it won&#8217;t ever happen again that 17 people discovering these new ways get together and publish a manifesto that captures the moment and shapes an industry. And that&#8217;s ok. That too, shouldn&#8217;t limit us in what we dare to&nbsp;imagine.</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>This quote is often ascribed to Marshall McLuhan, but that&#8217;s <a href="https://quoteinvestigator.com/2016/06/26/shape/">up for debate</a>. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:3">
+<p>As in: no one ever got fired for buying Jira. <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>And sometimes we&#8217;ll uncover worse ways. Then we dust ourselves off, learn, and try something else. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 3 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/agile/" rel="tag">agile</a></li>
+            <li><a class="tag p-category" href="../../../categories/agile-manifesto/" rel="tag">agile&nbsp;manifesto</a></li>
+            <li><a class="tag p-category" href="../../../categories/quality-engineering/" rel="tag">quality&nbsp;engineering</a></li>
+            <li><a class="tag p-category" href="../../../categories/software-development/" rel="tag">software&nbsp;development</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../clojure/2022/clj-11-moving-on-from-some-unsolved-exercises/" rel="prev" title="(clj 11) Moving on from some unsolved exercises">Previous&nbsp;post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2023     
+<a href="https://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by/4.0/80x15.png"></a>
+    <a href="mailto:site@joep.slmail.me">Joep Schuurkes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

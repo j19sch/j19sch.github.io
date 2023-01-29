@@ -1302,6 +1302,14 @@ blockquote p {
   font-size: 1rem;
 }
 
+blockquote ul {
+  font-size: 1rem;
+}
+
+blockquote ol {
+  font-size: 1rem;
+}
+
 h4 + ul {
   margin-top: -0.4rem;
 }

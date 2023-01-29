@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://smallsheds.garden/</loc>
-  <lastmod>2022-12-29T16:36:00Z</lastmod>
+  <lastmod>2023-01-14T12:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/2012/</loc>
@@ -54,12 +54,16 @@
   <lastmod>2022-12-29T16:36:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/2023/</loc>
+  <lastmod>2023-01-14T12:47:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/archive.html</loc>
-  <lastmod>2023-01-14T09:44:00Z</lastmod>
+  <lastmod>2023-01-14T12:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/</loc>
-  <lastmod>2022-12-29T16:36:00Z</lastmod>
+  <lastmod>2023-01-14T12:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/2012/dewt2-becoming-a-context-driven-tester/</loc>
@@ -286,6 +290,14 @@
   <lastmod>2022-12-29T16:36:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/blog/2023/our-work-management-tools-are-limiting-our-imagination/</loc>
+  <lastmod>2023-01-22T20:28:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/blog/2023/work-management-tools/</loc>
+  <lastmod>2023-01-14T12:47:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/blog/clojure/</loc>
   <lastmod>2022-12-29T16:36:00Z</lastmod>
  </url>
@@ -359,7 +371,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-6.html</loc>
-  <lastmod>2023-01-14T09:44:00Z</lastmod>
+  <lastmod>2023-01-14T12:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/</loc>

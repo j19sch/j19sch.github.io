@@ -3,13 +3,33 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about agile)</title>
   <id>https://smallsheds.garden/categories/agile.atom</id>
-  <updated>2022-12-29T16:36:55Z</updated>
+  <updated>2023-01-29T21:43:21Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/agile.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/agile/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Our work management tools are limiting our imagination</title>
+    <id>https://smallsheds.garden/blog/2023/our-work-management-tools-are-limiting-our-imagination/</id>
+    <updated>2023-01-29T22:34:25+01:00</updated>
+    <published>2023-01-29T22:34:25+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2023/our-work-management-tools-are-limiting-our-imagination/"/>
+    <summary type="html">&lt;figure&gt;&lt;img src="https://smallsheds.garden/images/2023/work-mgt-tools/fig4-stories-on-a-wall.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;Several weeks ago I had a thought that felt both serious and not serious, so &lt;a href="https://chaos.social/@joeposaurus/109635747014542350"&gt;I asked on Mastodon&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Should I write a blog post about companies leaving money on the table by not leveraging their choice of work management tool (Jira, Shortcut, etc) as a competitive advantage?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;31% said "yes" and 54% said "a post about what now?", which I suppose reflects my own feelings about the topic. And it motivated me to write this post - especially that 54%. So let's talk about work management tools, the original (user) stories, affordances and constraints, and how these tools are limiting our imagination. &lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2023/our-work-management-tools-are-limiting-our-imagination/"&gt;Read more…&lt;/a&gt; (11 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="agile" label="agile"/>
+    <category term="agile-manifesto" label="agile manifesto"/>
+    <category term="quality-engineering" label="quality engineering"/>
+    <category term="software-development" label="software development"/>
+  </entry>
   <entry>
     <title>Agile tester or quality engineer, who's to say?</title>
     <id>https://smallsheds.garden/blog/2022/agile-tester-or-quality-engineer-whos-to-say/</id>
@@ -195,20 +215,5 @@
     <category term="devops" label="devops"/>
     <category term="manifesto" label="manifesto"/>
     <category term="software-testing" label="software testing"/>
-  </entry>
-  <entry>
-    <title>Testing maturity in an agile/CDT context</title>
-    <id>https://smallsheds.garden/blog/2017/testing-maturity-in-an-agilecdt-context/</id>
-    <updated>2017-02-05T17:43:10+01:00</updated>
-    <published>2017-02-05T17:43:10+01:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2017/testing-maturity-in-an-agilecdt-context/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;One day during a team meeting at Joep's previous job at a bank the Team Manager of Testing, listed a number of topics his testers could work on in the coming months. One of those topics was "testing maturity". This topic was on the list not because this manager was such a fan of maturity models, but because the other team managers (Business Analysis and Development) had produced one for their own teams and higher management would like to have one for testing as well. And although Joep saw little value in a classic five-tiered maturity model either, he was intrigued by the question: so what can you do with respect to maturity models that is of value?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2017/testing-maturity-in-an-agilecdt-context/"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="agile" label="agile"/>
-    <category term="context-driven-testing" label="context-driven testing"/>
-    <category term="maturity" label="maturity"/>
   </entry>
 </feed>

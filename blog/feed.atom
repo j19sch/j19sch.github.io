@@ -3,13 +3,33 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes</title>
   <id>https://smallsheds.garden/blog/feed.atom</id>
-  <updated>2023-01-14T09:51:12Z</updated>
+  <updated>2023-01-29T21:43:21Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/blog/feed.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Our work management tools are limiting our imagination</title>
+    <id>https://smallsheds.garden/blog/2023/our-work-management-tools-are-limiting-our-imagination/</id>
+    <updated>2023-01-29T22:34:25+01:00</updated>
+    <published>2023-01-29T22:34:25+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2023/our-work-management-tools-are-limiting-our-imagination/"/>
+    <summary type="html">&lt;figure&gt;&lt;img src="https://smallsheds.garden/images/2023/work-mgt-tools/fig4-stories-on-a-wall.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;Several weeks ago I had a thought that felt both serious and not serious, so &lt;a href="https://chaos.social/@joeposaurus/109635747014542350"&gt;I asked on Mastodon&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Should I write a blog post about companies leaving money on the table by not leveraging their choice of work management tool (Jira, Shortcut, etc) as a competitive advantage?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;31% said "yes" and 54% said "a post about what now?", which I suppose reflects my own feelings about the topic. And it motivated me to write this post - especially that 54%. So let's talk about work management tools, the original (user) stories, affordances and constraints, and how these tools are limiting our imagination. &lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2023/our-work-management-tools-are-limiting-our-imagination/"&gt;Read more…&lt;/a&gt; (11 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="agile" label="agile"/>
+    <category term="agile-manifesto" label="agile manifesto"/>
+    <category term="quality-engineering" label="quality engineering"/>
+    <category term="software-development" label="software development"/>
+  </entry>
   <entry>
     <title>(clj 11) Moving on from some unsolved exercises</title>
     <id>https://smallsheds.garden/blog/clojure/2022/clj-11-moving-on-from-some-unsolved-exercises/</id>
@@ -185,24 +205,6 @@ Any other options? Because something about the term is bothering me.&lt;/p&gt;
     <summary type="html">&lt;div&gt;&lt;p&gt;Chapter 4 of "&lt;a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/"&gt;Clojure for the Brave and True&lt;/a&gt;" concludes with a &lt;em&gt;Vampire Data Analysis Program&lt;/em&gt;, serving as a summary of the chapter. The book shows some code, explains it, moves on to the next bit of code, etc. I'm not sure why, but I decided I wanted to figure out the code on my own and then read the explanation to see if I got it right. Afterwards I realized it might make a good blog post: both explaining what the program does and what techniques (for lack of a better word) I used to figure it out.&lt;/p&gt;
 &lt;p&gt;With most of the work in the program being done by a function called &lt;code&gt;mapify&lt;/code&gt;, this blog post will focus on that single function. As it turns out, it took me more than 2000 words (footnotes not included) to describe what this function consisting of only 9 lines does. So feel free to read all of it, skim through it, or skip straight ahead to the &lt;a href="https://smallsheds.garden/blog/clojure/2022/clj-9-how-to-figure-out-what-a-function-does/#techniques"&gt;techniques&lt;/a&gt; and some &lt;a href="https://smallsheds.garden/blog/clojure/2022/clj-9-how-to-figure-out-what-a-function-does/#reflections"&gt;reflections&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/clojure/2022/clj-9-how-to-figure-out-what-a-function-does/"&gt;Read more…&lt;/a&gt; (16 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="brave-clojure" label="brave clojure"/>
-    <category term="clojure" label="clojure"/>
-    <category term="programming" label="programming"/>
-    <category term="python" label="python"/>
-  </entry>
-  <entry>
-    <title>(clj 8) Some notes on lazy sequences and function parameters</title>
-    <id>https://smallsheds.garden/blog/clojure/2022/clj-8-some-notes-on-lazy-sequences-and-function-parameters/</id>
-    <updated>2022-04-18T14:16:36+02:00</updated>
-    <published>2022-04-18T14:16:36+02:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/clojure/2022/clj-8-some-notes-on-lazy-sequences-and-function-parameters/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;Almost done with the chapter 4 &lt;em&gt;"Core Functions in Depth"&lt;/em&gt; of "&lt;a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/"&gt;Clojure for the Brave and True&lt;/a&gt;"! Before wrapping up the chapter with a longer example, a summary, and some exercises, the book goes into lazy sequences, the collection abstraction, and function functions. In this post I will share some notes on infinite lazy sequences and function parameters, making comparisons between Clojure and Python.&lt;/p&gt;
-&lt;h2&gt;Infinite lazy sequences&lt;/h2&gt;
-&lt;p&gt;A lazy sequence is a sequence whose members aren't computed until you try to access them. One advantage is that it's more efficient: the whole sequence doesn't have to be calculated and kept in memory from the start. Another advantage is that it allows you to create infinite sequences. Do that with a normal sequence and your program would never want to stop calculating.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/clojure/2022/clj-8-some-notes-on-lazy-sequences-and-function-parameters/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="brave-clojure" label="brave clojure"/>
     <category term="clojure" label="clojure"/>
     <category term="programming" label="programming"/>

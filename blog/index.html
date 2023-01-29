@@ -88,7 +88,27 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2022/clj-11-moving-on-from-some-unsolved-exercises/" class="u-url">(clj 11) Moving on from some unsolved&nbsp;exercises</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023/our-work-management-tools-are-limiting-our-imagination/" class="u-url">Our work management tools are limiting our&nbsp;imagination</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep&nbsp;Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2023/our-work-management-tools-are-limiting-our-imagination/" rel="bookmark">
+            <time class="published dt-published" datetime="2023-01-29T22:34:25+01:00" itemprop="datePublished" title="29 January 2023">29 January 2023</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Several weeks ago I had a thought that felt both serious and not serious, so <a href="https://chaos.social/@joeposaurus/109635747014542350">I asked on Mastodon</a>:</p>
+<blockquote>
+<p>Should I write a blog post about companies leaving money on the table by not leveraging their choice of work management tool (Jira, Shortcut, etc) as a competitive&nbsp;advantage?</p>
+</blockquote>
+<p>31% said &#8220;yes&#8221; and 54% said &#8220;a post about what now?&#8221;, which I suppose reflects my own feelings about the topic. And it motivated me to write this post - especially that 54%. So let&#8217;s talk about work management tools, the original (user) stories, affordances and constraints, and how these tools are limiting our&nbsp;imagination. </p>
+<p class="more"><a href="2023/our-work-management-tools-are-limiting-our-imagination/">Read&nbsp;more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2022/clj-11-moving-on-from-some-unsolved-exercises/" class="u-url">(clj 11) Moving on from some unsolved&nbsp;exercises</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep&nbsp;Schuurkes
@@ -269,24 +289,6 @@ Any other options? Because something about the term is bothering&nbsp;me.</p>
 <p>Chapter 4 of &#8220;<a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">Clojure for the Brave and True</a>&#8221; concludes with a <em>Vampire Data Analysis Program</em>, serving as a summary of the chapter. The book shows some code, explains it, moves on to the next bit of code, etc. I&#8217;m not sure why, but I decided I wanted to figure out the code on my own and then read the explanation to see if I got it right. Afterwards I realized it might make a good blog post: both explaining what the program does and what techniques (for lack of a better word) I used to figure it&nbsp;out.</p>
 <p>With most of the work in the program being done by a function&nbsp;called <code>mapify</code>, this blog post will focus on that single function. As it turns out, it took me more than 2000 words (footnotes not included) to describe what this function consisting of only 9 lines does. So feel free to read all of it, skim through it, or skip straight ahead to the <a href="clojure/2022/clj-9-how-to-figure-out-what-a-function-does/#techniques">techniques</a> and some <a href="clojure/2022/clj-9-how-to-figure-out-what-a-function-does/#reflections">reflections</a>.</p>
 <p class="more"><a href="clojure/2022/clj-9-how-to-figure-out-what-a-function-does/">Read&nbsp;more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2022/clj-8-some-notes-on-lazy-sequences-and-function-parameters/" class="u-url">(clj 8) Some notes on lazy sequences and function&nbsp;parameters</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep&nbsp;Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="clojure/2022/clj-8-some-notes-on-lazy-sequences-and-function-parameters/" rel="bookmark">
-            <time class="published dt-published" datetime="2022-04-18T14:16:36+02:00" itemprop="datePublished" title="18 April 2022">18 April 2022</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>Almost done with the chapter 4 <em>&#8220;Core Functions in Depth&#8221;</em> of &#8220;<a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">Clojure for the Brave and True</a>&#8220;! Before wrapping up the chapter with a longer example, a summary, and some exercises, the book goes into lazy sequences, the collection abstraction, and function functions. In this post I will share some notes on infinite lazy sequences and function parameters, making comparisons between Clojure and&nbsp;Python.</p>
-<h2>Infinite lazy&nbsp;sequences</h2>
-<p>A lazy sequence is a sequence whose members aren&#8217;t computed until you try to access them. One advantage is that it&#8217;s more efficient: the whole sequence doesn&#8217;t have to be calculated and kept in memory from the start. Another advantage is that it allows you to create infinite sequences. Do that with a normal sequence and your program would never want to stop&nbsp;calculating.</p>
-<p class="more"><a href="clojure/2022/clj-8-some-notes-on-lazy-sequences-and-function-parameters/">Read&nbsp;more…</a></p>
 </div>
                 </div>
             </article>
