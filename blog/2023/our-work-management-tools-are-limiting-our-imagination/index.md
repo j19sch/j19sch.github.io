@@ -148,7 +148,7 @@ Most (all?) work management tools are extremely similar, providing the features 
 
 [^3]: As in: no one ever got fired for buying Jira.
 
-Of course, it's very well possible that in your context doing work management like everyone else is perfectly fine. That it doesn't make sense to be an innovator in this area. However, these constraints are still limiting you. They are limiting the ownership your team members feel when it comes to work management.
+Of course, it's very well possible that in your context doing work management like everyone else is perfectly fine. That it doesn't make sense to be an innovator in this area. However, these constraints are still limiting you. They are limiting the ownership your team members feel when it comes to work management. The tool, not the team, shapes the process.
 
 To give one example, during an Agile Guild meeting at a previous job someone asked: "How do you do story points well?" And despite a colleague and me trying to include the question "What would happen if you stopped using story point?" in the conversation, there was no interest. The person was focused on doing story points and doing them correctly..
 
