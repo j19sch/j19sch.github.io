@@ -11,79 +11,61 @@
 
 Since I took on a job as quality engineer about six months ago, I've been thinking more about the different testing-related roles I've had in the past 15+ years. I've been a tester in a separate testing team, a tester in an Agile team while reporting to either a test manager or an engineering manager, a principal test engineer, and since recently a quality engineer.
 
-Despite their differences, I've found they do have something in common: they're all problematic, or rather: unstable. They require a contiuous balancing act, a never-ending re-invention of our jobs, adapting to the situations we find ourselves in. And I guess this partially explains why we keep coming up with new titles for what we do: quality assurance analyst, test engineer, software development engineer in test, quality engineer, etc. No solution to "the testing role" is stable.
+Despite their differences, I've found they do have something in common: they're all problematic, or rather: unstable. They require a continuous balancing act, a never-ending re-invention of our jobs, adapting to the environment we find ourselves in. And I guess this partially explains why we keep coming up with new titles for what we do: quality assurance analyst, test engineer, software development engineer in test, quality engineer, etc. No solution to "the testing role" is stable. To be effective, we have no choice but to work as much around the existing structures as within them.
 
 <!-- TEASER_END -->
 
 # The three axes of trouble
 
-The trouble with this balancing act of any tester role, is that it takes place on three different axes:
+The trouble with this balancing act of any testing-related role, is that it takes place on three different axes:
 
 - doing testing versus supporting testing
 - being embedded versus being in a separate team
-- doing jour job versus enabling your job
+- doing your job versus enabling your job
 
 To be clear: I have no problem with expecting some adaptability and flexibility from team members. The best teams I've worked on where dynamic in this way, with people covering gaps where needed.
 
 What I do have a problem with is having to do this across three different axes. Especially if - as we shall see - there rarely (if ever) is a long-term stable position on any of the three axes. At that point we have to start asking the question if there isn't some more fundamental problem with testing-related roles.
 
 
-## Doing testing versus supporting testing
+# post 1: Doing the testing vs. supporting the testing
 
-### Places along the axis
+## Doing the testing
+Doing the testing means that you test the product and share the results of that testing. There's a clear step in the process where you do testing - or rather the testing testers do, as opposed to the testing programmers do. This leads to all kinds of problems related to silos, handovers[^2] and bottlenecks.
 
-- doing the testing
-	- separate "testing" column
-	- tester for the team
-- whole-team testing
-	- tester of the team
-- support only
-	- quality engineer
+[^2]: How often have you seen a developer do a good handover of the testing they have done already?
 
+This is the default mode for waterfall, but plenty of Agile teams operate in a similar way. The only difference is that waterfall does this on a project-level and these Agile teams do it on a story-level.
 
+You might be involved in things like refinement or story huddles to bring in "your unique perspective as a tester". So there too, you're doing testing.
 
-### Why none of them are stable
-- doing the testing
-	- bottleneck, dependency on tester
-	- dev testing vs tester testing, separated, not even a handover (except automation)
-- doing and supporting
-	- moving targets
-	- some stuff: doing -> supporting
-	- other stuff: only tester will do; demonstrate the need/value of it
-	- Maaret's 15 hats
-		- each hat: never, sometimes, focus
-		- https://visible-quality.blogspot.com/2021/07/tester-roles-and-services.html
-	- risks:
-		- doing too much
-		- doing too little
-		- only supporting, nothing left to do, value is questioned
-	- ongoing conversations: where to do, where to support
-- supporting the testing
-	- not really part of the team, not really contributing
-	- supporting needs domain knowledge, so needs doing testing
-	- danger similar to scrum master who only facilitates scrum events, can't contribute
-- bonus value delivered by testers
-	- doing testing and teaching others to test
+## Supporting the testing
+Supporting the testing means that you support and enable others (i.e. the developers) to test their own and each other's work. So you're not directly contributing and in that sense not a full member of the team. That also means that you're optional to the work, unless there's a strong culture of valuing your role of supporting testing.
 
----
+A major challenge is that if you support the testing, but rarely do the testing, it will be very hard to build a deep understanding of the product and technology. And this limits how well you will be able to support the testing. You may end up as the scrum master who knows how to facilitate the scrum events, but has barely any idea of what the team actually builds. At that point, someone might rightfully raise the question why they keep you around at all.
 
-the testing that devs do versus the testing testers do -> weird
-no the case for BA, UX, etc
+## The balancing act
+The middle ground between doing and supporting is often called whole-team testing. As I said in a [previous blog post](link://slug/agile-tester-or-quality-engineer-whos-to-say):
 
-doing -> bottleneck
-supporting -> too distant, not contributing, lack of domain knowledge, scrum master who only knows how to facilitateq
-
-> “Having a tester for the team” means there is someone responsible for the work labeled as “testing”.
-> “Having a tester of the team” means that there is a team member who spends most of their time doing testing.
-
-http://localhost:8000/blog/2022/tester-is-an-overloaded-variable/
+>  Ironically, an important challenge for an agile tester is to not do too much testing.
 
 > [...] the difference between an agile tester and a quality engineer becomes rather moot. In practice they will be doing very similar things: avoiding to become a quality safety blanket for the team, and working in a supportive and collaborative way with their team on quality.
 
-http://localhost:8000/blog/2022/agile-tester-or-quality-engineer-whos-to-say/
+However, it's not really a middle ground, a stable base between two extremes. This position is a balancing act, where the middle ground keeps moving and you have to adjust to it. It requires an ongoing dialogue with your team about what you do versus what you support[^1] - with the assumption that some of what you do, will grow to something you support. At which point you might add something new to what you do, convince the team of its value, and then the cycle repeats itself. Luckily, there's some stuff developers never seem to take over and there's always more stuff you could do, so you won't make yourself obsolete.
 
+[^1]: It also requires on ongoing dialogue about what they do and what you do. See [Maaret Pyhäjärvi](https://maaretp.com/)'s blog post [*"Tester roles and services"*](https://visible-quality.blogspot.com/2021/07/tester-roles-and-services.html) for an excellent example of such a dialogue.
 
-## Being embedded versus in a separate team
+This ongoing dialogue and the changes that come with it, however, are quite taxing for the team. The team's way of working isn't a stable base to work from. It's in a constant state of flux, both potentially and in reality. Now, in a way this is an ideal scenario, with a team that keeps adapting and improving. However, often enough there are enough sources of instability and change around the team already and a team can only cope with so much of it.
+
+---
+
+# post 2: Being embedded in a team as a tester versus being in a separate testing team
+
+## Being embedded in a team
+
+## Being in a separate team
+
+## The balancing act
 
 ### Places along the axis
 
@@ -120,8 +102,13 @@ connect with other testers / quality engineers
 separate team: silos, hand-overs, etc
 BAs, Devs, Testers each with their own manager, project manager for the team
 
+---
 
-## Doing your job versus enabling your job
+# post 3: Doing your job as a tester versus enabling your job
+
+## Doing your job
+
+## Enabling your job (needs better word then enabling)
 
 ### Places along the axis
 
@@ -170,7 +157,12 @@ Maaike's 4 levels
 https://twitter.com/Maaikees/status/1617816571786977280
 
 
-# So where does that leave us?
+---
+
+# post 4: So where does that leave us?
+
+whatever structure is in place, you have to work around it -> workflowy note
+	and thus you change it
 
 Again, not about unfairness of having to adapt. About unfairness of not having a clear, stable base.
 
