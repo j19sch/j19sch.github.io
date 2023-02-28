@@ -3,7 +3,7 @@
 .. slug: my-note-taking-system-for-work
 .. date: 2023-02-27 20:09:25 UTC+01:00
 .. tags: note-taking, tools
-.. category: 
+.. category: tools
 .. link: 
 .. description: 
 .. type: text
