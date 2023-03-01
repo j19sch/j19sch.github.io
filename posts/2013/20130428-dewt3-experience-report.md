@@ -2,8 +2,8 @@
 .. title: DEWT3 experience report
 .. slug: dewt3-experience-report
 .. date: 2013-04-28 15:32:02 UTC+02:00
-.. tags: DEWT, peer conference, context-driven testing, systems thinking
-.. category: conference
+.. tags: DEWT, peer conferences, context-driven testing, systems thinking
+.. category: conferences
 .. link: 
 .. description:
 .. type: text

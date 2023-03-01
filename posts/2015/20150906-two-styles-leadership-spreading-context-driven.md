@@ -2,7 +2,7 @@
 .. title: Two styles of leadership in spreading context-driven testing (TITANconf)
 .. slug: two-styles-of-leadership-in-spreading-context-driven-testing-titanconf
 .. date: 2015-09-06 19:56:54 UTC+02:00
-.. tags: context-driven testing, peer conference, leadership
+.. tags: context-driven testing, peer conferences, leadership
 .. category: leadership
 .. link: 
 .. description:

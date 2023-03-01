@@ -2,7 +2,7 @@
 .. title: Thinking about quality: choosing your value system
 .. slug: choosing-your-value-system
 .. date: 2021-02-15 20:09:08 UTC+01:00
-.. tags: peer conference, value systems, quality, quality engineering
+.. tags: peer conferences, value systems, quality, quality engineering
 .. category: quality
 .. link: 
 .. description:
