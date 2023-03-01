@@ -89,7 +89,24 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2022/clj-8-some-notes-on-lazy-sequences-and-function-parameters/" class="u-url">(clj 8) Some notes on lazy sequences and function&nbsp;parameters</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2022/clj-9-how-to-figure-out-what-a-function-does/" class="u-url">(clj 9) How to figure out what a function&nbsp;does</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep&nbsp;Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="clojure/2022/clj-9-how-to-figure-out-what-a-function-does/" rel="bookmark">
+            <time class="published dt-published" datetime="2022-06-12T15:01:36+02:00" itemprop="datePublished" title="12 June 2022">12 June 2022</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Chapter 4 of &#8220;<a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">Clojure for the Brave and True</a>&#8221; concludes with a <em>Vampire Data Analysis Program</em>, serving as a summary of the chapter. The book shows some code, explains it, moves on to the next bit of code, etc. I&#8217;m not sure why, but I decided I wanted to figure out the code on my own and then read the explanation to see if I got it right. Afterwards I realized it might make a good blog post: both explaining what the program does and what techniques (for lack of a better word) I used to figure it&nbsp;out.</p>
+<p>With most of the work in the program being done by a function&nbsp;called <code>mapify</code>, this blog post will focus on that single function. As it turns out, it took me more than 2000 words (footnotes not included) to describe what this function consisting of only 9 lines does. So feel free to read all of it, skim through it, or skip straight ahead to the <a href="clojure/2022/clj-9-how-to-figure-out-what-a-function-does/#techniques">techniques</a> and some <a href="clojure/2022/clj-9-how-to-figure-out-what-a-function-does/#reflections">reflections</a>.</p>
+<p class="more"><a href="clojure/2022/clj-9-how-to-figure-out-what-a-function-does/">Read&nbsp;more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2022/clj-8-some-notes-on-lazy-sequences-and-function-parameters/" class="u-url">(clj 8) Some notes on lazy sequences and function&nbsp;parameters</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep&nbsp;Schuurkes

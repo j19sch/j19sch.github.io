@@ -2,7 +2,7 @@
 .. title: Thinking about quality: management paradigms and quality
 .. slug: management-paradigms-and-quality
 .. date: 2021-03-15 09:32:08 UTC+01:00
-.. tags: peer conference, quality, management, paradigms, quality engineering
+.. tags: peer conferences, quality, management, paradigms, quality engineering
 .. category: quality
 .. link: 
 .. description:

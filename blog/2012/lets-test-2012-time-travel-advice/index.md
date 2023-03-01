@@ -2,8 +2,8 @@
 .. title: Let's Test 2012 - time travel advice
 .. slug: lets-test-2012-time-travel-advice
 .. date: 2012-05-18 19:32:08 UTC+02:00
-.. tags: context-driven testing, conference
-.. category: conference
+.. tags: context-driven testing, conferences
+.. category: conferences
 .. link: 
 .. description:
 .. type: text

@@ -2,7 +2,7 @@
 .. title: DEWT2 - Becoming a context-driven tester
 .. slug: dewt2-becoming-a-context-driven-tester
 .. date: 2012-11-08 23:14:57 UTC+01:00
-.. tags: DEWT, peer conference, context-driven testing
+.. tags: DEWT, peer conferences, context-driven testing
 .. category: philosophy of testing
 .. link: 
 .. description:

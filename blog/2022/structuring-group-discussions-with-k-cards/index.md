@@ -2,7 +2,7 @@
 .. title: Structuring group discussions with K-cards
 .. slug: structuring-group-discussions-with-k-cards
 .. date: 2022-03-25 18:27:30 UTC+01:00
-.. tags: facilitation, peer conference
+.. tags: facilitation, peer conferences
 .. category: facilitation
 .. link: 
 .. description: 
