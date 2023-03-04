@@ -1,13 +1,22 @@
 <!--
 .. title: The three axes of trouble in testing roles
 .. slug: the-three-axes-of-trouble-in-tesing-roles
-.. date: 2023-02-25 13:01:25 UTC+01:00
+.. date: 2023-03-01 13:01:25 UTC+01:00
 .. tags: quality engineering
 .. category: quality engineering, management, software development, software testing, test management
 .. link: 
 .. description: 
 .. type: text
 -->
+
+# notes
+
+- should every "The balancing act" mention working inside and around/outside the structures?
+- what about quality engineers? first talk about testers and the three axes, then a separate quality engineer post?
+
+---
+
+# intro
 
 Since I took on a job as quality engineer about six months ago, I've been thinking more about the different testing-related roles I've had in the past 15+ years. I've been a tester in a separate testing team, a tester in an Agile team while reporting to either a test manager or an engineering manager, a principal test engineer, and since recently a quality engineer.
 
@@ -63,9 +72,32 @@ This ongoing dialogue and the changes that come with it, however, are quite taxi
 
 ## Being embedded in a team
 
+One of the many things Agile has done, is pull testers into the development team. Instead of having a waterfall-style testing phase after a development phase with separate tester and developer teams, testers and developers are in the same team. And a piece of work isn't done until it's testsed.
+
+Since Agile teams are kept relatively small and developers are expected to do at least part of the testing, there's usually only a single tester in a team. That puts the tester in a somewhat lonely spot. They don't have any peers inside the team to run ideas by. As a more junior tester, you also don't a more senior tester in your team to learn from.
+
+Having developers and testers in a team also creates a challenge for the team's manager. Most of the time they have a deverloper background, so there's a limit how much support they can give with regards to the tester's work, career progression, and personal development.
+
+-> what about quality engineers?
+
 ## Being in a separate team
 
+As mentioned above, putting testers in a separate team is the waterfall thing to do. You do get some advantages from it. Testers can form am actual team with their peers. Their manager only has to support people with a testing background.
+
+Those advantages don't outweigh the disadvantages, though. You've set up an org structure that explicitly separates development from testing, with all the unproductive incentives that comes with it. For more on the pitfalls of this setup, I recommend [Elisabeth Hendrickson](https://ruby.social/@testobsessed)'s [*"Better Testing, Worse Quality?"*](https://web.archive.org/web/20041001003124/http://www.qualitytree.com/feature/btwq.pdf). One thing that becomes very clear from it, is that even if you have a well-functioning setup with an independent test team, the managing of quality needs to happen on a higher level. It needs to cover requirements analysis and developer and independent testing and defect prevention.
+
+Even when you manage to avoid those pitfalls, having two separate teams will create some amount of siloisation, so more friction in hand-overs, less collaboration, and the transfer of problems to the other team.
+
 ## The balancing act
+
+The middle ground between embedded testers and a separate test team, is making either of these the official structure and then minimize the powers of that structure as much as possible.
+
+In my experience that tends to be easier if you pick embedded testers as your official structure. It makes it clear that testing and quality is the responsibility of the whole team, developers and tester together. This does put testers in that lonely position mentioned earlier, but that creates an incentive for testers to connect with one another. That incentive alone is not enough, though. You do need some structure such as a test guild, a community of practice, a [regular ensembling session](https://ezagroba.github.io/mob-testing/#/), or just an informal catchup meeting, for this to actually happen.
+
+The advantage of getting the testers to connect with each other goes beyond them feeling they have a group of peers within the company. A good tester looks at a bigger picture, beyond the scope and focus of their team. They can do this a lot more effectively if they're sharing information with each other. This then becomes a basis for collaborating with each other, whenever that's useful. And if you're lucky, they'll bring their team along with them. So in this way testers become important in linking teams together and creating aligninment on what they deliver.
+
+Another way to minimize the embedded tester structure is to have the testers be part of the team, but report to a separate manager. That does require the managers of the different team members to be aligned. I once was part of a team with business analysts, developers, and testers, where each had their own separate manager. To manage the work by the team, we had a project manager. And at a later stage, a product owner was added to the team. Needless to say that there was a lot of potential of conflicts and mixed messages in that setup.
+
 
 ### Places along the axis
 
