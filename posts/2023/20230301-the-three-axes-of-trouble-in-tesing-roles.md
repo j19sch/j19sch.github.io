@@ -13,6 +13,8 @@
 
 - should every "The balancing act" mention working inside and around/outside the structures?
 - what about quality engineers? first talk about testers and the three axes, then a separate quality engineer post?
+	- titles of sections do suggest it's about testers
+	- quality engineer, SDET, test/quality lead, princ engineer
 
 ---
 
@@ -140,7 +142,17 @@ BAs, Devs, Testers each with their own manager, project manager for the team
 
 ## Doing your job
 
+As a tester your job is to test things. To uncover interesting information about the product.  Ideally you do this throughout the software development lifecycle: from ideation to production. Ideally you have access to the code and to the necessary tools. Ideally your other team members are involved in testing and ideally they involve you in what they are doing.
+
+Unfortunately, things very often aren't ideal. It could be that you're testing code written by a third party based on the specs written by a business analyst. So doing your job, means you do you're best with whatever's given to you. Even if that means your testing is a lot less effective than it could be.
+
 ## Enabling your job (needs better word then enabling)
+
+If things aren't ideal, you can try to change them.
+
+
+## The balancing act
+
 
 ### Places along the axis
 
