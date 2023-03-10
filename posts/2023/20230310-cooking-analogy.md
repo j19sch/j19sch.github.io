@@ -15,6 +15,7 @@ So since then, I've been thinking: how would I present an argument against measu
 
 <!-- TEASER_END -->
 
+
 # Is cooking automated?
 
 Hopefully your first thought after reading the question "Is cooking automated?", is "No? Parts of it? Haven't really thought about it before?" Because that confusion matches how I feel when the topic of automated versus manual testing comes up. It does not fit my model of how testing should work.
@@ -55,11 +56,16 @@ The activity most on the border of cooking and not-cooking, is probably deciding
 
 # Back to manual and automated testing
 
+I suspect the analogies between cooking and testing are clear enough without me pointing them out in details.
 
+Sometimes talking about doing something manually versus automated makes sense. Sometimes it doesn't. Sometimes it never even occurs to us to consider the distinction. (Raise your hand if you manually compile your code.)
 
+We shouldn't forget to consider the context when we talk about test automation. Often test automation is a shorter way of saying test execution automation. That's fine, it's how language works. It does get dangerous, however, if it makes us forget there's more to testing than test execution.
 
----
+## How to have a conversation about automated versus manual testing metrics
 
+One way to initiate a conversation about automated versus manual testing metrics is to try to reframe the topic from automation to tooling. As with cooking, it's not that we have automated parts of it, it's that we use tools to support, extend and amplify what we can do. Reframing to tools also helps to talk about more than only test execution.
 
-minutes-long monologue -> it's all just tools!
+I don't think that this is the best approach, though. It's a lot more focused and to the point than the minutes-long monologue I mentioned at the start of the post, but it's still quite a step away from a request for this particular metric, and more importantly from the need behind that request.
 
+Figuring out what that need is, through a dialogue, not a discussion, is in my opinion the best approach. Probably there is a concern that we're doing things manually, where we'd be more effective using tools and automation. Making that concern explicit is the perfect starting point for a further conversation about where additional tooling can help and how best to measure if it did indeed help.
