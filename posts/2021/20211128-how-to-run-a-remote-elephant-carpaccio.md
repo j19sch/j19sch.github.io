@@ -2,7 +2,7 @@
 .. title: How to run a remote Elephant Carpaccio
 .. slug: how-to-run-a-remote-elephant-carpaccio
 .. date: 2021-11-28 13:35:16 UTC+01:00
-.. tags: workshop, elephant carpaccio, slices, agile, facilitation
+.. tags: workshop, elephant carpaccio, small steps, agile, facilitation
 .. category: workshop
 .. link: 
 .. description:
