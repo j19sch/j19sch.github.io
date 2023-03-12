@@ -17,7 +17,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <link rel="icon" href="../assets/favicons/favicon-16x16.png" sizes="16x16">
 <link rel="icon" href="../assets/favicons/favicon-32x32.png" sizes="32x32">
 <link rel="icon" href="../assets/favicons/favicon-96x96.png" sizes="96x96">
-<link rel="next" href="index-6.html" type="text/html">
+<link rel="next" href="index-7.html" type="text/html">
 <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
@@ -88,7 +88,24 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023/my-note-taking-system-for-work/" class="u-url">My note-taking system for&nbsp;work</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023/metrics-models-and-conversations/" class="u-url">Metrics, models and&nbsp;conversations</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep&nbsp;Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2023/metrics-models-and-conversations/" rel="bookmark">
+            <time class="published dt-published" datetime="2023-03-12T10:11:25+01:00" itemprop="datePublished" title="12 March 2023">12 March 2023</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>A few weeks ago someone suggested we should start measuring how many automated test cases versus how many manual test cases we have. Luckily it was part of a longer list of suggested metrics and it was also presented in that way: a list of options, to be discussed later. And the reason I say &#8220;luckily&#8221; is because I knew I disagreed with using that metric, but didn&#8217;t have a good explanation as to why. At that moment I could have given a minutes-long monologue about how that metric doesn&#8217;t fit how I think we should be thinking about testing. However, I have zero expectations that such a monologue could have worked in that situation. It would be all over the place as I philosophize about testing and make all kinds of connections and analogies. A convincing argument that does not&nbsp;make.</p>
+<p>So since then, I&#8217;ve been thinking: how would I explain my position on measuring manual versus automated test cases? Something to the point, something relatable, something that acknowledges the need behind asking for this metric. And then it hit me: use cooking as an analogy. Now I know plenty of people have made this analogy before. However, I don&#8217;t remember reading everything I will cover in this post somewhere else. Also, there&#8217;s value in different people saying similar things, but each in their own&nbsp;voice.</p>
+<p class="more"><a href="2023/metrics-models-and-conversations/">Read&nbsp;more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023/my-note-taking-system-for-work/" class="u-url">My note-taking system for&nbsp;work</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep&nbsp;Schuurkes
@@ -270,31 +287,10 @@ Any other options? Because something about the term is bothering&nbsp;me.</p>
 <p class="more"><a href="2022/three-thoughts-on-risk-based-testing/">Read&nbsp;more…</a></p>
 </div>
                 </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="clojure/2022/clj-10-the-mapify-function-of-clj-9-revisited/" class="u-url">(clj 10) The mapify function of (clj 9)&nbsp;revisited</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep&nbsp;Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="clojure/2022/clj-10-the-mapify-function-of-clj-9-revisited/" rel="bookmark">
-            <time class="published dt-published" datetime="2022-07-13T21:02:36+02:00" itemprop="datePublished" title="13 July 2022">13 July 2022</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>In my <a href="clojure/2022/clj-9-how-to-figure-out-what-a-function-does/">previous Clojure post</a> I covered the code example at the end of Chapter 4 of <a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">&#8220;Clojure for the Brave and True&#8221;</a>. Or rather, I focused on a single function in the example,&nbsp;called <code>mapify</code>, and described how I figured out what it does. At the <a href="clojure/2022/clj-9-how-to-figure-out-what-a-function-does/#the-mapify-function">end of that post</a> I shared my&nbsp;disappointment:</p>
-<blockquote>
-<p>Having done all this work (and writing) I can&#8217;t help but feel a bit disappointed. In the end, the function does not seem to do a&nbsp;lot.</p>
-</blockquote>
-<p>And I shared a Python version of that same function, claiming that it basically does the same thing<sup id="fnref:1"><a class="footnote-ref" href="clojure/2022/clj-10-the-mapify-function-of-clj-9-revisited/#fn:1">1</a></sup>.</p>
-<p>However, less than a week after publishing the post, I got a very kind email by someone named Martin. And <em>&#8220;in defence of clojure and to maybe reduce your disappointment&#8221;</em> Martin pointed out the two versions are not as equivalent as I claimed, because the Clojure version is more general than the Python version. So I looked at the two version again and the way they are different turned out to be quite interesting - interesting enough to write a follow-up&nbsp;post.</p>
-<p class="more"><a href="clojure/2022/clj-10-the-mapify-function-of-clj-9-revisited/">Read&nbsp;more…</a></p>
-</div>
-                </div>
             </article>
 </div>
             <ul class="pager postindexpager clearfix">
-<li class="next"><a href="index-6.html" rel="next">Older&nbsp;posts</a></li>
+<li class="next"><a href="index-7.html" rel="next">Older&nbsp;posts</a></li>
         </ul>
 <!--End of body content--><footer id="footer">
             Contents © 2023     
