@@ -2,7 +2,7 @@
 .. title: Two times remote Elephant Carpaccio
 .. slug: two-times-remote-elephant-carpaccio
 .. date: 2021-10-03 21:28:50 UTC+02:00
-.. tags: workshop, elephant carpaccio, slices, agile, facilitation
+.. tags: workshop, elephant carpaccio, small steps, agile, facilitation
 .. category: workshop
 .. link: 
 .. description:
