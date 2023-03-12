@@ -290,10 +290,6 @@
   <lastmod>2022-12-29T16:36:00Z</lastmod>
  </url>
  <url>
-  <loc>https://smallsheds.garden/blog/2023/cooking-analogy/</loc>
-  <lastmod>2023-03-10T12:15:00Z</lastmod>
- </url>
- <url>
   <loc>https://smallsheds.garden/blog/2023/metrics-models-and-conversations/</loc>
   <lastmod>2023-03-12T09:11:00Z</lastmod>
  </url>
@@ -304,10 +300,6 @@
  <url>
   <loc>https://smallsheds.garden/blog/2023/our-work-management-tools-are-limiting-our-imagination/</loc>
   <lastmod>2023-01-22T20:28:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/blog/2023/the-three-axes-of-trouble-in-tesing-roles/</loc>
-  <lastmod>2023-03-04T10:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/clojure/</loc>
@@ -391,7 +383,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/</loc>
-  <lastmod>2023-03-12T09:15:00Z</lastmod>
+  <lastmod>2023-03-12T09:44:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/agile-manifesto/</loc>
@@ -399,10 +391,6 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/agile/</loc>
-  <lastmod>2022-12-29T16:36:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/categories/automation/</loc>
   <lastmod>2022-12-29T16:36:00Z</lastmod>
  </url>
  <url>
@@ -426,10 +414,6 @@
   <lastmod>2022-12-29T16:36:00Z</lastmod>
  </url>
  <url>
-  <loc>https://smallsheds.garden/categories/cat_conference/</loc>
-  <lastmod>2023-03-04T10:00:00Z</lastmod>
- </url>
- <url>
   <loc>https://smallsheds.garden/categories/cat_conferences/</loc>
   <lastmod>2023-02-28T20:04:00Z</lastmod>
  </url>
@@ -446,10 +430,6 @@
   <lastmod>2022-12-29T16:36:00Z</lastmod>
  </url>
  <url>
-  <loc>https://smallsheds.garden/categories/cat_meta/</loc>
-  <lastmod>2022-12-29T16:36:00Z</lastmod>
- </url>
- <url>
   <loc>https://smallsheds.garden/categories/cat_metrics/</loc>
   <lastmod>2023-03-10T12:15:00Z</lastmod>
  </url>
@@ -460,10 +440,6 @@
  <url>
   <loc>https://smallsheds.garden/categories/cat_programming/</loc>
   <lastmod>2022-12-29T16:36:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/categories/cat_quality-engineering-management-software-development-software-testing-test-management/</loc>
-  <lastmod>2023-03-04T10:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/cat_quality-engineering/</loc>
@@ -526,10 +502,6 @@
   <lastmod>2022-12-29T16:36:00Z</lastmod>
  </url>
  <url>
-  <loc>https://smallsheds.garden/categories/conference/</loc>
-  <lastmod>2023-03-04T10:00:00Z</lastmod>
- </url>
- <url>
   <loc>https://smallsheds.garden/categories/conferences/</loc>
   <lastmod>2023-02-28T20:05:00Z</lastmod>
  </url>
@@ -570,10 +542,6 @@
   <lastmod>2022-12-29T16:36:00Z</lastmod>
  </url>
  <url>
-  <loc>https://smallsheds.garden/categories/horizon/</loc>
-  <lastmod>2022-12-29T16:36:00Z</lastmod>
- </url>
- <url>
   <loc>https://smallsheds.garden/categories/ides/</loc>
   <lastmod>2022-12-29T16:36:00Z</lastmod>
  </url>
@@ -583,10 +551,6 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/iso-29119/</loc>
-  <lastmod>2022-12-29T16:36:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/categories/koans/</loc>
   <lastmod>2022-12-29T16:36:00Z</lastmod>
  </url>
  <url>
@@ -634,16 +598,8 @@
   <lastmod>2022-12-29T16:36:00Z</lastmod>
  </url>
  <url>
-  <loc>https://smallsheds.garden/categories/peer-conference/</loc>
-  <lastmod>2023-03-04T10:00:00Z</lastmod>
- </url>
- <url>
   <loc>https://smallsheds.garden/categories/peer-conferences/</loc>
   <lastmod>2023-02-28T20:04:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/categories/problems/</loc>
-  <lastmod>2022-12-29T16:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/programming/</loc>
@@ -674,23 +630,11 @@
   <lastmod>2022-12-29T16:36:00Z</lastmod>
  </url>
  <url>
-  <loc>https://smallsheds.garden/categories/selling/</loc>
-  <lastmod>2022-12-29T16:36:00Z</lastmod>
- </url>
- <url>
   <loc>https://smallsheds.garden/categories/semantics/</loc>
   <lastmod>2022-12-29T16:36:00Z</lastmod>
  </url>
  <url>
-  <loc>https://smallsheds.garden/categories/site/</loc>
-  <lastmod>2022-12-29T16:36:00Z</lastmod>
- </url>
- <url>
   <loc>https://smallsheds.garden/categories/skills/</loc>
-  <lastmod>2022-12-29T16:36:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/categories/slices/</loc>
   <lastmod>2022-12-29T16:36:00Z</lastmod>
  </url>
  <url>
