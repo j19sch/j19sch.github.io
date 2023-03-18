@@ -27,14 +27,24 @@ Another solution might be changing the way we use our backlogs. If a product man
 If you have a backlog, it already contains features. So no need to change anything here. You could argue - as I did in [*"Our work management tools are limiting our imagination"*](link://slug/our-work-management-tools-are-limiting-our-imagination) - that there might be better ways to manage work than having features in a backlog. That's not in scope for this post. The assumption is that you have a backlog, owned by a product manager or owner, containing the upcoming work for the team.
 
 
+
 # Bugs
 
-bug: either fix now, or log in backlog as feature, or don't log
-bug during story: fix it now or accept ok forever (because either forget or log into backlog)
+Putting bugs in your backlog is a tricky proposition, because it becomes the default action for bugs that are not obviously urgent. So before you know it, you have a bunch of bugs in your backlog and all of them feel important but not that important. The number of bugs grows, some of them become outdated, it's too much work to re-triage them all again.
+
+A solution to this problem is to first ask: Should we fix this immediately? With immediately meaning that either someone drops what they're doing and starts fixing, or that someone wraps up what they're doing and then picks up the fix. For a bug in a story that's in developement, in the majority of cases that answer to "Should we fix this right now?" should be "Yes." Fix it now and you'll never have to think about it again. For other bugs, e.g. based on a support ticket, the answer will be "yes" less often, because they're not related to the work the team is doing at that moment.
+
+To make the decision to fix immediately or not well, it's important to realize the meaning of answering that question with "no". It means you accept that the issue might not get fixed ever. If we don't fix it right away, one option is to add it to the backlog. There might always be something more important in the backlog, then we never fix the issue. The other option is to forget about the whole thing. You won't fix this anytime soon, so it makes no sense to add it to the backlog.
+
+I can imagine that in some contexts there's value in logging all bugs, whether you will fix them or not. In that case, do log those bugs, just don't do that in your backlog. Record them somewhere else.
 
 
 
 # Maintenance and tech debt
+
+What if tech debt is logged in backlog like bugs? But then also same applies: now - log - forget.
+
+While my idea is inspired by "let's log all the things in the backlog".
 
 Features and bugs tend to get added to the backlog, while tech debt doesn't. So the Product Manager has an incomplete view of the actual backlog. Fixing that could help in getting more priority for fixing tech debt.
 
@@ -47,7 +57,11 @@ Given that situation, I think putting tech debt in the backlog would help with v
 
 # All backlog items are equal
 
-backlog items: potential work that might increase value in the future
+Backlog items, whether they are features, bugs or technical debt, are all potential things we can do to increase the value of the product.
+
+So you might label them differently, but in the end they are all the same thing: a backlog item.
+
+Whoever gets to prioritize all the work, benefits from having visibility on all the work.
 
 ---
 
