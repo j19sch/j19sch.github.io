@@ -21,6 +21,9 @@ Another solution might be to change the way we use our backlogs. If a product ma
 
 <!-- TEASER_END -->
 
+*Sidenote:* A solution I don't believe in is the claim that engineers should learn to have better conversations with their product manager or product owner. That puts the responsibility solely on one party, the engineers, blaming them for not having a formula that converts engineering value to business value. It puts product management in a position of power-over instead of power-with engineering, where any conversation about what to work on, needs to happen on product management their terms.
+
+
 
 # Features
 
@@ -41,22 +44,36 @@ That leads us to the third option of dealing with issues, simply forgetting abou
 [^3]: Sometimes a cheap way to log a bug is adding an automated test that captures the bug's behavior. Do make sure it's not just as easy to also fix the bug, though.
 
 
-# Maintenance and tech debt
+# Technical debt and maintenance
 
-What if tech debt is logged in backlog like bugs? But then also same applies: now - log - forget.
+"Technical debt" has many different definitions, with people disagreeing over which are the correct ones. In this post I'm using the term in its more general sense: "tech stuff that's making us slower than we could be". And for the point I'm trying to make here, maintenance work, such as keeping dependencies up-to-date, also fits in this section as the third category of backlog items. Basically it's all the work for which your engineers are the main users and stakeholders.[^4]
 
-While my idea is inspired by "let's log all the things in the backlog".
+[^4]: I suppose that makes compliance-related work either features or bugs.
+
+While features and bugs tend to get added to the backlog, technical debt and maintenance usually don't. Or at least not in the same way, the bar seems to be significantly higher. There's a reluctance and they only get added to the backlog when there's really no other choice. And something I have yet to see, is a team consciously incurring some technical debt and immediately adding an item to the backlog to pay off that debt.
+
+So what you tend to end up with is a product manager or product owner with an incomplete view of technical debt and maintenance work, because of two reasons:
+
+1. They never interact with the codebase that lets them experience how tech debt slows down the work. It's more an annoying fact of software development-life that explains why things take longer than anticipated.
+1. The tool they use to manage the priorities, the backlog, is complete when it comes to features and bugs, but not when it comes to technical debt and maintenance.
+
+The first of these is definitely worth doing something about, e.g. through ensemble programming (also known as mob programming). A way to address the second one is to add technical debt and maintenance to the backlog in exactly the same way that features and bugs are. Make all the work visible. Scrolling through the backlog should give an accurate picture of the actual ratios of the three types of work.
+
+
 
 Features and bugs tend to get added to the backlog, while tech debt doesn't. So the Product Manager has an incomplete view of the actual backlog. Fixing that could help in getting more priority for fixing tech debt.
 
-I should also either not use "tech debt" or explicitly define how I use the term. Currently using it in the sloppy/vague sense of "tech stuff that's making us slower than we could be".
 
-I've seen too many teams where the product owner/product manager makes all the decisions about what work is done and what work is not. Response to that is usually "learn to have better conversations with your PO/PM" instead of putting an engineering manager in charge of the engineering team.
 
-Given that situation, I think putting tech debt in the backlog would help with visibility.
+
 
 
 # All backlog items are equal
+
+While my idea is inspired by "let's log all the things in the backlog".
+What if tech debt is logged in backlog like bugs? But then also same applies: now - log - forget.
+
+I've seen too many teams where the product owner/product manager makes all the decisions about what work is done and what work is not. Response to that is usually "learn to have better conversations with your PO/PM" instead of putting an engineering manager in charge of the engineering team. Given that situation, I think putting tech debt in the backlog would help with visibility.
 
 Backlog items, whether they are features, bugs or technical debt, are all potential things we can do to increase the value of the product.
 
@@ -70,7 +87,7 @@ Whoever gets to prioritize all the work, benefits from having visibility on all 
 
 ---
 
-## Some thoughts from other people
+## Thoughts from other people
 
 This blog post started as a [question on Mastodon](https://chaos.social/@joeposaurus/110031968940811638):
 
