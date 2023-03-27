@@ -9,35 +9,36 @@
 .. type: text
 -->
 
-Originally Scrum was very much about *"You tell us what needs building. We'll decide how we build it and how soon we'll deliver."*[^1] I've never seen that version of Scrum. The version I have seen, has a product manager try to get as many features into a sprint as reasonably possible - for varying degrees of reasonable. This comes at the expense of maintenance work, such as keeping libraries up-to-date or removing technical debt. And it incentivises the team to cut corners on features: to not leave code in a better state than they found it, to not fix smaller bugs and instead log them somewhere.
+Originally Scrum was very much about *"You tell us what needs building. We'll decide how we build it and how soon we'll deliver."*[^1] I've never seen that version of Scrum. The version I have seen, has a product manager try to get as many features into a sprint as reasonably possible - for varying degrees of reasonable. This comes at the expense of maintenance work, such as keeping libraries up-to-date or removing technical debt. And it incentivises the team to cut corners on features, to not leave code in a better state than they found it, to not fix smaller bugs and instead log them in some system.
 
-[^1]: See for examples [this Twitter thread](https://threadreaderapp.com/thread/1405184303126953987.html) by Alistair Cockburn about Scrum's anti-management position and sprint commitment.
+[^1]: See for examples [this Twitter thread](https://threadreaderapp.com/thread/1405184303126953987.html) by Alistair Cockburn about Scrum's anti-management position and sprint commitments.
 
-One solution I see to this problem, is to fully put an engineering manager in charge of the team. The product manager prioritizes the features. The engineering manager prioritizes the work the team does. That's not a simple change, however.
+One solution I see to this problem, is to put an engineering manager fully in charge of the team. The product manager prioritizes the features. The engineering manager prioritizes the work the team does. That's not a simple change to pull off, however.
 
-Another solution might be changing the way we use our backlogs. If a product manager gets to prioritize all the work, and the tool they use is a backlog, then we should make sure that all the work[^2] is in the backlog.
+Another solution might be to change the way we use our backlogs. If a product manager gets to prioritize all the work, and the tool they use is a backlog, then we should make sure that all the work[^2] is in the backlog: features, bugs, and technical debt.
 
-[^2]: Or rather, all the work relevant to a relatively short horizon. The shorter the horizon, the smaller the backlog, the easier it is to manage.
+[^2]: Or rather, all the work relevant within a relatively short horizon. The shorter the horizon, the smaller the backlog, the easier it is to manage.
 
 <!-- TEASER_END -->
 
 
 # Features
 
-If you have a backlog, it already contains features. So no need to change anything here. You could argue - as I did in [*"Our work management tools are limiting our imagination"*](link://slug/our-work-management-tools-are-limiting-our-imagination) - that there might be better ways to manage work than having features in a backlog. That's not in scope for this post. The assumption is that you have a backlog, owned by a product manager or owner, containing the upcoming work for the team.
+If you have a backlog, it already contains features. So no need to change anything here. You could argue - as I did in [*"Our work management tools are limiting our imagination"*](link://slug/our-work-management-tools-are-limiting-our-imagination) - that there might be better ways to manage work than having features in a backlog. That's not what this post is about. The assumption is that you have a backlog, owned by a product manager or product owner, containing the upcoming work for the team.
 
 
 
 # Bugs
 
-Putting bugs in your backlog is a tricky proposition, because it becomes the default action for bugs that are not obviously urgent. So before you know it, you have a bunch of bugs in your backlog and all of them feel important but not that important. The number of bugs grows, some of them become outdated, it's too much work to re-triage them all again.
+Putting bugs in your backlog is a tricky proposition, because it becomes the default action for bugs that are not obviously urgent. So before you know it, you have a bunch of bugs in your backlog and all of them feel kind of important but also not that important. The number of bugs grows, some of them become outdated, it's too much work to re-triage them all again.
 
-A solution to this problem is to first ask: Should we fix this immediately? With immediately meaning that either someone drops what they're doing and starts fixing, or that someone wraps up what they're doing and then picks up the fix. For a bug in a story that's in developement, in the majority of cases that answer to "Should we fix this right now?" should be "Yes." Fix it now and you'll never have to think about it again. For other bugs, e.g. based on a support ticket, the answer will be "yes" less often, because they're not related to the work the team is doing at that moment.
+A solution to this problem is to first ask: Should we fix this immediately? With immediately meaning either that someone drops what they're doing and starts fixing it roght away, or that someone wraps up what they're doing and then picks up the fix. For a bug in a story that's in developement, in most cases the answer to "Should we fix this right now?" should be "Yes." Fix it now and you'll never have to think about it again. For other bugs, e.g. based on a support ticket, the answer will be "yes" less often, because they're not related to the work the team is doing at that moment.
 
-To make the decision to fix immediately or not well, it's important to realize the meaning of answering that question with "no". It means you accept that the issue might not get fixed ever. If we don't fix it right away, one option is to add it to the backlog. There might always be something more important in the backlog, then we never fix the issue. The other option is to forget about the whole thing. You won't fix this anytime soon, so it makes no sense to add it to the backlog.
+If you decide to answer the question of fixing the issue immediately with "no", it's important to be very clear what that means. Often that "no" seems to be taken as *"Good thing we logged it, so at some point in the future we can get back to it and fix it."* While that comes from a place of good intentions, I think a better way to look at that "no" is that it means you accept the issue might not ever gets fixed. By not fixing it right away, it becomes one of many items in the prioritization cycle, where it might never get enough priority to actually get fixed.
 
-I can imagine that in some contexts there's value in logging all bugs, whether you will fix them or not. In that case, do log those bugs, just don't do that in your backlog. Record them somewhere else.
+That leads us to the third option of dealing with issues, simply forgetting about them. You're not fixing the issue immediately. You're not fixing it soon, so it shouldn't get a spot in the backlog. Then don't weigh yourself down by keeping track of them, just let it go.[^3] And for those contexts in which there is value in logging all bugs, whether you will fix them or not, do log them, but not in your backlog. Record them somewhere else.
 
+[^3]: Sometimes a cheap way to log a bug is adding an automated test that captures the bug's behavior. Do make sure it's not just as easy to also fix the bug, though.
 
 
 # Maintenance and tech debt
@@ -62,6 +63,10 @@ Backlog items, whether they are features, bugs or technical debt, are all potent
 So you might label them differently, but in the end they are all the same thing: a backlog item.
 
 Whoever gets to prioritize all the work, benefits from having visibility on all the work.
+
+## my main message
+- keep backlogs as small as possible
+- add all potential things we can do to increase the value of the product
 
 ---
 
