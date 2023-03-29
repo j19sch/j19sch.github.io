@@ -13,7 +13,7 @@ maintenance or tech debt?
 
 ---
 
-Originally Scrum was very much about *"You tell us what needs building. We'll decide how we build it and how soon we'll deliver."*[^1] I've never seen that version of Scrum. The version I have seen, has a product manager try to get as many features into a sprint as reasonably possible - for varying degrees of reasonable. This comes at the expense of maintenance work, such as keeping libraries up-to-date or removing technical debt. And it incentivises the team to cut corners on features, to not leave code in a better state than they found it, to not fix smaller bugs and instead log them somewhere for later.
+Originally Scrum was very much about *"You tell us what needs building. We'll decide how we build it and how soon we'll deliver."*[^1] I've never seen that version of Scrum. The version I have seen, has a product manager try to get as many features into a sprint as reasonably possible - for varying degrees of reasonable. This comes at the expense of maintenance work, such as keeping libraries up-to-date or removing technical debt. And it incentivizes the team to cut corners on features, to not leave code in a better state than they found it, to not fix smaller bugs and instead log them somewhere for later.
 
 [^1]: See for examples [this Twitter thread](https://threadreaderapp.com/thread/1405184303126953987.html) by Alistair Cockburn about Scrum's anti-management position and sprint commitments.
 
@@ -39,7 +39,7 @@ If you have a backlog, it already contains features. So no need to change anythi
 
 Putting bugs in your backlog is a tricky proposition, because it becomes the default action for bugs that are not obviously urgent. So before you know it, you have a bunch of bugs in your backlog and all of them feel kind of important but then again, also not that important. The number of bugs grows, some of them become outdated, it's too much work to re-triage them all again, and now what?
 
-A solution to this problem is to first ask: Should we fix this immediately? With immediately meaning either that someone drops what they're doing and starts fixing it right away, or that someone wraps up what they're doing and then picks up the fix. For a bug in a story that's in developement, in most cases the answer to "Should we fix this right now?" should be "Yes." Fix it now and you'll never have to think about it again. For other bugs, e.g. based on a support ticket, the answer will be "yes" less often, because they're not related to the work the team is doing at that moment.
+A solution to this problem is to first ask: Should we fix this immediately? With immediately meaning either that someone drops what they're doing and starts fixing it right away, or that someone wraps up what they're doing and then picks up the fix. For a bug in a story that's in development, in most cases the answer to "Should we fix this right now?" should be "Yes." Fix it now and you'll never have to think about it again. For other bugs, e.g. based on a support ticket, the answer will be "yes" less often, because they're not related to the work the team is doing at that moment.
 
 If you decide to answer the question of fixing the issue immediately with "no", it's important to be very clear what that means. Often that "no" seems to be taken as *"Good thing we logged it, so at some point in the future we can get back to it and fix it."* While that comes from a place of good intentions, I think there's a better way to look at that "no". By not fixing it right away, it becomes one of many items in the prioritization cycle, where it might never get enough priority to actually get picked up. So that "no" means accepting the issue might not ever get fixed at all.
 
@@ -58,7 +58,7 @@ While features and bugs tend to get added to the backlog, technical debt and mai
 
 So what you tend to end up with is a product manager or product owner with an incomplete view of technical debt and maintenance work, because of two reasons:
 
-1. They never interact with the codebase that lets them experience how tech debt slows down the work. It's more an annoying fact-of-life in software developmentthat explains why things take longer than anticipated.
+1. They never interact with the codebase that lets them experience how tech debt slows down the work. It's more an annoying fact-of-life in software development that explains why things take longer than anticipated.
 1. The tool they use to manage the priorities, the backlog, is 'complete' when it comes to features and bugs, but not when it comes to technical debt and maintenance.
 
 The first of these is definitely worth doing something about, e.g. through ensemble programming (also known as mob programming). A way to address the second one is to add technical debt and maintenance to the backlog in exactly the same way that features and bugs are. Scrolling through the backlog should give an accurate picture of the actual ratios of the three types of work. Make all the work visible. 
@@ -73,34 +73,9 @@ If you want to, you can give them different labels, but I think there's a mislea
 
 Hence my proposal for a simple experiment. If you have a product manager who gets to make all the priority decisions about the work, then put all the work in the backlog: features, bugs, and maintenance. Make it visible. And if someone complains this makes the backlog too large, then have a conversation about what can be thrown out. But at least you'll start that conversation with a more complete picture of the work that could be done to increase the value of the product.
 
----
-
-
-the are the same: backlog item
-they are different: add pos. value, remove neg. value, improve dev experience
 
 ---
 
-- keep backlogs as small as possible
-- add all potential things we can do to increase the value of the product
-
----
-
-
-While my idea is inspired by "let's log all the things in the backlog".
-What if tech debt is logged in backlog like bugs? But then also same applies: now - log - forget.
-
-I've seen too many teams where the product owner/product manager makes all the decisions about what work is done and what work is not. Response to that is usually "learn to have better conversations with your PO/PM" instead of putting an engineering manager in charge of the engineering team. Given that situation, I think putting tech debt in the backlog would help with visibility.
-
-Backlog items, whether they are features, bugs or technical debt, are all potential things we can do to increase the value of the product.
-
-So you might label them differently, but in the end they are all the same thing: a backlog item. things that might add value to the product /  things that we expext will add value to the product / will increate the value of the product
-
-Whoever gets to prioritize all the work, benefits from having visibility on all the work.
-
-
-
----
 
 ## Thoughts from other people
 
