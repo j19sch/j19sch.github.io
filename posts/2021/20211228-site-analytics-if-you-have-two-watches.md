@@ -2,7 +2,7 @@
 .. title: Site analytics: if you have two watches...
 .. slug: site-analytics-if-you-have-two-watches
 .. date: 2021-12-28 11:08:16 UTC+01:00
-.. tags: this site
+.. tags: this site, bugs
 .. category: this site
 .. link: 
 .. description:
