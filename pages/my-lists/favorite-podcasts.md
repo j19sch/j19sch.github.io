@@ -12,6 +12,9 @@ hidetitle: false
 Oddly Influenced by Brian Marick  
 [https://podcast.oddly-influenced.dev/](https://podcast.oddly-influenced.dev/)
 
+Tech Won't Save Us by Paris Marx and Eric Wickham  
+[https://techwontsave.us/](https://techwontsave.us/)
+
 Troubleshooting Agile by Douglas Squirrel and Jeffrey Fredrick  
 [https://www.conversationaltransformation.com/troubleshooting-agile-podcast/](https://www.conversationaltransformation.com/troubleshooting-agile-podcast/)
 
