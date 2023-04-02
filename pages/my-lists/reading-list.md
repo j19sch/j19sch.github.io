@@ -11,6 +11,7 @@ hidetitle: false
 ### 2023
 - Emergent Strategy: Shaping Change, Changing Worlds - adrienne maree brown (did not finish, book club)
 - Two Cheers for Anarchism: Six Easy Pieces on Autonomy, Dignity and Meaningful Work and Play - James C. Scott
+- Gardeners Not Mechanics: How to cultivate change at work - Gary Lloyd (book club)
 
 
 ### 2022
