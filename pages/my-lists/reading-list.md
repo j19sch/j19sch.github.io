@@ -8,6 +8,11 @@ hidetitle: false
 
 # Reading list
 
+### 2023
+- Emergent Strategy: Shaping Change, Changing Worlds - adrienne maree brown (did not finish, book club)
+- Two Cheers for Anarchism: Six Easy Pieces on Autonomy, Dignity and Meaningful Work and Play - James C. Scott
+
+
 ### 2022
 - Sooner Safer Happier: Antipatterns and Patterns for Business Agility - Jonathan Smart with Zsolt Berend, Myles Ogilvie and Simon Rohre
 - The Pathless Path: Imagining a New Story For Work & Life - Paul Millerd
