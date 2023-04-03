@@ -2,7 +2,7 @@
 .. title: Our work management tools are limiting our imagination
 .. slug: our-work-management-tools-are-limiting-our-imagination
 .. date: 2023-01-29 22:34:25 UTC+01:00
-.. tags: quality engineering, agile, agile manifesto, software development, tools
+.. tags: quality engineering, agile, agile manifesto, software development, tools, work management
 .. category: agile
 .. link: 
 .. description: 
