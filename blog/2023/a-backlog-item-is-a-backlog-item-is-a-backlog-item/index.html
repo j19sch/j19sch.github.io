@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A backlog item is a backlog item is a backlog item | Joep Schuurkes</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../feed.atom">
+<link rel="canonical" href="https://smallsheds.garden/blog/2023/a-backlog-item-is-a-backlog-item-is-a-backlog-item/">
+<link rel="icon" href="../../../assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="../../../assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../assets/favicons/favicon-96x96.png" sizes="96x96">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../metrics-models-and-conversations/" title="Metrics, models and conversations" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="A backlog item is a backlog item is a backlog item">
+<meta property="og:url" content="https://smallsheds.garden/blog/2023/a-backlog-item-is-a-backlog-item-is-a-backlog-item/">
+<meta property="og:description" content="Originally Scrum was very much about &quot;You tell us what needs building. We'll decide how we build it and how soon we'll deliver.&quot;1 I've never seen that version of Scrum. The version I have seen, has a ">
+<meta property="og:image" content="https://smallsheds.garden/images/default-preview.jpeg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2023-04-03T08:51:25+02:00">
+<meta property="article:tag" content="agile">
+<meta property="article:tag" content="bugs">
+<meta property="article:tag" content="tech debt">
+<meta property="article:tag" content="work management">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-projects/" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-talks/" class="nav-link">Talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../../my-lists/reading-list/" class="dropdown-item">Reading list</a>
+                    <a href="../../../my-lists/recommended-reading/" class="dropdown-item">Recommended reading</a>
+                    <a href="../../../my-lists/favorite-podcasts/" class="dropdown-item">Favorite podcasts</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../" class="dropdown-item">My blog</a>
+                    <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
+                    <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">A backlog item is a backlog item is a backlog&nbsp;item</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep&nbsp;Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2023-04-03T08:51:25+02:00" itemprop="datePublished" title="3 April 2023">3 April 2023</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>Originally Scrum was very much about <em>&#8220;You tell us what needs building. We&#8217;ll decide how we build it and how soon we&#8217;ll deliver.&#8221;</em><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> I&#8217;ve never seen that version of Scrum. The version I have seen, has a product manager try to get as many features into a sprint as reasonably possible - for varying degrees of reasonable. This comes at the expense of maintenance work, such as keeping libraries up-to-date or removing technical debt. And it incentivizes the team to cut corners on features, to not leave code in a better state than they found it, to not fix smaller bugs and instead log them somewhere for&nbsp;later.</p>
+<p>One solution I see to this problem, is to put an engineering manager fully in charge of the team.<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">2</a></sup> The product manager prioritizes the features. The engineering manager prioritizes the full scope of work for the team. That&#8217;s not a simple change to pull off,&nbsp;however.</p>
+<p>Another solution might be to change the way we use our backlogs. If a product manager gets to prioritize all the work, and the tool they use is a backlog, then we should make sure that all the work<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">3</a></sup> is in the backlog: features, bugs, and technical debt. Let&#8217;s take a look at each of these three categories of&nbsp;work.</p>
+<!-- TEASER_END -->
+
+<h2>Features</h2>
+<p>If you have a backlog, it already contains features. So no need to change anything here. You could argue - as I did in <a href="../our-work-management-tools-are-limiting-our-imagination/"><em>&#8220;Our work management tools are limiting our imagination&#8221;</em></a> - that there might be better ways to manage work than having features in a backlog. That&#8217;s not what this post is about. The assumption is that you have a backlog, owned by a product manager or product owner, containing the upcoming work for the&nbsp;team.</p>
+<h2>Bugs</h2>
+<p>Putting bugs in your backlog is a tricky proposition, because it becomes the default action for bugs that are not obviously urgent. So before you know it, you have a bunch of bugs in your backlog and all of them feel kind of important but also not that important. The number of bugs grows, some of them become outdated, it&#8217;s too much work to re-triage them all again, and now&nbsp;what?</p>
+<p>A solution to this problem is to first ask: Should we fix this immediately? With immediately meaning either that someone drops what they&#8217;re doing and starts fixing it right away, or that someone wraps up what they&#8217;re doing and then picks up the fix. For a bug in a story that&#8217;s in development, in most cases the answer to &#8220;Should we fix this right now?&#8221; should be &#8220;Yes.&#8221; Fix it now and you&#8217;ll never have to think about it again. For other bugs, e.g. based on a support ticket, the answer will be &#8220;yes&#8221; less often, because they&#8217;re not related to the work the team is doing at that&nbsp;moment.</p>
+<p>If you decide the answer to the question of fixing the issue immediately is &#8220;no&#8221;, it&#8217;s important to be very clear what that means. Often that &#8220;no&#8221; seems to be taken as <em>&#8220;Good thing we logged it, so at some point in the future we can get back to it and fix it.&#8221;</em> While that comes from a place of good intentions, I think there&#8217;s a better way to look at that &#8220;no&#8221;. By not fixing it right away, you accept that the issue is now part of how the product works, perhaps indefinitely. And doing the fix has become one of the many items in the prioritization cycle. And there&#8217;s no way of predicting with absolute certainty when it will get enough priority to get picked up. So it might never get fixed at&nbsp;all.</p>
+<p>That leads us to the third option of dealing with issues, simply forgetting about them. You&#8217;re not fixing the issue immediately. You&#8217;re not fixing it soon, so it shouldn&#8217;t get a spot in the backlog. Don&#8217;t weigh yourself down by keeping track of them, let it go.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">4</a></sup> And for those contexts in which there is value in logging all bugs, whether you will fix them or not, do log them, but not in your backlog. Record them somewhere&nbsp;else.</p>
+<h2>Technical debt and&nbsp;maintenance</h2>
+<p><span class="dquo">&#8220;</span>Technical debt&#8221; has many different definitions, with plenty of disagreement in which is the correct one. In this post I&#8217;m using the term in its more general sense: &#8220;tech stuff that&#8217;s making us slower than we could be&#8221;. A related type of work is maintenance work, such as keeping dependencies up-to-date. For the purpose of this post, they both fit this third category of backlog items, all the work of which your engineers are the main users and stakeholders.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">5</a></sup></p>
+<p>While features and bugs tend to get added to the backlog, technical debt and maintenance usually don&#8217;t. Or at least not in the same way, the bar seems to be significantly higher. There&#8217;s a reluctance.<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup> They only get added to the backlog when the work really needs to get done soon. And something I have yet to see, is a team consciously incurring some technical debt and immediately adding an item to the backlog to pay off that&nbsp;debt. </p>
+<p>So what you tend to end up with is a product manager or product owner with an incomplete view of technical debt and maintenance work,&nbsp;because:</p>
+<ol>
+<li>They never interact with the codebase that lets them experience how tech debt slows down the work. It&#8217;s an annoying fact-of-life in software development that explains why things take longer than anticipated. It&#8217;s not something you can actively&nbsp;manage.</li>
+<li>The tool they use to manage the priorities, the backlog, is &#8216;complete&#8217; when it comes to features and bugs, but not when it comes to technical debt and&nbsp;maintenance.</li>
+</ol>
+<p>The first of these is definitely worth doing something about, e.g. through ensemble programming (also known as mob programming). A way to address the second one is to add technical debt and maintenance to the backlog in exactly the same way as features and bugs. Scrolling through the backlog should give an accurate picture of the actual ratios of the three types of work. Make all the work&nbsp;visible. </p>
+<h2>All backlog items are&nbsp;equal</h2>
+<p>Features, bugs, and maintenance all are things we could do to increase the value of the product. (Or at least, we believe they would increase it.) In that sense, from a work management perspective they are the same kind of thing. They are all backlog items. Work you intend to pick up&nbsp;soon.</p>
+<p>If you want to, you can give them different labels, but I think there&#8217;s a misleading aspect to doing so. At what point does a bug become a feature? A wrong calculation is clearly a bug. But what about supporting part of a process better, making our users more effective? And why do we treat the people working on the system, as second-class users? Why are the features and bugs they care about, treated as lesser than those of other&nbsp;users?</p>
+<p>Hence my proposal for a simple experiment. If you have a product manager who gets to make all the priority decisions about the work, then put all the work in the backlog: features, bugs, and maintenance. Make it visible. And if someone complains this makes the backlog too large, then have a conversation about what can be thrown out. But at least you&#8217;ll start that conversation with a more complete picture of the work that could be done to increase the value of the&nbsp;product.</p>
+<hr>
+<h3>Thoughts from other&nbsp;people</h3>
+<p>This blog post started as a <a href="https://chaos.social/@joeposaurus/110031968940811638">question on Mastodon</a>:</p>
+<blockquote>
+<p><span class="dquo">&#8220;</span>What if you started to log technical debt as bugs in&nbsp;Jira?&#8221;</p>
+</blockquote>
+<p>In response, <a href="https://chaos.social/@krys@spore.social">Krys</a>&nbsp;said:</p>
+<blockquote>
+<p><span class="dquo">&#8220;</span>I fear relabeling would only reinforce everyone’s troublesome view of the <span class="caps">PO</span>  being the teams boss and having authority/obligation to micromanage their workday instead of demanding technical excellency from the team while trusting them to know best how to get&nbsp;that&#8221;</p>
+</blockquote>
+<p><a href="https://chaos.social/@coderbyheart">Markus Tacker</a>&nbsp;said:</p>
+<blockquote>
+<p><span class="dquo">&#8220;</span>Nothing. Technical debt is valid implementation. As long as developers do not get permission (or sense of urgency) to change it, it will get ignored. Work on providing the resources needed to address it&nbsp;instead.&#8221;</p>
+<p><span class="dquo">&#8220;</span>Tech debt impacts the ability to deliver new features. And that&#8217;s why it does not belong in the backlog. Only features do. If feature backlog is empty, no need to address tech debt. If feature backlog keeps growing: fix tech&nbsp;debt.&#8221;</p>
+</blockquote>
+<p><a href="https://chaos.social/@zebulon@mas.to">Zebulon</a> shared a link to Chelsea Troy&#8217;s <a href="https://stackoverflow.blog/2023/02/27/stop-saying-technical-debt/"><em>&#8220;Stop saying &#8216;technical debt&#8217;&#8221;</em></a>.</p>
+<p><a href="https://chaos.social/@mostalive@mastodon.social">Willem van den Ende</a> shared his article <a href="https://www.qwan.eu/2022/03/29/product-hurricane-map.html"><em>&#8220;Product Hurricane Maps to take into account tech debt when roadmapping&#8221;</em></a>.</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>See for examples <a href="https://threadreaderapp.com/thread/1405184303126953987.html">this Twitter thread</a> by Alistair Cockburn about Scrum&#8217;s anti-management position and sprint commitments. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:5">
+<p>A solution I don&#8217;t believe in is that engineers should learn to have better conversations with their product manager or product owner. &#8220;Having better conversations&#8221; tends to mean that engineers needs to do a better job explaining the business value of the technical work they want to do. This keeps product management in a position of power-over instead of power-with engineering, where any conversation about what to work on, needs to happen on product management&#8217;s terms. <a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>Or rather, all the work that&#8217;s relevant within a <a href="https://elizabethzagroba.com/posts/2022/11_19_half-life_for_your_backlog/">relatively short horizon</a>. The shorter the horizon, the smaller the backlog, the easier it is to manage. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 3 in the text">↩</a></p>
+</li>
+<li id="fn:3">
+<p>Sometimes a cheap way to log a bug is adding an automated test that captures the bug&#8217;s behavior. Do make sure it&#8217;s not just as easy to also fix the bug, though. <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 4 in the text">↩</a></p>
+</li>
+<li id="fn:4">
+<p>I suppose that makes compliance-related work either features or bugs? <a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 5 in the text">↩</a></p>
+</li>
+<li id="fn:6">
+<p>There&#8217;s also a reluctance in getting this work prioritized. For the non-urgent work, it often ends up as filler, when the product manager can&#8217;t find anything else for the team to do. <a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/agile/" rel="tag">agile</a></li>
+            <li><a class="tag p-category" href="../../../categories/bugs/" rel="tag">bugs</a></li>
+            <li><a class="tag p-category" href="../../../categories/tech-debt/" rel="tag">tech&nbsp;debt</a></li>
+            <li><a class="tag p-category" href="../../../categories/work-management/" rel="tag">work&nbsp;management</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../metrics-models-and-conversations/" rel="prev" title="Metrics, models and conversations">Previous&nbsp;post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2023     
+<a href="https://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by/4.0/80x15.png"></a>
+    <a href="mailto:site@joep.slmail.me">Joep Schuurkes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

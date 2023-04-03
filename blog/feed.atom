@@ -3,13 +3,31 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes</title>
   <id>https://smallsheds.garden/blog/feed.atom</id>
-  <updated>2023-03-12T09:54:37Z</updated>
+  <updated>2023-04-03T06:53:57Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/blog/feed.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>A backlog item is a backlog item is a backlog item</title>
+    <id>https://smallsheds.garden/blog/2023/a-backlog-item-is-a-backlog-item-is-a-backlog-item/</id>
+    <updated>2023-04-03T08:51:25+02:00</updated>
+    <published>2023-04-03T08:51:25+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2023/a-backlog-item-is-a-backlog-item-is-a-backlog-item/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Originally Scrum was very much about &lt;em&gt;"You tell us what needs building. We'll decide how we build it and how soon we'll deliver."&lt;/em&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2023/a-backlog-item-is-a-backlog-item-is-a-backlog-item/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; I've never seen that version of Scrum. The version I have seen, has a product manager try to get as many features into a sprint as reasonably possible - for varying degrees of reasonable. This comes at the expense of maintenance work, such as keeping libraries up-to-date or removing technical debt. And it incentivizes the team to cut corners on features, to not leave code in a better state than they found it, to not fix smaller bugs and instead log them somewhere for later.&lt;/p&gt;
+&lt;p&gt;One solution I see to this problem, is to put an engineering manager fully in charge of the team.&lt;sup id="fnref:5"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2023/a-backlog-item-is-a-backlog-item-is-a-backlog-item/#fn:5"&gt;2&lt;/a&gt;&lt;/sup&gt; The product manager prioritizes the features. The engineering manager prioritizes the full scope of work for the team. That's not a simple change to pull off, however.&lt;/p&gt;
+&lt;p&gt;Another solution might be to change the way we use our backlogs. If a product manager gets to prioritize all the work, and the tool they use is a backlog, then we should make sure that all the work&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2023/a-backlog-item-is-a-backlog-item-is-a-backlog-item/#fn:2"&gt;3&lt;/a&gt;&lt;/sup&gt; is in the backlog: features, bugs, and technical debt. Let's take a look at each of these three categories of work.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2023/a-backlog-item-is-a-backlog-item-is-a-backlog-item/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="agile" label="agile"/>
+    <category term="bugs" label="bugs"/>
+    <category term="tech-debt" label="tech debt"/>
+    <category term="work-management" label="work management"/>
+  </entry>
   <entry>
     <title>Metrics, models and conversations</title>
     <id>https://smallsheds.garden/blog/2023/metrics-models-and-conversations/</id>
@@ -62,6 +80,7 @@
     <category term="quality-engineering" label="quality engineering"/>
     <category term="software-development" label="software development"/>
     <category term="tools" label="tools"/>
+    <category term="work-management" label="work management"/>
   </entry>
   <entry>
     <title>(clj 11) Moving on from some unsolved exercises</title>
@@ -180,30 +199,5 @@
     <category term="semantics" label="semantics"/>
     <category term="software-testing" label="software testing"/>
     <category term="test-management" label="test management"/>
-  </entry>
-  <entry>
-    <title>Three thoughts on risk-based testing</title>
-    <id>https://smallsheds.garden/blog/2022/three-thoughts-on-risk-based-testing/</id>
-    <updated>2022-07-17T11:56:30+02:00</updated>
-    <published>2022-07-17T11:56:30+02:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2022/three-thoughts-on-risk-based-testing/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;The past month I've been thinking about risk-based testing. This post collects three thoughts on risk-based testing I kept returning to.&lt;/p&gt;
-&lt;h2&gt;If not based on risks, then based on what?&lt;/h2&gt;
-&lt;p&gt;About a month ago I &lt;a href="https://twitter.com/j19sch/status/1533760354647523330"&gt;tweeted&lt;/a&gt;:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;What are the alternatives to risk-based testing?&lt;br&gt;
-Requirements-based? I'd argue that's a subset of risk-based.&lt;br&gt;
-Unguided? That's either a bad idea ("we hope to get lucky") or aimed at the risk of unknown unknowns.&lt;br&gt;
-Any other options? Because something about the term is bothering me.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;My question was inspired by the &lt;a href="https://smallsheds.garden/slides/rtc2019-testing-types.html#/15/0/1"&gt;"opposite" heuristic&lt;/a&gt; from my talk about &lt;a href="https://smallsheds.garden/slides/rtc2019-testing-types.html#/"&gt;testing types&lt;/a&gt;: if we have some kind of category, what's the name for the things not in that category? Applied to risk-based testing: what's the name for testing that's not risk-based?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2022/three-thoughts-on-risk-based-testing/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="coverage" label="coverage"/>
-    <category term="software-testing" label="software testing"/>
-    <category term="test-management" label="test management"/>
-    <category term="test-strategy" label="test strategy"/>
   </entry>
 </feed>

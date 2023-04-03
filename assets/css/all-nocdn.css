@@ -1217,6 +1217,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-style: italic;
+  margin-right: 0.1rem;
 }
 
 .body-content strong {
@@ -1229,6 +1230,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-style: italic;
+  margin-right: 0.1rem;
 }
 
 div.container {

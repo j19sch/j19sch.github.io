@@ -59,7 +59,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/archive.html</loc>
-  <lastmod>2023-03-12T09:12:00Z</lastmod>
+  <lastmod>2023-04-02T08:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/</loc>
@@ -290,6 +290,18 @@
   <lastmod>2022-12-29T16:36:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/blog/2023/a-backlog-item-is-a-backlog-item-is-a-backlog-item/</loc>
+  <lastmod>2023-04-03T06:52:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/blog/2023/a-backlog-item-is-a-backlog-item/</loc>
+  <lastmod>2023-03-18T10:54:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/blog/2023/a-backlog2item-is-a-backlog-item/</loc>
+  <lastmod>2023-04-02T08:56:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/blog/2023/metrics-models-and-conversations/</loc>
   <lastmod>2023-03-12T09:11:00Z</lastmod>
  </url>
@@ -375,15 +387,15 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-6.html</loc>
-  <lastmod>2023-03-12T09:15:00Z</lastmod>
+  <lastmod>2023-04-02T09:02:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-7.html</loc>
-  <lastmod>2023-03-10T12:15:00Z</lastmod>
+  <lastmod>2023-04-02T08:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/</loc>
-  <lastmod>2023-03-12T09:44:00Z</lastmod>
+  <lastmod>2023-03-18T10:54:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/agile-manifesto/</loc>
@@ -394,12 +406,20 @@
   <lastmod>2022-12-29T16:36:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/categories/backlog/</loc>
+  <lastmod>2023-03-18T10:54:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/categories/black-box-puzzle/</loc>
   <lastmod>2022-12-29T16:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/brave-clojure/</loc>
   <lastmod>2022-12-29T16:36:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/categories/bugs/</loc>
+  <lastmod>2023-03-18T10:54:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/cat_agile/</loc>
@@ -488,6 +508,10 @@
  <url>
   <loc>https://smallsheds.garden/categories/cat_tools/</loc>
   <lastmod>2023-02-28T20:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/categories/cat_work-management/</loc>
+  <lastmod>2023-03-18T10:54:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/cat_workshop/</loc>
@@ -662,6 +686,10 @@
   <lastmod>2022-12-29T16:36:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/categories/tech-debt/</loc>
+  <lastmod>2023-03-18T10:54:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/categories/test-automation/</loc>
   <lastmod>2022-12-29T16:36:00Z</lastmod>
  </url>
@@ -716,6 +744,10 @@
  <url>
   <loc>https://smallsheds.garden/categories/vipt/</loc>
   <lastmod>2022-12-29T16:36:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/categories/work-management/</loc>
+  <lastmod>2023-03-18T10:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/workshop/</loc>
