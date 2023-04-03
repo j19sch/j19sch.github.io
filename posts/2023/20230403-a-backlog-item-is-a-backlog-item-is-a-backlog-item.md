@@ -1,7 +1,7 @@
 <!--
 .. title: A backlog item is a backlog item is a backlog item
-.. slug: a-backlog2item-is-a-backlog-item
-.. date: 2023-04-02 10:56:25 UTC+02:00
+.. slug: a-backlog-item-is-a-backlog-item-is-a-backlog-item
+.. date: 2023-04-03 08:51:25 UTC+02:00
 .. tags: work management, bugs, tech debt, agile
 .. category: agile
 .. link: 
@@ -52,14 +52,14 @@ That leads us to the third option of dealing with issues, simply forgetting abou
 
 While features and bugs tend to get added to the backlog, technical debt and maintenance usually don't. Or at least not in the same way, the bar seems to be significantly higher. There's a reluctance.[^6] They only get added to the backlog when the work really needs to get done soon. And something I have yet to see, is a team consciously incurring some technical debt and immediately adding an item to the backlog to pay off that debt. 
 
-[^6]: There's also a reluctance in getting this work prioritized. For the non-urgen work, it often ends up as filler, when the product manager can't find anything else for the team to do.
+[^6]: There's also a reluctance in getting this work prioritized. For the non-urgent work, it often ends up as filler, when the product manager can't find anything else for the team to do.
 
 So what you tend to end up with is a product manager or product owner with an incomplete view of technical debt and maintenance work, because:
 
 1. They never interact with the codebase that lets them experience how tech debt slows down the work. It's an annoying fact-of-life in software development that explains why things take longer than anticipated. It's not something you can actively manage.
 1. The tool they use to manage the priorities, the backlog, is 'complete' when it comes to features and bugs, but not when it comes to technical debt and maintenance.
 
-The first of these is definitely worth doing something about, e.g. through ensemble programming (also known as mob programming). A way to address the second one is to add technical debt and maintenance to the backlog in exactly the same way that features and bugs are. Scrolling through the backlog should give an accurate picture of the actual ratios of the three types of work. Make all the work visible. 
+The first of these is definitely worth doing something about, e.g. through ensemble programming (also known as mob programming). A way to address the second one is to add technical debt and maintenance to the backlog in exactly the same way as features and bugs. Scrolling through the backlog should give an accurate picture of the actual ratios of the three types of work. Make all the work visible. 
 
 
 
