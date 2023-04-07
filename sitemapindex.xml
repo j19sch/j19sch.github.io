@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://smallsheds.garden/blog/feed.atom</loc>
-  <lastmod>2023-04-03T06:52:00Z</lastmod>
+  <lastmod>2023-04-03T06:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/blog/rss.xml</loc>
-  <lastmod>2023-04-03T06:52:00Z</lastmod>
+  <lastmod>2023-04-03T06:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/agile-manifesto.atom</loc>
@@ -23,19 +23,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/agile.atom</loc>
-  <lastmod>2023-04-03T06:52:00Z</lastmod>
+  <lastmod>2023-04-03T06:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/agile.xml</loc>
-  <lastmod>2023-04-03T06:52:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://smallsheds.garden/categories/backlog.atom</loc>
-  <lastmod>2023-04-02T09:00:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://smallsheds.garden/categories/backlog.xml</loc>
-  <lastmod>2023-04-02T09:00:00Z</lastmod>
+  <lastmod>2023-04-03T06:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/black-box-puzzle.atom</loc>
@@ -55,19 +47,19 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/bugs.atom</loc>
-  <lastmod>2023-04-03T06:52:00Z</lastmod>
+  <lastmod>2023-04-03T06:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/bugs.xml</loc>
-  <lastmod>2023-04-03T06:52:00Z</lastmod>
+  <lastmod>2023-04-03T06:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_agile.atom</loc>
-  <lastmod>2023-04-03T06:52:00Z</lastmod>
+  <lastmod>2023-04-03T06:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_agile.xml</loc>
-  <lastmod>2023-04-03T06:52:00Z</lastmod>
+  <lastmod>2023-04-03T06:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_cicd.atom</loc>
@@ -236,14 +228,6 @@
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_tools.xml</loc>
   <lastmod>2023-03-01T15:39:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://smallsheds.garden/categories/cat_work-management.atom</loc>
-  <lastmod>2023-04-02T08:54:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://smallsheds.garden/categories/cat_work-management.xml</loc>
-  <lastmod>2023-04-02T08:57:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_workshop.atom</loc>
@@ -591,11 +575,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/tech-debt.atom</loc>
-  <lastmod>2023-04-03T06:52:00Z</lastmod>
+  <lastmod>2023-04-03T06:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/tech-debt.xml</loc>
-  <lastmod>2023-04-03T06:52:00Z</lastmod>
+  <lastmod>2023-04-03T06:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/test-automation.atom</loc>
@@ -711,11 +695,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/work-management.atom</loc>
-  <lastmod>2023-04-03T06:52:00Z</lastmod>
+  <lastmod>2023-04-03T06:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/work-management.xml</loc>
-  <lastmod>2023-04-03T06:52:00Z</lastmod>
+  <lastmod>2023-04-03T06:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/workshop.atom</loc>
@@ -727,6 +711,6 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/sitemap.xml</loc>
-  <lastmod>2023-04-03T06:52:00Z</lastmod>
+  <lastmod>2023-04-07T06:40:00Z</lastmod>
  </sitemap>
 </sitemapindex>

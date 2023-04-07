@@ -93,3 +93,5 @@ In response, [Krys](https://chaos.social/@krys@spore.social) said:
 [Zebulon](https://chaos.social/@zebulon@mas.to) shared a link to Chelsea Troy's [*"Stop saying 'technical debt'"*](https://stackoverflow.blog/2023/02/27/stop-saying-technical-debt/).
 
 [Willem van den Ende](https://chaos.social/@mostalive@mastodon.social) shared his article [*"Product Hurricane Maps to take into account tech debt when roadmapping"*](https://www.qwan.eu/2022/03/29/product-hurricane-map.html).
+
+*(edit 7 April '23)*: After publishing this post, I learned that about a month earlier [Dan North](https://mastodon.social/@tastapod) had published *["But what about the BAU work?"](https://dannorth.net/2023/03/02/but-what-about-the-bau-work/)* and that a day after my post [Martin Fowler](https://toot.thoughtworks.com/@mfowler) published *["Slack"](https://martinfowler.com/bliki/Slack.html)*. Both articles highly recommended!
