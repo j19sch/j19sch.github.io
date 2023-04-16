@@ -2,7 +2,7 @@
 .. title: Three arguments against the verification-validation dichotomy
 .. slug: three-arguments-against-the-verification-validation-dichotomy
 .. date: 2015-03-24 20:53:24 UTC+01:00
-.. tags: exploration, semantics, verification and validation
+.. tags: exploratory testing, semantics, verification and validation
 .. category: philosophy of testing
 .. link: 
 .. description:

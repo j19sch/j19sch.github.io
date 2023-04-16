@@ -2,7 +2,7 @@
 .. title: It's time to retire our test case management tools
 .. slug: its-time-to-retire-our-test-case-management-tools
 .. date: 2020-07-19 16:38:17 UTC+02:00
-.. tags: test cases, tools, test management
+.. tags: test cases, tools, test management, heuristics
 .. category: test management
 .. link: 
 .. description:
@@ -98,7 +98,7 @@ For what to document I propose a combination of two things: models of the produc
 
 Models can take many shapes, forms and sizes: architecture diagrams (aka boxes-and-arrows), sequence diagrams, an [SFDIPOT model](https://www.satisfice.com/download/heuristic-test-strategy-model), an ACC (Attribute - Component - Capability) table, ... Or as something smaller and more concrete, a list of the different types of users: anonymous, logged in, company admin, platform admin.
 
-Some good heuristics for test ideas can be found in Elisabeth Hendrickson's [Test Heuristics Cheat Sheet](https://testobsessed.com/wp-content/uploads/2011/04/testheuristicscheatsheetv1.pdf) and Rikard Edgren's [The Little Black Book On Test Design](http://www.thetesteye.com/papers/TheLittleBlackBookOnTestDesign.pdf). Ideally you also have some heuristics specifically for your product based on your team's experiences.
+Some good heuristics for test ideas can be found in Elisabeth Hendrickson's [Test Heuristics Cheat Sheet](https://web.archive.org/web/20150217124452/http://testobsessed.com/wp-content/uploads/2011/04/testheuristicscheatsheetv1.pdf) and Rikard Edgren's [The Little Black Book On Test Design](http://www.thetesteye.com/papers/TheLittleBlackBookOnTestDesign.pdf). Ideally you also have some heuristics specifically for your product based on your team's experiences.
 
 The advantage of this approach is that it encourages you to think every time about what and how you are testing. In addition to that, the models can also be used during refinement and programming.
 
