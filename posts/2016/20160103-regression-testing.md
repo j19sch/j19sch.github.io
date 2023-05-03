@@ -28,6 +28,8 @@ More important for this blog post and referring back to the definition, the deci
 
 (Not directly relevant, but related and interesting: for a critique of the fully automated approach to regression testing, watch this short Whiteboard Testing video "[Regression Testing, the F.A.R.T Model](https://www.youtube.com/watch?v=P2PUXqasvGI)".)
 
+*(edit 3 May 2023)* I revisited this topic in 2019: [*"Your CI/CD pipeline does not run regression tests"*](link://slug/your-ci-cd-pipeline-does-not-run-regression-tests)
+
 ### Regression testing with a suite of regression test scripts
 Situation: you have a suite of test scripts you execute every time you perform a regression test.
 

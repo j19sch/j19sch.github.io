@@ -2,8 +2,8 @@
 .. title: Solving Black Box Puzzle 31 with data analysis
 .. slug: solving-black-box-puzzle-31-with-data-analysis
 .. date: 2019-04-28 13:16:34 UTC+02:00
-.. tags: black box puzzle, exploration, test automation, data analysis, python
-.. category: exploration
+.. tags: black box puzzle, exploratory testing, test automation, data analysis, python
+.. category: exploratory testing
 .. link: 
 .. description:
 .. type: text
