@@ -2,8 +2,8 @@
 .. title: Some thoughts after attending the 'Getting a Grip on Exploratory Testing' workshop
 .. slug: some-thoughts-after-attending-the-getting-a-grip-on-exploratory-testing-workshop
 .. date: 2012-04-29 19:55:30 UTC+02:00
-.. tags: exploration, workshop, software testing
-.. category: exploration
+.. tags: exploratory testing, workshop, software testing
+.. category: exploratory testing
 .. link: 
 .. description:
 .. type: text
@@ -19,9 +19,10 @@ Now that's out of the way, there are a few things from the workshop I'd like to 
 
 ## Exploratory testing styles
 First of all, style. Different people have different styles of exploratory testing. Your style influences how you test, what you find, when you find it, etc. For example, some elements of my own style are:  
-\- tendency to exceed time box.  
-\- explores with about three variations before moving on to something else.  
-\- takes a lot of notes.
+
+- tendency to exceed the time box.  
+- explores with about three variations before moving on to something else.  
+- takes a lot of notes.
 
 Before the workshop I thought a style was like an approach. People prefer certain styles/approaches, but if their current one is failing them, they can switch to a different one. Turns out is's not that simple. Style is very much like your personality and you don't switch those easily either.
 
@@ -33,9 +34,11 @@ Secondly, one small, but cool thing that came up was the 'weapon of choice' of a
 
 
 ## Discovering value vs discovering problems
-Finally, perhaps the most important thing I learned is a simple model about exploratory vs. scripted testing:  
-\- Scripted testing starts from what is expected. It is focused on discovering value.  
-\- Exploratory testing starts from what is delivered. It is focused on discovering problems.  
+Finally, perhaps the most important thing I learned is a simple model about exploratory vs. scripted testing:
+
+- Scripted testing starts from what is expected. It is focused on discovering value.  
+- Exploratory testing starts from what is delivered. It is focused on discovering problems.  
+
 In some contexts this model may be too simple, but for me it really helps as a starting point to think about how one can fit scripted and exploratory testing into a test strategy.
 
 This model has also helped me to explain exploratory testing to people and especially to people that approach testing in the traditional way, i.e. like TMap and ISTQB do. These people often think of exploratory testing as one of the many testing techniques at their disposal. So exploratory testing is not seen as having a fundamentally different approach from scripted testing. Rather, exploratory testing is something you can do besides e.g. decision table testing or use case testing.  

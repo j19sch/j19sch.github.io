@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about software development)</title>
   <id>https://smallsheds.garden/categories/software-development.atom</id>
-  <updated>2023-01-30T07:24:42Z</updated>
+  <updated>2023-04-16T13:41:33Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -29,6 +29,8 @@
     <category term="agile-manifesto" label="agile manifesto"/>
     <category term="quality-engineering" label="quality engineering"/>
     <category term="software-development" label="software development"/>
+    <category term="tools" label="tools"/>
+    <category term="work-management" label="work management"/>
   </entry>
   <entry>
     <title>Quality: different purposes, different definitions</title>

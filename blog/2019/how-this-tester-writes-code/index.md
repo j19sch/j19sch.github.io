@@ -2,7 +2,7 @@
 .. title: How this tester writes code
 .. slug: how-this-tester-writes-code
 .. date: 2019-06-08 18:21:38 UTC+02:00
-.. tags: python, programming, IDEs, test automation
+.. tags: python, programming, IDEs, test automation, heuristics
 .. category: programming
 .. link: 
 .. description:

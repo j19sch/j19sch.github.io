@@ -88,7 +88,26 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023/a-backlog-item-is-a-backlog-item-is-a-backlog-item/" class="u-url">A backlog item is a backlog item is a backlog&nbsp;item</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023/my-five-favorite-testing-questions/" class="u-url">My five favorite testing&nbsp;questions</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep&nbsp;Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2023/my-five-favorite-testing-questions/" rel="bookmark">
+            <time class="published dt-published" datetime="2023-05-03T08:57:25+02:00" itemprop="datePublished" title="3 May 2023">3 May 2023</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Recently I realized there are a few testing questions I use a lot. They lie at the top of my testing toolbox, so to speak. Together they shape my testing style, making it easier for me to discover certain things, but probably also harder to find other kinds of things. So here are my five favorite testing questions, in no particular&nbsp;order.</p>
+<h2>What if there are zero, one, many, lots of this&nbsp;thing?</h2>
+<p>Last year I expressed my surprise <a href="https://chaos.social/@joeposaurus/109427704814392787">on Mastodon</a> how many times I&#8217;ve found bugs by asking the question: <em>&#8220;What if there are 0 / 1 / several / lots of this thing?&#8221;</em> And if you&#8217;re working closely enough to the code, you should also ask about&nbsp;&#8220;null&#8221;.</p>
+<p>Quite a few people responded to my message. Turns out it&#8217;s a <a href="https://www.qwan.eu/2021/07/09/tdd-0-1-n.html">very</a> <a href="http://blog.wingman-sw.com/tdd-guided-by-zombies">common</a> <a href="https://mas.to/@zebulon/109428667658139893">pattern</a> in <span class="caps">TDD</span>. And Brian Marick<sup id="fnref:1"><a class="footnote-ref" href="2023/my-five-favorite-testing-questions/#fn:1">1</a></sup> remembered it <a href="https://mstdn.social/@marick/109428042023981110">standing out</a> when he was looking into fixed bugs in the Linux kernel they used in the &#8216;80s. Personally I learned it from Elisabeth Hendrickson&#8217;s <a href="https://web.archive.org/web/20150217124452/http://testobsessed.com/wp-content/uploads/2011/04/testheuristicscheatsheetv1.pdf">&#8220;Test Heuristics Cheat Sheet&#8221;</a>, which found a <a href="https://www.ministryoftesting.com/articles/ab1cd85c?s_id=14715206">new home</a> last year at the Ministry of&nbsp;Testing.</p>
+<p class="more"><a href="2023/my-five-favorite-testing-questions/">Read&nbsp;more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023/a-backlog-item-is-a-backlog-item-is-a-backlog-item/" class="u-url">A backlog item is a backlog item is a backlog&nbsp;item</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep&nbsp;Schuurkes
@@ -260,24 +279,6 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 </blockquote>
 <p>As I wrote this, I could not really put my finger on why exactly I felt this way. The best I could come up with was that the Agile Manifesto is hard to understand on its own. You need some historical context and practical experience to make sense of it. Serendipity came to the rescue, though, as I&#8217;m currently reading <a href="https://en.wikipedia.org/wiki/Seeing_Like_a_State"><em>Seeing Like a State</em></a> by <a href="https://en.wikipedia.org/wiki/James_C._Scott">James C. Scott</a>. Chapter 9 of the book focuses on the Greek concept of <em>mētis</em> (μῆτις) and how it relates to rules of thumb. Turns out that this explains why the Agile Manifesto is a poor introduction to&nbsp;Agile.</p>
 <p class="more"><a href="2022/the-agile-manifesto-is-a-poor-introduction-to-agile/">Read&nbsp;more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2022/tester-is-an-overloaded-variable/" class="u-url"><span class="dquo">&#8220;</span>Tester&#8221; is an overloaded&nbsp;variable</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep&nbsp;Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2022/tester-is-an-overloaded-variable/" rel="bookmark">
-            <time class="published dt-published" datetime="2022-08-04T11:39:25+02:00" itemprop="datePublished" title="4 August 2022">4 August 2022</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>Yesterday I came across a post on LinkedIn explaining why there are no testers in Scrum<sup id="fnref:1"><a class="footnote-ref" href="2022/tester-is-an-overloaded-variable/#fn:1">1</a></sup>. What struck me most about the post was the amount of work the word &#8220;tester&#8221; was doing. In one sentence it meant one thing (a role in a team), in the next sentence something else (a step in the process), and so on. Hence the title of this post: the word &#8220;tester&#8221; was being used as an overloaded variable. So let&#8217;s do some&nbsp;unpacking.</p>
-<h2>Testers to people&nbsp;management</h2>
-<p><em><span class="dquo">&#8220;</span>Having a tester&#8221;</em> means that there are people with the official title of &#8220;tester&#8221; or &#8220;<span class="caps">QA</span> engineer&#8221; or whatever within the company. For the purposes of people management<sup id="fnref:2"><a class="footnote-ref" href="2022/tester-is-an-overloaded-variable/#fn:2">2</a></sup>, there&#8217;s a distinction between this role and the other roles in the company. This allows for more specific expectations about the role, for different career paths and salary scales,&nbsp;etc.</p>
-<p class="more"><a href="2022/tester-is-an-overloaded-variable/">Read&nbsp;more…</a></p>
 </div>
                 </div>
             </article>

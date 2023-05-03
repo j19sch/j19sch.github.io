@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My five favorite testing questions | Joep Schuurkes</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../feed.atom">
+<link rel="canonical" href="https://smallsheds.garden/blog/2023/my-five-favorite-testing-questions/">
+<link rel="icon" href="../../../assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="../../../assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../assets/favicons/favicon-96x96.png" sizes="96x96">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../a-backlog-item-is-a-backlog-item-is-a-backlog-item/" title="A backlog item is a backlog item is a backlog item" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="My five favorite testing questions">
+<meta property="og:url" content="https://smallsheds.garden/blog/2023/my-five-favorite-testing-questions/">
+<meta property="og:description" content="Recently I realized there are a few testing questions I use a lot. They lie at the top of my testing toolbox, so to speak. Together they shape my testing style, making it easier for me to discover cer">
+<meta property="og:image" content="https://smallsheds.garden/images/default-preview.jpeg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2023-05-03T08:57:25+02:00">
+<meta property="article:tag" content="exploratory testing">
+<meta property="article:tag" content="heuristics">
+<meta property="article:tag" content="software testing">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-projects/" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-talks/" class="nav-link">Talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../../my-lists/reading-list/" class="dropdown-item">Reading list</a>
+                    <a href="../../../my-lists/recommended-reading/" class="dropdown-item">Recommended reading</a>
+                    <a href="../../../my-lists/favorite-podcasts/" class="dropdown-item">Favorite podcasts</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../" class="dropdown-item">My blog</a>
+                    <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
+                    <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">My five favorite testing&nbsp;questions</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep&nbsp;Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2023-05-03T08:57:25+02:00" itemprop="datePublished" title="3 May 2023">3 May 2023</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>Recently I realized there are a few testing questions I use a lot. They lie at the top of my testing toolbox, so to speak. Together they shape my testing style, making it easier for me to discover certain things, but probably also harder to find other kinds of things. So here are my five favorite testing questions, in no particular&nbsp;order.</p>
+<h2>What if there are zero, one, many, lots of this&nbsp;thing?</h2>
+<p>Last year I expressed my surprise <a href="https://chaos.social/@joeposaurus/109427704814392787">on Mastodon</a> how many times I&#8217;ve found bugs by asking the question: <em>&#8220;What if there are 0 / 1 / several / lots of this thing?&#8221;</em> And if you&#8217;re working closely enough to the code, you should also ask about&nbsp;&#8220;null&#8221;.</p>
+<p>Quite a few people responded to my message. Turns out it&#8217;s a <a href="https://www.qwan.eu/2021/07/09/tdd-0-1-n.html">very</a> <a href="http://blog.wingman-sw.com/tdd-guided-by-zombies">common</a> <a href="https://mas.to/@zebulon/109428667658139893">pattern</a> in <span class="caps">TDD</span>. And Brian Marick<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> remembered it <a href="https://mstdn.social/@marick/109428042023981110">standing out</a> when he was looking into fixed bugs in the Linux kernel they used in the &#8216;80s. Personally I learned it from Elisabeth Hendrickson&#8217;s <a href="https://web.archive.org/web/20150217124452/http://testobsessed.com/wp-content/uploads/2011/04/testheuristicscheatsheetv1.pdf">&#8220;Test Heuristics Cheat Sheet&#8221;</a>, which found a <a href="https://www.ministryoftesting.com/articles/ab1cd85c?s_id=14715206">new home</a> last year at the Ministry of&nbsp;Testing.</p>
+<!-- TEASER_END -->
+
+<h2>How would this work for the&nbsp;user?</h2>
+<p>Often there&#8217;s a large distance between discovery (discovering what users need) and implementation. Not just in time, but also in who&#8217;s involved. Information from discovery becomes an initiative, becomes an epic, which gets broken down into work items and often those again in tasks. Somewhere along the way - where exactly varies - developers get involved. However, despite their access to the results of discovery, the day-to-day work of developers is very much focused around a single work item with acceptance criteria or requirements. And that&#8217;s a <a href="../our-work-management-tools-are-limiting-our-imagination/">problem</a>. Working this way nudges developers towards limiting themselves to just delivering single work items according to spec, losing sight of the bigger&nbsp;picture.</p>
+<p>To counteract this nudge, I like to ask: <em>&#8220;How would this work for the user?&#8221;</em> What problem is the user trying to solve? What are they trying to achieve? And can I imagine how the user gets their thing done, step-by-step, using the software? Often enough, there are gaps. Or some things are presented in a way or expected to be done in a way that would not make sense to a&nbsp;user.</p>
+<p>The great thing about this question is that you can start asking it early, during refinement or even before that. A rephrasing of this question for that stage is: <em>&#8220;Can I imagine myself demoing this&nbsp;feature?&#8221;</em></p>
+<h2>What about&nbsp;time?</h2>
+<p>For some reason, people seem to default to a functional programming-like perspective when thinking about software. There&#8217;s input, the input gets transformed one or multiple times, until we get output. This makes us overlook that stuff changes over time. And keeping track of time, also means having date and time as input. Hence the testing question: <em>&#8220;What about&nbsp;time?&#8221;</em></p>
+<h3>Time data as&nbsp;input</h3>
+<p>Time data as input is tricky, as illustrated so well by Noah Sussman&#8217;s <a href="https://infiniteundo.com/post/25326999628/falsehoods-programmers-believe-about-time">&#8220;Falsehoods programmers believe about time&#8221;</a>.</p>
+<p>It gets even trickier when time data is input without you fully realizing it. A few months ago I found a bug where a web application took midnight current day in the user&#8217;s time zone, converted it to <span class="caps">UTC</span> and then used the date part of that <span class="caps">UTC</span> timestamp to determine the date. So for people in time zones ahead of <span class="caps">UTC</span> (basically the whole Eastern hemisphere) the application had an incorrect date<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
+<h3>Stuff happens in&nbsp;time</h3>
+<p>As Ray Cummings wrote: <em>&#8220;Time is what keeps everything from happening at once.&#8221;</em><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> Unfortunately we work with computers, so we not only have to deal with things changing over time, but also with several things that do happen all at once, i.e. concurrency. Things can be fast or slow (like internet connections). Sometimes one thing is slower than usual and another faster, i.e. a race condition. (I once &#8220;fixed&#8221; a race condition by adding a single line of&nbsp;logging.)</p>
+<p>Sometimes things also stay the same over time. Decisions have an effect far after they were made. The most extreme example I have come across was around 2010. Noticing that the data model was odd, I asked why that was the case. The answer was that when the mainframe was implemented in 1974, they had retained the data model of the punch card system that was being replaced by the mainframe. And there also was some really old data in there, since the product it supported was life insurance&nbsp;policies. </p>
+<p>I learned this heuristic of thinking about time from <a href="https://rapid-software-testing.com/">Rapid Software Testing</a>&#8216;s <a href="https://www.satisfice.com/download/heuristic-test-strategy-model">&#8220;Heuristic Test Strategy Model&#8221;</a>. It has a great mnemonic for product elements, <span class="caps">SFDIPOT</span>, where the &#8220;T&#8221; stands for&nbsp;time.</p>
+<h2>What can I discover by interacting with&nbsp;it?</h2>
+<p>Basically, exploratory testing. You can&#8217;t come up with everything you want to test beforehand.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> You also can&#8217;t come up with everything you want to test based solely on acceptance criteria, requirements, domain knowledge, etc. Some things you can only discover through interacting with the software. And a lot of things can be discovered a lot more easily through exploratory testing than in any other way. Instead of testing based on what you can imagine about the software in your head, you use the software itself as your &#8220;external imagination&#8221;<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>.</p>
+<p>And do note that <em>&#8220;What can I discover by interacting with it?&#8221;</em> is not limited to interacting with the software in the same way as a user would. If there&#8217;s something to interact with (a <span class="caps">UI</span>, an <span class="caps">API</span>, a database, a configuration file, a line of code), you can do exploratory&nbsp;testing.</p>
+<p>I learned how to do exploratory testing by participating in <a href="https://www.workroom-productions.com/">James Lyndsay</a>&#8216;s excellent workshop &#8220;Getting a Grip on Exploratory Testing&#8221;. I wrote about that experience in <a href="../../2012/some-thoughts-after-attending-the-getting-a-grip-on-exploratory-testing-workshop/">this post from 2012</a>.</p>
+<h2>What do you mean by &lt;some&nbsp;term&gt;?</h2>
+<p>Usually people understand each other just fine. They use the same term and even though there will never be a perfect 100% overlap in meaning, there is sufficient overlap that for all practical purposes, they are using the same term in the same way. Sometimes, however, there is a shallow agreement. People think they agree on what a term means, but in at least one important aspect, they don&#8217;t. When you suspect that&#8217;s the case, it&#8217;s time to ask: <em>&#8220;What do you mean by &lt;some&nbsp;term&gt;?&#8221;</em></p>
+<p>One of the biggest bugs I ever found was when I asked: <em>&#8220;What exactly do you mean by &#8216;buffering&#8217;?&#8221;</em> One party thought it meant they needed to buffer the first 100 undeliverable messages and could discard the rest. The other party thought that during their downtime every undeliverable message would be buffered for later delivery. My simple question in preparing the end-to-end test got the whole project sent back to the&nbsp;architect.</p>
+<p>I think I learned to do this as part of getting my degree in philosophy. Having a good idea of what a philosopher means with a specific term and how that fits into their world view, is a crucial part of understanding what a philosopher&nbsp;wrote.</p>
+<hr>
+<p>Enough about my favorite testing questions. What are your favorite one? Are some of them the same as mine? Which other ones do you use? What things are easier to find thanks to your favorite questions? And what things might you&nbsp;overlook?</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>If you&#8217;re not yet listening to his podcast <a href="https://podcast.oddly-influenced.dev/">Oddly Influenced</a>, you should! <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>I investigated if we could fix the data, based on the assumption that there&#8217;s no overlap between time zones ahead of <span class="caps">UTC</span> and those behind of <span class="caps">UTC</span>. That assumption turned out to be wrong. Samoa Standard Time is at <span class="caps">UTC</span>-11, while West Samoa Time and New Zealand Daylight Time are on <span class="caps">UTC</span>+13. So they are on the same time, but on a different date. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://quoteinvestigator.com/2019/07/06/time/">https://quoteinvestigator.com/2019/07/06/time/</a> <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
+</li>
+<li id="fn:4">
+<p>If you could, waterfall would work. Write your test cases, rename them to requirements. Provide them to the devs. Have the devs build the software and the automated test cases in parallel. Done. <a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">↩</a></p>
+</li>
+<li id="fn:5">
+<p><em><span class="dquo">&#8220;</span>Exploratory testing is an approach to testing that centers learning. Test design and test execution form an inseparable pair where the application and feature we are testing is our external imagination.&#8221;</em> - <a href="https://dev.to/maaretp/exploratory-testing-foundations-4lb3">&#8220;Exploratory Testing Foundations&#8221;</a> by <a href="https://maaretp.com/">Maaret Pyhäjärvi</a> <a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/exploratory-testing/" rel="tag">exploratory&nbsp;testing</a></li>
+            <li><a class="tag p-category" href="../../../categories/heuristics/" rel="tag">heuristics</a></li>
+            <li><a class="tag p-category" href="../../../categories/software-testing/" rel="tag">software&nbsp;testing</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../a-backlog-item-is-a-backlog-item-is-a-backlog-item/" rel="prev" title="A backlog item is a backlog item is a backlog item">Previous&nbsp;post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2023     
+<a href="https://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by/4.0/80x15.png"></a>
+    <a href="mailto:site@joep.slmail.me">Joep Schuurkes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

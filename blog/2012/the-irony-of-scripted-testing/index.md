@@ -2,8 +2,8 @@
 .. title: The irony of scripted testing
 .. slug: the-irony-of-scripted-testing
 .. date: 2012-04-09 23:16:17 UTC+02:00
-.. tags: exploration, software testing
-.. category: exploration
+.. tags: exploratory testing, software testing
+.. category: exploratory testing
 .. link: 
 .. description:
 .. type: text
