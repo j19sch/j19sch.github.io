@@ -1,7 +1,7 @@
 <!--
 .. title: My five favorite testing questions
 .. slug: my-five-favorite-testing-questions
-.. date: 2023-04-16 13:30:25 UTC+02:00
+.. date: 2023-05-03 08:57:25 UTC+02:00
 .. tags: software testing, exploratory testing, heuristics
 .. category: software testing
 .. link: 
@@ -16,16 +16,17 @@ Recently I realized there are a few testing questions I use a lot. They lie at t
 
 Last year I expressed my surprise [on Mastodon](https://chaos.social/@joeposaurus/109427704814392787) how many times I've found bugs by asking the question: *"What if there are 0 / 1 / several / lots of this thing?"* And if you're working closely enough to the code, you should also ask about "null".
 
-<!-- TEASER_END -->
-
 Quite a few people responded to my message. Turns out it's a [very](https://www.qwan.eu/2021/07/09/tdd-0-1-n.html) [common](http://blog.wingman-sw.com/tdd-guided-by-zombies) [pattern](https://mas.to/@zebulon/109428667658139893) in TDD. And Brian Marick[^1] remembered it [standing out](https://mstdn.social/@marick/109428042023981110) when he was looking into fixed bugs in the Linux kernel they used in the '80s. Personally I learned it from Elisabeth Hendrickson's ["Test Heuristics Cheat Sheet"](https://web.archive.org/web/20150217124452/http://testobsessed.com/wp-content/uploads/2011/04/testheuristicscheatsheetv1.pdf), which found a [new home](https://www.ministryoftesting.com/articles/ab1cd85c?s_id=14715206) last year at the Ministry of Testing.
 
 [^1]: If you're not yet listening to his podcast [Oddly Influenced](https://podcast.oddly-influenced.dev/), you should!
 
 
+<!-- TEASER_END -->
+
+
 # How would this work for the user?
 
-Often there's a large distance between discovery (discovering what users need) and implementation. Not just in time, but also in who's involved. Information from discovery becomes an initiative, becomes an epic, which gets broken down into work items and often those again in tasks. Somewhere along the way - where exactly varies - developers get involved. However, despite their access to the results of discovery, the day-to-day work of developers is very much focused around a single work item with acceptance criteria or requirements. And that's a [problem](links://slug/our-work-management-tools-are-limiting-our-imagination). Working this way nudges developers towards just delivering single work items according to spec, losing sight of the bigger picture.
+Often there's a large distance between discovery (discovering what users need) and implementation. Not just in time, but also in who's involved. Information from discovery becomes an initiative, becomes an epic, which gets broken down into work items and often those again in tasks. Somewhere along the way - where exactly varies - developers get involved. However, despite their access to the results of discovery, the day-to-day work of developers is very much focused around a single work item with acceptance criteria or requirements. And that's a [problem](link://slug/our-work-management-tools-are-limiting-our-imagination). Working this way nudges developers towards limiting themselves to just delivering single work items according to spec, losing sight of the bigger picture.
 
 To counteract this nudge, I like to ask: *"How would this work for the user?"* What problem is the user trying to solve? What are they trying to achieve? And can I imagine how the user gets their thing done, step-by-step, using the software? Often enough, there are gaps. Or some things are presented in a way or expected to be done in a way that would not make sense to a user.
 
@@ -34,13 +35,13 @@ The great thing about this question is that you can start asking it early, durin
 
 # What about time?
 
-For some reason, people seem to default to a functional programming-like perspective when thinking about software. There's input, the input gets transformed one or multiple times, until we get output. This makes us overlook two things: time data as input and stuff happening in time. Hence, *"What about time?"*
+For some reason, people seem to default to a functional programming-like perspective when thinking about software. There's input, the input gets transformed one or multiple times, until we get output. This makes us overlook that stuff changes over time. And keeping track of time, also means having date and time as input. Hence the testing question: *"What about time?"*
 
 ## Time data as input
 
 Time data as input is tricky, as illustrated so well by Noah Sussman's ["Falsehoods programmers believe about time"](https://infiniteundo.com/post/25326999628/falsehoods-programmers-believe-about-time).
 
-It gets even trickier when time data is input without you fully realizing it. A few months ago I found a bug where a web application took midnight current day in the user's time zone, converted it to UTC and then used the date part of the timestamp to determine the date. So for people in time zones ahead of UTC (so basically the whole Eastern hemisphere) the application had an incorrect date[^2].
+It gets even trickier when time data is input without you fully realizing it. A few months ago I found a bug where a web application took midnight current day in the user's time zone, converted it to UTC and then used the date part of that UTC timestamp to determine the date. So for people in time zones ahead of UTC (basically the whole Eastern hemisphere) the application had an incorrect date[^2].
 
 [^2]: I investigated if we could fix the data, based on the assumption that there's no overlap between time zones ahead of UTC and those behind of UTC. That assumption turned out to be wrong. Samoa Standard Time is at UTC-11, while West Samoa Time and New Zealand Daylight Time are on UTC+13. So they are on the same time, but on a different date.
 
@@ -65,12 +66,12 @@ And do note that *"What can I discover by interacting with it?"* is not limited 
 
 [^5]: *"Exploratory testing is an approach to testing that centers learning. Test design and test execution form an inseparable pair where the application and feature we are testing is our external imagination."* - ["Exploratory Testing Foundations"](https://dev.to/maaretp/exploratory-testing-foundations-4lb3) by [Maaret Pyhäjärvi](https://maaretp.com/) 
 
-I learned how to do exploratory testing by participating in [James Lyndsay](https://www.workroom-productions.com/)'s excellent workshop "Getting a Grip on Exploratory Testing". I wrote about that experience in [this blog post from 2012](link://slug/some-thoughts-after-attending-the-getting-a-grip-on-exploratory-testing-workshop).
+I learned how to do exploratory testing by participating in [James Lyndsay](https://www.workroom-productions.com/)'s excellent workshop "Getting a Grip on Exploratory Testing". I wrote about that experience in [this post from 2012](link://slug/some-thoughts-after-attending-the-getting-a-grip-on-exploratory-testing-workshop).
 
 
 # What do you mean by &lt;some term&gt;?
 
-Usually people understand each other just fine. They use the same term and even though there will never be a perefect 100% overlap in meaning, there is sufficient overlap that for all practical purposes, they are using the same term in the same way. Sometimes, however, there is a shallow agreement. People think they agree on what a term means, but in at least one important aspect, they don't. When you suspect that's the case, it's time to ask: *"What do you mean by &lt;some term&gt;?"*
+Usually people understand each other just fine. They use the same term and even though there will never be a perfect 100% overlap in meaning, there is sufficient overlap that for all practical purposes, they are using the same term in the same way. Sometimes, however, there is a shallow agreement. People think they agree on what a term means, but in at least one important aspect, they don't. When you suspect that's the case, it's time to ask: *"What do you mean by &lt;some term&gt;?"*
 
 One of the biggest bugs I ever found was when I asked: *"What exactly do you mean by 'buffering'?"* One party thought it meant they needed to buffer the first 100 undeliverable messages and could discard the rest. The other party thought that during their downtime every undeliverable message would be buffered for later delivery. My simple question in preparing the end-to-end test got the whole project sent back to the architect.
 
@@ -78,4 +79,4 @@ I think I learned to do this as part of getting my degree in philosophy. Having 
 
 ---
 
-What are your favorite testing questions? Are some of them the same as mine? Which other ones do you have? What things are easier to find thanks to your favorite questions? And what things might you overlook?
+Enough about my favorite testing questions. What are your favorite one? Are some of them the same as mine? Which other ones do you use? What things are easier to find thanks to your favorite questions? And what things might you overlook?
