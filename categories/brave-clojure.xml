@@ -3,7 +3,7 @@
 &lt;a href="https://creativecommons.org/licenses/by/4.0/"&gt;
 &lt;img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by/4.0/80x15.png" /&gt;
 &lt;/a&gt;
-</copyright><lastBuildDate>Sun, 12 Mar 2023 09:17:46 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(clj 11) Moving on from some unsolved exercises</title><link>https://smallsheds.garden/blog/clojure/2022/clj-11-moving-on-from-some-unsolved-exercises/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;At the end of chapter 4 of &lt;a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/"&gt;"Clojure for the Brave and True"&lt;/a&gt; there are &lt;a href="https://www.braveclojure.com/core-functions-in-depth/#Exercises"&gt;four exercises&lt;/a&gt;. This post is about me deciding to move on to chapter 5 after solving 1.5 of these exercises.&lt;/p&gt;
+</copyright><lastBuildDate>Wed, 10 May 2023 15:33:53 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(clj 11) Moving on from some unsolved exercises</title><link>https://smallsheds.garden/blog/clojure/2022/clj-11-moving-on-from-some-unsolved-exercises/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;At the end of chapter 4 of &lt;a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/"&gt;"Clojure for the Brave and True"&lt;/a&gt; there are &lt;a href="https://www.braveclojure.com/core-functions-in-depth/#Exercises"&gt;four exercises&lt;/a&gt;. This post is about me deciding to move on to chapter 5 after solving 1.5 of these exercises.&lt;/p&gt;
 &lt;h2&gt;The challenge with these exercises&lt;/h2&gt;
 &lt;p&gt;A good example to talk about the challenge with these exercises is the second one:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -45,34 +45,34 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
 &lt;h3&gt;Why is there a &lt;code&gt;when&lt;/code&gt;?&lt;/h3&gt;
 &lt;p&gt;The part about control flow is actually before the part about &lt;code&gt;and&lt;/code&gt; and &lt;code&gt;or&lt;/code&gt; which I talked about in my &lt;a href="https://smallsheds.garden/blog/clojure/2020/clj3-and-or-being-weird/"&gt;previous post&lt;/a&gt;, but according to my notes I returned to it. I don't remember why to be honest.&lt;/p&gt;
 &lt;p&gt;The book provides the following example of &lt;code&gt;when&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;when &lt;/span&gt;&lt;span class="nv"&gt;true&lt;/span&gt;
-    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;println &lt;/span&gt;&lt;span class="s"&gt;"Success!"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="s"&gt;"abra cadabra"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;when &lt;/span&gt;&lt;span class="nv"&gt;true&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;println &lt;/span&gt;&lt;span class="s"&gt;"Success!"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s"&gt;"abra cadabra"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; Success!&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; "abra cadabra"&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/clojure/2020/clj4-learning-when-maps-closures/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>brave clojure</category><category>clojure</category><category>programming</category><guid>https://smallsheds.garden/blog/clojure/2020/clj4-learning-when-maps-closures/</guid><pubDate>Fri, 31 Jul 2020 20:25:15 GMT</pubDate></item><item><title>(clj 3) Clojure's 'and' and 'or' are weird (but not really)</title><link>https://smallsheds.garden/blog/clojure/2020/clj3-and-or-being-weird/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;Early in &lt;a href="https://www.braveclojure.com/do-things/#Control_Flow"&gt;chapter 3&lt;/a&gt; of the &lt;a href="https://www.braveclojure.com/"&gt;Brave and True&lt;/a&gt;-book the Boolean operators &lt;code&gt;and&lt;/code&gt; and &lt;code&gt;or&lt;/code&gt; are introduced:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Clojure uses the Boolean operators &lt;code&gt;or&lt;/code&gt; and &lt;code&gt;and&lt;/code&gt;. &lt;code&gt;or&lt;/code&gt; returns either the first truthy value or the last value. &lt;code&gt;and&lt;/code&gt; returns the first falsey value or, if no values are falsey, the last truthy value.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;This explanation is followed by some examples:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;or&lt;/span&gt; &lt;span class="nv"&gt;false&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt; &lt;span class="ss"&gt;:large_I_mean_venti&lt;/span&gt; &lt;span class="ss"&gt;:why_cant_I_just_say_large&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;or&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;false&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;nil&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;:large_I_mean_venti&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;:why_cant_I_just_say_large&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; :large_I_mean_venti&lt;/span&gt;
 
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;or&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"yes"&lt;/span&gt; &lt;span class="s"&gt;"no"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;or&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"yes"&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"no"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; false&lt;/span&gt;
 
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;or&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;or&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;nil&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; nil&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;and&lt;/span&gt; &lt;span class="ss"&gt;:free_wifi&lt;/span&gt; &lt;span class="ss"&gt;:hot_coffee&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;and&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;:free_wifi&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;:hot_coffee&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; :hot_coffee&lt;/span&gt;
 
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;and&lt;/span&gt; &lt;span class="ss"&gt;:feelin_super_cool&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt; &lt;span class="nv"&gt;false&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;and&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;:feelin_super_cool&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;nil&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;false&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;; =&amp;gt; nil&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;What I found remarkable about this is that &lt;code&gt;and&lt;/code&gt; and &lt;code&gt;or&lt;/code&gt; do not return a boolean in all cases. Before I go into that, let's back up a second and cover their basics in a little more depth first.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/clojure/2020/clj3-and-or-being-weird/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>brave clojure</category><category>clojure</category><category>programming</category><category>python</category><guid>https://smallsheds.garden/blog/clojure/2020/clj3-and-or-being-weird/</guid><pubDate>Sat, 16 May 2020 19:25:15 GMT</pubDate></item><item><title>(clj 1) Deciding on a Clojure editor</title><link>https://smallsheds.garden/blog/clojure/2020/clj1-deciding-on-an-editor/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;The second chapter of "&lt;a href="https://www.braveclojure.com/"&gt;Clojure for the Brave and True&lt;/a&gt;" is all about Emacs, "an excellent Clojure editor". Now you might wonder: does your choice of editor really matter that much? You're learning the language, so you don't need advanced IDE features. Some syntax highlighting, some code completion, something to help you manage all those parantheses perhaps, done. That would be true if not for the Clojure REPL.&lt;/p&gt;

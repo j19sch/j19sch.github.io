@@ -106,22 +106,22 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <p>Clojure uses the Boolean&nbsp;operators <code>or</code> and <code>and</code>. <code>or</code> returns either the first truthy value or the last&nbsp;value. <code>and</code> returns the first falsey value or, if no values are falsey, the last truthy&nbsp;value.</p>
 </blockquote>
 <p>This explanation is followed by some&nbsp;examples:</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nf">or</span> <span class="nv">false</span> <span class="nv">nil</span> <span class="ss">:large_I_mean_venti</span> <span class="ss">:why_cant_I_just_say_large</span><span class="p">)</span>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="nf">or</span><span class="w"> </span><span class="nv">false</span><span class="w"> </span><span class="nv">nil</span><span class="w"> </span><span class="ss">:large_I_mean_venti</span><span class="w"> </span><span class="ss">:why_cant_I_just_say_large</span><span class="p">)</span>
 <span class="c1">; =&gt; :large_I_mean_venti</span>
 
-<span class="p">(</span><span class="nf">or</span> <span class="p">(</span><span class="nf">=</span> <span class="mi">0</span> <span class="mi">1</span><span class="p">)</span> <span class="p">(</span><span class="nf">=</span> <span class="s">"yes"</span> <span class="s">"no"</span><span class="p">))</span>
+<span class="p">(</span><span class="nf">or</span><span class="w"> </span><span class="p">(</span><span class="nf">=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nf">=</span><span class="w"> </span><span class="s">"yes"</span><span class="w"> </span><span class="s">"no"</span><span class="p">))</span>
 <span class="c1">; =&gt; false</span>
 
-<span class="p">(</span><span class="nf">or</span> <span class="nv">nil</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">or</span><span class="w"> </span><span class="nv">nil</span><span class="p">)</span>
 <span class="c1">; =&gt; nil</span>
-</code></pre>
+</pre></div>
 
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nf">and</span> <span class="ss">:free_wifi</span> <span class="ss">:hot_coffee</span><span class="p">)</span>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="nf">and</span><span class="w"> </span><span class="ss">:free_wifi</span><span class="w"> </span><span class="ss">:hot_coffee</span><span class="p">)</span>
 <span class="c1">; =&gt; :hot_coffee</span>
 
-<span class="p">(</span><span class="nf">and</span> <span class="ss">:feelin_super_cool</span> <span class="nv">nil</span> <span class="nv">false</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">and</span><span class="w"> </span><span class="ss">:feelin_super_cool</span><span class="w"> </span><span class="nv">nil</span><span class="w"> </span><span class="nv">false</span><span class="p">)</span>
 <span class="c1">; =&gt; nil</span>
-</code></pre>
+</pre></div>
 
 <p>What I found remarkable about this is&nbsp;that <code>and</code> and <code>or</code> do not return a boolean in all cases. Before I go into that, let&#8217;s back up a second and cover their basics in a little more depth&nbsp;first.</p>
 <p class="more"><a href="clojure/2020/clj3-and-or-being-weird/">Read&nbsp;more…</a></p>

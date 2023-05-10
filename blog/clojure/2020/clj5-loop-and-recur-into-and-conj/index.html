@@ -111,8 +111,7 @@ three months after working on the code on September 5, 6 and 12. I'm not going t
         </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>Yet again it&#8217;s been a while since I did some Clojure or blogged about it. This time I&#8217;m writing this blog post
+    <p>Yet again it&#8217;s been a while since I did some Clojure or blogged about it. This time I&#8217;m writing this blog post
 three months after working on the code on September 5, 6 and 12. I&#8217;m not going to dwell on that too long, because
 other things in my life were more important. I did feel a little sad when this year&#8217;s <a href="https://adventofcode.com/">Advent of Code</a>
 launched and I realized my Clojure is nowhere near a state where I could attempt the puzzles. So I ended up doing
@@ -158,18 +157,18 @@ solution though, since it&#8217;s a two-steps-forward-one-step-back kind of solu
 his vim plugin <a href="https://github.com/Olical/conjure">conjure</a>, the more curious I get to try it out instead of <a href="https://github.com/tpope/vim-fireplace">vim-fireplace</a>.</p>
 <h3>loop and&nbsp;recur</h3>
 <p>After a straightforward example&nbsp;with <code>loop</code> and <code>recur</code> in &#8220;Clojure for the Brave and True&#8221;, you get thrown in the deeper end with the following piece of&nbsp;code:</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nf">defn</span> <span class="nv">symmetrize-body-parts</span>
-    <span class="s">"Expects a seq of maps that have a :name and :size"</span>
-    <span class="p">[</span><span class="nv">asym-body-parts</span><span class="p">]</span>
-    <span class="p">(</span><span class="nf">loop</span> <span class="p">[</span><span class="nv">remaining-asym-parts</span> <span class="nv">asym-body-parts</span>
-           <span class="nv">final-body-parts</span> <span class="p">[]]</span>
-        <span class="p">(</span><span class="nf">if</span> <span class="p">(</span><span class="nf">empty?</span> <span class="nv">remaining-asym-parts</span><span class="p">)</span>
-            <span class="nv">final-body-parts</span>
-            <span class="p">(</span><span class="nf">let</span> <span class="p">[[</span><span class="nv">part</span> <span class="o">&amp;</span> <span class="nv">remaining</span><span class="p">]</span> <span class="nv">remaining-asym-parts</span><span class="p">]</span>
-                <span class="p">(</span><span class="nf">recur</span> <span class="nv">remaining</span>
-                    <span class="p">(</span><span class="nf">into</span> <span class="nv">final-body-parts</span>
-                        <span class="p">(</span><span class="nf">set</span> <span class="p">[</span><span class="nv">part</span> <span class="p">(</span><span class="nf">matching-part</span> <span class="nv">part</span><span class="p">)])))))))</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="nf">defn</span><span class="w"> </span><span class="nv">symmetrize-body-parts</span>
+<span class="w">    </span><span class="s">"Expects a seq of maps that have a :name and :size"</span>
+<span class="w">    </span><span class="p">[</span><span class="nv">asym-body-parts</span><span class="p">]</span>
+<span class="w">    </span><span class="p">(</span><span class="nf">loop</span><span class="w"> </span><span class="p">[</span><span class="nv">remaining-asym-parts</span><span class="w"> </span><span class="nv">asym-body-parts</span>
+<span class="w">           </span><span class="nv">final-body-parts</span><span class="w"> </span><span class="p">[]]</span>
+<span class="w">        </span><span class="p">(</span><span class="nf">if</span><span class="w"> </span><span class="p">(</span><span class="nf">empty?</span><span class="w"> </span><span class="nv">remaining-asym-parts</span><span class="p">)</span>
+<span class="w">            </span><span class="nv">final-body-parts</span>
+<span class="w">            </span><span class="p">(</span><span class="nf">let</span><span class="w"> </span><span class="p">[[</span><span class="nv">part</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="nv">remaining</span><span class="p">]</span><span class="w"> </span><span class="nv">remaining-asym-parts</span><span class="p">]</span>
+<span class="w">                </span><span class="p">(</span><span class="nf">recur</span><span class="w"> </span><span class="nv">remaining</span>
+<span class="w">                    </span><span class="p">(</span><span class="nf">into</span><span class="w"> </span><span class="nv">final-body-parts</span>
+<span class="w">                        </span><span class="p">(</span><span class="nf">set</span><span class="w"> </span><span class="p">[</span><span class="nv">part</span><span class="w"> </span><span class="p">(</span><span class="nf">matching-part</span><span class="w"> </span><span class="nv">part</span><span class="p">)])))))))</span>
+</pre></div>
 
 <p>The explanation of this function ends with: <em>&#8220;If you’re new to this kind of programming, this code might take some time to puzzle out.
 Stick with it! Once you understand what’s happening, you’ll feel like a million&nbsp;bucks!&#8221;</em></p>
@@ -189,46 +188,46 @@ connecting&nbsp;the <code>(into final-body-parts (set [part (matching-part p
 <p>The example above also shows how the hobbit script uses&nbsp;an <code>into</code> to add a set of maps to a vector of maps inside&nbsp;a <code>recur</code>. That tripped me up, also when building my own loopers where I had to&nbsp;use <code>conj</code> instead. It&#8217;s interesting how simple functions such as <a href="https://clojuredocs.org/clojure.core/into"><code>into</code></a> and <a href="https://clojuredocs.org/clojure.core/conj"><code>conj</code></a> become harder to undestand when they&#8217;re part of a more difficult&nbsp;context.</p>
 <p>In the end I found it helpful to try out a bunch of variations, starting with vectors containing integers, 
 then replacing the integers with maps to get closer to what&#8217;s in the hobbit&nbsp;script.</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">into </span><span class="p">[]</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">])</span>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="nb">into </span><span class="p">[]</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">])</span>
 <span class="c1">; =&gt; [1 2 3]</span>
-<span class="p">(</span><span class="nb">conj </span><span class="p">[]</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">])</span>
+<span class="p">(</span><span class="nb">conj </span><span class="p">[]</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">])</span>
 <span class="c1">; =&gt; [[1 2 3]]</span>
-<span class="p">(</span><span class="nb">into </span><span class="p">[</span><span class="mi">9</span> <span class="mi">8</span><span class="p">]</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">])</span>
+<span class="p">(</span><span class="nb">into </span><span class="p">[</span><span class="mi">9</span><span class="w"> </span><span class="mi">8</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">])</span>
 <span class="c1">; =&gt; [9 8 1 2 3]</span>
-<span class="p">(</span><span class="nb">conj </span><span class="p">[</span><span class="mi">9</span> <span class="mi">8</span><span class="p">]</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">])</span>
+<span class="p">(</span><span class="nb">conj </span><span class="p">[</span><span class="mi">9</span><span class="w"> </span><span class="mi">8</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">])</span>
 <span class="c1">; =&gt; [9 8 [1 2 3]]</span>
 
-<span class="p">(</span><span class="nb">into </span><span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">]</span> <span class="p">[])</span>
+<span class="p">(</span><span class="nb">into </span><span class="p">[</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="p">[])</span>
 <span class="c1">; =&gt; [1 2 3]</span>
-<span class="p">(</span><span class="nb">conj </span><span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">]</span> <span class="p">[])</span>
+<span class="p">(</span><span class="nb">conj </span><span class="p">[</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="p">[])</span>
 <span class="c1">; =&gt; [1 2 3 []]</span>
 
-<span class="p">(</span><span class="nb">into </span><span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">]</span> <span class="mi">4</span><span class="p">)</span>
+<span class="p">(</span><span class="nb">into </span><span class="p">[</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span>
 <span class="c1">; IllegalArgumentException Don't know how to create ISeq from: java.lang.Long  clojure.lang.RT.seqFrom (RT.java:542)</span>
-<span class="p">(</span><span class="nb">conj </span><span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">]</span> <span class="mi">4</span><span class="p">)</span>
+<span class="p">(</span><span class="nb">conj </span><span class="p">[</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span>
 <span class="c1">; [1 2 3 4]</span>
 
-<span class="p">(</span><span class="nb">into </span><span class="p">[{</span><span class="ss">:name</span> <span class="s">"my-arm"</span><span class="p">}]</span> <span class="p">[{</span><span class="ss">:name</span> <span class="s">"left-head"</span><span class="p">}</span> <span class="p">{</span><span class="ss">:name</span> <span class="s">"right-head"</span><span class="p">}])</span>
+<span class="p">(</span><span class="nb">into </span><span class="p">[{</span><span class="ss">:name</span><span class="w"> </span><span class="s">"my-arm"</span><span class="p">}]</span><span class="w"> </span><span class="p">[{</span><span class="ss">:name</span><span class="w"> </span><span class="s">"left-head"</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="ss">:name</span><span class="w"> </span><span class="s">"right-head"</span><span class="p">}])</span>
 <span class="c1">; =&gt; [{:name "my-arm"} {:name "left-head"} {:name "right-head"}]</span>
-<span class="p">(</span><span class="nb">conj </span><span class="p">[{</span><span class="ss">:name</span> <span class="s">"my-arm"</span><span class="p">}]</span> <span class="p">[{</span><span class="ss">:name</span> <span class="s">"left-head"</span><span class="p">}</span> <span class="p">{</span><span class="ss">:name</span> <span class="s">"right-head"</span><span class="p">}])</span>
+<span class="p">(</span><span class="nb">conj </span><span class="p">[{</span><span class="ss">:name</span><span class="w"> </span><span class="s">"my-arm"</span><span class="p">}]</span><span class="w"> </span><span class="p">[{</span><span class="ss">:name</span><span class="w"> </span><span class="s">"left-head"</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="ss">:name</span><span class="w"> </span><span class="s">"right-head"</span><span class="p">}])</span>
 <span class="c1">; =&gt; [{:name "my-arm"} [{:name "left-head"} {:name "right-head"}]]</span>
-</code></pre>
+</pre></div>
 
 <p>These examples allowed me to see that&nbsp;Clojure&#8217;s <code>into</code> and <code>conj</code> are very similar to&nbsp;Python&#8217;s <code>extend()</code> and <code>append()</code>.</p>
 <h3>reduce</h3>
 <p>My notes show it took me some effort to understand <a href="https://clojuredocs.org/clojure.core/reduce"><code>reduce</code></a>. They say &#8220;struggling a bit with syntax&#8221; and &#8220;it&#8217;s not obvious&#8221; and &#8220;had to re-read and re-learn&#8221;, but I have no idea what it was that I found non-obvious. My best guess is that it was a bit of a leap for me to go from these&nbsp;examples</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">reduce + </span><span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span><span class="p">])</span>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="nb">reduce + </span><span class="p">[</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="p">])</span>
 <span class="c1">; =&gt; 10</span>
-<span class="p">(</span><span class="nb">reduce + </span><span class="mi">15</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span><span class="p">])</span>
+<span class="p">(</span><span class="nb">reduce + </span><span class="mi">15</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="p">])</span>
 <span class="c1">; =&gt; 25</span>
-</code></pre>
+</pre></div>
 
 <p>to&nbsp;a <code>reduce</code> that takes an anonymous function calling an other function to work on a vector of&nbsp;maps</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">final-body-parts</span> <span class="nv">part</span><span class="p">]</span>
-    <span class="p">(</span><span class="nb">into </span><span class="nv">final-body-parts</span> <span class="p">(</span><span class="nb">set </span><span class="p">[</span><span class="nv">part</span> <span class="p">(</span><span class="nf">matching-part</span> <span class="nv">part</span><span class="p">)])))</span>
-    <span class="p">[]</span>
-    <span class="nv">asym-body-parts</span><span class="p">)</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">final-body-parts</span><span class="w"> </span><span class="nv">part</span><span class="p">]</span>
+<span class="w">    </span><span class="p">(</span><span class="nb">into </span><span class="nv">final-body-parts</span><span class="w"> </span><span class="p">(</span><span class="nb">set </span><span class="p">[</span><span class="nv">part</span><span class="w"> </span><span class="p">(</span><span class="nf">matching-part</span><span class="w"> </span><span class="nv">part</span><span class="p">)])))</span>
+<span class="w">    </span><span class="p">[]</span>
+<span class="w">    </span><span class="nv">asym-body-parts</span><span class="p">)</span>
+</pre></div>
 
 <p>To be fair,
 it is an improved implementation of a function that was explained earlier, so it is clear what this&nbsp;with <code>reduce</code> refactored
@@ -243,7 +242,6 @@ And where in Clojure you&nbsp;need <code>reduce</code> to sum a particular eleme
 pieces of code: where Python has&nbsp;both <code>+</code> and <code>sum()</code> depending on the number of things you want to add, Clojure&#8217;s syntax with the operator
 coming first,&nbsp;e.g. <code>(+ 1 2 3)</code>, lets you&nbsp;use <code>+</code> to adds as many things to each other as you want. I just&nbsp;tried <code>(+ 1)</code> and even that&nbsp;works.</p>
 <p>And that almost concludes Chapter 3 of &#8220;Clojure for the Brave and True&#8221;. There&#8217;s only one thing left: the six exercises at the&nbsp;end.</p>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../../../categories/brave-clojure/" rel="tag">brave&nbsp;clojure</a></li>

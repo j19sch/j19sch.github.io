@@ -109,8 +109,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>In the past two weeks I built a test tool in <span class="caps">VBA</span> (Visual Basic for Applications). I did this, because two weeks ago my fellow tester showed me an important test we have to do at least once for each major release. The test consists of having the application generate three reports in Excel format. On two of these reports you apply a set of filters and take the sum of a few columns, rinse and repeat. Then you add several of those sums together and the results of those calculations should match the numbers in the third report. So basically, the point of the test is to check if the numbers in the three reports add up. And it&#8217;s a lot of work, i.e. about two&nbsp;days.</p>
+    <p>In the past two weeks I built a test tool in <span class="caps">VBA</span> (Visual Basic for Applications). I did this, because two weeks ago my fellow tester showed me an important test we have to do at least once for each major release. The test consists of having the application generate three reports in Excel format. On two of these reports you apply a set of filters and take the sum of a few columns, rinse and repeat. Then you add several of those sums together and the results of those calculations should match the numbers in the third report. So basically, the point of the test is to check if the numbers in the three reports add up. And it&#8217;s a lot of work, i.e. about two&nbsp;days.</p>
 <p>After being shown how to perform the test, the first thought that popped into my head, was: &#8220;Boring!&#8221; The second thought was: &#8220;It&#8217;s automatable!&#8221; And since there was little else to do - delivery of the new test environments was delayed - I changed it from automatable to&nbsp;automated.</p>
 <p>So now, after two weeks, I have this tool in <span class="caps">VBA</span>. For each of the three reports it contains a sheet in which you define the sets of filters and sums. If you click a big button, the report is opened and the filters and sums are applied. There&#8217;s also a fourth sheet to do the second set of calculations and to do the check if the numbers match. This last part is not done in <span class="caps">VBA</span>; it&#8217;s all formulas in&nbsp;Excel.</p>
 <!-- TEASER_END -->
@@ -158,7 +157,6 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <p>Am still annoyed I have to tell <span class="caps">VBA</span> the length of an array before I can put something in it, though. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
 </li>
 </ol>
-</div>
 </div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">

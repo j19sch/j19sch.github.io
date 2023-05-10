@@ -109,8 +109,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>Thanks to <a href="https://testingcurve.wordpress.com/2012/07/09/yet-another-testing-model-value-information-processes-value/#comments">Neil Thompson&#8217;s comments</a> on my previous post, I started thinking about what I want to do with the <span class="caps">VIPT</span> model. Do I want to expand and refine it to a grand unified theory of testing? And if not, then&nbsp;what?</p>
+    <p>Thanks to <a href="https://testingcurve.wordpress.com/2012/07/09/yet-another-testing-model-value-information-processes-value/#comments">Neil Thompson&#8217;s comments</a> on my previous post, I started thinking about what I want to do with the <span class="caps">VIPT</span> model. Do I want to expand and refine it to a grand unified theory of testing? And if not, then&nbsp;what?</p>
 <h3>The Unix&nbsp;philosophy</h3>
 <p>After some thinking I realized that with regard to models, I adhere to the <a href="http://www.faqs.org/docs/artu/ch01s06.html">Unix philosophy</a>.</p>
 <h4>Do one thing and do it&nbsp;well</h4>
@@ -121,8 +120,8 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <!-- TEASER_END -->
 
 <p>As a result you can do this in Unix <em>(example taken from <a href="http://www.december.com/unix/tutor/pipesfilters.html">here</a>)</em>:</p>
-<pre class="code literal-block"><span></span><code>cat apple.txt <span class="p">|</span> wc <span class="p">|</span> mail -s <span class="s2">"The count"</span> nobody@december.com
-</code></pre>
+<div class="code"><pre class="code literal-block">cat<span class="w"> </span>apple.txt<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span><span class="p">|</span><span class="w"> </span>mail<span class="w"> </span>-s<span class="w"> </span><span class="s2">"The count"</span><span class="w"> </span>nobody@december.com
+</pre></div>
 
 <p>By piping the output of the first command to the second and then to the third, you get a small &#8216;program&#8217; that counts the characters, words, and lines of the apple.txt file, then mails the results to nobody@december.com with the subject line &#8220;The&nbsp;count.&#8221;</p>
 <h4>Worse is&nbsp;better</h4>
@@ -138,7 +137,6 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <p>As such a model is very much a tool in the <span class="caps">VIPT</span> model. On its own it doesn&#8217;t do anything. When part of a process, it can provide valuable information - or&nbsp;not.</p>
 <hr>
 <p><em>This post was originally published <a href="https://testingcurve.wordpress.com/2012/07/15/vipt-intermezzo-models-and-the-unix-philosophy/">here</a>.</em></p>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../../categories/context-driven-testing/" rel="tag">context-driven&nbsp;testing</a></li>

@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about philosophy of testing)</title>
   <id>https://smallsheds.garden/categories/cat_philosophy-of-testing.atom</id>
-  <updated>2022-12-29T16:36:55Z</updated>
+  <updated>2023-05-10T15:33:55Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -79,7 +79,7 @@ So after giving it some thought, I present you with three arguments against the 
 &lt;/ul&gt;
 &lt;p&gt;Now on to the three arguments.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2015/three-arguments-against-the-verification-validation-dichotomy/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="exploration" label="exploration"/>
+    <category term="exploratory-testing" label="exploratory testing"/>
     <category term="semantics" label="semantics"/>
     <category term="verification-and-validation" label="verification and validation"/>
   </entry>
@@ -186,7 +186,7 @@ And truth be told, I didn't watch all of it. Some parts were boring, some parts 
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2012/dewt2-becoming-a-context-driven-tester/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="context-driven-testing" label="context-driven testing"/>
     <category term="dewt" label="DEWT"/>
-    <category term="peer-conference" label="peer conference"/>
+    <category term="peer-conferences" label="peer conferences"/>
   </entry>
   <entry>
     <title>VIPT - how to teach software testing</title>

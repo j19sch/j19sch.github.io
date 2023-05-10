@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about test management)</title>
   <id>https://smallsheds.garden/categories/cat_test-management.atom</id>
-  <updated>2023-04-16T11:43:56Z</updated>
+  <updated>2023-05-10T15:33:54Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -78,7 +78,7 @@
 &lt;p&gt;Some days ago I found myself no longer able to think in test cases while testing. Of course, it's not as if I was using test design techniques to generate test cases one day and woke up the next day to find myself unable to do it anymore. But still, about a week ago I figured I had explored enough to be able to write down the test cases I wanted to execute and found myself staring at a blank page (well ok, empty Excel sheet) feeling alienated from what I was planning to do.&lt;/p&gt;
 &lt;p&gt;So what do I mean when saying "thinking in test cases". Simply put, you take a piece of functionality, let a test design technique loose on it and there you go: a set of test cases to execute. Combine test design techniques over the different pieces of functionality as required and you're all covered test strategy-wise. Or that's the idea.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2013/test-cases-cant-do-m-no-more/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="exploration" label="exploration"/>
+    <category term="exploratory-testing" label="exploratory testing"/>
     <category term="test-cases" label="test cases"/>
     <category term="test-management" label="test management"/>
   </entry>

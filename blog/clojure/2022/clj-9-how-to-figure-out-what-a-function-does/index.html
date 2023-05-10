@@ -110,23 +110,22 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>Chapter 4 of &#8220;<a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">Clojure for the Brave and True</a>&#8221; concludes with a <em>Vampire Data Analysis Program</em>, serving as a summary of the chapter. The book shows some code, explains it, moves on to the next bit of code, etc. I&#8217;m not sure why, but I decided I wanted to figure out the code on my own and then read the explanation to see if I got it right. Afterwards I realized it might make a good blog post: both explaining what the program does and what techniques (for lack of a better word) I used to figure it&nbsp;out.</p>
+    <p>Chapter 4 of &#8220;<a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">Clojure for the Brave and True</a>&#8221; concludes with a <em>Vampire Data Analysis Program</em>, serving as a summary of the chapter. The book shows some code, explains it, moves on to the next bit of code, etc. I&#8217;m not sure why, but I decided I wanted to figure out the code on my own and then read the explanation to see if I got it right. Afterwards I realized it might make a good blog post: both explaining what the program does and what techniques (for lack of a better word) I used to figure it&nbsp;out.</p>
 <p>With most of the work in the program being done by a function&nbsp;called <code>mapify</code>, this blog post will focus on that single function. As it turns out, it took me more than 2000 words (footnotes not included) to describe what this function consisting of only 9 lines does. So feel free to read all of it, skim through it, or skip straight ahead to the <a href="#techniques">techniques</a> and some <a href="#reflections">reflections</a>.</p>
 <!-- TEASER_END -->
 
 <h2>The&nbsp;function</h2>
 <p>This&nbsp;is <code>mapify</code>, the main function of the <em>Vampire Data Analysis Program</em>&nbsp;program:</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">mapify</span>
-  <span class="s">"Return a seq of maps like {:name \"Edward Cullen\" :glitter-index 10}"</span>
-  <span class="p">[</span><span class="nv">rows</span><span class="p">]</span>
-  <span class="p">(</span><span class="nb">map </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">unmapped-row</span><span class="p">]</span>
-         <span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">row-map</span> <span class="p">[</span><span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">]]</span>
-                   <span class="p">(</span><span class="nb">assoc </span><span class="nv">row-map</span> <span class="nv">vamp-key</span> <span class="p">(</span><span class="nf">convert</span> <span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">)))</span>
-                 <span class="p">{}</span>
-                 <span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span> <span class="nv">unmapped-row</span><span class="p">)))</span>
-       <span class="nv">rows</span><span class="p">))</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="kd">defn </span><span class="nv">mapify</span>
+<span class="w">  </span><span class="s">"Return a seq of maps like {:name \"Edward Cullen\" :glitter-index 10}"</span>
+<span class="w">  </span><span class="p">[</span><span class="nv">rows</span><span class="p">]</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">map </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">unmapped-row</span><span class="p">]</span>
+<span class="w">         </span><span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">row-map</span><span class="w"> </span><span class="p">[</span><span class="nv">vamp-key</span><span class="w"> </span><span class="nv">value</span><span class="p">]]</span>
+<span class="w">                   </span><span class="p">(</span><span class="nb">assoc </span><span class="nv">row-map</span><span class="w"> </span><span class="nv">vamp-key</span><span class="w"> </span><span class="p">(</span><span class="nf">convert</span><span class="w"> </span><span class="nv">vamp-key</span><span class="w"> </span><span class="nv">value</span><span class="p">)))</span>
+<span class="w">                 </span><span class="p">{}</span>
+<span class="w">                 </span><span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span><span class="w"> </span><span class="nv">unmapped-row</span><span class="p">)))</span>
+<span class="w">       </span><span class="nv">rows</span><span class="p">))</span>
+</pre></div>
 
 <h2>Breaking up the function in its&nbsp;parts</h2>
 <p>To figure out what&nbsp;this <code>mapify</code> function does, we need to break it up into parts. For that we need to know how you write a function in Clojure, i.e. the syntax of a function in Clojure. So let&#8217;s go through the function step-by-step and identify its&nbsp;parts.</p>
@@ -136,12 +135,12 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <p>To figure out how to break up the function body, we need to do two things. We need to match opening parentheses with closing parentheses, so we know the overall structure. We need to look up the syntax of the functions being used in the different part, so we can make sense of the different parts - similar to what we did&nbsp;with <code>mapify</code> and the function&nbsp;syntax.</p>
 <p>The function body starts with&nbsp;a <code>map</code>. On <a href="https://clojuredocs.org/clojure.core/map"><code>map</code><span class="quo">&#8216;</span>s ClojureDocs page</a> we can see&nbsp;that <code>map</code> takes two &#8216;groups&#8217; of parameters: a function and one or more <a href="https://clojure.org/guides/learn/sequential_colls">collections</a>. Collections are things like lists and maps, so things that collect multiple values. To apply this to our code snippet, we need to take a good look at which opening parenthesis match with which closing ones. The opening parenthesis&nbsp;after <code>map</code> has its matching closing parenthesis at the end of the second-to-last line of the snippet.&nbsp;So <code>(fn ... unmapped-row)))</code> is the first argument&nbsp;of <code>map</code>.&nbsp;The <code>rows</code> on the last line is the second argument, followed by two closing parentheses: one for the function body and one for the whole function&nbsp;definition.</p>
 <p>In summary,&nbsp;our <code>mapify</code> function is a function that&nbsp;performs <code>map</code> on <code>rows</code> using a function that spans most of the lines in the code snippet. So now we have to figure out what happens inside this&nbsp;function:</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">unmapped-row</span><span class="p">]</span>
-         <span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">row-map</span> <span class="p">[</span><span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">]]</span>
-                   <span class="p">(</span><span class="nb">assoc </span><span class="nv">row-map</span> <span class="nv">vamp-key</span> <span class="p">(</span><span class="nf">convert</span> <span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">)))</span>
-                 <span class="p">{}</span>
-                 <span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span> <span class="nv">unmapped-row</span><span class="p">)))</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">unmapped-row</span><span class="p">]</span>
+<span class="w">         </span><span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">row-map</span><span class="w"> </span><span class="p">[</span><span class="nv">vamp-key</span><span class="w"> </span><span class="nv">value</span><span class="p">]]</span>
+<span class="w">                   </span><span class="p">(</span><span class="nb">assoc </span><span class="nv">row-map</span><span class="w"> </span><span class="nv">vamp-key</span><span class="w"> </span><span class="p">(</span><span class="nf">convert</span><span class="w"> </span><span class="nv">vamp-key</span><span class="w"> </span><span class="nv">value</span><span class="p">)))</span>
+<span class="w">                 </span><span class="p">{}</span>
+<span class="w">                 </span><span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span><span class="w"> </span><span class="nv">unmapped-row</span><span class="p">)))</span>
+</pre></div>
 
 <p>You might have noticed that this function looks a bit different than&nbsp;the <code>mapify</code> function. That&#8217;s because this is a an anonymous function,&nbsp;while <code>mapify</code> is a named function. An anonymous function does not have a name<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">2</a></sup>, so it&#8217;s used in-place instead of being called from somewhere else in the code. Most of the syntax is the same&nbsp;though. <code>[unmapped-row]</code> is the function parameter and all that follows is the function&nbsp;body.</p>
 <p>The function body start with&nbsp;a <code>reduce</code>. We can also see it takes three parameters (because matching brackets): an anonymous function (first two lines), an empty map&nbsp;(the <code>{}</code>), and whatever is returned by the last line&nbsp;(<code>map vector ...</code>). <code>reduce</code><span class="quo">&#8216;</span>s <a href="https://clojuredocs.org/clojure.core/reduce">ClojureDocs page</a> tells us&nbsp;that <code>reduce</code> either takes the form&nbsp;of <code>(reduce f coll)</code> or <code>(reduce f val coll)</code>, so that last line must be returning a collection. And <a href="https://clojuredocs.org/clojure.core/map"><code>map</code><span class="quo">&#8216;</span>s ClojureDocs</a> confirms&nbsp;this: <code>map</code> returns a lazy sequence, which is a collection<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">3</a></sup>.</p>
@@ -158,80 +157,80 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <p>Let&#8217;s start with the second one, figuring out what data&nbsp;the <code>reduce</code> is operating on and then see how the function transforms that&nbsp;data.</p>
 <h3>What data does&nbsp;the <code>reduce</code> operate&nbsp;on?</h3>
 <p>The data provided to&nbsp;the <code>reduce</code> (the <code>coll</code> in the paragraph above), is whatever is returned&nbsp;by:</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span> <span class="nv">unmapped-row</span><span class="p">)</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span><span class="w"> </span><span class="nv">unmapped-row</span><span class="p">)</span>
+</pre></div>
 
 <p>Ideally we&#8217;d break this up in parts as we have been doing. That&#8217;s now what I did however. I first looked into the last two&nbsp;things, <code>vamp-keys</code> and <code>unmapped-row</code>, and then moved to&nbsp;the <code>map</code> and <code>vector</code>.</p>
 <h4>The <code>vamp-keys</code> and&nbsp;the <code>unmapped-row</code>
 </h4>
 <p><code>vamp-keys</code> was defined earlier in the example code&nbsp;as:</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">vamp-keys</span> <span class="p">[</span><span class="ss">:name</span> <span class="ss">:glitter-index</span><span class="p">])</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="k">def </span><span class="nv">vamp-keys</span><span class="w"> </span><span class="p">[</span><span class="ss">:name</span><span class="w"> </span><span class="ss">:glitter-index</span><span class="p">])</span>
+</pre></div>
 
 <p>For <code>unmapped-row</code> we need to track back a bit to&nbsp;the <code>map</code> in&nbsp;the <code>mapify</code> function:</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">map </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">unmapped-row</span><span class="p">]</span>
-       <span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="nv">...</span><span class="p">)</span>
-               <span class="p">{}</span>
-               <span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span> <span class="nv">unmapped-row</span><span class="p">)))</span>
-     <span class="nv">rows</span><span class="p">)</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="nb">map </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">unmapped-row</span><span class="p">]</span>
+<span class="w">       </span><span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="nv">...</span><span class="p">)</span>
+<span class="w">               </span><span class="p">{}</span>
+<span class="w">               </span><span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span><span class="w"> </span><span class="nv">unmapped-row</span><span class="p">)))</span>
+<span class="w">     </span><span class="nv">rows</span><span class="p">)</span>
+</pre></div>
 
 <p>As mentioned above,&nbsp;this <code>map</code> has two parameters: an anonymous function and a collection&nbsp;called <code>rows</code>.&nbsp;What <code>map</code> will do in case of a <a href="https://clojuredocs.org/clojure.core/map">single collection argument</a>, is apply the function to the first item in the collection, then to second, etc. So the anonymous function will get one row&nbsp;from <code>rows</code> at a time&nbsp;from <code>map</code>, i.e.&nbsp;the <code>unmapped-row</code> parameter on the first line in the snippet&nbsp;above.</p>
 <p>That still leaves the question what&nbsp;these <code>rows</code> are. The answer to that is vampire names and their glitter&nbsp;index:</p>
-<pre class="code literal-block"><span></span><code>Edward Cullen,10
+<div class="code"><pre class="code literal-block">Edward Cullen,10
 Bella Swan,0
 Charlie Swan,0
 Jacob Black,3
 Carlisle Cullen,6
-</code></pre>
+</pre></div>
 
 <p>Or rather, that&#8217;s what&#8217;s in&nbsp;the <code>.csv</code> file, which after parsing<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">4</a></sup> is provided to&nbsp;the <code>mapify</code> function like&nbsp;this:</p>
-<pre class="code literal-block"><span></span><code><span class="p">([</span><span class="s">"Edward Cullen"</span> <span class="s">"10"</span><span class="p">]</span> <span class="p">[</span><span class="s">"Bella Swan"</span> <span class="s">"0"</span><span class="p">]</span> <span class="p">[</span><span class="s">"Charlie Swan"</span> <span class="s">"0"</span><span class="p">]</span>
-  <span class="p">[</span><span class="s">"Jacob Black"</span> <span class="s">"3"</span><span class="p">]</span> <span class="p">[</span><span class="s">"Carlisle Cullen"</span> <span class="s">"6"</span><span class="p">])</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="p">([</span><span class="s">"Edward Cullen"</span><span class="w"> </span><span class="s">"10"</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="s">"Bella Swan"</span><span class="w"> </span><span class="s">"0"</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="s">"Charlie Swan"</span><span class="w"> </span><span class="s">"0"</span><span class="p">]</span>
+<span class="w">  </span><span class="p">[</span><span class="s">"Jacob Black"</span><span class="w"> </span><span class="s">"3"</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="s">"Carlisle Cullen"</span><span class="w"> </span><span class="s">"6"</span><span class="p">])</span>
+</pre></div>
 
 <h4>The <code>vector</code> and&nbsp;the <code>map</code>
 </h4>
 <p><code>vector</code> takes whatever you give it and puts it in a vector (a vector is basically a list or&nbsp;array):</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">unmapped-row</span> <span class="p">[</span><span class="s">"Edward Cullen"</span> <span class="s">"10"</span><span class="p">])</span>
-<span class="p">(</span><span class="nb">vector </span><span class="nv">vamp-keys</span> <span class="nv">unmapped-row</span><span class="p">)</span>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="k">def </span><span class="nv">unmapped-row</span><span class="w"> </span><span class="p">[</span><span class="s">"Edward Cullen"</span><span class="w"> </span><span class="s">"10"</span><span class="p">])</span>
+<span class="p">(</span><span class="nb">vector </span><span class="nv">vamp-keys</span><span class="w"> </span><span class="nv">unmapped-row</span><span class="p">)</span>
 <span class="c1">; =&gt; [[:name :glitter-index] ["Edward Cullen" "10"]]</span>
-</code></pre>
+</pre></div>
 
 <p>However that&#8217;s not&nbsp;what <code>(map vector vamp-keys unmapped-row)</code> does. Hence my comment earlier that I should have broken down this function based on its syntax and not simply started at the end and work my way to the front. What&#8217;s not happening here is&nbsp;that <code>map</code> is applied to what&#8217;s returned&nbsp;by <code>vector</code>. Then the code should have&nbsp;been <code>(map (vector vamp-keys unmapped-row))</code>. What&#8217;s happening instead is&nbsp;that <code>vector</code>, <code>vamp-keys</code>,&nbsp;and <code>unmapped-row</code> are arguments for&nbsp;the <code>map</code> function.</p>
 <p>Earlier we had&nbsp;a <code>map</code> with a function and one collection as parameters. Now we have a function&nbsp;(<code>vector</code>) and two collections&nbsp;(<code>vamp-keys</code>,&nbsp;and <code>unmapped-row</code>).&nbsp;How <code>map</code> <a href="https://clojuredocs.org/clojure.core/map">works in this case</a> is that it will take the first item&nbsp;in <code>vamp-keys</code> and the first item&nbsp;in <code>unmapped-row</code> and&nbsp;apply <code>vector</code> to it. Then it&#8217;ll do the same for the second items, etc. until one of the two collections is&nbsp;exhausted:</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span> <span class="nv">unmapped-row</span><span class="p">)</span>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span><span class="w"> </span><span class="nv">unmapped-row</span><span class="p">)</span>
 <span class="c1">; =&gt; ([:name "Edward Cullen"] [:glitter-index "10"])</span>
-</code></pre>
+</pre></div>
 
 <h4>Recap</h4>
 <p>The <code>mapify</code> function is using&nbsp;a <code>reduce</code> to create a new map based on some data it&#8217;s getting and a function. We now know what that data looks like. It&#8217;s a set of rows with a single row looking like&nbsp;this: <code>([:name "Edward Cullen"] [:glitter-index "10"])</code>. Next step is figuring out what the function provided to&nbsp;the <code>reduce</code> does with these&nbsp;rows.</p>
 <h3>What does the function of&nbsp;the <code>reduce</code> do?</h3>
 <p>The function of&nbsp;our <code>reduce</code> is:</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">row-map</span> <span class="p">[</span><span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">]]</span>
-                   <span class="p">(</span><span class="nb">assoc </span><span class="nv">row-map</span> <span class="nv">vamp-key</span> <span class="p">(</span><span class="nf">convert</span> <span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">)))</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">row-map</span><span class="w"> </span><span class="p">[</span><span class="nv">vamp-key</span><span class="w"> </span><span class="nv">value</span><span class="p">]]</span>
+<span class="w">                   </span><span class="p">(</span><span class="nb">assoc </span><span class="nv">row-map</span><span class="w"> </span><span class="nv">vamp-key</span><span class="w"> </span><span class="p">(</span><span class="nf">convert</span><span class="w"> </span><span class="nv">vamp-key</span><span class="w"> </span><span class="nv">value</span><span class="p">)))</span>
+</pre></div>
 
 <p>To understand what this function does, it&#8217;s helpful to know what arguments will be provided to it, i.e. what will be used&nbsp;for <code>[row-map [vamp-key value]]</code>. With this function being used in&nbsp;the <code>reduce</code> that means its arguments are provided by&nbsp;that <code>reduce</code>. So we&#8217;re a bit stuck in a loop: to understand this function we need to understand&nbsp;the <code>reduce</code> and to understand&nbsp;the <code>reduce</code> we need to understand this&nbsp;function.</p>
 <p>To escape that loop, we&#8217;re not going into&nbsp;how <code>reduce</code> works just yet. Instead, I&#8217;m going to say (simplified so not entirely correct)&nbsp;that <code>row-map</code> is the second argument provided to&nbsp;the <code>reduce</code>, i.e. the empty&nbsp;map <code>{}</code>. And&nbsp;that <code>[vamp-key value]</code> is the first item in our collection (see above),&nbsp;i.e. <code>[:name "Edward Cullen"]</code>.</p>
 <p>That leaves us with two words to explain in this anonymous&nbsp;function: <code>assoc</code> and <code>convert</code>.</p>
 <p>The <code>convert</code> function was defined earlier in the code example<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">5</a></sup>. What it does, is that&nbsp;if <code>vamp-key</code> is <code>:glitter-index</code>, it converts&nbsp;the <code>value</code> from a string to an integer, e.g.&nbsp;from <code>"10"</code> to <code>10</code>.</p>
 <p><a href="https://clojuredocs.org/clojure.core/assoc"><code>assoc</code></a> is a way to add or update an existing map<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">6</a></sup>. For&nbsp;example:</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="nb">assoc </span><span class="p">{}</span> <span class="ss">:name</span> <span class="s">"Edward Cullen"</span><span class="p">)</span>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="nb">assoc </span><span class="p">{}</span><span class="w"> </span><span class="ss">:name</span><span class="w"> </span><span class="s">"Edward Cullen"</span><span class="p">)</span>
 <span class="c1">; =&gt; {:name "Edward Cullen"}</span>
-<span class="p">(</span><span class="nb">assoc </span><span class="p">{</span><span class="ss">:name</span> <span class="s">"Edward Cullen"</span><span class="p">}</span> <span class="ss">:glitter-index</span> <span class="mi">10</span> <span class="p">)</span>
+<span class="p">(</span><span class="nb">assoc </span><span class="p">{</span><span class="ss">:name</span><span class="w"> </span><span class="s">"Edward Cullen"</span><span class="p">}</span><span class="w"> </span><span class="ss">:glitter-index</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="p">)</span>
 <span class="c1">; =&gt; {:name "Edward Cullen" :glitter-index 10}</span>
-</code></pre>
+</pre></div>
 
 <p>Now we have all the elements to figure out what this function used by&nbsp;the <code>reduce</code> does. It takes an existing map&nbsp;(<code>row-map</code>) and a key-value pair&nbsp;(e.g. <code>:name "Edward Cullen"</code>). It converts the value of the key-value pair to an integer if the key&nbsp;equals <code>:glitter-index</code>. Then it creates a new map that contains both the existing map and the post-conversion key-value&nbsp;pair.</p>
 <h3>Putting the pieces of&nbsp;the <code>reduce</code> back&nbsp;together</h3>
 <p>Now that we understand the parts of&nbsp;the <code>reduce</code>, we should be able to put them together again to understand the&nbsp;whole:</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">unmapped-row</span><span class="p">]</span>
-         <span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">row-map</span> <span class="p">[</span><span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">]]</span>
-                   <span class="p">(</span><span class="nb">assoc </span><span class="nv">row-map</span> <span class="nv">vamp-key</span> <span class="p">(</span><span class="nf">convert</span> <span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">)))</span>
-                 <span class="p">{}</span>
-                 <span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span> <span class="nv">unmapped-row</span><span class="p">)))</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">unmapped-row</span><span class="p">]</span>
+<span class="w">         </span><span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">row-map</span><span class="w"> </span><span class="p">[</span><span class="nv">vamp-key</span><span class="w"> </span><span class="nv">value</span><span class="p">]]</span>
+<span class="w">                   </span><span class="p">(</span><span class="nb">assoc </span><span class="nv">row-map</span><span class="w"> </span><span class="nv">vamp-key</span><span class="w"> </span><span class="p">(</span><span class="nf">convert</span><span class="w"> </span><span class="nv">vamp-key</span><span class="w"> </span><span class="nv">value</span><span class="p">)))</span>
+<span class="w">                 </span><span class="p">{}</span>
+<span class="w">                 </span><span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span><span class="w"> </span><span class="nv">unmapped-row</span><span class="p">)))</span>
+</pre></div>
 
 <p>To summarize, those parts&nbsp;are:</p>
 <ul>
@@ -244,40 +243,40 @@ Carlisle Cullen,6
 </ul>
 <p>This&nbsp;means <code>reduce</code> will execute the function twice. The first time it adds&nbsp;the <code>name</code> key-value pair to the empty map<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">7</a></sup>. The second time it adds&nbsp;the <code>glitter-index</code> key-value pair (including converting the value to an integer) to that same map. So we end up with both&nbsp;the <code>name</code> and <code>glitter-index</code> key-value pairs in the&nbsp;map.</p>
 <p>We can check our understanding, by isolating&nbsp;the <code>reduce</code> function and providing it with&nbsp;an <code>unmapped-row</code>:</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">unmapped-row</span> <span class="p">[</span><span class="s">"Edward Cullen"</span> <span class="s">"10"</span><span class="p">])</span>
-<span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">row-map</span> <span class="p">[</span><span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">]]</span>
-         <span class="p">(</span><span class="nb">assoc </span><span class="nv">row-map</span> <span class="nv">vamp-key</span> <span class="p">(</span><span class="nf">convert</span> <span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">)))</span>
-       <span class="p">{}</span>
-       <span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span> <span class="nv">unmapped-row</span><span class="p">))</span>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="k">def </span><span class="nv">unmapped-row</span><span class="w"> </span><span class="p">[</span><span class="s">"Edward Cullen"</span><span class="w"> </span><span class="s">"10"</span><span class="p">])</span>
+<span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">row-map</span><span class="w"> </span><span class="p">[</span><span class="nv">vamp-key</span><span class="w"> </span><span class="nv">value</span><span class="p">]]</span>
+<span class="w">         </span><span class="p">(</span><span class="nb">assoc </span><span class="nv">row-map</span><span class="w"> </span><span class="nv">vamp-key</span><span class="w"> </span><span class="p">(</span><span class="nf">convert</span><span class="w"> </span><span class="nv">vamp-key</span><span class="w"> </span><span class="nv">value</span><span class="p">)))</span>
+<span class="w">       </span><span class="p">{}</span>
+<span class="w">       </span><span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span><span class="w"> </span><span class="nv">unmapped-row</span><span class="p">))</span>
 <span class="c1">; =&gt; {:name "Edward Cullen", :glitter-index 10}</span>
-</code></pre>
+</pre></div>
 
 <h2><a id="the-mapify-function">The <code>mapify</code> function, <code>map</code>ping&nbsp;the <code>reduce</code></a></h2>
 <p>Now that we understand&nbsp;the <code>reduce</code>, we can actually guess what&nbsp;the <code>map</code> that uses&nbsp;this <code>reduce</code>, does.&nbsp;The <code>reduce</code> works on a single row, but our data consists of several rows. So&nbsp;the <code>map</code> must be the thing that loops through the rows, providing them one-by-one to&nbsp;the <code>reduce</code>.</p>
 <p>Of course, we want to do better than guessing. So let&#8217;s revisit <a href="https://clojuredocs.org/clojure.core/map"><code>map</code></a>. It takes a function and at least one collection. It will apply the function to the set of first items in the collections, then to the second, etc. The function is&nbsp;the <code>reduce</code> we just figured out. And as we saw when <a href="#breaking-up-the-function-body">breaking up the function body</a>,&nbsp;the <code>map</code> in&nbsp;the <code>mapify</code> has only one collection-parameter,&nbsp;called <code>rows</code>. So that confirms our&nbsp;guess: <code>map</code> loops through&nbsp;the <code>rows</code><sup id="fnref:7"><a class="footnote-ref" href="#fn:7">8</a></sup> and transforms them via&nbsp;the <code>reduce</code>.</p>
 <p>In conclusion, all this figuring out let&#8217;s us look at&nbsp;this:</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">mapify</span>
-  <span class="s">"Return a seq of maps like {:name \"Edward Cullen\" :glitter-index 10}"</span>
-  <span class="p">[</span><span class="nv">rows</span><span class="p">]</span>
-  <span class="p">(</span><span class="nb">map </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">unmapped-row</span><span class="p">]</span>
-         <span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">row-map</span> <span class="p">[</span><span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">]]</span>
-                   <span class="p">(</span><span class="nb">assoc </span><span class="nv">row-map</span> <span class="nv">vamp-key</span> <span class="p">(</span><span class="nf">convert</span> <span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">)))</span>
-                 <span class="p">{}</span>
-                 <span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span> <span class="nv">unmapped-row</span><span class="p">)))</span>
-       <span class="nv">rows</span><span class="p">))</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="kd">defn </span><span class="nv">mapify</span>
+<span class="w">  </span><span class="s">"Return a seq of maps like {:name \"Edward Cullen\" :glitter-index 10}"</span>
+<span class="w">  </span><span class="p">[</span><span class="nv">rows</span><span class="p">]</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">map </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">unmapped-row</span><span class="p">]</span>
+<span class="w">         </span><span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">row-map</span><span class="w"> </span><span class="p">[</span><span class="nv">vamp-key</span><span class="w"> </span><span class="nv">value</span><span class="p">]]</span>
+<span class="w">                   </span><span class="p">(</span><span class="nb">assoc </span><span class="nv">row-map</span><span class="w"> </span><span class="nv">vamp-key</span><span class="w"> </span><span class="p">(</span><span class="nf">convert</span><span class="w"> </span><span class="nv">vamp-key</span><span class="w"> </span><span class="nv">value</span><span class="p">)))</span>
+<span class="w">                 </span><span class="p">{}</span>
+<span class="w">                 </span><span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span><span class="w"> </span><span class="nv">unmapped-row</span><span class="p">)))</span>
+<span class="w">       </span><span class="nv">rows</span><span class="p">))</span>
+</pre></div>
 
 <p>and think of it like&nbsp;this:</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">mapify</span>
-  <span class="s">"Return a seq of maps like {:name \"Edward Cullen\" :glitter-index 10}"</span>
-  <span class="p">[</span><span class="nv">rows</span><span class="p">]</span>
-  <span class="p">(</span><span class="nb">map </span><span class="p">(</span><span class="nf">do-stuff</span><span class="p">)</span>
-       <span class="nv">rows</span><span class="p">))</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="kd">defn </span><span class="nv">mapify</span>
+<span class="w">  </span><span class="s">"Return a seq of maps like {:name \"Edward Cullen\" :glitter-index 10}"</span>
+<span class="w">  </span><span class="p">[</span><span class="nv">rows</span><span class="p">]</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">map </span><span class="p">(</span><span class="nf">do-stuff</span><span class="p">)</span>
+<span class="w">       </span><span class="nv">rows</span><span class="p">))</span>
+</pre></div>
 
 <p>Where we know&nbsp;that <code>do-stuff</code> changes the rows into maps with&nbsp;keys <code>:name</code> and <code>:glitter-index</code> and that it converts the value of&nbsp;the <code>:glitter-index</code> from a string to an integer. Looking at the function fully written out, we&#8217;ll probably remember that&nbsp;the <code>(map vector vamp-keys unmapped-row)</code> does the former and that the function of&nbsp;the <code>reduce</code> does the latter. And if we want to know how exactly it does these things, we&#8217;ll have to re-figure it out. Or scroll back up a bit and read it&nbsp;there.</p>
 <p>Having done all this work (and writing) I can&#8217;t help but feel a bit disappointed. In the end, the function does not seem to do a lot. To illustrate, in Python you&#8217;d write this to do basically<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup> the same&nbsp;thing:</p>
-<pre class="code literal-block"><span></span><code><span class="k">def</span> <span class="nf">mapify</span><span class="p">(</span><span class="n">rows</span><span class="p">):</span>
+<div class="code"><pre class="code literal-block"><span class="k">def</span> <span class="nf">mapify</span><span class="p">(</span><span class="n">rows</span><span class="p">):</span>
   <span class="k">return</span> <span class="p">[</span>
     <span class="p">{</span>
       <span class="n">vamp_keys</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
@@ -295,7 +294,7 @@ Carlisle Cullen,6
 <span class="c1"># =&gt; [{'name': 'Edward Cullen', 'glitter-index': 10}, {'name': 'Bella Swan', 'glitter-index': 0},</span>
 <span class="c1"># {'name': 'Charlie Swan', 'glitter-index': 0}, {'name': 'Jacob Black', 'glitter-index': 3},</span>
 <span class="c1"># {'name': 'Carlisle Cullen', 'glitter-index': 6}]</span>
-</code></pre>
+</pre></div>
 
 <p><strong>edit 13 July 2022</strong><br>
 The Clojure and Python versions are not as equivalent as I thought, see my follow-up post <a href="../clj-10-the-mapify-function-of-clj-9-revisited/">(clj 10) The mapify function of (clj 9) revisited</a>.</p>
@@ -358,7 +357,6 @@ I wrote about the sequence abstraction in <a href="../../2021/clj7-programming-t
 <p>It makes me wonder if the example is fully idiomatic Clojure. It probably is, though, because it&#8217;s from a book teaching Clojure. <a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 10 in the text">↩</a></p>
 </li>
 </ol>
-</div>
 </div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">

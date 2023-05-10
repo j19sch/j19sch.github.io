@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about elephant carpaccio)</title>
   <id>https://smallsheds.garden/categories/elephant-carpaccio.atom</id>
-  <updated>2022-12-29T16:36:53Z</updated>
+  <updated>2023-05-10T15:33:55Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -27,7 +27,7 @@
     <category term="agile" label="agile"/>
     <category term="elephant-carpaccio" label="elephant carpaccio"/>
     <category term="facilitation" label="facilitation"/>
-    <category term="slices" label="slices"/>
+    <category term="small-steps" label="small steps"/>
     <category term="workshop" label="workshop"/>
   </entry>
   <entry>
@@ -65,7 +65,7 @@
     <category term="agile" label="agile"/>
     <category term="elephant-carpaccio" label="elephant carpaccio"/>
     <category term="facilitation" label="facilitation"/>
-    <category term="slices" label="slices"/>
+    <category term="small-steps" label="small steps"/>
     <category term="workshop" label="workshop"/>
   </entry>
 </feed>

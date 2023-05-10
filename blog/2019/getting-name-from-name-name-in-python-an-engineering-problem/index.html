@@ -109,8 +109,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>Today I was presented with an interesting engineering problem. (Important later: context was the code of an auto-test.) Given a string of the format &#8220;Name: [name]&#8221;, what&#8217;s the best way to get the [name] in&nbsp;Python?</p>
+    <p>Today I was presented with an interesting engineering problem. (Important later: context was the code of an auto-test.) Given a string of the format &#8220;Name: [name]&#8221;, what&#8217;s the best way to get the [name] in&nbsp;Python?</p>
 <p>There are several&nbsp;options:</p>
 <ul>
 <li><code>lstrip()</code></li>
@@ -123,69 +122,69 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <!-- TEASER_END -->
 
 <h3>lstrip()</h3>
-<pre class="code literal-block"><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span> <span class="o">=</span> <span class="s2">"Name: this-is-the-name"</span>
+<div class="code"><pre class="code literal-block"><span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span> <span class="o">=</span> <span class="s2">"Name: this-is-the-name"</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s2">"Name: "</span><span class="p">)</span>
 <span class="s1">'this-is-the-name'</span>
-</code></pre>
+</pre></div>
 
 <p>That seems to work until we try a different&nbsp;string:</p>
-<pre class="code literal-block"><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span> <span class="o">=</span> <span class="s2">"Name: a name"</span>
+<div class="code"><pre class="code literal-block"><span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span> <span class="o">=</span> <span class="s2">"Name: a name"</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s2">"Name: "</span><span class="p">)</span>
 <span class="s1">'name'</span>
-</code></pre>
+</pre></div>
 
 <p>This may seem weird,&nbsp;but <code>lstrip()</code> is doing exactly <a href="https://docs.python.org/3.6/library/stdtypes.html#str.lstrip">what it says it will do</a>: &#8220;The chars argument is not a prefix; rather, all combinations of its values are stripped.&#8221; So it will continue stripping until it encounters the first character that doesn&#8217;t match any character in the string we gave&nbsp;to <code>lstrip()</code>.</p>
 <p>To fix that, we can&nbsp;do:</p>
-<pre class="code literal-block"><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span> <span class="o">=</span> <span class="s2">"Name: a name"</span>
+<div class="code"><pre class="code literal-block"><span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span> <span class="o">=</span> <span class="s2">"Name: a name"</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s2">"Name:"</span><span class="p">)</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span>
 <span class="s1">'a name'</span>
-</code></pre>
+</pre></div>
 
 <p>Where the&nbsp;first <code>lstrip()</code> won&#8217;t get beyond the space and the&nbsp;second <code>lstrip()</code> will get rid of that space for&nbsp;us.</p>
 <h3>split()</h3>
-<pre class="code literal-block"><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span> <span class="o">=</span> <span class="s2">"Name: this-is-the-name"</span>
+<div class="code"><pre class="code literal-block"><span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span> <span class="o">=</span> <span class="s2">"Name: this-is-the-name"</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">":"</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span>
 <span class="s1">'this-is-the-name'</span>
 
 <span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span> <span class="o">=</span> <span class="s2">"Name: a name"</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">":"</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span>
 <span class="s1">'a name'</span>
-</code></pre>
+</pre></div>
 
 <p>The <code>split()</code> method will <a href="https://docs.python.org/3.6/library/stdtypes.html#str.split">split the string</a> on the colon (:) into a list with two items. We get the second item with&nbsp;the <code>[1]</code> (list indices start at 0). We strip off the leading&nbsp;space.</p>
 <h3>replace()</h3>
-<pre class="code literal-block"><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span> <span class="o">=</span> <span class="s2">"Name: this-is-the-name"</span>
+<div class="code"><pre class="code literal-block"><span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span> <span class="o">=</span> <span class="s2">"Name: this-is-the-name"</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"Name: "</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 <span class="s1">'this-is-the-name'</span>
 
 <span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span> <span class="o">=</span> <span class="s2">"Name: a name"</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"Name: "</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 <span class="s1">'a name'</span>
-</code></pre>
+</pre></div>
 
 <p>The <code>replace()</code> method replaces parts of a string. So here we replace &#8220;Name: &#8221; with an empty string - deleting it. The &#8216;1&#8217; argument at the end&nbsp;tells <code>replace()</code> to only replace the first&nbsp;occurrence:</p>
-<pre class="code literal-block"><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">too_many</span> <span class="o">=</span> <span class="s2">"Name: more Name: please"</span>
+<div class="code"><pre class="code literal-block"><span class="o">&gt;&gt;&gt;</span> <span class="n">too_many</span> <span class="o">=</span> <span class="s2">"Name: more Name: please"</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">too_many</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"Name: "</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span>
 <span class="s1">'more please'</span>
 
 <span class="o">&gt;&gt;&gt;</span> <span class="n">too_many</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"Name: "</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 <span class="s1">'more Name: please'</span>
-</code></pre>
+</pre></div>
 
 <h3>string&nbsp;slicing</h3>
 <p>Python allows you to grab slices from a string similar to what you do from a list (as we did for&nbsp;the <code>split()</code> above).</p>
-<pre class="code literal-block"><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span> <span class="o">=</span> <span class="s2">"Name: this-is-the-name"</span>
+<div class="code"><pre class="code literal-block"><span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span> <span class="o">=</span> <span class="s2">"Name: this-is-the-name"</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span><span class="p">[</span><span class="mi">6</span><span class="p">:]</span>
 <span class="s1">'this-is-the-name'</span>
 
 <span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span> <span class="o">=</span> <span class="s2">"Name: a name"</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span><span class="p">[</span><span class="mi">6</span><span class="p">:]</span>
 <span class="s1">'a name'</span>
-</code></pre>
+</pre></div>
 
 <p>The number before the colon tells Python where to start, the one after the colon where to end.&nbsp;So <code>[6:]</code> means to start after the 6th character (or rather from index 6, since indices start at 0) and continue until the end of the string (because no number was&nbsp;given).</p>
 <h3>regex</h3>
-<pre class="code literal-block"><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">re</span>
+<div class="code"><pre class="code literal-block"><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">re</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">regex</span> <span class="o">=</span> <span class="s2">"(^Name: )(.+)"</span>
 
 <span class="o">&gt;&gt;&gt;</span> <span class="n">our_string</span> <span class="o">=</span> <span class="s2">"Name: this-is-the-name"</span>
@@ -195,7 +194,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <span class="o">&gt;&gt;&gt;</span> <span class="n">our_other_string</span> <span class="o">=</span> <span class="s2">"Name: a name"</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">regex</span><span class="p">,</span> <span class="n">our_other_string</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 <span class="s1">'a name'</span>
-</code></pre>
+</pre></div>
 
 <p>The regular expression is defined in&nbsp;the <code>regex</code> variable. It describes a string that starts with &#8220;Name: &#8221; and is followed by at least one other character. The parentheses define groups, which we&#8217;ll use to get the part we&#8217;re interested in, i.e. the part after &#8220;Name:&nbsp;&#8221;.</p>
 <p><code>match()</code> will return a <a href="https://docs.python.org/3.6/library/re.html#match-objects">match object</a> if zero or more characters at the beginning of the string <a href="https://docs.python.org/3.6/library/re.html#re.match">match</a> the regular expression pattern. Which means we don&#8217;t actually need the &#8216;^&#8217; at the start of our regex to only match the start of the&nbsp;string.</p>
@@ -224,7 +223,6 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <p>Personally I will always trade the code being less explicit about what it does for being more explicit about the thing-under-test and what my intentions are. Because figuring out what the thing-under-test exactly does and what someone&#8217;s intentions were, are hard things to do. Learning some new things about a programming language or tool, significantly less so - even if it&#8217;s&nbsp;regex.</p>
 <hr>
 <p><em>This post was originally published <a href="https://testingcurve.wordpress.com/2019/08/26/getting-name-from-name-name-in-python-an-engineering-problem/">here</a>.</em></p>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../../categories/programming/" rel="tag">programming</a></li>

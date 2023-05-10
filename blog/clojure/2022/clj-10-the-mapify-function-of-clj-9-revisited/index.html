@@ -109,8 +109,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>In my <a href="../clj-9-how-to-figure-out-what-a-function-does/">previous Clojure post</a> I covered the code example at the end of Chapter 4 of <a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">&#8220;Clojure for the Brave and True&#8221;</a>. Or rather, I focused on a single function in the example,&nbsp;called <code>mapify</code>, and described how I figured out what it does. At the <a href="../clj-9-how-to-figure-out-what-a-function-does/#the-mapify-function">end of that post</a> I shared my&nbsp;disappointment:</p>
+    <p>In my <a href="../clj-9-how-to-figure-out-what-a-function-does/">previous Clojure post</a> I covered the code example at the end of Chapter 4 of <a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">&#8220;Clojure for the Brave and True&#8221;</a>. Or rather, I focused on a single function in the example,&nbsp;called <code>mapify</code>, and described how I figured out what it does. At the <a href="../clj-9-how-to-figure-out-what-a-function-does/#the-mapify-function">end of that post</a> I shared my&nbsp;disappointment:</p>
 <blockquote>
 <p>Having done all this work (and writing) I can&#8217;t help but feel a bit disappointed. In the end, the function does not seem to do a&nbsp;lot.</p>
 </blockquote>
@@ -121,38 +120,38 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <h2>The Cojure version&nbsp;of <code>mapify</code>
 </h2>
 <p>The Clojure version looks like&nbsp;this:</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">mapify</span>
-  <span class="p">[</span><span class="nv">rows</span><span class="p">]</span>
-  <span class="p">(</span><span class="nb">map </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">unmapped-row</span><span class="p">]</span>
-         <span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">row-map</span> <span class="p">[</span><span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">]]</span>
-                   <span class="p">(</span><span class="nb">assoc </span><span class="nv">row-map</span> <span class="nv">vamp-key</span> <span class="p">(</span><span class="nf">convert</span> <span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">)))</span>
-                 <span class="p">{}</span>
-                 <span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span> <span class="nv">unmapped-row</span><span class="p">)))</span>
-       <span class="nv">rows</span><span class="p">))</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="kd">defn </span><span class="nv">mapify</span>
+<span class="w">  </span><span class="p">[</span><span class="nv">rows</span><span class="p">]</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">map </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">unmapped-row</span><span class="p">]</span>
+<span class="w">         </span><span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">row-map</span><span class="w"> </span><span class="p">[</span><span class="nv">vamp-key</span><span class="w"> </span><span class="nv">value</span><span class="p">]]</span>
+<span class="w">                   </span><span class="p">(</span><span class="nb">assoc </span><span class="nv">row-map</span><span class="w"> </span><span class="nv">vamp-key</span><span class="w"> </span><span class="p">(</span><span class="nf">convert</span><span class="w"> </span><span class="nv">vamp-key</span><span class="w"> </span><span class="nv">value</span><span class="p">)))</span>
+<span class="w">                 </span><span class="p">{}</span>
+<span class="w">                 </span><span class="p">(</span><span class="nb">map vector </span><span class="nv">vamp-keys</span><span class="w"> </span><span class="nv">unmapped-row</span><span class="p">)))</span>
+<span class="w">       </span><span class="nv">rows</span><span class="p">))</span>
+</pre></div>
 
 <p>It expects an argument similar&nbsp;to:</p>
-<pre class="code literal-block"><span></span><code><span class="p">([</span><span class="s">"Edward Cullen"</span> <span class="s">"10"</span><span class="p">]</span> <span class="p">[</span><span class="s">"Bella Swan"</span> <span class="s">"0"</span><span class="p">])</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="p">([</span><span class="s">"Edward Cullen"</span><span class="w"> </span><span class="s">"10"</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="s">"Bella Swan"</span><span class="w"> </span><span class="s">"0"</span><span class="p">])</span>
+</pre></div>
 
 <p>and transforms it into a sequence of&nbsp;maps:</p>
-<pre class="code literal-block"><span></span><code><span class="p">[{</span><span class="ss">:name</span> <span class="s">"Edward Cullen"</span> <span class="ss">:glitter-index</span> <span class="mi">10</span><span class="p">}</span> <span class="p">{</span><span class="ss">:name</span> <span class="s">"Bella Swan"</span> <span class="ss">:glitter-index</span> <span class="mi">0</span><span class="p">}]</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="p">[{</span><span class="ss">:name</span><span class="w"> </span><span class="s">"Edward Cullen"</span><span class="w"> </span><span class="ss">:glitter-index</span><span class="w"> </span><span class="mi">10</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="ss">:name</span><span class="w"> </span><span class="s">"Bella Swan"</span><span class="w"> </span><span class="ss">:glitter-index</span><span class="w"> </span><span class="mi">0</span><span class="p">}]</span>
+</pre></div>
 
 <p>The main thing to note about the Clojure version are&nbsp;the <code>vamp-keys</code> and&nbsp;the <code>convert</code>, which were defined earlier in <a href="https://www.braveclojure.com/core-functions-in-depth/#A_Vampire_Data_Analysis_Program_for_the_FWPD">the example</a>.</p>
 <p>The <code>vamp-keys</code> lists the keys that are used to transform each sequence of the input argument to a&nbsp;map:</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">vamp-keys</span> <span class="p">[</span><span class="ss">:name</span> <span class="ss">:glitter-index</span><span class="p">])</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="k">def </span><span class="nv">vamp-keys</span><span class="w"> </span><span class="p">[</span><span class="ss">:name</span><span class="w"> </span><span class="ss">:glitter-index</span><span class="p">])</span>
+</pre></div>
 
 <p>So this variable describes our expectations of the input: a name and a glitter&nbsp;index.</p>
 <p>The <code>convert</code> function uses&nbsp;the <code>conversions</code> variable to convert a value in our&nbsp;map:</p>
-<pre class="code literal-block"><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">conversions</span> <span class="p">{</span><span class="ss">:name</span> <span class="nv">identity</span>
-                  <span class="ss">:glitter-index</span> <span class="nv">str-&gt;int</span><span class="p">})</span>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="k">def </span><span class="nv">conversions</span><span class="w"> </span><span class="p">{</span><span class="ss">:name</span><span class="w"> </span><span class="nv">identity</span>
+<span class="w">                  </span><span class="ss">:glitter-index</span><span class="w"> </span><span class="nv">str-&gt;int</span><span class="p">})</span>
 
 <span class="p">(</span><span class="kd">defn </span><span class="nv">convert</span>
-  <span class="p">[</span><span class="nv">vamp-key</span> <span class="nv">value</span><span class="p">]</span>
-  <span class="p">((</span><span class="nb">get </span><span class="nv">conversions</span> <span class="nv">vamp-key</span><span class="p">)</span> <span class="nv">value</span><span class="p">))</span>
-</code></pre>
+<span class="w">  </span><span class="p">[</span><span class="nv">vamp-key</span><span class="w"> </span><span class="nv">value</span><span class="p">]</span>
+<span class="w">  </span><span class="p">((</span><span class="nb">get </span><span class="nv">conversions</span><span class="w"> </span><span class="nv">vamp-key</span><span class="p">)</span><span class="w"> </span><span class="nv">value</span><span class="p">))</span>
+</pre></div>
 
 <p>If the key&nbsp;is <code>:name</code>, it applies the <a href="https://clojuredocs.org/clojure.core/identity"><code>identity</code></a> function, i.e. the value is unchanged. If they key&nbsp;is <code>:glitter-index</code>, it converts the value from a string to an integer. That&#8217;s needed, because as you can see above, the argument&nbsp;to <code>mapify</code> has the glitter index still as a string. So&nbsp;the <code>conversions</code> variable describes if/how we want to convert the values in our&nbsp;map.</p>
 <p>The result of&nbsp;having <code>vamp-keys</code> and <code>convert</code> defined separately in this way is that, as Martin&nbsp;writes:</p>
@@ -162,7 +161,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <h2>The Python version&nbsp;of <code>mapify</code>
 </h2>
 <p>My Python version looks like&nbsp;this:</p>
-<pre class="code literal-block"><span></span><code><span class="n">vamp_keys</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"name"</span><span class="p">,</span> <span class="s2">"glitter-index"</span><span class="p">]</span>
+<div class="code"><pre class="code literal-block"><span class="n">vamp_keys</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"name"</span><span class="p">,</span> <span class="s2">"glitter-index"</span><span class="p">]</span>
 
 <span class="k">def</span> <span class="nf">mapify</span><span class="p">(</span><span class="n">rows</span><span class="p">):</span>
   <span class="k">return</span> <span class="p">[</span>
@@ -172,7 +171,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
     <span class="p">}</span>
     <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span>
   <span class="p">]</span>
-</code></pre>
+</pre></div>
 
 <p>Let&#8217;s start with the conversion: there is no&nbsp;separate <code>convert</code> function in my Python version. The conversion happens inside the function. (Inside&nbsp;the <code>return</code> statement&nbsp;even!)</p>
 <p>There is a&nbsp;separate <code>vamp_keys</code> variable as in the Clojure version, but that variable is not used in the same way. The Python version refers to the items&nbsp;in <code>vamp_keys</code> by their index,&nbsp;e.g. <code>vamp_keys[0]</code>. The Clojure version on the other hand,&nbsp;uses <code>map</code> to loop through&nbsp;the <code>vamp-keys</code> and&nbsp;the <code>unmapped-row</code>.</p>
@@ -196,7 +195,6 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <p>Martin also shared a Clojure code equivalent to my Python version, so without that flexibility, and lo and behold, they look very similar. <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
 </li>
 </ol>
-</div>
 </div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
