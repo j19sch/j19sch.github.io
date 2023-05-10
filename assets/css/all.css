@@ -1438,10 +1438,7 @@ h5.talk, p.talk {
   font-weight: normal;
 }
 
-h6.note {
-  font-family: 'Montserrat', sans-serif;  
-  font-weight: 400;
-  font-style: normal;
+p.note {
   font-size: 0.95rem;
 }
 
