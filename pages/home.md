@@ -14,13 +14,15 @@ hidetitle: true
 		<p>Joep wandered into software testing in 2006. Two years later, he discovered context-driven testing and realized that testing is actually a good fit for someone with a degree in philosophy. Later he explored his technical interests further by building test automation and tooling.</p>
 		<p>However, after a decade in testing, Joep's focus shifted towards a bigger question: how can teams and organizations build and deliver good software? To answer that question, he has been exploring topics such as technical leadership, agile coaching, and software methodologies. You can see this development reflected in <a href="/blog/" target="_blank">his blog posts</a>.</p>
 		<p>Joep has given <a href="/my-talks/" target="_blank">talks and workshops</a> at conferences throughout Europe. He's also one of the organizers of the <a href="https://frogsconf.nl/" target="_blank">Friends of Good Software</a> unconference. He likes to drink coffee and write with a fountain pen.</p>
-		<p>Other online places you can find me at:</p>
+		<hr />
+		<p>Other online places you can find me:</p>
 		<ul>
 			<li><a href="https://chaos.social/@joeposaurus" target="_blank" rel="me">Mastodon</a></li>
 			<li><a href="https://github.com/j19sch" target="_blank">GitHub</a></li>
 			<li><a href="https://twitter.com/j19sch" target="_blank">Twitter</a></li>
 			<li><a href="https://www.linkedin.com/in/joepschuurkes/" target="_blank">LinkedIn</a></li>
 		</ul>
+		<p style="margin-top:1.5rem;">I'm looking for a new job, so feel free to take a look at <a href="https://www.dropbox.com/s/di4q1jmreya4yv9/cv-joep-schuurkes.pdf?dl=0" target="_blank">my CV</a>.</p>
 	</div>
 	<div style="max-width:200px">
 		<img src="/images/joep-coffee.jpg" alt="Joep drinking coffee" style="margin-top:0px;" />
