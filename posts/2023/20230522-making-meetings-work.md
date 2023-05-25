@@ -151,45 +151,44 @@ Unfortunately, no. It's good to have it as a heuristic, but something else is ne
 
 ## Leadership and the three core human capabilities
 
-In her book [No More Feedback](https://carolsanford.com/no-more-feedback-cultivate-consciousness-at-work/) Carol Sanford describes three core human capabilities and how they ideally should be developed:
+In her book [No More Feedback](https://carolsanford.com/no-more-feedback-cultivate-consciousness-at-work/) Carol Sanford describes three core human capabilities and how they ideally should be developed.
 
-- internal locus of control
-- external scope of considering
-- personal source of agency
-
+### internal locus of control
 Internal locus of control means that you feel control over your own life. You take accountability of outcomes and direction.
 
+### external scope of considering
 External scope and considering means that you take other people and living beings into account in your actions and endavours.
 
-Personal source of agency means that you feel you yourself have the authority to initiate action and to follow through.
+### personal source of agency
+Personal source of agency means that you feel that you yourself have the authority to initiate actions and to follow through.
 
+It's these capabilities we need to truly participate in a meeting. They prevent us from making the organizer or facilitator solely responsible for the success of the meeting. From only focusing on what we need to get out of the meeting. They encourage us to be skilfull participants. To display leadership during meetings. Not leadership as in taking charge and running the show, but leadership in the way Jerry Weinberg described it:
 
-It's these capabilities we need to truly participate in a meeting. They prevent us from make the organizer or facilitator solely responsible for the success of the meeting. And from only focusing on what we need to get out of the meeting.
+> creating an environment where everyone can contribute to solving the problem.
 
-They encourage us to be skilfull participants. To display leadership during meetings. Not leadership as in taking charge and running the show, but leadership in the way Jerry Weinberg described it: creating an environment where everyone can contribute to solving the problem.
-
+Improving meetings starts with small acts of leadership.
 
 
 
 # Improve your meetings by starting where you are
 
-Improving meetings starts with small acts of leadership. GeePaw Hill once [said](https://twitter.com/GeePawHill/status/1290316340369203201):
+GeePaw Hill once [said](https://twitter.com/GeePawHill/status/1290316340369203201):
 
 > *Why do people have long breakless meetings, when everyone in the room dislikes it, and everyone in the room knows it doesn't work very well?*
 
 If that is true, it doesn't take a lot to change it. A small spark is probably enough. And often a small spark, acting as a catalyst, is better than swooping in with a big change. Start where you are - as an individual, as a team, as an organization. Change can be uncomfortable, but it should always be safe.
 
-To close off this blog post, I want to share some of the things I've done in the past, to improve a meeting. I've split them in three categories: attending to time, to structure, and to people.
+To close off this post, I want to share some examples of things I've done in the past, to improve a meeting. I've split them in three categories: attending to time, to structure, and to people.
 
 
 ## Attending to time
 
-<div class="row">
+<div class="row align-items-center">
 	<div class="col-md-8">
-		<p style="margin-top:10px">20 or 50 minute meeting</p>
-		<p>decline a meeting</p>
-		<p>suggest a break</p>
-		<p>leave the meeting</p>
+		<p><strong>25 or 50 minute meeting:</strong> set the times on your invite so there's time for a break after and stick to those times</p>
+		<p><strong>decline a meeting:</strong> if you don't need to be there, if attending doesn't seem useful, don't go</p>
+		<p><strong>suggest a break:</strong> observe the energy in the room and at the right time, suggest a short break</p>
+		<p><strong>leave the meeting:</strong> if a meeting turns out not be useful for you, excuse yourself and leave</p>
 	</div>
 	<div class="col-md-4">
 		<figure class="figure">
@@ -202,16 +201,14 @@ To close off this blog post, I want to share some of the things I've done in the
 
 ## Attending to structure
 
-<div class="row">
-	<div class="col-md-8">
-		<ul style="margin-top:10px">
-			<li>ask to zoom in</li>
-			<li>write/draw and share</li>
-			<li>ask for a document upfront</li>
-			<li>move a chair, open a window</li>
-		</ul>
+<div class="row align-items-center">
+	<div class="col-md-9">
+		<p><strong>ask to zoom in:</strong> if someone is sharing their screen and it's hard or even just uncomfortable to read, ask them to zoom in</p>
+		<p><strong>write/draw and share:</strong> if there's a lot of conversation without notes or diagrams, start making them and share them as you make them</p>
+		<p><strong>ask for a document upfront:</strong> ask if you can do anything to prepare for the meeting, e.g. reading a document</p>
+		<p><strong>move a chair, open a window:</strong> improve the space the meeting is held in, make it more pleasant</p>
 	</div>
-	<div class="col-md-4">
+	<div class="col-md-3">
 		<figure class="figure">
 			<img src="/images/2023/making-meetings-work/composition-II-in-red-blue-and-yellow-mondriaan.jpg" class="figure-img img-fluid rounded"
 			alt="Composition II in Red, Blue, and Yellow by Mondriaan"/>
@@ -223,11 +220,11 @@ To close off this blog post, I want to share some of the things I've done in the
 
 ## Attending to people
 
-<div class="row">
+<div class="row align-items-center">
 	<div class="col-md-8">
-		<p style="margin-top:10px">amplify others</p>
-		<p>give credit</p>
-		<p>express appreciation</p>
+		<p><strong>amplify others:</strong> words here</p>
+		<p><strong>give credit:</strong> words here</p>
+		<p><strong>express appreciation:</strong> words here</p>
 	</div>
 	<div class="col-md-4">
 		<figure class="figure">
