@@ -3,13 +3,47 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about facilitation)</title>
   <id>https://smallsheds.garden/categories/cat_facilitation.atom</id>
-  <updated>2023-05-10T15:51:29Z</updated>
+  <updated>2023-05-30T08:52:27Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/cat_facilitation.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/cat_facilitation/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Making meetings work</title>
+    <id>https://smallsheds.garden/blog/2023/making-meetings-work/</id>
+    <updated>2023-05-30T09:31:25+02:00</updated>
+    <published>2023-05-30T09:31:25+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2023/making-meetings-work/"/>
+    <summary type="html">&lt;figure&gt;&lt;img src="https://smallsheds.garden/images/2023/making-meetings-work/venn-meeting.png"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;Too often I've heard people say: &lt;em&gt;"Oh no, not another meeting!"&lt;/em&gt; Usually this means they feel their time at work is split between time in meetings and time in which they do actual work. And to be fair, they have a point. I too have been in plenty of meetings that didn't achieve much of anything. It doesn't have to be this way, however. Meetings can be effective and they can leave you with a real sense of having accomplished something. And in this post I'll explain how to make that happen.&lt;/p&gt;
+&lt;h2&gt;We struggle with meetings&lt;/h2&gt;
+&lt;div class="row"&gt;
+    &lt;div class="col-md-4"&gt;
+        &lt;figure class="figure"&gt;
+            &lt;img src="https://smallsheds.garden/images/2023/making-meetings-work/sisyphus-titian.jpg" class="figure-img img-fluid rounded" alt="Sisyphus by Titian"&gt;
+            &lt;figcaption class="figure-caption text-center"&gt;Sisyphus by Titian&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-8"&gt;
+            &lt;p style="margin-top:10px"&gt;We struggle with meetings. On the one hand we keep proposing them, scheduling them, attending them. On the other hand we keep complaining about them. We feel sorry for people with a day full of meetings. When a meeting ends early, we &lt;em&gt;"get 10 minutes of our lives back"&lt;/em&gt;.&lt;/p&gt;
+            &lt;p&gt;To that &lt;a href="https://twitter.com/j19sch/status/1179798961131012096"&gt;I say&lt;/a&gt;:&lt;/p&gt;
+            &lt;blockquote&gt;
+                &lt;p&gt;&lt;em&gt;If you feel you do all your work outside of meetings, you're meeting wrong.&lt;/em&gt;&lt;/p&gt;
+            &lt;/blockquote&gt;
+            &lt;p&gt;It's something I realized while I was a scrum master: my work happens during meetings. Mostly team meetings and 1-to-1s. There's prep before and follow-up after meetings, but I did the core of my job through meetings.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2023/making-meetings-work/"&gt;Read more…&lt;/a&gt; (9 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="facilitation" label="facilitation"/>
+    <category term="leadership" label="leadership"/>
+    <category term="self-organization" label="self-organization"/>
+    <category term="sociocracy-30" label="sociocracy 3.0"/>
+  </entry>
   <entry>
     <title>Structuring group discussions with K-cards</title>
     <id>https://smallsheds.garden/blog/2022/structuring-group-discussions-with-k-cards/</id>
