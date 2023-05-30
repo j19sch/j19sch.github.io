@@ -210,6 +210,7 @@ To close off this post, I want to share some examples of things I've done that i
 		<p style="margin-top:10px"><strong>amplify others:</strong> contribute to everyone's voice being heard, especially if you're in a position of privilege</p>
 		<p><strong>give credit:</strong> if something you do or say wouldn't have come to be without someone else, give them credit, whether they are present or not</p>
 		<p><strong>express appreciation:</strong> if someone does something to make the meeting a better meeting, express your appreciation - either during or after the meeting</p>
+		<p><strong>make space to be human:</strong> meetings should be effective, but make sure there's also space for social interaction, for emotions, for being a human being<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
 	</div>
 	<div class="col-md-4">
 		<figure class="figure">
@@ -220,6 +221,7 @@ To close off this post, I want to share some examples of things I've done that i
 	</div>
 </div>
 
+[^1]: Shout-out to [Emily Webber](https://emilywebber.co.uk/) for her comment on my post that made me realize I had forgotten to include this.
 
 ---
 
@@ -229,4 +231,3 @@ Something I strongly believe about change is that small things done consistently
 
 *This post is based on my AgileTD 2020 talk ["Making meetings work"](https://smallsheds.garden/slides/atd2020-making-meetings-work.html#/).*
 
----
