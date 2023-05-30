@@ -1,7 +1,7 @@
 <!--
 .. title: Making meetings work
 .. slug: making-meetings-work
-.. date: 2023-05-22 14:57:25 UTC+02:00
+.. date: 2023-05-30 09:31:25 UTC+02:00
 .. tags: leadership, sociocracy 3.0, facilitation, self-organization
 .. category: facilitation
 .. link: 
@@ -10,7 +10,7 @@
 .. previewimage: /images/2023/making-meetings-work/venn-meeting.png
 -->
 
-Too often I've heard people say: *"On no, not another meeting!"* Usually this means they feel their time at work is split between time in meetings and time in which they do actual work. And to be fair, they have a point. I too have been in plenty of meetings that didn't achieve much of anything. It doesn't have to be this way, however. Meetings can be effective and they can leave you with a real sense of having accomplished something. And in this post I'll explain how to make that happen.
+Too often I've heard people say: *"Oh no, not another meeting!"* Usually this means they feel their time at work is split between time in meetings and time in which they do actual work. And to be fair, they have a point. I too have been in plenty of meetings that didn't achieve much of anything. It doesn't have to be this way, however. Meetings can be effective and they can leave you with a real sense of having accomplished something. And in this post I'll explain how to make that happen.
 
 
 # We struggle with meetings
@@ -79,15 +79,15 @@ A meeting is __synchronous collaboration with a purpose__.
 
 <div class="row align-items-center">
 	<div class="col-md-8">
-			<p>If a meeting doesn't need to be <em>synchronous</em>, it could have been an email. Or a Slack message. Or any other form of asynchronous communication.</p>
-			<p>If a meeting doesn't need any <em>collaboration</em>, it's a speech. It's one-way communication.</p>
+			<p>If a meeting doesn't need to be <em>synchronous</em>, it could have been an email. Or a Slack message. Or a pull request. Or any other form of asynchronous communication.</p>
+			<p>If a meeting doesn't need any <em>collaboration</em>, it's a speech. It's one-way communication, a broadcast.</p>
 			<p>If a meeting doesn't need a <em>purpose</em>, it's a game. Not that games and play don't serve a purpose, but what you do and create in the game, does not have a purpose outside the game.</p>
 	</div>
 	<div class="col-md-4">
 		<figure class="figure">
 			<img src="/images/2023/making-meetings-work/venn-not-meetings.png" class="figure-img img-fluid rounded"
 			alt="Venn diagram of synchronous, collaboration, and purpose, with meeting at the center and game, speech, and email in the other intersections"/>
-			<figcaption class="figure-caption text-center">What is not a meeting?</figcaption>
+			<figcaption class="figure-caption text-center">these are not meetings</figcaption>
 		</figure>
 	</div>
 </div>
@@ -120,11 +120,11 @@ Or as [Sociocracy 3.0](https://patterns.sociocracy30.org/what-is-s3.html) puts i
 <div class="row">
 	<div class="col-md-8">
 			<p style="margin-top:10px">A meeting will never be a good meeting if we experience it as something that happens to us, as something that's imposed on us.</p>
-			<p>In his book <a href="https://www.penguinrandomhouse.com/books/330616/orbiting-the-giant-hairball-by-gordon-mackenzie/">"Orbiting The Giant Hairball"</a> Gordon Mackenzie tells the story of how he facilitated a brainstorm session for a task force, after sitting through the incredibily boring and unengaging first part of their meeting. He started with an exercise, using candles and a pair of Tibetan cymbals, to help the attendees let go of their notions and biases of where they thought the meeting would or should go. Thanks to that exercise, the brainstorm proceeded in a completely different way than the previous part of the meeting:</p>
+			<p>In his book <a href="https://www.penguinrandomhouse.com/books/330616/orbiting-the-giant-hairball-by-gordon-mackenzie/">"Orbiting The Giant Hairball"</a> Gordon Mackenzie tells the story of how he facilitated a brainstorm session for a task force, after sitting through the incredibly boring and unengaging first part of their meeting. He started with an exercise, using candles and a pair of Tibetan cymbals, to help the attendees let go of their notions and biases of where they thought the meeting would or should go. Thanks to that exercise, the brainstorm proceeded in a completely different way than the previous part of the meeting:</p>
 			<blockquote>
 				<p><em>Release from their inculcated culture allowed the task force members to metamorphize - for a little while - from mere attendants at a meeting into vibrant participants in an evolving endeavor. (p206)</em></p>
 			</blockquote>
-			<p>Isn't that how all meetings should be? Not with attendants, but with vibrant participants in an evolving endavor?</p>
+			<p>Isn't that how all meetings should be? Not with attendants, but with vibrant participants in an evolving endeavor?</p>
 	</div>
 	<div class="col-md-4">
 		<figure class="figure">
@@ -144,12 +144,12 @@ In her book [No More Feedback](https://carolsanford.com/no-more-feedback-cultiva
 Internal locus of control means that you feel control over your own life. You take accountability of outcomes and direction.
 
 ### external scope of considering
-External scope and considering means that you take other people and living beings into account in your actions and endavours.
+External scope and considering means that you take other people and living beings into account in your actions and endeavors.
 
 ### personal source of agency
 Personal source of agency means that you feel that you yourself have the authority to initiate actions and to follow through.
 
-It's these capabilities we need to truly participate in a meeting. They prevent us from making the organizer or facilitator solely responsible for the success of the meeting. From only focusing on what we ourselves need to get out of the meeting. They encourage us to be skilfull participants. To display leadership during meetings. Not leadership as in taking charge and running the show, but leadership in the way Jerry Weinberg defined it:
+It's these capabilities we need to truly participate in a meeting. They prevent us from making the organizer or facilitator solely responsible for the success of the meeting. From only focusing on what we ourselves need to get out of the meeting. They encourage us to be skillful participants. To display leadership during meetings. Not leadership as in taking charge and running the show, but leadership in the way Jerry Weinberg defined it:
 
 > creating an environment where everyone can contribute to solving the problem.
 
@@ -207,7 +207,7 @@ To close off this post, I want to share some examples of things I've done that i
 
 <div class="row">
 	<div class="col-md-8">
-		<p style="margin-top:10px"><strong>amplify others:</strong> contribute to everyone’s voice being heard, especially if you're in a position of privilege</p>
+		<p style="margin-top:10px"><strong>amplify others:</strong> contribute to everyone's voice being heard, especially if you're in a position of privilege</p>
 		<p><strong>give credit:</strong> if something you do is built (partially) on someone else's work, give credit, whether that person is present or not</p>
 		<p><strong>give credit:</strong> if something you do or say wouldn't have come to be without someone else, give them credit, whether they are present or not</p>
 		<p><strong>express appreciation:</strong> if someone does something to make the meeting a better meeting, express your appreciation - either during or after the meeting</p>
@@ -224,20 +224,7 @@ To close off this post, I want to share some examples of things I've done that i
 
 ---
 
-<div class="row align-items-center">
-	<div class="col-md-4">
-		<figure class="figure">
-			<img src="/images/2023/making-meetings-work/trois-danseuses-degas.jpg" class="figure-img img-fluid rounded"
-			alt="Trois Danseuses by Degas"/>
-			<figcaption class="figure-caption text-center">Trois Danseuses by Degas</figcaption>
-		</figure>
-	</div>
-		<div class="col-md-8">
-		<p>Something I strongly believe about change is that<br/>small things done consistently, will beat any grand changes.</p>
-		<p>So in your next meeting I encourage you to ask yourself:<br/>
-			what's a small thing I can do to make this meeting better?</p>
-	</div>
-</div>
+Something I strongly believe about change is that small things done consistently, will beat any grand interventions. So in your next meeting I encourage you to ask yourself: *what's a small thing I can do to make this meeting better?*
 
 ---
 
