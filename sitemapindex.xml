@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://smallsheds.garden/blog/feed.atom</loc>
-  <lastmod>2023-05-24T12:42:00Z</lastmod>
+  <lastmod>2023-05-30T08:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/blog/rss.xml</loc>
-  <lastmod>2023-05-24T12:42:00Z</lastmod>
+  <lastmod>2023-05-30T08:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/agile-manifesto.atom</loc>
@@ -95,11 +95,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_facilitation.atom</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-05-30T08:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_facilitation.xml</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-05-30T08:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_leadership.atom</loc>
@@ -327,11 +327,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/facilitation.atom</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-05-30T08:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/facilitation.xml</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-05-30T08:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/heuristics.atom</loc>
@@ -367,11 +367,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/leadership.atom</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-05-30T08:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/leadership.xml</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-05-30T08:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/lean.atom</loc>
@@ -511,11 +511,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/self-organization.atom</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-05-30T08:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/self-organization.xml</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-05-30T08:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/semantics.atom</loc>
@@ -543,11 +543,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/sociocracy-30.atom</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-05-30T08:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/sociocracy-30.xml</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-05-30T08:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/software-development.atom</loc>
@@ -719,6 +719,6 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/sitemap.xml</loc>
-  <lastmod>2023-05-24T12:42:00Z</lastmod>
+  <lastmod>2023-05-30T12:10:00Z</lastmod>
  </sitemap>
 </sitemapindex>
