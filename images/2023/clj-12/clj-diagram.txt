@@ -1,5 +1,7 @@
 @startuml
 
+skinparam dpi 150
+
 skinparam componentStyle rectangle
 
 'skinparam linetype polyline
