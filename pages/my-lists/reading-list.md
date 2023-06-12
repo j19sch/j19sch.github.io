@@ -12,6 +12,13 @@ hidetitle: false
 - Emergent Strategy: Shaping Change, Changing Worlds - adrienne maree brown (did not finish, book club)
 - Two Cheers for Anarchism: Six Easy Pieces on Autonomy, Dignity and Meaningful Work and Play - James C. Scott
 - Gardeners Not Mechanics: How to cultivate change at work - Gary Lloyd (book club)
+- Other Minds: The Octopus, the Sea, and the Deep Origins of Consciousness - Peter Godfrey-Smith
+- Data and Reality (2nd ed) - William Kent
+- Commitment: Novel about Managing Project Risk - Chris Matts, Olav Maassen, Chris Geary
+- How to Spot a Fascist - Umberto Eco
+- On Writing: A Memoir of the Craft - Stephen King
+- The Island at the Center of the World: The Epic Story of Dutch Manhattan and the Forgotten Colony That Shaped America - Russell Shorto
+- Words of Power: A Guide for Ordinary People to Calm and De-Escalate Aggressive Individuals - Ellis Amdur
 
 
 ### 2022
