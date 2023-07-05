@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I'm a quality engineer and I'm not sure how I feel about that | Joep Schuurkes</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../feed.atom">
+<link rel="canonical" href="https://smallsheds.garden/blog/2023/im-a-quality-engineer-and-im-not-sure-how-i-feel-about-that/">
+<link rel="icon" href="../../../assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="../../../assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../assets/favicons/favicon-96x96.png" sizes="96x96">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../making-meetings-work/" title="Making meetings work" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="I'm a quality engineer and I'm not sure how I feel about that">
+<meta property="og:url" content="https://smallsheds.garden/blog/2023/im-a-quality-engineer-and-im-not-sure-how-i-feel-about-that/">
+<meta property="og:description" content="This post is a slightly edited version of the experience report I presented at the xp2023 conference. It covers my first six months at a scale-up, working as a quality engineer for the first time - af">
+<meta property="og:image" content="https://smallsheds.garden/images/default-preview.jpeg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2023-07-05T11:42:34+02:00">
+<meta property="article:tag" content="agile">
+<meta property="article:tag" content="conferences">
+<meta property="article:tag" content="leadership">
+<meta property="article:tag" content="management">
+<meta property="article:tag" content="quality engineering">
+<meta property="article:tag" content="software testing">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-projects/" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-talks/" class="nav-link">Talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../../my-lists/reading-list/" class="dropdown-item">Reading list</a>
+                    <a href="../../../my-lists/recommended-reading/" class="dropdown-item">Recommended reading</a>
+                    <a href="../../../my-lists/favorite-podcasts/" class="dropdown-item">Favorite podcasts</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../" class="dropdown-item">My blog</a>
+                    <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
+                    <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">I&#8217;m a quality engineer and I&#8217;m not sure how I feel about&nbsp;that</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep&nbsp;Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2023-07-05T11:42:34+02:00" itemprop="datePublished" title="5 July 2023">5 July 2023</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p>This post is a slightly edited version of the experience report I <a class="reference external" href="https://smallsheds.garden/slides/xp2023-quality-engineer.html">presented</a> at the <a class="reference external" href="https://www.agilealliance.org/xp2023/">xp2023</a> conference. It covers my first six months at a scale-up, working as a quality engineer for the first time - after having worked in other testing-related roles for 15+&nbsp;years.</p>
+<p>My main finding is that for a quality engineering role to work well, certain structures need to be in place. The most important one is that the impact the quality engineer is expected to have, is clear to both the quality engineer and the team(s) they are supporting. However, regardless of which structures you put in place, a quality engineer will also need to work around those structures to be fully&nbsp;effective.</p>
+<!-- TEASER_END -->
+<hr class="docutils">
+<nav class="contents" id="table-of-contents" role="doc-toc"><p class="topic-title">Table of&nbsp;Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#introduction" id="toc-entry-1">1.&nbsp;Introduction</a></p></li>
+<li><p><a class="reference internal" href="#background" id="toc-entry-2">2.&nbsp;Background</a></p></li>
+<li>
+<p><a class="reference internal" href="#my-story" id="toc-entry-3">3. My&nbsp;Story</a></p>
+<ul>
+<li><p><a class="reference internal" href="#the-situation-when-i-joined" id="toc-entry-4">The situation when I&nbsp;joined</a></p></li>
+<li><p><a class="reference internal" href="#the-first-four-months-september-to-december" id="toc-entry-5">The first four months: September to&nbsp;December</a></p></li>
+<li><p><a class="reference internal" href="#the-next-two-months-january-and-february" id="toc-entry-6">The next two months: January and&nbsp;February</a></p></li>
+<li><p><a class="reference internal" href="#the-layoffs-and-the-reorg" id="toc-entry-7">The layoffs and the&nbsp;reorg</a></p></li>
+<li><p><a class="reference internal" href="#epilogue" id="toc-entry-8">Epilogue</a></p></li>
+</ul>
+</li>
+<li>
+<p><a class="reference internal" href="#what-ive-learned" id="toc-entry-9">4. What I’ve&nbsp;learned</a></p>
+<ul>
+<li><p><a class="reference internal" href="#personal-reflections" id="toc-entry-10">Personal&nbsp;reflections</a></p></li>
+<li><p><a class="reference internal" href="#quality-engineering-reflections" id="toc-entry-11">Quality engineering&nbsp;reflections</a></p></li>
+<li><p><a class="reference internal" href="#reflections-on-testing-related-roles" id="toc-entry-12">Reflections on testing-related&nbsp;roles</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#acknowledgements" id="toc-entry-13">5.&nbsp;Acknowledgements</a></p></li>
+</ul></nav><hr class="docutils">
+<section id="introduction"><h2><a class="toc-backref" href="#toc-entry-1" role="doc-backlink">1.&nbsp;Introduction</a></h2>
+<p>In August of ‘22 I took on the role of quality engineer for the first time. The role wasn’t very clearly defined, as it had been introduced just recently to the company. It also wasn’t established yet in the two teams I would be supporting. In the first four months I focused on fulfilling the role as it was described to me. This left me frustrated. In the two months after that I took a different approach. I let go of those expectations and started contributing wherever I could. That period was cut short, as my role changed significantly after layoffs and a reorg. After the reorg, we did take one significant step in creating more clarity around the quality engineering role. I describe that step in the Epilogue of this&nbsp;report.</p>
+<p>The main themes of  this experience report&nbsp;are:</p>
+<ul class="simple">
+<li><p>trying to bring value to a new and somewhat ill-defined&nbsp;role</p></li>
+<li><p>being asked to support a team, while they don’t feel a clear need for what you&nbsp;bring</p></li>
+<li><p>positioning testing and quality engineering in an agile&nbsp;context.</p></li>
+</ul>
+<p>Although this report focuses on my experiences as a quality engineer, I believe it’s relevant to all roles with a testing/quality focus and/or a supporting/coaching&nbsp;focus.</p>
+</section><section id="background"><h2><a class="toc-backref" href="#toc-entry-2" role="doc-backlink">2.&nbsp;Background</a></h2>
+<p>Before starting this job as a quality engineer, I’d spent about 16 years working in software development. In 2006 I was someone with a degree in philosophy looking for a job, any job. Someone was willing to hire me as a software tester and that turned out to be a great fit for me. So since then I&#8217;ve been working as a software tester, scrum master, team lead, principal engineer, and&nbsp;consultant.</p>
+<p>In March of 2022 I started looking for a new job. I was looking for a hands-on role: work directly with teams, close to the technology. Preferably for a smaller company rather than a corporation and in a fully remote position. I found a job matching all those criteria at a company that provides Employer of Record (<span class="caps">EOR</span>) and related services. Luckily they were as enthusiastic about hiring me as I was about joining&nbsp;them.</p>
+</section><section id="my-story"><h2><a class="toc-backref" href="#toc-entry-3" role="doc-backlink">3. My&nbsp;Story</a></h2>
+<section id="the-situation-when-i-joined"><h3><a class="toc-backref" href="#toc-entry-4" role="doc-backlink">The situation when I&nbsp;joined</a></h3>
+<p>The company was a typical scale-up. It was founded in late 2019 and then grew rapidly. I joined in late August of 2022 and was assigned to be the quality engineer of two teams that made up one of several departments in Engineering. Both teams were created a few months earlier, with mostly newly hired team members. One team (let’s call them team A) had four developers; the other team (team B) had three. Each team had their own product manager. The engineering manager of both teams, who was also my manager, had started only one week before me. None of these people I’d be working with, were involved in my hiring process. Neither did they have any experience in working with quality engineers. And I had no experience working as&nbsp;one.</p>
+<p>Luckily I was not the first quality engineer who had been hired. There was a principal quality engineer, who had joined the company in 2021. There were also four other quality engineers, all of them had joined earlier in&nbsp;2022.</p>
+</section><section id="the-first-four-months-september-to-december"><h3><a class="toc-backref" href="#toc-entry-5" role="doc-backlink">The first four months: September to&nbsp;December</a></h3>
+<p>The first 2-3 weeks my main focus was getting onboarded. Quite soon it became clear that the teams, our manager, and I would need to figure out among ourselves what my role of quality engineer would entail. Our principal quality engineer had created some good documentation on quality engineering, including a practical guide on how to get started. The focus of this guide was on facilitating risk sessions and exploratory testing. However, these descriptions didn’t really address where a quality engineer was expected to fit in a team’s process. Later it became clear that this was the core of the challenge the company had with quality engineers: there was a solid vision, but the execution of that vision was&nbsp;lacking.</p>
+<section id="process-workshop-with-team-a"><h4>Process workshop with team&nbsp;A</h4>
+<p>To get a better understanding of how I could support team A as a quality engineer, I facilitated a workshop for the team in my third week on the job. My plan was that the team would map out their development process (both activities and artifacts), how they felt about the different parts of the process (attitudes), after which we’d decide what I should start doing&nbsp;(actions).</p>
+<p>As the workshop progressed, it became clear that my agenda for the workshop was too ambitious. Mapping out the process took longer than I had anticipated. We didn’t get to the attitudes part. We did list quite a few possible actions, which we narrowed down to the following&nbsp;three:</p>
+<ol class="arabic simple">
+<li><p>perform usability testing on an internal feature, supported by the <span class="caps">UX</span>&nbsp;designer</p></li>
+<li><p>lead the testing of an upcoming epic making changes to the integration between Salesforce and our own&nbsp;platform</p></li>
+<li><p>pair test with&nbsp;developers.</p></li>
+</ol>
+<p>When the principal quality engineer heard about this workshop, he commented &#8220;This feels like something your team might like to share more widely at some point?&#8221; To which I replied: &#8220;I&#8217;m not sure how useful that session ended up being, so it might have to be part of a larger story.&#8221; This captures my feeling about the workshop well. I was disappointed we only scratched the&nbsp;surface.</p>
+<p>Of the three actions from the workshop, I only really took action on the second one. For the usability testing, I talked with our <span class="caps">UX</span> designer. He explained the process. I filled out a template. Neither of us followed up after that. And the pair testing was forgotten about fairly quickly by everyone. So the one thing I did end up doing, was mapping out the Salesforce - platform&nbsp;integration.</p>
+</section><section id="the-diagram-about-the-salesforce-platform-integration"><h4>The diagram about the Salesforce - platform&nbsp;integration</h4>
+<p>Since during the process workshop I was asked to get involved with the Salesforce - platform integration, that’s what I did. I had the impression that we missed an overview of which data got synced at which point between Salesforce, our own platform, and our customer support system. So I mapped this out, listed things to test, relevant variations in the data, and the different user roles involved. I also facilitated a session with team A and the team owning the next step in the process, to see if any of our changes would impact the work of the other&nbsp;team.</p>
+<p>After the session I talked with the <span class="caps">QE</span> of the other team. I said I was mostly positive about the workshop, but also had some doubts. Engagement during the workshop was not very high and I felt I was still struggling to connect with the team.  She ‘welcomed me to the club’ and said after six months she was still figuring out the job to some&nbsp;degree.</p>
+<p>Apart from the initial sessions of me sharing the diagram with my team and later with both the teams, I’m not aware of any purpose it served&nbsp;afterwards.</p>
+</section><section id="the-quality-engineering-menu-and-the-visual-qa-checklist"><h4>The Quality Engineering menu and the Visual <span class="caps">QA</span>&nbsp;Checklist</h4>
+<p>To provide a clearer and more concrete picture of what I could do as a quality engineer, I created a &#8220;Quality Engineering menu&#8221;. It listed a number of activities I could do, collaborate on or support throughout the development process, in addition to spikes and investigating issues. The idea was that people could look through the menu and see what they could ask of me. Or that they would ask: &#8220;You say you can do this thing, but can you also do this other related thing?&#8221; In addition to sharing the menu with teams A and B, I shared it with the other quality&nbsp;engineers.</p>
+<p>Responses from both the teams and the quality engineers were positive. However, no one ever used it as a starting point of a conversation or to request me to do a thing listed on the&nbsp;menu.</p>
+<p>Around the same time I created a &#8220;Visual <span class="caps">QA</span> Checklist&#8221; for team B, but also shared it with team A. Again, initial responses were positive, especially from our <span class="caps">UX</span> designer. However, thanks to the page analytics feature of the tool I shared it with, I can say it hasn’t seen much use since I created&nbsp;it.</p>
+</section><section id="talking-with-colleagues-about-their-expectations"><h4>Talking with colleagues about their&nbsp;expectations</h4>
+<section id="my-manager"><h5>My&nbsp;manager</h5>
+<p>During my first 1:1 with my manager, he mentioned he wasn’t sure if he was the right person to manage me and that the principal engineer might be a better fit. This foreshadowed a reorg and a quality strategy that would be hinted at in the next six months, but that never materialized. I wasn’t bothered by his remark. He had a valid point and I like to think of myself as someone who does not need a lot of&nbsp;management.</p>
+<p>During our 1:1s he also regularly asked about how quality engineers align across the Engineering department. If there is an overall strategy or approach we were following. I never was able to give him a better answer than that we align informally and I’m supposed to focus on facilitating risk sessions and exploratory testing. I also shared the Notion pages and Miro boards our principal quality engineer had created. These were very vision-focused, so had limited&nbsp;value.</p>
+<p>Something that did change during our 1:1s, is that my manager started to appreciate me and my observations more and more. We noticed a lot of the same things, for example that an initiative impacting three systems was being run more like three separate projects than like a single&nbsp;one.</p>
+</section><section id="my-managers-manager"><h5>My manager’s&nbsp;manager</h5>
+<p>About two months in (mid-November), I had a meeting with my manager’s manager, as she wanted to check in on how I was doing. To me that seemed like a perfect opportunity to ask her what impact she was expecting of me as a quality engineer. Unfortunately I didn’t get a very clear answer. She didn’t have very specific expectations. She did mention our stakeholders value sustainable deliveries (sustainable both in pace and in quality) and predictability. I also mentioned I felt I was still very much searching and trying to find my way into the teams. And that I felt I should already be doing more. She replied that I was doing well and being humble. About two months later we had another call, where she mentioned it was important for me to speak up about things I noticed and to push for things I&nbsp;wanted.</p>
+</section><section id="the-principal-quality-engineer"><h5>The principal quality&nbsp;engineer</h5>
+<p>Every two weeks I had a 1-on-1 with our principal quality engineer. He was very enthusiastic about my approach of trying to figure out with the teams what a quality engineer could do for them. We had great conversations about quality engineering and he was very supportive. That also allowed me to express my frustration about finding my place within the two teams. He said things would get better once the new quality strategy would be in place. In the meantime he encouraged all the quality engineers to share and collaborate, to inspire and learn from each other. He did a great job at this and it did make me feel I was part of an informal team of quality&nbsp;engineers.</p>
+</section><section id="being-challenged-by-one-of-the-product-managers"><h5>Being challenged by one of the product&nbsp;managers</h5>
+<p>Near the end of November, after I had found a small bug on production, the product manager of the team suggested on Slack that she, the <span class="caps">UX</span> designer and I should test features before they were released. I replied that I didn’t think we should become the developers’ test team. That would result in the developers depending on us for some of the testing. She responded that she appreciates the coaching stance of the quality engineers, but that it’s also important to get your hands dirty and contribute&nbsp;directly.</p>
+<p>We continued the conversation over a call, clarified our positions with each other, and realized they weren’t that far apart after all. We agreed to bring it up with the team in the next retro. There everyone agreed that when developers submit a <span class="caps">PR</span>, they should request feedback from the designer, product manager and myself. That may have happened a few times, but it never became part of the team’s way of&nbsp;working.</p>
+</section></section><section id="looking-back-on-the-first-four-months"><h4>Looking back on the first four&nbsp;months</h4>
+<p>At the end of November I wrote a blog post <a class="reference external" href="../../2022/three-lessons-after-three-months-of-quality-engineering/">&#8220;Three lessons after three months of quality engineering&#8221;</a>, reflecting on my experiences so far. The three lessons were three things I had learned to be important: visibility, connections, and patience. I was struggling with each of the three. And that didn’t really change over the course of&nbsp;December.</p>
+<p>So by the end of the year, I was quite frustrated and demotivated. I had tried different approaches to figure out my role of quality engineer. I had asked people directly. I had asked through a process workshop. I had shown I could make diagrams to inform design and testing. I had shared a list of things I could do for people to use as a conversation starter with me. And I had also told myself to be patient, to temper my too high expectations of myself. And I was surprised how my colleagues seemed to be positive about what I was doing, because I&nbsp;wasn’t.</p>
+</section></section><section id="the-next-two-months-january-and-february"><h3><a class="toc-backref" href="#toc-entry-6" role="doc-backlink">The next two months: January and&nbsp;February</a></h3>
+<p>After a week off because of the end-of-year holidays, I noticed that I was able to let go a bit more. I was feeling less frustrated. And my goal shifted from being a good quality engineer, doing the things that were expected of the role, to contributing in any way I&nbsp;could.</p>
+<p>It would have been interesting to see how that change in my attitude would play out over the first few months of the year, but that was not to be. On 1 February layoffs and a reorg were announced - with the reorg going into effect on 6 March. In this section I’ll cover some of the work I did with the two teams in January and February. In the next section I’ll talk more about the effect the announcement and the reorg&nbsp;had.</p>
+<section id="spike-on-test-automation-for-salesforce-integration"><h4>Spike on test automation for Salesforce&nbsp;integration</h4>
+<p>The work on the Salesforce integration made me realize that some additional automation could help the team. Testing required you to create several entities in Salesforce (client, contacts, product, opportunity), then the opportunity moved through a workflow. Since both Salesforce and our own platform have APIs, I figured it should be possible to cover the basic scenarios with automated tests using those&nbsp;APIs.</p>
+<p>It took some effort, but I managed to build an end-to-end <span class="caps">API</span> test proof of concept, covering the process from a client becoming a prospect to closing the deal. Unfortunately I got this done right before the layoff announcements. With the impact of those and the news that after the reorg the teams I was supporting, would be split up, things never progressed beyond my proof of&nbsp;concept.</p>
+</section><section id="pointing-out-the-obvious-in-team-bs-retro"><h4>Pointing out the obvious in team B’s&nbsp;retro</h4>
+<p>Ever since I started, my focus had been on team A. They had been working on the important Salesforce integration epic and they were still forming as a team. Team B, on the other hand, didn’t have a strong need for me. They had been doing well, working on a smaller and less risky epic. So apart from sharing my Quality Engineering Menu and the Visual <span class="caps">QA</span> Checklist, I hadn’t been very involved with team&nbsp;B.</p>
+<p>I still wanted to contribute to the team, so during a retro I mentioned how little the team was utilizing me. I’m quite sure the team picked up on some of the underlying emotions on my side. This resulted in two responses, one from one of the senior developers, one from the product manager. The senior developer said it would be great if I could come up with some team quality and health metrics, preferable quantitative ones. We had a good conversation about those, but it felt like too big and complex a task to me. The product manager made an active effort to involve me in testing new invoice reporting functionality. That went quite well, but it was also a one-off, not a step towards involving me more&nbsp;structurally.</p>
+</section><section id="helping-team-a-with-test-scenarios"><h4>Helping team A with test&nbsp;scenarios</h4>
+<p>In January it became clear that team A would benefit from some more thorough testing. That was partially due to some issues I found by doing brief exploratory testing on some recently released features. So my manager decided he would set up a meeting with the team to discuss how to use test scenarios. It took him several weeks to actually schedule this meeting. I let that happen, reasoning that if the session was important to him, it was up to him to make it happen. By the time the meeting did take place, it was the day after the announcement about the layoffs and the&nbsp;reorg.</p>
+<p>It was still a good session. We agreed that I would make sure test scenarios would be created, and that the developers were responsible for executing them and for sharing a brief test report. And we explicitly identified pairing as a good option for both the creation as the execution of the test&nbsp;scenarios.</p>
+<p>Unfortunately nothing much happened afterwards. I created test scenarios for two user stories and shared them with the team. And that was it. No one mentioned using them, no one asked about them during standup, no one gave me feedback about the test scenarios being useful or not. I kept quiet too. I didn’t have the energy&nbsp;anymore.</p>
+</section><section id="looking-back-on-this-period"><h4>Looking back on this&nbsp;period</h4>
+<p>Not focusing as much on getting the risk sessions and exploratory testing going, and instead focusing on making myself useful, did certainly help me. The layoffs and reorg made for a weird ending of this period. For instance, I completed my test automation proof of concept, but any follow-up was on hold. I also didn’t make any real progress in finding my place in the two teams. I had pointed out areas where I could help team A improve, but the lack of response gave me the impression everyone was ok with how things&nbsp;were.</p>
+<p>I’m not sure what would have happened without the layoffs and reorg. I suspect I would have continued trying to make myself useful, until someone - either someone else or myself - would point out that I was working more in the vicinity of the teams than with the&nbsp;teams.</p>
+</section></section><section id="the-layoffs-and-the-reorg"><h3><a class="toc-backref" href="#toc-entry-7" role="doc-backlink">The layoffs and the&nbsp;reorg</a></h3>
+<section id="the-announcements"><h4>The&nbsp;announcements</h4>
+<p>On 1 February layoffs were announced. Sales in the last quarter of the previous year had not been as high as anticipated, so layoffs were one of several cost-cutting measures. I got to stay, but one other quality engineer and our principal quality engineer were not as&nbsp;lucky.</p>
+<p>With the layoffs also came a reorg. It would go into effect on 6 March. Both of the teams I was supporting, would be broken up and spread across different teams in Engineering - although none of us had any idea yet which teams that would&nbsp;be.</p>
+<p>This changed things dramatically. Everyone needed some time to recover. Working on my role in the teams didn’t seem very useful, since those two teams would cease to exist within a month. The main thing I did in this period, was trying to fix some tests that had been disabled. It ended up being quite the learning experience. What initially seemed a simple task, became rather complicated, as I found myself in the middle of some impressive technical debt. In the end, with a lot of help from a senior engineer, I managed to merge my changes at the end of&nbsp;March.</p>
+</section><section id="my-new-role-after-the-reorg"><h4>My new role after the&nbsp;reorg</h4>
+<p>A week after the announcements, the Director of Engineering scheduled a call with me. He asked if I’d want to join the Engineering Effectiveness team. It would be a slimmed down version of the team that in the original reorg plan would be led by our principal quality engineer. Apart from me the team would consist of a senior and a junior infrastructure engineer. Our scope would be quite broad, as illustrated by the team name: Engineering Effectiveness. Additionally I’d support the other teams in the Platform department as a quality engineer. Thirdly, as I’d be the most senior quality engineer, I should spend some of my time supporting the other quality&nbsp;engineers.</p>
+<p>After sleeping on it, I decided to accept his offer. It was a choice based more on intuition than anything else, but it turned out to be a good decision. Once the new team started, I noticed I had more energy than in the months&nbsp;before.</p>
+<p>About a week later, during a 1-to-1 my manager said I was high on everyone’s list to be the quality engineer for their team and that he’d like to keep working with me. I replied that I’d enjoy working more with him as well, but that I had decided to join the Engineering Effectiveness&nbsp;team.</p>
+<p>All of this left me with mixed feelings. On the one hand, I felt I hadn’t achieved much with the two teams I had been working with. On the other hand, people seemed very positive about the things I had been&nbsp;doing.</p>
+</section></section><section id="epilogue"><h3><a class="toc-backref" href="#toc-entry-8" role="doc-backlink">Epilogue</a></h3>
+<p>In April, so one month after the reorg came into effect, my manager and I started talking about how to deploy the quality engineers more effectively. At one point in our second conversation he paused for a second and said: &#8220;It’s a leadership problem, isn’t it?&#8221; I wasn’t sure what to say, so I didn’t say anything. It did feel like a breakthrough. The one thing I had been missing, was a clear statement about what impact I was supposed to have as a quality engineer. And my manager seemed to have just realized this&nbsp;too.</p>
+<p>So he asked me to come up with three to five things we need in Engineering and for which quality engineers are best suited to make an impact. Together with the other quality engineers, we came up with four challenges and which activities by quality engineers could make a difference in those. I then presented this to the heads and directors of engineering. The idea was that they could use this in the conversations with their engineering&nbsp;managers.</p>
+<p>Unfortunately, a bit more than a week after my presentation, a second round of layoffs was announced. I was laid off and so were the other quality engineers. So while I felt that the presentation was a significant step in the right direction, it was also the last&nbsp;step.</p>
+</section></section><section id="what-ive-learned"><h2><a class="toc-backref" href="#toc-entry-9" role="doc-backlink">4. What I’ve&nbsp;learned</a></h2>
+<section id="personal-reflections"><h3><a class="toc-backref" href="#toc-entry-10" role="doc-backlink">Personal&nbsp;reflections</a></h3>
+<p>My overall feeling about my first six months as a quality engineer is that I failed. I failed to do what I was asked to do, which was to facilitate risk sessions and exploratory testing for the two teams. I wasn’t able to make quality engineering happen for those teams. I struggled to create opportunities where I could show my value and then to fully utilize those&nbsp;opportunities.</p>
+<p>On the other hand, part of me does realize the circumstances were very challenging.  I was introduced to the teams based on a vision on quality engineering that was not theirs. There was no clear need I was meant to address and I had no intention to push for things if they wouldn’t meet an actual need experienced by the teams. What got to me the most was that I was getting very little energy back compared to the energy I was putting&nbsp;in.</p>
+<p>So another way of looking at it, was that I took cues from my environment and adapted accordingly. I let go of that initial mission of risk sessions and exploratory testing and instead found other ways to make myself useful. And people clearly appreciated me doing&nbsp;so.</p>
+<p>Looking back, the main thing that struck me are all the conversations that never took place. Conversations with the teams, my manager, my manager’s manager, the product managers. We all had good intentions, we were all trying our best, but we never got a real dialogue going about quality engineering, about where I fit in. If there’s one lesson I take away from my experiences, it’s that&nbsp;one.</p>
+</section><section id="quality-engineering-reflections"><h3><a class="toc-backref" href="#toc-entry-11" role="doc-backlink">Quality engineering&nbsp;reflections</a></h3>
+<p>Positioning the quality engineering role in an organization is not easy. It’s a position of influence, not authority. Its scope is the whole software development process. This means there are no specific process steps you can point to and say &#8220;This is where quality engineering happens.&#8221; A quality engineer needs to be close enough to the work to have a positive effect on it, without making the team dependent on them for part of the work. In that sense, &#8220;quality engineer&#8221; can be seen as a <a class="reference external" href="../../2022/agile-tester-or-quality-engineer-whos-to-say/">rebranding of &#8220;agile tester&#8221;</a>, trying to work in an actually agile way, instead of being the testing bottleneck in a sprint of&nbsp;mini-waterfalls.</p>
+<p>The open-ended nature of what a quality engineer does and where in the process, makes it challenging for teams to start working with one. If they have a need that’s easily coupled with what a quality engineer brings, they’re off to a good start. If they don’t have such a need identified, you end up in a situation where the quality engineer says &#8220;Tell me where I can help.&#8221; and the team replies: &#8220;Tell us where you could&nbsp;help.&#8221;</p>
+<p>A possible solution is for the quality engineer to first &#8216;sell the problem&#8217; (you’re not doing a good enough job), to then &#8216;sell the solution&#8217;, i.e. their services. I don&#8217;t think that&#8217;s a viable approach. You&#8217;d need to be sure that (1) the problem you sell, is an actual problem; (2) the problem is important enough that it needs to be addressed right now; (3) your solution will improve the situation. That&#8217;s quite a feat to pull&nbsp;off.</p>
+<p>So this is where management plays a crucial role. If the team itself hasn’t set any goals the quality engineer can contribute to, the team’s manager, or the manager’s manager will have to step in. They have the appropriate authority to decide what impact the quality engineer is expected to have on how the team works. Of course, that should be done through dialogue and collaboration, but if you send a quality engineer to a team with no more than &#8220;do good things with the team&#8221;, results will vary dramatically between teams and quality&nbsp;engineers.</p>
+</section><section id="reflections-on-testing-related-roles"><h3><a class="toc-backref" href="#toc-entry-12" role="doc-backlink">Reflections on testing-related&nbsp;roles</a></h3>
+<p>My experiences as a quality engineer also made me reflect on testing-related roles in general. Throughout my career I’ve been through quite a few of them: tester in a separate testing team, tester in an Agile team, principal test engineer, and as described in this experience report, quality&nbsp;engineer.</p>
+<p>I’ve come to the conclusion that they are all inherently unstable. They require a constant balancing act across three&nbsp;axes:</p>
+<ul class="simple">
+<li><p>doing testing yourself versus supporting testing by&nbsp;others;</p></li>
+<li><p>being in a separate team versus being embedded in a&nbsp;team;</p></li>
+<li><p>doing your job versus improving the&nbsp;system.</p></li>
+</ul>
+<p>It’s very hard to support others testing without doing any testing yourself. Yet any testing you do, might become your domain, with others leaving it to you to test. It’s great to be in the same team as the developers and designers and business analysts. It also gets lonely, so you form an informal team with people in a similar role as yours. It’s important to do your job, but to do a good job you discover you first have to change the organization a little (or a&nbsp;lot).</p>
+<p>So even though your official job description puts you clearly on one end of each axis - for example my quality engineering role was supporting testing by others, being embedded in a team, and doing my job -, you can only make that work by constantly observing and adjusting your actual position on these three axes. You need to work as much inside the existing structures, as around them. That makes these roles challenging and interesting, but often enough also frustrating. And yet, I wouldn’t want it any other&nbsp;way.</p>
+</section></section><section id="acknowledgements"><h2><a class="toc-backref" href="#toc-entry-13" role="doc-backlink">5.&nbsp;Acknowledgements</a></h2>
+<p>First of all I want to thank Jutta Eckstein, my xp2023 shepherd, for guiding me through the writing process with helpful comments and regular&nbsp;encouragement.</p>
+<p>I also want to thank Elizabeth Zagroba and Chris Chant for their thoughtful&nbsp;reviews.</p>
+<p>Finally a big shoutout to all my colleagues during my period as quality engineer. This experience report may mostly focus on my frustrations with the role, but I truly enjoyed working with you all and was sad that time was cut&nbsp;short.</p>
+</section>
+</div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/agile/" rel="tag">agile</a></li>
+            <li><a class="tag p-category" href="../../../categories/conferences/" rel="tag">conferences</a></li>
+            <li><a class="tag p-category" href="../../../categories/leadership/" rel="tag">leadership</a></li>
+            <li><a class="tag p-category" href="../../../categories/management/" rel="tag">management</a></li>
+            <li><a class="tag p-category" href="../../../categories/quality-engineering/" rel="tag">quality&nbsp;engineering</a></li>
+            <li><a class="tag p-category" href="../../../categories/software-testing/" rel="tag">software&nbsp;testing</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../making-meetings-work/" rel="prev" title="Making meetings work">Previous&nbsp;post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2023 
+<a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by/4.0/80x15.png"></a>
+<a href="mailto:site@joep.slmail.me">Joep Schuurkes</a> - Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a> - Analytics by <a href="https://plausible.io/" rel="nofollow" target="_blank">Plausible</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>
