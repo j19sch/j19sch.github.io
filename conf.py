@@ -325,7 +325,7 @@ DATE_FORMAT = 'd MMMM yyyy'
 # 'markdown' is Markdown
 # 'html' assumes the file is HTML and just copies it
 COMPILERS = {
-    # "rest": ('.rst', '.txt'),
+    "rest": ('.rst', '.txt'),
     "markdown": ('.md', '.mdown', '.markdown'),
     # "textile": ('.textile',),
     # "txt2tags": ('.t2t',),
