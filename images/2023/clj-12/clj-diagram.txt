@@ -1,5 +1,17 @@
 @startuml
 
+<style>
+legend {
+	FontSize 16
+	Margin 10 10 50 10
+	Padding 10
+}
+</style>
+
+' FontSize 30
+' BackGroundColor yellow
+' Padding 60
+
 skinparam dpi 150
 
 skinparam componentStyle rectangle
@@ -11,6 +23,9 @@ skinparam componentStyle rectangle
 ' https://plantuml.com/component-diagram
 ' https://www.augmentedmind.de/2021/01/17/plantuml-layout-tutorial-styles/
 
+' generate image
+' java -jar ~/Downloads/plantuml-1.2023.8.jar clj-diagram.txt
+
 ' notes
 ' row-num not called by anything ??? fixed!
 
@@ -19,11 +34,13 @@ skinparam componentStyle rectangle
 ' tri*
 ' get-input
 
-legend right
+legend bottom right
+' option: use table
 	arrow: calls
-	thick arrow: main game loop
-	some arrow: arity overloading
-	red arrow: error
+	thick blue arrow: setup
+	thick purple arrow: main game loop
+	dashed line: call with side effects
+	<color:maroon> maroon<color:black>: takes 'board' as arg
 end legend
 
 
@@ -39,23 +56,23 @@ frame "create the board" {
 	[row-tri]
 	[row-num]
 	[in-bounds?]
-	[connect]
-	[connect-right]
-	[connect-down-left]
-	[connect-down-right]
-	[add-pos]
+	[ <color:maroon> connect ]
+	[ <color:maroon> connect-right ]
+	[ <color:maroon> connect-down-left ]
+	[ <color:maroon> connect-down-right ]
+	[ <color:maroon> add-pos ]
 	[new-board]
 }
 
 frame "move pegs" {
-	[pegged?]
-	[valid-moves]
-	[valid-move?]
-	[remove-peg]
-	[place-peg]
-	[move-peg]
-	[make-move]
-	[can-move?]
+	[ <color:maroon> pegged? ]
+	[ <color:maroon> valid-moves ]
+	[ <color:maroon> valid-move? ]
+	[ <color:maroon> remove-peg ]
+	[ <color:maroon> place-peg ]
+	[ <color:maroon> move-peg ]
+	[ <color:maroon> make-move ]
+	[ <color:maroon> can-move? ]
 }
 
 frame "represent board textually and print it" {
@@ -69,11 +86,11 @@ frame "represent board textually and print it" {
 	'functions again
 	[ansi]
 	[colorize]
-	[render-pos]
+	[ <color:maroon> render-pos ]
 	[row-positions]
 	[row-padding]
-	[render-row]
-	[print-board]
+	[ <color:maroon> render-row ]
+	[ <color:maroon> print-board ]
 }
 
 
@@ -81,13 +98,14 @@ frame "interaction" {
 	[letter->pos]
 	[get-input]
 	[characters-as-strings]
-	[prompt-move]
-	[successful-move]
-	[game-over]
-	[prompt-empty-peg]
+	[ <color:maroon> prompt-move ]
+	[ <color:maroon> successful-move ]
+	[ <color:maroon> game-over ]
+	[ <color:maroon> prompt-empty-peg ]
 	[prompt-rows]
 	[-main]
 }
+
 
 '''
 'calls
@@ -98,78 +116,78 @@ frame "interaction" {
 [tri] --> [tri*]
 [row-tri] --> [tri]
 [row-num] --> [tri]
-[connect] --> [in-bounds?]
-[connect-right] --> [triangular?]
-[connect-right] --> [connect]
-[connect-down-left] --> [connect]
-[connect-down-left] --> [row-num]
-[connect-down-right] --> [connect]
-[connect-down-right] --> [row-num]
-[add-pos] --> [connect-right]
-[add-pos] --> [connect-down-left]
-[add-pos] --> [connect-down-right]
+[ <color:maroon> connect ] --> [in-bounds?]
+[ <color:maroon> connect-right ] --> [triangular?]
+[ <color:maroon> connect-right ] --> [ <color:maroon> connect ]
+[ <color:maroon> connect-down-left ] --> [ <color:maroon> connect ]
+[ <color:maroon> connect-down-left ] --> [row-num]
+[ <color:maroon> connect-down-right ] --> [ <color:maroon> connect ]
+[ <color:maroon> connect-down-right ] --> [row-num]
+[ <color:maroon> add-pos ] --> [ <color:maroon> connect-right ]
+[ <color:maroon> add-pos ] --> [ <color:maroon> connect-down-left ]
+[ <color:maroon> add-pos ] --> [ <color:maroon> connect-down-right ]
 [new-board] --> [row-tri]
-[new-board] --> [add-pos]
+[new-board] --> [ <color:maroon> add-pos ]
 
 'move pegs
-[valid-moves] --> [pegged?]
-[valid-move?] --> [valid-moves]
-[move-peg] --> [remove-peg]
-[move-peg] --> [place-peg]
-[make-move] --> [valid-move?]
-[make-move] --> [move-peg]
-[make-move] --> [remove-peg]
-[can-move?] --> [valid-moves]
+[ <color:maroon> valid-moves ] --> [ <color:maroon> pegged? ]
+[ <color:maroon> valid-move? ] --> [ <color:maroon> valid-moves ]
+[ <color:maroon> move-peg ] --> [ <color:maroon> remove-peg ]
+[ <color:maroon> move-peg ] --> [ <color:maroon> place-peg ]
+[ <color:maroon> make-move ] --> [ <color:maroon> valid-move? ]
+[ <color:maroon> make-move ] --> [ <color:maroon> move-peg ]
+[ <color:maroon> make-move ] --> [ <color:maroon> remove-peg ]
+[ <color:maroon> can-move? ] --> [ <color:maroon> valid-moves ]
 
 'represent board textually and print it
 [letters] --> [alpha-start]
 [letters] --> [alpha-end]
 [ansi] --> [ansi-styles]
 [colorize] --> [ansi]
-[render-pos] --> [letters]
-[render-pos] --> [colorize]
+[ <color:maroon> render-pos ] --> [letters]
+[ <color:maroon> render-pos ] --> [colorize]
 [row-positions] -left-> [row-tri]
 [row-positions] -left-> [row-num]
 [row-padding] --> [pos-chars]
 [row-padding] -left-> [row-num]
-[render-row] --> [row-padding]
-[render-row] --> [render-pos]
-[render-row] -> [row-num]
-[render-row] --> [row-positions]
-[print-board] --> [render-row]
-[print-board] -left-> [row-num]
-[print-board] ..> println
+[ <color:maroon> render-row ] --> [row-padding]
+[ <color:maroon> render-row ] --> [ <color:maroon> render-pos ]
+[ <color:maroon> render-row ] -> [row-num]
+[ <color:maroon> render-row ] --> [row-positions]
+[ <color:maroon> print-board ] --> [ <color:maroon> render-row ]
+[ <color:maroon> print-board ] -left-> [row-num]
+[ <color:maroon> print-board ] ..> println
 
 'interaction
 [letter->pos] -> [alpha-start]
 [get-input] --> [get-input]
 [get-input] ..> readline
-[prompt-move] ..> println
-[prompt-move] -> [print-board]
-[prompt-move] --> [letter->pos]
-[prompt-move] --> [characters-as-strings]
-[prompt-move] --> [get-input]
-[prompt-move] -> [make-move]
-[prompt-move] -[thickness=4,#darkorchid]-> [successful-move]
-[prompt-move] --> [prompt-move]
-[successful-move] -> [can-move?]
-[successful-move] -[thickness=4,#darkorchid]-> [prompt-move]
-[successful-move] -[thickness=4,#darkorchid]-> [game-over]
-[game-over] ..> println
-[game-over] -> [print-board]
-[game-over] --> [get-input]
-[game-over] -up-> [prompt-rows]
-[game-over] ..> systemexit
-[prompt-empty-peg] ..> println
-[prompt-empty-peg] -> [print-board]
-[prompt-empty-peg] -down[thickness=3,#navy]-> [prompt-move]
-[prompt-empty-peg] -> [remove-peg]
-[prompt-empty-peg] --> [letter->pos]
-[prompt-empty-peg] --> [get-input]
+[ <color:maroon> prompt-move ] ..> println
+[ <color:maroon> prompt-move ] -> [ <color:maroon> print-board ]
+[ <color:maroon> prompt-move ] --> [letter->pos]
+[ <color:maroon> prompt-move ] --> [characters-as-strings]
+[ <color:maroon> prompt-move ] --> [get-input]
+[ <color:maroon> prompt-move ] -> [ <color:maroon> make-move ]
+[ <color:maroon> prompt-move ] -[thickness=4,#darkorchid]-> [ <color:maroon> successful-move ]
+[ <color:maroon> prompt-move ] --> [ <color:maroon> prompt-move ]
+[ <color:maroon> successful-move ] -> [ <color:maroon> can-move? ]
+[ <color:maroon> successful-move ] -[thickness=4,#darkorchid]-> [ <color:maroon> prompt-move ]
+[ <color:maroon> successful-move ] -[thickness=4,#darkorchid]-> [ <color:maroon> game-over ]
+[ <color:maroon> game-over ] ..> println
+[ <color:maroon> game-over ] -> [ <color:maroon> print-board ]
+[ <color:maroon> game-over ] --> [get-input]
+[ <color:maroon> game-over ] -up-> [prompt-rows]
+[ <color:maroon> game-over ] ..> systemexit
+[ <color:maroon> prompt-empty-peg ] ..> println
+[ <color:maroon> prompt-empty-peg ] -> [ <color:maroon> print-board ]
+[ <color:maroon> prompt-empty-peg ] -down[thickness=3,#navy]-> [ <color:maroon> prompt-move ]
+[ <color:maroon> prompt-empty-peg ] -> [ <color:maroon> remove-peg ]
+[ <color:maroon> prompt-empty-peg ] --> [letter->pos]
+[ <color:maroon> prompt-empty-peg ] --> [get-input]
 [prompt-rows] ..> println
 [prompt-rows] --> [get-input]
 [prompt-rows] -> [new-board]
-[prompt-rows] -down[thickness=3,#navy]-> [prompt-empty-peg]
+[prompt-rows] -down[thickness=3,#navy]-> [ <color:maroon> prompt-empty-peg ]
 [-main] ..> println
 [-main] -down[thickness=3,#navy]-> [prompt-rows]
 
