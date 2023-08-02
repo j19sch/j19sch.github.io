@@ -36,11 +36,14 @@ skinparam componentStyle rectangle
 
 legend bottom right
 ' option: use table
+	regular font: function
+	//italicized font//: variable
 	arrow: calls
 	thick blue arrow: setup
 	thick purple arrow: main game loop
 	dashed line: call with side effects
-	<color:maroon> maroon<color:black>: takes 'board' as arg
+	<color:maroon> maroon<color:black>: takes 'board' as param
+
 end legend
 
 
@@ -51,7 +54,7 @@ interface "System/exit" as systemexit
 
 frame "create the board" {
 	[tri*]
-	[tri]
+	[ //tri// ]
 	[triangular?]
 	[row-tri]
 	[row-num]
@@ -77,11 +80,11 @@ frame "move pegs" {
 
 frame "represent board textually and print it" {
 	'not functions
-	[alpha-start]
-	[alpha-end]
-	[letters]
-	[pos-chars]
-	[ansi-styles]
+	[ //alpha-start// ]
+	[ //alpha-end// ]
+	[ //letters// ]
+	[ //pos-chars// ]
+	[ //ansi-styles// ]
 
 	'functions again
 	[ansi]
@@ -113,9 +116,9 @@ frame "interaction" {
 
 'create the board
 [tri*] --> [tri*]
-[tri] --> [tri*]
-[row-tri] --> [tri]
-[row-num] --> [tri]
+[ //tri// ] --> [tri*]
+[row-tri] --> [ //tri// ]
+[row-num] --> [ //tri// ]
 [ <color:maroon> connect ] --> [in-bounds?]
 [ <color:maroon> connect-right ] --> [triangular?]
 [ <color:maroon> connect-right ] --> [ <color:maroon> connect ]
@@ -140,15 +143,15 @@ frame "interaction" {
 [ <color:maroon> can-move? ] --> [ <color:maroon> valid-moves ]
 
 'represent board textually and print it
-[letters] --> [alpha-start]
-[letters] --> [alpha-end]
-[ansi] --> [ansi-styles]
+[ //letters// ] --> [ //alpha-start// ]
+[ //letters// ] --> [ //alpha-end// ]
+[ansi] --> [ //ansi-styles// ]
 [colorize] --> [ansi]
-[ <color:maroon> render-pos ] --> [letters]
+[ <color:maroon> render-pos ] --> [ //letters// ]
 [ <color:maroon> render-pos ] --> [colorize]
 [row-positions] -left-> [row-tri]
 [row-positions] -left-> [row-num]
-[row-padding] --> [pos-chars]
+[row-padding] --> [ //pos-chars// ]
 [row-padding] -left-> [row-num]
 [ <color:maroon> render-row ] --> [row-padding]
 [ <color:maroon> render-row ] --> [ <color:maroon> render-pos ]
@@ -159,7 +162,7 @@ frame "interaction" {
 [ <color:maroon> print-board ] ..> println
 
 'interaction
-[letter->pos] -> [alpha-start]
+[letter->pos] -> [ //alpha-start// ]
 [get-input] --> [get-input]
 [get-input] ..> readline
 [ <color:maroon> prompt-move ] ..> println
