@@ -3,13 +3,30 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes</title>
   <id>https://smallsheds.garden/blog/feed.atom</id>
-  <updated>2023-07-05T09:48:05Z</updated>
+  <updated>2023-08-06T13:16:43Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/blog/feed.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>(clj 12) Core concepts of functional programming with Peg Thing</title>
+    <id>https://smallsheds.garden/blog/clojure/2023/clj-12-core-concepts-of-functional-programming-with-peg-thing/</id>
+    <updated>2023-08-06T15:13:36+02:00</updated>
+    <published>2023-08-06T15:13:36+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/clojure/2023/clj-12-core-concepts-of-functional-programming-with-peg-thing/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Chapter 5 of "&lt;a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/"&gt;Clojure for the Brave and True&lt;/a&gt;" explores two core concepts of functional programming: pure functions and immutable data structures. It wraps up with walking you through the &lt;a href="https://github.com/flyingmachine/pegthing"&gt;code&lt;/a&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/clojure/2023/clj-12-core-concepts-of-functional-programming-with-peg-thing/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; of a game called &lt;a href="https://www.braveclojure.com/functional-programming/#Peg_Thing"&gt;"Peg Thing"&lt;/a&gt;&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/clojure/2023/clj-12-core-concepts-of-functional-programming-with-peg-thing/#fn:2"&gt;2&lt;/a&gt;&lt;/sup&gt;, which uses &lt;em&gt;"everything you've learned so far: immutable data structures, lazy sequences, pure functions, recursion - everything!"&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;So what is this Peg Thing?&lt;/h2&gt;
+&lt;p&gt;For a full description and the code of Peg Thing, you can follow the links in the paragraph above. In this post I'll only share what's relevant to describe what I learned about functional programming through Peg Thing.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/clojure/2023/clj-12-core-concepts-of-functional-programming-with-peg-thing/"&gt;Read more…&lt;/a&gt; (8 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="brave-clojure" label="brave clojure"/>
+    <category term="clojure" label="clojure"/>
+    <category term="programming" label="programming"/>
+  </entry>
   <entry>
     <title>I'm a quality engineer and I'm not sure how I feel about that</title>
     <id>https://smallsheds.garden/blog/2023/im-a-quality-engineer-and-im-not-sure-how-i-feel-about-that/</id>
@@ -188,24 +205,5 @@
     <category term="quality-engineering" label="quality engineering"/>
     <category term="skills" label="skills"/>
     <category term="small-steps" label="small steps"/>
-  </entry>
-  <entry>
-    <title>Agile tester or quality engineer, who's to say?</title>
-    <id>https://smallsheds.garden/blog/2022/agile-tester-or-quality-engineer-whos-to-say/</id>
-    <updated>2022-11-06T16:29:25+01:00</updated>
-    <published>2022-11-06T16:29:25+01:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2022/agile-tester-or-quality-engineer-whos-to-say/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;In her article &lt;a href="https://web.archive.org/web/20041001003124/http://www.qualitytree.com/feature/btwq.pdf"&gt;"Better Testing, Worse Quality?"&lt;/a&gt; &lt;a href="https://ruby.social/@testobsessed"&gt;Elisabeth Hendrickson&lt;/a&gt; makes an interesting case about independent testing, i.e. testing done by an independent test team. She discovered that beyond a certain point, investigating more in independent testing will make both quality and speed go down, not up. In &lt;a href="https://itrevolution.com/podcast/the-idealcast-episode-3/"&gt;episode 3&lt;/a&gt; of the &lt;a href="https://itrevolution.com/podcast/"&gt;Idealcast&lt;/a&gt;, she summarizes her article as follows:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;"[...] when you ramp up the amount of investment in an independent test group, then given the amount of pressure that's already on the developers to deliver, it is so easy&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2022/agile-tester-or-quality-engineer-whos-to-say/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; for the developers to say, this isn't my problem anymore. Thank goodness we've got the professionals over here. It's their job to test." &lt;em&gt;(00:11:21)&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Later in the article, Elisabeth Hendrickson gives advice on how to avoid or escape this spiral of decreasing quality and speed. There are four dials you can turn either up or down:&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2022/agile-tester-or-quality-engineer-whos-to-say/"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="agile" label="agile"/>
-    <category term="quality-engineering" label="quality engineering"/>
-    <category term="software-testing" label="software testing"/>
   </entry>
 </feed>

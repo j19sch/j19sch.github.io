@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>(clj 12) Core concepts of functional programming with Peg Thing | Joep Schuurkes</title>
+<link href="../../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../../feed.atom">
+<link rel="canonical" href="https://smallsheds.garden/blog/clojure/2023/clj-12-core-concepts-of-functional-programming-with-peg-thing/">
+<link rel="icon" href="../../../../assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="../../../../assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../../assets/favicons/favicon-96x96.png" sizes="96x96">
+<!--[if lt IE 9]><script src="../../../../assets/js/html5.js"></script><![endif]--><script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../../../2023/im-a-quality-engineer-and-im-not-sure-how-i-feel-about-that/" title="I'm a quality engineer and I'm not sure how I feel about that" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="(clj 12) Core concepts of functional programming with Peg Thing">
+<meta property="og:url" content="https://smallsheds.garden/blog/clojure/2023/clj-12-core-concepts-of-functional-programming-with-peg-thing/">
+<meta property="og:description" content='Chapter 5 of "Clojure for the Brave and True" explores two core concepts of functional programming: pure functions and immutable data structures. It wraps up with walking you through the code1 of a ga'>
+<meta property="og:image" content="https://smallsheds.garden/images/default-preview.jpeg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2023-08-06T15:13:36+02:00">
+<meta property="article:tag" content="brave clojure">
+<meta property="article:tag" content="clojure">
+<meta property="article:tag" content="programming">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../../../my-projects/" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../../my-talks/" class="nav-link">Talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../../../my-lists/reading-list/" class="dropdown-item">Reading list</a>
+                    <a href="../../../../my-lists/recommended-reading/" class="dropdown-item">Recommended reading</a>
+                    <a href="../../../../my-lists/favorite-podcasts/" class="dropdown-item">Favorite podcasts</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../../" class="dropdown-item">My blog</a>
+                    <a href="../../../../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="../../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
+                    <a href="../../../feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">(clj 12) Core concepts of functional programming with Peg&nbsp;Thing</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep&nbsp;Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2023-08-06T15:13:36+02:00" itemprop="datePublished" title="6 August 2023">6 August 2023</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p>Chapter 5 of &#8220;<a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">Clojure for the Brave and True</a>&#8221; explores two core concepts of functional programming: pure functions and immutable data structures. It wraps up with walking you through the <a href="https://github.com/flyingmachine/pegthing">code</a><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> of a game called <a href="https://www.braveclojure.com/functional-programming/#Peg_Thing">&#8220;Peg Thing&#8221;</a><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>, which uses <em>&#8220;everything you&#8217;ve learned so far: immutable data structures, lazy sequences, pure functions, recursion -&nbsp;everything!&#8221;</em></p>
+<h2>So what is this Peg&nbsp;Thing?</h2>
+<p>For a full description and the code of Peg Thing, you can follow the links in the paragraph above. In this post I&#8217;ll only share what&#8217;s relevant to describe what I learned about functional programming through Peg&nbsp;Thing.</p>
+<!-- TEASER_END -->
+
+<p>The code of Peg Thing consists of four&nbsp;parts:</p>
+<ul>
+<li>create the board, which contains 11 functions and 1&nbsp;variable,</li>
+<li>represent board textually and print, which contains 7 functions and 5&nbsp;variables,</li>
+<li>interaction, which contains 9 functions, including&nbsp;the <code>-main</code> function,</li>
+<li>move pegs, which contains 8&nbsp;functions.</li>
+</ul>
+<p>There are also calls to 3 functions with side&nbsp;effects: <code>println</code>, <code>read-line</code>,&nbsp;and <code>System/exit</code>.</p>
+<h3>A function call&nbsp;graph</h3>
+<p>Since that&#8217;s quite a lot of functions and variables, I made a function call&nbsp;graph:</p>
+<figure class="figure"><a href="../../../../images/2023/clj-12/clj-diagram.png" target="_blank">
+    <img src="../../../../images/2023/clj-12/clj-diagram.png" class="figure-img img-fluid rounded" alt="function call graph of Peg Thing"></a>
+  <figcaption class="figure-caption text-center">Peg Thing function call graph (click for larger version)</figcaption></figure><p>Every box is a function (normal font) or a variable&nbsp;(italicized).</p>
+<p>Every arrow is a call from a function or variable to another function or&nbsp;variable.</p>
+<p>The blue arrows&nbsp;from <code>-main</code> to <code>prompt-rows</code> to <code>prompt-empty-peg</code> to <code>prompt-move</code> is what sets up the game. The purple calls back-and-forth&nbsp;between <code>prompt-move</code> and <code>successful-move</code> are the main game loop, ending eventually with a call&nbsp;to <code>game-over</code>. The dashed lines are the calls to the three functions with side&nbsp;effects.</p>
+<h3>Limits of the functional call graph:&nbsp;sequence</h3>
+<p>One important thing to note is that the graph does not communicate the order in which one function calls other functions. For example, here&#8217;s the code&nbsp;of <code>prompt-rows</code>:</p>
+<div class="code"><table class="codetable">
+<tr>
+<td class="linenos linenodiv"><a href="#-1"><code data-line-number="1"></code></a></td>
+<td class="code"><code><span class="p">(</span><span class="kd">defn </span><span class="nv">prompt-rows</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#-2"><code data-line-number="2"></code></a></td>
+<td class="code"><code><span class="w">  </span><span class="p">[]</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#-3"><code data-line-number="3"></code></a></td>
+<td class="code"><code><span class="w">  </span><span class="p">(</span><span class="nb">println </span><span class="s">"How many rows? [5]"</span><span class="p">)</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#-4"><code data-line-number="4"></code></a></td>
+<td class="code"><code><span class="w">  </span><span class="p">(</span><span class="nf">let</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#-5"><code data-line-number="5"></code></a></td>
+<td class="code"><code><span class="w">      </span><span class="p">[</span><span class="nv">rows</span><span class="w"> </span><span class="p">(</span><span class="nf">Integer.</span><span class="w"> </span><span class="p">(</span><span class="nf">get-input</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#-6"><code data-line-number="6"></code></a></td>
+<td class="code"><code><span class="w">        </span><span class="nv">board</span><span class="w"> </span><span class="p">(</span><span class="nf">new-board</span><span class="w"> </span><span class="nv">rows</span><span class="p">)]</span>
+</code></td>
+</tr>
+<tr>
+<td class="linenos linenodiv"><a href="#-7"><code data-line-number="7"></code></a></td>
+<td class="code"><code><span class="w">      </span><span class="p">(</span><span class="nf">prompt-empty-peg</span><span class="w"> </span><span class="nv">board</span><span class="p">)))</span>
+</code></td>
+</tr>
+</table></div>
+<p>Let&#8217;s walk through this code&nbsp;line-by-line:</p>
+<ol>
+<li>
+<code>defn prompt-rows</code> tells Clojure we want to define a function&nbsp;called <code>prompt-rows</code>.</li>
+<li>
+<code>[]</code> are the input parameters of our function, so in this case&nbsp;none.</li>
+<li>
+<code>(println "How many rows? [5]")</code> prints the text in double quotes to the&nbsp;terminal.</li>
+<li>
+<code>let</code> allows us to define to two variables in the current&nbsp;scope, <code>rows</code> and <code>board</code>.</li>
+<li>
+<code>rows</code> is the number of rows entered by the user, as an&nbsp;integer.</li>
+<li>
+<code>board</code> is a new board with the number&nbsp;of <code>rows</code> specified, returned by&nbsp;the <code>new-board</code> function.</li>
+<li>
+<code>(prompt-empty-peg board)</code> calls&nbsp;the <code>prompt-empty-peg</code> function&nbsp;with <code>board</code> as&nbsp;argument.</li>
+</ol>
+<p>So while the function call graph shows four outgoing arrows&nbsp;from <code>prompt-rows</code>, the one&nbsp;to <code>prompt-empty-peg</code> is the most important one. To provide that call with its argument, however, we need the calls&nbsp;to <code>println</code>, <code>get-input</code>,&nbsp;and <code>new-board</code>.</p>
+<p>When I realized this, I tried to make a sequence diagram, but got messy really quickly. Some time later I made a second attempt with more success. It shows the board setup&nbsp;with <code>prompt-rows</code>, <code>prompt-empty-peg</code>,&nbsp;and <code>prompt-move</code> in detail. For context I also added the main game loop of Peg&nbsp;Thing: <code>prompt-move</code>, <code>successful-move</code>,&nbsp;and <code>game-over</code>. </p>
+<figure class="figure"><a href="../../../../images/2023/clj-12/clj-seq-diagram.png" target="_blank">
+    <img src="../../../../images/2023/clj-12/clj-seq-diagram.png" class="figure-img img-fluid rounded" alt="sequence diagram of Peg Thing"></a>
+  <figcaption class="figure-caption text-center">Peg Thing sequence diagram (click for larger version)</figcaption></figure><h2>What does Peg Thing teach about functional&nbsp;programming?</h2>
+<p>Before going into Peg Thing, chapter 5 of the book explains pure functions and immutable&nbsp;data.</p>
+<p>A pure function is a function that (1) returns the same result if given the same arguments, and (2) does not cause any side effects. The advantage of a pure function is that if you know what arguments go into the function, you&#8217;ll know what the function will return and you know it won&#8217;t do anything else. So it allows you to think about the function without having to worry about anything outside of the&nbsp;function.</p>
+<p>This is also where immutable data comes into play. Being allowed to change data (think about things like state and attributes here) is being allowed to create side effects. By not allowing this, i.e. by having immutable data, Clojure avoids&nbsp;these.</p>
+<h3>Function&nbsp;composition</h3>
+<p>That does lead to the question: if you can&#8217;t change data, then how do you get anything done? The answer is function composition: combining functions so that the return value of one function is passed to&nbsp;another.</p>
+<p>You can see this in both the call graph and the sequence diagram of Peg Thing. The pyramid shape of &#8220;create the board&#8221;, &#8220;represent board textually and print it&#8221;, and &#8220;move pegs&#8221; show how Peg Things consists of functions calling functions calling functions. There&#8217;s not a big main function, doing things step-by-step. It&#8217;s even clearer in the sequence diagram where we can&nbsp;see <code>prompt-empty-peg</code> calling <code>(prompt-move (remove-peg board (letter-&gt;pos (get-input "e"))))</code>, which goes four levels&nbsp;deep.</p>
+<h3>But what about all&nbsp;the <code>board</code>s?</h3>
+<p>Another thing you may have noticed in the sequence diagram, is&nbsp;that <code>board</code> seems to get passed around a lot. It certainly did confuse me initially: if the board changes during a game of Peg Thing&nbsp;and <code>board</code> gets passed around, how is that immutable&nbsp;data?</p>
+<p>Going through the code made me realize that this question came from my non-functional programming intuitions. It&#8217;s not the case&nbsp;that <code>board</code> gets passed around and changed. A lot of functions in Peg Thing do require a board as argument and return a thing that&#8217;s a board. It&#8217;s however not true that a&nbsp;single <code>board</code> variable gets passed into the function as argument and that same variable but changed, comes out as the return&nbsp;value.</p>
+<p>As an example, look at the following three&nbsp;functions:</p>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="kd">defn </span><span class="nv">place-peg</span>
+<span class="w">  </span><span class="s">"Put a peg in the board at given position"</span>
+<span class="w">  </span><span class="p">[</span><span class="nv">board</span><span class="w"> </span><span class="nv">pos</span><span class="p">]</span>
+<span class="w">  </span><span class="p">(</span><span class="nf">assoc-in</span><span class="w"> </span><span class="nv">board</span><span class="w"> </span><span class="p">[</span><span class="nv">pos</span><span class="w"> </span><span class="ss">:pegged</span><span class="p">]</span><span class="w"> </span><span class="nv">true</span><span class="p">))</span>
+
+<span class="p">(</span><span class="kd">defn </span><span class="nv">remove-peg</span>
+<span class="w">  </span><span class="s">"Take the peg at given position out of the board"</span>
+<span class="w">  </span><span class="p">[</span><span class="nv">board</span><span class="w"> </span><span class="nv">pos</span><span class="p">]</span>
+<span class="w">  </span><span class="p">(</span><span class="nf">assoc-in</span><span class="w"> </span><span class="nv">board</span><span class="w"> </span><span class="p">[</span><span class="nv">pos</span><span class="w"> </span><span class="ss">:pegged</span><span class="p">]</span><span class="w"> </span><span class="nv">false</span><span class="p">))</span>
+
+<span class="p">(</span><span class="kd">defn </span><span class="nv">move-peg</span>
+<span class="w">  </span><span class="s">"Take peg out of p1 and place it in p2"</span>
+<span class="w">  </span><span class="p">[</span><span class="nv">board</span><span class="w"> </span><span class="nv">p1</span><span class="w"> </span><span class="nv">p2</span><span class="p">]</span>
+<span class="w">  </span><span class="p">(</span><span class="nf">place-peg</span><span class="w"> </span><span class="p">(</span><span class="nf">remove-peg</span><span class="w"> </span><span class="nv">board</span><span class="w"> </span><span class="nv">p1</span><span class="p">)</span><span class="w"> </span><span class="nv">p2</span><span class="p">))</span>
+</pre></div>
+
+<p><code>move-peg</code> calls <code>place-peg</code> with the return value&nbsp;of <code>remove-peg</code> as one of its arguments. Also good to mention here, is that Clojure doesn&#8217;t have an explicit &#8220;return&#8221; keyword. A function always returns the result of the last expression it evaluates<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">3</a></sup>.&nbsp;So <code>move-peg</code> will return whatever the result is&nbsp;of <code>(place-peg (remove-peg board p1) p2)</code>. <code>place-peg</code> returns&nbsp;whatever <code>assoc-in</code> returns, which according to <a href="(https:/clojuredocs.org/clojure.core/assoc-in)">its docs</a> is <em>&#8220;a new nested structure&#8221;</em>. <code>remove-peg</code> behaves similarly&nbsp;to <code>place-peg</code>.</p>
+<h3>Immutable data and function composition go&nbsp;together</h3>
+<p>All of this means, that&nbsp;when <code>move-peg</code> is called with&nbsp;a <code>board</code> argument, <code>remove-peg</code> will take&nbsp;that <code>board</code> and return a new one.&nbsp;Then <code>place-peg</code> uses&nbsp;that <code>board</code> and returns another new one, which is returned&nbsp;by <code>move-peg</code>. So while there are lots of functions in Peg Thing that require a &#8220;board&#8221;-like data structure, there is not a&nbsp;single <code>board</code> used throughout the program. Immutable &#8220;board&#8221;s are created as the program runs and its functions are&nbsp;called.</p>
+<p>To reiterate, what Peg thing does not do (switching to Python syntax here), is re-using the same variable&nbsp;:</p>
+<div class="code"><pre class="code literal-block"><span class="n">board</span> <span class="o">=</span> <span class="n">new_board</span><span class="p">(</span><span class="n">rows</span><span class="p">)</span>
+<span class="n">board</span> <span class="o">=</span> <span class="n">prompt_empty_peg</span><span class="p">(</span><span class="n">board</span><span class="p">)</span>
+<span class="n">board</span> <span class="o">=</span> <span class="n">prompt_move</span><span class="p">(</span><span class="n">board</span><span class="p">)</span>
+<span class="n">board</span> <span class="o">=</span> <span class="n">prompt_move</span><span class="p">(</span><span class="n">board</span><span class="p">)</span>
+</pre></div>
+
+<p>It also doesn&#8217;t do this, i.e. having a main function that keeps initializing new variables:<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">4</a></sup></p>
+<div class="code"><pre class="code literal-block"><span class="n">full_board</span> <span class="o">=</span> <span class="n">new_board</span><span class="p">(</span><span class="n">rows</span><span class="p">)</span>
+<span class="n">starting_board</span> <span class="o">=</span> <span class="n">prompt_empty_peg</span><span class="p">(</span><span class="n">full_board</span><span class="p">)</span>
+<span class="n">board_1</span> <span class="o">=</span> <span class="n">prompt_move</span><span class="p">(</span><span class="n">starting_board</span><span class="p">)</span>
+<span class="n">board_2</span> <span class="o">=</span> <span class="n">prompt_move</span><span class="p">(</span><span class="n">board_1</span><span class="p">)</span>
+</pre></div>
+
+<p>Rather, it&nbsp;uses <code>-main</code>, <code>prompt-rows</code>, <code>prompt-empty-peg</code> and a first call&nbsp;to <code>prompt-move</code> to set up the board. Then there are two mutually recursive&nbsp;functions, <code>prompt-move</code> and <code>successful-move</code>, while playing the game,&nbsp;until <code>successful-move</code> decides there are no more valid moves and&nbsp;calls <code>game-over</code>.</p>
+<h3>Reflection</h3>
+<p>To me, that is the most interesting aspect of Peg Thing: immutable data and function composition go together. There is not some core entity (whether that&#8217;s a function or a class) that owns both the main logic and main data of your program. Instead, there&#8217;s a tree of functions, each being called with some piece(s) of data as arguments, returning a different piece of&nbsp;data.</p>
+<p>It makes me curious to read and write more Clojure, since it&#8217;s the first time while working my way through the book, I&#8217;m not just intrigued by how Clojure&#8217;s syntax is different from what I&#8217;m used to, but also by how you design your programs&nbsp;differently.</p>
+<hr>
+<h2>Two other interesting things in Peg Thing&#8217;s&nbsp;code</h2>
+<h3>
+<code>let</code> is&nbsp;surprising</h3>
+<p>The <a href="https://clojuredocs.org/clojure.core/let">Clojure docs say</a>&nbsp;that <code>let</code><span class="quo">&#8216;</span>s syntax&nbsp;is <code>(let [bindings*] exprs*)</code> and that it <em>&#8220;evaluates the exprs in a lexical context in which the symbols in the binding-forms are bound to their respective init-exprs or parts therein.&#8221;</em> I did not find that particularly&nbsp;helpful.</p>
+<p>The Brave Clojure-book does a better job by&nbsp;saying:</p>
+<blockquote>
+<p>So, <code>let</code> is a handy way to introduce local names for values, which helps simplify the&nbsp;code.</p>
+</blockquote>
+<p>What surprised me about it, is&nbsp;that <code>let</code> doesn&#8217;t just let you assign a local name to a variable. It lets you assign a local name to what&#8217;s returned by an expression and then use that return value within&nbsp;the <code>let</code>. For example, in Peg Thing, there&#8217;s&nbsp;the <code>add-pos</code> function:</p>
+<div class="code"><pre class="code literal-block"><span class="p">(</span><span class="kd">defn </span><span class="nv">add-pos</span>
+<span class="w">  </span><span class="s">"Pegs the position and performs connections"</span>
+<span class="w">  </span><span class="p">[</span><span class="nv">board</span><span class="w"> </span><span class="nv">max-pos</span><span class="w"> </span><span class="nv">pos</span><span class="p">]</span>
+<span class="w">  </span><span class="p">(</span><span class="k">let </span><span class="p">[</span><span class="nv">pegged-board</span><span class="w"> </span><span class="p">(</span><span class="nf">assoc-in</span><span class="w"> </span><span class="nv">board</span><span class="w"> </span><span class="p">[</span><span class="nv">pos</span><span class="w"> </span><span class="ss">:pegged</span><span class="p">]</span><span class="w"> </span><span class="nv">true</span><span class="p">)]</span>
+<span class="w">    </span><span class="p">(</span><span class="nb">reduce </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">new-board</span><span class="w"> </span><span class="nv">connection-creation-fn</span><span class="p">]</span>
+<span class="w">              </span><span class="p">(</span><span class="nf">connection-creation-fn</span><span class="w"> </span><span class="nv">new-board</span><span class="w"> </span><span class="nv">max-pos</span><span class="w"> </span><span class="nv">pos</span><span class="p">))</span>
+<span class="w">            </span><span class="nv">pegged-board</span>
+<span class="w">            </span><span class="p">[</span><span class="nv">connect-right</span><span class="w"> </span><span class="nv">connect-down-left</span><span class="w"> </span><span class="nv">connect-down-right</span><span class="p">])))</span>
+</pre></div>
+
+<p>The <code>let [pegged-board (assoc-in board [pos :pegged] true)]</code> makes the return value&nbsp;of <code>(assoc-in board [pos :pegged] true)</code> available&nbsp;as <code>pegged-board</code>, which is then used in&nbsp;the <code>reduce</code> function. So, you can &#8216;hide&#8217; quite some logic in&nbsp;a <code>let</code>.</p>
+<h3>
+<code>triangular?</code> is&nbsp;cool</h3>
+<p>As you can see in the call graph, there are quite some functions whose name ends with a question mark, for&nbsp;example <code>triangular?</code> and <code>valid-move?</code>. I think it&#8217;s great it&#8217;s possible to use question mark like this and prefer it over alternatives&nbsp;like <code>is_triangular</code>.</p>
+<p>Turns out it&#8217;s not only possible, but it&#8217;s <a href="https://guide.clojure.style/#naming-predicates">part of the Clojure style guide</a> and they&#8217;re called predicate functions. I also found a blog post by <a href="https://github.com/vlaaad/">vlaaad</a> about <a href="https://vlaaad.github.io/2019-03-30/question-marks-in-clojure">&#8220;Question marks in Clojure&#8221;</a> going a bit deeper into the usage of question marks in&nbsp;Clojure.</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>If you want to run it&nbsp;with <code>lein repl</code>, make sure to update the Clojure version&nbsp;in <code>project.clj</code>. I got the error message <em>&#8220;As of 2.8.2, the repl task is incompatible with Clojure versions older than 1.7.0.&#8221;</em> while I have Clojure 1.10.2 installed. Luckily I came across a Stack Overflow post that mentioned there being a version number&nbsp;in <code>project.clj</code>. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>Do note there is at least one small difference between the code on GitHub and the code from the book. The GitHub code&nbsp;has <code>prompt-move</code> calling <code>successful-move</code> for valid moves and handling invalid moves itself. In the&nbsp;book, <code>prompt-move</code> calls <code>user-entered-valid-move</code> or <code>user-entered-invalid-move</code> for valid and invalid moves respectively. This post uses the code from GitHub. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+<li id="fn:4">
+<p>Some functions, such&nbsp;as <code>println</code>,&nbsp;return <code>nil</code>, because they don&#8217;t really have anything to return. <a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 3 in the text">↩</a></p>
+</li>
+<li id="fn:5">
+<p>This code doesn&#8217;t make much sense, since how would it deal with the game ending? You&#8217;d either use recursion (like in the Clojure version) or classes (very not functional programming). <a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 4 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../../categories/brave-clojure/" rel="tag">brave&nbsp;clojure</a></li>
+            <li><a class="tag p-category" href="../../../../categories/clojure/" rel="tag">clojure</a></li>
+            <li><a class="tag p-category" href="../../../../categories/programming/" rel="tag">programming</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../../2023/im-a-quality-engineer-and-im-not-sure-how-i-feel-about-that/" rel="prev" title="I'm a quality engineer and I'm not sure how I feel about that">Previous&nbsp;post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2023 
+<a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by/4.0/80x15.png"></a>
+<a href="mailto:site@joep.slmail.me">Joep Schuurkes</a> - Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a> - Analytics by <a href="https://plausible.io/" rel="nofollow" target="_blank">Plausible</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

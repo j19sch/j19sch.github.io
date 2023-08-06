@@ -3,13 +3,30 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about clojure)</title>
   <id>https://smallsheds.garden/categories/clojure.atom</id>
-  <updated>2023-06-12T07:04:58Z</updated>
+  <updated>2023-08-06T13:13:14Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/clojure.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/clojure/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>(clj 12) Core concepts of functional programming with Peg Thing</title>
+    <id>https://smallsheds.garden/blog/clojure/2023/clj-12-core-concepts-of-functional-programming-with-peg-thing/</id>
+    <updated>2023-08-01T10:01:36+02:00</updated>
+    <published>2023-08-01T10:01:36+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/clojure/2023/clj-12-core-concepts-of-functional-programming-with-peg-thing/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Chapter 5 of "&lt;a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/"&gt;Clojure for the Brave and True&lt;/a&gt;" explores two core concepts of functional programming: pure functions and immutable data structures. It wraps up with walking you through the &lt;a href="https://github.com/flyingmachine/pegthing"&gt;code&lt;/a&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/clojure/2023/clj-12-core-concepts-of-functional-programming-with-peg-thing/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; of a game called &lt;a href="https://www.braveclojure.com/functional-programming/#Peg_Thing"&gt;"Peg Thing"&lt;/a&gt;&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/clojure/2023/clj-12-core-concepts-of-functional-programming-with-peg-thing/#fn:2"&gt;2&lt;/a&gt;&lt;/sup&gt;, which uses &lt;em&gt;"everything you've learned so far: immutable data structures, lazy sequences, pure functions, recursion - everything!"&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;So what is this Peg Thing?&lt;/h2&gt;
+&lt;p&gt;For a full description and the code of Peg Thing, you can follow the links in the paragraph above. In this post I'll only share what's relevant to describe what I learned about functional programming through Peg Thing.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/clojure/2023/clj-12-core-concepts-of-functional-programming-with-peg-thing/"&gt;Read more…&lt;/a&gt; (8 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="brave-clojure" label="brave clojure"/>
+    <category term="clojure" label="clojure"/>
+    <category term="programming" label="programming"/>
+  </entry>
   <entry>
     <title>(clj 11) Moving on from some unsolved exercises</title>
     <id>https://smallsheds.garden/blog/clojure/2022/clj-11-moving-on-from-some-unsolved-exercises/</id>
@@ -212,24 +229,5 @@ piece of code of about 50 lines in which - I'm sorry to say -  a hobbit gets hit
     <category term="clojure" label="clojure"/>
     <category term="programming" label="programming"/>
     <category term="python" label="python"/>
-  </entry>
-  <entry>
-    <title>(clj 2) Setting up Vim for Clojure</title>
-    <id>https://smallsheds.garden/blog/clojure/2020/clj2-setting-up-vim/</id>
-    <updated>2020-05-05T21:55:15+02:00</updated>
-    <published>2020-05-05T21:55:15+02:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/clojure/2020/clj2-setting-up-vim/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;As mentioned in my &lt;a href="https://smallsheds.garden/blog/clojure/2020/clj1-deciding-on-an-editor/"&gt;previous post&lt;/a&gt; I've decided to use &lt;a href="https://www.vim.org/"&gt;Vim&lt;/a&gt; as my Clojure editor. That leaves me with three things to do: getting reacquainted with Vim, updating my Vim config in the .&lt;code&gt;vimrc&lt;/code&gt; file, and installing both general and Clojure-specific Vim plugins.&lt;/p&gt;
-&lt;h3&gt;Getting reacquainted with Vim&lt;/h3&gt;
-&lt;p&gt;Ever since I learned Vim basics a long time ago I have been using it once in a while to make small edits to a config file or a commit message, but not for anything more complicated than that. So that's the first thing I wanted to address: refresh my basics and make sure I know where to find more information when I need it.&lt;/p&gt;
-&lt;h4&gt;Vimtutor&lt;/h4&gt;
-&lt;p&gt;I figured that a good way to get back into Vim was the &lt;a href="https://vimhelp.org/usr_01.txt.html#vimtutor"&gt;Vimtutor&lt;/a&gt;. It's a 30-minute interactive tutorial where you edit a file with instructions with vim. I kept notes of what it covers, which you can find &lt;a href="https://smallsheds.garden/my-projects/vimtutor"&gt;here&lt;/a&gt;. Vim's help also includes a &lt;a href="https://vimhelp.org/quickref.txt.html"&gt;quickref&lt;/a&gt;, an "Overview of the most common commands you will use", which is intimidatingly long considering that description. As a reference to look things up in, it should be useful, though.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/clojure/2020/clj2-setting-up-vim/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="clojure" label="clojure"/>
-    <category term="programming" label="programming"/>
-    <category term="vim" label="vim"/>
   </entry>
 </feed>
