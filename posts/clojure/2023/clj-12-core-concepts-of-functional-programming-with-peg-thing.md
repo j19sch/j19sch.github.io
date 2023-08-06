@@ -108,6 +108,7 @@ Another thing you may have noticed in the sequence diagram, is that `board` seem
 
 Going through the code, made me realise that this question came from my non-functional programming intuitions. It's not the case that `board` gets passed around and changed. A lot of functions in Peg Thing require a board as argument and return a thing that's a board. It's however not true that a `board` variable gets passed into the function as argument and that same variable but changed, comes out as the return value.
 
+As an example, look at the following three functions:
 
 ```Clojure
 ; called by move-peg, called by make-move, called by prompt-move
@@ -115,69 +116,116 @@ Going through the code, made me realise that this question came from my non-func
   "Put a peg in the board at given position"
   [board pos]
   (assoc-in board [pos :pegged] true))
-; assoc-in returns a new hash map with the change
 
 (defn remove-peg
   "Take the peg at given position out of the board"
   [board pos]
   (assoc-in board [pos :pegged] false))
-; assoc-in returns a new hash map with the change
 
 (defn move-peg
   "Take peg out of p1 and place it in p2"
   [board p1 p2]
   (place-peg (remove-peg board p1) p2))
-; returns what place-peg returns
-
-(defn make-move
-  "Move peg from p1 to p2, removing jumped peg"
-  [board p1 p2]
-  (if-let [jumped (valid-move? board p1 p2)]
-    (move-peg (remove-peg board jumped) p1 p2)))
-; returns what move-peg returns or nil because no explicit else
-
-(defn prompt-move
-  [board]
-  (println "\nHere's your board:")
-  (print-board board)
-  (println "Move from where to where? Enter two letters:")
-  (let [input (map letter->pos (characters-as-strings (get-input)))]
-    (if-let [new-board (make-move board (first input) (second input))]
-      (successful-move new-board)
-      (do
-        (println "\n!!! That was an invalid move :(\n")
-        (prompt-move board)))))
-; new-board is via let, so only in scope of function, is either board or nil, value determines next step is the then or the else
 
 ```
 
-# Summary
+`move-peg` calls `place-peg` with the return value of `remove-peg` as one of its arguments. Also good to mention here, is that Clojure doesn't have an explicit "return" keyword. A function always returns the result of the last expression it evaluates[^4]. So `move-peg` will return whatever the result is of `(place-peg (remove-peg board p1) p2)`. `place-peg` returns whatever [`assoc-in`](https://clojuredocs.org/clojure.core/assoc-in) returns, which is *"a new nested structure"*. `remove-peg` behaves similarly to `place-peg`.
+
+[^4]: Some functions, such as `println`, return `nil`, because they don't really have anything to return.
+
+## Immutable data and function composition go together
+
+All of this means, that when `move-peg` is called with a `board` argument, `remove-peg` will take that `board` and return a new one. Then `place-peg` uses that `board` and returns another new one, which is returned by `move-peg`. So while there are lots of functions in Peg Thing that require a "board"-like data structure, there is not a single `board` valiable that gets passed around through these functions.
+
+What Peg thing does not do (switching to Python syntax here), is re-using the same variable :
+
+```Python
+board = new_board(rows)
+board = prompt_empty_peg(board)
+board = prompt_move(board)
+board = prompt_move(board)
+```
+
+It also doesn't do this, i.e. having a main function that keeps initialising new variables[^5]:
+```Python
+full_board = new_board(rows)
+starting_board = prompt_empty_peg(full_board)
+board_1 = prompt_move(starting_board)
+board_2 = prompt_move(board_1)
+```
+[^5]: This code doesn't make much sense, since how would it deal with the game ending? You'd either use recursion (like in the Clojure version) or classes (very not functional programming).
+
+Rather, it uses `-main`, `prompt-rows`, `prompt-empty-peg` and a first call to `prompt-move` to set up the board. Then there are two mutually recursive functions, `prompt-move` and `succesful-move`, while playing the game, until `successful-move` decides there are no more valid moves and calls `game-over`.
 
 
-## pure functions and immutable data
+## Reflection
 
-### pure functions
+To me, that was the most interesting aspect of Peg Thing: immutable data and function composition go together. There is not some core entity (whether that's a function or a class) that owns both the main logic and main data of your program. Instead, there's a tree of functions, each being called with some piece(s) of data as arguments, returning a different piece of data.
 
-> A function is pure if it meets two qualifications:
-> - It always returns the same result if given the same arguments. This is called *referential transparency*, and you can add it to your list of $5 programming terms.
-> - It can’t cause any side effects. That is, the function can’t make any changes that are observable outside the function itself - for example, by changing an externally accessible mutable object or writing to a file.
-
-> Lucky for you, Clojure makes your job easier by going to great lengths to limit side effects—all of its core data structures are immutable. You cannot change them in place, no matter how hard you try!
-
-### immutable data
-
-- Recursion Instead of for/while
-- Function Composition Instead of Attribute Mutation
-
-> Combining functions like this—so that the return value of one function is passed as an argument to another—is called function composition. In fact, this isn’t so different from the previous example, which used recursion, because recursion continually passes the result of a function to another function; it just happens to be the same function. In general, functional programming encourages you to build more complex functions by combining simpler functions.
-
-### peg thing
-> In our board creation functions, we saw how recursion was used to build up a value using immutable data structures. The same thing is happening here, only it involves two mutually recursive functions and some user input. No mutable attributes in sight!
-
-### Summary
-> Pure functions are referentially transparent and side-effect free, which makes them easy to reason about. To get the most from Clojure, try to keep your impure functions to a minimum. In an immutable world, you use recursion instead of for/while loops, and function composition instead of successions of mutations. Pure functions allow powerful techniques like function composition functions and memoization. They’re also super fun!
+It makes me curious to read and write more Clojure, since it's the first time while working my through the book, I'm not just intrigued by how the syntax is different from what I'm used to, but also by how the structure of a program is different.
 
 
+---
+
+# Two other interesting things in Peg Thing's code
+
+## `let` is surprising
+
+The [Clojure docs say](https://clojuredocs.org/clojure.core/let) that `let`'s syntax is `(let [bindings*] exprs*)` and that it *"evaluates the exprs in a lexical context in which the symbols in the binding-forms are bound to their respective init-exprs or parts therein."* I did not find that particularly helpful.
+
+The Brave Clojure-book does a better job by saying:
+
+> So, `let` is a handy way to introduce local names for values, which helps simplify the code.
+
+What surprised me about it, is that `let` doesn't just let you assign a local name to a variable[^3]. It lets you assign a local name to what's returned by an expression and then use that return value within the `let`. For example, in Peg Thing, there's the `add-pos` function:
+
+[^3]: Which would be a curious concept anyway, with the immutable data structures.
+
+```Clojure
+(defn add-pos
+  "Pegs the position and performs connections"
+  [board max-pos pos]
+  (let [pegged-board (assoc-in board [pos :pegged] true)]
+    (reduce (fn [new-board connection-creation-fn]
+              (connection-creation-fn new-board max-pos pos))
+            pegged-board
+            [connect-right connect-down-left connect-down-right])))
+```
+
+The `let [pegged-board (assoc-in board [pos :pegged] true)]` makes the return value of `(assoc-in board [pos :pegged] true)` available as `pegged-board`, which is then used in the `reduce` function. So, you can 'hide' quite some logic in a `let`.
+
+## `triangular?` is cool
+
+As you can see in the call graph, there are quite some functions whose name ends with a question mark, for example `triangular?` and `valid-move?`. I really like that this is possible and prefer it over an alternative like `is_triangular`.
+
+Turns out it's not only possible, but it's [part of the Clojure style guide](https://guide.clojure.style/#naming-predicates) and they're called predicate functions. I also found a blog post by [vlaaad](https://github.com/vlaaad/) about ["Question marks in Clojure"](https://vlaaad.github.io/2019-03-30/question-marks-in-clojure) going a bit deeper into this topic.
+
+
+
+
+---
+
+# (post script) Plantuml is more powerful than I remembered
+
+some good links on plantuml
+
+see comments in plantuml file
+
+see file
+
+lot more powerful than I thought
+
+' https://plantuml.com/skinparam
+' https://plantuml.com/commons
+' https://plantuml.com/component-diagram
+' https://www.augmentedmind.de/2021/01/17/plantuml-layout-tutorial-styles/
+
+
+---
+
+---
+
+---
 
 ## A tree of `board`s
 - three of the areas are tree-shaped in the call graph
@@ -283,7 +331,6 @@ You might have noticed in the sequence diagram that `board` seems to get passed 
     - avoided through immutable data, no need for `board` and `board2`, just functions calling functions, so no `main` in that sense fron which everything branches AND returns (imperative programming)
 
 
-> In computer science, functional programming is a programming paradigm where programs are constructed by applying and composing functions. It is a declarative programming paradigm in which function definitions are trees of expressions that map values to other values, rather than a sequence of imperative statements which update the running state of the program. - https://en.wikipedia.org/wiki/Functional_programming
 
 or is it declaritive? or a specific kind of imperative, i.e. functional, i.e. function trees
 
@@ -300,54 +347,7 @@ or is it declaritive? or a specific kind of imperative, i.e. functional, i.e. fu
 
 
 
-# Two other interesting things in Peg Thing's code
 
-## `let` is surprising
-
-The [Clojure docs say](https://clojuredocs.org/clojure.core/let) that `let`'s syntax is `(let [bindings*] exprs*)` and that it *"evaluates the exprs in a lexical context in which the symbols in the binding-forms are bound to their respective init-exprs or parts therein."* I did not find that particularly helpful.
-
-The Brave Clojure-book does a better job by saying:
-
-> So, `let` is a handy way to introduce local names for values, which helps simplify the code.
-
-What surprised me about it, is that `let` doesn't just let you assign a local name to a variable[^3]. It lets you assign a local name to what's returned by an expression and then use that return value within the `let`. For example, in Peg Thing, there's the `add-pos` function:
-
-[^3]: Which would be a curious concept anyway, with the immutable data structures.
-
-```Clojure
-(defn add-pos
-  "Pegs the position and performs connections"
-  [board max-pos pos]
-  (let [pegged-board (assoc-in board [pos :pegged] true)]
-    (reduce (fn [new-board connection-creation-fn]
-              (connection-creation-fn new-board max-pos pos))
-            pegged-board
-            [connect-right connect-down-left connect-down-right])))
-```
-
-The `[pegged-board (assoc-in board [pos :pegged] true)]` makes the return value of `(assoc-in board [pos :pegged] true)` available as `pegged-board`, which is then used in the `reduce` function. So, you can 'hide' quite some logic in a `let`.
-
-
-
-## `triangular?` is cool
-
-As you can see in the call graph, there are quite some functions whose name ends with a question mark, for example `triangular?` and `valid-move?`. I really like this is possible and prefer it over an alternative like `is_triangular`.
-
-Turns out it's not only possible, but it's [part of the Clojure style guide](https://guide.clojure.style/#naming-predicates) and they're called predicate functions. I also found a blog post by [vlaaad](https://github.com/vlaaad/) about ["Question marks in Clojure"](https://vlaaad.github.io/2019-03-30/question-marks-in-clojure) going a bit deeper into this topic.
-
-
-
----
-
-# (post script) Plantuml is more powerful than I thought
-
-some good links on plantuml
-
-see comments in plantuml file
-
-see file
-
-lot more powerful than I thought
 
 
 ---
@@ -368,3 +368,53 @@ also looked into one early
 kind of an oversell, but what else can you do if example needs to be simple enough for the book
 
 what does this add to my post?
+
+
+
+---
+
+```Clojure
+(defn make-move
+  "Move peg from p1 to p2, removing jumped peg"
+  [board p1 p2]
+  (if-let [jumped (valid-move? board p1 p2)]
+    (move-peg (remove-peg board jumped) p1 p2)))
+; returns what move-peg returns or nil because no explicit else
+
+(defn prompt-move
+  [board]
+  (println "\nHere's your board:")
+  (print-board board)
+  (println "Move from where to where? Enter two letters:")
+  (let [input (map letter->pos (characters-as-strings (get-input)))]
+    (if-let [new-board (make-move board (first input) (second input))]
+      (successful-move new-board)
+      (do
+        (println "\n!!! That was an invalid move :(\n")
+        (prompt-move board)))))
+; new-board is via let, so only in scope of function, is either board or nil, value determines next step is the then or the else
+
+```
+
+## pure functions and immutable data
+
+### pure functions
+
+> A function is pure if it meets two qualifications:
+> - It always returns the same result if given the same arguments. This is called *referential transparency*, and you can add it to your list of $5 programming terms.
+> - It can’t cause any side effects. That is, the function can’t make any changes that are observable outside the function itself - for example, by changing an externally accessible mutable object or writing to a file.
+
+> Lucky for you, Clojure makes your job easier by going to great lengths to limit side effects—all of its core data structures are immutable. You cannot change them in place, no matter how hard you try!
+
+### immutable data
+
+- Recursion Instead of for/while
+- Function Composition Instead of Attribute Mutation
+
+> Combining functions like this—so that the return value of one function is passed as an argument to another—is called function composition. In fact, this isn’t so different from the previous example, which used recursion, because recursion continually passes the result of a function to another function; it just happens to be the same function. In general, functional programming encourages you to build more complex functions by combining simpler functions.
+
+### peg thing
+> In our board creation functions, we saw how recursion was used to build up a value using immutable data structures. The same thing is happening here, only it involves two mutually recursive functions and some user input. No mutable attributes in sight!
+
+### Summary
+> Pure functions are referentially transparent and side-effect free, which makes them easy to reason about. To get the most from Clojure, try to keep your impure functions to a minimum. In an immutable world, you use recursion instead of for/while loops, and function composition instead of successions of mutations. Pure functions allow powerful techniques like function composition functions and memoization. They’re also super fun!

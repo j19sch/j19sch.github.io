@@ -1,5 +1,10 @@
 @startuml
 
+' generate image
+' java -jar ./plantuml-1.2023.8.jar clj-diagram.txt
+
+skinparam dpi 150
+
 <style>
 legend {
 	FontSize 16
@@ -8,34 +13,10 @@ legend {
 }
 </style>
 
-' FontSize 30
-' BackGroundColor yellow
-' Padding 60
-
-skinparam dpi 150
-
 skinparam componentStyle rectangle
 
-'skinparam linetype polyline
-
-' https://plantuml.com/skinparam
-' https://plantuml.com/commons
-' https://plantuml.com/component-diagram
-' https://www.augmentedmind.de/2021/01/17/plantuml-layout-tutorial-styles/
-
-' generate image
-' java -jar ~/Downloads/plantuml-1.2023.8.jar clj-diagram.txt
-
-' notes
-' row-num not called by anything ??? fixed!
-
-' function calling function calling function inside a defn
-'arity overloading
-' tri*
-' get-input
 
 legend bottom right
-' option: use table
 	regular font: function
 	//italicized font//: variable
 	arrow: calls
