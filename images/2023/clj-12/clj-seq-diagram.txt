@@ -1,0 +1,85 @@
+@startuml
+
+skinparam sequenceArrowThickness 1.5
+
+
+participant "-main"
+participant "prompt-rows"
+participant "prompt-empty-peg"
+participant "prompt-move"
+participant "successful-move"
+participant "game-over"
+
+participant "new-board"
+participant "print-board"
+participant "remove-peg"
+participant "letter->pos"
+participant "Integer."
+
+participant "get-input"
+participant "println"
+participant "System/exit"
+
+
+"-main" [#navy]-> "prompt-rows"
+
+activate "prompt-rows"
+
+"prompt-rows" --> "println": "How many rows? [5]"
+"prompt-rows" <-- "println": nil
+"prompt-rows" --> "Integer.": (get-input 5)
+"Integer." --> "get-input": 5
+"Integer." <-- "get-input": input
+"prompt-rows" <-- "Integer.": rows
+"prompt-rows" --> "new-board": rows
+"prompt-rows" <-- "new-board": board
+
+|||
+
+
+"prompt-rows" [#navy]-> "prompt-empty-peg": board
+
+deactivate "prompt-rows"
+activate "prompt-empty-peg"
+
+"prompt-empty-peg" --> "println": "Here's your board:"
+"prompt-empty-peg" <-- "println": nil
+"prompt-empty-peg" --> "print-board": board
+"prompt-empty-peg" <-- "print-board": nil
+"prompt-empty-peg" --> "println": "Remove which peg? [e]"
+"prompt-empty-peg" <-- "println": nil
+
+|||
+
+"prompt-empty-peg" [#navy]-> "prompt-move": remove-peg board (letter->pos (get-input 'e'))
+deactivate "prompt-empty-peg"
+activate "prompt-move"
+
+"prompt-move" --> "remove-peg": board (letter->pos (get-input 'e'))
+"remove-peg" --> "letter->pos": get-input 'e'
+"letter->pos" --> "get-input": 'e'
+"letter->pos" <-- "get-input": input
+"remove-peg" <-- "letter->pos": position
+"prompt-move" <-- "remove-peg": board
+
+' never happens: "prompt-empty-peg" <- "prompt-move": board
+
+|||
+
+loop
+	"prompt-move" [#darkorchid]-> "successful-move": board
+	deactivate "prompt-move"
+	activate "successful-move"
+
+	"successful-move" [#darkorchid]-> "prompt-move": board
+	deactivate "successful-move"
+end
+
+"successful-move" [#darkorchid]-> "game-over": board
+
+activate "game-over"
+"game-over" --> "System/exit"
+deactivate "game-over"
+
+
+@enduml

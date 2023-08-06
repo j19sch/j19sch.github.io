@@ -1,0 +1,179 @@
+@startuml
+
+' generate image
+' java -jar ./plantuml-1.2023.8.jar clj-diagram.txt
+
+skinparam dpi 150
+
+<style>
+legend {
+	FontSize 16
+	Margin 10 10 50 10
+	Padding 10
+}
+</style>
+
+skinparam componentStyle rectangle
+
+
+legend bottom right
+	regular font: function
+	//italicized font//: variable
+	arrow: calls
+	thick blue arrow: setup
+	thick purple arrow: main game loop
+	dashed line: call with side effects
+
+end legend
+
+
+interface "read-line" as readline
+interface println
+interface "System/exit" as systemexit
+
+
+frame "create the board" {
+	[tri*]
+	[ //tri// ]
+	[triangular?]
+	[row-tri]
+	[row-num]
+	[in-bounds?]
+	[ connect ]
+	[ connect-right ]
+	[ connect-down-left ]
+	[ connect-down-right ]
+	[ add-pos ]
+	[new-board]
+}
+
+frame "move pegs" {
+	[ pegged? ]
+	[ valid-moves ]
+	[ valid-move? ]
+	[ remove-peg ]
+	[ place-peg ]
+	[ move-peg ]
+	[ make-move ]
+	[ can-move? ]
+}
+
+frame "represent board textually and print it" {
+	'not functions
+	[ //alpha-start// ]
+	[ //alpha-end// ]
+	[ //letters// ]
+	[ //pos-chars// ]
+	[ //ansi-styles// ]
+
+	'functions again
+	[ansi]
+	[colorize]
+	[ render-pos ]
+	[row-positions]
+	[row-padding]
+	[ render-row ]
+	[ print-board ]
+}
+
+
+frame "interaction" {
+	[letter->pos]
+	[get-input]
+	[characters-as-strings]
+	[ prompt-move ]
+	[ successful-move ]
+	[ game-over ]
+	[ prompt-empty-peg ]
+	[prompt-rows]
+	[-main]
+}
+
+
+'''
+'calls
+'''
+
+'create the board
+[tri*] --> [tri*]
+[ //tri// ] --> [tri*]
+[row-tri] --> [ //tri// ]
+[row-num] --> [ //tri// ]
+[ connect ] --> [in-bounds?]
+[ connect-right ] --> [triangular?]
+[ connect-right ] --> [ connect ]
+[ connect-down-left ] --> [ connect ]
+[ connect-down-left ] --> [row-num]
+[ connect-down-right ] --> [ connect ]
+[ connect-down-right ] --> [row-num]
+[ add-pos ] --> [ connect-right ]
+[ add-pos ] --> [ connect-down-left ]
+[ add-pos ] --> [ connect-down-right ]
+[new-board] --> [row-tri]
+[new-board] --> [ add-pos ]
+
+'move pegs
+[ valid-moves ] --> [ pegged? ]
+[ valid-move? ] --> [ valid-moves ]
+[ move-peg ] --> [ remove-peg ]
+[ move-peg ] --> [ place-peg ]
+[ make-move ] --> [ valid-move? ]
+[ make-move ] --> [ move-peg ]
+[ make-move ] --> [ remove-peg ]
+[ can-move? ] --> [ valid-moves ]
+
+'represent board textually and print it
+[ //letters// ] --> [ //alpha-start// ]
+[ //letters// ] --> [ //alpha-end// ]
+[ansi] --> [ //ansi-styles// ]
+[colorize] --> [ansi]
+[ render-pos ] --> [ //letters// ]
+[ render-pos ] --> [colorize]
+[row-positions] -left-> [row-tri]
+[row-positions] -left-> [row-num]
+[row-padding] --> [ //pos-chars// ]
+[row-padding] -left-> [row-num]
+[ render-row ] --> [row-padding]
+[ render-row ] --> [ render-pos ]
+[ render-row ] -> [row-num]
+[ render-row ] --> [row-positions]
+[ print-board ] --> [ render-row ]
+[ print-board ] -left-> [row-num]
+[ print-board ] ..> println
+
+'interaction
+[letter->pos] -> [ //alpha-start// ]
+[get-input] --> [get-input]
+[get-input] ..> readline
+[ prompt-move ] ..> println
+[ prompt-move ] -> [ print-board ]
+[ prompt-move ] --> [letter->pos]
+[ prompt-move ] --> [characters-as-strings]
+[ prompt-move ] --> [get-input]
+[ prompt-move ] -> [ make-move ]
+[ prompt-move ] -[thickness=4,#darkorchid]-> [ successful-move ]
+[ prompt-move ] --> [ prompt-move ]
+[ successful-move ] -> [ can-move? ]
+[ successful-move ] -[thickness=4,#darkorchid]-> [ prompt-move ]
+[ successful-move ] -[thickness=4,#darkorchid]-> [ game-over ]
+[ game-over ] ..> println
+[ game-over ] -> [ print-board ]
+[ game-over ] --> [get-input]
+[ game-over ] -up-> [prompt-rows]
+[ game-over ] ..> systemexit
+[ prompt-empty-peg ] ..> println
+[ prompt-empty-peg ] -> [ print-board ]
+[ prompt-empty-peg ] -down[thickness=3,#navy]-> [ prompt-move ]
+[ prompt-empty-peg ] -> [ remove-peg ]
+[ prompt-empty-peg ] --> [letter->pos]
+[ prompt-empty-peg ] --> [get-input]
+[prompt-rows] ..> println
+[prompt-rows] --> [get-input]
+[prompt-rows] -> [new-board]
+[prompt-rows] -down[thickness=3,#navy]-> [ prompt-empty-peg ]
+[-main] ..> println
+[-main] -down[thickness=3,#navy]-> [prompt-rows]
+
+@enduml
+
+
