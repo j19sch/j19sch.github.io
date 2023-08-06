@@ -1,7 +1,7 @@
 <!--
 .. title: (clj 12) Core concepts of functional programming with Peg Thing
 .. slug: clj-12-core-concepts-of-functional-programming-with-peg-thing
-.. date: 2023-08-01 10:01:36 UTC+02:00
+.. date: 2023-08-06 15:13:36 UTC+02:00
 .. tags: clojure, programming, brave clojure
 .. category: clojure
 .. link: 
