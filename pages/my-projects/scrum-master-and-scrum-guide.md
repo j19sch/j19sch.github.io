@@ -1,5 +1,5 @@
 title: The Scrum Master Role across the Scrum Guides
-slug: the-scrum-master-role-across-the-scrum-guide
+slug: the-scrum-master-role-across-the-scrum-guides
 date: 2023-08-07 09:34:40 UTC+02:00
 link: 
 description: 
