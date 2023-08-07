@@ -11,7 +11,7 @@
 
 Recently I applied to two scrum master jobs and it got me thinking: what is a scrum master? What is it exactly that they do?
 
-What made this question even more pertinent to me (apart from the job applications) is that I have been a scrum master. But that was five years ago and none of my jobs since had much involvement of a scrum master. And my experiences of those past five years made me wonder: where exactly does a scrum master fit in?
+What made this question even more pertinent to me (apart from the job applications) is that in the past I have been a scrum master. But that was five years ago and none of my jobs since had much involvement of a scrum master. And my experiences of those past five years made me wonder: where exactly does a scrum master fit in?
 
 
 
@@ -79,7 +79,7 @@ In "[Words that changed in Scrum Guide 2020 update](https://www.scrum.org/resour
 >The 2017 guide used the term "Servant Leadership" to describe the style of leadership that serves Scrum Teams well. This idea is still valid, however, the 2020 Scrum Guide places more emphasis on leadership, removing the potential misinterpretation that Scrum Masters are servants first and leaders second. Understanding the idea of servant leadership is still valuable when using Scrum.
 
 
-## Effectiveness through practices or the environment?
+## Effectiveness through practices or through the environment?
 
 The 2017 version links the value created by the Scrum Team to the interactions with those outside the team:
 > The Scrum Master helps those outside the Scrum Team understand which of their interactions with the Scrum Team are helpful and which aren’t. The Scrum Master helps everyone change these interactions to maximize the value created by the Scrum Team.
@@ -88,7 +88,7 @@ The 2020 version does not mention this at all and links the team's effectiveness
 > The Scrum Master is accountable for the Scrum Team’s effectiveness. They do this by enabling the Scrum Team to improve its practices, within the Scrum framework.
 
 
-## How to serve others
+## How a scrum master serves others
 
 In the 2017 version the three lists of how a Scrum Master serves others, is in the order: Product Owner, Development Team, Organization. In the 2020 version the order is: Scrum Team, Product Owner, organization.
 
@@ -158,9 +158,7 @@ It might just be me, but I'd expect a modern scrum master to not only be familia
 
 In a [previous post](link://slug/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto) I split up software development into five areas: collaboration, software engineering, work management, product, and reflect & experiment. Scrum definitely covers work management and reflect & experiment. Arguably it covers collaboration (as in: soft skills) to some degree. It does not cover software engineering, because it's not specific to software. And it does not cover product. The Scrum Guide (2020) does say *"The Product Owner is accountable for maximizing the value of the product resulting from the work of the Scrum Team."* but provides no guidance on how exactly to do this.
 
-So as a scrum master, you have two options: stick with a focus on work management and reflect & experiement, or broaden your horizons beyond scrum.
-
-And that's before we start talking about how to scale agile and/or scrum.
+So as a scrum master, you have two options: stick with a focus on work management and reflect & experiement, or broaden your horizons beyond scrum. And that's before we start talking about how to scale agile and/or scrum.
 
 ---
 
