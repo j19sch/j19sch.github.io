@@ -58,10 +58,10 @@ A big difference is that the current version (2020) mentions "Scrum Master" 12 t
 
 One interesting difference outside the "The Scrum Master" section that is worth mentioning, is that in the 2017 version the description of each Scrum Event says that the Scrum Master ensures that it takes place. In the 2020 version, the Scrum Master is only mentioned once for one event, the Daily Scrum: *"If the Product Owner or Scrum Master are actively working on items in the Sprint Backlog, they participate as Developers."*
 
-The biggest differences are (what else to expect?) in the "The Scrum Master" section itself.
+The biggest differences are (obviously) in the "The Scrum Master" section itself. I'll list the significant ones below.
 
 
-## Subtle changes in word choice
+## Subtle changes in choice of words
 
 ### Accountable or responsible?
 
@@ -78,17 +78,19 @@ The 2017 version says *"The Scrum Master is a servant-leader for the Scrum Team.
 The 2020 version says basically the same, but avoids the term "servant-leader": *"Scrum Masters are true leaders who serve the Scrum Team and the larger organization."*
 
 In "[Words that changed in Scrum Guide 2020 update](https://www.scrum.org/resources/blog/words-changed-scrum-guide-2020-update)" Dave West explains this change:   
-*"The 2017 guide used the term “Servant Leadership” to describe the style of leadership that serves Scrum Teams well. This idea is still valid, however, the 2020 Scrum Guide places more emphasis on leadership, removing the potential misinterpretation that Scrum Masters are servants first and leaders second. Understanding the idea of servant leadership is still valuable when using Scrum."*
+>The 2017 guide used the term “Servant Leadership” to describe the style of leadership that serves Scrum Teams well. This idea is still valid, however, the 2020 Scrum Guide places more emphasis on leadership, removing the potential misinterpretation that Scrum Masters are servants first and leaders second. Understanding the idea of servant leadership is still valuable when using Scrum.
 
 
 ## Effectiveness through practices or the environment?
 
-The 2017 version links the value created by the Scrum Team to the interactions with those outside the team: *"The Scrum Master helps those outside the Scrum Team understand which of their interactions with the Scrum Team are helpful and which aren’t. The Scrum Master helps everyone change these interactions to maximize the value created by the Scrum Team."*
+The 2017 version links the value created by the Scrum Team to the interactions with those outside the team:
+> The Scrum Master helps those outside the Scrum Team understand which of their interactions with the Scrum Team are helpful and which aren’t. The Scrum Master helps everyone change these interactions to maximize the value created by the Scrum Team.
 
-The 2020 version does not mention this at all and links the team's effectiveness to its practices: *"The Scrum Master is accountable for the Scrum Team’s effectiveness. They do this by enabling the Scrum Team to improve its practices, within the Scrum framework."*
+The 2020 version does not mention this at all and links the team's effectiveness to its practices:
+> The Scrum Master is accountable for the Scrum Team’s effectiveness. They do this by enabling the Scrum Team to improve its practices, within the Scrum framework.
 
 
-## How to serve others and in what order?
+## How to serve others
 
 In the 2017 version the three lists of how a Scrum Master serves others, is in the order: Product Owner, Development Team, Organization.
 
@@ -120,7 +122,7 @@ None of the changes seemd siginificant enough to me to mention in this post/
 
 Agile Software Development with Scrum - Ken Schwaber, Mike Beedle
 
-!! refer to Johanna Rothman
+!! refer to Johanna Rothman, Modern Management Made Easy, https://www.jrothman.com/modern-management-made-easy-a-three-volume-set/
 
 
 # A scrum master is RE-TRAINED and has BELIEF
@@ -165,9 +167,43 @@ Scrum: The Art of Doing Twice the Work in Half the Time - Jeff Sutherland
 
 > He or she would facilitate all the meetings, make sure there was transparency, and, most important, help the team discover what was getting in their way. They key part of that was to realize that often the impediments aren't simply that the machine doesn't work or that Jim in accounting is a jerk - it's the process itself. It was the Scrum Master's job to guide the team toward *comtinuous improvement* - to ask with regularity, "How can we do what we do better?"" p62
 
+
+# A scrum master is a Wise Fool
+
+Scrum: The Art of Doing Twice the Work in Half the Time - Jeff Sutherland
+
 > He or she needs to be able to see the problem and bring it up with the team. It's crucial that someone asks the hard questions. p164
 
-> The "Wise Fool" is the person who asks uncomfortable questions or raises uncomfortable truths. p164
+> The "Wise Fool" is the person who asks uncomfortable questions or raises uncomfortable truths.  These workers aren't always easy to have around, since jthey can be seen as troublemakers or not part of teh team, but they need to be cultivated and used. p164
+
+# A scrum master is half a quality engineer
+
+quality engineer or agile tester?
+
+
+# A scrum master is whatever the job description says
+
+
+# A scrum master covers only 2 of 5 areas of software development
+
+five areas from post 2021 [An approach to teaching Agile 20 years after the Agile Manifesto](link://slug/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto)
+
+the two: work management and reflect & experiment
+
+debate: collaboration (inc communication)
+
+collaboration (inc communication)
+software engineering
+work management
+product
+reflect & experiment
+
+
+# A scrum master is also familiar with kanban, lean, and DevOps
+
+pair and ensemble programming?
+
+
 
 
 # So what is a scrum master?
