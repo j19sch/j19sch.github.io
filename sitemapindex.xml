@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://smallsheds.garden/blog/feed.atom</loc>
-  <lastmod>2023-08-06T13:16:00Z</lastmod>
+  <lastmod>2023-08-08T08:12:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/blog/rss.xml</loc>
-  <lastmod>2023-08-06T13:16:00Z</lastmod>
+  <lastmod>2023-08-08T08:12:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/agile-manifesto.atom</loc>
@@ -23,11 +23,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/agile.atom</loc>
-  <lastmod>2023-08-06T13:16:00Z</lastmod>
+  <lastmod>2023-08-08T08:12:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/agile.xml</loc>
-  <lastmod>2023-08-06T13:16:00Z</lastmod>
+  <lastmod>2023-08-08T08:12:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/black-box-puzzle.atom</loc>
@@ -55,11 +55,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_agile.atom</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-08-08T08:12:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_agile.xml</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-08-08T08:12:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_cicd.atom</loc>
@@ -239,11 +239,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cicd.atom</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-08-08T08:12:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cicd.xml</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-08-08T08:12:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/clojure.atom</loc>
@@ -287,11 +287,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/devops.atom</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-08-08T08:12:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/devops.xml</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-08-08T08:12:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/dewt.atom</loc>
@@ -375,19 +375,19 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/lean.atom</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-08-08T08:12:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/lean.xml</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-08-08T08:12:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/management.atom</loc>
-  <lastmod>2023-08-06T13:16:00Z</lastmod>
+  <lastmod>2023-08-08T08:12:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/management.xml</loc>
-  <lastmod>2023-08-06T13:16:00Z</lastmod>
+  <lastmod>2023-08-08T08:12:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/manifesto.atom</loc>
@@ -575,11 +575,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/teaching.atom</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-08-08T08:12:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/teaching.xml</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-08-08T08:12:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/tech-debt.atom</loc>
@@ -703,11 +703,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/work-management.atom</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-08-07T13:43:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/work-management.xml</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-08-07T13:43:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/workshop.atom</loc>
@@ -719,6 +719,6 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/sitemap.xml</loc>
-  <lastmod>2023-08-06T13:16:00Z</lastmod>
+  <lastmod>2023-08-08T08:12:00Z</lastmod>
  </sitemap>
 </sitemapindex>
