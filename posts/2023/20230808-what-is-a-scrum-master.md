@@ -1,7 +1,7 @@
 <!--
 .. title: What is a scrum master?
 .. slug: what-is-a-scrum-master
-.. date: 2023-08-07 09:00:00 UTC+02:00
+.. date: 2023-08-08 14:04:40 UTC+02:00
 .. tags: agile, management
 .. category: agile
 .. link: 
