@@ -26,7 +26,7 @@ Additionally, the [Agile Manifesto](https://agilemanifesto.org/) was [written in
 This leads us to the core question: if for as long as you've been in software development, everyone has been doing Agile, if you're not a blank slate and neither is your organization, what would you be interested in learning? What would you want to be taught? Or more importantly, how would you want to be taught?
 
 
-## Three pillars: noticing - options - principles
+## Three pillars: noticing - options - principles <a id="noticing-options-principles"></a>
 
 The approach I envision is built around three pillars: noticing, options, and principles. The first two pillars, noticing and options, are heavily influenced by John Mason's book *"Researching Your Own Practice, The Discipline of Noticing"*. In this book he places these at the center of professional development:
 

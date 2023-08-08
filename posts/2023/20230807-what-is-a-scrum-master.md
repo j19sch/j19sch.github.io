@@ -23,7 +23,7 @@ What made this question even more pertinent to me (apart from the job applicatio
 
 <!-- TEASER_END -->
 
-> The Scrum Master is accountable for the Scrum Team’s effectiveness. They do this by enabling the Scrum Team to improve its practices, within the Scrum framework.
+> The Scrum Master is accountable for the Scrum Team's effectiveness. They do this by enabling the Scrum Team to improve its practices, within the Scrum framework.
 
 
 
@@ -31,11 +31,13 @@ What made this question even more pertinent to me (apart from the job applicatio
 
 [The 2020 Scrum Guide](https://scrumguides.org/scrum-guide.html#scrum-master) says:
 
+> Scrum Masters are true leaders who serve the Scrum Team and the larger organization.
+>
 > The Scrum Master serves the Scrum Team in several ways, including:
 > 
 > - Coaching the team members in self-management and cross-functionality;
 > - Helping the Scrum Team focus on creating high-value Increments that meet the Definition of Done;
-> - Causing the removal of impediments to the Scrum Team’s progress; and,
+> - Causing the removal of impediments to the Scrum Team's progress; and,
 > - Ensuring that all Scrum events take place and are positive, productive, and kept within the timebox.
 > 
 > The Scrum Master serves the Product Owner in several ways, including:
@@ -56,14 +58,14 @@ What made this question even more pertinent to me (apart from the job applicatio
 
 # A scrum master changes across versions of the Scrum Guide
 
-If you really want to dig into this, I copied the "The Scrum Master" section of all seven verions of the Scrum Guide to a [separate page](/my-projects/the-scrum-master-role-across-the-scrum-guides). In this post, I'll focus on the differences in the "The Scrum Master" section between the [current](https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf) and the [previous](https://scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-US.pdf) version of the Scrum Guide.
+If you really want to dig into this, I copied the "The Scrum Master" section of all seven versions of the Scrum Guide to a [separate page](/my-projects/the-scrum-master-role-across-the-scrum-guides). In this post I'll focus on the differences in the "The Scrum Master" section between the [current](https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf) and the [previous](https://scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-US.pdf) version of the Scrum Guide.
 
-Before going into those differences, I should note that the current version (2020) is a serious revision compared to the previous one (2017). The [Scrum Guide Revision History](https://scrumguides.org/revisions.html) says about this that the 2020 version is "Even Less Prescriptive" and has "Overall Simplification of Language for a Wider Audience". Where the 2017 version counted 19 pages and 7.012 words, the 2020 version is only 13 pages and 4.075 words long. And as a result the current version (2020) mentions "Scrum Master" 12 times, while the previous version (2017) mentioned it 34 times.
+Before going into those differences, I should note that the current version (2020) is a serious revision compared to the previous one (2017). The [Scrum Guide Revision History](https://scrumguides.org/revisions.html) says that the 2020 version is "Even Less Prescriptive" and has "Overall Simplification of Language for a Wider Audience". Where the 2017 version counted 19 pages and 7.012 words, the 2020 version is only 13 pages and 4.075 words long. And as a result the current version (2020) mentions "Scrum Master" 12 times, while the previous version (2017) mentioned it 34 times.
 
 
 ## Subtle changes in choice of words
 
-There are two small changes in choice of words between the 2017 and 2020 versions. You can probably argue either way about how significant these are.
+There are two small changes in choice of words between the 2017 and 2020 versions.
 
 ### Accountable or responsible?
 
@@ -82,25 +84,25 @@ In "[Words that changed in Scrum Guide 2020 update](https://www.scrum.org/resour
 ## Effectiveness through practices or through the environment?
 
 The 2017 version links the value created by the Scrum Team to the interactions with those outside the team:
-> The Scrum Master helps those outside the Scrum Team understand which of their interactions with the Scrum Team are helpful and which aren’t. The Scrum Master helps everyone change these interactions to maximize the value created by the Scrum Team.
+> The Scrum Master helps those outside the Scrum Team understand which of their interactions with the Scrum Team are helpful and which aren't. The Scrum Master helps everyone change these interactions to maximize the value created by the Scrum Team.
 
 The 2020 version does not mention this at all and links the team's effectiveness to its practices:
-> The Scrum Master is accountable for the Scrum Team’s effectiveness. They do this by enabling the Scrum Team to improve its practices, within the Scrum framework.
+> The Scrum Master is accountable for the Scrum Team's effectiveness. They do this by enabling the Scrum Team to improve its practices, within the Scrum framework.
 
 
 ## How a scrum master serves others
 
 In the 2017 version the three lists of how a Scrum Master serves others, is in the order: Product Owner, Development Team, Organization. In the 2020 version the order is: Scrum Team, Product Owner, organization.
 
-The reason for this might be as simple as the [change in the 2020 version](https://scrumguides.org/revisions.html) of no longer having a Development Team, with the Scrum Master and Product Owner outside of that team. Instead, there's now one Scrum Team with three different sets of accountabilities: PO, SM, and Developers.
+The reason for this might be as simple as the [change in the 2020 version](https://scrumguides.org/revisions.html) of no longer having a Development Team, with the Scrum Master and Product Owner outside of that team. Instead, there's now one Scrum Team with three different sets of accountabilities: Product Owner, Scrum Master, and Developers.
 
 Still, I find it intriguing that until the 2020 version, serving the Product Owner gets mentioned before serving the Development Team.
 
 ### Serving the Development Team/Scrum Team
 
-The 2017 version has the Scrum Master *"Removing impediments to the Development Team’s progress"*, while the 2020 version says *"Causing the removal of impediments to the Scrum Team’s progress"*.
+The 2017 version has the Scrum Master *"Removing impediments to the Development Team's progress"*, while the 2020 version says *"Causing the removal of impediments to the Scrum Team's progress"*.
 
-In the 2017 version the Scrum Master serves the team by *"Facilitating Scrum events as requested or needed"*. In the 2020 version this becomes *"Ensuring that all Scrum events take place and are positive, productive, and kept within the timebox"*. This matches another change where the 2017 version incluedes in the description of each scrum event that the Scrum Master ensures that it takes place. In the 2020 version, the Scrum Master is only mentioned once for one event, the Daily Scrum: *"If the Product Owner or Scrum Master are actively working on items in the Sprint Backlog, they participate as Developers."*
+In the 2017 version the Scrum Master serves the team by *"Facilitating Scrum events as requested or needed"*. In the 2020 version this becomes *"Ensuring that all Scrum events take place and are positive, productive, and kept within the timebox"*. This matches another change where the 2017 version includes in the description of each scrum event that the Scrum Master ensures that it takes place. In the 2020 version, the Scrum Master is only mentioned in the description of one event, the Daily Scrum: *"If the Product Owner or Scrum Master are actively working on items in the Sprint Backlog, they participate as Developers."*
 
 ### Serving the Product Owner
 
@@ -109,17 +111,17 @@ In the 2017 version, one of the ways for the Scrum Master to serve the Product O
 There's also an interesting difference in the choice of verbs throughout the list. The 2017 version has 2x ensuring, 1x finding, 1x helping, 2x understanding, 1x practicing, and 1x facilitating. The 2020 version has 3x helping, 1x facilitating.
 
 ### Serving the organization
-None of the changes seem siginificant enough to mention in this post.
+None of the changes seem significant enough to mention in this post.
 
 
 
 # A scrum master is a facilitator-coach
 
-In *"The Art of Agile Development (2nd ed)"* (2021) James Shore distinguishes different kinds of coaches: practicioner-coaches, player-coaches, and facilitator-coaches. A Scrum Master is a facilitator-coach:
+In *"The Art of Agile Development (2nd ed)"* (2021) James Shore distinguishes different kinds of coaches: practitioner-coaches, player-coaches, and facilitator-coaches. A Scrum Master is a facilitator-coach:
 
 > One of the most common type of coaches is the *facilitator-coach*, often called a Scrum Master, who leads from the sidelines by facilitating conversations and resolving organizational roadblocks. [...] A player-coach and facilitator-coach can be a good team-up, as they have complementary strengths and weaknesses.*(p 74)*[^2]
 
-[^2]: In the context of scrum masters as facilitator-coaches instead of practicioner-coaches or of player-coaches, the idea that scrum masters facilitate trainings and workshops is an interesting one. It's hard not to immediately be reminded of the quote "Those who can, do; those who can’t, teach." from George Bernard Shaw’s play "Man and Superman".
+[^2]: In the context of scrum masters as facilitator-coaches instead of practitioner-coaches or player-coaches, the common expectation that scrum masters facilitate trainings and workshops is an intriguing one. It's hard not to immediately think of the quote "Those who can, do; those who can't, teach." from George Bernard Shaw's play "Man and Superman".
 
 > One downside of facilitator-coaches is that they don't contribute a lot to day-to-day development, which can lead to organizations to see them as underutilized and assign them to too many teams. But then they're not present to see and respond to team challenges. Coaches in this situation often end up as glorified meeting organizers, which isn't a good use of their talents. *(p 74)*
 
@@ -127,7 +129,7 @@ Jeff Sutherland describes something similar in *"Scrum: The Art of Doing Twice t
 
 > [...] we needed someone whose job it was to make sure the process itself was effective. Not a manager - more of a servant-leader, something between a team-captain and a coach. *(p 62)*
 
-> He or she would facilitate all the meetings, make sure there was transparency, and, most important, help the team discover what was getting in their way. They key part of that was to realize that often the impediments aren't simply that the machine doesn't work or that Jim in accounting is a jerk - it's the process itself. It was the Scrum Master's job to guide the team toward *comtinuous improvement* - to ask with regularity, "How can we do what we do better?" *(p 62)*
+> He or she would facilitate all the meetings, make sure there was transparency, and, most important, help the team discover what was getting in their way. They key part of that was to realize that often the impediments aren't simply that the machine doesn't work or that Jim in accounting is a jerk - it's the process itself. It was the Scrum Master's job to guide the team toward *continuous improvement* - to ask with regularity, "How can we do what we do better?" *(p 62)*
 
 
 
@@ -146,7 +148,7 @@ In *"Agile Software Development with Scrum"* (2002) Ken Schwaber and Mike Beedle
 
 > As I [Ken Schwaber] ran the daily Scrums for the PNP team, it became apparent that I was fulfilling a management job. I blocked interference, allowed the team to keep focused, removed impediments and helped the team reach decisions quickly. This was a radical change, a flip to what management had previously done. The team figured out how to do what it had committed to do. Management's new and primary job was to maximize the team's productivity, to be there to help it do the best it could. *(p 7)*
 
-While I believe that few people these days would describe the scrum master role as a management one, I do hope that most people would agree that the description above captures things a good manager should do.[^1] Which leads to an interesting question: where do the responsibilities of scrum masters end and the responsibilities of team leads and engineering managers start?
+While I believe that few people these days would describe the scrum master role as a management one, I do hope that most people would agree that the description above captures things a good manager should do.[^1] Which leads to an interesting question: where do the responsibilities of a scrum master end and the responsibilities of a team leads and/or engineering manager start?
 
 [^1]: I highly recommend Johanna Rothman's *"[Modern Management Made Easy](https://www.jrothman.com/modern-management-made-easy-a-three-volume-set/)"*-series if you want to learn more about this style of management.
 
@@ -154,11 +156,9 @@ While I believe that few people these days would describe the scrum master role 
 
 # A scrum master knows more than scrum
 
-It might just be me, but I'd expect a modern scrum master to not only be familiar with scrum. They should also know about Lean, Kanban, CI/CD, and Devops.
+In a [previous post](link://slug/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto#noticing-options-principles) I mentioned that any approach to software development should cover these five areas: collaboration, software engineering, work management, product, and reflect & experiment. Scrum definitely covers work management and reflect & experiment. Arguably it covers collaboration (as in: soft skills) to some degree. It does not cover software engineering, because it's not specific to software. And it does not cover product. The Scrum Guide (2020) does say *"The Product Owner is accountable for maximizing the value of the product resulting from the work of the Scrum Team."* but provides no guidance on how exactly to do this.
 
-In a [previous post](link://slug/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto) I split up software development into five areas: collaboration, software engineering, work management, product, and reflect & experiment. Scrum definitely covers work management and reflect & experiment. Arguably it covers collaboration (as in: soft skills) to some degree. It does not cover software engineering, because it's not specific to software. And it does not cover product. The Scrum Guide (2020) does say *"The Product Owner is accountable for maximizing the value of the product resulting from the work of the Scrum Team."* but provides no guidance on how exactly to do this.
-
-So as a scrum master, you have two options: stick with a focus on work management and reflect & experiement, or broaden your horizons beyond scrum. And that's before we start talking about how to scale agile and/or scrum.
+So it might just be me, but I'd expect a modern scrum master to be familiar with more than just scrum. They should also know about Lean, Kanban, CI/CD, and DevOps. And that's before we start talking about how to scale agile and/or scrum.
 
 ---
 
@@ -167,6 +167,6 @@ So as a scrum master, you have two options: stick with a focus on work managemen
 
 I'm really not sure any more.
 
-It's as if we expect developers to be able to program, testers to test, product owners to create user stories, UX designers to design, team leads and engineering managers to manage, but we don't expect them to be able to work as a team, to be able to deliver software together effectively.
+It's as if we expect developers to be able to program, testers to test, product owners to create backlog items, UX designers to design, team leads and engineering managers to manage, but we don't expect them to be able to work as a team, to be able to deliver software together effectively.
 
 That *is* kind of odd, isn't it?
