@@ -154,7 +154,7 @@ While I believe that few people these days would describe the scrum master role 
 
 
 
-# A scrum master knows more than scrum
+# A scrum master knows more than scrum <a id="a-scrum-master-knows-more-than-scrum"></a>
 
 In a [previous post](link://slug/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto#noticing-options-principles) I mentioned that any approach to software development should cover these five areas: collaboration, software engineering, work management, product, and reflect & experiment. Scrum definitely covers work management and reflect & experiment. Arguably it covers collaboration (as in: soft skills) to some degree. It does not cover software engineering, because it's not specific to software. And it does not cover product. The Scrum Guide (2020) does say *"The Product Owner is accountable for maximizing the value of the product resulting from the work of the Scrum Team."* but provides no guidance on how exactly to do this.
 

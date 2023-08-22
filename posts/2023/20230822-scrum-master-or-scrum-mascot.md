@@ -7,12 +7,9 @@
 .. link: 
 .. description: 
 .. type: text
-.. previewimage:
+.. previewimage: /images/2023/scrum-master-or-scrum-mascot/scrum-master-quadrants.png
 -->
 
-todo add previewimage of quadrants
-
----
 
 During our latest monthly call [Maaret Pyhäjärvi](https://maaretp.com/) and I spent some of our time discussing agency, accountability and scrum masters. At one point I said something along the lines of:
 
@@ -22,15 +19,15 @@ Maaret said I should write a blog post about scrum mascots[^1], so here we are.
 
 [^1]: I can't imagine being the first person to utter the phrase *"scrum mascot"*, but the only thing I could find is this article about agile mascots by David McThomas: [The Agile Mascot: Propaganda or Embodyment](https://medium.com/coaching-conversations/the-agile-mascot-propaganda-or-embodyment-2cb3398bda6) (May 2020).
 
-According to the [2020 Scrum Guide](https://scrumguides.org/scrum-guide.html#scrum-master)[^2] a scrum master is accountable for two things:
+According to the [2020 Scrum Guide](https://scrumguides.org/scrum-guide.html#scrum-master)[^2] a Scrum Master is accountable for two things:
 
-- establishing Scrum as defined in the Scrum Guide.
-- the Scrum Team's effectiveness.
+- *"establishing Scrum as defined in the Scrum Guide"*.
+- *"the Scrum Team's effectiveness"*.
 
 [^2]: For a longer description of what a scrum master is, including a comparison between the 2017 and 2020 Scrum Guides, see my previous post: [What is a scrum master?](link://slug/what-is-a-scrum-master)
 
 
-Accountability implies (or rather: should imply) matching/corresponding authority. You're being held accountable for certain outcomes \*and\* you have sufficient power to influence those outcomes. That's a scrum master. A scrum mascot is a very different beast: they have neither power nor accountability. And yet that seems to be what a lot of organizations (and scrum masters?) want.
+Accountability implies (or rather: should imply) corresponding authority. You're being held accountable for certain outcomes \*and\* you have sufficient power to influence those outcomes. That's a scrum master. A scrum mascot is a very different beast: they have neither power nor accountability. And yet that seems to be what a lot of organizations (and scrum masters?) want.
 
 
 <!-- TEASER_END -->
@@ -38,80 +35,56 @@ Accountability implies (or rather: should imply) matching/corresponding authorit
 
 # Scrum masters have no power
 
-Scrum masters are managers without power. They are managers because they're expected to establish Scrum and ensure the team's effectiveness. Yet, they don't have the power associated with a management role. To decide what needs to be done, there's someone with the title of "product manager". To manage the team and to manage the work, there's someone with the title of "engineering manager".[^3]
+Scrum masters are managers without power. They are managers because they're expected to establish scrum and ensure the team's effectiveness. Yet, they don't have the power associated with a management role. To decide what needs to be done, there's someone with the title of "product manager". To manage the team and the work, there's someone with the title of "engineering manager".[^3] Of course, not all organizations have "product manager" and/or "engineering manager" roles. However, even if you don't, I'm quite sure that the power of these roles has not ended up with your scrum master.
 
-[^3]: Which isn't a very Scrum-like way to organize yourself. The [2020 Scrum Guide](https://scrumguides.org/scrum-guide.html) has 8 occurences of "manag*": 1x "current management", 2x "Product Backlog management", 2x "self-managing", 2x "self-management", and "They [the Scrum Team] are structured and empowered by the organization to manage their own work." So it's also valid to say that Scrum does not provide any guidance on how to organize yourself beyond the Scrum Team.
+[^3]: Which isn't a very Scrum-like way to organize yourself. The [2020 Scrum Guide](https://scrumguides.org/scrum-guide.html) has 8 occurrences of "manag*": 1x "current management", 2x "Product Backlog management", 2x "self-managing", 2x "self-management", and "They [the Scrum Team] are structured and empowered by the organization to manage their own work." So it's also valid to say that Scrum does not have an opinion on how to organize yourself beyond the Scrum Team.
 
-That doesn't leave much power for the scrum master. They're left with the power over ceremonies: scrum events and workshops. While it is possible to exert some power that way, it does leave the scrum master on the sidelines. Not involved in the work itself and not involved with the decisions about the work.
+This doesn't leave much power for the scrum master. They're left with the power over ceremonies: scrum events and workshops. While it is possible to exert some power that way, it does leave the scrum master on the sidelines. Not involved in the work itself and not included in the decisions about the work.
 
 
 
 # Scrum masters are not accountable
 
-It's odd to hold the person you hired as scrum expert, accountable for establishing scrum. Especially if self-management. Scrum is very radical. Don't think you want this.
+Scrum masters are supposed to establish Scrum and increase the team's effectiveness. They do the former *"by helping everyone understand Scrum theory and practice"* and the latter *"by enabling the Scrum Team to improve its practices"*.[^4] So basically: make the team do Scrum and then make them do it better.
 
-Similar with effectiveness. You're not giving them power. Or only, conversational power. Where does this leave the manager of the team?
+[^4]: see the [Scrum Master section](https://scrumguides.org/scrum-guide.html#scrum-master) of the 2020 Scrum Guide
 
-So much value in the old Scrum book: a Scrum Master is a manager.
-*"Agile Software Development with Scrum"* (2002) by Ken Schwaber and Mike Beedle
+I think it's very rare for scrum masters to be held accountable in this way. Because very few people fully know and understand what's in the Scrum Guide. That's also the reason that as a manager, you hire a scrum master as your scrum expert.
+
+<!--
+First of all, that seems to me a [rather limited approach](link://slug/what-is-a-scrum-master#a-scrum-master-knows-more-than-scrum) to effectiveness. On the other hand, if the scrum master's accountability for effectiveness is bigger than that, where does that leave the engineering manager?
+
+More important for this post is that I think it's very rare for scrum masters to be held accountable even in this scrum-focused way. Because very few people fully know and understand what's in the Scrum Guide. That's also the reason that as a manager, you hire a scrum master as your scrum expert.
+-->
+
+And even if a manager would have the knowledge and insight to hold their scrum master accountable, I'm not sure they'd want to. Because scrum is more radical than you're ready for. Do you want your Scrum Teams to be *"self-managing, meaning they internally decide who does what, when, and how"*? Do you want your Scrum Master to be *"Removing barriers between stakeholders and Scrum Teams"*? Do you want Scrum to make *"visible the relative efficacy of current management, environment, and work techniques"*? Or to take a more concrete example, how often do your sprint reviews actually include that *"attendees [the Scrum Team and stakeholders] collaborate on what to do next."*?[^5]
+
+[^5]: All quotes from the [2020 Scrum Guide](https://scrumguides.org/scrum-guide.html).
 
 
 # Scrum master or scrum mascot?
 
-Scrum manager or scrum mascot?
+With scrum masters not having any power beyond ceremonies and not being held accountable beyond a de-radicalized, bland version of Scrum, they are scrum mascots rather than scrum masters. And while they do provide some value in that capacity, it's in the margins, at the sidelines. And I can't help but think that there has to be a better way.
+
 
 ---
+
 
 # (extra) The scrum master quadrants
 
-Since this whole power/accountability-thing lends itself well to a quadrant model, I went ahead and made one:
+Since this whole power/accountability-angle lends itself well to a quadrant model, I couldn't resist:
 
-drawing: https://app.mural.co/t/maaretp9875/m/maaretp9875/1692627423677/480289366e8ba7c604c88fdd56d1984ee3e9d9d1?sender=73b644ba-d50d-4f3d-a647-219cf8656704
+<div class="d-flex justify-content-center">
+	<figure class="figure" style="max-width:65%;">
+		<img src="/images/2023/scrum-master-or-scrum-mascot/scrum-master-quadrants.png" class="figure-img img-fluid rounded"
+		alt="The scrum master quadrants: a scrum manager is accountable and has power, a scrum patsy is accountable but has no power, a scrum lord is not accountable but has power, a scrum mascot is not accountable and has no power."
+		/>
+		<figcaption class="figure-caption text-center">the scrum master quadrants</figcaption>
+	</figure>
+</div>
 
+<!--
 
-<figure class="figure">
-	<img src="/images/2023/making-meetings-work/sisyphus-titian.jpg" class="figure-img img-fluid rounded"
-	alt="The scrum master quadrants: a scrum manager is accountable and has power, a scrum patsy is accountable but has no power, a scrum player is not accountable but has power, a scrum mascot is not accountable and has no power."/>
-	<figcaption class="figure-caption text-center">scrum master quadrants</figcaption>
-</figure>
+alternatives to scrum lord: player / joker / jester / aristrocat / dictator / tyrant / baron / duke / bully / despot
 
-accountable and power: scrum manager
-accountable but no power: scrum patsy
-not accountable but power: scrum player / joker / 
-not accountable and no power: scrum mascot
-
-
----
-
-# from Mural
-Facilitators are managers with very special power
-Power over "ceremonies" and "workshops"
-Conversational power
-
-No accountability in practice
-Accountable for effectiveness of team
-Scrum Mascot
-
-# different kinds of power
-
-different kinds of power (French, Raven):
-
-- coercive power,
-- reward power
-- legitimate or positional
-- referent power
-- expert power
-- informational power
-
-
-https://en.wikipedia.org/wiki/French_and_Raven%27s_bases_of_power
-
-In a notable study of power conducted by social psychologists John R. P. French and Bertram Raven in 1959, power is divided into five separate and distinct forms. They identified those five bases of power as coercive, reward, legitimate, referent, and expert. This was followed by Raven's subsequent addition in 1965 of a sixth separate and distinct base of power: informational power.
-
-
-
-# lost sentences
-
-During our most recent monthly call Maaret Pyhäjärvi and I ended up discussing agency, accountability and scrum masters.
-
-During our latest monthly call Maaret Pyhäjärvi and I ended up discussing agency, accountability and scrum masters.
+-->
