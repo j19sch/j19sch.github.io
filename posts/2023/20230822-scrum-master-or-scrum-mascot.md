@@ -62,7 +62,7 @@ And even if a manager would have the knowledge and insight to hold their scrum m
 
 # Scrum master or scrum mascot?
 
-With scrum masters not having any power beyond ceremonies and not being held accountable beyond a de-radicalized, bland version of Scrum, they are scrum mascots rather than scrum masters. And while they do provide some value in that capacity, it's in the margins, at the sidelines. And I can't help but think that there has to be a better way.
+With scrum masters not having any power beyond ceremonies and not being held accountable beyond a de-radicalized, bland version of Scrum, they aren't scrum masters, they're scrum mascots. Their value isn't in what they do, it's in their presence. They don't need to bring change, they just need to be there. And while arguably even that brings some value, it's in the margins, at the sidelines. And I can't help but think that there has to be a better way.
 
 
 ---
