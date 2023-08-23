@@ -1,7 +1,7 @@
 <!--
 .. title: Scrum master or scrum mascot?
 .. slug: scrum-master-or-scrum-mascot
-.. date: 2023-08-22 15:17:40 UTC+02:00
+.. date: 2023-08-23 13:17:40 UTC+02:00
 .. tags: agile, management, scrum
 .. category: agile
 .. link: 
