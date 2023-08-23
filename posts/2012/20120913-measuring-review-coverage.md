@@ -3,7 +3,7 @@
 .. slug: measuring-review-coverage
 .. date: 2012-09-13 19:39:57 UTC+02:00
 .. tags: reviews, measurements, coverage
-.. category: reviewing
+.. category: misc
 .. link: 
 .. description:
 .. type: text

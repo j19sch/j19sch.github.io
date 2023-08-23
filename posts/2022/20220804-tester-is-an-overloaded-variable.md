@@ -2,7 +2,7 @@
 .. title: "Tester" is an overloaded variable
 .. slug: tester-is-an-overloaded-variable
 .. date: 2022-08-04 11:39:25 UTC+02:00
-.. tags: management, semantics, software testing, test management
+.. tags: management, semantics, software testing, test management, scrum
 .. category: software testing
 .. link: 
 .. description: 

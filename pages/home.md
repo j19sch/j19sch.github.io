@@ -19,10 +19,9 @@ hidetitle: true
 		<ul>
 			<li><a href="https://chaos.social/@joeposaurus" target="_blank" rel="me">Mastodon</a></li>
 			<li><a href="https://github.com/j19sch" target="_blank">GitHub</a></li>
-			<li><a href="https://twitter.com/j19sch" target="_blank">Twitter</a></li>
 			<li><a href="https://www.linkedin.com/in/joepschuurkes/" target="_blank">LinkedIn</a></li>
+			<li><a href="https://twitter.com/j19sch" target="_blank">Twitter</a> (aka 'X')</li>
 		</ul>
-		<p style="margin-top:1.5rem;">I'm looking for a new job, so feel free to take a look at <a href="https://www.dropbox.com/s/di4q1jmreya4yv9/cv-joep-schuurkes.pdf?dl=0" target="_blank">my CV</a>.</p>
 	</div>
 	<div style="max-width:200px">
 		<img src="/images/joep-coffee.jpg" alt="Joep drinking coffee" style="margin-top:0px;" />
