@@ -20,7 +20,7 @@ hidetitle: true
 			<li><a href="https://chaos.social/@joeposaurus" target="_blank" rel="me">Mastodon</a></li>
 			<li><a href="https://github.com/j19sch" target="_blank">GitHub</a></li>
 			<li><a href="https://www.linkedin.com/in/joepschuurkes/" target="_blank">LinkedIn</a></li>
-			<li><a href="https://twitter.com/j19sch" target="_blank">Twitter</a></li>
+			<li><a href="https://twitter.com/j19sch" target="_blank">Twitter</a> (aka 'X')</li>
 		</ul>
 	</div>
 	<div style="max-width:200px">
