@@ -11,7 +11,7 @@
 -->
 
 
-During our latest monthly call [Maaret Pyhäjärvi](https://maaretp.com/) and I spent some of our time discussing agency, accountability and scrum masters. At one point I said something along the lines of:
+During our latest monthly call, [Maaret Pyhäjärvi](https://maaretp.com/) and I spent some of our time discussing agency, accountability and scrum masters. At one point I said something along the lines of:
 
 > Scrum masters often end up as scrum mascots.
 
@@ -83,6 +83,6 @@ Since this whole power/accountability-angle lends itself well to a quadrant mode
 
 <!--
 
-alternatives to scrum lord: player / joker / jester / aristrocat / dictator / tyrant / baron / duke / bully / despot
+alternatives to scrum lord: player / joker / jester / aristocrat / dictator / tyrant / baron / duke / bully / despot
 
 -->
