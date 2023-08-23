@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://smallsheds.garden/blog/feed.atom</loc>
-  <lastmod>2023-08-08T08:12:00Z</lastmod>
+  <lastmod>2023-08-22T19:46:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/blog/rss.xml</loc>
-  <lastmod>2023-08-08T08:12:00Z</lastmod>
+  <lastmod>2023-08-23T07:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/agile-manifesto.atom</loc>
@@ -23,11 +23,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/agile.atom</loc>
-  <lastmod>2023-08-08T08:12:00Z</lastmod>
+  <lastmod>2023-08-22T19:46:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/agile.xml</loc>
-  <lastmod>2023-08-08T08:12:00Z</lastmod>
+  <lastmod>2023-08-23T07:31:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/black-box-puzzle.atom</loc>
@@ -55,11 +55,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_agile.atom</loc>
-  <lastmod>2023-08-08T08:12:00Z</lastmod>
+  <lastmod>2023-08-22T19:46:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_agile.xml</loc>
-  <lastmod>2023-08-08T08:12:00Z</lastmod>
+  <lastmod>2023-08-23T07:31:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_cicd.atom</loc>
@@ -118,6 +118,14 @@
   <lastmod>2023-05-10T15:51:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://smallsheds.garden/categories/cat_misc.atom</loc>
+  <lastmod>2023-08-23T07:32:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://smallsheds.garden/categories/cat_misc.xml</loc>
+  <lastmod>2023-08-23T07:32:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://smallsheds.garden/categories/cat_philosophy-of-testing.atom</loc>
   <lastmod>2023-05-10T15:51:00Z</lastmod>
  </sitemap>
@@ -171,7 +179,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_software-testing.xml</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-08-23T07:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_test-automation.atom</loc>
@@ -275,7 +283,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/coverage.xml</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-08-23T07:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/data-analysis.atom</loc>
@@ -383,11 +391,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/management.atom</loc>
-  <lastmod>2023-08-08T08:12:00Z</lastmod>
+  <lastmod>2023-08-22T19:46:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/management.xml</loc>
-  <lastmod>2023-08-08T08:12:00Z</lastmod>
+  <lastmod>2023-08-23T07:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/manifesto.atom</loc>
@@ -411,7 +419,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/measurements.xml</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-08-23T07:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/metis.atom</loc>
@@ -507,7 +515,15 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/reviews.xml</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-08-23T07:32:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://smallsheds.garden/categories/scrum.atom</loc>
+  <lastmod>2023-08-23T07:31:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://smallsheds.garden/categories/scrum.xml</loc>
+  <lastmod>2023-08-23T07:31:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/self-organization.atom</loc>
@@ -523,7 +539,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/semantics.xml</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-08-23T07:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/skills.atom</loc>
@@ -531,7 +547,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/skills.xml</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-08-23T07:31:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/small-steps.atom</loc>
@@ -563,7 +579,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/software-testing.xml</loc>
-  <lastmod>2023-08-06T13:16:00Z</lastmod>
+  <lastmod>2023-08-23T07:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/systems-thinking.atom</loc>
@@ -611,7 +627,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/test-management.xml</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-08-23T07:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/test-reporting.atom</loc>
@@ -667,7 +683,7 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/values.xml</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-08-23T07:31:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/vba.atom</loc>
@@ -719,6 +735,6 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/sitemap.xml</loc>
-  <lastmod>2023-08-08T08:12:00Z</lastmod>
+  <lastmod>2023-08-23T07:32:00Z</lastmod>
  </sitemap>
 </sitemapindex>

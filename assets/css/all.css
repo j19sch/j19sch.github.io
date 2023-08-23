@@ -1400,6 +1400,7 @@ code {
 a.footnote-ref {
   font-weight: 600;
   font-style: normal;
+  padding-left: 0.06rem;
 }
 
 /*.body-content h6 {

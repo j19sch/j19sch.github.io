@@ -59,7 +59,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/archive.html</loc>
-  <lastmod>2023-08-07T07:03:00Z</lastmod>
+  <lastmod>2023-08-22T13:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/</loc>
@@ -318,6 +318,10 @@
   <lastmod>2023-05-10T15:51:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/blog/2023/scrum-master-or-scrum-mascot/</loc>
+  <lastmod>2023-08-22T13:24:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/blog/2023/what-is-a-scrum-master/</loc>
   <lastmod>2023-08-07T07:03:00Z</lastmod>
  </url>
@@ -383,7 +387,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-2.html</loc>
-  <lastmod>2023-05-30T12:10:00Z</lastmod>
+  <lastmod>2023-08-23T07:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-3.html</loc>
@@ -399,15 +403,15 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-6.html</loc>
-  <lastmod>2023-05-30T12:10:00Z</lastmod>
+  <lastmod>2023-08-23T07:31:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-7.html</loc>
-  <lastmod>2023-08-07T07:03:00Z</lastmod>
+  <lastmod>2023-08-23T07:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/</loc>
-  <lastmod>2023-05-10T15:51:00Z</lastmod>
+  <lastmod>2023-08-23T07:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/agile-manifesto/</loc>
@@ -460,6 +464,10 @@
  <url>
   <loc>https://smallsheds.garden/categories/cat_metrics/</loc>
   <lastmod>2023-05-10T15:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/categories/cat_misc/</loc>
+  <lastmod>2023-08-23T07:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/cat_philosophy-of-testing/</loc>
@@ -658,6 +666,10 @@
   <lastmod>2023-05-10T15:51:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/categories/scrum/</loc>
+  <lastmod>2023-08-23T07:30:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/categories/self-organization/</loc>
   <lastmod>2023-05-10T15:51:00Z</lastmod>
  </url>
@@ -784,14 +796,6 @@
  <url>
   <loc>https://smallsheds.garden/my-projects/learning-clojure/</loc>
   <lastmod>2023-05-10T15:51:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/my-projects/scrum-master-and-scrum-guide/</loc>
-  <lastmod>2023-08-07T07:34:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/my-projects/the-scrum-master-role-across-the-scrum-guide/</loc>
-  <lastmod>2023-08-07T07:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/my-projects/the-scrum-master-role-across-the-scrum-guides/</loc>
