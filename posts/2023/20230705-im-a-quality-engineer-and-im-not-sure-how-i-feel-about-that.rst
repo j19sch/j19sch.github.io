@@ -126,6 +126,16 @@ At the end of November I wrote a blog post `"Three lessons after three months of
 
 .. _"Three lessons after three months of quality engineering": link://slug/three-lessons-after-three-months-of-quality-engineering
 
+
+----
+
+*(edit 2 September 2023)*: One other thing I started doing in my first week, was sharing weekly notes. I mentioned it in the "Three lessons ..." post, but couldn't find a good way to fit it into this experience report. Since then I've also written a separate post: `"Weekly notes experiment"`_.
+
+.. _"Weekly notes experiment": link://slug/weekly-notes
+
+----
+
+
 So by the end of the year, I was quite frustrated and demotivated. I had tried different approaches to figure out my role of quality engineer. I had asked people directly. I had asked through a process workshop. I had shown I could make diagrams to inform design and testing. I had shared a list of things I could do for people to use as a conversation starter with me. And I had also told myself to be patient, to temper my too high expectations of myself. And I was surprised how my colleagues seemed to be positive about what I was doing, because I wasn’t.
 
 
