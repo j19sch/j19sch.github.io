@@ -19,6 +19,9 @@ hidetitle: false
 - On Writing: A Memoir of the Craft - Stephen King
 - The Island at the Center of the World: The Epic Story of Dutch Manhattan and the Forgotten Colony That Shaped America - Russell Shorto
 - Words of Power: A Guide for Ordinary People to Calm and De-Escalate Aggressive Individuals - Ellis Amdur
+- When the Tempest Gathers: From Mogadishu to the Fight Against ISIS, a Marine Special Operations Commander at War - Andrew Milburn
+- How to Destroy Surveillance Capitalism - Cory Doctorow
+- The Squiggly Career: Ditch the Ladder, Embrace Opportunity and Carve Your Own Path Through the Squiggly World of Work - Sarah Ellis, Helen Tupper
 
 
 ### 2022
