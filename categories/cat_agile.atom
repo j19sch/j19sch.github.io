@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about agile)</title>
   <id>https://smallsheds.garden/categories/cat_agile.atom</id>
-  <updated>2023-08-23T09:08:15Z</updated>
+  <updated>2023-09-03T18:28:41Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -13,8 +13,8 @@
   <entry>
     <title>Scrum master or scrum mascot?</title>
     <id>https://smallsheds.garden/blog/2023/scrum-master-or-scrum-mascot/</id>
-    <updated>2023-08-22T15:17:40+02:00</updated>
-    <published>2023-08-22T15:17:40+02:00</published>
+    <updated>2023-08-23T13:17:40+02:00</updated>
+    <published>2023-08-23T13:17:40+02:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>

@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about programming)</title>
   <id>https://smallsheds.garden/categories/programming.atom</id>
-  <updated>2023-08-06T13:13:14Z</updated>
+  <updated>2023-09-03T18:28:40Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -13,8 +13,8 @@
   <entry>
     <title>(clj 12) Core concepts of functional programming with Peg Thing</title>
     <id>https://smallsheds.garden/blog/clojure/2023/clj-12-core-concepts-of-functional-programming-with-peg-thing/</id>
-    <updated>2023-08-01T10:01:36+02:00</updated>
-    <published>2023-08-01T10:01:36+02:00</published>
+    <updated>2023-08-06T15:13:36+02:00</updated>
+    <published>2023-08-06T15:13:36+02:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
