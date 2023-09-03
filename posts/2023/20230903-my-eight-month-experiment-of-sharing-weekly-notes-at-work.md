@@ -1,7 +1,7 @@
 <!--
 .. title: My eight-month experiment of sharing weekly notes at work
-.. slug: weekly-notes
-.. date: 2023-09-02 15:04:40 UTC+02:00
+.. slug: my-eight-month-experiment-of-sharing-weekly-notes-at-work
+.. date: 2023-09-03 12:35:40 UTC+02:00
 .. tags: 
 .. category: 
 .. link: 
@@ -15,28 +15,26 @@ At the end of my first week at my last job I published a Notion page that starte
 
 > Please feel free to add a __comment, respond__ to other people's comments and/or __share__ with others!
 
-In this post, I'll tell the story of my eight-month experiment with weekly notes. After that, I'll share some tips in case you want to try this too.
+In this post, I'll tell the story of my eight-month experiment with weekly notes. After that, I'll share some tips in case you want to give weekly notes a try too.
 
+
+<!-- TEASER_END -->
 
 
 # The story of my experiment
 
 ## The start
 
-In December of 2021 I read the ["The agile comms handbook"](https://agilecommshandbook.com/) and became intrigued by Giles Turnbull's idea of "working in the open". Nine months later, in August of 2022, I started a new job at an all-remote company, supporting two teams as a quality engineer.[^1] This seemed the perfect opportunity to experiment with that idea in the form of weekly notes: write a short blog post at the end of every week and share it with my colleagues.
+In December of 2021 I read the ["The agile comms handbook"](https://agilecommshandbook.com/) and became intrigued by Giles Turnbull's idea of "working in the open". Nine months later, in August of 2022, I started a new job at an all-remote company, supporting two teams as a quality engineer. This seemed the perfect opportunity to experiment with that idea in the form of weekly notes: write a short blog post at the end of every week and share it with my colleagues.
 
-[^1]: I'm not going to go into much detail about the job here. If you're interested, see my experience report [*"I'm a quality engineer and I'm not sure how I feel about that"*](link://slug/im-a-quality-engineer-and-im-not-sure-how-i-feel-about-that).
-
-<!-- TEASER_END -->
-
-It felt a bit daunting to start this experiment in my very first week at a new job, but I also thought it would be really cool to have these weekly notes right from the first week. So I wrote the first one on Friday 26 August 2022 and shared it with my direct colleagues: my manager, the developers in the two teams I supported, the two product managers, the UX designer, the department's staff engineer, and my fellow quality engineers.
+It felt a bit daunting to start doing this in my very first week at my very new job, but I also thought it would be really cool to have these weekly notes right from the beginning. So I wrote the first one on Friday 26 August 2022 and shared it with my direct colleagues: my manager, the developers in the two teams I supported, the two product managers, the UX designer, the department's staff engineer, and my fellow quality engineers.
 
 
-## What I wrote about
+## What I wrote
 
-Quite quickly I found a basic structure that worked for me: three topics, three paragraphs, each paragraph with a clear focus. Often enough I would divert from that structure, but it would give me a place to start: "What three things do I want to share this week?" Once I started writing, I could decide to write something longer about a single topic, or if I wanted to add a fourth paragraph, etc.
+Quite quickly I found a basic structure that worked for me: three topics, three paragraphs, each paragraph with a clear focus. Often enough I would divert from that structure, but it would give me a place to start: "What three things do I want to share this week?" Once I started writing, I could decide to write something longer about a single topic, or to add a fourth paragraph, etc.
 
-As to the content, looking back through my Weekly Notes, there were three recurring elements:
+As to the content, looking back through my weekly notes, there were three recurring elements:
 
 - stories about what I did, including reflections and lessons learned along the way
 - mentions of interesting ideas, heuristics, blog posts, videos, ...
@@ -49,12 +47,12 @@ A thing I caught myself doing - luckily well before publishing -, was wanting to
 
 The short answer to who read my weekly notes is: not many people. At the start, when I shared the initial page, people definitely went to take a look. After that, some people came back occasionally, others didn't. And when I mentioned someone by tagging them on the page, most of the time those people would visit my weekly notes Notion page.
 
-The only people who read my weekly notes on a regular basis, though, were my manager and the principal quality engineer. The principal quality engineer was also the only person who regularly added a comment to my posts. (If not to every post, then to almost every one. I really appreciated that.)
-
-Then in February 2023 layoffs were announced and unfortunately he was one of the people impacted. A reorg would also go into effect in March, so my manager would no longer be my manager. This led me to reflect on what I wanted from my weekly notes. It took a few more weeks, but eventually I decided to stop writing them.
+The only people who read my weekly notes on a regular basis, though, were my manager and the principal quality engineer. The principal quality engineer was also the only person who commented on every one of my posts. I really appreciated that, because a goal of my weekly notes was to engage with people. Not to just publish into the void.
 
 
 ## The end
+
+In early February 2023 layoffs were announced and unfortunately the principal quality engineer was one of the people impacted. A reorg would also go into effect at the start of March, so my manager would no longer be my manager. This led me to reflect on what I wanted from my weekly notes. It took a few more weeks, but eventually I decided to stop writing them.
 
 On Friday 7 April 2023 I wrote my 29th and last weekly note:
 
@@ -67,13 +65,13 @@ On Friday 7 April 2023 I wrote my 29th and last weekly note:
 
 # Tips if you want to start writing weekly notes
 
-Even though my story isn't one of overwhelming success, I still hope some of you will give writing weekly notes a try. I learned from writing them. They made me reflect on my week and I had to learn to write more concisely and with more focus. I also learned about what works and what doesn't when it comes to weekly notes, which will help next time.
+Even though my story isn't one of overwhelming success, I still hope some of you will give writing weekly notes a try. I learned from writing them. They made me reflect on my week and I had to learn to write more concisely and with more focus. I also learned about what works and what doesn't when it comes to weekly notes, which will help for next time.
 
-So if you want to give weekly notes a go, here are some tips based on my experiences.
+So if you want to start writing  and sharing weekly notes, here are some tips based on my experiences.
 
 __Keep it short.__ I aimed to write my weekly notes in 30 minutes. It took some practice, but in the end I managed to write them within that timeslot most of the time. Using 3-topics-in-3-paragraphs as a starting point helped me to do so. You could also start with 2-topics-in-2-paragraphs. Or only 1 for that matter.
 
-__Write, then edit.__ Write a paragraph, then edit or even rewrite it. Don't start writing the first sentence(s) of a paragraph, then edit what you wrote, write a few more sentences, return to editing, etc. As you write, you discover what you want to write. So do that first, then edit and/or rewrite.[^2]
+__Write, then edit.__ Write a full paragraph, only then edit or even rewrite it. Don't start writing the first sentence(s) of a paragraph, then edit what you wrote, write a few more sentences, return to editing, etc. As you write, you discover what you want to write. So do that first, then edit and/or rewrite.[^2]
 
 __Use highlighting.__ Not everyone will be interested in everything you write. Use highlighting (or titles) so people can scan a paragraph and decide if they want to read it.
 
@@ -83,15 +81,16 @@ __Keep it positive.__ No continuing of discussions, no complaining, no teaching 
 
 __Read the room.__ If big things are happening in the organization, take that into account. For example, when the February layoffs were announced, I wrote a single sentence for my Weekly Notes: "Sad week, people are being laid off."
 
-__Keep notes throughout the week.__ This also helps with the work itself[^3], but being able to scan through your notes of the past week, makes it a lot easier to decide what you'd like to write about in your weekly notes.
+__Keep notes throughout the week.__ This also helps with the work itself,[^3] but being able to scan through your notes of the past week, makes it a lot easier to decide what you'd like to write about in your weekly notes.
 
 __Respond to engagement.__ If someone comments on your weekly notes, respond. At least acknowledge and thank them for engaging with your notes.
 
 __Reflect and adjust.__ Think about what you want to achieve with your weekly notes. What's working and what isn't? What are some things you'd like to try and do differently?
 
-__Have courage.__ Sharing weekly notes might feel a little scary or awkward. You might feel self-conscious. That's ok. Have courage and do it anyway. As long as it comes from a sincere place, it will be ok. People can tell.
+__It takes some courage.__ Sharing weekly notes might feel a little scary or awkward. You might feel self-conscious. That's ok. Having courage means having those feelings and still doing it. As long as your writing comes from a sincere place, it will be ok. People can tell.
 
-Last but not least, I recommend reading Giles Turnbull's [tips on weeknotes](https://gilest.org/weeknotes-tips.html) and his [Agile comms book](https://agilecommshandbook.com/). After all, his book is what inspired me to try out writing weekly notes.
+
+Last but not least, I recommend reading Giles Turnbull's [tips on weeknotes](https://gilest.org/weeknotes-tips.html) and his [The agile comms book](https://agilecommshandbook.com/). After all, his book is what inspired me to try out writing weekly notes.
 
 
 [^2]: I got this from Johanna Rothman's book ["Free Your Inner Nonfiction Writer: Educate, Influence, and Entertain Your Readers"](https://pragprog.com/titles/d-jrnfwriter/free-your-inner-nonfiction-writer/). 

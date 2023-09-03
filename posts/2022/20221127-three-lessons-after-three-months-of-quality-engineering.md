@@ -25,7 +25,7 @@ So the first part of visibility is literally that: showing that you're there. Jo
 
 I've also started an experiment: writing a weekly internal blog. The inspiration came from [Giles Turnbull](https://gilest.org/)'s [*"The agile comms handbook"*](https://agilecommshandbook.com/) and its idea of *"working in the open"*. Every Friday I take 30 minutes to write three paragraphs about my past week. It's still an experiment-in-progress, but it's been successful enough after six posts that I decided to stick with it. At some point I should probably dedicate a full post to this experiment.
 
-*(edit 2 September 2023)* I've now written that blog post: [Weekly notes experiment](link://slug/weekly-notes)
+*(edit 3 September 2023)* I've now written that blog post: ["My eight-month experiment of sharing weekly notes at work"](link://slug/my-eight-month-experiment-of-sharing-weekly-notes-at-work).
 
 ## Showing what you can do
 The second part of visibility is showing what it is that you can do. Quality engineering is a very broad discipline. It's also a young discipline. Few people have experience working with quality engineers.

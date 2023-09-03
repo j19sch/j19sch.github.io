@@ -129,9 +129,9 @@ At the end of November I wrote a blog post `"Three lessons after three months of
 
 ----
 
-*(edit 2 September 2023)*: One other thing I started doing in my first week, was sharing weekly notes. I mentioned it in the "Three lessons ..." post, but couldn't find a good way to fit it into this experience report. Since then I've also written a separate post: `"Weekly notes experiment"`_.
+*(edit 3 September 2023)*: One other thing I started doing in my first week, was sharing weekly notes. I mentioned it in the "Three lessons ..." post, but couldn't find a good way to fit it into this experience report. Since then I've also written a separate post: `"My eight-month experiment of sharing weekly notes at work"`_.
 
-.. _"Weekly notes experiment": link://slug/weekly-notes
+.. _"My eight-month experiment of sharing weekly notes at work": link://slug/my-eight-month-experiment-of-sharing-weekly-notes-at-work
 
 ----
 
