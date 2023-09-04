@@ -3,7 +3,7 @@
 .. slug: manifesto-for-software-testing
 .. date: 2018-12-04 20:44:51 UTC+01:00
 .. tags: agile, context-driven testing, devops, manifesto, software testing
-.. category: testing manifesto
+.. category: software testing
 .. link: 
 .. description:
 .. type: text

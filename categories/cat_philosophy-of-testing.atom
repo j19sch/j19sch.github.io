@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about philosophy of testing)</title>
   <id>https://smallsheds.garden/categories/cat_philosophy-of-testing.atom</id>
-  <updated>2023-09-03T18:28:38Z</updated>
+  <updated>2023-09-04T08:15:12Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -120,38 +120,6 @@ And truth be told, I didn't watch all of it. Some parts were boring, some parts 
     <category term="test-management" label="test management"/>
   </entry>
   <entry>
-    <title>Information debt</title>
-    <id>https://smallsheds.garden/blog/2014/information-debt/</id>
-    <updated>2014-07-13T16:50:21+02:00</updated>
-    <published>2014-07-13T16:50:21+02:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2014/information-debt/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;Last week ago the following happened on twitter:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;New word of the day: "information debt". It's like technical debt, but related to information, communication, models, docs, visualisations.&lt;br&gt;
-&lt;em&gt;- Joep Schuurkes (@j19sch) &lt;a href="https://twitter.com/j19sch/statuses/486534198803841024"&gt;July 8, 2014&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;@j19sch: New word of the day: "information debt" =&amp;gt; blogpost coming up ?!?!?&lt;br&gt;
-&lt;em&gt;- Simon P. Schrijver (@SimonSaysNoMore) &lt;a href="https://twitter.com/SimonSaysNoMore/statuses/486551279590977536"&gt;July 8, 2014&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;@SimonSaysNoMore Wasn't planning to, but now you made me think about it, so yes. Damn you! :-P&lt;br&gt;
-&lt;em&gt;- Joep Schuurkes (@j19sch) &lt;a href="https://twitter.com/j19sch/statuses/486555404089188352"&gt;July 8, 2014&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;In case you don't know what technical debt is, you might want to read &lt;a href="http://techblog.net-a-porter.com/2011/10/agile-tetris/"&gt;this&lt;/a&gt; first. (It's the oldest source I could find of the technical debt-tetris analogy, by the way. If you know of an older one, please leave a comment.)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2014/information-debt/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="information-debt" label="information debt"/>
-    <category term="software-testing" label="software testing"/>
-    <category term="vipt" label="VIPT"/>
-  </entry>
-  <entry>
     <title>Why I am context-driven</title>
     <id>https://smallsheds.garden/blog/2014/why-i-am-context-driven/</id>
     <updated>2014-06-30T07:06:21+02:00</updated>
@@ -223,6 +191,28 @@ If you don't know what VIPT is, please read &lt;a href="https://smallsheds.garde
 &lt;h3&gt;VIPT is a top-down model&lt;/h3&gt;
 &lt;p&gt;For me as a context-driven tester the VIPT model is very much a top-down thing. You analyze the context, find out what value you should/can deliver and then you proceed to information, processes and tools. Of course, that's easier said than done. Going through this for everything you do, requires a lot of time and effort. So most of the time you do quick analysis of the context, decide that it sufficiently resembles a context you encountered earlier and you use the same tools you used then. Most of the time that's ok - as long as you stay alert to any signs that you misread the context.&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2012/vipt-bottom-up-or-top-down/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2012/vipt-bottom-up-or-top-down/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="context-driven-testing" label="context-driven testing"/>
+    <category term="models" label="models"/>
+    <category term="vipt" label="VIPT"/>
+  </entry>
+  <entry>
+    <title>VIPT Intermezzo - Models and the Unix philosophy</title>
+    <id>https://smallsheds.garden/blog/2012/vipt-intermezzo-models-and-the-unix-philosophy/</id>
+    <updated>2012-07-15T20:25:03+02:00</updated>
+    <published>2012-07-15T20:25:03+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2012/vipt-intermezzo-models-and-the-unix-philosophy/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Thanks to &lt;a href="https://testingcurve.wordpress.com/2012/07/09/yet-another-testing-model-value-information-processes-value/#comments"&gt;Neil Thompson's comments&lt;/a&gt; on my previous post, I started thinking about what I want to do with the VIPT model. Do I want to expand and refine it to a grand unified theory of testing? And if not, then what?&lt;/p&gt;
+&lt;h3&gt;The Unix philosophy&lt;/h3&gt;
+&lt;p&gt;After some thinking I realized that with regard to models, I adhere to the &lt;a href="http://www.faqs.org/docs/artu/ch01s06.html"&gt;Unix philosophy&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;Do one thing and do it well&lt;/h4&gt;
+&lt;p&gt;Particularly I am thinking about the following quote from Doug McIlroy:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"This is the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface."&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2012/vipt-intermezzo-models-and-the-unix-philosophy/"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="context-driven-testing" label="context-driven testing"/>
     <category term="models" label="models"/>
     <category term="vipt" label="VIPT"/>

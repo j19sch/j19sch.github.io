@@ -3,7 +3,7 @@
 .. slug: test-cases-cant-do-m-no-more
 .. date: 2013-07-06 20:19:32 UTC+02:00
 .. tags: test management, exploratory testing, test cases
-.. category: test management
+.. category: software testing
 .. link: 
 .. description:
 .. type: text

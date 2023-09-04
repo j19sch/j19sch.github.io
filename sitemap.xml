@@ -391,23 +391,23 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-2.html</loc>
-  <lastmod>2023-09-03T18:28:00Z</lastmod>
+  <lastmod>2023-09-04T08:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-3.html</loc>
-  <lastmod>2023-09-03T18:28:00Z</lastmod>
+  <lastmod>2023-09-04T08:15:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-4.html</loc>
-  <lastmod>2023-09-03T18:28:00Z</lastmod>
+  <lastmod>2023-09-04T08:15:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-5.html</loc>
-  <lastmod>2023-09-03T18:28:00Z</lastmod>
+  <lastmod>2023-09-04T08:31:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-6.html</loc>
-  <lastmod>2023-09-03T18:28:00Z</lastmod>
+  <lastmod>2023-09-04T08:31:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-7.html</loc>
@@ -415,7 +415,11 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/</loc>
-  <lastmod>2023-09-03T18:31:00Z</lastmod>
+  <lastmod>2023-09-04T08:31:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/categories/agile-comms/</loc>
+  <lastmod>2023-09-04T08:07:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/agile-manifesto/</loc>
@@ -528,6 +532,10 @@
  <url>
   <loc>https://smallsheds.garden/categories/cat_workshop/</loc>
   <lastmod>2023-09-03T18:28:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/categories/cat_workshops/</loc>
+  <lastmod>2023-09-04T08:31:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/cicd/</loc>

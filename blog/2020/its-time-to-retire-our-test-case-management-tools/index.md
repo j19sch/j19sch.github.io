@@ -3,7 +3,7 @@
 .. slug: its-time-to-retire-our-test-case-management-tools
 .. date: 2020-07-19 16:38:17 UTC+02:00
 .. tags: test cases, tools, test management, heuristics
-.. category: test management
+.. category: software testing
 .. link: 
 .. description:
 .. type: text
