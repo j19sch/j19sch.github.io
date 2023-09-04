@@ -3,7 +3,7 @@
 .. slug: five-leftover-thoughts-on-software-testing
 .. date: 2013-08-03 12:28:32 UTC+02:00
 .. tags: software testing, semantics, test management
-.. category: test management
+.. category: software testing
 .. link: 
 .. description:
 .. type: text

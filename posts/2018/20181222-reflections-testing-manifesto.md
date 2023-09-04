@@ -3,7 +3,7 @@
 .. slug: reflections-on-my-testing-manifesto
 .. date: 2018-12-22 17:43:10 UTC+01:00
 .. tags: agile, context-driven testing, devops, manifesto, software testing
-.. category: testing manifesto
+.. category: software testing
 .. link: 
 .. description:
 .. type: text

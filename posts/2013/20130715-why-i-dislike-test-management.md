@@ -3,7 +3,7 @@
 .. slug: why-i-dislike-test-management
 .. date: 2013-07-15 20:10:03 UTC+02:00
 .. tags: test management, software testing, test strategy
-.. category: test management
+.. category: software testing
 .. link: 
 .. description:
 .. type: text

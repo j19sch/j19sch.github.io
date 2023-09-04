@@ -3,7 +3,7 @@
 .. slug: information-debt
 .. date: 2014-07-13 16:50:21 UTC+02:00
 .. tags: information debt, VIPT, software testing
-.. category: philosophy of testing
+.. category: software testing
 .. link: 
 .. description:
 .. type: text

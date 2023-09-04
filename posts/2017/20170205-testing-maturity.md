@@ -3,7 +3,7 @@
 .. slug: testing-maturity-in-an-agilecdt-context
 .. date: 2017-02-05 17:43:10 UTC+01:00
 .. tags: agile, context-driven testing, maturity
-.. category: testing maturity
+.. category: quality engineering
 .. link: 
 .. description:
 .. type: text

@@ -3,7 +3,7 @@
 .. slug: how-to-run-a-remote-elephant-carpaccio
 .. date: 2021-11-28 13:35:16 UTC+01:00
 .. tags: workshop, elephant carpaccio, small steps, agile, facilitation
-.. category: workshop
+.. category: workshops
 .. link: 
 .. description:
 .. type: text
