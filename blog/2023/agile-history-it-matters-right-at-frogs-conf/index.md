@@ -7,7 +7,7 @@
 .. link: 
 .. description: 
 .. type: text
-.. previewimage: /images/2023/agile-history/frogsconf.nl
+.. previewimage: /images/2023/agile-history/frogsconf.png
 -->
 
 
