@@ -7,10 +7,11 @@
 .. link: 
 .. description: 
 .. type: text
+.. previewimage: /images/2023/agile-history/frogsconf.nl
 -->
 
 
-On September 9th I facilitated a session at the [FroGS conf](https://frogsconf.nl/) open space titled "Agile history, it matters, right?" My main goal was to get input on where to take my [Context of Agile](https://context-of-agile.org/)-site. Before asking that input, however, I asked the participants three questions about the history of Agile. I figured it would provide a good introduction to the topic and it would allow me to get an idea of how much the participants knew about the history of Agile. So a big thank you to the participants in my session for playing along!
+On September 9th I facilitated a session at the [FroGS conf](https://frogsconf.nl/) open space titled "*Agile history, it matters, right?*" My main goal was to get input on where to take my [Context of Agile](https://context-of-agile.org/) site. Before asking for that input, however, I asked the participants three questions about the history of Agile. I figured it would provide a good introduction to the topic. And I was curious how much the kind of person that joins a session like this, knows about the history of Agile. So a big thank you to all the participants!
 
 
 # The three questions about the history of Agile
@@ -29,16 +30,16 @@ In what follows, I'm not going to reproduce the full answers and ensuing convers
 
 ## When did Agile start?
 
-The question *"When did Agile start?"* got a range of interesting answers that resulted in a consistent picture. It made me realize that a better question would be *"What are the watershed moments in Agile history?"*
+The question *"When did Agile start?"* got a range of interesting answers. Luckily they didn't contradict each other, but combined into a consistent picture. It made me realize that a better question is: *"What were the watershed moments in Agile history?"*
 
-The watershed moments would be:
+Those watershed moments would be:
 
 - software development until waterfall
 - the emergence of waterfall
 - the authors of the Manifesto starting to develop lightweight methodologies
 - the Agile Manifesto
 
-A different kind of answer to the question was "tomorrow", as in: everyone wants to be Agile, but not just yet, not today.
+A different kind of answer to the question of when Agile started, was "tomorrow", as in: everyone wants to be Agile, but not just yet, not today.
 
 
 
@@ -78,7 +79,7 @@ Combining this information with the site's [Authors page](https://agilemanifesto
 - Pragmatic Programming: Dave Thomas, Andrew Hunt
 - the others: Martin Fowler, James Grenning, Brian Marick, Robert C. Martin, Steve Mellor
 
-What strikes me about this, is that five of the co-authors, so close to a third of them, did not (co-)create a methodology. So having an understanding of the methodologies that were represented, is not enough. The background of these five other co-authors is also relevant.
+What strikes me about this list, is that five of the Manifesto's co-authors, so close to a third of them, did not (co-)create a methodology. So having an understanding of the methodologies that were represented, is not enough. The background of these five other co-authors is also relevant.
 
 
 ### Can you give a brief explanation of each of these?
@@ -100,9 +101,9 @@ The main elements we came up with, were:
 - Silos instead of small iterations.
 - Wrapping all of this up in a a methodology with 1000 process steps. It doesn't work, but as a product it does sell.
 
-While that is a great start and we were getting short on time, it also feels very limited to me. Even though I did work in quite a waterfall way the first six-ish years of my career, it feels far away and I have trouble imagining myself back in such an environment. And I suspect the same applies to the other participants.
+While that is a great start and we were getting short on time, it also feels very limited to me. Even though I did work in quite a waterfall way the first six-ish years of my career, those memories feel far away and I have trouble imagining myself back in such an environment. And I suspect the same applies to the other participants.
 
-It makes me wonder how people who have never had that experience, interpret the Agile Manifesto. If you don't realize that people used to write several layers of design documents (architecture, functional design, technical design) before writing a single line of code, how will you make sense of *"Working software over comprehensive documentation"*? Does it make all documentation suspect? If you've never been part of a Pert or Gantt chart spanning at least nine months, what do you make of *"Responding to change over following a plan"*? Is any planning at all a waste of time?
+It makes me wonder how people who have never experienced those waterfall days, interpret the Agile Manifesto. If you don't realize that people used to write several layers of design documents (architecture, functional design, technical design) before writing a single line of code, how will you make sense of *"Working software over comprehensive documentation"*? Does it make all documentation suspect? If you've never been part of a Pert or Gantt chart spanning at least nine months, what do you make of *"Responding to change over following a plan"*? Is all planning a waste of time?
 
 
 
@@ -117,9 +118,9 @@ To illustrate the (to me) lack of success of the site, I also shared the site's 
 
 ## What is the purpose of the site?
 
-The main question I had in my head was: What do you want this site to be? but that was turned quite quickly in a question to me: What is the purpose of the site? Is it a historical archive? Something else? How could this be of interest to academics?
+The main question I had in my head was: "*What do you want this site to be?*" but that was turned quite quickly in a question to me: "*What is the purpose of the site? Is it a historical archive? Something else? How could this be of interest to academics?*"
 
-The most helpful comment was probably: *"It's for nerds like us."* Fair comment.
+The most helpful comment was probably: "*It's for nerds like us.*" Fair comment.
 
 ## Writing history is defining history
 Someone pointed out that writing history is defining history. More people were invited to the Agile Manifesto meeting than the ones that ended up joining. And some people who could have been invited, weren't - if only because the organizers didn't know of their existence.
@@ -130,4 +131,4 @@ So for a site like Context of Agile, there's a real risk of instead of giving a 
 For the site to matter, the history of Agile needs to matter. To be honest, I don't understand how it could not matter. We should have better sources than the existing folklore. People should be less wrong about Agile's history. We should look at the Agile Manifesto more as a historical event and less as something that came down from the heavens.
 
 ## Until how recent is history?
- One of the participants asked the excellent question: *"Until how recent does history go?"* Which led me to reply: *"I'm ready for Agile to end."* For me, it's time to let it go.
+ One of the participants asked the excellent question: "*Until how recent does history go?*" Which led me to reply: "*I'm ready for Agile to end.*" Agile means too many different things to too many different people. It's time to let it go. And perhaps - hopefully - a better understanding of the history of Agile can help us doing so.
