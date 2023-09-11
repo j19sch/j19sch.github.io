@@ -59,7 +59,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/archive.html</loc>
-  <lastmod>2023-09-03T18:28:00Z</lastmod>
+  <lastmod>2023-09-11T08:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/</loc>
@@ -294,6 +294,10 @@
   <lastmod>2023-09-03T18:28:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/blog/2023/agile-history-it-matters-right-at-frogs-conf/</loc>
+  <lastmod>2023-09-10T08:08:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/blog/2023/im-a-quality-engineer-and-im-not-sure-how-i-feel-about-that/</loc>
   <lastmod>2023-09-03T18:28:00Z</lastmod>
  </url>
@@ -411,11 +415,11 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-7.html</loc>
-  <lastmod>2023-09-03T18:28:00Z</lastmod>
+  <lastmod>2023-09-11T08:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/</loc>
-  <lastmod>2023-09-04T08:31:00Z</lastmod>
+  <lastmod>2023-09-04T08:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/agile-comms/</loc>
@@ -466,10 +470,6 @@
   <lastmod>2023-09-03T18:28:00Z</lastmod>
  </url>
  <url>
-  <loc>https://smallsheds.garden/categories/cat_leadership/</loc>
-  <lastmod>2023-09-03T18:28:00Z</lastmod>
- </url>
- <url>
   <loc>https://smallsheds.garden/categories/cat_metrics/</loc>
   <lastmod>2023-09-03T18:28:00Z</lastmod>
  </url>
@@ -506,31 +506,11 @@
   <lastmod>2023-09-03T18:28:00Z</lastmod>
  </url>
  <url>
-  <loc>https://smallsheds.garden/categories/cat_test-management/</loc>
-  <lastmod>2023-09-03T18:28:00Z</lastmod>
- </url>
- <url>
   <loc>https://smallsheds.garden/categories/cat_test-strategy/</loc>
   <lastmod>2023-09-03T18:28:00Z</lastmod>
  </url>
  <url>
-  <loc>https://smallsheds.garden/categories/cat_testing-manifesto/</loc>
-  <lastmod>2023-09-03T18:28:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/categories/cat_testing-maturity/</loc>
-  <lastmod>2023-09-03T18:28:00Z</lastmod>
- </url>
- <url>
   <loc>https://smallsheds.garden/categories/cat_this-site/</loc>
-  <lastmod>2023-09-03T18:28:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/categories/cat_tools/</loc>
-  <lastmod>2023-09-03T18:28:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/categories/cat_workshop/</loc>
   <lastmod>2023-09-03T18:28:00Z</lastmod>
  </url>
  <url>

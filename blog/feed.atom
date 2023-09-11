@@ -3,13 +3,35 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes</title>
   <id>https://smallsheds.garden/blog/feed.atom</id>
-  <updated>2023-09-03T18:28:39Z</updated>
+  <updated>2023-09-11T10:40:56Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/blog/feed.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>"Agile history, it matters, right?" at FroGS conf</title>
+    <id>https://smallsheds.garden/blog/2023/agile-history-it-matters-right-at-frogs-conf/</id>
+    <updated>2023-09-11T09:48:40+02:00</updated>
+    <published>2023-09-11T09:48:40+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2023/agile-history-it-matters-right-at-frogs-conf/"/>
+    <summary type="html">&lt;figure&gt;&lt;img src="https://smallsheds.garden/images/2023/agile-history/frogsconf.nl"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;On September 9th I facilitated a session at the &lt;a href="https://frogsconf.nl/"&gt;FroGS conf&lt;/a&gt; open space titled "&lt;em&gt;Agile history, it matters, right?&lt;/em&gt;" My main goal was to get input on where to take my &lt;a href="https://context-of-agile.org/"&gt;Context of Agile&lt;/a&gt; site. Before asking for that input, however, I asked the participants three questions about the history of Agile. I figured it would provide a good introduction to the topic. And I was curious how much the kind of person that joins a session like this, knows about the history of Agile. So a big thank you to all the participants!&lt;/p&gt;
+&lt;h2&gt;The three questions about the history of Agile&lt;/h2&gt;
+&lt;p&gt;The three questions about the history of Agile were:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When did Agile start?&lt;/li&gt;
+&lt;li&gt;What lightweight methodologies were represented at the Manifesto meeting?&lt;/li&gt;
+&lt;li&gt;What did the software development look like that Agile was reacting against?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2023/agile-history-it-matters-right-at-frogs-conf/"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="agile" label="agile"/>
+    <category term="agile-manifesto" label="agile manifesto"/>
+    <category term="conferences" label="conferences"/>
+  </entry>
   <entry>
     <title>My seven-month experiment of sharing weekly notes at work</title>
     <id>https://smallsheds.garden/blog/2023/my-seven-month-experiment-of-sharing-weekly-notes-at-work/</id>
@@ -26,6 +48,8 @@
 &lt;/blockquote&gt;
 &lt;p&gt;In this post, I'll tell the story of my eight-month experiment with weekly notes. After that, I'll share some tips in case you want to give weekly notes a try too.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2023/my-seven-month-experiment-of-sharing-weekly-notes-at-work/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="agile-comms" label="agile comms"/>
+    <category term="note-taking" label="note-taking"/>
   </entry>
   <entry>
     <title>Scrum master or scrum mascot?</title>
@@ -194,21 +218,6 @@
     <category term="measurements" label="measurements"/>
     <category term="metrics" label="metrics"/>
     <category term="test-automation" label="test automation"/>
-    <category term="tools" label="tools"/>
-  </entry>
-  <entry>
-    <title>My note-taking system for work</title>
-    <id>https://smallsheds.garden/blog/2023/my-note-taking-system-for-work/</id>
-    <updated>2023-03-01T15:39:25+01:00</updated>
-    <published>2023-03-01T15:39:25+01:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2023/my-note-taking-system-for-work/"/>
-    <summary type="html">&lt;figure&gt;&lt;img src="https://smallsheds.garden/images/2023/note-taking-system/notebook-and-pen.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;Ever since I started working back in 2006, I've used a notebook. Initially, I didn't have a system, I just wrote things down. Then, about seven years ago, when I became a scrum master, my notebook became more important. As a tester, I could use my team's board to keep track of my work. As a scrum master, none of my work was on the board. And even though my role has changed several times since then, my need for keeping track of things hasn't.&lt;/p&gt;
-&lt;p&gt;So somewhere along the way - and to be honest I forgot when exactly - I created my own system of note-taking based on bullet journaling. It's simple and straightforward. It helps me plan my day, list possible future actions, and keep a record of what I've been doing. On the one hand it seems like something small and simple. On the other hand it has been a major help to me, so I figured it's worth sharing.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2023/my-note-taking-system-for-work/"&gt;Read more…&lt;/a&gt; (8 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="note-taking" label="note-taking"/>
     <category term="tools" label="tools"/>
   </entry>
 </feed>
