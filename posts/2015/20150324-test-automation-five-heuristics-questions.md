@@ -3,7 +3,7 @@
 .. slug: test-automation-five-questions-leading-to-five-heuristics
 .. date: 2015-03-24 20:53:24 UTC+01:00
 .. tags: test automation, testing and checking, programming, heuristics
-.. category: test automation
+.. category: programming & test automation
 .. link: 
 .. description:
 .. type: text
