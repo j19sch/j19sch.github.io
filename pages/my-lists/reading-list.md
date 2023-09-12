@@ -30,6 +30,7 @@ hidetitle: false
 - Sidewinder: Creative Missile Development At China Lake - Ron Westrum
 - What to Say When You Talk to Your Self - Shad Helmstetter 
 
+
 ### 2022
 - Sooner Safer Happier: Antipatterns and Patterns for Business Agility - Jonathan Smart with Zsolt Berend, Myles Ogilvie and Simon Rohre
 - The Pathless Path: Imagining a New Story For Work & Life - Paul Millerd
