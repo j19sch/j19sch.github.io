@@ -26,6 +26,11 @@ In April 2020 I decided I wanted to learn [Clojure](https://clojure.org/) (becau
 
 <div style='margin-bottom: 1.8rem' markdown="1"></div>
 
+## Playdate Blackbox Puzzles
+Inspired by [workroomprds](https://www.workroom-productions.com/)'s [Black Box Puzzles](http://blackboxpuzzles.workroomprds.com/) I'm [building some of my own](https://github.com/j19sch/playdate-blackbox-puzzles) for the [Playdate](https://play.date/).
+
+<div style='margin-bottom: 1.8rem' markdown="1"></div>
+
 ## The four-hour tester
 [Helena Jeret-Mäe](https://twitter.com/helenaj_m) and I created the [four-hour tester](https://www.fourhourtester.net/), five exercises teaching five basic testing skills in four hours.
 
