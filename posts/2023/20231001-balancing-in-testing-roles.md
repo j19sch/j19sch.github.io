@@ -9,13 +9,27 @@
 .. type: text
 -->
 
-Working as a [quality engineer](link://slug/im-a-quality-engineer-and-im-not-sure-how-i-feel-about-that) has made me realize that all testing-related roles inherently unstable. They require a constant balancing act across three axes:
+balancing act
+
+dynamic across three dimensoins
+
+three axes of trouble
+
+inherently unstable
+
+---
+
+Throughout the years I've had many different testing-related roles: tester in a separate testing team, tester in an Agile team, test coordinator/manager, principal test engineer, and quality engineer. It's during my [recent time as a quality engineer](link://slug/im-a-quality-engineer-and-im-not-sure-how-i-feel-about-that), that I realized that all testing-related roles inherently unstable. They require a constant balancing act across three axes:
 
 - doing testing yourself versus supporting testing by others;
 - being in a separate team versus being embedded in a team;
 - doing your job versus improving the system.
 
+This balancing act happens both in the long term and in the short term. In the long term as you change jobs, change companies, develop skills, develop new interests. In the short term as in a single day you work with different people, in different areas, from different perspectives. Pairing on unit tests with an experienced developer is a very different game from discussing the business and process risks of a feature with a newly joined colleague.
+
+
 <!-- TEASER_END -->
+
 
 # doing testing yourself versus supporting testing by others
 
@@ -26,10 +40,11 @@ Working as a [quality engineer](link://slug/im-a-quality-engineer-and-im-not-sur
 # doing your job versus improving the system
 
 
+# why I don't expect this to change anytime soon
 
 ---
 
-# from elsehwere
+# notes from elsehwere
 
 ## from slides
 
