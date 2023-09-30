@@ -1,7 +1,7 @@
 <!--
 .. title: The three axes of trouble in testing roles
 .. slug: the-three-axes-of-trouble-in-tesing-roles
-.. date: 2023-03-01 13:01:25 UTC+01:00
+.. date: 2023-09-30
 .. tags: quality engineering
 .. category: quality engineering, management, software development, software testing, test management
 .. link: 
