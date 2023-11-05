@@ -34,7 +34,7 @@ What do I want to say? Why is this interesting?
 - being like water
 	- conversation Maaret 13 Oct 24
 	- also knowing when to be firm / be ice / be a vessel
-	- disvover gaps and decide which to fill
+	- discover gaps and decide which to fill
 	-> testers as scrum masters, qualiy coaches, etc
 - unsolved problem in software development: where to put the testers
 	- there are other supporting roles but
