@@ -78,62 +78,38 @@ While I'm most interested in the dynamic aspect of these axes, there is a static
 *--> And this continuous movement is not a balancing act. It's not about finding a spot that's dynamically stable for each of these three axes. It's deciding - often multiple times a day - where to position yourself on those three axes, depending on the people you're working with, the activity you're engaging in, and the goal(s) of that activity.*
 
 ## Doing testing yourself versus supporting testing by others
-It’s very hard to support others testing without doing any testing yourself. Yet any testing you do, might become your domain, with others leaving it to you to test.
 
-### Doing the testing
-Doing the testing means that you test the product and share the results of that testing. There's a clear step in the process where you do testing - or rather the testing testers do, as opposed to the testing programmers do. This leads to all kinds of problems related to silos, handovers[^2] and bottlenecks. You might be involved in things like refinement or story huddles to bring in "your unique perspective as a tester". So there too, you're doing testing.
+Doing the testing means that you do testing and share the results of your testing. A big risk here is that you become the sole owner of the kind of testing you do. It's your domain and others leave it for you to do. Having a dedicated "testing" column on your board is one sign that this happening - at least to some degree.
 
-[^2]: How often have you seen a developer do a good handover of the testing they have done already?
+Supporting testing by others means that you enable others to do testing. You talk with developers before they test, debrief with them after, and you pair test. The big challenge here is that by not doing any testing yourself, but only supporting others, it becomes very hard to build a deep understanding of the product and technology. And that limits how well you can support the testing. You want to be specific and concrete in your support, not only hand out generic testing wisdom.
 
-### Supporting the testing
-Supporting the testing means that you support and enable others (i.e. the developers) to test their own and each other's work. So you're not directly contributing and in that sense not a full member of the team. That also means that you're optional to the work, unless there's a strong culture of valuing your role of supporting testing.
-
-A major challenge is that if you support the testing, but rarely do the testing, it will be very hard to build a deep understanding of the product and technology. And this limits how well you will be able to support the testing. You may end up as the scrum master who knows how to facilitate the scrum events, but has barely any idea of what the team actually builds. At that point, someone might rightfully raise the question why they keep you around at all.
-
-### The balancing act; the dance;
 The middle ground between doing and supporting is often called whole-team testing. As I said in a [previous blog post](link://slug/agile-tester-or-quality-engineer-whos-to-say):
 
 >  Ironically, an important challenge for an agile tester is to not do too much testing.
 
 > [...] the difference between an agile tester and a quality engineer becomes rather moot. In practice they will be doing very similar things: avoiding to become a quality safety blanket for the team, and working in a supportive and collaborative way with their team on quality.
 
-However, it's not really a middle ground, a stable base between two extremes. This position is a balancing act, where the middle ground keeps moving and you have to adjust to it. It requires an ongoing dialogue with your team about what you do versus what you support[^1] - with the assumption that some of what you do, will grow to something you support. At which point you might add something new to what you do, convince the team of its value, and then the cycle repeats itself. Luckily, there's some stuff developers never seem to take over and there's always more stuff you could do, so you won't make yourself obsolete.
+However, it's not really a middle ground, a balancing act between two extremes. Rather, you need to continuously decide how much doing and how much supporting makes sense in that particular moment, for that particular activity, with those particial team members. And you can't leave your team members guessing about those decisions, so it requires an ongoing dialogue with them about what you do versus what you support.
 
-[^1]: It also requires on ongoing dialogue about what they do and what you do. See [Maaret Pyhäjärvi](https://maaretp.com/)'s blog post [*"Tester roles and services"*](https://visible-quality.blogspot.com/2021/07/tester-roles-and-services.html) for an excellent example of such a dialogue.
+This continuous movement and dialogue can get quite taxing for everyone involved.
 
-This ongoing dialogue and the changes that come with it, however, are quite taxing for the team. The team's way of working isn't a stable base to work from. It's in a constant state of flux, both potentially and in reality. Now, in a way this is an ideal scenario, with a team that keeps adapting and improving. However, often enough there are enough sources of instability and change around the team already and a team can only cope with so much of it.
+*--> This ongoing dialogue and the changes that come with it, however, are quite taxing for the team. The team's way of working isn't a stable base to work from. It's in a constant state of flux, both potentially and in reality. Now, in a way this is an ideal scenario, with a team that keeps adapting and improving. However, often enough there are enough sources of instability and change around the team already and a team can only cope with so much of it.*
 
 
 ## Being embedded in a team versus being in a separate team
-It’s great to be in the same team as the developers and designers and business analysts. It also gets lonely, so you form an informal team with people in a similar role as yours.
+One of the many good things Agile has done, is pull testers into the development team. Instead of having the testers do their work only after the programmers are done writing all the code, they get to collaborate. Shorter feedback loops FTW!
 
-### Being embedded in a team
+Unfortunately, with agile teams being rightfully relatively small, this leaves the tester in a somewhat lonely spot. There's probably only one tester on the team. So you don't have any peers inside your team to run ideas by. As a more junior tester, you don't have a more senior tester in your team to learn from. Last but not least, your manager is more likely to have a programming than a testing background, so there's a limit to the kind of support and mentoring you can get from them.
 
-One of the many things Agile has done, is pull testers into the development team. Instead of having a waterfall-style testing phase after a development phase with separate tester and developer teams, testers and developers are in the same team. And a piece of work isn't done until it's tested.
+Those disadvantages do not mean, however, that you should set up an org structure that separates development from testing. 
 
-Since Agile teams are kept relatively small and developers are expected to do at least part of the testing, there's usually only a single tester in a team. That puts the tester in a somewhat lonely spot. They don't have any peers inside the team to run ideas by. As a more junior tester, you also don't a more senior tester in your team to learn from.
+*-->, with all the unproductive incentives that comes with it. For more on the pitfalls of this setup, I recommend [Elisabeth Hendrickson](https://ruby.social/@testobsessed)'s [*"Better Testing, Worse Quality?"*](https://web.archive.org/web/20041001003124/http://www.qualitytree.com/feature/btwq.pdf). One thing that becomes very clear from it, is that even if you have a well-functioning setup with an independent test team, the managing of quality needs to happen on a higher level. It needs to cover requirements analysis and developer and independent testing and defect prevention.*
 
-Having developers and testers in a team also creates a challenge for the team's manager. Most of the time they have a deverloper background, so there's a limit how much support they can give with regards to the tester's work, career progression, and personal development.
+*-->Even when you manage to avoid those pitfalls, having two separate teams will create some amount of siloisation, so more friction in hand-overs, less collaboration, and the transfer of problems to the other team.*
 
--> what about quality engineers?
+The solution here is to have on the one hand a cross-functional team, all reporting to the same manager, who is responsible for the results of the team, and on the other hand, create incentives and structures for the testers to connect with one another. That structure can be a test guild, a community of practice, a [regular ensembling session](https://ezagroba.github.io/mob-testing/#/), or just an informal catchup meeting every week.
 
-### Being in a separate team
-
-As mentioned above, putting testers in a separate team is the waterfall thing to do. You do get some advantages from it. Testers can form am actual team with their peers. Their manager only has to support people with a testing background.
-
-Those advantages don't outweigh the disadvantages, though. You've set up an org structure that explicitly separates development from testing, with all the unproductive incentives that comes with it. For more on the pitfalls of this setup, I recommend [Elisabeth Hendrickson](https://ruby.social/@testobsessed)'s [*"Better Testing, Worse Quality?"*](https://web.archive.org/web/20041001003124/http://www.qualitytree.com/feature/btwq.pdf). One thing that becomes very clear from it, is that even if you have a well-functioning setup with an independent test team, the managing of quality needs to happen on a higher level. It needs to cover requirements analysis and developer and independent testing and defect prevention.
-
-Even when you manage to avoid those pitfalls, having two separate teams will create some amount of siloisation, so more friction in hand-overs, less collaboration, and the transfer of problems to the other team.
-
-### The balancing act
-
-The middle ground between embedded testers and a separate test team, is making either of these the official structure and then minimize the powers of that structure as much as possible.
-
-In my experience that tends to be easier if you pick embedded testers as your official structure. It makes it clear that testing and quality is the responsibility of the whole team, developers and tester together. This does put testers in that lonely position mentioned earlier, but that creates an incentive for testers to connect with one another. That incentive alone is not enough, though. You do need some structure such as a test guild, a community of practice, a [regular ensembling session](https://ezagroba.github.io/mob-testing/#/), or just an informal catchup meeting, for this to actually happen.
-
-The advantage of getting the testers to connect with each other goes beyond them feeling they have a group of peers within the company. A good tester looks at a bigger picture, beyond the scope and focus of their team. They can do this a lot more effectively if they're sharing information with each other. This then becomes a basis for collaborating with each other, whenever that's useful. And if you're lucky, they'll bring their team along with them. So in this way testers become important in linking teams together and creating aligninment on what they deliver.
-
-Another way to minimize the embedded tester structure is to have the testers be part of the team, but report to a separate manager. That does require the managers of the different team members to be aligned. I once was part of a team with business analysts, developers, and testers, where each had their own separate manager. To manage the work by the team, we had a project manager. And at a later stage, a product owner was added to the team. Needless to say that there was a lot of potential for conflicts and mixed messages in that setup.
+*--> The advantage of getting the testers to connect with each other goes beyond them feeling they have a group of peers within the company. A good tester looks at a bigger picture, beyond the scope and focus of their team. They can do this a lot more effectively if they're sharing information with each other. This then becomes a basis for collaborating with each other, whenever that's useful. And if you're lucky, they'll bring their team along with them. So in this way testers become important in linking teams together and creating aligninment on what they deliver.*
 
 
 ## Doing your job versus improving the system
