@@ -1,7 +1,7 @@
 <!--
 .. title: A good tester is all over the place
 .. slug: a-good-tester-is-all-over-the-place
-.. date: 2023-11-05
+.. date: 2023-11-25
 .. tags: quality engineering
 .. category: quality engineering, management, software development, software testing, test management
 .. link: 
@@ -19,39 +19,43 @@
 
 # Testers do testing
 
-Let's start with a straightforward statement: a tester tests. Then what is testing? I [still like the definition](link://slug/reflections-on-my-testing-manifesto) *"Testing is investigating in order to evaluate a product."* The most obvious thing to investigate, to test, is the code that has been written[^1]. The best way to do this, in my opinion, is through the combination of exploratory testing and test automation, i.e. what [Maaret Pyhäjärvi](https://maaretp.com/) has named ["contemporary exploratory testing"](https://www.youtube.com/watch?v=T_67oQrPZhQ).
+Let's start with a straightforward statement: a tester tests. Then what is testing? I [still like](link://slug/reflections-on-my-testing-manifesto) the definition *"Testing is investigating in order to evaluate a product."* The most obvious thing to investigate, to test, is the code that has been written[^1]. The best way to do this, in my opinion, is through the combination of exploratory testing and test automation, i.e. what [Maaret Pyhäjärvi](https://maaretp.com/) has named "[contemporary exploratory testing](https://www.youtube.com/watch?v=T_67oQrPZhQ)". These two aspects, the exploratory and the automation activities, are the most visible parts. They would yield very poor results, though, without good test strategy, design, and reporting.
 
 [^1]: Which can take different forms: from investigating the code as code, to investigating (part of) the code as it runs, to investigating the code as a product.
 
-These two aspects, the exploratory and the automation activities, are the most visible parts. They would yield very poor results, though, without good strategy, planning, and design of the testing. And the results would of be of little use without good test reporting.
-
-While the above covers the core of what a tester does, there's more testing to do. I expect testers to also be involved in monitoring production, in attending to CI/CD pipelines, and to participate in refinement, design, and architecture.[^4]
+There's more to test, though, than the code that is being written. Testers should also be involved in monitoring production, in attending to CI/CD pipelines, in maintaining test data and test environments. And they should participate in refinement, design, and architecture.[^4]
 
 [^4]: And even that list is too short and generic, see [Maaret Pyhäjärvi](https://maaretp.com/)'s ["Testers roles and services"](https://visible-quality.blogspot.com/2021/07/tester-roles-and-services.html).
 
-So that's quite a wide range of activities. Luckily, yet also unluckily, they are not the only ones doing testing.
-
-So that's quite a wide range of activities. Luckily, they are not the only ones doing testing. Unluckily, this also creates some challenges.
+So that's quite a wide range of activities, even when I leave out activities related to being a member of the development team (e.g. retropsectives) and to being an employee (e.g. all-hands meetings). Luckily, testers are not the only ones doing testing. Unluckily, this also creates some challenges.
 
 
 ## But they're not the only ones testing
 
-A curious thing about testing, is that the tester is not the only one doing it.
+A curious thing about testing, is that testers are not the only ones doing it.
 
-I expect developers to test their own work. It cannot be the case that when you ask a developer "Is the code you wrote good enough?", the reply is "I have no clue, because that's not my job. Ask a tester to look at it." And as to the other set of activities I mentioned - monitoring, pipelines, design - it's hard to imagine developers not also being involved in those.
+I expect developers to test their own work. It cannot be the case that when you ask a developer *"Is the code you wrote good enough?"*, the reply is *"I have no clue, that's not my job. Ask a tester."* And the same applies to the other testing-related activities I mentioned - monitoring, pipelines, design - it's hard to imagine developers not being involved in those.
 
-So it seems there's nothing that distinguishes a tester from a programmer in the types of activities they do. A cynical conclusion from that could be that testers are programmers who aren't good enough at programming. They get to be second-tier developers, focusing on stuff that needs to happen, but is not programming.
+So it seems that based on a high-level list of activities, there's nothing that distinguishes a tester from a programmer. Programmers test too. This raises an important question for any tester: if you do everything a programmer does, except for programming, what added value do you bring? In my experience, a good tester brings great value to a team, because they bring something different.
 
-I don't accept that cynical conclusion, though. It's not because anyone can cook or anyone can write a book, that everyone's cooking or writing is equally good. The same applies to testing. I've seen plenty of testers bring great value to their team, because they bring something different.
+---
+
+A cynical conclusion from that could be that testers are programmers who aren't good enough at programming. So they get to be second-tier developers, focusing on the stuff that needs to happen, but is not programming.
+
+I don't accept that cynical conclusion, though. It's not because anyone can cook or anyone can write a book, that everyone's cooking or writing is equally good. The same applies to testing. I've seen plenty of testers bring great value to their team[^5], because they bring something different.
+
+[^5]: If however as a tester you can't explain how your testing brings more value than the average developer's...
+
+---
 
 
 ## Yet they bring something different
 
-As mentioned above, the unique value testers bring, is not in what they do. They should not be the only ones testing. The unique thing a tester (or at least a good tester) brings, is in how they do testing.
+The unique thing a tester (or at least a good tester) brings, is not in the fact that they do testing. Others should be testing too. It is in how they perform that testing.
 
-By being "a tester", they have the space to focus on testing. First of all, they can focus their professional development skills on this area. They can build and deepen their testing skills beyond a level that would make sense for non-testers.[^2] Secondly, throughout the development process, testers can take a testing stance. The can keep the question "How might this work? And how might it not?" front of mind, leaving the question "How can I build this?" more in the background.
+By being "a tester", they have the space to focus on testing. First of all, they can focus their professional development skills on this area. They can build and deepen their testing skills beyond a level that would make sense for non-testers. Secondly, throughout the development process, testers can take a testing perspective. They can keep the question *"How might this work? And how might it not?"* front of mind, leaving the question *"How can I build this?"* more in the background and to the other team members.
 
-[^2]: If you're not getting that from your testers, there's an interesting conversation to be had.
+`[^2]:` If you're not getting that from your testers, there's an interesting conversation to be had.
 
 *--> That is not to say that all of that testing will be great or even adequate. Some of it will be too shallow, or poorly done, or the best you could get from someone who lacks certain skills, has a bad day, or isn't provided with an environment to support their best.*
 
@@ -60,7 +64,11 @@ By being "a tester", they have the space to focus on testing. First of all, they
 
 All of this means, that it's hard to point in a meaningful way to where testing happens. There's no single activity in which all the testing is concentrated. There isn't a single role either. Testing - as in: investigating in order to evaluate a product - happens everywhere, all the time, by everyone.[^3]
 
-[^3]: My favorite far-fetched example is a programmer's proprioception if they are hitting the right keys while writing code.
+[^3]: My favorite far-fetched example is a programmer's proprioception telleing them if they are hitting the right keys while writing code.
+
+As such, testers needs to be all over the place, all over software development, because that's where testing happens. It's not only that, though. They also need to decide, situation-by-situation, where they want to stand on three different axes.
+
+---
 
 As such, testers needs to be all over the place, all over software development, because that's where testing happens. It's not only that, though. They also need to decide, situation-by-situation, where they want to stand on the following three axes:
 - do testing themselves or support testing by others
@@ -71,9 +79,16 @@ As such, testers needs to be all over the place, all over software development, 
 *--> they need to adjust their stance as they do so. As they engage with different parts of software development, they have to choose to*
 *--> The different ~~stances~~ of a tester*
 
-# Three axes to position yourself on --> 'position' is too static
+---
 
-While I'm most interested in the dynamic aspect of these axes, there is a static aspect too. The job you got hired to do, gives you a kind of 'neutral' position on these axes. For example, when I was a [quality engineer](link://slug/im-a-quality-engineer-and-im-not-sure-how-i-feel-about-that), I was expected to support testing by others, while embedded in two teams, and to do my job. To be effective though, I did have to do testing myself, team up with the other quality engineers, and improve the system. That dynamic, this continuous movement along these three axes, is in my opinion essential be effective as a tester.
+# Three axes to move around on (to position yourself on -> too static)
+
+The three axes a tester will move around on, are:
+- do testing themselves or support testing by others
+- be embedded in a team or be part of a separate team
+- do their job or improve the system
+
+While I'll be focusing in this post on the dynamic aspect of these axes, there is a static aspect to them. The job you got hired to do, gives you a kind of 'neutral' position on these axes. For example, when I was a [quality engineer](link://slug/im-a-quality-engineer-and-im-not-sure-how-i-feel-about-that), I was expected to support testing by others, while embedded in two teams, and to do my job. To be effective though, I did have to do testing myself, team up with the other quality engineers, and improve the system. That dynamic, this continuous movement along these three axes, is in my experience essential be effective as a tester.
 
 *--> And this continuous movement is not a balancing act. It's not about finding a spot that's dynamically stable for each of these three axes. It's deciding - often multiple times a day - where to position yourself on those three axes, depending on the people you're working with, the activity you're engaging in, and the goal(s) of that activity.*
 
