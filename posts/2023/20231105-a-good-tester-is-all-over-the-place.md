@@ -9,11 +9,20 @@
 .. type: text
 -->
 
+Posts I kind of want to link to:
+- [agile tester or quality engineer](link://slug/agile-tester-or-quality-engineer-whos-to-say)
+- [tester as overload variable](link://slug/tester-is-an-overloaded-variable)
+
+Do I mention "specialist" somewhere?
+
+---
+
+This post has become quite a long reflection on testers and testing-related roles, such as quality engineers. And each section could have been its own post, each as long as this one, with more details and nuance. I guess it just proves the point of my conclusion: testing-related roles are still an unsolved problem in software development. In the mean time, anyone in such a role will have to "be all over the place", in a good way.
+
 * --> Before I start this post, I shoud say that we use "tester" in [so many different ways](link://slug/tester-is-an-overloaded-variable), that there are so many different views about what good testing is, let alone what good software development looks like, that either I had to cut a lot of the nuance from this post, or I had to write an extremely long post with nuances stacked on top of nuances. I chose for the former approach.*
 
-*--> Since I took on a job as quality engineer about six months ago, I've been thinking more about the different testing-related roles I've had in the past 15+ years. I've been a tester in a separate testing team, a tester in an Agile team while reporting to either a test manager or an engineering manager, a principal test engineer, and since recently a quality engineer.*
+* --> Since I took on a job as quality engineer about six months ago, I've been thinking more about the different testing-related roles I've had in the past 15+ years. I've been a tester in a separate testing team, a tester in an Agile team while reporting to either a test manager or an engineering manager, a principal test engineer, and since recently a quality engineer.*
 
-*-->Despite their differences, I've found they do have something in common: they're all problematic, or rather: unstable. They require a continuous balancing act, a never-ending re-invention of our jobs, adapting to the environment we find ourselves in. And I guess this partially explains why we keep coming up with new titles for what we do: quality assurance analyst, test engineer, software development engineer in test, quality engineer, etc. No solution to "the testing role" is stable. To be effective, we have no choice but to work as much around the existing structures as within them.*
 
 <!-- TEASER_END -->
 
@@ -23,9 +32,9 @@ Let's start with a straightforward statement: a tester tests. Then what is testi
 
 [^1]: Which can take different forms: from investigating the code as code, to investigating (part of) the code as it runs, to investigating the code as a product.
 
-There's more to test, though, than the code that is being written. Testers should also be involved in monitoring production, in attending to CI/CD pipelines, in maintaining test data and test environments. And they should participate in refinement, design, and architecture.[^4]
+There's more to test, though, than the code that is being written. Testers should also be involved in monitoring production, in attending to CI/CD pipelines, in maintaining test data and test environments. And they should participate in refinement, design, and architecture.[^2]
 
-[^4]: And even that list is too short and generic, see [Maaret Pyhäjärvi](https://maaretp.com/)'s ["Testers roles and services"](https://visible-quality.blogspot.com/2021/07/tester-roles-and-services.html).
+[^2]: And even that list is too short and generic, see [Maaret Pyhäjärvi](https://maaretp.com/)'s ["Testers roles and services"](https://visible-quality.blogspot.com/2021/07/tester-roles-and-services.html).
 
 So that's quite a wide range of activities, even when I leave out activities related to being a member of the development team (e.g. retropsectives) and to being an employee (e.g. all-hands meetings). Luckily, testers are not the only ones doing testing. Unluckily, this also creates some challenges.
 
@@ -42,9 +51,9 @@ So it seems that based on a high-level list of activities, there's nothing that 
 
 A cynical conclusion from that could be that testers are programmers who aren't good enough at programming. So they get to be second-tier developers, focusing on the stuff that needs to happen, but is not programming.
 
-I don't accept that cynical conclusion, though. It's not because anyone can cook or anyone can write a book, that everyone's cooking or writing is equally good. The same applies to testing. I've seen plenty of testers bring great value to their team[^5], because they bring something different.
+I don't accept that cynical conclusion, though. It's not because anyone can cook or anyone can write a book, that everyone's cooking or writing is equally good. The same applies to testing. I've seen plenty of testers bring great value to their team[^3], because they bring something different.
 
-[^5]: If however as a tester you can't explain how your testing brings more value than the average developer's...
+[^3]: If however as a tester you can't explain how your testing brings more value than the average developer's...
 
 ---
 
@@ -55,16 +64,16 @@ The unique thing a tester (or at least a good tester) brings, is not in the fact
 
 By being "a tester", they have the space to focus on testing. First of all, they can focus their professional development skills on this area. They can build and deepen their testing skills beyond a level that would make sense for non-testers. Secondly, throughout the development process, testers can take a testing perspective. They can keep the question *"How might this work? And how might it not?"* front of mind, leaving the question *"How can I build this?"* more in the background and to the other team members.
 
-`[^2]:` If you're not getting that from your testers, there's an interesting conversation to be had.
+`[^2]: If you're not getting that from your testers, there's an interesting conversation to be had.`
 
 *--> That is not to say that all of that testing will be great or even adequate. Some of it will be too shallow, or poorly done, or the best you could get from someone who lacks certain skills, has a bad day, or isn't provided with an environment to support their best.*
 
 
-# Please point at where the testing happens
+## Please point at where the testing happens
 
-All of this means, that it's hard to point in a meaningful way to where testing happens. There's no single activity in which all the testing is concentrated. There isn't a single role either. Testing - as in: investigating in order to evaluate a product - happens everywhere, all the time, by everyone.[^3]
+All of this means, that it's hard to point in a meaningful way to where testing happens. There's no single activity in which all the testing is concentrated. There isn't a single role either. Testing - as in: investigating in order to evaluate a product - happens everywhere, all the time, by everyone.[^4]
 
-[^3]: My favorite far-fetched example is a programmer's proprioception telleing them if they are hitting the right keys while writing code.
+[^4]: My favorite far-fetched example is a programmer's proprioception telleing them if they are hitting the right keys while writing code.
 
 As such, testers needs to be all over the place, all over software development, because that's where testing happens. It's not only that, though. They also need to decide, situation-by-situation, where they want to stand on three different axes.
 
@@ -84,6 +93,7 @@ As such, testers needs to be all over the place, all over software development, 
 # Three axes to move around on (to position yourself on -> too static)
 
 The three axes a tester will move around on, are:
+
 - do testing themselves or support testing by others
 - be embedded in a team or be part of a separate team
 - do their job or improve the system
@@ -92,90 +102,128 @@ While I'll be focusing in this post on the dynamic aspect of these axes, there i
 
 *--> And this continuous movement is not a balancing act. It's not about finding a spot that's dynamically stable for each of these three axes. It's deciding - often multiple times a day - where to position yourself on those three axes, depending on the people you're working with, the activity you're engaging in, and the goal(s) of that activity.*
 
+
 ## Doing testing yourself versus supporting testing by others
 
 Doing the testing means that you do testing and share the results of your testing. A big risk here is that you become the sole owner of the kind of testing you do. It's your domain and others leave it for you to do. Having a dedicated "testing" column on your board is one sign that this happening - at least to some degree.
 
-Supporting testing by others means that you enable others to do testing. You talk with developers before they test, debrief with them after, and you pair test. The big challenge here is that by not doing any testing yourself, but only supporting others, it becomes very hard to build a deep understanding of the product and technology. And that limits how well you can support the testing. You want to be specific and concrete in your support, not only hand out generic testing wisdom.
+Supporting testing by others means that you enable others to do testing. You talk with developers before they test, debrief with them after, and you test in a pair and/or ensemble. The big challenge here is that by not doing any testing yourself, but only supporting others, it becomes very hard to build a deep understanding of the product and technology. And that limits how well you can support the testing. You want to be specific and concrete in your support, not only hand out generic testing wisdom.
 
-The middle ground between doing and supporting is often called whole-team testing. As I said in a [previous blog post](link://slug/agile-tester-or-quality-engineer-whos-to-say):
+The middle ground between doing and supporting is often called whole-team testing. However, it's not really a middle ground, a balancing act between two extremes. Rather, you need to continuously decide how much doing and how much supporting makes sense in that particular moment, for that particular activity, with those particial team members. And you can't leave your team members guessing about those decisions, so it requires an ongoing dialogue with them about what you do versus what you support.
 
->  Ironically, an important challenge for an agile tester is to not do too much testing.
+*--> As I said in a [previous blog post](link://slug/agile-tester-or-quality-engineer-whos-to-say):
+ Ironically, an important challenge for an agile tester is to not do too much testing.
+[...] the difference between an agile tester and a quality engineer becomes rather moot. In practice they will be doing very similar things: avoiding to become a quality safety blanket for the team, and working in a supportive and collaborative way with their team on quality.*
 
-> [...] the difference between an agile tester and a quality engineer becomes rather moot. In practice they will be doing very similar things: avoiding to become a quality safety blanket for the team, and working in a supportive and collaborative way with their team on quality.
-
-However, it's not really a middle ground, a balancing act between two extremes. Rather, you need to continuously decide how much doing and how much supporting makes sense in that particular moment, for that particular activity, with those particial team members. And you can't leave your team members guessing about those decisions, so it requires an ongoing dialogue with them about what you do versus what you support.
-
-This continuous movement and dialogue can get quite taxing for everyone involved.
+*--> This continuous movement and dialogue can get quite taxing for everyone involved.*
 
 *--> This ongoing dialogue and the changes that come with it, however, are quite taxing for the team. The team's way of working isn't a stable base to work from. It's in a constant state of flux, both potentially and in reality. Now, in a way this is an ideal scenario, with a team that keeps adapting and improving. However, often enough there are enough sources of instability and change around the team already and a team can only cope with so much of it.*
 
 
 ## Being embedded in a team versus being in a separate team
-One of the many good things Agile has done, is pull testers into the development team. Instead of having the testers do their work only after the programmers are done writing all the code, they get to collaborate. Shorter feedback loops FTW!
+One of the many good things Agile has done, is pull testers into the development team. Instead of having the testers do their work only after the programmers are done writing their code, they get to collaborate. Shorter feedback loops FTW!
 
-Unfortunately, with agile teams being rightfully relatively small, this leaves the tester in a somewhat lonely spot. There's probably only one tester on the team. So you don't have any peers inside your team to run ideas by. As a more junior tester, you don't have a more senior tester in your team to learn from. Last but not least, your manager is more likely to have a programming than a testing background, so there's a limit to the kind of support and mentoring you can get from them.
+Unfortunately, with agile teams being relatively small (as they should), this leaves the tester in a somewhat lonely spot. There's probably only one tester on the team. So you don't have peers inside your team to run ideas by. As a junior tester, you don't have a more experiences tester to learn from. And your manager is more likely to have a programming than a testing background, so there's a limit to the kind of support and mentoring you can get from them.
 
-Those disadvantages do not mean, however, that you should set up an org structure that separates development from testing. 
+*--> Those disadvantages do not mean, however, that you should set up an org structure that separates development from testing.*
 
 *-->, with all the unproductive incentives that comes with it. For more on the pitfalls of this setup, I recommend [Elisabeth Hendrickson](https://ruby.social/@testobsessed)'s [*"Better Testing, Worse Quality?"*](https://web.archive.org/web/20041001003124/http://www.qualitytree.com/feature/btwq.pdf). One thing that becomes very clear from it, is that even if you have a well-functioning setup with an independent test team, the managing of quality needs to happen on a higher level. It needs to cover requirements analysis and developer and independent testing and defect prevention.*
 
 *-->Even when you manage to avoid those pitfalls, having two separate teams will create some amount of siloisation, so more friction in hand-overs, less collaboration, and the transfer of problems to the other team.*
 
-The solution here is to have on the one hand a cross-functional team, all reporting to the same manager, who is responsible for the results of the team, and on the other hand, create incentives and structures for the testers to connect with one another. That structure can be a test guild, a community of practice, a [regular ensembling session](https://ezagroba.github.io/mob-testing/#/), or just an informal catchup meeting every week.
+Those disadvantages do not mean, however, that we should return to org structures that separate programming from testing. The solution is to have on the one hand a cross-functional team, all reporting to the same manager, who is responsible for the results of the team, and on the other hand, create incentives and structures for the testers to connect with one another. That structure can be a test guild, a community of practice, a [regular ensembling session](https://ezagroba.github.io/mob-testing/#/), or just an informal catchup meeting every week.
 
 *--> The advantage of getting the testers to connect with each other goes beyond them feeling they have a group of peers within the company. A good tester looks at a bigger picture, beyond the scope and focus of their team. They can do this a lot more effectively if they're sharing information with each other. This then becomes a basis for collaborating with each other, whenever that's useful. And if you're lucky, they'll bring their team along with them. So in this way testers become important in linking teams together and creating aligninment on what they deliver.*
 
 
 ## Doing your job versus improving the system
-It’s important to do your job, but to do a good job you discover you first have to change the organization a little (or a lot).
 
-### Doing your job
+*--> It’s important to do your job, but to do a good job you discover you first have to change the organization a little (or a lot).*
 
 As a tester your job is to test things. To uncover interesting information about the product.  Ideally you do this throughout the software development lifecycle: from ideation to production. Ideally you have access to the code and to the necessary tools. Ideally your other team members are involved in testing and ideally they involve you in what they are doing.
 
-Unfortunately, things very often aren't ideal. It could be that you're testing code written by a third party based on the specs written by a business analyst. So doing your job, means you do your best with whatever's given to you. Even if that means your testing is a lot less effective than it could be (should be?).
+Unfortunately, things very often aren't ideal. And sometimes they're anything but ideal. Doing your job then means doing your best with whatever's given to you. Even if that means your testing is a lot less effective that it could be.
 
-### Improving the system
+Things not being ideal is also an opportunity for change. You can try to improve the system. On some level that's expected of any team member. 
 
-If things aren't ideal, you can try to change them.
-- enabling your job
-	- that's a manager's job! (every team member's job up to a point)
-	- only so much you can do from a tester's position
+Testers, however, often seem to need to do more than that. Few organizations are set up in a way that enables good testing. Changing that is more of a manager's job[^5], though. As a tester, without a manager's authority and without a manager's access to higher management, getting change going will be a challenge at best and an impossible task at worst.
 
-### The balancing act
+[^5]: [Maaret Pyhäjärvi](https://maaretp.com/) and I made an [incomplete model](https://www.linkedin.com/feed/update/urn:li:activity:7021181214204080128/) about this a year ago.
 
-- doing your job
-	- either you accept a very limited not-my-problem attitude or you burn out -> burn-out post
-- enabling your job
-	- influence, no authority
-	- not undermine others' authority
-	- too distant from other managers / upper management limits impact
-- the middle ground
-	- all the glue work
-	- all the admin work
-	- appreciated, but not really seen, not really rewarded, accepted as the default(?)
-	- ...
-- bonus value delivered by testers
-	- fixing the organization so they can do good testing
+This makes this axis the hardest of the three. If you try to change the system too little, you'll struggle to do a good job testing. Try to change the system too much, get bit by blowback and resistance. Both are demotivating and can have you heading towards a burn-out.
 
-diagram with Maaret
-> From an observation of how much "manager" kind of work agile team's testers have been taking without the manager power
-https://www.linkedin.com/feed/update/urn:li:activity:7021181214204080128/
-
-Quoting Anna Baik: "As testers, we are often expected to not only do our work, but fix our organizations to be able to do so."  
-https://www.linkedin.com/posts/maaret_testers-activity-7033160980041719808-ZFAj
+It's better to work in more suble ways, picking the right opportunities to improve the system. That work, however, the work you do just so you can do good testing, often remains invisible. Most people don't have an eye for it. And even if someone does, the testing work you do, is a lot easier to notice than your testing-enabling work.
 
 
-Maaike's 4 levels
-https://twitter.com/Maaikees/status/1617816571786977280
+# A good tester is all over the place
+
+A good tester works inside and outside the existing structures. Roles and processesprovide structure and you ignore those at your own peril. You can't limit yourself to those structures either though. Testing happens across roles, throughout the software development process. So you also need to be comfortable working outide (and around) those structures. Testing happens everywhere all the time, so that's where a tester might need to be.
+
+That brings us to the three axes. You can't be everywhere at once. You need to make choices. Is this testing something you need to do or something you only need to support? Are you sufficiently connected to your team and to your fellow testers? Is it time to get some work done or is it time to work on the system?
+
+As a tester, you need to find where the gaps are and decide which to fill. Or to push a metaphor to its limits: you need to be like water, flowing around the rocks, but also know when to become solid like ice.[^6]
+
+[^6]: And very rarely, you get to be the water that creeps into the cracks of a rock, turns to ice, and shatters it from within.
+
+And not just as a tester. All of the testing and testing-related roles I've had the past decade, were unstable to some degree. They required me to adapt, to keep re-inventing what my job was. I guess this partially explains why we keep coming up with new titles for what we do: quality assurance analyst, test engineer, software development engineer in test, quality engineer, etc. As an industry, we're just not sure what to do with testing.
 
 
+# Do we have to be, though?
+
+If no solution to "the testing role" is table, I want to start with a hat tip to everyone, testers and non-testers, who do their best to make it work regardless. Because at its core, I do believe it's an unsolved problem in our industry.
+
+While I don't have a clear answer on what the solution would look like, I do think the following three things should be part of it.
+
+
+## Activity mapping instead of roles
+
+Roles are for HR. While I can imagine different solutions to the problems that roles solve for HR, those are not going to be easy to implement.
+
+At a team-level, those same roles are incredibly limiting and thus damaging. People with all their richness of skills, knowledge, and experience, are reduced to "developer", "tester", "ux designer", etc. And we pretend that single label covers what they do: developing, testing, designing, etc.
+
+This [confusion](link://slug/tester-is-an-overloaded-variable) of people, roles, and process steps means we rarely talk about what we do in a smart way. What are the different activities that need doing? What perspectives are needed for those activities? Who on our team can contribute?
+
+```
+- problem of specialization
+- gap between devs and testers
+- why do we have different kinds of developers, each with their specialization, but tester isn't a developer (because they don't program and historical reasons and ...)
+
+## Smarter ways to talk about what needs doing
+- we need smarter ways to talk about what needs doing
+	- e.g. test automation in CI/CD context vs automate the manual stuff
+```
+
+
+## Building bridges between communities
+
+Testers are the most adjacent to programmers, without being programmers. And yet, there are very few bridges between the communities. A tester at a developer conference and a developer at a tester conference will seem the way: the odd one out.[^7] While both communities need spaces where they can have deep conversations about their specializations, we also need spaces where these communities come together. And more than just those two communities. Business analysts, scrum masters, product owners, SREs, engineering managers, etc. Where is the space where we all together can have a conversation about software development?
+
+[^7]: One of the goals of [FroGS conf](https://frogsconf.nl/), an open space conference I co-organize, is to be such a bridge. So far it has been challenging.
+
+
+## Knowing what can be dreamt of
+
+Some things you need to experience to know that they're possible. If that's not possible, a second-best option is to hear stories from those who have had that experience. Before you can dream, you need to know what you can dream of. How big it is possible to dream. So I encourage you: please keep sharing your stories.
+
+
+---
+
+---
+
+
+---
 
 # Working inside and outside existing structures
-So even though your official job description puts you clearly on one end of each axis - for example my quality engineering role was supporting testing by others, being embedded in a team, and doing my job -, you can only make that work by constantly observing and adjusting your actual position on these three axes. You need to work as much inside the existing structures, as around them. That makes these roles challenging and interesting, but often enough also frustrating. And yet, I wouldn’t want it any other way.
 
-discover gaps and decide which to fill, be like water and like ice
+The main thing these three axes share, is that each requires you to work both inside and outside the existing structures. Your job description, your place in the org chart, the existing processes, those will put you somewhere on each of the three axes. And you will have to do the work matching those positions, to be successful. But more likely than not, that won't be enough. You'll have to move to other positions on those axes, working outside the existing structures.
+
+-> a good tester is all over the place: whole SDLC and three axes
+
+
+
+
+
+So even though your official job description puts you clearly on one end of each axis - for example my quality engineering role was supporting testing by others, being embedded in a team, and doing my job -, you can only make that work by constantly observing and adjusting your actual position on these three axes. You need to work as much inside the existing structures, as around them. That makes these roles challenging and interesting, but often enough also frustrating. And yet, I wouldn’t want it any other way.
 
 whatever structure is in place, you have to work around it -> workflowy note
 	and thus you change it
@@ -188,12 +236,19 @@ Hence, fundamental problem, "just keep adapting" is not a solution.
 
 I don't have a solution. I have some more thoughts on related aspects.
 
-The too big solution: stop outsourcing a large chunk of quality to specific roles (inc Head of Quality). Or stop doing that, while separating people. Sports teams and infantry squads don't. Or sports teams have a goalie, team member yet different. Specialization is needed. We say we want to build quality in, but we keep separating out building from testing. Big gap in paradigms / communities / ... between devs and testers.
-Quality does not work that way (oursourcing). It's emergent. So it should be throughout your management chain.
-Since that won't happen anytime soon, I'll keep my job and the challenge.
+
+*--> This continuous movement and dialogue can get quite taxing for everyone involved.*
+
+---
 
 
+# questions for the reader
 
+How are you looking at your current role? Can you relate to the three axes?
+
+Can you relate to this balancing act? Do you move more across some dimensions than others? Do you move across different ones? Would making your balancing act(s) explicit improve your collaboration with others?
+
+---
 
 # So what to do?
 - ways to look at the three axes
@@ -213,6 +268,11 @@ Since that won't happen anytime soon, I'll keep my job and the challenge.
 	- testing: automated or manual/exploratory
 	- what about refinement? what about monitoring and analytics? stategy? deciding what's important? where to focus?
 
+The too big solution: stop outsourcing a large chunk of quality to specific roles (inc Head of Quality). Or stop doing that, while separating people. Sports teams and infantry squads don't. Or sports teams have a goalie, team member yet different. Specialization is needed. We say we want to build quality in, but we keep separating out building from testing. Big gap in paradigms / communities / ... between devs and testers.
+Quality does not work that way (oursourcing). It's emergent. So it should be throughout your management chain.
+Since that won't happen anytime soon, I'll keep my job and the challenge.
+
+
 # what does this mean for the role of tester?
 
 position of testers is an unsolved problem in the industry
@@ -229,12 +289,8 @@ I'm a developer who 'just' happens not to specialize in programming
 
 unsolved problem in software development
 
-programmer who 'just' happens not to specialize in testing.
+programmer who 'just' happens not to specialize in testing. BUT still also proud to call themselves tester
 
-
-# questions for the reader
-
-Can you relate to this balancing act? Do you move more across some dimensions than others? Do you move across different ones? Would making your balancing act(s) explicit improve your collaboration with others?
 
 
 ---
@@ -289,3 +345,40 @@ Maaret: be like water, but sometimes be ice
 
 What all of these have in common: working inside and outside of the existing structures
 
+---
+
+
+
+## Improving the system
+
+If things aren't ideal, you can try to change them.
+- enabling your job
+	- that's a manager's job! (every team member's job up to a point)
+	- only so much you can do from a tester's position
+
+### The balancing act
+
+- doing your job
+	- either you accept a very limited not-my-problem attitude or you burn out -> burn-out post
+- enabling your job
+	- influence, no authority
+	- not undermine others' authority
+	- too distant from other managers / upper management limits impact
+- the middle ground
+	- all the glue work
+	- all the admin work
+	- appreciated, but not really seen, not really rewarded, accepted as the default(?)
+	- ...
+- bonus value delivered by testers
+	- fixing the organization so they can do good testing
+
+diagram with Maaret: really good one!
+> From an observation of how much "manager" kind of work agile team's testers have been taking without the manager power
+https://www.linkedin.com/feed/update/urn:li:activity:7021181214204080128/
+
+Quoting Anna Baik: "As testers, we are often expected to not only do our work, but fix our organizations to be able to do so."  
+https://www.linkedin.com/posts/maaret_testers-activity-7033160980041719808-ZFAj
+
+
+Maaike's 4 levels: 1-3 team; 4 organisation
+https://twitter.com/Maaikees/status/1617816571786977280
