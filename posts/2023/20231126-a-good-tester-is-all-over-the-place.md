@@ -2,8 +2,8 @@
 .. title: A good tester is all over the place
 .. slug: a-good-tester-is-all-over-the-place
 .. date: 2023-11-26
-.. tags: quality engineering
-.. category: quality engineering, management, software development, software testing, test management
+.. tags: quality engineering, management, software development, software testing, test management
+.. category: quality engineering
 .. link: 
 .. description: 
 .. type: text
