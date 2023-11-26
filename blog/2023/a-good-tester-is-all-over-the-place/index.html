@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A good tester is all over the place | Joep Schuurkes</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../feed.atom">
+<link rel="canonical" href="https://smallsheds.garden/blog/2023/a-good-tester-is-all-over-the-place/">
+<link rel="icon" href="../../../assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="../../../assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../assets/favicons/favicon-96x96.png" sizes="96x96">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../agile-history-it-matters-right-at-frogs-conf/" title='"Agile history, it matters, right?" at FroGS conf' type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="A good tester is all over the place">
+<meta property="og:url" content="https://smallsheds.garden/blog/2023/a-good-tester-is-all-over-the-place/">
+<meta property="og:description" content="Over the past year, I've been thinking about how testing-related roles are still an unsolved problem in software development. We keep trying different permutations: shifting left and shifting right, b">
+<meta property="og:image" content="https://smallsheds.garden/images/default-preview.jpeg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2023-11-26T00:00:00+01:00">
+<meta property="article:tag" content="management">
+<meta property="article:tag" content="quality engineering">
+<meta property="article:tag" content="software development">
+<meta property="article:tag" content="software testing">
+<meta property="article:tag" content="test management">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-projects/" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-talks/" class="nav-link">Talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../../my-lists/reading-list/" class="dropdown-item">Reading list</a>
+                    <a href="../../../my-lists/recommended-reading/" class="dropdown-item">Recommended reading</a>
+                    <a href="../../../my-lists/favorite-podcasts/" class="dropdown-item">Favorite podcasts</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../" class="dropdown-item">My blog</a>
+                    <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
+                    <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">A good tester is all over the&nbsp;place</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep&nbsp;Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2023-11-26T00:00:00+01:00" itemprop="datePublished" title="26 November 2023">26 November 2023</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p>Over the past year, I&#8217;ve been thinking about how testing-related roles are still an unsolved problem in software development. We keep trying different permutations: shifting left and shifting right, being closer to the programmers while not too far from other testers, doing less testing ourselves so we can support others more,&nbsp;etc.</p>
+<p>And still, to be effective in any of these permutations, you can&#8217;t let yourself be limited by them. You need to work both inside and outside the existing structures. You have to &#8220;be all over the place&#8221;, in a good&nbsp;way.</p>
+<h2>Testers do&nbsp;testing</h2>
+<p>Let&#8217;s start with a straightforward statement: a tester tests. Then what is testing? I <a href="../../2018/reflections-on-my-testing-manifesto/">still like</a> the definition <em>&#8220;Testing is investigating in order to evaluate a product.&#8221;</em> The most obvious thing to investigate, to test, is the code that is being written. The best way to do this, in my opinion, is through the combination of exploratory testing and test automation, i.e. what <a href="https://maaretp.com/">Maaret Pyhäjärvi</a> has named &#8220;<a href="https://www.youtube.com/watch?v=T_67oQrPZhQ">contemporary exploratory testing</a>&#8220;. And to be clear, while the execution part tends to be the most visible, effective testing also needs good test strategy, design, and&nbsp;reporting.</p>
+<!-- TEASER_END -->
+
+<p>There&#8217;s more to do as a tester, though, than testing the code that is being written. Testers should also be involved in monitoring production, in attending to <span class="caps">CI</span>/<span class="caps">CD</span> pipelines, in maintaining test data and test environments. And they should participate in refinement, design, and&nbsp;architecture.</p>
+<p>So that&#8217;s quite a wide range of activities, even when I leave out activities related to being a member of the development team (e.g. retrospectives) and to being an employee (e.g. all-hands meetings). Luckily, testers are not the only ones doing testing. Unluckily, this creates some&nbsp;challenges.</p>
+<h3>But they&#8217;re not the only ones&nbsp;testing</h3>
+<p>Other roles - programmers are the clearest example - seem to have a good overlap of what their focus is (programming) and what their domain is (only we do the programming). A curious thing about testing is that this is very much not the case. Testers are not the only ones doing&nbsp;testing.</p>
+<p>Developers should test their own work. It cannot be that when you ask a developer <em>&#8220;Is the code you wrote good enough?&#8221;</em>, the reply is <em>&#8220;I have no clue, that&#8217;s not my job. Ask a tester.&#8221;</em> And the same applies to the other testing-related activities I mentioned - monitoring, pipelines, design - it&#8217;s hard to imagine developers not being involved in&nbsp;those.</p>
+<p>So based on a high-level list of activities, there doesn&#8217;t seem to be anything that distinguishes a tester from a programmer. This raises an important question for any tester: if you do everything a programmers does, except for programming, what value do you add over a&nbsp;developer?</p>
+<p>A cynical conclusion from this could be that testers are some kind of second-tier developers, focusing on the stuff that needs to happen, but that is not programming and that programmers shouldn&#8217;t invest their time&nbsp;in.</p>
+<p>I don&#8217;t accept that conclusion. Testers can bring great value to their teams, because they don&#8217;t have to focus on the programming. It allows them to bring something&nbsp;different.</p>
+<h3>Yet they bring something&nbsp;different</h3>
+<p>The unique thing a tester brings, is not in the fact that they do testing. It&#8217;s that they bring something different to that&nbsp;testing.</p>
+<p>By being &#8220;a tester&#8221;, they have the space to focus on testing. First of all, they can focus their professional development on this area. They can build and deepen their testing skills beyond a level that would make sense for non-testers. Secondly, throughout the development process, testers can take a testing perspective. They can keep the question <em>&#8220;How might this work? And how might it not?&#8221;</em> front of mind, leaving the question <em>&#8220;How can I build this?&#8221;</em> more in the background and to the other team&nbsp;members.</p>
+<p>To be very clear, &#8220;being a tester&#8221; doesn&#8217;t have to be a long-term role. You can have a team of programmers, where each sprint one team member takes the tester-role for that sprint. What you lose in having a dedicated specialist, you gain in raising the skill level of all team&nbsp;members.</p>
+<h3>Please point at where the testing&nbsp;happens</h3>
+<p>All of this means, that it&#8217;s hard to point in a meaningful way to where testing happens. There&#8217;s no single activity in which all the testing is concentrated. There isn&#8217;t a single role either. Testing - investigating in order to evaluate a product - happens everywhere, all the time, by&nbsp;everyone.</p>
+<p>As such, testers need to be all over the place, all over software development, because that&#8217;s where testing happens. There&#8217;s more to it than that,&nbsp;though.</p>
+<h2>Three axes to move around&nbsp;on</h2>
+<p>Next to being active all across the software development process, testers also need to decide, situation-by-situation, where they want to position themselves on three&nbsp;axes:</p>
+<ul>
+<li>do testing yourself or support testing by&nbsp;others,</li>
+<li>be embedded in a team or be part of a separate&nbsp;team,</li>
+<li>do your job or improve the&nbsp;system.</li>
+</ul>
+<p>While I&#8217;ll be focusing in this post on the dynamic aspect of these axes, there is a static aspect to them. The job you got hired to do, gives you a kind of &#8216;neutral&#8217; position on these axes. For example, when I was a <a href="../im-a-quality-engineer-and-im-not-sure-how-i-feel-about-that/">quality engineer</a>, I was expected to support testing by others, while embedded in two teams, and to do my job. To be effective though, I did have to do testing myself, team up with the other quality engineers, and improve the system. That dynamic, this continuous movement along these three axes, is in my experience essential to be effective as a&nbsp;tester.</p>
+<h3>Doing testing yourself versus supporting testing by&nbsp;others</h3>
+<p>Doing testing yourself means that you do testing and share the results of your testing. A big risk here is that you become the sole owner of the kind of testing you do. It&#8217;s your domain and others leave it for you to do. Having a dedicated &#8220;testing&#8221; column on your board is one sign that this might be&nbsp;happening.</p>
+<p>Supporting testing by others means that you enable others to do testing. You talk with developers before they test, debrief with them after, and you test in a pair and/or ensemble. The big challenge here is that by not doing any testing yourself, but only supporting others, it becomes very hard to build a deep understanding of the product and technology. And that limits how well you can support the testing. You want to be specific and concrete in your support, not be limited to only handing out generic testing&nbsp;wisdom.</p>
+<p>The middle ground between doing and supporting is often called whole-team testing. However, it&#8217;s not really a middle ground, a balancing act between two extremes. Rather, you need to continuously decide how much doing and how much supporting makes sense in that particular moment, for that particular activity, with those particular team members. And you can&#8217;t leave your team members guessing about those decisions. It requires an ongoing dialogue with them about what you do versus what you&nbsp;support.</p>
+<h3>Being embedded in a team versus being in a separate&nbsp;team</h3>
+<p>One of the many good things Agile has done, is pull testers into the development team. Instead of having the testers do their work only after the programmers are done writing their code, they get to&nbsp;collaborate.</p>
+<p>Unfortunately, with agile teams being relatively small (as they should), this leaves the tester in a lonely spot. There&#8217;s probably only one tester on the team. So you don&#8217;t have peers inside your team to run ideas by. As a junior tester, you don&#8217;t have a more experienced tester to learn from. And your manager more likely than not has a programming background, so there&#8217;s a limit to the support and mentoring you can get from&nbsp;them.</p>
+<p>Those disadvantages do not mean that we should return to org structures that separate programming from testing. We should keep our cross-functional teams, with each team reporting to the same manager, responsible for the team&#8217;s results. And we should create incentives and structures for the testers to connect with one another. That structure can be a test guild, a community of practice, a <a href="https://ezagroba.github.io/mob-testing/#/">regular ensembling session</a>, or just an informal catch-up meeting every&nbsp;week.</p>
+<p>So it&#8217;s not an either/or. Testers need to be both a member of their cross-functional team, and of the testing team. Where hopefully &#8220;the testing team&#8221; includes everyone with an interest in testing and not just the people with &#8220;tester&#8221; as their job&nbsp;title.</p>
+<h3>Doing your job versus improving the&nbsp;system</h3>
+<p>As a tester your job is to test things. To uncover interesting information about the product.  Ideally you do this throughout the software development life cycle: from ideation to production. Ideally you have access to the code and to the necessary tools. Ideally your other team members are involved in testing and ideally they involve you in what they are&nbsp;doing.</p>
+<p>Unfortunately, things often aren&#8217;t ideal. And sometimes they are very far from it. Doing your job then means doing your best with whatever is available to you. Even if that means your testing is a lot less effective than it could&nbsp;be.</p>
+<p>Things not being ideal is also an opportunity for change. You can try to improve the system. On some level that&#8217;s expected of any team member. Testers, however, often seem to need to do more than that. Few organizations are set up in a way that enables good testing. Changing that is more of a manager&#8217;s job, though.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> As a tester, without a manager&#8217;s authority and without a manager&#8217;s access to higher management, getting things to change will be a challenge at best and an impossible task at&nbsp;worst.</p>
+<p>This makes this axis the hardest of the three. If you try to change the system too little, you&#8217;ll struggle to do a good job testing. Try to change the system too much, you get hit by blowback and resistance. Both are demotivating and can have you heading towards a&nbsp;burn-out.</p>
+<p>It&#8217;s better to work in more subtle ways, picking the right opportunities to improve the system. That work, however, the work you do, just so you can do good testing, often remains invisible. Most people don&#8217;t have an eye for it. And even if someone does, the testing work you do, will still be a more visible than your testing-enabling&nbsp;work.</p>
+<h2>A good tester is all over the&nbsp;place</h2>
+<p>A good tester is all over the place. Roles and processes provide structure, a starting point. You can&#8217;t limit yourself to only working inside those structures, though. You also need to be comfortable working outside (and around) them. Testing happens across roles, throughout the software development process. It happens everywhere all the time, so that&#8217;s where a tester needs to&nbsp;be. </p>
+<p>That brings us to the three axes. You can&#8217;t be everywhere at once. You need to make choices. Is this testing something you need to do or something you only need to support? Are you sufficiently connected to your team and to your fellow testers? Is it time to get some work done or is it time to work on the&nbsp;system?</p>
+<p>As a tester, you need to find where the gaps are and decide which ones to fill. You need to be like water, flowing around the rocks, but also know when to become solid like ice. (And very rarely, you get to be the water that creeps into the cracks of a rock, freezes, and shatters it from&nbsp;within.)</p>
+<p>And this is not just true for testers. All of the testing and testing-related roles I&#8217;ve had the past decade, were unstable to some degree. They required me to adapt, to keep re-inventing what my job was. I guess this partially explains why we keep coming up with new titles for what we do: quality assurance analyst, test engineer, software development engineer in test, quality engineer, etc. As an industry, we&#8217;re just not sure what exactly to do with&nbsp;testing.</p>
+<h2>Do we have to be,&nbsp;though?</h2>
+<p>If no solution to &#8220;the testing role&#8221; is stable, I want to start with a hat tip to everyone, testers and non-testers, who do their best to make it work regardless. It&#8217;s a good fight, but not an easy one. So I wish I had a clear direction for a solution. I&#8217;m afraid I don&#8217;t. The best I can do is share three elements that I think are part of the&nbsp;solution.</p>
+<h3>Activities instead of&nbsp;roles</h3>
+<p>Roles, like &#8220;developer&#8221; and &#8220;tester&#8221;, have value to <span class="caps">HR</span>. While I can imagine different solutions to the problems that roles solve for <span class="caps">HR</span>, those are not going to be easy to implement. So let&#8217;s keep roles, but leave them to&nbsp;<span class="caps">HR</span>.</p>
+<p>At a team-level, those same roles are incredibly limiting and thus damaging. People with all their richness of skills, knowledge, and experience, are reduced to &#8220;developer&#8221;, &#8220;tester&#8221;, &#8220;ux designer&#8221;, etc. And we pretend that single label covers what they do: developing, testing, designing,&nbsp;etc.</p>
+<p>This <a href="../../2022/tester-is-an-overloaded-variable/">confusion</a> of people, roles, and process steps means we rarely talk about what we do in a smart way. In a more specific, more granular way. What are the different activities that need doing? What skills and perspectives are needed for those activities? Who on our team can contribute?<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
+<h3>Building bridges between&nbsp;communities</h3>
+<p>Testers are the most adjacent to programmers, without being programmers. And yet, there are very few bridges between the communities. A tester at a developer conference and a developer at a tester conference will feel the same way: as the odd one out. While both communities need spaces where they can have deep conversations about their specializations, we also need spaces where these communities come together. And more than just those two communities. Business analysts, scrum masters, product owners, SREs, engineering managers, etc. Where is the space where we all together can have a conversation about software development?<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
+<h3>Knowing what can be dreamt&nbsp;of</h3>
+<p>Some things you need to experience to know that they are possible. Or at least, you need to hear the stories of those that have had that experience. Before you can dream, you need to know what you can dream of. You need to know how big your dreams can be - and how&nbsp;wild.</p>
+<hr>
+<h3>Questions for&nbsp;reflection</h3>
+<p>Does any of this make sense? How dynamic is your role, both across software development and the three axes? How often do you talk about that with your team members or your manager? What is it that you dream&nbsp;of?</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://maaretp.com/">Maaret Pyhäjärvi</a> and I made an <a href="https://www.linkedin.com/feed/update/urn:li:activity:7021181214204080128/">incomplete model</a> about this a year ago. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://maaretp.com/">Maaret Pyhäjärvi</a> has been doing great work mapping that our for her team(s). See for example <a href="https://visible-quality.blogspot.com/2021/07/tester-roles-and-services.html">&#8220;Testers roles and services&#8221;</a> and <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhvut-TK-LDv4g4x6h-I40bkbuwQGf5vwMHezCj5UmCormNxbkGDCmpCCgPFhKzeTPQfit2-Hnb1sasiruYcPG5xpeT7vvBEzDijgBvFHQYEQkV7WPwXbtbFm9292LgooYdvy9w6zvV2UXY9YXiHfmMCLV52MIQOCp39Dg_9dKPWsCuHr3ymudFmhRWw/s2104/Screenshot%202023-11-16%20at%2021.13.59.png">this diagram</a> from a <a href="https://visible-quality.blogspot.com/2023/11/secret-sauce-to-great-testing-is-to.html">more recent post</a>. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+<li id="fn:3">
+<p>One of the goals of <a href="https://frogsconf.nl/">FroGS conf</a>, an open space conference I co-organize, is to be such a bridge. <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/management/" rel="tag">management</a></li>
+            <li><a class="tag p-category" href="../../../categories/quality-engineering/" rel="tag">quality&nbsp;engineering</a></li>
+            <li><a class="tag p-category" href="../../../categories/software-development/" rel="tag">software&nbsp;development</a></li>
+            <li><a class="tag p-category" href="../../../categories/software-testing/" rel="tag">software&nbsp;testing</a></li>
+            <li><a class="tag p-category" href="../../../categories/test-management/" rel="tag">test&nbsp;management</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../agile-history-it-matters-right-at-frogs-conf/" rel="prev" title='"Agile history, it matters, right?" at FroGS conf'>Previous&nbsp;post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2023 
+<a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by/4.0/80x15.png"></a>
+<a href="mailto:site@joep.slmail.me">Joep Schuurkes</a> - Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a> - Analytics by <a href="https://plausible.io/" rel="nofollow" target="_blank">Plausible</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

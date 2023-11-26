@@ -3,13 +3,29 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes</title>
   <id>https://smallsheds.garden/blog/feed.atom</id>
-  <updated>2023-09-11T10:40:56Z</updated>
+  <updated>2023-11-26T13:24:19Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/blog/feed.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>A good tester is all over the place</title>
+    <id>https://smallsheds.garden/blog/2023/a-good-tester-is-all-over-the-place/</id>
+    <updated>2023-11-26T00:00:00+01:00</updated>
+    <published>2023-11-26T00:00:00+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2023/a-good-tester-is-all-over-the-place/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Over the past year, I've been thinking about how testing-related roles are still an unsolved problem in software development. We keep trying different permutations: shifting left and shifting right, being closer to the programmers while not too far from other testers, doing less testing ourselves so we can support others more, etc.&lt;/p&gt;
+&lt;p&gt;And still, to be effective in any of these permutations, you can't let yourself be limited by them. You need to work both inside and outside the existing structures. You have to "be all over the place", in a good way.&lt;/p&gt;
+&lt;h2&gt;Testers do testing&lt;/h2&gt;
+&lt;p&gt;Let's start with a straightforward statement: a tester tests. Then what is testing? I &lt;a href="https://smallsheds.garden/blog/2018/reflections-on-my-testing-manifesto/"&gt;still like&lt;/a&gt; the definition &lt;em&gt;"Testing is investigating in order to evaluate a product."&lt;/em&gt; The most obvious thing to investigate, to test, is the code that is being written. The best way to do this, in my opinion, is through the combination of exploratory testing and test automation, i.e. what &lt;a href="https://maaretp.com/"&gt;Maaret Pyhäjärvi&lt;/a&gt; has named "&lt;a href="https://www.youtube.com/watch?v=T_67oQrPZhQ"&gt;contemporary exploratory testing&lt;/a&gt;". And to be clear, while the execution part tends to be the most visible, effective testing also needs good test strategy, design, and reporting.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2023/a-good-tester-is-all-over-the-place/"&gt;Read more…&lt;/a&gt; (11 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="quality-engineering" label="quality engineering"/>
+  </entry>
   <entry>
     <title>"Agile history, it matters, right?" at FroGS conf</title>
     <id>https://smallsheds.garden/blog/2023/agile-history-it-matters-right-at-frogs-conf/</id>
@@ -19,7 +35,7 @@
       <name>Joep Schuurkes</name>
     </author>
     <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2023/agile-history-it-matters-right-at-frogs-conf/"/>
-    <summary type="html">&lt;figure&gt;&lt;img src="https://smallsheds.garden/images/2023/agile-history/frogsconf.nl"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;On September 9th I facilitated a session at the &lt;a href="https://frogsconf.nl/"&gt;FroGS conf&lt;/a&gt; open space titled "&lt;em&gt;Agile history, it matters, right?&lt;/em&gt;" My main goal was to get input on where to take my &lt;a href="https://context-of-agile.org/"&gt;Context of Agile&lt;/a&gt; site. Before asking for that input, however, I asked the participants three questions about the history of Agile. I figured it would provide a good introduction to the topic. And I was curious how much the kind of person that joins a session like this, knows about the history of Agile. So a big thank you to all the participants!&lt;/p&gt;
+    <summary type="html">&lt;figure&gt;&lt;img src="https://smallsheds.garden/images/2023/agile-history/frogsconf.png"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;On September 9th I facilitated a session at the &lt;a href="https://frogsconf.nl/"&gt;FroGS conf&lt;/a&gt; open space titled "&lt;em&gt;Agile history, it matters, right?&lt;/em&gt;" My main goal was to get input on where to take my &lt;a href="https://context-of-agile.org/"&gt;Context of Agile&lt;/a&gt; site. Before asking for that input, however, I asked the participants three questions about the history of Agile. I figured it would provide a good introduction to the topic. And I was curious how much the kind of person that joins a session like this, knows about the history of Agile. So a big thank you to all the participants!&lt;/p&gt;
 &lt;h2&gt;The three questions about the history of Agile&lt;/h2&gt;
 &lt;p&gt;The three questions about the history of Agile were:&lt;/p&gt;
 &lt;ul&gt;
@@ -202,22 +218,5 @@
     <category term="bugs" label="bugs"/>
     <category term="tech-debt" label="tech debt"/>
     <category term="work-management" label="work management"/>
-  </entry>
-  <entry>
-    <title>Metrics, models and conversations</title>
-    <id>https://smallsheds.garden/blog/2023/metrics-models-and-conversations/</id>
-    <updated>2023-03-12T10:11:25+01:00</updated>
-    <published>2023-03-12T10:11:25+01:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2023/metrics-models-and-conversations/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;A few weeks ago someone suggested we should start measuring how many automated test cases versus how many manual test cases we have. Luckily it was part of a longer list of suggested metrics and it was also presented in that way: a list of options, to be discussed later. And the reason I say "luckily" is because I knew I disagreed with using that metric, but didn't have a good explanation as to why. At that moment I could have given a minutes-long monologue about how that metric doesn't fit how I think we should be thinking about testing. However, I have zero expectations that such a monologue could have worked in that situation. It would be all over the place as I philosophize about testing and make all kinds of connections and analogies. A convincing argument that does not make.&lt;/p&gt;
-&lt;p&gt;So since then, I've been thinking: how would I explain my position on measuring manual versus automated test cases? Something to the point, something relatable, something that acknowledges the need behind asking for this metric. And then it hit me: use cooking as an analogy. Now I know plenty of people have made this analogy before. However, I don't remember reading everything I will cover in this post somewhere else. Also, there's value in different people saying similar things, but each in their own voice.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2023/metrics-models-and-conversations/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="measurements" label="measurements"/>
-    <category term="metrics" label="metrics"/>
-    <category term="test-automation" label="test automation"/>
-    <category term="tools" label="tools"/>
   </entry>
 </feed>

@@ -22,7 +22,13 @@ hidetitle: false
 - When the Tempest Gathers: From Mogadishu to the Fight Against ISIS, a Marine Special Operations Commander at War - Andrew Milburn
 - How to Destroy Surveillance Capitalism - Cory Doctorow
 - The Squiggly Career: Ditch the Ladder, Embrace Opportunity and Carve Your Own Path Through the Squiggly World of Work - Sarah Ellis, Helen Tupper
-
+- Agile Software Development with Scrum - Mike Beedle, Ken Schwaber
+- Clarity in Crisis: Leadership Lessons from the CIA - Marc E. Polymeropoulos
+- Islands of Abandonment - Cal Flyn
+- Beyond Objectivism and Relativism: Science, Hermeneutics, and Praxis - Richard J. Bernstein
+- Modern Software Engineering: Doing What Works to Build Better Software Faster - David Farley
+- Sidewinder: Creative Missile Development At China Lake - Ron Westrum
+- What to Say When You Talk to Your Self - Shad Helmstetter 
 
 ### 2022
 - Sooner Safer Happier: Antipatterns and Patterns for Business Agility - Jonathan Smart with Zsolt Berend, Myles Ogilvie and Simon Rohre
