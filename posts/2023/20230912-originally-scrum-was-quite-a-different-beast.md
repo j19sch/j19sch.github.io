@@ -21,9 +21,7 @@ Not saying we need to start doing this kind of Scrum, but these are striking dif
 
 <!-- TEASER_END -->
 
-```
-continue with page 57
-```
+
 
 # three main differences
 
@@ -104,6 +102,12 @@ relates to Maaret's: your job is to get better at software development, software
 
 > Usually, the first question that is asked when a Sprint is terminated is: "Who is responsible for this meeting [Sprint Planning] occurring early?" Because people don't want to be named as the answer to this question, very few Sprints end up being terminated. (p 54)
 
+> They [Daily Scrum meetings] don't only make everyone say what the issues are, but it makes everyone say it face to face to their management. This forces everyone to have courage and to be honest, and gives everyone a tool to put pressure on management about resolving issues. (p105-106)
+
+privilege!
+
+> __Risk of not resolving issues promptly.__ Scrum puts the burden of proof on management by requiring daily active management. In Scrum, the role of management is bi-directional, in that management also reports to the staff how it is resolving issues throughout the Daily Scrums. (p 109)
+
 
 # 30-day sprint with sprint goal and tasks
 
@@ -141,3 +145,5 @@ reply about Honeycomb: 8ths as smallest planning
 > The team modifies Sprint Backlog throughout the Sprint. As it gets into individual tasks, it may find out that more or fewer tasks are needed, or that a given task will take more or less time than had been expected. As new work is required, the team adds it to the Sprint Backlog. [...] When tasks are deemed unncessary, they are removed. (p 49)
 
 > Sprints last for thirty calendar days. A team takes this long to get its arms around a problem and to produce a product increment. (p 52)
+
+> However, one of the key differences of Scrum was that it allowed Backlog items other than functional requirements. This made tremendous difference because we could see for once the "hidden tasks" that we had left out by blindly making our plans "use case driven". (p138)
