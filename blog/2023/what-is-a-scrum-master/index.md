@@ -136,7 +136,7 @@ Jeff Sutherland describes something similar in *"Scrum: The Art of Doing Twice t
 
 # A scrum master is a manager
 
-In *"Agile Software Development with Scrum"* (2002) Ken Schwaber and Mike Beedle explicitly call the Scrum Master a management role:
+In *"Agile Software Development with Scrum"* (2001) Ken Schwaber and Mike Beedle explicitly call the Scrum Master a management role:
 
 > The Scrum Master is a new management role introduced by Scrum. The Scrum Master is responsible for ensuring that Scrum values, practices, and rules are enacted and enforced. *(p 31)*
 

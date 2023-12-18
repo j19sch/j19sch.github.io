@@ -59,7 +59,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/archive.html</loc>
-  <lastmod>2023-11-26T13:13:00Z</lastmod>
+  <lastmod>2023-12-18T17:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/</loc>
@@ -298,16 +298,8 @@
   <lastmod>2023-11-04T16:06:00Z</lastmod>
  </url>
  <url>
-  <loc>https://smallsheds.garden/blog/2023/a-testers-job-is-never-the-same/</loc>
-  <lastmod>2023-10-14T14:38:00Z</lastmod>
- </url>
- <url>
   <loc>https://smallsheds.garden/blog/2023/agile-history-it-matters-right-at-frogs-conf/</loc>
   <lastmod>2023-09-10T08:08:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/blog/2023/balancing-across-three-dimensions/</loc>
-  <lastmod>2023-09-30T13:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/2023/im-a-quality-engineer-and-im-not-sure-how-i-feel-about-that/</loc>
@@ -334,8 +326,12 @@
   <lastmod>2023-09-03T18:28:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/blog/2023/old-school-scrum-was-rad/</loc>
+  <lastmod>2023-12-16T14:27:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/blog/2023/originally-scrum-was-quite-a-different-beast/</loc>
-  <lastmod>2023-09-12T13:25:00Z</lastmod>
+  <lastmod>2023-12-02T15:51:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/2023/our-work-management-tools-are-limiting-our-imagination/</loc>
@@ -344,10 +340,6 @@
  <url>
   <loc>https://smallsheds.garden/blog/2023/scrum-master-or-scrum-mascot/</loc>
   <lastmod>2023-09-03T18:28:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/blog/2023/the-three-axes-of-trouble-in-tesing-roles/</loc>
-  <lastmod>2023-09-30T13:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/2023/what-is-a-scrum-master/</loc>
@@ -415,19 +407,19 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-2.html</loc>
-  <lastmod>2023-11-26T10:50:00Z</lastmod>
+  <lastmod>2023-12-02T15:51:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-3.html</loc>
-  <lastmod>2023-11-26T10:50:00Z</lastmod>
+  <lastmod>2023-12-02T15:51:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-4.html</loc>
-  <lastmod>2023-11-26T10:50:00Z</lastmod>
+  <lastmod>2023-12-02T15:51:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-5.html</loc>
-  <lastmod>2023-11-26T10:50:00Z</lastmod>
+  <lastmod>2023-12-02T15:51:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-6.html</loc>
@@ -435,15 +427,15 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-7.html</loc>
-  <lastmod>2023-11-26T10:50:00Z</lastmod>
+  <lastmod>2023-12-02T15:51:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-8.html</loc>
-  <lastmod>2023-11-26T13:13:00Z</lastmod>
+  <lastmod>2023-12-18T17:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/</loc>
-  <lastmod>2023-09-30T13:58:00Z</lastmod>
+  <lastmod>2023-12-02T15:51:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/agile-comms/</loc>
@@ -463,7 +455,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/books/</loc>
-  <lastmod>2023-09-12T15:13:00Z</lastmod>
+  <lastmod>2023-12-02T15:51:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/brave-clojure/</loc>
@@ -511,15 +503,11 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/cat_programming-test-automation/</loc>
-  <lastmod>2023-09-12T18:23:00Z</lastmod>
+  <lastmod>2023-12-02T15:51:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/cat_programming/</loc>
   <lastmod>2023-09-03T18:28:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/categories/cat_quality-engineering-management-software-development-software-testing-test-management/</loc>
-  <lastmod>2023-09-30T13:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/cat_quality-engineering/</loc>

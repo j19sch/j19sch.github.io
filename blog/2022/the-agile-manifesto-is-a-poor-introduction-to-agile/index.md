@@ -2,7 +2,7 @@
 .. title: The Agile Manifesto is a poor introduction to Agile
 .. slug: the-agile-manifesto-is-a-poor-introduction-to-agile
 .. date: 2022-08-12 09:37:25 UTC+02:00
-.. tags: agile, agile manifesto, mētis, teaching
+.. tags: agile, agile manifesto, mētis, teaching, books
 .. category: agile
 .. link: 
 .. description: 
