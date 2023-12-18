@@ -2,7 +2,7 @@
 .. title: My seven-month experiment of sharing weekly notes at work
 .. slug: my-seven-month-experiment-of-sharing-weekly-notes-at-work
 .. date: 2023-09-03 12:35:40 UTC+02:00
-.. tags: agile comms, note-taking
+.. tags: agile comms, note-taking, books
 .. category: misc
 .. link: 
 .. description: 

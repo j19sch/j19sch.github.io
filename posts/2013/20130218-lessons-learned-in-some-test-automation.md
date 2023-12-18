@@ -3,7 +3,7 @@
 .. slug: lessons-learned-in-some-test-automation
 .. date: 2013-02-18 21:46:02 UTC+01:00
 .. tags: test automation, VBA, programming
-.. category: test automation
+.. category: programming & test automation
 .. link: 
 .. description:
 .. type: text

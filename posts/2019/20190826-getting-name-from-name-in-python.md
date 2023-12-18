@@ -3,7 +3,7 @@
 .. slug: getting-name-from-name-name-in-python-an-engineering-problem
 .. date: 2019-08-26 21:27:38 UTC+02:00
 .. tags: python, programming, semantics
-.. category: programming
+.. category: programming & test automation
 .. link: 
 .. description:
 .. type: text

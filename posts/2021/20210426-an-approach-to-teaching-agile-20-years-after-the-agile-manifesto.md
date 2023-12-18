@@ -2,7 +2,7 @@
 .. title: An approach to teaching Agile 20 years after the Agile Manifesto
 .. slug: an-approach-to-teaching-agile-20-years-after-the-agile-manifesto
 .. date: 2021-04-26 16:54:34 UTC+02:00
-.. tags: agile, ci/cd, devops, lean, teaching
+.. tags: agile, ci/cd, devops, lean, teaching, books
 .. category: agile
 .. link: 
 .. description: 
