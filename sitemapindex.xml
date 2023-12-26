@@ -150,14 +150,6 @@
   <lastmod>2023-12-02T15:51:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://smallsheds.garden/categories/cat_programming.atom</loc>
-  <lastmod>2023-11-26T10:50:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://smallsheds.garden/categories/cat_programming.xml</loc>
-  <lastmod>2023-11-26T10:50:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>https://smallsheds.garden/categories/cat_quality-engineering.atom</loc>
   <lastmod>2023-12-18T17:58:00Z</lastmod>
  </sitemap>
@@ -187,14 +179,6 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_software-testing.xml</loc>
-  <lastmod>2023-11-26T10:50:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://smallsheds.garden/categories/cat_test-automation.atom</loc>
-  <lastmod>2023-11-26T10:50:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://smallsheds.garden/categories/cat_test-automation.xml</loc>
   <lastmod>2023-11-26T10:50:00Z</lastmod>
  </sitemap>
  <sitemap>
@@ -711,6 +695,6 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/sitemap.xml</loc>
-  <lastmod>2023-12-18T17:58:00Z</lastmod>
+  <lastmod>2023-12-26T14:29:00Z</lastmod>
  </sitemap>
 </sitemapindex>
