@@ -145,3 +145,7 @@ Some things you need to experience to know that they are possible. Or at least, 
 ## Questions for reflection
 
 Does any of this make sense? How dynamic is your role, both across software development and the three axes? How often do you talk about that with your team members or your manager? What is it that you dream of?
+
+---
+
+*(edit 26 December 2023)* Today James Thomas published an excellent post titled ["Make, Fix, and Test"](https://qahiccupps.blogspot.com/2023/12/make-fix-and-test.html). In it he reflects on some of his recent work and identifies three additional dimensions to the three axes I identified in this post. I can fully relate to his three dimensions and am positively intrigued by the ways our posts and models relate to each other. Great food for thought!
