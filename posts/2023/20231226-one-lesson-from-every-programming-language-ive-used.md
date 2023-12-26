@@ -9,10 +9,9 @@
 .. type: text
 -->
 
-one lesson from every program language I've ever used
+Throughout the years I've used quite a few different programming languages. Twelve to be exact. To be honest though, I am being generous with the meaning of "use". Some of these I've only done coding exercises in. One of them (PHP) I've used for a total of 10 minutes, but that did save the day for a whole team.
 
-- generous with the meaning of "used", see story about php
-- ideally generic lessons, so not about the specific language
+The list also made me wonder what I learned from using these programming languages - besides being able to write some code in them. Turns out I did learn some more general lessons.
 
 <!-- TEASER_END -->
 
@@ -20,6 +19,14 @@ one lesson from every program language I've ever used
 # perl
   - there's more than one way to do it
   - languages have a personality
+  - first principle: "There's more than one way to do it."
+  - 2nd principle: "Easy things should be easy and hard things should be possible".
+  - Perl's function documentation remarks on the variant behavior of built-in functions in list and scalar contexts by saying, "In general, they do what you want, unless you want consistency."https://perldoc.perl.org/perlfunc
+  - https://peps.python.org/pep-0020/
+  	- PEP 20 – The Zen of Python
+  		- Special cases aren't special enough to break the rules.
+		- Although practicality beats purity
+		- There should be one-- and preferably only one --obvious way to do it.
 
 # php
   - sometimes you don't need to know the language
@@ -50,6 +57,7 @@ one lesson from every program language I've ever used
 # Bash
   - sometimes there isn't a big lesson
   - readability of the language itself matters
+  - most useful hobby project
   - I wrote it but don't ask me what it does
     - local hor_scale=`bc -l <<< "scale=2 ; $INTERNAL_XRES / $hor"`
     - I know it calculates the horizontal scaling factor?
