@@ -1,6 +1,6 @@
 <!--
 .. title: A lesson from every language I've used
-.. slug: a-lesson-from-every-programming-language-ive-used
+.. slug: a-lesson-from-every-language-ive-used
 .. date: 2023-12-29
 .. tags: programming, python, clojure
 .. category: programming & test automation
