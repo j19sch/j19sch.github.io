@@ -28,7 +28,10 @@ hidetitle: false
 - Beyond Objectivism and Relativism: Science, Hermeneutics, and Praxis - Richard J. Bernstein
 - Modern Software Engineering: Doing What Works to Build Better Software Faster - David Farley
 - Sidewinder: Creative Missile Development At China Lake - Ron Westrum
-- What to Say When You Talk to Your Self - Shad Helmstetter 
+- What to Say When You Talk to Your Self - Shad Helmstetter
+- Exploring Requirements 1: Quality Before Design - Gerald M. Weinberg, Donald C. Gause
+- How to Break Software: A Practical Guide to Testing - James Whittaker
+- Writing Effective Use Cases - Alistair Cockburn
 
 
 ### 2022
