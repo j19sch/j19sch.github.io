@@ -8,6 +8,11 @@ hidetitle: false
 
 # Reading list
 
+### 2024
+- Blood in the Machine: The Origins of the Rebellion Against Big Tech - Brian Merchant
+- Revolusi: Indonesië en het ontstaan van de moderne wereld - David Van Reybrouck 
+
+
 ### 2023
 - Emergent Strategy: Shaping Change, Changing Worlds - adrienne maree brown (did not finish, book club)
 - Two Cheers for Anarchism: Six Easy Pieces on Autonomy, Dignity and Meaningful Work and Play - James C. Scott
