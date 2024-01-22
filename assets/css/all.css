@@ -1336,6 +1336,10 @@ p:empty {
   margin-bottom: 0rem;
 }
 
+p:last-child {
+  margin-bottom: 1rem;
+}
+
 blockquote {
   border-left: 5px solid blueviolet;
   padding-left: 1rem;
@@ -1365,13 +1369,15 @@ hr {
   border-top: 1px solid rgba(0,0,0,.2);
 }
 
-/*.body-content h1 {
-  font-size: 2.5rem;
-}*/
-
 .body-content h2 {
   font-size: 2.0rem;
   margin-top: 1.8rem;
+}
+
+.body-content h2.small {
+  font-size: 1.6rem;
+  margin-top: 1.3rem;
+  margin-bottom: 0.3rem;
 }
 
 .body-content h3 {

@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://smallsheds.garden/</loc>
-  <lastmod>2023-09-03T18:28:00Z</lastmod>
+  <lastmod>2024-01-22T17:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/2012/</loc>
@@ -58,12 +58,16 @@
   <lastmod>2023-09-03T18:28:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/2024/</loc>
+  <lastmod>2024-01-22T17:37:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/archive.html</loc>
-  <lastmod>2023-12-28T08:02:00Z</lastmod>
+  <lastmod>2024-01-22T17:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/</loc>
-  <lastmod>2023-09-12T13:25:00Z</lastmod>
+  <lastmod>2024-01-22T17:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/2012/dewt2-becoming-a-context-driven-tester/</loc>
@@ -302,14 +306,6 @@
   <lastmod>2023-12-29T09:14:00Z</lastmod>
  </url>
  <url>
-  <loc>https://smallsheds.garden/blog/2023/a-lesson-from-every-programming-language-ive-ever-used/</loc>
-  <lastmod>2023-12-28T16:34:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/blog/2023/a-lesson-from-every-programming-language-ive-used/</loc>
-  <lastmod>2023-12-28T16:40:00Z</lastmod>
- </url>
- <url>
   <loc>https://smallsheds.garden/blog/2023/agile-history-it-matters-right-at-frogs-conf/</loc>
   <lastmod>2023-09-10T08:08:00Z</lastmod>
  </url>
@@ -342,10 +338,6 @@
   <lastmod>2023-12-16T14:27:00Z</lastmod>
  </url>
  <url>
-  <loc>https://smallsheds.garden/blog/2023/one-lesson-from-every-programming-language-ive-used/</loc>
-  <lastmod>2023-12-28T08:02:00Z</lastmod>
- </url>
- <url>
   <loc>https://smallsheds.garden/blog/2023/our-work-management-tools-are-limiting-our-imagination/</loc>
   <lastmod>2023-09-03T18:28:00Z</lastmod>
  </url>
@@ -356,6 +348,10 @@
  <url>
   <loc>https://smallsheds.garden/blog/2023/what-is-a-scrum-master/</loc>
   <lastmod>2023-09-03T18:28:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/blog/2024/never-estimate-in-something-thats-not-negotiable/</loc>
+  <lastmod>2024-01-22T17:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/clojure/</loc>
@@ -415,39 +411,39 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-1.html</loc>
-  <lastmod>2023-11-26T10:50:00Z</lastmod>
+  <lastmod>2024-01-22T17:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-2.html</loc>
-  <lastmod>2023-12-02T15:51:00Z</lastmod>
+  <lastmod>2024-01-22T17:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-3.html</loc>
-  <lastmod>2023-12-02T15:51:00Z</lastmod>
+  <lastmod>2024-01-22T17:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-4.html</loc>
-  <lastmod>2023-12-02T15:51:00Z</lastmod>
+  <lastmod>2024-01-22T17:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-5.html</loc>
-  <lastmod>2023-12-02T15:51:00Z</lastmod>
+  <lastmod>2024-01-22T17:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-6.html</loc>
-  <lastmod>2023-11-26T10:50:00Z</lastmod>
+  <lastmod>2024-01-22T17:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-7.html</loc>
-  <lastmod>2023-12-02T15:51:00Z</lastmod>
+  <lastmod>2024-01-22T17:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-8.html</loc>
-  <lastmod>2023-12-28T08:02:00Z</lastmod>
+  <lastmod>2024-01-22T17:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/</loc>
-  <lastmod>2023-12-18T17:59:00Z</lastmod>
+  <lastmod>2024-01-22T18:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/agile-comms/</loc>
@@ -476,6 +472,10 @@
  <url>
   <loc>https://smallsheds.garden/categories/bugs/</loc>
   <lastmod>2023-09-03T18:28:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/categories/cat_agile-management-software-development-work-management/</loc>
+  <lastmod>2024-01-22T18:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/cat_agile/</loc>
