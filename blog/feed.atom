@@ -3,13 +3,31 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes</title>
   <id>https://smallsheds.garden/blog/feed.atom</id>
-  <updated>2024-01-22T18:14:22Z</updated>
+  <updated>2024-02-11T13:36:04Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/blog/feed.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Tackling test automation in a new language</title>
+    <id>https://smallsheds.garden/blog/2024/tackling-test-automation-in-a-new-language/</id>
+    <updated>2024-02-11T00:00:00+01:00</updated>
+    <published>2024-02-11T00:00:00+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2024/tackling-test-automation-in-a-new-language/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;While there's value in learning all the ins-and-outs of one particular language, its ecosystem and its testing libraries, I think there's also a lot of value in having experience in several. Or at least, in two. If you only know one, you don't really know what's essential and what's incidental to the one set of tools you know. You don't know from experience in what ways things could be different.&lt;/p&gt;
+&lt;p&gt;Picking up a new language is not trivial though, especially if it's your second one. There will be a lot to learn. You will notice similarities between the new language and the one(s) you already know. Sometimes those similarities will help you, sometimes they will mislead you.&lt;/p&gt;
+&lt;p&gt;Also, it's more than picking up a new language. There are also the testing libraries you will use
+and the language's ecosystem (e.g. how to install those libraries&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2024/tackling-test-automation-in-a-new-language/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; or how to set up a pre-commit hook with a linter). That's quite a package.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2024/tackling-test-automation-in-a-new-language/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="agile" label="agile"/>
+    <category term="programming" label="programming"/>
+    <category term="test-automation" label="test automation"/>
+  </entry>
   <entry>
     <title>Never estimate in something that's not negotiable</title>
     <id>https://smallsheds.garden/blog/2024/never-estimate-in-something-thats-not-negotiable/</id>
@@ -191,24 +209,5 @@
     <category term="brave-clojure" label="brave clojure"/>
     <category term="clojure" label="clojure"/>
     <category term="programming" label="programming"/>
-  </entry>
-  <entry>
-    <title>I'm a quality engineer and I'm not sure how I feel about that</title>
-    <id>https://smallsheds.garden/blog/2023/im-a-quality-engineer-and-im-not-sure-how-i-feel-about-that/</id>
-    <updated>2023-07-05T11:42:34+02:00</updated>
-    <published>2023-07-05T11:42:34+02:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2023/im-a-quality-engineer-and-im-not-sure-how-i-feel-about-that/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;This post is a slightly edited version of the experience report I &lt;a class="reference external" href="https://smallsheds.garden/slides/xp2023-quality-engineer.html"&gt;presented&lt;/a&gt; at the &lt;a class="reference external" href="https://www.agilealliance.org/xp2023/"&gt;xp2023&lt;/a&gt; conference. It covers my first six months at a scale-up, working as a quality engineer for the first time - after having worked in other testing-related roles for 15+ years.&lt;/p&gt;
-&lt;p&gt;My main finding is that for a quality engineering role to work well, certain structures need to be in place. The most important one is that the impact the quality engineer is expected to have, is clear to both the quality engineer and the team(s) they are supporting. However, regardless of which structures you put in place, a quality engineer will also need to work around those structures to be fully effective.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2023/im-a-quality-engineer-and-im-not-sure-how-i-feel-about-that/"&gt;Read more…&lt;/a&gt; (22 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="agile" label="agile"/>
-    <category term="conferences" label="conferences"/>
-    <category term="leadership" label="leadership"/>
-    <category term="management" label="management"/>
-    <category term="quality-engineering" label="quality engineering"/>
-    <category term="software-testing" label="software testing"/>
   </entry>
 </feed>

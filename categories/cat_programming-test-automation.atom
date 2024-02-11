@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about programming &amp; test automation)</title>
   <id>https://smallsheds.garden/categories/cat_programming-test-automation.atom</id>
-  <updated>2023-12-29T09:12:45Z</updated>
+  <updated>2024-02-11T13:36:04Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -11,18 +11,36 @@
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/cat_programming-test-automation/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
+    <title>Tackling test automation in a new language</title>
+    <id>https://smallsheds.garden/blog/2024/tackling-test-automation-in-a-new-language/</id>
+    <updated>2024-02-11T00:00:00+01:00</updated>
+    <published>2024-02-11T00:00:00+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2024/tackling-test-automation-in-a-new-language/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;While there's value in learning all the ins-and-outs of one particular language, its ecosystem and its testing libraries, I think there's also a lot of value in having experience in several. Or at least, in two. If you only know one, you don't really know what's essential and what's incidental to the one set of tools you know. You don't know from experience in what ways things could be different.&lt;/p&gt;
+&lt;p&gt;Picking up a new language is not trivial though, especially if it's your second one. There will be a lot to learn. You will notice similarities between the new language and the one(s) you already know. Sometimes those similarities will help you, sometimes they will mislead you.&lt;/p&gt;
+&lt;p&gt;Also, it's more than picking up a new language. There are also the testing libraries you will use
+and the language's ecosystem (e.g. how to install those libraries&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2024/tackling-test-automation-in-a-new-language/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; or how to set up a pre-commit hook with a linter). That's quite a package.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2024/tackling-test-automation-in-a-new-language/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="agile" label="agile"/>
+    <category term="programming" label="programming"/>
+    <category term="test-automation" label="test automation"/>
+  </entry>
+  <entry>
     <title>A lesson from every language I've used</title>
-    <id>https://smallsheds.garden/blog/2023/a-lesson-from-every-programming-language-ive-used/</id>
+    <id>https://smallsheds.garden/blog/2023/a-lesson-from-every-language-ive-used/</id>
     <updated>2023-12-29T00:00:00+01:00</updated>
     <published>2023-12-29T00:00:00+01:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2023/a-lesson-from-every-programming-language-ive-used/"/>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2023/a-lesson-from-every-language-ive-used/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;Throughout the years I've used quite a few different languages - if you allow me to be somewhat generous with the word "use". One language I actually feel proficient in. Some languages I've only done coding exercises in. And one language I've only used for a total of maybe 10 minutes, but that did really help out a whole team.&lt;/p&gt;
 &lt;p&gt;I do believe we should be that generous, both towards ourselves and to others. For an industry that likes to talk about imposter syndrome, we seem to enjoy saying &lt;em&gt;"You're not a real ... unless..."&lt;/em&gt; a bit too much.&lt;/p&gt;
 &lt;p&gt;Listing these languages for myself made me wonder what I had learned from them. Did I just learn how to write some code in each of them? Or did I also pick up some more general lessons? Turns out I did.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2023/a-lesson-from-every-programming-language-ive-used/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2023/a-lesson-from-every-language-ive-used/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="clojure" label="clojure"/>
     <category term="programming" label="programming"/>
     <category term="python" label="python"/>
