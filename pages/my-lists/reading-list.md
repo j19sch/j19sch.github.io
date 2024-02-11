@@ -10,7 +10,9 @@ hidetitle: false
 
 ### 2024
 - Blood in the Machine: The Origins of the Rebellion Against Big Tech - Brian Merchant
-- Revolusi: Indonesië en het ontstaan van de moderne wereld - David Van Reybrouck 
+- Revolusi: Indonesië en het ontstaan van de moderne wereld - David Van Reybrouck
+- The Programmer's Brain - Felienne Hermans
+- Groeipijn - Ray Klaassens 
 
 
 ### 2023
