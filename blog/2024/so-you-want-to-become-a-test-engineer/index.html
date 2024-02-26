@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>So you want to become a test engineer? | Joep Schuurkes</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../feed.atom">
+<link rel="canonical" href="https://smallsheds.garden/blog/2024/so-you-want-to-become-a-test-engineer/">
+<link rel="icon" href="../../../assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="../../../assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../assets/favicons/favicon-96x96.png" sizes="96x96">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../tackling-test-automation-in-a-new-language/" title="Tackling test automation in a new language" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="So you want to become a test engineer?">
+<meta property="og:url" content="https://smallsheds.garden/blog/2024/so-you-want-to-become-a-test-engineer/">
+<meta property="og:description" content="Becoming a test engineer these days is probably harder than it was for me back in 2006. Back then, there was no test automation, we worked in the slow rhythm of waterfall, and for years I was in a tea">
+<meta property="og:image" content="https://smallsheds.garden/images/default-preview.jpeg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2024-02-26T00:00:00+01:00">
+<meta property="article:tag" content="career">
+<meta property="article:tag" content="leadership">
+<meta property="article:tag" content="quality engineering">
+<meta property="article:tag" content="software development">
+<meta property="article:tag" content="software interesting">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-projects/" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-talks/" class="nav-link">Talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../../my-lists/reading-list/" class="dropdown-item">Reading list</a>
+                    <a href="../../../my-lists/recommended-reading/" class="dropdown-item">Recommended reading</a>
+                    <a href="../../../my-lists/favorite-podcasts/" class="dropdown-item">Favorite podcasts</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../" class="dropdown-item">My blog</a>
+                    <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
+                    <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">So you want to become a test&nbsp;engineer?</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep&nbsp;Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2024-02-26T00:00:00+01:00" itemprop="datePublished" title="26 February 2024">26 February 2024</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p>Becoming a test engineer these days is probably harder than it was for me back in 2006. Back then, there was no test automation, we worked in the slow rhythm of waterfall, and for years I was in a team with other testers or at least had a test manager to bounce ideas off. These days, there&#8217;s a good chance none of these are true as you start as a test&nbsp;engineer.</p>
+<p>While most of these changes are good ones (please don&#8217;t take test automation or agile away), it does make me empathize with anyone who starts their career as a test engineer today. The pace is higher and the skill set is broader. More importantly, you need to navigate your career while no one is really sure where to position testers in their organization. That&#8217;s not a straightforward environment to start a career&nbsp;in.</p>
+<p>So here are four pieces of advice I&#8217;d give myself if I&#8217;d start my career in testing&nbsp;today:</p>
+<ul>
+<li>testing can be many different&nbsp;things</li>
+<li>you&#8217;re a software engineer that specializes in&nbsp;testing</li>
+<li>the end-game is leadership&nbsp;skills</li>
+<li>shape your career in a way that suits&nbsp;you</li>
+</ul>
+<!-- TEASER_END --><h2 class="small">Testing can be many different&nbsp;things</h2>
+<p>There&#8217;s an astounding amount of variation in what test engineers do. There are different kinds of testing, like functional testing, performance testing, security testing, etc. but let&#8217;s ignore that for now. There&#8217;s also a lot of variation in testing, because there&#8217;s nothing close to a consensus about what good testing looks like. But let&#8217;s not get into that either. Let&#8217;s talk about a third source of variation: there are huge differences between organizations, products, projects, and even&nbsp;teams.</p>
+<p>For example, in my previous job, I worked at a tech scale-up, we deployed multiple times a day and were continuously collecting data on what our users were doing on our platform. In my current job, I work for a government agency, we are developing an air-gapped application that&#8217;s used for about two weeks each year and during that time it needs to run perfectly. And despite those differences, there&#8217;s still a major commonality: both are developed in-house. If the software is developed by a third party, you get yet another different ball&nbsp;game.</p>
+<p>So even though I&#8217;ve seen quite a few different organizations, projects, products, and teams - or perhaps because I have seen those, I&#8217;ve become very wary of any generalization about software&nbsp;testing.</p>
+<h2 class="small">You&#8217;re a software engineer that specializes in&nbsp;testing</h2>
+<p>Test engineers are in a somewhat weird position. Of all the non-programmers involved in software development (product owner, ux designers, etc), testers work the closest to and with programmers, while not being programmers. Additionally, different from those other roles, testers work downstream from programmers. Programmers need the ux designs before they build the front-end, but they don&#8217;t need test results before they start programming. Finally, it&#8217;s usually only the work of the programmers and the testers that gets planned for the sprint. All the other work happens&nbsp;pre-sprint.</p>
+<p>This raises an interesting question about the identity of testers. They&#8217;re both very similar to, yet also quite different from programmers. Just consider that we distinguish the two roles, but we do expect a programmer to be able to test and a tester to be able to program (or at a minimum: read code). And this tension is mostly felt by the testers, because you tend to have about one tester to every three to five programmers in a team. So the tester is the exception, the odd one&nbsp;out.</p>
+<p>It was only last year that I realized that a good way to deal with all of this, is to think of myself as a software engineer that happens not to specialize in programming, but in testing. Framing my identity this way, captures both the overlap and the differences between testers and programmers. There is a required set of skills of operating in a software development team, that&#8217;s the software engineer-part. And beyond that, you can have one (or eventually) more specializations. Testers and programmers may be different, but we&#8217;re more the same than you might think at&nbsp;first.</p>
+<h2 class="small">The end-game is leadership&nbsp;skills</h2>
+<p>Organizations have trouble deciding <a href="../../2023/a-good-tester-is-all-over-the-place/">how to position testing</a> and quality. So at some point, you&#8217;re going to run into organizational impediments. To tackle those, you will need leadership skills. You&#8217;re at the start of your career, so start small. Make use of any opportunity to practice leadership skills within your team. Then, when you need those skills beyond your team, you will have those experiences to fall back&nbsp;on.</p>
+<p>A good tool to start working on your leadership skills is Jerry Weinberg&#8217;s <span class="caps">MOIJ</span> model<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. It says that when a team has trouble accomplishing a goal, the problem is a lack of either Motivation, Organization, or Information. Once you decide which it is, you can try to remedy the problem by making a change to either of the three. The interesting part is that the type of solution doesn&#8217;t have to match the type of problem. A problem with motivation might be easier to resolve by providing information or by improving how you&#8217;re organized, rather than by giving a pep talk to the team. Last but not least, there&#8217;s a fourth course of action: Jiggling. When a team is stuck, sometimes all they need is a jiggle. Something that shakes things up a little, something unexpected, that gets the team unstuck&nbsp;again.</p>
+<h2 class="small">Shape your career in a way that suits&nbsp;you</h2>
+<p>Now probably more than ever, as a test engineer you have to create your own path. There is a lot of variation on how testing is done. Organizations keep trying new things and re-trying old things as they try to figure out how to position testing. And there will be times where you&#8217;ll have to tackle organizational issues, to make sure your position as test engineer remains viable and&nbsp;interesting.</p>
+<p>This may sound daunting. Having no choice but to actively shape your career. So I&#8217;ll leave you with one last piece of advice. Shaping your career can be done in different ways. Some people speak at conferences or write books. Others just show up consistently at work and slowly but surely expand their knowledge, skills and influence. Either way is fine. Pick the one that suits you best. And remember you can always make a different choice somewhere down the&nbsp;road.</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>For more about the <span class="caps">MOIJ</span> model, see Jerry Weinberg&#8217;s <a href="https://leanpub.com/becomingatechnicalleader">&#8220;Becoming a Technical Leader&#8221;</a>. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/career/" rel="tag">career</a></li>
+            <li><a class="tag p-category" href="../../../categories/leadership/" rel="tag">leadership</a></li>
+            <li><a class="tag p-category" href="../../../categories/quality-engineering/" rel="tag">quality&nbsp;engineering</a></li>
+            <li><a class="tag p-category" href="../../../categories/software-development/" rel="tag">software&nbsp;development</a></li>
+            <li><a class="tag p-category" href="../../../categories/software-interesting/" rel="tag">software&nbsp;interesting</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../tackling-test-automation-in-a-new-language/" rel="prev" title="Tackling test automation in a new language">Previous&nbsp;post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2024 
+<a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by/4.0/80x15.png"></a>
+<a href="mailto:site@joep.slmail.me">Joep Schuurkes</a> - Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a> - Analytics by <a href="https://plausible.io/" rel="nofollow" target="_blank">Plausible</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

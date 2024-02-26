@@ -3,13 +3,38 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about software development)</title>
   <id>https://smallsheds.garden/categories/software-development.atom</id>
-  <updated>2024-01-22T18:14:22Z</updated>
+  <updated>2024-02-26T20:32:14Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/software-development.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/software-development/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>So you want to become a test engineer?</title>
+    <id>https://smallsheds.garden/blog/2024/so-you-want-to-become-a-test-engineer/</id>
+    <updated>2024-02-26T00:00:00+01:00</updated>
+    <published>2024-02-26T00:00:00+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2024/so-you-want-to-become-a-test-engineer/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Becoming a test engineer these days is probably harder than it was for me back in 2006. Back then, there was no test automation, we worked in the slow rhythm of waterfall, and for years I was in a team with other testers or at least had a test manager to bounce ideas off. These days, there's a good chance none of these are true as you start as a test engineer.&lt;/p&gt;
+&lt;p&gt;While most of these changes are good ones (please don't take test automation or agile away), it does make me empathize with anyone who starts their career as a test engineer today. The pace is higher and the skill set is broader. More importantly, you need to navigate your career while no one is really sure where to position testers in their organization. That's not a straightforward environment to start a career in.&lt;/p&gt;
+&lt;p&gt;So here are four pieces of advice I'd give myself if I'd start my career in testing today:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;testing can be many different things&lt;/li&gt;
+&lt;li&gt;you're a software engineer that specializes in testing&lt;/li&gt;
+&lt;li&gt;the end-game is leadership skills&lt;/li&gt;
+&lt;li&gt;shape your career in a way that suits you&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2024/so-you-want-to-become-a-test-engineer/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="career" label="career"/>
+    <category term="leadership" label="leadership"/>
+    <category term="quality-engineering" label="quality engineering"/>
+    <category term="software-development" label="software development"/>
+    <category term="software-interesting" label="software interesting"/>
+  </entry>
   <entry>
     <title>Never estimate in something that's not negotiable</title>
     <id>https://smallsheds.garden/blog/2024/never-estimate-in-something-thats-not-negotiable/</id>

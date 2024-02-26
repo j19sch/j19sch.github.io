@@ -63,7 +63,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/archive.html</loc>
-  <lastmod>2024-02-11T13:30:00Z</lastmod>
+  <lastmod>2024-02-26T20:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/</loc>
@@ -354,6 +354,10 @@
   <lastmod>2024-01-22T17:37:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/blog/2024/so-you-want-to-become-a-test-engineer/</loc>
+  <lastmod>2024-02-26T20:08:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/blog/2024/tackling-test-automation-in-a-new-language/</loc>
   <lastmod>2024-02-11T13:30:00Z</lastmod>
  </url>
@@ -443,11 +447,11 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-8.html</loc>
-  <lastmod>2024-02-11T13:30:00Z</lastmod>
+  <lastmod>2024-02-26T20:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/</loc>
-  <lastmod>2024-01-22T18:15:00Z</lastmod>
+  <lastmod>2024-02-26T20:11:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/agile-comms/</loc>
@@ -476,6 +480,10 @@
  <url>
   <loc>https://smallsheds.garden/categories/bugs/</loc>
   <lastmod>2023-09-03T18:28:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/categories/career/</loc>
+  <lastmod>2024-02-26T20:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/cat_agile/</loc>
@@ -708,6 +716,10 @@
  <url>
   <loc>https://smallsheds.garden/categories/software-development/</loc>
   <lastmod>2023-09-03T18:28:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/categories/software-interesting/</loc>
+  <lastmod>2024-02-26T20:11:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/software-testing/</loc>
