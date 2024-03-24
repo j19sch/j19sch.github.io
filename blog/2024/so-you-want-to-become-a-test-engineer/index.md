@@ -3,7 +3,7 @@
 .. slug: so-you-want-to-become-a-test-engineer
 .. date: 2024-02-26
 .. category: software testing
-.. tags: career, leadership, quality engineering, software development, software interesting
+.. tags: career, leadership, quality engineering, software development, software testing
 .. type: text
 -->
 

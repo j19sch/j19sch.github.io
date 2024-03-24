@@ -3,13 +3,33 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about conferences)</title>
   <id>https://smallsheds.garden/categories/conferences.atom</id>
-  <updated>2023-11-26T10:50:52Z</updated>
+  <updated>2024-03-24T15:52:42Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/conferences.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/conferences/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Notes from the March '24 FroGS conf open space</title>
+    <id>https://smallsheds.garden/blog/2024/notes-from-the-march-24-frogs-conf-open-space/</id>
+    <updated>2024-03-24T00:00:00+01:00</updated>
+    <published>2024-03-24T00:00:00+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2024/notes-from-the-march-24-frogs-conf-open-space/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Yesterday &lt;a href="https://elizabethzagroba.com/"&gt;Elizabeth Zagroba&lt;/a&gt;, &lt;a href="https://www.huibschoots.nl/"&gt;Huib Schoots&lt;/a&gt;, &lt;a href="https://www.linkedin.com/in/techsannetized/"&gt;Sanne Visser&lt;/a&gt; and I ran another &lt;a href="https://frogsconf.nl"&gt;FroGS conf&lt;/a&gt; online open space. There were plenty of great sessions, below are some notes from the five sessions I participated in. Thank you to everyone who was there, I had a great time!&lt;/p&gt;
+&lt;p&gt;If you want to join one of our next FroGS conf events, head over to &lt;a href="https://frogsconf.nl/"&gt;our site&lt;/a&gt; and &lt;a href="https://frogsconf.nl/register/"&gt;subscribe&lt;/a&gt; to our newsletter.&lt;/p&gt;
+&lt;h2 class="small"&gt;From notes to shared documentation culture&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Co-creation works for code. In what ways is co-creation for documentation different?&lt;/li&gt;
+&lt;li&gt;Why do we talk about "an audience" for documentation, instead of about "the contributors"?&lt;/li&gt;
+&lt;li&gt;The purpose of documentation flips from "what we build" to "what we built".&lt;/li&gt;
+&lt;li&gt;Old research paper on documentation: only documentation with lasting usefulness is architecture and test cases. Everything else is just notes.&lt;/li&gt;
+&lt;li&gt;Documentation heuristic: Is it easier/faster to reverse engineer it instead?&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2024/notes-from-the-march-24-frogs-conf-open-space/"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</summary>
+    <category term="conferences" label="conferences"/>
+  </entry>
   <entry>
     <title>"Agile history, it matters, right?" at FroGS conf</title>
     <id>https://smallsheds.garden/blog/2023/agile-history-it-matters-right-at-frogs-conf/</id>

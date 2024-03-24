@@ -3,7 +3,16 @@
 &lt;a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank"&gt;
 &lt;img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by/4.0/80x15.png" /&gt;
 &lt;/a&gt;
-</copyright><lastBuildDate>Mon, 26 Feb 2024 20:11:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A good tester is all over the place</title><link>https://smallsheds.garden/blog/2023/a-good-tester-is-all-over-the-place/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;Over the past year, I've been thinking about how testing-related roles are still an unsolved problem in software development. We keep trying different permutations: shifting left and shifting right, being closer to the programmers while not too far from other testers, doing less testing ourselves so we can support others more, etc.&lt;/p&gt;
+</copyright><lastBuildDate>Sun, 24 Mar 2024 15:42:00 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>So you want to become a test engineer?</title><link>https://smallsheds.garden/blog/2024/so-you-want-to-become-a-test-engineer/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;Becoming a test engineer these days is probably harder than it was for me back in 2006. Back then, there was no test automation, we worked in the slow rhythm of waterfall, and for years I was in a team with other testers or at least had a test manager to bounce ideas off. These days, there's a good chance none of these are true as you start as a test engineer.&lt;/p&gt;
+&lt;p&gt;While most of these changes are good ones (please don't take test automation or agile away), it does make me empathize with anyone who starts their career as a test engineer today. The pace is higher and the skill set is broader. More importantly, you need to navigate your career while no one is really sure where to position testers in their organization. That's not a straightforward environment to start a career in.&lt;/p&gt;
+&lt;p&gt;So here are four pieces of advice I'd give myself if I'd start my career in testing today:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;testing can be many different things&lt;/li&gt;
+&lt;li&gt;you're a software engineer that specializes in testing&lt;/li&gt;
+&lt;li&gt;the end-game is leadership skills&lt;/li&gt;
+&lt;li&gt;shape your career in a way that suits you&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2024/so-you-want-to-become-a-test-engineer/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>career</category><category>leadership</category><category>quality engineering</category><category>software development</category><category>software testing</category><guid>https://smallsheds.garden/blog/2024/so-you-want-to-become-a-test-engineer/</guid><pubDate>Sun, 25 Feb 2024 23:00:00 GMT</pubDate></item><item><title>A good tester is all over the place</title><link>https://smallsheds.garden/blog/2023/a-good-tester-is-all-over-the-place/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;Over the past year, I've been thinking about how testing-related roles are still an unsolved problem in software development. We keep trying different permutations: shifting left and shifting right, being closer to the programmers while not too far from other testers, doing less testing ourselves so we can support others more, etc.&lt;/p&gt;
 &lt;p&gt;And still, to be effective in any of these permutations, you can't let yourself be limited by them. You need to work both inside and outside the existing structures. You have to "be all over the place", in a good way.&lt;/p&gt;
 &lt;h2&gt;Testers do testing&lt;/h2&gt;
 &lt;p&gt;Let's start with a straightforward statement: a tester tests. Then what is testing? I &lt;a href="https://smallsheds.garden/blog/2018/reflections-on-my-testing-manifesto/"&gt;still like&lt;/a&gt; the definition &lt;em&gt;"Testing is investigating in order to evaluate a product."&lt;/em&gt; The most obvious thing to investigate, to test, is the code that is being written. The best way to do this, in my opinion, is through the combination of exploratory testing and test automation, i.e. what &lt;a href="https://maaretp.com/"&gt;Maaret Pyhäjärvi&lt;/a&gt; has named "&lt;a href="https://www.youtube.com/watch?v=T_67oQrPZhQ"&gt;contemporary exploratory testing&lt;/a&gt;". And to be clear, while the execution part tends to be the most visible, effective testing also needs good test strategy, design, and reporting.&lt;/p&gt;
@@ -43,22 +52,4 @@ Any other options? Because something about the term is bothering me.&lt;/p&gt;
 &lt;p&gt;2. An evaluation is a judgement about quality – quality being value to persons who matter.&lt;/p&gt;
 &lt;p&gt;3. This makes testing a fundamentally human and contextual activity.&lt;/p&gt;
 &lt;p&gt;4. As such, testing is an exploratory and open-ended activity, requiring continuous evaluation of and experimentation with our practices.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2018/manifesto-for-software-testing/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>agile</category><category>context-driven testing</category><category>devops</category><category>manifesto</category><category>software testing</category><guid>https://smallsheds.garden/blog/2018/manifesto-for-software-testing/</guid><pubDate>Tue, 04 Dec 2018 19:44:51 GMT</pubDate></item><item><title>Information debt</title><link>https://smallsheds.garden/blog/2014/information-debt/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;Last week ago the following happened on twitter:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;New word of the day: "information debt". It's like technical debt, but related to information, communication, models, docs, visualisations.&lt;br&gt;
-&lt;em&gt;- Joep Schuurkes (@j19sch) &lt;a href="https://twitter.com/j19sch/statuses/486534198803841024"&gt;July 8, 2014&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;@j19sch: New word of the day: "information debt" =&amp;gt; blogpost coming up ?!?!?&lt;br&gt;
-&lt;em&gt;- Simon P. Schrijver (@SimonSaysNoMore) &lt;a href="https://twitter.com/SimonSaysNoMore/statuses/486551279590977536"&gt;July 8, 2014&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;@SimonSaysNoMore Wasn't planning to, but now you made me think about it, so yes. Damn you! :-P&lt;br&gt;
-&lt;em&gt;- Joep Schuurkes (@j19sch) &lt;a href="https://twitter.com/j19sch/statuses/486555404089188352"&gt;July 8, 2014&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;In case you don't know what technical debt is, you might want to read &lt;a href="http://techblog.net-a-porter.com/2011/10/agile-tetris/"&gt;this&lt;/a&gt; first. (It's the oldest source I could find of the technical debt-tetris analogy, by the way. If you know of an older one, please leave a comment.)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2014/information-debt/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>information debt</category><category>software testing</category><category>VIPT</category><guid>https://smallsheds.garden/blog/2014/information-debt/</guid><pubDate>Sun, 13 Jul 2014 14:50:21 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2018/manifesto-for-software-testing/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>agile</category><category>context-driven testing</category><category>devops</category><category>manifesto</category><category>software testing</category><guid>https://smallsheds.garden/blog/2018/manifesto-for-software-testing/</guid><pubDate>Tue, 04 Dec 2018 19:44:51 GMT</pubDate></item></channel></rss>
