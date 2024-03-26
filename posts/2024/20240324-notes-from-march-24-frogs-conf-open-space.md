@@ -68,4 +68,3 @@ There were also some interesting sessions that I missed, because I can only be i
 - Capture the Flag Together: Security Testing for Everyone
 - Making changes from the inside out vs. outside in
 - Building a practice app for all things software and testing (ensemble)
-- Making changes from the inside out vs. outside in
