@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://smallsheds.garden/blog/feed.atom</loc>
-  <lastmod>2024-03-24T15:48:00Z</lastmod>
+  <lastmod>2024-03-26T20:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/blog/rss.xml</loc>
-  <lastmod>2024-03-24T15:48:00Z</lastmod>
+  <lastmod>2024-03-26T20:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/agile-comms.atom</loc>
@@ -103,11 +103,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_conferences.atom</loc>
-  <lastmod>2024-03-24T15:48:00Z</lastmod>
+  <lastmod>2024-03-26T20:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_conferences.xml</loc>
-  <lastmod>2024-03-24T15:48:00Z</lastmod>
+  <lastmod>2024-03-26T20:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_exploratory-testing.atom</loc>
@@ -231,11 +231,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/conferences.atom</loc>
-  <lastmod>2024-03-24T15:48:00Z</lastmod>
+  <lastmod>2024-03-26T20:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/conferences.xml</loc>
-  <lastmod>2024-03-24T15:48:00Z</lastmod>
+  <lastmod>2024-03-26T20:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/context-driven-testing.atom</loc>
@@ -542,14 +542,6 @@
   <lastmod>2024-03-24T15:42:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://smallsheds.garden/categories/software-interesting.atom</loc>
-  <lastmod>2024-02-26T20:32:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://smallsheds.garden/categories/software-interesting.xml</loc>
-  <lastmod>2024-02-26T20:32:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>https://smallsheds.garden/categories/software-testing.atom</loc>
   <lastmod>2024-03-24T15:42:00Z</lastmod>
  </sitemap>
@@ -711,6 +703,6 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/sitemap.xml</loc>
-  <lastmod>2024-03-24T15:48:00Z</lastmod>
+  <lastmod>2024-03-26T20:29:00Z</lastmod>
  </sitemap>
 </sitemapindex>
