@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about quality engineering)</title>
   <id>https://smallsheds.garden/categories/quality-engineering.atom</id>
-  <updated>2024-02-26T20:32:13Z</updated>
+  <updated>2024-04-02T19:38:36Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -33,7 +33,7 @@
     <category term="leadership" label="leadership"/>
     <category term="quality-engineering" label="quality engineering"/>
     <category term="software-development" label="software development"/>
-    <category term="software-interesting" label="software interesting"/>
+    <category term="software-testing" label="software testing"/>
   </entry>
   <entry>
     <title>A good tester is all over the place</title>

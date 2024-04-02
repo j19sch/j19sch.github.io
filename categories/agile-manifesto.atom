@@ -3,13 +3,37 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about agile manifesto)</title>
   <id>https://smallsheds.garden/categories/agile-manifesto.atom</id>
-  <updated>2023-11-26T10:50:52Z</updated>
+  <updated>2024-04-02T19:35:21Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/agile-manifesto.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/agile-manifesto/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>The difference between a dead and an alive Agile Manifesto</title>
+    <id>https://smallsheds.garden/blog/2024/the-difference-between-a-dead-and-an-alive-agile-manifesto/</id>
+    <updated>2024-04-02T00:00:00+02:00</updated>
+    <published>2024-04-02T00:00:00+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2024/the-difference-between-a-dead-and-an-alive-agile-manifesto/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;One of my favorite books on leadership is "Extreme Ownership" by Jocko Willink and Leif Babin. I can imagine some people bouncing off of the book because of the Navy SEAL angle, but to be honest I'm a bit of a sucker for the whole military leadership genre.&lt;/p&gt;
+&lt;p&gt;The second part of "Extreme Ownership" covers four critical leadership concepts, the "Laws of Combat". Curiously enough, you can map these to the four values in the Agile Manifesto. These four concepts do come in a specific order, so you have to shuffle the Agile values around a little bit:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cover and Move maps to customer collaboration over contract negotiation.&lt;/li&gt;
+&lt;li&gt;Simple maps to working software over comprehensive documentation.&lt;/li&gt;
+&lt;li&gt;Prioritize and Execute maps to responding to change over following a plan.&lt;/li&gt;
+&lt;li&gt;Decentralized Command maps to individuals and interactions over processes and tools.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To me this mapping is interesting in two ways. It sheds a different light on the four Agile values. And it's an example of how I think we should be engaging with the Agile Manifesto, in a way that keeps it alive.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2024/the-difference-between-a-dead-and-an-alive-agile-manifesto/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="agile" label="agile"/>
+    <category term="agile-manifesto" label="agile manifesto"/>
+    <category term="books" label="books"/>
+    <category term="values" label="values"/>
+  </entry>
   <entry>
     <title>"Agile history, it matters, right?" at FroGS conf</title>
     <id>https://smallsheds.garden/blog/2023/agile-history-it-matters-right-at-frogs-conf/</id>
@@ -75,6 +99,7 @@
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2022/the-agile-manifesto-is-a-poor-introduction-to-agile/"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="agile" label="agile"/>
     <category term="agile-manifesto" label="agile manifesto"/>
+    <category term="books" label="books"/>
     <category term="metis" label="mētis"/>
     <category term="teaching" label="teaching"/>
   </entry>
