@@ -40,22 +40,20 @@ In that sense, the term "test idea" might be more apt than "test case". Whenever
 
 ### Test cases that are translated requirements versus ones that aren't
 
-For the purpose of this post, on the one hand all three, test ideas, test cases, and test scripts, count as test cases; on the other hand, only the test ideas do.
+<!-- For the purpose of this post, on the one hand all three, test ideas, test cases, and test scripts, count as test cases; on the other hand, only the test ideas do. -->
 
 For the purpose of this post, while all three (test ideas, test cases, and test scripts), count as test cases, there is a distinction to be made between test cases and scripts on the one hand, and test ideas on the other.
 
 Test cases and test scripts are translations of requirements. There is an expected result, which makes them rephrasings of the requirements. This is especially clear if you [create a test case through a formal test design technique](link://slug/the-test-case-an-epistemological-deconstruction). The test case is no more than the transformation of a requirement by a logarithmic test design technique.
 
-With test ideas there's no expected result specified upfront. They take the form of "I wonder what would happen if ..." and "I'm curious about ..." So your goal is to discover something first, and then to evaluate it. How to evaluate your discovery, might be obvious. Or it might take actual work to figure out how to evaluate it. To decide if you've found a requirement or a bug.
+With test ideas there's no expected result specified upfront. They take the form of "I wonder what would happen if ..." and "I'm curious about ..." So your goal is to discover something first, and then to evaluate it. How to evaluate your discovery, might be immediately obvious. Or it might take some work to figure out how to evaluate it. To decide if you've found a requirement or a bug.
+
+As we'll see in the next part of this post, this distinction will be relevant for improving how we do testing bases on this idea that the difference between a test case and a requirement is in the moment of discovery.
+
+<!-- If the difference between a test case and a requirement is in the moment of discovery, it's the test ideas that are most important. Or are they? Is this for the next part and the importance of ET? -->
 
 
-
-Actually, that kind of test case - any test case based on an explicit requirement - does not fit the statement that the distinction is in the moment of discovery.
-
-
-
-
-<!-- Is this true? What about all the stuff that runs in the pipeline? I guess we know what it should do, but we do want to be very sure it still does this. But then how is it different from test cases derived with test design techniques? -->
+<!-- What about all the stuff that runs in the pipeline? I guess we know what it should do, but we do want to be very sure it still does this. But then how is it different from test cases derived with test design techniques? -->
 
 <!--
 	the distinction is in the moment of discovery, so no rephrasing of requirements into test cases
@@ -66,23 +64,44 @@ Actually, that kind of test case - any test case based on an explicit requiremen
 		ET is exploring and evaluation once you've done something based on the requirements
 -->
 
+## Test cases and requirements - the short version
+
+A requirement is an answer, a "should". A test case is a question, a "what if?"
+
+A requirement is design, a test case is evluation.
+
+As such, a requirement is input for building, a test case input for evaluating.
+
+The distinction between the moment of discovery, is: did we discover this requirement through testing or through design?
+Where we don't want to discover the requirements through testing, that we could have discovered through design. That's something for the next part.
 
 
-## test cases versus requirements - the moment of discovery
+## Test cases and requirements - the moment of discovery
+
+The opening paragraph of this post already listed some different interpretations of the moment of discovery between test cases and requirements. The more waterfall-like your process, the more you'll have a group of people involved early on defining requirements, and a different group later one defining test cases. They have a different background and somewhat different skills, so they use different formats.
+
+In essence, though, they are doing the same thing. They are defining requirements and writing them down - either in the format of a requirement or of a test case. Or they are translating requirements to test cases and writing those down.
+
+If all of that is true, there's something
+
+
+
+<!-- different meanings to moment of discovery -->
+
+Actually, that kind of test case - any test case based on an explicit requirement - does not fit the statement that the distinction is in the moment of discovery.
 
 In a sense, requirements are dead. Requirements are answers (even if tenuous). Test cases are questions.
 
-A requirement is a "should", a test case a "what if?"
-
-input for building vs input for evaluation
-
 a test case that's a directly translated required is not very interesting
 
-not a straight line, but -> building vs -> evaluating
+not a straight line dividing the moment of disovery, but -> building vs -> evaluating
 
 
 
-# What's the line that divides requirements from test cases? {.small}
+# What should be the line that divides requirements from test cases?
+
+<!-- what should be the line that divides? -->
+
 The dividing line between what's a test case and a requirement is the question: is this input for creation or for evaluation? If it's for creation, it's a requirement; if it's for evaluation, it's a test case.
 
 Which aligns with the thought that TDD is not about testing, but about specification.
@@ -95,11 +114,13 @@ Now you could argue, that requirements need validation too. You might think your
 What this means, is that anyting you discover early enough, is a requirement. Anything discovered later, is a test case. Discover it early and it's input for design and building. Discover it later and it's input for evaluation (aka [verification and validation](link://slug/three-arguments-against-the-verification-validation-dichotomy/)). This raises the question: where exactly is that dividing line between requirement and test case? And can we move that line?
 
 
-# Wrap up .{small}
+# Closing thought - designing vs building vs testing
 
 is it even possible to distinguish designing from building (programming) from testing?
 
 Arguably they're part of the building. So there is not separate testing. There's only designing and building. While even writing code can be seen as design, and building comes even later. => change building to programming?
+
+like ET is paralellel design - execuation - evaluation (check definition!)
 
 ---
 
