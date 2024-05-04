@@ -84,6 +84,8 @@ In essence, though, they are doing the same thing. They are defining requirement
 
 If all of that is true, there's something
 
+if this is true, that reqs and test cases are equivalent, there's limited value in translating existing requirements into test cases, there is more value in discovering test cases that are not requirements yet as early as possible
+hence ET, product as external imagination, hence thin vertical slices for richer exploration
 
 
 <!-- different meanings to moment of discovery -->
