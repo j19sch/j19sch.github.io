@@ -21,6 +21,10 @@ In this post I want to explore the meaning of that statement. In the next post I
 <!-- TEASER_END -->
 
 
+
+if this is true, that reqs and test cases are equivalent, there's limited value in translating existing requirements into test cases, there is more value in discovering test cases that are not requirements yet as early as possible
+hence ET, product as external imagination, hence thin vertical slices for richer exploration
+
 # What does it help us do? help us see? do differently?
 
 what levers does this give us?
@@ -35,6 +39,8 @@ If I could tell you in detail what and how I would test upfront, I'd add those a
 application is external imagination
 
 discovery learning
+
+<!-- If the difference between a test case and a requirement is in the moment of discovery, it's the test ideas that are most important. Or are they? Is this for the next part and the importance of ET? -->
 
 
 ## Can we move the separation line?
@@ -78,3 +84,44 @@ Everyone must have had the experience where they missed a glaring bug, because i
 That second (and similar) questions are crucial to me. It's one thing to come up with a nice aphorism. It's a lot more interesting to have an aphorism that can be a guide to improve some aspects of how you develop software.
 
 Requirements part of the design. Because I love the same word meaning different things in different contexts: "If it's your decision to make, it's design. If it's not, it's a requirement." - Alistair Cockburn.
+
+What about all the stuff that runs in the pipeline? I guess we know what it should do, but we do want to be very sure it still does this. But then how is it different from test cases derived with test design techniques?
+
+the distinction is in the moment of discovery, so no rephrasing of requirements into test cases
+perhaps I don't have a clear anwers and this is more of an exploration of meaning
+how does this link to contemporary exploratory testing? to putting exploratory testing really early in the process?
+	external imagination, not knowing (yet)
+	ET is not at the end, it's part of the dev process, together with automation
+	ET is exploring and evaluation once you've done something based on the requirements
+
+Is the distinction in fact between requirements and test ideas? No, that's the ideal situation -> next part.
+
+<!-- The opening paragraph of this post already listed some different interpretations of the moment of discovery between test cases and requirements. The more waterfall-like your process, the more you'll have a group of people involved early on defining requirements, and a different group later one defining test cases. They have a different background and somewhat different skills, so they use different formats.
+
+In essence, though, they are doing the same thing. They are defining requirements and writing them down - either in the format of a requirement or of a test case. Or they are translating requirements to test cases and writing those down. -->
+
+
+
+<!--
+next post
+if this is true, that reqs and test cases are equivalent, there's limited value in translating existing requirements into test cases, there is more value in discovering test cases that are not requirements yet as early as possible
+hence ET, product as external imagination, hence thin vertical slices for richer exploration
+-->
+
+
+
+
+<!-- Actually, that kind of test case - any test case based on an explicit requirement - does not fit the statement that the distinction is in the moment of discovery. -->
+
+
+<!-- a test case that's a directly translated required is not very interesting -->
+
+<!-- what should be the line that divides? -->
+
+<!-- The dividing line between what's a test case and a requirement is the question: is this input for creation or for evaluation? If it's for creation, it's a requirement; if it's for evaluation, it's a test case. -->
+
+<!-- Which aligns with the thought that TDD is not about testing, but about specification. -->
+
+<!-- Now you could argue, that it's possible to use test cases as input for creation. Of course, you can, but then they are requirements. The difference is not in how you title them, what template you use, the format you write them in. That's incidental, not the essense, superficial. The difference is what you do with them. -> answers and questions -->
+
+Now you could argue, that requirements need validation too. You might think your requirement is a good one, but that doesn't mean it actually is. While that's true, and important and needed, in the end it's working software, something interactive, in its real-life context, that needs to be evaluated if it's good enough. Imagination can take you far, mock ups further, but in the end we need the software.
