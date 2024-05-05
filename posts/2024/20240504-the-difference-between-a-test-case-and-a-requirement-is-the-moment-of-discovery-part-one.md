@@ -9,7 +9,7 @@
 
 There are several straightforward ways to distinguish a test case from a requirement. A test case tells you how to check some kind of thing about the application, a requirement tells you that the application should do some kind of thing. A test case is written by a tester, a requirement by a business analyst. A test case consist of an action and an evaluation of the result, a requirement takes the form of a sentence like "product ABC shall XYZ." (at least according to NASA[^1]).
 
-[^1]: https://www.nasa.gov/reference/appendix-c-how-to-write-a-good-requirement/
+[^1]: [https://www.nasa.gov/reference/appendix-c-how-to-write-a-good-requirement/](https://www.nasa.gov/reference/appendix-c-how-to-write-a-good-requirement/)
 
 A less straightforward, but more interesting way to distinguish the two is what I posted on [Mastodon](https://chaos.social/@joeposaurus/111963169048720039) and [LinkedIn](https://www.linkedin.com/posts/joepschuurkes_the-difference-between-a-test-case-and-a-activity-7165642850334945281-r5Di) about two months ago:
 
@@ -50,6 +50,9 @@ With test ideas there's no expected result specified upfront. They take the form
 
 As we'll see in the next part of this post, this distinction will be relevant for improving how we do testing bases on this idea that the difference between a test case and a requirement is in the moment of discovery.
 
+I do realize that I'm assuming here that translating a requirement to a test case is trivial. From my own experience I can say: that's not true. Sometimes it's far from trivial. And arguably there are some requirements that are so difficult to translate into test cases, that for all practical purposes they are un-translatable. So in that sense the distinction I'm making here is more of a theoretical nature than a practical one: between test cases that are translations of requirements, even if in practice you wouldn't perform this translation, and test cases that are not translations of requirements. The latter are test ideas, where we're not sure what will happen and/or how we will evaluate what will happen.
+
+
 <!-- If the difference between a test case and a requirement is in the moment of discovery, it's the test ideas that are most important. Or are they? Is this for the next part and the importance of ET? -->
 
 
@@ -68,12 +71,30 @@ As we'll see in the next part of this post, this distinction will be relevant fo
 
 A requirement is an answer, a "should". A test case is a question, a "what if?"
 
-A requirement is design, a test case is evluation.
+A requirement is design, a test case is evaluation.
 
 As such, a requirement is input for building, a test case input for evaluating.
 
-The distinction between the moment of discovery, is: did we discover this requirement through testing or through design?
-Where we don't want to discover the requirements through testing, that we could have discovered through design. That's something for the next part.
+And still, they are the same thing. It's just that for a requirement we already know what it is the software should do. For a test case, sometimes we do (test cases that are translated requirements) and sometimes we don't (test ideas).
+
+If they are the same, though, how is there a distinction to be made based on the moment of discovery?
+
+The moment of discovery for a requirement is while we are designing what we are going to build.[^2] The moment of discovery for a test case is while we are evaluating what we have built.[^3]
+
+[^2]: Hence the statement that TDD is more about design than it is about testing.
+
+[^3]: Just as with TDD where design happens just before the writing of the code, in exploratory testing the test design happens (mostly) just before the test.
+
+In an ideal but impossible world, we would be able to define all the requirements upfront, translate them all to test cases, automate all of those, and then we'd just have to build a piece of software that passes all the tests.
+
+In an ideal world we could aspire to, we would define all the requirements and related test cases upfront, that are feasible to define upfront. And have an initial list of test ideas prepared. As we build the software, we keep revisiting the requirements, the test cases, and the test ideas.
+
+In the actual world, things are a lot messier. We define requirements until we feel it's time to start building. Then we start building and testing, hopefully discovering additional requirements to a sufficient degree. That may not sound that different from the previous paragraph, but the difference is the lack of intentionality in the momnent of discovery of requirements and test cases. While in the second part of this post, we'll see how being deliberate about this moment, will lead to better testing and better software.
+
+<!-- The distinction between the moment of discovery, is: did we discover this requirement through testing or through design?
+Where we don't want to discover the requirements through testing, that we could have discovered through design. That's something for the next part. -->
+
+<!-- Is the distinction in fact between requirements and test ideas? No, that's the ideal situation -> next part. -->
 
 
 ## Test cases and requirements - the moment of discovery
