@@ -51,6 +51,7 @@ With test ideas, on the other hand, there's no expected result specified upfront
 I do realize here that I'm assuming that translating a requirement to a test case is trivial. Often enough, that's not the case. And arguably there are some requirements that are so difficult to translate into test cases, that for all practical purposes they are un-translatable. So in that sense the distinction I'm making here is more of a theoretical nature than a practical one: between test cases that are translations of requirements, even if in practice you wouldn't perform this translation, and test cases that are not and can not be translations of requirements. The latter are test ideas, where we're not sure what will happen and/or how we will evaluate what will happen.
 
 We'll return to this issue in the second part of this blog post. Because one of the things that help us to do better testing, is to distinguish these categories of requirements and test cases, and make conscious decisions about them and what to do.
+
 <!-- THIS NEEDS MORE TEXT -->
 
 
@@ -71,22 +72,42 @@ If they are the same, though, how does it make sense to distinguish the two base
 
 The moment of discovery for a requirement happens while we are designing what we are going to build. The moment of discovery for a test case happens while we are evaluating what we have built - or, what we will have built. This leaves a lot of space for these moments to happen. A requirement can be discovered months before a line of code is written, or in the case of TDD, mere seconds. The same for the discovery of a test case: it might be discovered months before the test executed, or in the case of exploratory testing, mere seconds.
 
-The value of making the distinction between a requirement and a test case based on the moment of discovery, lies in the "or, what we will have built" in the previous paragraph.
+<!-- The value of making the distinction between a requirement and a test case based on the moment of discovery, lies in the "or, what we will have built" in the previous paragraph. -->
+<!-- IS IT THOUGH? Is this a poor version of part of the next post? -->
+
+The value of making the distinction between a requirement and a test case based on the moment of discovery, lies in making us aware of that moment. It makes us notice if we discovered something as a requirement, or as a test case. And [once we notice](link://slug/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto#noticing-options-principles) this, once we're aware, we can think if it was the right moment, if we might want to change it, make changes to influence when that moment of discovery happens. We can think about how where that moment falls, influences how we do software development.
+<!-- MORE ON THAT IN THE NEXT POST -->
+
+That's not to say there is a straight line we can draw through our software development process, separating the period of discovering requirements from discovering test cases.
+That's not a straight line we can draw through our software development process. We can't pinpoint a moment in time, where everything before is a test case, and everything after is a test case. <!-- different meanings to moment of discovery -->
+
+
+<!-- What this means, is that anyting you discover early enough, is a requirement. Anything discovered later, is a test case. Discover it early and it's input for design and building. Discover it later and it's input for evaluation (aka [verification and validation](link://slug/three-arguments-against-the-verification-validation-dichotomy/)). This raises the question: where exactly is that dividing line between requirement and test case? And can we move that line? -->
+
+
+<!-- lies in making us able to think about that moment discovery as a thing, as an event. As something that happens at a certain point in time(?) and where can change what exact point of time that is. -->
+
+<!-- Did we discover this requirement as part of design, as input for building? Or did we discover it as part of evaluation, as input for testing? Did we discover this as part of design, as input for building? Or did we discover it though evaluation, as input for testing? -->
+
+<!-- 
+the three things in the next post
+- ET is crucial
+- ET needs to happen early, not somewhere near the end of the pipeline -> moving the line earlier
+- how to divide the work
+ -->
+
 
 If you can come up with a test case for something before it's been built, then why are not involved in defining the requirements? Why are we separating design from test?[^2] Why are they done by separate people, in separate "phases", in different formats? Using different skills and techniques, or at least with differently named skills and techniques?
 
 [^2]: And from build? See the closing thought of this post.
 
-Did we discover this as part of design, as input for building? Or did we discover it though evaluation, as input for testing?
-That's not a straight line we can draw through our software development process. We can't pinpoint a moment in time, where everything before is a test case, and everything after is a test case. <!-- different meanings to moment of discovery -->
-
 
 creation vs evaluation
 incidental: format etc; essential: for building or for testing
 but some test cases should have been requirements, not because "should have found earlier" but because our process separates them incorrectly
-Now you could argue, that it's possible to use test cases as input for creation. Of course, you can, but then they are requirements. The difference is not in how you title them, what template you use, the format you write them in. That's incidental, not the essense, superficial. The difference is what you do with them. -> answers and questions
 
-What this means, is that anyting you discover early enough, is a requirement. Anything discovered later, is a test case. Discover it early and it's input for design and building. Discover it later and it's input for evaluation (aka [verification and validation](link://slug/three-arguments-against-the-verification-validation-dichotomy/)). This raises the question: where exactly is that dividing line between requirement and test case? And can we move that line?
+<!-- Now you could argue, that it's possible to use test cases as input for creation. Of course, you can, but then they are requirements. The difference is not in how you title them, what template you use, the format you write them in. That's incidental, not the essense, superficial. The difference is what you do with them. -> answers and questions -->
+
 
 
 ## (leftover) three process options
