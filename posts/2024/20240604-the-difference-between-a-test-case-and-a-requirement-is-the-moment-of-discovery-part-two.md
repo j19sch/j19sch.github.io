@@ -42,6 +42,16 @@ discovery learning
 
 <!-- If the difference between a test case and a requirement is in the moment of discovery, it's the test ideas that are most important. Or are they? Is this for the next part and the importance of ET? -->
 
+### Closing thought - designing vs building vs testing
+
+is it even possible to distinguish designing from building (programming) from testing?
+
+Arguably they're part of the building. So there is not separate testing. There's only designing and building. While even writing code can be seen as design, and building comes even later. => change building to programming?
+
+like ET is paralellel design - execuation - evaluation (check definition!)
+
+
+---
 
 ## Can we move the separation line?
 earlier is better
@@ -50,9 +60,14 @@ what if we can create a feedback loop between requiring and testing?
 
 is this contemporary exploratory testing? credit Maaret Pyhäjärvi
 
-
 In a sense, requirements are dead. Requirements are answers (even if tenuous). Test cases are questions. The trick is to limit test cases to only those questions that can be answered by exploring / interacting with the code / the application. The rest can be a requirement.
 
+If you can come up with a test case for something before it's been built, then why are not involved in defining the requirements? Why are we separating design from test?[^2] Why are they done by separate people, in separate "phases", in different formats? Using different skills and techniques, or at least with differently named skills and techniques?
+
+[^2]: And from build? See the closing thought of this post.
+
+
+---
 
 
 ## How to divide the testing work?
@@ -80,6 +95,10 @@ Everyone must have had the experience where they missed a glaring bug, because i
 ---
 
 # leftovers
+
+creation vs evaluation
+incidental: format etc; essential: for building or for testing
+but some test cases should have been requirements, not because "should have found earlier" but because our process separates them incorrectly
 
 That second (and similar) questions are crucial to me. It's one thing to come up with a nice aphorism. It's a lot more interesting to have an aphorism that can be a guide to improve some aspects of how you develop software.
 
@@ -125,3 +144,30 @@ hence ET, product as external imagination, hence thin vertical slices for richer
 <!-- Now you could argue, that it's possible to use test cases as input for creation. Of course, you can, but then they are requirements. The difference is not in how you title them, what template you use, the format you write them in. That's incidental, not the essense, superficial. The difference is what you do with them. -> answers and questions -->
 
 Now you could argue, that requirements need validation too. You might think your requirement is a good one, but that doesn't mean it actually is. While that's true, and important and needed, in the end it's working software, something interactive, in its real-life context, that needs to be evaluated if it's good enough. Imagination can take you far, mock ups further, but in the end we need the software.
+
+
+## (leftover) three process options
+
+In an ideal but impossible world, we would be able to define all the requirements upfront, translate them all to test cases, automate all of those, and then we'd just have to build a piece of software that passes all the tests. It's like waterfall, but even better.
+
+In an ideal world we could aspire to, we would define all the requirements and related test cases upfront (as far as feasible). And we'd have an initial list of test ideas prepared. As we build the software, we keep revisiting the requirements, the test cases, and the test ideas.
+
+In the actual world, things are messier. We define requirements until we feel it's time to start building. Then we start building and testing, hopefully discovering additional requirements to a sufficient degree. That may not sound that different from the previous paragraph, but the difference is the lack of intentionality in the momnent of discovery of requirements and test cases. While in the second part of this post, we'll see how being deliberate about this moment, will lead to better testing and better software.
+
+The distinction between the moment of discovery, is: did we discover this requirement through testing or through design?
+Where we don't want to discover the requirements through testing, that we could have discovered through design. That's something for the next part.
+
+<!-- The value of making the distinction between a requirement and a test case based on the moment of discovery, lies in the "or, what we will have built" in the previous paragraph. -->
+<!-- IS IT THOUGH? Is this a poor version of part of the next post? -->
+
+<!-- The value of making the distinction between a requirement and a test case based on the moment of discovery, lies in making us aware of that moment. It makes us notice if we discovered something as a requirement, or as a test case. And [once we notice](link://slug/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto#noticing-options-principles) this, once we're aware, we can think if it was the right moment, if we might want to change it, make changes to influence when that moment of discovery happens. We can think about how where that moment falls, influences how we do software development. -->
+
+<!-- What this means, is that anyting you discover early enough, is a requirement. Anything discovered later, is a test case. Discover it early and it's input for design and building. Discover it later and it's input for evaluation (aka [verification and validation](link://slug/three-arguments-against-the-verification-validation-dichotomy/)). This raises the question: where exactly is that dividing line between requirement and test case? And can we move that line? -->
+
+
+<!-- lies in making us able to think about that moment discovery as a thing, as an event. As something that happens at a certain point in time(?) and where can change what exact point of time that is. -->
+
+<!-- Did we discover this requirement as part of design, as input for building? Or did we discover it as part of evaluation, as input for testing? Did we discover this as part of design, as input for building? Or did we discover it though evaluation, as input for testing? -->
+
+
+<!-- Now you could argue, that it's possible to use test cases as input for creation. Of course, you can, but then they are requirements. The difference is not in how you title them, what template you use, the format you write them in. That's incidental, not the essense, superficial. The difference is what you do with them. -> answers and questions -->
