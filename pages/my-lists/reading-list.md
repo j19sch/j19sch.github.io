@@ -12,7 +12,15 @@ hidetitle: false
 - Blood in the Machine: The Origins of the Rebellion Against Big Tech - Brian Merchant
 - Revolusi: Indonesië en het ontstaan van de moderne wereld - David Van Reybrouck
 - The Programmer's Brain - Felienne Hermans
-- Groeipijn - Ray Klaassens 
+- Groeipijn - Ray Klaassens
+- Making Work Visible: Exposing Time Theft to Optimize Work & Flow - Dominica Degrandis
+- Free Your Inner Nonfiction Writer: Educate, Influence, and Entertain Your Readers - Johanna Rothman (reread, workshop)
+- A Burglar's Guide to the City - Geoff Manaugh
+- The Man from the Future: The Visionary Life of John von Neumann - Ananyo Bhattacharya
+- Mindfulness in 3D: Alexander Technique for the 21st Century - Peter Nobes
+- Vertrouw ons nou maar: Opkomst en ondergang van de stemcomputer - Herbert Blankesteijn
+- Wiring the Winning Organization: Liberating Our Collective Greatness Through Slowification, Simplification, and Amplification - Steven J. Spear and Gene Kim
+- Breaking Things at Work: The Luddites Are Right about Why You Hate Your Job - Gavin Mueller
 
 
 ### 2023
