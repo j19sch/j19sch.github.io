@@ -3,7 +3,18 @@
 &lt;a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank"&gt;
 &lt;img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by/4.0/80x15.png" /&gt;
 &lt;/a&gt;
-</copyright><lastBuildDate>Tue, 02 Apr 2024 19:38:35 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The difference between a dead and an alive Agile Manifesto</title><link>https://smallsheds.garden/blog/2024/the-difference-between-a-dead-and-an-alive-agile-manifesto/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;One of my favorite books on leadership is "Extreme Ownership" by Jocko Willink and Leif Babin. I can imagine some people bouncing off of the book because of the Navy SEAL angle, but to be honest I'm a bit of a sucker for the whole military leadership genre.&lt;/p&gt;
+</copyright><lastBuildDate>Thu, 09 May 2024 13:03:55 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Two short checklists for Scrum</title><link>https://smallsheds.garden/blog/2024/two-short-checklists-for-scrum/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;h2 class="small"&gt;checklist no.1&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Do you add acceptance criteria and story points to each ticket before planning?&lt;/li&gt;
+&lt;li&gt;Do you have daily team meetings where people provide updates on their progress?&lt;/li&gt;
+&lt;li&gt;After each iteration, do you report to stakeholders what work was done and what will be planned next?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 class="small"&gt;checklist no.2&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Is the team protected during the sprint from stakeholders trying to interfere?&lt;/li&gt;
+&lt;li&gt;Is a sprint focused on achieving a goal and is how that goal is achieved, left sufficiently open?&lt;/li&gt;
+&lt;li&gt;Does the team address impediments as soon as they are discovered?&lt;/li&gt;
+&lt;/ul&gt;</description><category>agile</category><category>maturity</category><category>scrum</category><guid>https://smallsheds.garden/blog/2024/two-short-checklists-for-scrum/</guid><pubDate>Wed, 08 May 2024 22:00:00 GMT</pubDate></item><item><title>The difference between a dead and an alive Agile Manifesto</title><link>https://smallsheds.garden/blog/2024/the-difference-between-a-dead-and-an-alive-agile-manifesto/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;One of my favorite books on leadership is "Extreme Ownership" by Jocko Willink and Leif Babin. I can imagine some people bouncing off of the book because of the Navy SEAL angle, but to be honest I'm a bit of a sucker for the whole military leadership genre.&lt;/p&gt;
 &lt;p&gt;The second part of "Extreme Ownership" covers four critical leadership concepts, the "Laws of Combat". Curiously enough, you can map these to the four values in the Agile Manifesto. These four concepts do come in a specific order, so you have to shuffle the Agile values around a little bit:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Cover and Move maps to customer collaboration over contract negotiation.&lt;/li&gt;
@@ -59,10 +70,4 @@ and the language's ecosystem (e.g. how to install those libraries&lt;sup id="fnr
 &lt;li&gt;What lightweight methodologies were represented at the Manifesto meeting?&lt;/li&gt;
 &lt;li&gt;What did the software development look like that Agile was reacting against?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2023/agile-history-it-matters-right-at-frogs-conf/"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>agile</category><category>agile manifesto</category><category>conferences</category><guid>https://smallsheds.garden/blog/2023/agile-history-it-matters-right-at-frogs-conf/</guid><pubDate>Mon, 11 Sep 2023 07:48:40 GMT</pubDate></item><item><title>My seven-month experiment of sharing weekly notes at work</title><link>https://smallsheds.garden/blog/2023/my-seven-month-experiment-of-sharing-weekly-notes-at-work/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;At the end of my first week at my last job I published a Notion page that started with:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Inspired by &lt;a href="https://agilecommshandbook.com/"&gt;"The agile comms handbook"&lt;/a&gt; I'm experimenting with a &lt;strong&gt;weekly (internal) blog&lt;/strong&gt;. No big promises on the content, just the things I feel like writing about at the end of my week. And as this is an experiment, things might change along the way.&lt;/p&gt;
-&lt;p&gt;Please feel free to add a &lt;strong&gt;comment, respond&lt;/strong&gt; to other people's comments and/or &lt;strong&gt;share&lt;/strong&gt; with others!&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;In this post, I'll tell the story of my eight-month experiment with weekly notes. After that, I'll share some tips in case you want to give weekly notes a try too.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2023/my-seven-month-experiment-of-sharing-weekly-notes-at-work/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>agile comms</category><category>books</category><category>note-taking</category><guid>https://smallsheds.garden/blog/2023/my-seven-month-experiment-of-sharing-weekly-notes-at-work/</guid><pubDate>Sun, 03 Sep 2023 10:35:40 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2023/agile-history-it-matters-right-at-frogs-conf/"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>agile</category><category>agile manifesto</category><category>conferences</category><guid>https://smallsheds.garden/blog/2023/agile-history-it-matters-right-at-frogs-conf/</guid><pubDate>Mon, 11 Sep 2023 07:48:40 GMT</pubDate></item></channel></rss>

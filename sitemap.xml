@@ -63,7 +63,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/archive.html</loc>
-  <lastmod>2024-04-02T19:38:00Z</lastmod>
+  <lastmod>2024-04-27T13:14:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/</loc>
@@ -370,8 +370,20 @@
   <lastmod>2024-04-02T19:24:00Z</lastmod>
  </url>
  <url>
-  <loc>https://smallsheds.garden/blog/2024/the-difference-between-a-dead-and-an-alive-manifesto/</loc>
-  <lastmod>2024-04-02T19:15:00Z</lastmod>
+  <loc>https://smallsheds.garden/blog/2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery-part-one/</loc>
+  <lastmod>2024-05-05T12:30:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/blog/2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery-part-two/</loc>
+  <lastmod>2024-05-05T12:30:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/blog/2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery/</loc>
+  <lastmod>2024-04-27T13:14:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/blog/2024/two-short-checklists-for-scrum/</loc>
+  <lastmod>2024-05-09T12:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/clojure/</loc>
@@ -459,7 +471,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-8.html</loc>
-  <lastmod>2024-04-02T19:38:00Z</lastmod>
+  <lastmod>2024-04-27T13:14:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/</loc>
