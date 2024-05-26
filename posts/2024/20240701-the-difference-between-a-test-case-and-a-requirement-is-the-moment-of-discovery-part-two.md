@@ -1,7 +1,7 @@
 <!--
 .. title: The difference between a test case and a requirement is the moment of discovery (part two)
 .. slug: the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery-part-two
-.. date: 2024-06-04
+.. date: 2024-07-01
 .. category: 
 .. tags: 
 .. type: text
@@ -171,3 +171,6 @@ Where we don't want to discover the requirements through testing, that we could 
 
 
 <!-- Now you could argue, that it's possible to use test cases as input for creation. Of course, you can, but then they are requirements. The difference is not in how you title them, what template you use, the format you write them in. That's incidental, not the essense, superficial. The difference is what you do with them. -> answers and questions -->
+
+
+what I posted on [Mastodon](https://chaos.social/@joeposaurus/111963169048720039) and [LinkedIn](https://www.linkedin.com/posts/joepschuurkes_the-difference-between-a-test-case-and-a-activity-7165642850334945281-r5Di) about three months ago
