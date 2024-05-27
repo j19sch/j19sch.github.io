@@ -40,6 +40,9 @@ application is external imagination
 
 discovery learning
 
+interesting test cases are output
+so interesting user requirements are output too? -> Maaret
+
 <!-- If the difference between a test case and a requirement is in the moment of discovery, it's the test ideas that are most important. Or are they? Is this for the next part and the importance of ET? -->
 
 ### Closing thought - designing vs building vs testing
@@ -55,6 +58,9 @@ like ET is paralellel design - execuation - evaluation (check definition!)
 
 ## Can we move the separation line?
 earlier is better
+
+needs to be more than just: shift left
+rater, can we ET sooner? or something like that
 
 what if we can create a feedback loop between requiring and testing?
 
@@ -174,3 +180,10 @@ Where we don't want to discover the requirements through testing, that we could 
 
 
 what I posted on [Mastodon](https://chaos.social/@joeposaurus/111963169048720039) and [LinkedIn](https://www.linkedin.com/posts/joepschuurkes_the-difference-between-a-test-case-and-a-activity-7165642850334945281-r5Di) about three months ago
+
+<!-- I do realize that I'm assuming that translating a requirement to a test case is trivial. Often enough, that's not the case. And arguably there are some requirements that are so difficult to translate into test cases, that for all practical purposes they are un-translatable. So in that sense the distinction I'm making here is more of a theoretical nature than a practical one: between test cases that are translations of requirements, even if in practice you wouldn't perform this translation, and test cases that are not and can not be translations of requirements. The latter are test ideas, where we're not sure what will happen and/or how we will evaluate what will happen. -->
+
+<!-- This leaves a lot of space for these moments to happen. A requirement can be discovered months before a line of code is written, or in the case of TDD, mere seconds. The same for the discovery of a test case: it might be discovered months before the test executed, or in the case of exploratory testing, mere seconds. -->
+
+<!-- That's not to say there is a straight line we can draw through our software development process, separating the period of discovering requirements from discovering test cases. -->
+<!-- That's not a straight line we can draw through our software development process. We can't pinpoint a moment in time, where everything before is a test case, and everything after is a test case.different meanings to moment of discovery -->
