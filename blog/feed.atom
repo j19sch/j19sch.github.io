@@ -3,13 +3,36 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes</title>
   <id>https://smallsheds.garden/blog/feed.atom</id>
-  <updated>2024-05-09T13:03:55Z</updated>
+  <updated>2024-05-27T18:45:47Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/blog/feed.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>The difference between a test case and a requirement is the moment of discovery</title>
+    <id>https://smallsheds.garden/blog/2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery/</id>
+    <updated>2024-05-27T00:00:00+02:00</updated>
+    <published>2024-05-27T00:00:00+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;There are several straightforward ways to distinguish a test case from a requirement. A test case tells you how to check some kind of thing about the application, a requirement tells you that the application should do some kind of thing. A test case is written by a tester, a requirement by a business analyst. A test case takes the shape of an action and an evaluation of the result, a requirement takes the form of a sentence like "product ABC shall do XYZ."&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;A less straightforward, but more interesting way to distinguish a test case and a requirement, is this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The difference between a test case and a requirement is the moment of discovery.&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery/#fn:2"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In this post I want to explore the meaning of that statement. In the next post I'll explore how looking at requirements and test cases in this way, can help us to do better testing. So this post will be a bit more philosophical, the next one more practical.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="exploratory-testing" label="exploratory testing"/>
+    <category term="quality-engineering" label="quality engineering"/>
+    <category term="semantics" label="semantics"/>
+    <category term="software-development" label="software development"/>
+    <category term="software-testing" label="software testing"/>
+    <category term="test-cases" label="test cases"/>
+  </entry>
   <entry>
     <title>Two short checklists for Scrum</title>
     <id>https://smallsheds.garden/blog/2024/two-short-checklists-for-scrum/</id>
@@ -198,27 +221,5 @@ and the language's ecosystem (e.g. how to install those libraries&lt;sup id="fnr
     <category term="software-development" label="software development"/>
     <category term="software-testing" label="software testing"/>
     <category term="test-management" label="test management"/>
-  </entry>
-  <entry>
-    <title>"Agile history, it matters, right?" at FroGS conf</title>
-    <id>https://smallsheds.garden/blog/2023/agile-history-it-matters-right-at-frogs-conf/</id>
-    <updated>2023-09-11T09:48:40+02:00</updated>
-    <published>2023-09-11T09:48:40+02:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2023/agile-history-it-matters-right-at-frogs-conf/"/>
-    <summary type="html">&lt;figure&gt;&lt;img src="https://smallsheds.garden/images/2023/agile-history/frogsconf.png"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;On September 9th I facilitated a session at the &lt;a href="https://frogsconf.nl/"&gt;FroGS conf&lt;/a&gt; open space titled "&lt;em&gt;Agile history, it matters, right?&lt;/em&gt;" My main goal was to get input on where to take my &lt;a href="https://context-of-agile.org/"&gt;Context of Agile&lt;/a&gt; site. Before asking for that input, however, I asked the participants three questions about the history of Agile. I figured it would provide a good introduction to the topic. And I was curious how much the kind of person that joins a session like this, knows about the history of Agile. So a big thank you to all the participants!&lt;/p&gt;
-&lt;h2&gt;The three questions about the history of Agile&lt;/h2&gt;
-&lt;p&gt;The three questions about the history of Agile were:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;When did Agile start?&lt;/li&gt;
-&lt;li&gt;What lightweight methodologies were represented at the Manifesto meeting?&lt;/li&gt;
-&lt;li&gt;What did the software development look like that Agile was reacting against?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2023/agile-history-it-matters-right-at-frogs-conf/"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="agile" label="agile"/>
-    <category term="agile-manifesto" label="agile manifesto"/>
-    <category term="conferences" label="conferences"/>
   </entry>
 </feed>

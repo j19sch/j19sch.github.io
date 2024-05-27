@@ -3,13 +3,36 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about software testing)</title>
   <id>https://smallsheds.garden/categories/cat_software-testing.atom</id>
-  <updated>2024-04-02T19:38:35Z</updated>
+  <updated>2024-05-27T18:45:48Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/cat_software-testing.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/cat_software-testing/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>The difference between a test case and a requirement is the moment of discovery</title>
+    <id>https://smallsheds.garden/blog/2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery/</id>
+    <updated>2024-05-27T00:00:00+02:00</updated>
+    <published>2024-05-27T00:00:00+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;There are several straightforward ways to distinguish a test case from a requirement. A test case tells you how to check some kind of thing about the application, a requirement tells you that the application should do some kind of thing. A test case is written by a tester, a requirement by a business analyst. A test case takes the shape of an action and an evaluation of the result, a requirement takes the form of a sentence like "product ABC shall do XYZ."&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;A less straightforward, but more interesting way to distinguish a test case and a requirement, is this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The difference between a test case and a requirement is the moment of discovery.&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery/#fn:2"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In this post I want to explore the meaning of that statement. In the next post I'll explore how looking at requirements and test cases in this way, can help us to do better testing. So this post will be a bit more philosophical, the next one more practical.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="exploratory-testing" label="exploratory testing"/>
+    <category term="quality-engineering" label="quality engineering"/>
+    <category term="semantics" label="semantics"/>
+    <category term="software-development" label="software development"/>
+    <category term="software-testing" label="software testing"/>
+    <category term="test-cases" label="test cases"/>
+  </entry>
   <entry>
     <title>So you want to become a test engineer?</title>
     <id>https://smallsheds.garden/blog/2024/so-you-want-to-become-a-test-engineer/</id>
@@ -197,22 +220,5 @@
     <category term="software-testing" label="software testing"/>
     <category term="test-management" label="test management"/>
     <category term="test-strategy" label="test strategy"/>
-  </entry>
-  <entry>
-    <title>Test cases, can't do 'm no more</title>
-    <id>https://smallsheds.garden/blog/2013/test-cases-cant-do-m-no-more/</id>
-    <updated>2013-07-06T20:19:32+02:00</updated>
-    <published>2013-07-06T20:19:32+02:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2013/test-cases-cant-do-m-no-more/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;Continuing the style of my previous blog post...&lt;/p&gt;
-&lt;p&gt;Some days ago I found myself no longer able to think in test cases while testing. Of course, it's not as if I was using test design techniques to generate test cases one day and woke up the next day to find myself unable to do it anymore. But still, about a week ago I figured I had explored enough to be able to write down the test cases I wanted to execute and found myself staring at a blank page (well ok, empty Excel sheet) feeling alienated from what I was planning to do.&lt;/p&gt;
-&lt;p&gt;So what do I mean when saying "thinking in test cases". Simply put, you take a piece of functionality, let a test design technique loose on it and there you go: a set of test cases to execute. Combine test design techniques over the different pieces of functionality as required and you're all covered test strategy-wise. Or that's the idea.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2013/test-cases-cant-do-m-no-more/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="exploratory-testing" label="exploratory testing"/>
-    <category term="test-cases" label="test cases"/>
-    <category term="test-management" label="test management"/>
   </entry>
 </feed>

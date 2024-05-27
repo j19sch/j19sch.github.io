@@ -1,3 +1,4 @@
+<!--
 .. title: The difference between a dead and an alive Agile Manifesto
 .. slug: the-difference-between-a-dead-and-an-alive-agile-manifesto
 .. date: 2024-04-02
@@ -5,6 +6,7 @@
 .. tags: agile, agile manifesto, books, values
 .. type: text
 -->
+
 
 One of my favorite books on leadership is "Extreme Ownership" by Jocko Willink and Leif Babin. I can imagine some people bouncing off of the book because of the Navy SEAL angle, but to be honest I'm a bit of a sucker for the whole military leadership genre.
 
