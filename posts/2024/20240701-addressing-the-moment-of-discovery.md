@@ -7,6 +7,42 @@
 .. type: text
 -->
 
+
+In my [previous post](link://slug/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery) I explored the meaning of claiming that *"The difference between a test case and a requirement is the moment of discovery."* In this post I want to go deeper into what this means in practice. How it can help us to do better testing.
+
+I think it does so in at least three ways:
+- exploratory testing is key
+- exploratory testing should happen as early as possible
+- how best to divide up / share in the testing work
+
+
+# exploratory testing is key
+ToDo: link to section in previous post
+
+In my previous post I distinguished test cases that are translated requirements from ones that aren't. With the ones that are, you know in advance what you want to evaluate, i.e. the requirement. With the ones that aren't, you don't. You first make a discovery, then you decide how to evaluate it. That's the core of exploratory testing: you explore and you evaluate - with each feeding into the other.
+
+While these first kind of test cases are important - they are the requirements after all, they are from a testing perspective less interesting. We know the thing we're building needs to do a certain thing. So the people designing it know, the people building it know, and the people testing it know. (With some luck these are essentialy the same people, working as a team.)
+
+For the second kind that's not the case. It's only through interacting with what we've built[^1], we discover what it does and decide if it should keep doing that. In a very real sense, we are discovering new requirements. And these can be input for new test cases in the first sense and for test automation.
+
+[^1]: As [Maaret Pyhäjärvi](https://maaretp.com/) says: we use the application as our [external imagination](https://exploratorytestingacademy.com/courses/index.html).
+
+
+
+# earlier exploratory testing is better
+
+# dividing up the work / where is expertise needed
+if the key of exploratory testing is in external imagination (noticing and deciding !heuristics!)
+than you want the best et-ers doing testing on the most important (most risk, most value) things
+not: brief and debrief someone else with the best et-er
+
+
+
+
+---
+
+# the old stuff
+
 There are several straightforward ways to distinguish a test case from a requirement. A test case tells you how to check some kind of thing about the application, a requirement tells you that the application should do some kind of thing. A test case is written by a tester, a requirement by a business analyst. A test case consist of an action and an evaluation of the result, a requirement takes the form of a sentence like "product ABC shall XYZ." (at least according to NASA[^1]).
 
 [^1]: https://www.nasa.gov/reference/appendix-c-how-to-write-a-good-requirement/
