@@ -23,13 +23,18 @@ In my previous post I distinguished test cases that are translated requirements 
 
 While these first kind of test cases are important - they are the requirements after all, they are from a testing perspective less interesting. We know the thing we're building needs to do a certain thing. So the people designing it know, the people building it know, and the people testing it know. (With some luck these are essentialy the same people, working as a team.)
 
-For the second kind that's not the case. It's only through interacting with what we've built[^1], we discover what it does and decide if it should keep doing that. In a very real sense, we are discovering new requirements. And these can be input for new test cases in the first sense and for test automation.
+For the second kind that's not the case. It's only through interacting with what we've built[^1], we discover what it does and decide if it should keep doing that. In a very real sense, we are discovering new requirements. That's why exploratory testing is key. To discover requirements that are impossible or impractical to discover in any other way.
 
 [^1]: As [Maaret Pyhäjärvi](https://maaretp.com/) says: we use the application as our [external imagination](https://exploratorytestingacademy.com/courses/index.html).
 
+And these can be input for new test cases in the first sense and for test automation.
 
 
 # earlier exploratory testing is better
+
+
+
+
 
 # dividing up the work / where is expertise needed
 if the key of exploratory testing is in external imagination (noticing and deciding !heuristics!)
