@@ -21,6 +21,7 @@ hidetitle: false
 - Vertrouw ons nou maar: Opkomst en ondergang van de stemcomputer - Herbert Blankesteijn
 - Wiring the Winning Organization: Liberating Our Collective Greatness Through Slowification, Simplification, and Amplification - Steven J. Spear and Gene Kim
 - Breaking Things at Work: The Luddites Are Right about Why You Hate Your Job - Gavin Mueller
+- Looking for Luddites - John Hewitt
 
 
 ### 2023
