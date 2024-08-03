@@ -92,7 +92,7 @@ is it even possible to distinguish designing from building (programming) from te
 
 Arguably they're part of the building. So there is not separate testing. There's only designing and building. While even writing code can be seen as design, and building comes even later. => change building to programming?
 
-like ET is paralellel design - execuation - evaluation (check definition!)
+like ET is parallel design - execution - evaluation (check definition!)
 
 
 ---

@@ -31,18 +31,36 @@ refer to previous post
 > The difference between a requirement and a test case is the moment of discovery.
 
 What's my point?
-- ET is key because not based on requirements
-- optimizing the moment
+- ET is key to good testing, because not based on translated requirements
+	- so better be intentional
+	- better be good at it
+- optimizing for moments of discovery
+	- thin vertical slices, JIT design and test
+
+
+
+- (old) optimizing the moment
+	- thin vertical slices FTW -> serves both, JIT design and test
 	- what about req eng later?
 	- should have been requirement or test
 	- should have been sooner or later
 	- ET early because for some stuff it's more effective than req eng
 	- continuous ET and req eng, instead of all design upfront, ET at the end
-	- thin vertical slices FTW -> serves both, JIT design and test
-- better get good at ET, be intentional
 
 
-# Exploratory testing is key
+# Exploratory testing is key / Being intentional about exploratory testing
+
+Because not based on requirements. So if not doing ET, then missing out.
+
+it's not requirement vs test, it's requirements vs exploratory testing
+everyone does requirements (in some way), exploratory testing is still implicit, 'fringe', afterthought
+
+everyone does design, requirements throughout, but not exploratory testing
+or ET is the key part of testing, the easily missed part, the not-done-well part
+
+it's done everywhere anyway, better to be intentional about it
+
+
 
 In the previous post I distinguished test cases that are translated requirements from one that aren't.
 
@@ -50,7 +68,6 @@ As James Lyndsay explains it: the former are focused on value, the latter on ris
 
 https://www.workroom-productions.com/why-exploration-has-a-place-in-any-strategy/
 
-The first kind of testing is single loop learning, the second kind is double loop learning. You're not just learning if the product behaves as expected. You're learning about the product and its requirements and how the two interrelate.
 
 Or as Elizabeth Zagroba said at NewCrafts 2024:
 
@@ -58,17 +75,71 @@ Or as Elizabeth Zagroba said at NewCrafts 2024:
 
 https://ncrafts.io/speaker/elizabethzagroba no video, because migration to youtube
 
+
+
 All the surprises you didn't find and address, are likely to catch up to you some day. So best to find the most important ones in time.
 
-external imagination
+
+external imagination (Maaret) -> What can I discover by interacting with it? from Five favourite testing questions, inc reference
+> “Exploratory testing is an approach to testing that centers learning. Test design and test execution form an inseparable pair where the application and feature we are testing is our external imagination.” - “Exploratory Testing Foundations” by Maaret Pyhäjärvi
+
 more stuff is output than you think
 
-In a sense, requirements are dead. Requirements are answers (even if tenuous). Test cases are questions. The trick is to limit test cases to only those questions that can be answered by exploring / interacting with the code / the application. The rest can be a requirement.
+
+## it's better when it's intentional
+
+happening implicitly anyway
+
+how often do you look at the application, the code, the monitoring and it gives you an idea?
 
 
-# Moving the moment of discovery
+so be intentional about it
+so not just when time left
 
-If I could tell you in detail what and how I would test upfront, I'd add those as requirements / acceptance criteria from the start. Then you could build it right/correct from the start, instead of having me test it afterwards. // if I can tell you what to test without exploring, it could have been a requirement
+
+## it's a skill
+not clicking around
+
+noticing is a key skill in ET
+doing is key, so brief and debrief are lacking -> leftovers?
+
+Arguably the difference between good and bad testing is in the details:
+
+- what do you notice while testing? seeing what actually is there
+- what choices do you make to select your test data
+- how many variations can you come up with, to try? -> "here is a rock? what can you do with it?"
+- modelling the application
+- how varied are your oracles
+- using the application as your external imagination -> new ideas
+
+
+## it's full stack
+not as-if-a-user
+includes reading code and writing tests and building tools
+
+## tooling supports, extends and/or amplifies
+not no tools/automation
+includes reading code and writing tests and building tools
+
+> We do use a wide variety of tools to support, extend and amplify our testing.
+Testing manifesto principle 5
+
+
+
+
+# Optimizing for moments of discovery
+
+thin vertical slices for richer exploration, for JIT design and test
+as in elephant carpaccio (link to tag)
+
+> "It is in the doing of the work that we discover the work that we must do. Doing exposes reality."
+Woody Zuill, https://agilemaxims.com/
+
+short feedback loop between design - build - test
+mirrors: like ET is parallel design - execution - evaluation (check definition!)
+"by treating test-related learning, test design, test execution, and test result interpretation as mutually supportive activities that run in parallel throughout the project" Kaner, https://kaner.com/?p=46
+
+If I could tell you in detail what and how I would test upfront, I'd add those as requirements / acceptance criteria from the start. Then you could build it right/correct from the start, instead of having me test it afterwards. // if I can tell you what to test without exploring, it could have been a requirement => in link from ET part
 
 <!-- is this just a post about why exploratory testing is important and how to get good at it? -->
 
@@ -98,27 +169,15 @@ how to get better
 moving the moment of discovery, either earlier or later, move to other side?
 Earlier exploratory testing is better, because earlier feedback on the thing itself
 
+In a sense, requirements are dead. Requirements are answers (even if tenuous). Test cases are questions. The trick is to limit test cases to only those questions that can be answered by exploring / interacting with the code / the application. The rest can be a requirement.
 
-# Be intentional about your exploratory testing
-it's done everywhere anyway, better to be intentional about it
 
-Building exploratory testing skills
+---
 
-includes reading code and writing tests and building tools
+end with reflection questions?
 
-is kind of like being intentional
+---
 
-- when
-- who
-- skills
+leftovers
 
-doing is key, so brief and debrief are lacking
-
-Arguably the difference between good and bad testing is in the details:
-
-- what do you notice while testing? seeing what actually is there
-- what choices do you make to select your test data
-- how many variations can you come up with, to try? -> "here is a rock? what can you do with it?"
-- modelling the application
-- how varied are your oracles
-- using the application as your external imagination -> new ideas
+The first kind of testing is single loop learning, the second kind is double loop learning. You're not just learning if the product behaves as expected. You're learning about the product and its requirements and how the two interrelate.
