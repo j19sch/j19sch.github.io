@@ -129,33 +129,47 @@ Anything that helps you learn about the application and discover risk.
 
 ### Tooling and automation make exploratory testing more powerful
 
-tooling supports, extends and/or amplifies
-not no tools/automation
-includes reading code and writing tests and building tools
+Tools [support, extend and/or amplify](link://slug/reflections-on-my-testing-manifesto#5-tools) our testing. This includes anything from a notebook, to browser dev tools, to an IDE, to test data generators, to code that interacts with the application in some way.
 
-includes reading code and writing tests and building tools
-
-> We do use a wide variety of tools to support, extend and amplify our testing.
-Testing manifesto principle 5
+Again, aything that helps to learn, to make the application do interesting things.
 
 
 
+## How does exploratory testing relate to scripted and automated testing?
+
+To figure out the relation between exploratory testing and prescribed testing (test scripts and automation), we only need to go back to the start of this post. Prescribed tests are based on requirements. Exploratory testing is a way to discover additional requirements. Hence my statement that kicked off these blog posts: *"The difference between a test case and a requirement is the moment of discovery."*
 
 
-## How does it relate to scripted and automated testing?
+
+the incorrect views:
+- when time left
+- domain experts
+- test automation pyramid, aka sprinkled on top
+- agile testing quadrants? kinda, quadrant 3
+
 
 > We *need* exploratory tests. They're great. They tell us about risk - unexpected, unpredicted, emergent - that goes hand-in-hand with the system that has been delivered. Exploratory tests are immediate, of the moment. The risk is known - and you'll not need to test for it again until you've addressed it, and *written* a test to show you that it's gone. (James Lyndsay)
+
+
+scripted and automated tests, prescribed tests, -> translated requirements
+exploratory testing -> newly discovered requirements (good and bad surprises)
+
+so exploratory testing is input for scripted and automated tests (one of the inputs)
+
 
 also heard from Maaret, who has expounded(?) on that idea by focusing on how so many more things are output of learning, with learning including building, such as user stories
 more stuff is output than you think - Maaret
 
-segue into second part: optimizing for moments of discovery
+segue into second part: ~optimizing for moments of discovery~ being intention about exploratory testing
 
 
 
 ## What you miss out on by keeping exploratory testing implicit
 
-it's fundamental, not "if time left"; RISKS!
+exploratory testing and automation start to feed into each other -> previous paragraphs
+
+
+it's everywhere, it's fundamental, not "if time left"; RISKS!
 
 noticing is a key skill in ET
 doing is key, so brief and debrief are lacking -> leftovers?
@@ -178,7 +192,6 @@ Arguably the difference between good and bad testing is in the details:
 - using the application as your external imagination -> new ideas
 
 
-OODA loop?
 
 
 
@@ -190,8 +203,11 @@ OODA loop?
 
 
 
+---
 
+---
 
+---
 
 
 # Optimize for moments of discovery -> part 3

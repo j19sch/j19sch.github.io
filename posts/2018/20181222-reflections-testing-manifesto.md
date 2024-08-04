@@ -33,7 +33,7 @@ There is no fixed recipe; there is only a craft to practice.
 
 Finally, I snuck in an "our" without explaining who this "we" is, it refers to. As a matter of fact, I never clarify this in the manifesto. The reason for this is that the manifesto addresses everyone who performs activities that to this manifesto qualify as testing.
 
-#### 5. As such, testing cannot be automated. We do use a wide variety of tools to support, extend and amplify our testing. We may also delegate some decisions to our tools. However, without a human context, these decisions are meaningless.
+#### 5. As such, testing cannot be automated. We do use a wide variety of tools to support, extend and amplify our testing. We may also delegate some decisions to our tools. However, without a human context, these decisions are meaningless. <id a="5-tools">
 With testing a fundamentally human activity requiring continuous evaluation and experimentation, automating testing is not going to happen. People will need to be involved in some way.
 
 However, without tools, without automation, testing becomes nearly impossible. No notebooks, no mindmaps, no bug trackers, no IDEs, no browser developer tools, no way to interface with an API, no way to look at log files, no Excel, no nothing. Because of this, I think the concept of "extended cognition" is an excellent way to think of tool usage in testing. (One of my older blog posts, "[The test case - an epistemological deconstruction](link://slug/the-test-case-an-epistemological-deconstruction)", also ventures in this territory.)
