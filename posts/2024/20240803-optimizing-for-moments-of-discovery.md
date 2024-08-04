@@ -92,35 +92,47 @@ Or as [Maaret Pyhäjärvi](https://maaretp.com/) summarizes:
 > Exploratory testing is an approach to testing that centers learning. Test design and test execution form an inseparable pair where the application and feature we are testing is our external imagination. - [*"Exploratory Testing Foundations"*](https://dev.to/maaretp/exploratory-testing-foundations-4lb3)
 
 
-Some people might read these (or other) definitions and come away with the following picture of exploratory testing. It's someone clicking around in the application, hoping to discover a bug. While that technically is exploratory testing, it's not a very effective form of it.
+Some people might read these (or other) definitions and walk away with the following picture of exploratory testing: exploratory testing is someone clicking around in the application, hoping to discover a bug. While that technically is exploratory testing, it's not a very effective form of it.
+
+Let's take a look at the three main things missing from that picture of exploratory testing:
+- the learned skill
+- the layers of the stack
+- the tooling and automation
 
 
+### Exploratory testing is a learned skill
 
-### exploratory testing is a learned skill
-not clicking around
-not just based on domain expertise
-it is learnable -> (micro-)heuristics; styles
+For decades testers have been collecting heuristics that have helped them guide their testing:
+- Test Heuristics Cheat Sheet by Elisabeth Hendrickson, https://www.ministryoftesting.com/articles/test-heuristics-cheat-sheet
+- the product elements of RST's Heuristic Test Strategy Model, https://www.satisfice.com/download/heuristic-test-strategy-model
+- FEW HICCUPS Michael Bolton https://developsense.com/blog/2012/07/few-hiccupps
+- Microheuristics by Alex Schladebeck https://www.schladebeck.de/microheuristics/
+- Analysis, Test Design, Test Execution Heuristics from The Little Black Book on Test Design, http://www.thetesteye.com/papers/TheLittleBlackBookOnTestDesign.pdf
 
-experienced ET-er can test anything (domain expertise does help)
+Having these lists of heuristics is a great start, but applying them hinges on two skills: noticing what there is to notice, and choosing the right heuristic to apply. Neither can be done perfectly. You can't notice everything. You can't know for sure upfront what the right heuristic is.
 
-noticing is a key skill in ET
-doing is key, so brief and debrief are lacking -> leftovers?
+But you can do these (noticing and deciding) rather well or rather poorly. And that's the invisible skill of exploratory testing. Invisible, because it's all in the mind of the person[^2] of doing exploratory testing. (One day I'll properly study Boyd's [OODA loop ](https://en.wikipedia.org/wiki/OODA_loop) and how it applies to exploratory testing.) And any skill can be practiced and refined. Exploratory testing is not just something some people do well.
 
-noticing and deciding
-
-OODA
-
-
-
-### exploratory testing can cover any and all layers of the stack
-not as-if-a-user
-includes reading code and writing tests and building tools
+[^2]: Or persons, plural, if you're doing ensemble testing.
 
 
-### tooling and automation make exploratory testing more powerful
+### Exploratory testing can cover any and all layers of the stack
+
+Exploratory testing can be done on any piece of the application. If you've ever looked at a unit test, said to yourself *"I wonder what this function does if I give it these parameters..."*, added a test with those parameters, and ran it, you have done exploratory testing.
+
+Any way to interact with an application is valid to exploratory testing. Any inerface is fair game, so the code itself, APIs, CLIs, GUIs, config files, the database, etc.
+
+And you can include as many or few layers of the stack as you want. Whether it's the whole stack, just the backed, the frontend with a mock service, etc.
+
+Anything that helps you learn about the application and discover risk.
+
+
+### Tooling and automation make exploratory testing more powerful
 
 tooling supports, extends and/or amplifies
 not no tools/automation
+includes reading code and writing tests and building tools
+
 includes reading code and writing tests and building tools
 
 > We do use a wide variety of tools to support, extend and amplify our testing.
@@ -182,7 +194,7 @@ OODA loop?
 
 
 
-# Optimize for moments of discovery
+# Optimize for moments of discovery -> part 3
 
 thin vertical slices for richer exploration, for JIT design and test
 as in elephant carpaccio (link to tag)
@@ -248,5 +260,8 @@ everyone does design, requirements throughout, but not exploratory testing
 or ET is the key part of testing, the easily missed part, the not-done-well part
 
 it's done everywhere anyway, better to be intentional about it
+
+All the surprises you didn't find and address, are likely to catch up to you some day. So best to find the most important ones in time.
+
 
 All the surprises you didn't find and address, are likely to catch up to you some day. So best to find the most important ones in time.
