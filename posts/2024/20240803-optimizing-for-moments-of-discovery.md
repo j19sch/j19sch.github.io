@@ -118,6 +118,8 @@ But you can do these (noticing and deciding) rather well or rather poorly. And t
 
 ### Exploratory testing can cover any and all layers of the stack
 
+<!-- combine with next paragraph? anything goes in exploratory testing -->
+
 Exploratory testing can be done on any piece of the application. If you've ever looked at a unit test, said to yourself *"I wonder what this function does if I give it these parameters..."*, added a test with those parameters, and ran it, you have done exploratory testing.
 
 Any way to interact with an application is valid to exploratory testing. Any inerface is fair game, so the code itself, APIs, CLIs, GUIs, config files, the database, etc.
@@ -139,7 +141,17 @@ Again, aything that helps to learn, to make the application do interesting thing
 
 To figure out the relation between exploratory testing and prescribed testing (test scripts and automation), we only need to go back to the start of this post. Prescribed tests are based on requirements. Exploratory testing is a way to discover additional requirements. Hence my statement that kicked off these blog posts: *"The difference between a test case and a requirement is the moment of discovery."*
 
+This is not a new thought as such. As James Lyndsay wrote in ["Why Exploration has a Place in any Strategy"](https://www.workroom-productions.com/why-exploration-has-a-place-in-any-strategy/):
 
+> We *need* exploratory tests. They're great. They tell us about risk - unexpected, unpredicted, emergent - that goes hand-in-hand with the system that has been delivered. Exploratory tests are immediate, of the moment. The risk is known - and you'll not need to test for it again until you've addressed it, and *written* a test to show you that it's gone.
+
+And [Maaret Pyhäjärvi](https://maaretp.com/) has been saying the same. In [contemporary exploratory testing](https://www.getxray.app/blog/contemporary-exploratory-testing-podcast-highlights) exploration and automation go hand-in-hand. And test cases, whether they are executable (i.e. automated) or not, are the output of (exploratory) testing.
+
+
+
+
+
+---
 
 the incorrect views:
 - when time left
@@ -148,7 +160,7 @@ the incorrect views:
 - agile testing quadrants? kinda, quadrant 3
 
 
-> We *need* exploratory tests. They're great. They tell us about risk - unexpected, unpredicted, emergent - that goes hand-in-hand with the system that has been delivered. Exploratory tests are immediate, of the moment. The risk is known - and you'll not need to test for it again until you've addressed it, and *written* a test to show you that it's gone. (James Lyndsay)
+
 
 
 scripted and automated tests, prescribed tests, -> translated requirements
