@@ -3,7 +3,7 @@
 .. slug: optimizing-for-moments-of-discovery
 .. date: 2024-08-03
 .. category: 
-.. tags: 
+.. tags: exploratory testing, quality engineering
 .. type: text
 -->
 
@@ -30,6 +30,13 @@ refer to previous post
 
 > The difference between a requirement and a test case is the moment of discovery.
 
+previous post theoretical
+
+this one practical:
+- be intentional about exploratory testing
+- optimize for moments of discovery
+
+
 What's my point?
 - ET is key to good testing, because not based on translated requirements
 	- so better be intentional
@@ -48,45 +55,98 @@ What's my point?
 	- continuous ET and req eng, instead of all design upfront, ET at the end
 
 
-# Exploratory testing is key / Being intentional about exploratory testing
+# Be intentional about exploratory testing
 
-Because not based on requirements. So if not doing ET, then missing out.
+In the previous post I [distinguished](link://slug/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery#translated-requirements) test cases that are translated requirements from ones that aren't. This is basically something I learned from [James Lyndsay](https://www.workroom-productions.com/).
 
-it's not requirement vs test, it's requirements vs exploratory testing
-everyone does requirements (in some way), exploratory testing is still implicit, 'fringe', afterthought
+As he describes in *["Why Exploration has a Place in any Strategy"](https://www.workroom-productions.com/why-exploration-has-a-place-in-any-strategy/)*:
 
-everyone does design, requirements throughout, but not exploratory testing
-or ET is the key part of testing, the easily missed part, the not-done-well part
+> Some tests are designed to find risks. They're made on-the-fly and run once. Some are designed to tell us about retained value. They're made once, and run forever after. You need *both*: they tell you different things.
 
-it's done everywhere anyway, better to be intentional about it
+The tests with a focus on value are prescribed (as in: written before), they are based on requirements, on things we know we want. The tests with a focus on value are exploratory, they are based on our decisions in the moment, we look for surprises and decide how we feel about those surprises.
 
 
 
-In the previous post I distinguished test cases that are translated requirements from one that aren't.
+---
 
-As James Lyndsay explains it: the former are focused on value, the latter on risk. It makes sense to test the requirements. To confirm that our upfront, explicit requirements are met. That's not enough, however. We also have to look for surprises and decide how we feel about them. Exploratory testing is investigation and evaluation, all rolled into one.
+If both kinds of testing, prescribed and exploratory, are important, then why am I focusing on the exploratory part? There are three reasons:
+1. there are still a lot of misconceptions about what exploratory testing is
+1. there are a lot of misconceptions about how exploratory testing relates to scripted and automated testing
+1. a lot of exploratory testing is happening implicitly -> carries misconceptions with it
 
-https://www.workroom-productions.com/why-exploration-has-a-place-in-any-strategy/
+---
 
 
-Or as Elizabeth Zagroba said at NewCrafts 2024:
+## What is exploratory testing?
+
+During her [live exploratory testing session](https://ncrafts.io/speaker/elizabethzagroba)[^1] at [NewCrafts](https://ncrafts.io/) 2024, Elizabeth Zagroba adlibbed the following definition:
 
 > Exploratory testing is when you're testing and also thinking about what you're doing, and whether it matters.
 
-https://ncrafts.io/speaker/elizabethzagroba no video, because migration to youtube
+[^1]: Unfortunately the video is currently unavailable, as NewCrafts is migrating their videos from Vimeo to Youtube.
+
+This continuous reflection on what you're doing is a key component of exploratory testing. You're interacting with an application, discovering things, and making decisions on what to do next based on those discoveries.
+
+Or as [Maaret Pyhäjärvi](https://maaretp.com/) summarizes:
+
+> Exploratory testing is an approach to testing that centers learning. Test design and test execution form an inseparable pair where the application and feature we are testing is our external imagination. - [*"Exploratory Testing Foundations"*](https://dev.to/maaretp/exploratory-testing-foundations-4lb3)
+
+
+Some people might read these (or other) definitions and come away with the following picture of exploratory testing. It's someone clicking around in the application, hoping to discover a bug. While that technically is exploratory testing, it's not a very effective form of it.
 
 
 
-All the surprises you didn't find and address, are likely to catch up to you some day. So best to find the most important ones in time.
+### exploratory testing is a learned skill
+not clicking around
+not just based on domain expertise
+it is learnable -> (micro-)heuristics; styles
+
+experienced ET-er can test anything (domain expertise does help)
+
+noticing is a key skill in ET
+doing is key, so brief and debrief are lacking -> leftovers?
+
+noticing and deciding
+
+OODA
 
 
-external imagination (Maaret) -> What can I discover by interacting with it? from Five favourite testing questions, inc reference
-> “Exploratory testing is an approach to testing that centers learning. Test design and test execution form an inseparable pair where the application and feature we are testing is our external imagination.” - “Exploratory Testing Foundations” by Maaret Pyhäjärvi
 
-more stuff is output than you think
+### exploratory testing can cover any and all layers of the stack
+not as-if-a-user
+includes reading code and writing tests and building tools
 
 
-## it's better when it's intentional
+### tooling and automation make exploratory testing more powerful
+
+tooling supports, extends and/or amplifies
+not no tools/automation
+includes reading code and writing tests and building tools
+
+> We do use a wide variety of tools to support, extend and amplify our testing.
+Testing manifesto principle 5
+
+
+
+
+
+## How does it relate to scripted and automated testing?
+
+> We *need* exploratory tests. They're great. They tell us about risk - unexpected, unpredicted, emergent - that goes hand-in-hand with the system that has been delivered. Exploratory tests are immediate, of the moment. The risk is known - and you'll not need to test for it again until you've addressed it, and *written* a test to show you that it's gone. (James Lyndsay)
+
+also heard from Maaret, who has expounded(?) on that idea by focusing on how so many more things are output of learning, with learning including building, such as user stories
+more stuff is output than you think - Maaret
+
+segue into second part: optimizing for moments of discovery
+
+
+
+## What you miss out on by keeping exploratory testing implicit
+
+it's fundamental, not "if time left"; RISKS!
+
+noticing is a key skill in ET
+doing is key, so brief and debrief are lacking -> leftovers?
 
 happening implicitly anyway
 
@@ -95,13 +155,6 @@ how often do you look at the application, the code, the monitoring and it gives 
 
 so be intentional about it
 so not just when time left
-
-
-## it's a skill
-not clicking around
-
-noticing is a key skill in ET
-doing is key, so brief and debrief are lacking -> leftovers?
 
 Arguably the difference between good and bad testing is in the details:
 
@@ -113,21 +166,23 @@ Arguably the difference between good and bad testing is in the details:
 - using the application as your external imagination -> new ideas
 
 
-## it's full stack
-not as-if-a-user
-includes reading code and writing tests and building tools
-
-## tooling supports, extends and/or amplifies
-not no tools/automation
-includes reading code and writing tests and building tools
-
-> We do use a wide variety of tools to support, extend and amplify our testing.
-Testing manifesto principle 5
+OODA loop?
 
 
 
 
-# Optimizing for moments of discovery
+
+
+
+
+
+
+
+
+
+
+
+# Optimize for moments of discovery
 
 thin vertical slices for richer exploration, for JIT design and test
 as in elephant carpaccio (link to tag)
@@ -181,3 +236,17 @@ end with reflection questions?
 leftovers
 
 The first kind of testing is single loop learning, the second kind is double loop learning. You're not just learning if the product behaves as expected. You're learning about the product and its requirements and how the two interrelate.
+
+Exploratory testing is key / Being intentional about exploratory testing
+
+Because not based on requirements. So if not doing ET, then missing out.
+
+it's not requirement vs test, it's requirements vs exploratory testing
+everyone does requirements (in some way), exploratory testing is still implicit, 'fringe', afterthought
+
+everyone does design, requirements throughout, but not exploratory testing
+or ET is the key part of testing, the easily missed part, the not-done-well part
+
+it's done everywhere anyway, better to be intentional about it
+
+All the surprises you didn't find and address, are likely to catch up to you some day. So best to find the most important ones in time.

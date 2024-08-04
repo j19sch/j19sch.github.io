@@ -39,7 +39,7 @@ A test case describes something we want to find out about the thing we're buildi
 In that sense, the term "test idea" might be more apt than "test case". Whenever someone says "test case", I always wonder what they mean exactly. Do they mean *"something we should test"*, so a test idea or a charter for [exploratory testing](https://pragprog.com/titles/ehxta/explore-it/)? Or *"if you do this in the application, this other thing should happen"*, so what would I call a test case? Or do they mean a list of steps with detailed descriptions of what to do and what to check, so a test script?
 
 
-## Test cases that are translated requirements versus ones that aren't
+## Test cases that are translated requirements versus ones that aren't <a id="translated-requirements"></a>
 
 While all three (test ideas, test cases, and test scripts), count as test cases for the purpose of this post, there is a distinction to be made between test cases and test scripts on the one hand, and test ideas on the other.
 
