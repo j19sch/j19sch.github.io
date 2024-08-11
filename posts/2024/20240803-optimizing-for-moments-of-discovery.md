@@ -10,6 +10,8 @@
 ToDo:
 - remove file with previous version
 - link to EZ's NewCrafts talk
+- update title etc
+- save text for next post
 
 goal of this post: get concrete after previous more philosophical post
 
@@ -147,6 +149,8 @@ Instead, we could put writing a bit of code and evaluating it at the center of w
 [^2]: That's another misconception about exploratory testing. That you have to immediately start interacting with what you're testing. This is not true. Taking time to think is as much part of exploratory testing as is interacting with what you're testing.
 
 That was all a bit philosophical. What does this mean in practice?
+
+=> https://visible-quality.blogspot.com/2024/08/explaining-exploratory-testing.html
 
 
 ~Hence my statement that kicked off these blog posts: *"The difference between a test case and a requirement is the moment of discovery."*~
