@@ -129,7 +129,7 @@ This [confusion](link://slug/tester-is-an-overloaded-variable) of people, roles,
 [^2]: [Maaret Pyhäjärvi](https://maaretp.com/) has been doing great work mapping that our for her team(s). See for example ["Testers roles and services"](https://visible-quality.blogspot.com/2021/07/tester-roles-and-services.html) and [this diagram](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhvut-TK-LDv4g4x6h-I40bkbuwQGf5vwMHezCj5UmCormNxbkGDCmpCCgPFhKzeTPQfit2-Hnb1sasiruYcPG5xpeT7vvBEzDijgBvFHQYEQkV7WPwXbtbFm9292LgooYdvy9w6zvV2UXY9YXiHfmMCLV52MIQOCp39Dg_9dKPWsCuHr3ymudFmhRWw/s2104/Screenshot%202023-11-16%20at%2021.13.59.png) from a [more recent post](https://visible-quality.blogspot.com/2023/11/secret-sauce-to-great-testing-is-to.html).
 
 
-## Building bridges between communities
+## <a id="building-bridges"></a>Building bridges between communities
 
 Testers are the most adjacent to programmers, without being programmers. And yet, there are very few bridges between the communities. A tester at a developer conference and a developer at a tester conference will feel the same way: as the odd one out. While both communities need spaces where they can have deep conversations about their specializations, we also need spaces where these communities come together. And more than just those two communities. Business analysts, scrum masters, product owners, SREs, engineering managers, etc. Where is the space where we all together can have a conversation about software development?[^3]
 
