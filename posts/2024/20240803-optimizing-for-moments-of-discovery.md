@@ -152,6 +152,8 @@ That was all a bit philosophical. What does this mean in practice?
 
 => https://visible-quality.blogspot.com/2024/08/explaining-exploratory-testing.html
 
+=> https://elizabethzagroba.com/posts/2024/08_17_exploratory_testing/
+
 
 ~Hence my statement that kicked off these blog posts: *"The difference between a test case and a requirement is the moment of discovery."*~
 
