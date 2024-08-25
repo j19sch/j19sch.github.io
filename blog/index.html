@@ -17,7 +17,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <link rel="icon" href="../assets/favicons/favicon-16x16.png" sizes="16x16">
 <link rel="icon" href="../assets/favicons/favicon-32x32.png" sizes="32x32">
 <link rel="icon" href="../assets/favicons/favicon-96x96.png" sizes="96x96">
-<link rel="next" href="index-8.html" type="text/html">
+<link rel="next" href="index-9.html" type="text/html">
 <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
@@ -88,7 +88,34 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery/" class="u-url">The difference between a test case and a requirement is the moment of&nbsp;discovery</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024/what-do-you-fix-when-you-fix-a-test/" class="u-url">What do you fix when you fix a&nbsp;test?</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep&nbsp;Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2024/what-do-you-fix-when-you-fix-a-test/" rel="bookmark">
+            <time class="published dt-published" datetime="2024-08-25T00:00:00+02:00" itemprop="datePublished" title="25 August 2024">25 August 2024</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>You ran the tests<sup id="fnref:1"><a class="footnote-ref" href="2024/what-do-you-fix-when-you-fix-a-test/#fn:1">1</a></sup> - or a pipeline did it for you - and some of them failed. Time to fix the tests! But what is it exactly that needs&nbsp;fixing?</p>
+<p>There are quite a few things that might make a test&nbsp;fail:</p>
+<ol>
+<li>an issue with the&nbsp;build</li>
+<li>an issue with the pipeline (if that&#8217;s where the test&nbsp;runs)</li>
+<li>an issue in the environment the code under test is running&nbsp;on</li>
+<li>an issue in the environment the test code is running&nbsp;on</li>
+<li>a bug in the code under&nbsp;test</li>
+<li>a mistake in the test&nbsp;code</li>
+<li>a mistake in what the test should&nbsp;test</li>
+</ol>
+<p>Arguably, on the last three describe a test that fails. The test did its job detecting a problem. In the first four we didn&#8217;t even get that far. The issues prevented the test from doing its job. So in those cases, it&#8217;s not the test(s) as such that need&nbsp;fixing.</p>
+<p class="more"><a href="2024/what-do-you-fix-when-you-fix-a-test/">Read&nbsp;more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery/" class="u-url">The difference between a test case and a requirement is the moment of&nbsp;discovery</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep&nbsp;Schuurkes
@@ -284,29 +311,10 @@ and the language&#8217;s ecosystem (e.g. how to install those libraries<sup id="
 <p class="more"><a href="2023/old-school-scrum-was-rad/">Read&nbsp;more…</a></p>
 </div>
                 </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2023/a-good-tester-is-all-over-the-place/" class="u-url">A good tester is all over the&nbsp;place</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep&nbsp;Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2023/a-good-tester-is-all-over-the-place/" rel="bookmark">
-            <time class="published dt-published" datetime="2023-11-26T00:00:00+01:00" itemprop="datePublished" title="26 November 2023">26 November 2023</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>Over the past year, I&#8217;ve been thinking about how testing-related roles are still an unsolved problem in software development. We keep trying different permutations: shifting left and shifting right, being closer to the programmers while not too far from other testers, doing less testing ourselves so we can support others more,&nbsp;etc.</p>
-<p>And still, to be effective in any of these permutations, you can&#8217;t let yourself be limited by them. You need to work both inside and outside the existing structures. You have to &#8220;be all over the place&#8221;, in a good&nbsp;way.</p>
-<h2>Testers do&nbsp;testing</h2>
-<p>Let&#8217;s start with a straightforward statement: a tester tests. Then what is testing? I <a href="2018/reflections-on-my-testing-manifesto/">still like</a> the definition <em>&#8220;Testing is investigating in order to evaluate a product.&#8221;</em> The most obvious thing to investigate, to test, is the code that is being written. The best way to do this, in my opinion, is through the combination of exploratory testing and test automation, i.e. what <a href="https://maaretp.com/">Maaret Pyhäjärvi</a> has named &#8220;<a href="https://www.youtube.com/watch?v=T_67oQrPZhQ">contemporary exploratory testing</a>&#8220;. And to be clear, while the execution part tends to be the most visible, effective testing also needs good test strategy, design, and&nbsp;reporting.</p>
-<p class="more"><a href="2023/a-good-tester-is-all-over-the-place/">Read&nbsp;more…</a></p>
-</div>
-                </div>
             </article>
 </div>
             <ul class="pager postindexpager clearfix">
-<li class="next"><a href="index-8.html" rel="next">Older&nbsp;posts</a></li>
+<li class="next"><a href="index-9.html" rel="next">Older&nbsp;posts</a></li>
         </ul>
 <!--End of body content--><footer id="footer">
             Contents © 2024 

@@ -63,11 +63,11 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/archive.html</loc>
-  <lastmod>2024-05-27T18:45:00Z</lastmod>
+  <lastmod>2024-08-25T14:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/</loc>
-  <lastmod>2024-05-27T18:45:00Z</lastmod>
+  <lastmod>2024-08-10T14:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/2012/dewt2-becoming-a-context-driven-tester/</loc>
@@ -358,6 +358,10 @@
   <lastmod>2024-05-27T18:45:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/blog/2024/optimizing-for-moments-of-discovery/</loc>
+  <lastmod>2024-08-10T14:46:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/blog/2024/so-you-want-to-become-a-test-engineer/</loc>
   <lastmod>2024-05-27T18:45:00Z</lastmod>
  </url>
@@ -370,12 +374,20 @@
   <lastmod>2024-05-27T18:45:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/blog/2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery-part-two/</loc>
+  <lastmod>2024-08-10T14:46:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/blog/2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery/</loc>
   <lastmod>2024-05-27T18:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/2024/two-short-checklists-for-scrum/</loc>
   <lastmod>2024-05-27T18:45:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/blog/2024/what-do-you-fix-when-you-fix-a-test/</loc>
+  <lastmod>2024-08-25T14:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/clojure/</loc>
@@ -447,7 +459,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-4.html</loc>
-  <lastmod>2024-05-27T18:45:00Z</lastmod>
+  <lastmod>2024-08-25T14:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-5.html</loc>
@@ -463,7 +475,11 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-8.html</loc>
-  <lastmod>2024-05-27T18:45:00Z</lastmod>
+  <lastmod>2024-08-10T14:46:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/blog/index-9.html</loc>
+  <lastmod>2024-08-25T15:18:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/</loc>

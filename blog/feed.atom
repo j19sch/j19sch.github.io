@@ -3,13 +3,41 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes</title>
   <id>https://smallsheds.garden/blog/feed.atom</id>
-  <updated>2024-05-27T18:45:47Z</updated>
+  <updated>2024-08-25T15:16:20Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/blog/feed.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>What do you fix when you fix a test?</title>
+    <id>https://smallsheds.garden/blog/2024/what-do-you-fix-when-you-fix-a-test/</id>
+    <updated>2024-08-25T00:00:00+02:00</updated>
+    <published>2024-08-25T00:00:00+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2024/what-do-you-fix-when-you-fix-a-test/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;You ran the tests&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2024/what-do-you-fix-when-you-fix-a-test/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; - or a pipeline did it for you - and some of them failed. Time to fix the tests! But what is it exactly that needs fixing?&lt;/p&gt;
+&lt;p&gt;There are quite a few things that might make a test fail:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;an issue with the build&lt;/li&gt;
+&lt;li&gt;an issue with the pipeline (if that's where the test runs)&lt;/li&gt;
+&lt;li&gt;an issue in the environment the code under test is running on&lt;/li&gt;
+&lt;li&gt;an issue in the environment the test code is running on&lt;/li&gt;
+&lt;li&gt;a bug in the code under test&lt;/li&gt;
+&lt;li&gt;a mistake in the test code&lt;/li&gt;
+&lt;li&gt;a mistake in what the test should test&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Arguably, on the last three describe a test that fails. The test did its job detecting a problem. In the first four we didn't even get that far. The issues prevented the test from doing its job. So in those cases, it's not the test(s) as such that need fixing.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2024/what-do-you-fix-when-you-fix-a-test/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="coverage" label="coverage"/>
+    <category term="quality-engineering" label="quality engineering"/>
+    <category term="software-testing" label="software testing"/>
+    <category term="test-automation" label="test automation"/>
+    <category term="test-strategy" label="test strategy"/>
+  </entry>
   <entry>
     <title>The difference between a test case and a requirement is the moment of discovery</title>
     <id>https://smallsheds.garden/blog/2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery/</id>
@@ -201,25 +229,5 @@ and the language's ecosystem (e.g. how to install those libraries&lt;sup id="fnr
     <category term="agile" label="agile"/>
     <category term="books" label="books"/>
     <category term="scrum" label="scrum"/>
-  </entry>
-  <entry>
-    <title>A good tester is all over the place</title>
-    <id>https://smallsheds.garden/blog/2023/a-good-tester-is-all-over-the-place/</id>
-    <updated>2023-11-26T00:00:00+01:00</updated>
-    <published>2023-11-26T00:00:00+01:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2023/a-good-tester-is-all-over-the-place/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;Over the past year, I've been thinking about how testing-related roles are still an unsolved problem in software development. We keep trying different permutations: shifting left and shifting right, being closer to the programmers while not too far from other testers, doing less testing ourselves so we can support others more, etc.&lt;/p&gt;
-&lt;p&gt;And still, to be effective in any of these permutations, you can't let yourself be limited by them. You need to work both inside and outside the existing structures. You have to "be all over the place", in a good way.&lt;/p&gt;
-&lt;h2&gt;Testers do testing&lt;/h2&gt;
-&lt;p&gt;Let's start with a straightforward statement: a tester tests. Then what is testing? I &lt;a href="https://smallsheds.garden/blog/2018/reflections-on-my-testing-manifesto/"&gt;still like&lt;/a&gt; the definition &lt;em&gt;"Testing is investigating in order to evaluate a product."&lt;/em&gt; The most obvious thing to investigate, to test, is the code that is being written. The best way to do this, in my opinion, is through the combination of exploratory testing and test automation, i.e. what &lt;a href="https://maaretp.com/"&gt;Maaret Pyhäjärvi&lt;/a&gt; has named "&lt;a href="https://www.youtube.com/watch?v=T_67oQrPZhQ"&gt;contemporary exploratory testing&lt;/a&gt;". And to be clear, while the execution part tends to be the most visible, effective testing also needs good test strategy, design, and reporting.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2023/a-good-tester-is-all-over-the-place/"&gt;Read more…&lt;/a&gt; (11 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="management" label="management"/>
-    <category term="quality-engineering" label="quality engineering"/>
-    <category term="software-development" label="software development"/>
-    <category term="software-testing" label="software testing"/>
-    <category term="test-management" label="test management"/>
   </entry>
 </feed>
