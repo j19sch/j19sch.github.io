@@ -47,7 +47,7 @@ But sometimes it's not. The test loses something: some coverage, some clarity of
 That test is now a legacy test.
 
 
-# Avoiding the trap of legacy tests {.small}
+# Legacy tests {.small}
 
 Legacy tests are a sub-set of legacy code: code that you can't throw away, but wish would be different. Or as [Ángel Siendones Sillero](https://www.linkedin.com/in/angel-siendones-sillero) has put it:
 
@@ -57,85 +57,22 @@ Legacy tests are a sub-set of legacy code: code that you can't throw away, but w
 
 Translated to legacy tests, this means that the existing tests are making more decisions about what and how things are tested, than the team working on them.
 
-So how do you avoid this trap of legacy tests?
+# Avoiding the trap of legacy tests {.small}
 
-First of all, it's helpful to distinguish tests-as-code and tests-as-tests.
+So how do you avoid this trap of legacy tests? I'm not going to claim I have the full answer, but I do have three suggestions.
 
-Secondly, make sure your tests clearly express their intention. What exaclty is being tested here? You do this by giving tests clear names, separating setup and teardown from the actual test, and by being deliberate in how you group tests together.
+First of all, it's helpful to [distinguish tests-as-code and tests-as-tests](link://slug/how-this-tester-writes-code#tests-as-code-vs-tests-as-tests). When you're thinking about tests as tests-as-tests, you're thinking about the information the tests can give you about the code or application under test. When you're thinking about tests as tests-as-code, you're thinking about how you can get the test code to do what you want it to do. Especially when tests fail at an incoventient time, it's tempting to only treat them as code. How can you change the code of the test so that it passes? That's when it's time to take a step back and look at the test from the other perspective: what information is this test supposed to provide and how do I make sure it keeps doing so?
 
-Last, but not least, you need to have ongoing conversations about your [testing strategy]((link://slug/test-strategy-primer)).
+Asking (and answering) that question is a lot easier when your tests clearly express their intention. What exactly is each test trying to test. You do this by giving tests clear names, separating setup and teardown code from the actual test, and by being deliberare in how you group tests together. It might also mean being a little less smart in your code, making it as easy as possible to read - even if it's at the expense of a little maintainability.
 
+Last but not least, you need to have an ongoing conversation with your team about your [testing strategy](link://slug/test-strategy-primer). What do you want to test, why, where, and how? Even though you want to make your test code as expressive as possible, it can never express itself fully. As Peter Naur wrote in his article "Programming as Theory Building" (1985)[^3]:
 
----
+*"In terms of Ryle’s notion of theory, what has to be built by the programmer is a theory of how certain affairs of the world will be handled by, or supported by, a computer program. On the Theory Building View of programming the theory built by the programmers has primacy over such other products as program texts, user documentation, and additional documentation such as specifications."*
 
-Have you encountered legacy tests? What are some of the signs you look out for? And what are your favorite ways to deal with legacy tests?
+[^3]: I only discovered this article because Alistair Cockburn included it in [Appendix B](https://gwern.net/doc/cs/algorithm/1985-naur.pdf) of his excellent book "Agile Software Development".
 
-
----
----
----
-
-
-- tests-as-code vs tests-as-tests -> different demands wrt readability; challenge DOM vs UI
-- clarity of intention: name, structure of the test, test grouping -> build a theory of the system (Naur)
-- explicit about your testing strategy, ongoing conversations
-
-
-- discipline
-- ongoing conversation -> programming as theory building; the tests won't speak for themselves
-
-
-
-Theory building
-
-"On the basis of the Theory Building View the decay of a program text as a result of modifications made by programmers without a proper grasp of the underlying theory becomes understandable."
-
-"[...] the primary aim of programming is to have the programmers build a theory of the way the matters at hand may be supported by the execution of a program."
-
-
-
-# Avoiding the trap of legacy tests
-
-In my experience, an important factor is if you're engaging with the tests-as-code or as the tests-as-tests.
-
-> If you're engaging with the tests-as-code, it's very tempting to look at the actual result reported by the test runner, think "yeah that looks right" and update the test to assert on the actual result. And often enough that's fine. But sometimes it's not. And over time it can lead to a test losing a lot of its value. It provides enough value not to delete it, but it's no longer a focused test. It's not very clear anymore what one thing it's testing. Or how in combination with the surrounding tests, provides sufficient coverage of the thing being tested.
-
-> They are legacy tests. Tests do not escape the problem of legacy code.
-
----
-
-talk about your [testing stragegy](link://slug/test-strategy-primer)
-
-discipline
-
-importance of tests expressing their design, their reason for existing as much as possible
-but limit, programming as theory building
-
-optimize for readability / understandability, enough in my head without having to also model test code
-2019-06-08 how-this-tester-writes-code/ -> Tests-as-code versus tests-as-tests
-
-challenge when test interface != human interface, e.g. rendered page vs DOM
-
- Programming as theory building
- papers in systems
- https://papersin.systems/
- https://ti.to/bredemeyer/naurtheorybuildingaug2024
-
- https://gwern.net/doc/cs/algorithm/1985-naur.pdf
- https://pablo.rauzy.name/dev/naur1985programming.pdf
-
-Alistair Cockburn book
+The only way to have a true shared understanding about the tests, is to have conversations about the tests. So that when there's a mistake in what the test should test, you don't only fix the test code, you fox the test design as well.
 
 ---
 
 Have you encountered legacy tests? What are some of the signs you look out for? And what are your favorite ways to deal with legacy tests?
-
-
-<!-- 
-
-not tech debt, just chores not done -> link!
-https://twtext.com/article/1376628481878990852
-Yvonne Lam
-
-> My theory of tech debt is that housework is the correct metaphor for the thing we call tech debt, but we can't use it because tech has been made up of people who don't do housework, or manage housework being done. 
- -->
