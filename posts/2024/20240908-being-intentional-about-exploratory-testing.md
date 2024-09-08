@@ -1,10 +1,11 @@
 <!--
-.. title: Optimizing for moments of discovery
-.. slug: optimizing-for-moments-of-discovery
-.. date: 2024-08-03
+.. title: Being intentional about exploratory testing
+.. slug: being-intentional-about-exploratory-testing
+.. date: 2024-09-08
 .. category: 
 .. tags: exploratory testing, quality engineering
 .. type: text
+.. description: todo
 -->
 
 ToDo:
@@ -12,6 +13,7 @@ ToDo:
 - link to EZ's NewCrafts talk
 - update title etc
 - save text for next post
+- link from "what do you fix" to this post
 
 goal of this post: get concrete after previous more philosophical post
 
@@ -72,13 +74,14 @@ If both of these kinds of testing, prescribed and exploratory, are important, th
 There are three reasons:
 
 1. there are still a lot of misconceptions about what exploratory testing is
-1. there are still a lot of misconcetopms about how explorarory testing relates to prescribed testing
+1. there are still a lot of misconceptions about how explorarory testing relates to prescribed testing
 1. there's a lot of hidden, implicit exploratory testing that could deliver more value
 
+<!-- TEASER_END -->
 
 ## What is exploratory testing?
 
-During her [live exploratory testing session](https://ncrafts.io/speaker/elizabethzagroba)[^1] at [NewCrafts](https://ncrafts.io/) 2024, Elizabeth Zagroba adlibbed the following definition:
+During her [live exploratory testing session](https://ncrafts.io/speaker/elizabethzagroba)[^1] at [NewCrafts](https://ncrafts.io/) 2024, [Elizabeth Zagroba](https://elizabethzagroba.com/) adlibbed the following definition:
 
 > Exploratory testing is when you're testing and also thinking about what you're doing, and whether it matters.
 
@@ -86,17 +89,17 @@ During her [live exploratory testing session](https://ncrafts.io/speaker/elizabe
 
 This continuous reflection on what you're doing is a key component of exploratory testing. You're interacting with an application, discovering things, and making decisions on what to do next based on those discoveries.
 
-Or as [Maaret Pyhäjärvi](https://maaretp.com/) summarizes:
+Or as [Maaret Pyhäjärvi](https://maaretp.com/) summarizes in her [*"Exploratory Testing Foundations"*](https://dev.to/maaretp/exploratory-testing-foundations-4lb3):
 
-> Exploratory testing is an approach to testing that centers learning. Test design and test execution form an inseparable pair where the application and feature we are testing is our external imagination. - [*"Exploratory Testing Foundations"*](https://dev.to/maaretp/exploratory-testing-foundations-4lb3)
+> Exploratory testing is an approach to testing that centers learning. Test design and test execution form an inseparable pair where the application and feature we are testing is our external imagination.
 
 
-Some people might read these (or other) definitions and walk away with the following picture of exploratory testing: exploratory testing is someone clicking around in the application, hoping to discover a bug. While that technically is exploratory testing, it's not a very effective form of it.
+Some people might read these (or other) definitions and walk away with the following picture of exploratory testing: exploratory testing is someone clicking around in the application, hoping to discover a bug. While technically that is exploratory testing, it's not a very effective form of it.
 
 There are two important things missing from that picture of exploratory testing:
 
 - exploratory testing is a learned skill
-- exploratory testing is technical
+- exploratory testing can be as 'technical' as you want
 
 ### Exploratory testing is a learned skill
 
@@ -110,7 +113,9 @@ For decades testers have been collecting heuristics that have helped them guide 
 
 Having these lists of heuristics is a great start, but applying them hinges on two skills: noticing what there is to notice, and choosing the right heuristic to apply. Neither can be done perfectly. You can't notice everything. You can't know for sure upfront what the right heuristic is.
 
-But you can do these (noticing and deciding) rather well or rather poorly. And that's the invisible skill of exploratory testing. Invisible, because it's all in the mind of the person of doing exploratory testing. (One day I'll properly study Boyd's [OODA loop ](https://en.wikipedia.org/wiki/OODA_loop) and how it applies to exploratory testing.) And any skill can be practiced and refined. Exploratory testing is not just something some people just happen to do well due to some innate ability.
+But you can do these (noticing and deciding) rather well or rather poorly. And that's the invisible skill of exploratory testing. Invisible, because it's all in the mind of the person of doing exploratory testing.[^3] And as any other skill, exploratory testing can be practiced and refined. It's not something some people just happen to do well due to some innate ability.
+
+[^3]: One day I'll properly study Boyd's [OODA loop ](https://en.wikipedia.org/wiki/OODA_loop) and how it applies to exploratory testing.
 
 
 ### Exploratory testing can be as 'technical' as you want
@@ -121,15 +126,62 @@ Similarly, exploratory testing is always technical. You're investigating and eva
 
 Exploratory testing can be done on any piece of the application, anywhere in the stack. If you've ever looked at a function or unit test, and said to yourself *"I wonder what this function does if I give it these parameters..."*, added a test with those parameters, and ran it, you have done exploratory testing.
 
-You can include as many or few layers of the stack as you want. Whether it's the whole stack, just the backed, the frontend with a mock service, etc. Any way to interact with an application, any interface, is valid to exploratory testing. The code itself, APIs, CLIs, GUIs, config files, the database, etc.
+You can include as many or few layers of the stack as you want. Whether it's the whole stack, just the backend, the frontend with a mock service, etc. Any way to interact with an application, any interface, is valid to exploratory testing. The code itself, APIs, CLIs, GUIs, config files, the database, etc.
 
-This also means that tools are crucial to exploratory testing. Tools [support, extend and/or amplify](link://slug/reflections-on-my-testing-manifesto#5-tools) our testing. This includes anything from a notebook, to browser dev tools, to an IDE, to test data generators, to code that interacts with the application in some way.
+This also means that tools are crucial to exploratory testing. [Tools support, extend and/or amplify](link://slug/reflections-on-my-testing-manifesto#5-tools) our testing. This includes anything from a notebook, to browser dev tools, to an IDE, to test data generators, to code that interacts with the application in some way.
 
-Anything that helps you learn about the application is fair game in exploratory testing.
+Anything that helps you learn about the application is fair game in exploratory testing. How technical that testing is, depends on what it is you want to test and how you want to approach that.
 
 
 
 ## How does exploratory testing relate to prescribed / scripted and automated testing?
+
+not separate
+
+exploratory is learning, so input for presribed testing, and input for design and build
+so how does it make sense to separate the three?
+
+
+what are the miconceptions:
+
+- exploratory testing is the cloud on top
+- exploratory testing is after you've done the rest
+- requirements are prescribed tests are input for building, not for learning
+- exploratory and prescribed testing are two different things
+	- not what James Lyndsay said
+	- exploratory -> learning, prescribed -> confirming, change detection, check if still
+
+better:
+
+- prescribed tests as output of exploratory testing
+- design and build and test go together
+
+so what is input and what is output
+
+prescribed tests are output of learning, exploratory testing
+-> link with previous post: what do you fix when you fix a test
+
+still a lingering belief we can mostly specify software in advance, instead of having to discover as we go
+	instead of write a bit, evaluate a bit
+
+===> prescribed tests and requirements are ways to capture what we have learned so far; we learn through exploratory testing (in the broad sense)
+
+==> so exploratory testing is input for scripted and automated tests (one of the inputs)
+
+==> exploratory testing is learning, so what's the output of learning: test cases, test automation, user stories, docs
+
+==> > "It is in the doing of the work that we discover the work that we must do. Doing exposes reality." Woody Zuill, https://agilemaxims.com/
+
+==> we learn through building and investigating what we must build, so let's write down what we learned
+
+This is not a new thought. As James Lyndsay wrote in ["Why Exploration has a Place in any Strategy"](https://www.workroom-productions.com/why-exploration-has-a-place-in-any-strategy/):
+
+> We *need* exploratory tests. They're great. They tell us about risk - unexpected, unpredicted, emergent - that goes hand-in-hand with the system that has been delivered. Exploratory tests are immediate, of the moment. The risk is known - and you'll not need to test for it again until you've addressed it, and *written* a test to show you that it's gone.
+
+And [Maaret Pyhäjärvi](https://maaretp.com/) has been saying the same. In [contemporary exploratory testing](https://www.getxray.app/blog/contemporary-exploratory-testing-podcast-highlights) exploration and automation go hand-in-hand. And test cases, whether they are executable (i.e. automated) or not, are the output of (exploratory) testing.
+
+---
+
 
 => post starts with this in "Be intentional about exploratory testing"
 
@@ -150,41 +202,26 @@ Instead, we could put writing a bit of code and evaluating it at the center of w
 
 That was all a bit philosophical. What does this mean in practice?
 
-=> https://visible-quality.blogspot.com/2024/08/explaining-exploratory-testing.html
+=> https://visible-quality.blogspot.com/2024/08/explaining-exploratory-testing.html: a typical social agreement of how I work with an agile team
 
-=> https://elizabethzagroba.com/posts/2024/08_17_exploratory_testing/
+=> https://elizabethzagroba.com/posts/2024/08_17_exploratory_testing/: what and how
 
 
 ~Hence my statement that kicked off these blog posts: *"The difference between a test case and a requirement is the moment of discovery."*~
 
 
 
-
-
 ---
 
-This is not a new thought as such. As James Lyndsay wrote in ["Why Exploration has a Place in any Strategy"](https://www.workroom-productions.com/why-exploration-has-a-place-in-any-strategy/):
 
-> We *need* exploratory tests. They're great. They tell us about risk - unexpected, unpredicted, emergent - that goes hand-in-hand with the system that has been delivered. Exploratory tests are immediate, of the moment. The risk is known - and you'll not need to test for it again until you've addressed it, and *written* a test to show you that it's gone.
-
-And [Maaret Pyhäjärvi](https://maaretp.com/) has been saying the same. In [contemporary exploratory testing](https://www.getxray.app/blog/contemporary-exploratory-testing-podcast-highlights) exploration and automation go hand-in-hand. And test cases, whether they are executable (i.e. automated) or not, are the output of (exploratory) testing.
-
-
-==> so exploratory testing is input for scripted and automated tests (one of the inputs)
-==> exploratory testing is learning, so what's the output of learning: test cases, test automation, user stories, docs
-==> > "It is in the doing of the work that we discover the work that we must do. Doing exposes reality." Woody Zuill, https://agilemaxims.com/
-==> we learn through building and investigating what we must build, so let's write down what we learned
 ==> optimizing for moments of discovery
 
----
 
-the incorrect views:
+the incorrect views on exploratory testing:
 - when time left
 - domain experts
 - test automation pyramid, aka sprinkled on top
 - agile testing quadrants? kinda, quadrant 3
-
-
 
 
 
@@ -232,7 +269,7 @@ Arguably the difference between good and bad testing is in the details:
 - how varied are your oracles
 - using the application as your external imagination -> new ideas
 
-
+the skill is in the doing of ET, so pairing and ensembling with reflection/teaching/coaching is the way forward
 
 
 
