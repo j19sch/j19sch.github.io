@@ -154,7 +154,7 @@ what are the miconceptions:
 better:
 
 - prescribed tests as output of exploratory testing
-- design and build and test go together
+- design and build and test go together ======> optimizing for moments of discovery, which is next post
 
 so what is input and what is output
 
