@@ -76,7 +76,7 @@ If both of these kinds of testing, prescribed and exploratory, are important, th
 There are three reasons:
 
 1. there are still a lot of misconceptions about what exploratory testing is
-1. there are still a lot of misconceptions about how explorarory testing relates to prescribed testing
+1. there are still a lot of misconceptions about how exploratory testing relates to prescribed testing
 1. there's a lot of hidden, implicit exploratory testing that could deliver more value
 
 <!-- TEASER_END -->
@@ -145,7 +145,7 @@ As [Woody Zuill](https://woodyzuill.com/) states in one of [his Agile Maxims](ht
 
 > It is in the doing of the work that we discover the work that we must do. Doing exposes reality.
 
-Building and investigating what we have built, is key to discovering what it is that we should build. That investigation is exploratory testing. And once we know a little more about what we shuild build, it's a smart move to capture what we have learned. Prescribed tests, especially when automated and running in a pipeline, are a great way to do so.
+Building and investigating what we have built, is key to discovering what it is that we should build. That investigation is exploratory testing. And once we know a little more about what we should build, it's a smart move to capture what we have learned. Prescribed tests, especially when automated and running in a pipeline, are a great way to do so.
 
 This is not a new thought. As James Lyndsay wrote in ["Why Exploration has a Place in any Strategy"](https://www.workroom-productions.com/why-exploration-has-a-place-in-any-strategy/):
 
@@ -155,13 +155,34 @@ And [Maaret Pyhäjärvi](https://maaretp.com/) has been saying the same. In [con
 
 
 
-
-
-
 ## 3. Being intentional about exploratory testing
 
-"there's a lot of hidden, implicit exploratory testing that could deliver more value"
- What you miss out on by keeping exploratory testing implicit
+By now you may have realized that the question is not whether you do or don't do exploratory testing. It's being done already, whether you explicitly label it as such or not.
+
+The question is if you're being intentional about it. Intentional about the when: are people talking about exploratory testing during build, during test, and during monitoring? And about the what: are people talking about how to get better at it?
+
+
+To get better at exploratory testing, the following skills are key:
+
+1. what do you notice while testing?
+2. how do you make choices on what to do next?
+3. how many different variations and perspectives can you come up with? -> double with 2 and 4, kindof?
+4. in how many ways can you model the thing you are testing?
+5. how rich and varied are your oracles for evaluating what you discover?
+6. to what degree have you mastered the tools that can help you?
+
+What's crucial to me in that list, is that the skill in exploratory testing is in doing the exploratory testing. So the best way to learn, is to pair up or ensemble with others, preferably including someone who already has built up quite some skills. And as you test, reflect on what you're doing and discuss it with each other.
+
+---
+
+How much explicit exploratory testing does your team do? And how much do they do implicitly? What skills are you strong in and which less so? Are there any exploratory testing skills missing from my list?
+
+
+---
+
+key point
+- "there's a lot of hidden, implicit exploratory testing that could deliver more value"
+- What you miss out on by keeping exploratory testing implicit
 
 if exploratory testing is so important, there's good and bad news
 it's important, because not doing it is deciding you don't need to discover additional requirements
@@ -169,11 +190,7 @@ arguably it's not about doing more of it, there's already so much of it happenin
 
 exploratory testing and automation start to feed into each other -> previous paragraphs
 
-
 it's everywhere, it's fundamental, not "if time left"; RISKS!
-
-noticing is a key skill in ET, noticing and deciding
-doing is key, so brief and debrief are lacking -> leftovers?
 
 happening implicitly anyway
 
@@ -183,14 +200,19 @@ how often do you look at the application, the code, the monitoring and it gives 
 so be intentional about it
 so not just when time left
 
-Arguably the difference between good and bad testing is in the details:
-
+Arguably the difference between good and bad testing is in the details/specifics:
 - what do you notice while testing? seeing what actually is there
-- what choices do you make to select your test data
+- what choices do you make to select your test data -> or what decisions in general?
 - how many variations can you come up with, to try? -> "here is a rock? what can you do with it?"
 - modelling the application
-- how varied are your oracles
-- using the application as your external imagination -> new ideas
+- how rich and varied are your oracles
+
+
+using the application as your external imagination -> new ideas
+
+noticing is a key skill in ET, noticing and deciding
+doing is key, so brief and debrief are lacking -> leftovers?
+
 
 the skill is in the doing of ET, so pairing and ensembling with reflection/teaching/coaching is the way forward
 
