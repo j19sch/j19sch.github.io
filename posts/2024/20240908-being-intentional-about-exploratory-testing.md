@@ -15,6 +15,8 @@ ToDo:
 - save text for next post
 - link from "what do you fix" to this post
 
+
+
 goal of this post: get concrete after previous more philosophical post
 
 ---
@@ -79,7 +81,7 @@ There are three reasons:
 
 <!-- TEASER_END -->
 
-## What is exploratory testing?
+## 1. What is exploratory testing?
 
 During her [live exploratory testing session](https://ncrafts.io/speaker/elizabethzagroba)[^1] at [NewCrafts](https://ncrafts.io/) 2024, [Elizabeth Zagroba](https://elizabethzagroba.com/) adlibbed the following definition:
 
@@ -113,9 +115,7 @@ For decades testers have been collecting heuristics that have helped them guide 
 
 Having these lists of heuristics is a great start, but applying them hinges on two skills: noticing what there is to notice, and choosing the right heuristic to apply. Neither can be done perfectly. You can't notice everything. You can't know for sure upfront what the right heuristic is.
 
-But you can do these (noticing and deciding) rather well or rather poorly. And that's the invisible skill of exploratory testing. Invisible, because it's all in the mind of the person of doing exploratory testing.[^3] And as any other skill, exploratory testing can be practiced and refined. It's not something some people just happen to do well due to some innate ability.
-
-[^3]: One day I'll properly study Boyd's [OODA loop ](https://en.wikipedia.org/wiki/OODA_loop) and how it applies to exploratory testing.
+But you can do these (noticing and deciding) rather well or rather poorly. And that's the invisible skill of exploratory testing. Invisible, because it's all in the mind of the person of doing exploratory testing. And as any other skill, exploratory testing can be practiced and refined. It's not something some people just happen to do well due to some innate ability.
 
 
 ### Exploratory testing can be as 'technical' as you want
@@ -128,117 +128,40 @@ Exploratory testing can be done on any piece of the application, anywhere in the
 
 You can include as many or few layers of the stack as you want. Whether it's the whole stack, just the backend, the frontend with a mock service, etc. Any way to interact with an application, any interface, is valid to exploratory testing. The code itself, APIs, CLIs, GUIs, config files, the database, etc.
 
-This also means that tools are crucial to exploratory testing. [Tools support, extend and/or amplify](link://slug/reflections-on-my-testing-manifesto#5-tools) our testing. This includes anything from a notebook, to browser dev tools, to an IDE, to test data generators, to code that interacts with the application in some way.
+So how can exploratory testing not be technical?
 
-Anything that helps you learn about the application is fair game in exploratory testing. How technical that testing is, depends on what it is you want to test and how you want to approach that.
+<!-- This also means that tools are crucial to exploratory testing. [Tools support, extend and/or amplify](link://slug/reflections-on-my-testing-manifesto#5-tools) our testing. This includes anything from a notebook, to browser dev tools, to an IDE, to test data generators, to code that interacts with the application in some way.
 
-
-
-## How does exploratory testing relate to prescribed / scripted and automated testing?
-
-not separate
-
-exploratory is learning, so input for presribed testing, and input for design and build
-so how does it make sense to separate the three?
+Anything that helps you learn about the application is fair game in exploratory testing. How technical that testing is, depends on what it is you want to test and how you want to approach that. -->
 
 
-what are the miconceptions:
 
-- exploratory testing is the cloud on top
-- exploratory testing is after you've done the rest
-- requirements are prescribed tests are input for building, not for learning
-- exploratory and prescribed testing are two different things
-	- not what James Lyndsay said
-	- exploratory -> learning, prescribed -> confirming, change detection, check if still
+## 2. How does exploratory testing relate to prescribed testing?
 
-better:
+Exploratory testing is about learning and discovery. Prescribed tests (whether automated or not) are built based on that learning. Which is why in the [previous post of this series](link://slug/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery) stated: *"The difference between a test case and a requirement is the moment of discovery."* We discover things through exploratory testing and through requirements engineering. Requirements and prescribed tests are the outputs of those discoveries.
 
-- prescribed tests as output of exploratory testing
-- design and build and test go together ======> optimizing for moments of discovery, which is next post
+As [Woody Zuill](https://woodyzuill.com/) states in one of [his Agile Maxims](https://agilemaxims.com/
+):
 
-so what is input and what is output
+> It is in the doing of the work that we discover the work that we must do. Doing exposes reality.
 
-prescribed tests are output of learning, exploratory testing
--> link with previous post: what do you fix when you fix a test
-
-still a lingering belief we can mostly specify software in advance, instead of having to discover as we go
-	instead of write a bit, evaluate a bit
-
-===> prescribed tests and requirements are ways to capture what we have learned so far; we learn through exploratory testing (in the broad sense)
-
-==> so exploratory testing is input for scripted and automated tests (one of the inputs)
-
-==> exploratory testing is learning, so what's the output of learning: test cases, test automation, user stories, docs
-
-==> > "It is in the doing of the work that we discover the work that we must do. Doing exposes reality." Woody Zuill, https://agilemaxims.com/
-
-==> we learn through building and investigating what we must build, so let's write down what we learned
+Building and investigating what we have built, is key to discovering what it is that we should build. That investigation is exploratory testing. And once we know a little more about what we shuild build, it's a smart move to capture what we have learned. Prescribed tests, especially when automated and running in a pipeline, are a great way to do so.
 
 This is not a new thought. As James Lyndsay wrote in ["Why Exploration has a Place in any Strategy"](https://www.workroom-productions.com/why-exploration-has-a-place-in-any-strategy/):
 
 > We *need* exploratory tests. They're great. They tell us about risk - unexpected, unpredicted, emergent - that goes hand-in-hand with the system that has been delivered. Exploratory tests are immediate, of the moment. The risk is known - and you'll not need to test for it again until you've addressed it, and *written* a test to show you that it's gone.
 
-And [Maaret Pyhäjärvi](https://maaretp.com/) has been saying the same. In [contemporary exploratory testing](https://www.getxray.app/blog/contemporary-exploratory-testing-podcast-highlights) exploration and automation go hand-in-hand. And test cases, whether they are executable (i.e. automated) or not, are the output of (exploratory) testing.
-
----
-
-
-=> post starts with this in "Be intentional about exploratory testing"
-
-To figure out the relation between exploratory testing and prescribed testing (test scripts and automation), we only need to go back to the start of this post. Prescribed tests are based on requirements. Exploratory testing is a way to discover additional requirements.
-
-Arguably, exploratory testing is not only about discovering additional requirements. It's also about discovering in which way(s) the application inadvertently does not meet some explicit or implicit (because 'obvious') requirement. That leads to some interesting questions about where "design" ends and "build" starts. Is writing code the part where we build the software? Or is it creating the final and most-detailed design? It also leads to interesting quetsions about the relation between "design" and "build" on the one hand, and "test" on the other. Do we first design and build, and then test? Or are they interrelated and intertwined?
-
-If you write code and momentarily forgot about a requirement, does your code meet the requirements?
-
-To me this shows the problematic position of requirements. In many small ways we still seem to think it's possible that if you just write down what you want the software to do, it can be built, and then tested to see if it meets the requirements. That in essence, it's a mechanical, linear, algorithmical process. And sure we agree requirements can never be complete and unambiguous and ... but that's nuance to this belief at the core of it all: it is possible to sufficiently define a piece of software through requirements.
-! lingering old beliefs!
-
-This makes us see requirements and user stories and prescribed tests (both scripts as automation) as input - and sufficient input! - for other work. It's essentially still a waterfall.
-
-Instead, we could put writing a bit of code and evaluating it at the center of what we do. And yes, it's probably a good idea to take some time to think for a bit in advance[^2] about what code you'll write. And think about what you're writing, as you write it. And think some more after as well. (We could even call (most of) this sort of thinking "testing".) And all of that thinking results in output. Code and requirements and test cases and automated tests. As we do and think, we learn things. And ideally, we capture what we learn in the most approriate way.
-
-[^2]: That's another misconception about exploratory testing. That you have to immediately start interacting with what you're testing. This is not true. Taking time to think is as much part of exploratory testing as is interacting with what you're testing.
-
-That was all a bit philosophical. What does this mean in practice?
-
-=> https://visible-quality.blogspot.com/2024/08/explaining-exploratory-testing.html: a typical social agreement of how I work with an agile team
-
-=> https://elizabethzagroba.com/posts/2024/08_17_exploratory_testing/: what and how
-
-
-~Hence my statement that kicked off these blog posts: *"The difference between a test case and a requirement is the moment of discovery."*~
+And [Maaret Pyhäjärvi](https://maaretp.com/) has been saying the same. In [contemporary exploratory testing](https://www.getxray.app/blog/contemporary-exploratory-testing-podcast-highlights) exploration and automation go hand-in-hand. And test cases, whether they are executable (i.e. automated) or not, are the output of exploratory testing.
 
 
 
----
-
-
-==> optimizing for moments of discovery
-
-
-the incorrect views on exploratory testing:
-- when time left
-- domain experts
-- test automation pyramid, aka sprinkled on top
-- agile testing quadrants? kinda, quadrant 3
 
 
 
-scripted and automated tests, prescribed tests, -> translated requirements
-exploratory testing -> newly discovered requirements (good and bad surprises)
+## 3. Being intentional about exploratory testing
 
-so exploratory testing is input for scripted and automated tests (one of the inputs)
-
-
-also heard from Maaret, who has expounded(?) on that idea by focusing on how so many more things are output of learning, with learning including building, such as user stories
-more stuff is output than you think - Maaret
-
-segue into second part: ~optimizing for moments of discovery~ being intention about exploratory testing
-
-
-
-## What you miss out on by keeping exploratory testing implicit // Being intentional about your exploratory testing
+"there's a lot of hidden, implicit exploratory testing that could deliver more value"
+ What you miss out on by keeping exploratory testing implicit
 
 if exploratory testing is so important, there's good and bad news
 it's important, because not doing it is deciding you don't need to discover additional requirements
@@ -249,7 +172,7 @@ exploratory testing and automation start to feed into each other -> previous par
 
 it's everywhere, it's fundamental, not "if time left"; RISKS!
 
-noticing is a key skill in ET
+noticing is a key skill in ET, noticing and deciding
 doing is key, so brief and debrief are lacking -> leftovers?
 
 happening implicitly anyway
@@ -287,6 +210,7 @@ the skill is in the doing of ET, so pairing and ensembling with reflection/teach
 
 ---
 
+https://diagramindustries.com/2024/09/11/how-i-do-exploratory-testing/
 
 # Optimize for moments of discovery -> part 3
 
@@ -359,3 +283,101 @@ All the surprises you didn't find and address, are likely to catch up to you som
 
 
 All the surprises you didn't find and address, are likely to catch up to you some day. So best to find the most important ones in time.
+
+---
+
+## older notes about exploratory vs prescribed
+
+not separate
+
+exploratory is learning, so input for presribed testing, and input for design and build
+so how does it make sense to separate the three?
+
+
+what are the miconceptions:
+
+- exploratory testing is the cloud on top
+- exploratory testing is after you've done the rest
+- requirements are prescribed tests are input for building, not for learning
+- exploratory and prescribed testing are two different things
+	- not what James Lyndsay said
+	- exploratory -> learning, prescribed -> confirming, change detection, check if still
+
+better:
+
+- prescribed tests as output of exploratory testing
+- design and build and test go together ======> optimizing for moments of discovery, which is next post
+
+so what is input and what is output
+
+prescribed tests are output of learning, exploratory testing
+-> link with previous post: what do you fix when you fix a test
+
+still a lingering belief we can mostly specify software in advance, instead of having to discover as we go
+	instead of write a bit, evaluate a bit
+
+===> prescribed tests and requirements are ways to capture what we have learned so far; we learn through exploratory testing (in the broad sense)
+
+==> so exploratory testing is input for scripted and automated tests (one of the inputs)
+
+==> exploratory testing is learning, so what's the output of learning: test cases, test automation, user stories, docs
+As we do and think, we learn things. And ideally, we capture what we learn in the most approriate way.
+
+==> > "It is in the doing of the work that we discover the work that we must do. Doing exposes reality." Woody Zuill, https://agilemaxims.com/
+
+==> we learn through building and investigating what we must build, so let's write down what we learned
+
+This is not a new thought. As James Lyndsay wrote in ["Why Exploration has a Place in any Strategy"](https://www.workroom-productions.com/why-exploration-has-a-place-in-any-strategy/):
+
+> We *need* exploratory tests. They're great. They tell us about risk - unexpected, unpredicted, emergent - that goes hand-in-hand with the system that has been delivered. Exploratory tests are immediate, of the moment. The risk is known - and you'll not need to test for it again until you've addressed it, and *written* a test to show you that it's gone.
+
+And [Maaret Pyhäjärvi](https://maaretp.com/) has been saying the same. In [contemporary exploratory testing](https://www.getxray.app/blog/contemporary-exploratory-testing-podcast-highlights) exploration and automation go hand-in-hand. And test cases, whether they are executable (i.e. automated) or not, are the output of (exploratory) testing.
+
+
+=> post starts with this in "Be intentional about exploratory testing"
+
+To figure out the relation between exploratory testing and prescribed testing (test scripts and automation), we only need to go back to the start of this post. Prescribed tests are based on requirements. Exploratory testing is a way to discover additional requirements.
+
+Arguably, exploratory testing is not only about discovering additional requirements. It's also about discovering in which way(s) the application inadvertently does not meet some explicit or implicit (because 'obvious') requirement. That leads to some interesting questions about where "design" ends and "build" starts. Is writing code the part where we build the software? Or is it creating the final and most-detailed design? It also leads to interesting quetsions about the relation between "design" and "build" on the one hand, and "test" on the other. Do we first design and build, and then test? Or are they interrelated and intertwined?
+
+If you write code and momentarily forgot about a requirement, does your code meet the requirements?
+
+To me this shows the problematic position of requirements. In many small ways we still seem to think it's possible that if you just write down what you want the software to do, it can be built, and then tested to see if it meets the requirements. That in essence, it's a mechanical, linear, algorithmical process. And sure we agree requirements can never be complete and unambiguous and ... but that's nuance to this belief at the core of it all: it is possible to sufficiently define a piece of software through requirements.
+! lingering old beliefs!
+
+This makes us see requirements and user stories and prescribed tests (both scripts as automation) as input - and sufficient input! - for other work. It's essentially still a waterfall.
+
+Instead, we could put writing a bit of code and evaluating it at the center of what we do. And yes, it's probably a good idea to take some time to think for a bit in advance[^2] about what code you'll write. And think about what you're writing, as you write it. And think some more after as well. (We could even call (most of) this sort of thinking "testing".) And all of that thinking results in output. Code and requirements and test cases and automated tests. As we do and think, we learn things. And ideally, we capture what we learn in the most approriate way.
+
+[^2]: That's another misconception about exploratory testing. That you have to immediately start interacting with what you're testing. This is not true. Taking time to think is as much part of exploratory testing as is interacting with what you're testing.
+
+That was all a bit philosophical. What does this mean in practice?
+
+=> https://visible-quality.blogspot.com/2024/08/explaining-exploratory-testing.html: a typical social agreement of how I work with an agile team
+
+=> https://elizabethzagroba.com/posts/2024/08_17_exploratory_testing/: what and how
+
+
+~Hence my statement that kicked off these blog posts: *"The difference between a test case and a requirement is the moment of discovery."*~
+
+==> optimizing for moments of discovery
+
+
+the incorrect views on exploratory testing:
+- when time left
+- domain experts
+- test automation pyramid, aka sprinkled on top
+- agile testing quadrants? kinda, quadrant 3
+
+
+
+scripted and automated tests, prescribed tests, -> translated requirements
+exploratory testing -> newly discovered requirements (good and bad surprises)
+
+so exploratory testing is input for scripted and automated tests (one of the inputs)
+
+
+also heard from Maaret, who has expounded(?) on that idea by focusing on how so many more things are output of learning, with learning including building, such as user stories
+more stuff is output than you think - Maaret
+
+segue into second part: ~optimizing for moments of discovery~ being intention about exploratory testing
