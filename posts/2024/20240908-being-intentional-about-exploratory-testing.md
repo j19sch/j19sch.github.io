@@ -161,12 +161,15 @@ By now you may have realized that the question is not whether you do or don't do
 
 The question is if you're being intentional about it. Intentional about the when: are people talking about exploratory testing during build, during test, and during monitoring? And about the what: are people talking about how to get better at it?
 
+There is no obligation to be intentional about exploratory testing, but that will cost you.
+
 
 To get better at exploratory testing, the following skills are key:
 
 1. what do you notice while testing?
 2. how do you make choices on what to do next?
-3. how many different variations and perspectives can you come up with? -> double with 2 and 4, kindof?
+3. how many possibilities can you imagine? things to try? things that might happen?
+<!-- 3. how many different variations and perspectives can you come up with? -> double with 2 and 4, kindof? nope -->
 4. in how many ways can you model the thing you are testing?
 5. how rich and varied are your oracles for evaluating what you discover?
 6. to what degree have you mastered the tools that can help you?
