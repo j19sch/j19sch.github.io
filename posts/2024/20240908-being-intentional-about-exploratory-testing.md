@@ -169,10 +169,9 @@ To get better at exploratory testing, the following skills are key:
 1. what do you notice while testing?
 2. how do you make choices on what to do next?
 3. how many possibilities can you imagine? things to try? things that might happen?
-<!-- 3. how many different variations and perspectives can you come up with? -> double with 2 and 4, kindof? nope -->
-4. in how many ways can you model the thing you are testing?
+4. how well can you model different aspects of the thing you are testing?
 5. how rich and varied are your oracles for evaluating what you discover?
-6. to what degree have you mastered the tools that can help you?
+6. to what degree have you mastered tools that can help you? that can support, extend and amplify your testing?
 
 What's crucial to me in that list, is that the skill in exploratory testing is in doing the exploratory testing. So the best way to learn, is to pair up or ensemble with others, preferably including someone who already has built up quite some skills. And as you test, reflect on what you're doing and discuss it with each other.
 
@@ -182,6 +181,8 @@ How much explicit exploratory testing does your team do? And how much do they do
 
 
 ---
+
+# older notes
 
 key point
 - "there's a lot of hidden, implicit exploratory testing that could deliver more value"
