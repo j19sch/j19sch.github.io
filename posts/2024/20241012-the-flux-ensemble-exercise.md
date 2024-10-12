@@ -14,7 +14,7 @@ Since the participants really liked the exercise, I figured I'd write about it a
 
 <!-- TEASER_END -->
 
-# The basic of rules of ensembling {.small}
+# The basic of rules of ensembling
 
 When I run an ensembling workshop, I like to put the basic rules on a flipchart (credit to Lisi Hocke for the inspiration):
 
@@ -46,29 +46,63 @@ The rules of ensembling are meant as forcing functions or enabling constraints. 
 Good ensembling means that everyone is on the same page about what the next thing is the ensemble wants to achieve. There might be differences to what degree every member in the ensemble knows how to achieve it, though. That's fine, because that's the strength of an ensemble. You get something done as a group, with every participant either contributing or learning
 
 
-# The Flux ensemble exercise {.small}
+# The Flux ensemble exercise
 
-use the flip chart with rules in play at the top, potential changes at the bottom
+In the Flux ensemble exercise you start by brainstorming possible changes to the rules. Those changes can be things you believe that will make the ensemble better, or worse, or you might not know. The goal is to experience a different rule set, not to find the optimal set of rules for this particular ensemble.
+
+So an important aspect is to make sure that the exercise remains safe. It's fine if things become a little uncomfortable, but they should never become unsafe. For that reason every proposed change requires consent (so no objections) from each of the participants. And they are free to withdraw their consent at any time.
+
+Once you've brainstormed potential rule changes and everyone has given their consent, you start the ensemble. The only twist is that the navigator can add or remove any rule of the ensemble at the start of a rotation. (Including getting rid of the navigator role, which adds a little challenge for the facilitator.)
+
+To keep track of which rules were in play, I used the flipchart with the rules. All the potential changes where on post-it notes. So if they were in play, we moved them to the top of the flip chart. If they were not, we moved them to the bottom. One thing to keep in mind is that some rules are mutually exclusive, so make sure to remove the conflicting rules when bringing a new one into play.
 
 
-# The rules we changed during the workshop {.small}
+## The rule changes we didn't bring into play
 
-target: parking calculator, exploratory testing
+The Flux ensemble exercise was the the third ensembling session of the workshop. So the participants had some experience in an ensemble doing some exploratory testing and working on some test automation. For this exercise I had decided we'd do some more exploratory testing, but on a different application: the infamous parking calculator.
 
-13 ideas brainstormed
+The partcipants and I brainstormed 13 rule changes. Six of those we never brought into play:
 
-some mutually exclusive, so pay attention to correctly update rules in play
-
-## Brainstormed but not used
-- 2 drivers (both projected, e.g. doing and note-taking)
-- fixed roles
+- 2 drivers (e.g. one for doing and one for note-taking, both screens are visible to the whole ensemble)
+- fixed roles, so no rotation
 - navigator decides when to rotate
-- facilitator picks driver/navigator
+- facilitator picks the driver and the navigator
 - navigator is the driver
-- time +
+- longer rotations (default was 3 minutes)
 
 
-## Used
+## The rule changes we did bring into play
+
+### No navigator
+No navigator means there's only a driver (hands) and passengers (voices). The participants felt this was the worst rule change. Things got chaotic, although they also agreed things could have gotten a lot worse than they did. One participant also remarked that it felt too comfortable: as a passenger, you could just sit there and do nothing.
+
+### Passengers only talk when they're asked to
+The participants disliked this rule, as it killed the dynamic of the ensemble. I did point out that quite a few times one of the passengers told the navigator they had an idea and that the navigator was receptive to the input. So we didn't end up in a fill navigator-as-dictator situation.
+
+### Shorter rotations
+The navigator decided to shorten the rotation to 2 minutes. This made it very clear that to get anything done, the next navigator needs to build on what the previous navigator had done. In general participants found 2 minute-rotatins too short. One participant said it felt liberating: since you didn't get much time as a navigator, there was less pressure to achieve a lot in that time period.
+
+### Finish action before rotating
+This rule allowed the navigator and the driver to finish the thing they were doing at the end of a rotation. This raises the interesting question of what the boundaries are of "the thing you are doing". It also means rotations take longer than their set time, because almost each one is extended with some extra time. A risk I noticed but that never materialized, is that the extention time becomes this indefinite in-between time. A pauze in which participants might engage in longer discussions, while not proceeding with the ensemble.
+
+
+### Rotate at the end of an action
+- focus
+- express intent
+- bug outside of intent
+
+
+### idea -> navigator
+- how decide when to change?
+- size of an idea
+- me later: easier for programming, i.e. sequence of steps
+
+### 30 sec warning before end of rotation
+	- ok
+
+
+---
+
 - no navigator
 	- worst
 	- could be worse
