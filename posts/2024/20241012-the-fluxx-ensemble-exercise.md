@@ -1,24 +1,34 @@
 <!--
-.. title: The Flux ensemble exercise
-.. slug: the-flux-ensemble-exercise
+.. title: The Fluxx ensemble exercise
+.. slug: the-fluxx-ensemble-exercise
 .. date: 2024-10-13
-.. category: 
-.. tags: 
+.. category: workshops
+.. tags: ensembling, facilitation, teaching, workshop
 .. type: text
-.. description: The Flux ensemble exercise is an exercise in working in an ensemble, where the navigator can add or remove rules for the ensemble. The goal of the exercise is to experience why the basic rules of ensembling are the way they are and what happens if they are different.
+.. previewimage: /images/2024/ensemble.jpg
+.. description: The Fluxx ensemble exercise is an exercise in working in an ensemble, where the navigator can add or remove rules for the ensemble. The goal of the exercise is to experience why the basic rules of ensembling are the way they are and what happens if they are different.
 -->
 
-Last week I ran a full-day workshop at HUSTEF on working in an ensemble (aka mob programming/testing or software teaming). As part of the workshop I tried out a new exercise, in which participants were allowed to change the rules of the ensemble. The goal was to experience why the basic rules of ensembling are the way they are and what happens if they are different.
+Last week I ran a [full-day workshop](https://hustef.hu/joep_schuurkes_2024/) at [HUSTEF](https://hustef.hu/) on working in an ensemble (aka mob programming/testing or software teaming). As part of the workshop I tried out a new exercise, in which participants were allowed to change the rules of the ensemble. The goal was to experience why the basic rules of ensembling are the way they are and what happens if they are different.
 
-Since the participants really liked the exercise, I figured I'd write about it and name it: the Flux ensemble exercise. For those not familiar with Flux: it is a card game in which changing the rules is a key part of the game. It's a lot of fun.
+Since the participants really liked the exercise, I figured I'd write about it and name it: the Fluxx ensemble exercise. For those not familiar with [Fluxx](https://www.looneylabs.com/games/fluxx): it is a card game in which changing the rules is a key part of the game. It's a lot of fun.
 
 <!-- TEASER_END -->
 
 # The basic of rules of ensembling
 
-When I run an ensembling workshop, I like to put the basic rules on a flipchart (credit to Lisi Hocke for the inspiration):
+When I run an ensembling workshop, I like to put the basic rules on a flipchart (credit to [Lisi Hocke](https://www.lisihocke.com/) for the inspiration):
+
+![flip chart with the basic rules of ensembling](/images/2024/ensemble.jpg)
 
 <!-- todo: add image -->
+
+<!-- <div class="d-flex justify-content-center">
+	<figure class="figure" style="width:65%">
+		<img src="/images/2023/work-mgt-tools/fig4-stories-on-a-wall.jpg" class="figure-img img-fluid rounded"
+			alt="Figure 4 Stories on a wall from Extreme Programming Explained 2nd ed. A wall with index cards grouped into Done, This Week, This Release, To Be Estimated, Future."/>
+	</figure>
+</div> -->
 
 I am not going to explain the whole set of rules, I'll limit myself to the ones relevant to describe how the exercise went during the workshop.
 
@@ -46,9 +56,9 @@ The rules of ensembling are meant as forcing functions or enabling constraints. 
 Good ensembling means that everyone is on the same page about what the next thing is the ensemble wants to achieve. There might be differences to what degree every member in the ensemble knows how to achieve it, though. That's fine, because that's the strength of an ensemble. You get something done as a group, with every participant either contributing or learning
 
 
-# The Flux ensemble exercise
+# The Fluxx ensemble exercise
 
-In the Flux ensemble exercise you start by brainstorming possible changes to the rules. Those changes can be things you believe that will make the ensemble better, or worse, or you might not know. The goal is to experience a different rule set, not to find the optimal set of rules for this particular ensemble.
+In the Fluxx ensemble exercise you start by brainstorming possible changes to the rules. Those changes can be things you believe that will make the ensemble better, or worse, or you might not know. The goal is to experience a different rule set, not to find the optimal set of rules for this particular ensemble.
 
 So an important aspect is to make sure that the exercise remains safe. It's fine if things become a little uncomfortable, but they should never become unsafe. For that reason every proposed change requires consent (so no objections) from each of the participants. And they are free to withdraw their consent at any time.
 
@@ -59,7 +69,7 @@ To keep track of which rules were in play, I used the flipchart with the rules. 
 
 ## The rule changes we didn't bring into play
 
-The Flux ensemble exercise was the the third ensembling session of the workshop. So the participants had some experience in an ensemble doing some exploratory testing and working on some test automation. For this exercise I had decided we'd do some more exploratory testing, but on a different application: the infamous parking calculator.
+The Fluxx ensemble exercise was the the third ensembling session of the workshop. So the participants had some experience in an ensemble doing some exploratory testing and working on some test automation. For this exercise I had decided we'd do some more exploratory testing, but on a different application: the infamous parking calculator.
 
 The partcipants and I brainstormed 13 rule changes. Six of those we never brought into play:
 
@@ -82,51 +92,24 @@ The participants disliked this rule, as it killed the dynamic of the ensemble. I
 ### Shorter rotations
 The navigator decided to shorten the rotation to 2 minutes. This made it very clear that to get anything done, the next navigator needs to build on what the previous navigator had done. In general participants found 2 minute-rotatins too short. One participant said it felt liberating: since you didn't get much time as a navigator, there was less pressure to achieve a lot in that time period.
 
+### Rotate at the end of an action
+Every rotation the navigator gets to do one action. Once the action is completed, the roles rotate. This brought focus to the what the navigator wanted to do and highlighted the imporance of expressing intent.
+
+While this rule was into play, the ensemble also found one bug that was not in scope of the intent. They simply added the bug to their testing notes and returned to their original intent.
+
 ### Finish action before rotating
 This rule allowed the navigator and the driver to finish the thing they were doing at the end of a rotation. This raises the interesting question of what the boundaries are of "the thing you are doing". It also means rotations take longer than their set time, because almost each one is extended with some extra time. A risk I noticed but that never materialized, is that the extention time becomes this indefinite in-between time. A pauze in which participants might engage in longer discussions, while not proceeding with the ensemble.
 
+### Whoever has an idea, becomes the navigator.
+If you have an idea on what to do next, you become the navigator for that idea. This change in rules raised the question on how to decide when to change navigator and what the size of an idea was.
 
-### Rotate at the end of an action
-- focus
-- express intent
-- bug outside of intent
+It made me wonder if this rule works better for ensemble programming than ensemble testing. In ensemble programming you are often working towards a specific goal. So whoever comes up with the next step to get the ensemble closer to the goal, gets to be the navigator. In ensemble testing (esp. exploratory testing) you are constantly making decisions on what the next specific goal should 
+be.
 
-
-### idea -> navigator
-- how decide when to change?
-- size of an idea
-- me later: easier for programming, i.e. sequence of steps
 
 ### 30 sec warning before end of rotation
-	- ok
-
+30 seconds before the end of the rotation, the facilitator signals this to the ensemble. The participants agreed that was an ok rule, but nothing more.
 
 ---
 
-- no navigator
-	- worst
-	- could be worse
-	- too comfortable
-	- chaos
-- passengers only talk when asked
-	- dislike
-	- killed dynamic
-	- I have an idea!
-- time - (rotation of 2 mins instead of 3, chosen by navigator)
-	- navigator handover
-	- too short
-	- liberating (less need to do all things thought of)
-- rotate at end of action
-	- focus
-	- express intent
-	- bug outside of intent
-- finish action when timer goes
-	- action boundaries
-	- kills 3 minutes
-	- risk of discussion
-- idea -> navigator
-	- how decide when to change?
-	- size of an idea
-	- me later: easier for programming, i.e. sequence of steps
-- 30 sec warning before end of rotation
-	- ok
+Have you tried ensembling? What rules would you want to change to see what happens? If you try out this exercise, please let me know how it went!
