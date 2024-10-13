@@ -3,13 +3,31 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes</title>
   <id>https://smallsheds.garden/blog/feed.atom</id>
-  <updated>2024-08-25T15:16:20Z</updated>
+  <updated>2024-10-13T13:50:50Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/blog/feed.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>The Fluxx ensemble exercise</title>
+    <id>https://smallsheds.garden/blog/2024/the-fluxx-ensemble-exercise/</id>
+    <updated>2024-10-13T00:00:00+02:00</updated>
+    <published>2024-10-13T00:00:00+02:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2024/the-fluxx-ensemble-exercise/"/>
+    <summary type="html">&lt;figure&gt;&lt;img src="https://smallsheds.garden/images/2024/ensemble.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;Earlier this week I ran a &lt;a href="https://hustef.hu/joep_schuurkes_2024/"&gt;full-day workshop&lt;/a&gt; at the excellent &lt;a href="https://hustef.hu/"&gt;HUSTEF&lt;/a&gt; conference on working in an ensemble (aka mob programming/testing or software teaming). As part of the workshop I tried out a new exercise, in which participants were allowed to change the rules of the ensemble. The goal was to experience why the basic rules of ensembling are the way they are and what happens if they are different.&lt;/p&gt;
+&lt;p&gt;Since the participants really liked the exercise, I figured I'd write about it and name it: the Fluxx ensemble exercise. For those not familiar with &lt;a href="https://www.looneylabs.com/games/fluxx"&gt;Fluxx&lt;/a&gt;: it is a card game in which changing the rules is a key part of the game. It's one of my favourite games.&lt;/p&gt;
+&lt;p&gt;Before I go into the exercise, though, I'll first need to explain the basic rules of ensembling.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2024/the-fluxx-ensemble-exercise/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="ensembling" label="ensembling"/>
+    <category term="facilitation" label="facilitation"/>
+    <category term="teaching" label="teaching"/>
+    <category term="workshop" label="workshop"/>
+  </entry>
   <entry>
     <title>What do you fix when you fix a test?</title>
     <id>https://smallsheds.garden/blog/2024/what-do-you-fix-when-you-fix-a-test/</id>
@@ -207,27 +225,5 @@ and the language's ecosystem (e.g. how to install those libraries&lt;sup id="fnr
     <category term="clojure" label="clojure"/>
     <category term="programming" label="programming"/>
     <category term="python" label="python"/>
-  </entry>
-  <entry>
-    <title>Old-school Scrum was rad!</title>
-    <id>https://smallsheds.garden/blog/2023/old-school-scrum-was-rad/</id>
-    <updated>2023-12-18T00:00:00+01:00</updated>
-    <published>2023-12-18T00:00:00+01:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2023/old-school-scrum-was-rad/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;In 2001, nine years before the first version of the Scrum Guide, Ken Schwaber and Mike Beedle published &lt;em&gt;"Agile Software Development with Scrum"&lt;/em&gt;. This version of Scrum has some remarkable differences from even the &lt;a href="https://res.cloudinary.com/mitchlacey/image/upload/v1589750495/Scrum_Guide_v1_Scrum_Alliance_qe0y2w.pdf"&gt;first version of the Scrum Guide&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The three things that struck me most about this version of Scrum, were&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Scrum Master is a management role, preferably by an engineer&lt;/li&gt;
-&lt;li&gt;there is no retrospective, impediments are addressed in the Daily Scrum&lt;/li&gt;
-&lt;li&gt;Sprints are 30 days and have a goal, tasks can be added and removed throughout&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;While I don't want to claim we should return to this old-school version of Scrum, I do appreciate how radical it is compared to how software development is done - even today.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2023/old-school-scrum-was-rad/"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="agile" label="agile"/>
-    <category term="books" label="books"/>
-    <category term="scrum" label="scrum"/>
   </entry>
 </feed>
