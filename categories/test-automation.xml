@@ -3,7 +3,7 @@
 &lt;a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank"&gt;
 &lt;img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by/4.0/80x15.png" /&gt;
 &lt;/a&gt;
-</copyright><lastBuildDate>Sun, 13 Oct 2024 13:46:16 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>What do you fix when you fix a test?</title><link>https://smallsheds.garden/blog/2024/what-do-you-fix-when-you-fix-a-test/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;You ran the tests&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2024/what-do-you-fix-when-you-fix-a-test/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; - or a pipeline did it for you - and some of them failed. Time to fix the tests! But what is it exactly that needs fixing?&lt;/p&gt;
+</copyright><lastBuildDate>Fri, 18 Oct 2024 09:19:29 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>What do you fix when you fix a test?</title><link>https://smallsheds.garden/blog/2024/what-do-you-fix-when-you-fix-a-test/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;You ran the tests&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2024/what-do-you-fix-when-you-fix-a-test/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; - or a pipeline did it for you - and some of them failed. Time to fix the tests! But what is it exactly that needs fixing?&lt;/p&gt;
 &lt;p&gt;There are quite a few things that might make a test fail:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;an issue with the build&lt;/li&gt;
