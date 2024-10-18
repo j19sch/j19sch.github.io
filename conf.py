@@ -663,7 +663,8 @@ ATOM_FILENAME_BASE = "feed"
 #
 # If you don't need any of these, just set to []
 REDIRECTIONS = [
-    ("blog/clojure/", "/my-projects/learning-clojure/")
+    ("blog/clojure/", "/my-projects/learning-clojure/"),
+    ("404.html", "/404-page/")
     ]
 
 # Presets of commands to execute to deploy. Can be anything, for
