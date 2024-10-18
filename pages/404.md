@@ -5,4 +5,6 @@ type: text
 hidetitle: true
 
 
-<h1>This page does not exist</h1>
+# alas...
+
+The page you tried to reach does not exist.
