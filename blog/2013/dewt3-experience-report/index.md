@@ -65,6 +65,6 @@ And that was the end of the weekend. To close off I'd like to thank all the othe
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2013/04/28/dewt3-experience-report/).*
+*This post was originally published on my old blog.*
 
 [^1]: Or as I am reading Nassim Nicholas Taleb's "Antifragile": a fragile, robust or antifragile system?

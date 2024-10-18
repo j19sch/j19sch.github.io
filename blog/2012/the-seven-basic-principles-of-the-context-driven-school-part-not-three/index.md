@@ -18,4 +18,4 @@ I can be brief about that: to me the context-driven school is like an open sourc
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2012/03/30/the-seven-basic-principles-of-the-context-driven-school-part-not-three/).*
+*This post was originally published on my old blog.*

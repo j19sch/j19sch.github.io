@@ -68,7 +68,7 @@ That concludes part two. In part three I will use these principles to compare th
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2012/02/05/the-seven-basic-principles-of-the-context-driven-school-part-two/).*
+*This post was originally published on my old blog.*
 
 [^1]: There's a reason I say 'story'. Stories are great ways to make sense of things, but they can also be deceptive. People like stories, but not everything allows to be 'storified' without losing important bits.
 [^2]: I know, one can argue none of those are actual indicators of intrinsic value. Elegant/simple/complete to whom?

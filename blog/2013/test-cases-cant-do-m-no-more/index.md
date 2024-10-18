@@ -25,4 +25,4 @@ To answer the question if you tested all the important parts of the application,
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2013/07/06/test-cases-cant-do-m-no-more/).*
+*This post was originally published on my old blog.*

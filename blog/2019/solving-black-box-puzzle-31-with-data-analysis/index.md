@@ -267,4 +267,4 @@ I guess there's only one way to find out: next time James Lyndsay releases a Bla
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2019/04/28/solving-black-box-puzzle-31-with-data-analysis/).*
+*This post was originally published on my old blog.*

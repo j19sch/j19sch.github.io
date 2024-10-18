@@ -30,4 +30,4 @@ it would be this:
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2012/05/18/lets-test-2012-time-travel-advice/).*
+*This post was originally published on my old blog.*

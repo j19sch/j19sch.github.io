@@ -54,4 +54,4 @@ And with that I say goodbye to another concept of traditional testing methodolog
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2015/02/10/three-arguments-against-the-verification-validation-dichotomy/).*
+*This post was originally published on my old blog.*

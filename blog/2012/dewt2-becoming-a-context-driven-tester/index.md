@@ -49,4 +49,4 @@ And it took me about 2.5 years to go through these three stages. To be honest, I
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2012/11/08/dewt2-becoming-a-context-driven-tester/).*
+*This post was originally published on my old blog.*

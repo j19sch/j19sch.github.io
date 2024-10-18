@@ -43,4 +43,4 @@ We are curious about your thoughts. What do you think? Maybe you want to try the
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2017/02/05/testing-maturity-in-an-agilecdt-context/).*
+*This post was originally published on my old blog.*

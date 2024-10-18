@@ -50,4 +50,4 @@ That's also one of the reasons I'm writing this set of posts: to make me pauze a
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2012/01/15/the-seven-basic-principles-of-the-context-driven-school-part-one/).*
+*This post was originally published on my old blog.*

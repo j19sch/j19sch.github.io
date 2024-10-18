@@ -76,7 +76,7 @@ So when I am talking to someone who seems to think that there's nothing more to 
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2015/08/17/whats-the-word-for-the-part-of-testing-thats-not-checking/).*
+*This post was originally published on my old blog.*
 
 [^1]: Advanced semantics question: is 'checking versus testing' more like 'apples versus fruit' or more like 'squares versus rectangles'?[^3]
 

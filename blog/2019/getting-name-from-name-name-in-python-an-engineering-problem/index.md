@@ -162,4 +162,4 @@ Personally I will always trade the code being less explicit about what it does f
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2019/08/26/getting-name-from-name-name-in-python-an-engineering-problem/).*
+*This post was originally published on my old blog.*

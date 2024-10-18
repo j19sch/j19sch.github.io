@@ -32,6 +32,6 @@ So for me it's simple: any standard that uses this kind of reasoning to get me t
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2014/08/23/joining-the-fray-on-iso-29119/).*
+*This post was originally published on my old blog.*
 
 [^1]: I know I shouldn't use that word as apparently it's one of the obstacles for adoption of ISO 29119. See page 26 of [this update](http://www.bcs.org/upload/pdf/sreid-120913.pdf) of Stuart Reid's slide deck: "Anti-standardization – craftsmen".

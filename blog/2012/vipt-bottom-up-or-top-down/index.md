@@ -47,7 +47,7 @@ I was supposed to say a few things about teaching testing in relation to VIPT, b
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2012/07/17/vipt-bottom-up-or-top-down/).*
+*This post was originally published on my old blog.*
 
 
 [^1]: This is a really good moment to go and read Iain McCowatt's latest blog post "[Doctor, Doctor](http://exploringuncertainty.com/blog/archives/860)", by the way. It's about how testers make decisions.

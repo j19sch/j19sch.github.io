@@ -35,4 +35,4 @@ For a version of this manifesto that includes my reflections, see this [post](li
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2018/12/04/manifesto-for-software-testing/).*
+*This post was originally published on my old blog.*
