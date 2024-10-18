@@ -169,4 +169,4 @@ Revisiting the [definition of epistemic testability](https://www.satisfice.com/d
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2019/06/08/how-this-tester-writes-code/).*
+*This post was originally published on my old blog.*

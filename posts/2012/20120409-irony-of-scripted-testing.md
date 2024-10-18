@@ -55,4 +55,4 @@ And that exactly is the irony of scripted testing: the way to make a difference 
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2012/04/09/the-irony-of-scripted-testing/).*
+*This post was originally published on my old blog.*

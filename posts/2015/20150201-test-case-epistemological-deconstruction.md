@@ -106,4 +106,4 @@ A similar argument can be made about testing based on test cases. It's impossibl
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2015/02/01/the-test-case-an-epistemological-deconstruction/).*
+*This post was originally published on my old blog.*

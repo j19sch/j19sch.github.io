@@ -59,4 +59,4 @@ p.s. 2: None of the ideas in this blog post are new, which you can see from the 
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2019/08/05/your-ci-cd-pipeline-does-not-run-regression-tests/).*
+*This post was originally published on my old blog.*

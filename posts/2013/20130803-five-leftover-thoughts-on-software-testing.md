@@ -28,4 +28,4 @@ magic box: like a black box, but you're note sure what it does (if anything at a
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2013/08/03/five-leftover-thoughts-on-software-testing/).*
+*This post was originally published on my old blog.*

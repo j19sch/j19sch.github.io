@@ -80,7 +80,7 @@ Repeating this because it is so important. It is the litmus test of your test au
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2015/03/24/test-automation-five-questions-leading-to-five-heuristics/).*
+*This post was originally published on my old blog.*
 
 [^1]: Or, instead of test automation, a better term would be 'check execution automation'. Although this is an important distinction, I'm not going to pursue it today. If you do want to, this post is a good starting point: [Testing and Checking Refined](http://www.satisfice.com/blog/archives/856) by James Bach and Michael Bolton.
 

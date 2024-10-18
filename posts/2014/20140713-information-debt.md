@@ -76,6 +76,6 @@ Finally, I feel like I should say something about how all of this relates to tac
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2014/07/13/information-debt/).*
+*This post was originally published on my old blog.*
 
 [^1]: Or rather: you investigate the *product* to evaluate it, but that sounded a bit confusing with a different referent of 'product' in the previous sentence.

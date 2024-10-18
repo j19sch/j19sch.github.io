@@ -64,7 +64,7 @@ So basically, what we care about is value, but all we really 'have' are tools. A
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2012/07/09/yet-another-testing-model-value-information-processes-value/).*
+*This post was originally published on my old blog.*
 
 
 [^1]: This may have something to do with me heavily leaning on Kantian epistemology to simplify the model, though. (If you want to learn more about Kantian epistemology, reading Schopenhauer is a good start.)

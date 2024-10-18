@@ -49,4 +49,4 @@ So if you want to explain exploratory testing to someone with this traditional v
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2012/04/29/some-thoughts-after-attending-the-getting-a-grip-on-exploratory-testing-workshop/).*
+*This post was originally published on my old blog.*

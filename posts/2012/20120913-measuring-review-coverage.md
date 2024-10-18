@@ -26,4 +26,4 @@ Recently it occurred to me we have plenty of ways to measure test coverage, but 
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2012/09/13/measuring-review-coverage/).*
+*This post was originally published on my old blog.*
