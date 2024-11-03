@@ -8,6 +8,10 @@
 .. description: todo
 -->
 
+TODO:
+- less a part two
+
+
 ToDo:
 - remove file with previous version
 - link to EZ's NewCrafts talk
@@ -74,17 +78,11 @@ In the previous post I [distinguished](link://slug/the-difference-between-a-test
 
 The tests with a focus on value are based on requirements, on things we know we want, they are prescribed (as in: written before). The tests with a focus on value are exploratory, they are based on our decisions in the moment, we look for surprises and decide how we feel about those surprises.
 
-If both of these kinds of testing, prescribed and exploratory, are important, then why am I focusing on this post on the exploratory part?
-
-There are three reasons:
-
-1. there are still a lot of misconceptions about what exploratory testing is
-1. there are still a lot of misconceptions about how exploratory testing relates to prescribed testing
-1. there's a lot of hidden, implicit exploratory testing that could deliver more value
+One thing I've noticed through the years, is that a lot more exploratory testing is happening than we give credit for. It's hidden, a required but implicit part of the work. We do it, but we're not intentional about it. Today I want to argue that it pays to be more intentional about it. Before I get there, however, I'll first have to describe what exploratory testing is and how it relates to prescribed testing.
 
 <!-- TEASER_END -->
 
-## 1. What is exploratory testing?
+## What is exploratory testing?
 
 During her [live exploratory testing session](https://ncrafts.io/speaker/elizabethzagroba)[^1] at [NewCrafts](https://ncrafts.io/) 2024, [Elizabeth Zagroba](https://elizabethzagroba.com/) ad-libbed the following definition:
 
@@ -139,7 +137,7 @@ Anything that helps you learn about the application is fair game in exploratory 
 
 
 
-## 2. How does exploratory testing relate to prescribed testing?
+## How does exploratory testing relate to prescribed testing?
 
 Exploratory testing is about learning and discovery. Prescribed tests (whether automated or not) are built based on that learning. Which is why in the [previous post of this series](link://slug/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery) I stated: *"The difference between a test case and a requirement is the moment of discovery."* We discover things through exploratory testing and through requirements engineering. Requirements and prescribed tests are the outputs of those discoveries.
 
@@ -157,7 +155,7 @@ As James Lyndsay wrote in ["Why Exploration has a Place in any Strategy"](https:
 And [Maaret Pyhäjärvi](https://maaretp.com/) has been saying the same. In [contemporary exploratory testing](https://www.getxray.app/blog/contemporary-exploratory-testing-podcast-highlights) exploration and automation go hand-in-hand. And test cases, whether they are executable (i.e. automated) or not, are the output of exploratory testing.
 
 
-## 3. Being intentional about exploratory testing
+## Being intentional about exploratory testing
 
 By now you may have realized that the question is not whether you do or don't do exploratory testing. It's being done already, whether you explicitly label it as such or not.
 
@@ -165,7 +163,7 @@ The question is if you're being intentional about it.
 
 Intentional about the when: are people talking about exploratory testing throughout the whole process? During design, build, test, monitoring? And about the what: are people talking about what works for them during exploratory testing and what doesn't? About how to get better at it?
 
-You have no obligation to be intentional about your explotarory testing, but that will come with a cost... It won't be as effective as it could be.
+You have no obligation to be intentional about your exploratory testing, but that will come with a cost... It won't be as effective as it could be.
 
 ---
 
