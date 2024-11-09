@@ -5,7 +5,7 @@
 .. category: exploratory testing
 .. tags: exploratory testing, quality engineering, software development, software testing,
 .. type: text
-.. description: Being intentional about exploratory testing, i.e. exploring what you are building and what you have built, is a key skill in a high-performing team.
+.. description: Being intentional about exploratory testing, i.e. exploring and evaluating what you are building and what you have built throughout the development process, is a key skill in a high-performing team.
 -->
 
 *This is the second post in a (to be) three-part series about my statement "The difference between a test case and a requirement is the moment of discovery."*
