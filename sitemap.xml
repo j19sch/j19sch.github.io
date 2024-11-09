@@ -123,7 +123,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/archive.html</loc>
-  <lastmod>2024-10-18T11:15:00Z</lastmod>
+  <lastmod>2024-10-20T13:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/</loc>
@@ -410,6 +410,10 @@
   <lastmod>2024-10-18T11:15:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/blog/2024/being-intentional-about-exploratory-testing/</loc>
+  <lastmod>2024-10-20T13:20:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/blog/2024/never-estimate-in-something-thats-not-negotiable/</loc>
   <lastmod>2024-10-18T11:15:00Z</lastmod>
  </url>
@@ -428,6 +432,10 @@
  <url>
   <loc>https://smallsheds.garden/blog/2024/the-difference-between-a-dead-and-an-alive-agile-manifesto/</loc>
   <lastmod>2024-10-18T11:15:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/blog/2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery-part-two/</loc>
+  <lastmod>2024-10-20T13:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery/</loc>
@@ -503,23 +511,23 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-1.html</loc>
-  <lastmod>2024-10-18T15:13:00Z</lastmod>
+  <lastmod>2024-11-09T09:53:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-2.html</loc>
-  <lastmod>2024-10-18T15:13:00Z</lastmod>
+  <lastmod>2024-11-09T09:53:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-3.html</loc>
-  <lastmod>2024-10-18T15:13:00Z</lastmod>
+  <lastmod>2024-11-09T09:53:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-4.html</loc>
-  <lastmod>2024-10-18T15:13:00Z</lastmod>
+  <lastmod>2024-11-09T09:53:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-5.html</loc>
-  <lastmod>2024-10-18T15:13:00Z</lastmod>
+  <lastmod>2024-11-09T09:53:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-6.html</loc>
@@ -535,7 +543,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-9.html</loc>
-  <lastmod>2024-10-18T11:15:00Z</lastmod>
+  <lastmod>2024-10-20T13:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/</loc>

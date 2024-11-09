@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Being intentional about exploratory testing, i.e. exploring and evaluating what you are building and what you have built throughout the development process, is a key skill in a high-performing team.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Being intentional about exploratory testing | Joep Schuurkes</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../feed.atom">
+<link rel="canonical" href="https://smallsheds.garden/blog/2024/being-intentional-about-exploratory-testing/">
+<link rel="icon" href="../../../assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="../../../assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../assets/favicons/favicon-96x96.png" sizes="96x96">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../the-fluxx-ensemble-exercise/" title="The Fluxx ensemble exercise" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="Being intentional about exploratory testing">
+<meta property="og:url" content="https://smallsheds.garden/blog/2024/being-intentional-about-exploratory-testing/">
+<meta property="og:description" content="Being intentional about exploratory testing, i.e. exploring and evaluating what you are building and what you have built throughout the development process, is a key skill in a high-performing team.">
+<meta property="og:image" content="https://smallsheds.garden/images/default-preview.jpeg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2024-11-09T00:00:00+01:00">
+<meta property="article:tag" content="exploratory testing">
+<meta property="article:tag" content="quality engineering">
+<meta property="article:tag" content="software development">
+<meta property="article:tag" content="software testing">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-projects/" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-talks/" class="nav-link">Talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../../my-lists/reading-list/" class="dropdown-item">Reading list</a>
+                    <a href="../../../my-lists/recommended-reading/" class="dropdown-item">Recommended reading</a>
+                    <a href="../../../my-lists/favorite-podcasts/" class="dropdown-item">Favorite podcasts</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../" class="dropdown-item">My blog</a>
+                    <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
+                    <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Being intentional about exploratory&nbsp;testing</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep&nbsp;Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2024-11-09T00:00:00+01:00" itemprop="datePublished" title="9 November 2024">9 November 2024</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p><em>This is the second post in a (to be) three-part series about my statement &#8220;The difference between a test case and a requirement is the moment of&nbsp;discovery.&#8221;</em></p>
+<p>In the previous post I <a href="../the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery/#translated-requirements">distinguished</a> test cases that are translated requirements from ones that aren&#8217;t. This is something I learned from <a href="https://www.workroom-productions.com/">James Lyndsay</a>. As he describes in <em><a href="https://www.workroom-productions.com/why-exploration-has-a-place-in-any-strategy/">&#8220;Why Exploration has a Place in any Strategy&#8221;</a></em>:</p>
+<blockquote>
+<p>Some tests are designed to find risks. They&#8217;re made on-the-fly and run once. Some are designed to tell us about retained value. They&#8217;re made once, and run forever after. You need <em>both</em>: they tell you different&nbsp;things.</p>
+</blockquote>
+<p>The tests with a focus on value are based on requirements, on things we know we want, they are prescribed (as in: written before). The tests with a focus on risks are exploratory, they are based on our decisions in the moment, we look for surprises and decide how we feel about those&nbsp;surprises.</p>
+<p>One thing I&#8217;ve noticed through the years, is that a lot more exploratory testing is happening than we give credit for. It&#8217;s hidden, a required but implicit part of the work. We do it, but we&#8217;re not intentional about&nbsp;it.</p>
+<p>Today I want to argue that it pays to be more intentional about exploratory testing. Before I get there, however, I want to explain what exploratory testing is, because there are still plenty of misconceptions going&nbsp;around.</p>
+<!-- TEASER_END -->
+
+<h2>What is exploratory&nbsp;testing?</h2>
+<p>During her <a href="https://ncrafts.io/speaker/elizabethzagroba">live exploratory testing session</a><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> at <a href="https://ncrafts.io/">NewCrafts</a> 2024, <a href="https://elizabethzagroba.com/">Elizabeth Zagroba</a> ad-libbed the following&nbsp;definition:</p>
+<blockquote>
+<p>Exploratory testing is when you&#8217;re testing and also thinking about what you&#8217;re doing, and whether it&nbsp;matters.</p>
+</blockquote>
+<p>This continuous reflection on what you&#8217;re doing is a key component of exploratory testing. You&#8217;re interacting with an application, discovering things, and making decisions on what to do next based on those&nbsp;discoveries.</p>
+<p>Or as <a href="https://maaretp.com/">Maaret Pyhäjärvi</a> summarizes in her <a href="https://dev.to/maaretp/exploratory-testing-foundations-4lb3"><em>&#8220;Exploratory Testing Foundations&#8221;</em></a>:</p>
+<blockquote>
+<p>Exploratory testing is an approach to testing that centers learning. Test design and test execution form an inseparable pair where the application and feature we are testing is our external&nbsp;imagination.</p>
+</blockquote>
+<p>Some people might read these (or other) definitions and walk away with the following picture of exploratory testing: exploratory testing is someone clicking around in the application, hoping to discover a bug. While technically that is exploratory testing, it&#8217;s not a very effective form of&nbsp;it.</p>
+<p>There are two important things missing from that picture of exploratory&nbsp;testing:</p>
+<ul>
+<li>exploratory testing is a learned&nbsp;skill</li>
+<li>exploratory testing can be as &#8216;technical&#8217; as you&nbsp;want</li>
+</ul>
+<h3>Exploratory testing is a learned&nbsp;skill</h3>
+<p>For decades testers have been collecting heuristics that have helped them guide their&nbsp;testing:</p>
+<ul>
+<li>
+<a href="https://www.ministryoftesting.com/articles/test-heuristics-cheat-sheet">Test Heuristics Cheat Sheet</a> by Elisabeth&nbsp;Hendrickson</li>
+<li>the product elements of <span class="caps">RST</span>&#8217;s <a href="https://www.satisfice.com/download/heuristic-test-strategy-model">Heuristic Test Strategy Mode</a>l</li>
+<li>
+<a href="https://developsense.com/blog/2012/07/few-hiccupps"><span class="caps">FEW</span> <span class="caps">HICCUPS</span></a> Michael&nbsp;Bolton</li>
+<li>
+<a href="https://www.schladebeck.de/microheuristics/">Microheuristics</a> by Alex&nbsp;Schladebeck</li>
+<li>Analysis, Test Design, and Test Execution Heuristics from <a href="http://www.thetesteye.com/papers/TheLittleBlackBookOnTestDesign.pdf">The Little Black Book on Test&nbsp;Design</a>
+</li>
+</ul>
+<p>Having these lists of heuristics is a great start, but applying them hinges on two skills: noticing what there is to notice, and choosing the right heuristic to apply. Neither can be done perfectly. You can&#8217;t notice everything. You can&#8217;t know upfront what the exact right heuristic&nbsp;is.</p>
+<p>But you can do these (noticing and deciding) rather well or rather poorly. And that&#8217;s the invisible skill of exploratory testing. Invisible, because it&#8217;s all in the mind of the person doing the exploratory testing. And as any other skill, exploratory testing can be practiced and refined. It&#8217;s not something some people just happen to do well, while others&nbsp;don&#8217;t.</p>
+<h3>Exploratory testing can be as &#8216;technical&#8217; as you&nbsp;want</h3>
+<p>First off all, I thoroughly dislike how the word &#8216;technical&#8217; has and is being used for gatekeeping, especially in testing. If you work in tech, in whatever role, you&#8217;re technical.&nbsp;Period.</p>
+<p>Similarly, exploratory testing is always technical. You&#8217;re investigating and evaluating a tech product, how can it not be? And that gives you&nbsp;options.</p>
+<p>Exploratory testing can be done on any piece of the application, anywhere in the stack. If you&#8217;ve ever looked at a function or at a unit test, and said to yourself <em>&#8220;I wonder what this function does if I give it these parameters&#8230;&#8221;</em>, added a test with those parameters, and ran it, you have done exploratory&nbsp;testing.</p>
+<p>So you can include or exclude as many or few layers of the stack as you want. You can test a single function, the whole stack, just the backend, the frontend with a mock service,&nbsp;etc.</p>
+<p>Also, any way to interact with any part(s) of the application is a valid way of doing exploratory testing. The code itself, APIs, CLIs, GUIs, config files, the database, etc. It&#8217;s all fair&nbsp;game.</p>
+<p>So how can exploratory testing not be&nbsp;technical?</p>
+<h2>How does exploratory testing relate to prescribed&nbsp;testing?</h2>
+<p>Exploratory testing is about learning and discovery. Prescribed tests (whether automated or not) are built based on that learning. Which is why in the <a href="../the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery/">previous post of this series</a> I stated: <em>&#8220;The difference between a test case and a requirement is the moment of discovery.&#8221;</em> We discover things through exploratory testing and through requirements engineering. Requirements and prescribed tests (test cases) are the outputs of those&nbsp;discoveries.</p>
+<p>As <a href="https://woodyzuill.com/">Woody Zuill</a> states in one of <a href="https://agilemaxims.com/">his Agile Maxims</a>:</p>
+<blockquote>
+<p>It is in the doing of the work that we discover the work that we must do. Doing exposes&nbsp;reality.</p>
+</blockquote>
+<p>Building and investigating what we have built, is key to discovering what it is that we should build. That investigation is exploratory testing. And once we know a little more about what we should build, it&#8217;s a good idea to capture what we have learned. Prescribed tests, especially when automated and running in a pipeline, are a great way to do&nbsp;so.</p>
+<p>As James Lyndsay wrote in <a href="https://www.workroom-productions.com/why-exploration-has-a-place-in-any-strategy/">&#8220;Why Exploration has a Place in any Strategy&#8221;</a>:</p>
+<blockquote>
+<p>We <em>need</em> exploratory tests. They&#8217;re great. They tell us about risk - unexpected, unpredicted, emergent - that goes hand-in-hand with the system that has been delivered. Exploratory tests are immediate, of the moment. The risk is known - and you&#8217;ll not need to test for it again until you&#8217;ve addressed it, and <em>written</em> a test to show you that it&#8217;s&nbsp;gone.</p>
+</blockquote>
+<p>And <a href="https://maaretp.com/">Maaret Pyhäjärvi</a> has been saying the same. In <a href="https://www.getxray.app/blog/contemporary-exploratory-testing-podcast-highlights">contemporary exploratory testing</a> exploration and automation go hand-in-hand. And test cases, whether they are executable (i.e. automated) or not, are the output of exploratory&nbsp;testing.</p>
+<h2>Being intentional about exploratory&nbsp;testing</h2>
+<p>By now you may have realized that the question is not whether you do or don&#8217;t do exploratory testing. You are doing it already, whether you explicitly label it as such or&nbsp;not.</p>
+<p>The question is if you&#8217;re being intentional about&nbsp;it.</p>
+<p>Are you intentional about the when? Doing exploratory testing throughout the whole development process: designing, building, testing, and monitoring? And are you intentional about the what? What is working for you during exploratory testing and what isn&#8217;t? How can you get even better at&nbsp;it?</p>
+<p>In my experience, teams that are intentional about exploratory testing, that do regularly explore what the are building and what they have built, tend to outperform those that&nbsp;don&#8217;t.</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Unfortunately the video is currently unavailable, as <a href="https://ncrafts.io/">NewCrafts</a> is migrating their videos from Vimeo <a href="https://www.youtube.com/@NewCraftsConference/videos">to Youtube</a>. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/exploratory-testing/" rel="tag">exploratory&nbsp;testing</a></li>
+            <li><a class="tag p-category" href="../../../categories/quality-engineering/" rel="tag">quality&nbsp;engineering</a></li>
+            <li><a class="tag p-category" href="../../../categories/software-development/" rel="tag">software&nbsp;development</a></li>
+            <li><a class="tag p-category" href="../../../categories/software-testing/" rel="tag">software&nbsp;testing</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../the-fluxx-ensemble-exercise/" rel="prev" title="The Fluxx ensemble exercise">Previous&nbsp;post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2024 
+<a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by/4.0/80x15.png"></a>
+<a href="mailto:site@joep.slmail.me">Joep Schuurkes</a> - Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a> - Analytics by <a href="https://plausible.io/" rel="nofollow" target="_blank">Plausible</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>
