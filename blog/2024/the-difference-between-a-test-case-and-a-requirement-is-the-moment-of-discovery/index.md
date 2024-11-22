@@ -19,8 +19,9 @@ A less straightforward, but more interesting way to distinguish a test case and 
 
 In this post I want to explore the meaning of that statement. In the next post I'll explore how looking at requirements and test cases in this way, can help us to do better testing. So this post will be a bit more philosophical, the next one more practical.
 
-
 <!-- TEASER_END -->
+
+*(edit 22 November 2024)* The second post ended up covering [being intentional about exploratory testing](link://slug/being-intentional-about-exploratory-testing). I intend to write a third one for the series about optimizing for moments of discovery.
 
 
 # About requirements and test cases
