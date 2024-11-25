@@ -24,11 +24,9 @@ Today I want to argue that it pays to be more intentional about exploratory test
 
 # What is exploratory testing?
 
-During her [live exploratory testing session](https://ncrafts.io/speaker/elizabethzagroba)[^1] at [NewCrafts](https://ncrafts.io/) 2024, [Elizabeth Zagroba](https://elizabethzagroba.com/) ad-libbed the following definition:
+During her [live exploratory testing session](https://www.youtube.com/watch?v=m6xA2Qs7siA) at [NewCrafts](https://ncrafts.io/) 2024, [Elizabeth Zagroba](https://elizabethzagroba.com/) ad-libbed the following definition:
 
 > Exploratory testing is when you're testing and also thinking about what you're doing, and whether it matters.
-
-[^1]: Unfortunately the video is currently unavailable, as [NewCrafts](https://ncrafts.io/) is migrating their videos from Vimeo [to Youtube](https://www.youtube.com/@NewCraftsConference/videos).
 
 This continuous reflection on what you're doing is a key component of exploratory testing. You're interacting with an application, discovering things, and making decisions on what to do next based on those discoveries.
 
