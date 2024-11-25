@@ -38,16 +38,39 @@ trick: there isn't much retrospect, how do you remember everything (/ most of) t
 
 # How do you decide what to do next? {.small}
 
+
+
 # How many alternatives can you imagine? {.small}
+
+SFDIPOT
+
+- [Test Heuristics Cheat Sheet](https://www.ministryoftesting.com/articles/test-heuristics-cheat-sheet) by Elisabeth Hendrickson
+
+
+
 How many possibilities can you imagine? Things to try? Things that might happen?
 
 # How do you model the different aspects of what you're testing? {.small}
 
+- the product elements of RST's [Heuristic Test Strategy Mode](https://www.satisfice.com/download/heuristic-test-strategy-model)l
+
+quality attributes? -> little black book test design
+
+
 # How rich an varied are the oracles you use for evaluating what you discover? {.small}
+
+- [FEW HICCUPS](https://developsense.com/blog/2012/07/few-hiccupps) Michael Bolton
+
 
 # How do you record what you notice and decide and do while testing? {.small}
 
+note taking
+
+
+
+
 # What tools do you use that support, extend and/or amplify your testing? {.small}
+
 
 # What do you leave behind for future use? {.small}
 test reports, test guides, test automation? test scripts
