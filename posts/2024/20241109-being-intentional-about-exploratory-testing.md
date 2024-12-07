@@ -49,7 +49,7 @@ There are two important things missing from that picture of exploratory testing:
 For decades testers have been collecting heuristics that have helped them guide their testing:
 
 - [Test Heuristics Cheat Sheet](https://www.ministryoftesting.com/articles/test-heuristics-cheat-sheet) by Elisabeth Hendrickson
-- the product elements of RST's [Heuristic Test Strategy Mode](https://www.satisfice.com/download/heuristic-test-strategy-model)l
+- the product elements of RST's [Heuristic Test Strategy Model](https://www.satisfice.com/download/heuristic-test-strategy-model)
 - [FEW HICCUPS](https://developsense.com/blog/2012/07/few-hiccupps) Michael Bolton
 - [Microheuristics](https://www.schladebeck.de/microheuristics/) by Alex Schladebeck
 - Analysis, Test Design, and Test Execution Heuristics from [The Little Black Book on Test Design](http://www.thetesteye.com/papers/TheLittleBlackBookOnTestDesign.pdf)
