@@ -44,7 +44,7 @@ There are two important things missing from that picture of exploratory testing:
 - exploratory testing is a learned skill
 - exploratory testing can be as 'technical' as you want
 
-## Exploratory testing is a learned skill
+## Exploratory testing is a learned skill <a id="learned-skill" />
 
 For decades testers have been collecting heuristics that have helped them guide their testing:
 

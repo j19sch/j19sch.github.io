@@ -54,17 +54,19 @@ Of course I'm not going to claim it's possible to notice everything all the time
 
 # How do you decide what to do next? {.small}
 
+You can't test everything. You have to make decisions on what to explore further and what to let be (at least for now). [Heuristics](link://slug/being-intentional-about-exploratory-testing#learned-skill) are the tools to make these decisions. The trick with heursitics is that they are fallible. They're like looking for you lost keys at the last place you saw them. You might find your keys in that place, or when you get there you might remember where they are, or you might not find them at all. It's still a good thing to try, though.
+
+This means that (as with any non-trivial decision) you might make the right decision, apply a good heuristic for the situation at hand, but not get a good outcome. You are doing exploratory testing after all, you're looking for surprises. You can be looking in all the right places, but the surprises just aren't there. That's just the way it goes sometimes. Doing excellent testing and not having that much to show for it.
 
 
 # How many alternatives can you imagine? {.small}
 
-SFDIPOT
+There's an exercise that's sometimes used when interviewing test engineers. The interviewer shows a brick and asks the candidate: "What can you do with this?" Ideally, the candidate keeps coming up with new ideas and after a few minutes the interviewer has to stop them.
 
-- [Test Heuristics Cheat Sheet](https://www.ministryoftesting.com/articles/test-heuristics-cheat-sheet) by Elisabeth Hendrickson
+Coming with an endless range of alternatives is a key testing skill. Things to observe, things to try, things that might happen. I think it's the skill that gets testers to be called "creative". They come at things from different angles. Some of them contradicting each other. Some of them challenging boundaries, assumptions and constrains. (For example: "Does the brick need to stay whole?")
 
+A thing is never a single thing, it contains multitudes.
 
-
-How many possibilities can you imagine? Things to try? Things that might happen?
 
 # How do you model the different aspects of what you're testing? {.small}
 
