@@ -70,9 +70,17 @@ A thing is never a single thing, it contains multitudes.
 
 # How do you model the different aspects of what you're testing? {.small}
 
-- the product elements of RST's [Heuristic Test Strategy Mode](https://www.satisfice.com/download/heuristic-test-strategy-model)l
+A model is a simplified representation. It's a choice to amplify some aspects and mute others. To bring some aspects to the forefront and to hide others.
 
-quality attributes? -> little black book test design
+A classical example of a model is a map. It hides and simplifies many things so that it can better show you what it wants you to show. Whether it's a tourist map, a road atlas, or a map with election results. They were made with a purpose in mind and that purpose determines how useful that particular map is for certain things. (While you could use [this map](/images/2024/waterkaart_Rdam_klein.jpg) to navigate the streets of Rotterdam, it's more useful when you're on a boat.)
+
+When it comes to testing, some of the most common models are input/output, state, and flowcharts. Notice that as with maps, they are not mutually exclusive. They complement each other. There are also some collections of models, such as the "Product Factors" (SFDIPOT) of the [Heuristic Test Strategy Model](https://www.satisfice.com/download/heuristic-test-strategy-model). Or the [quality characteristics](https://thetesteye.com/posters/TheTestEye_SoftwareQualityCharacteristics.pdf) of the [The Little Black Book on Test Design](https://thetesteye.com/blog/2011/09/the-little-black-book-on-test-design/).
+
+A key part of modeling is being able to model what you can't directly see. As you explore, as you try things and notice how what you're testing responds, you build a model of how things/it might work[^1]. Part of that overall model are the smaller models mentioned earlier.
+
+
+[^1]: This kind of reasoning is called [abduction](https://plato.stanford.edu/entries/abduction/) or abductive reasoning.
+
 
 
 # How rich an varied are the oracles you use for evaluating what you discover? {.small}
