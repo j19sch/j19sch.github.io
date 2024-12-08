@@ -1,7 +1,7 @@
 <!--
 .. title: The eight skills of exploratory testing
 .. slug: the-eight-skills-of-exploratory-testing
-.. date: 2024-11-22
+.. date: 2024-12-08
 .. category: exploratory testing
 .. tags: exploratory testing, quality engineering, software development, software testing
 .. type: text
@@ -23,18 +23,34 @@ Turns out it's not the first time I mentioned that pair of skills. In a post abo
 
 > All professional development could be described as changes in sensitivity to notice and accumulation of alternative actions to initiate. (p. 147)
 
-That does raise the question if we can't get a bit more specific about the skills that comprise the overall skill of exploratory testing. So I've come up with six more skills, making a total of eight. For some reasons they ended up as questions rather than verbs. I like how that makes this post less of a checklist and more of a tool for self-reflection.
-
+That does raise the question if the skills of exploratory testing can't be made a little more specific. So I've come up with six additional skills, making a total of eight. For some reasons they ended up as questions rather than verbs. I like how that makes this post less of a checklist and more of a tool for self-reflection. Each skill could be its own blog post, so I'm going to focus on one key element of each skill.
 
 <!-- TEASER_END -->
 
+# The eight skills {.small}
+
+1. What do you notice while testing?
+1. How do you decide what to do next?
+1. How many alternatives can you imagine?
+1. How do you model the different aspects of what you're testing?
+1. How rich an varied are the oracles you use for evaluating what you discover?
+1. How do you record what you notice and decide and do while testing?
+1. What tools do you use that support, extend and/or amplify your testing?
+1. What do you leave behind for future use?
+
+
 # What do you notice while testing? {.small}
 
-<!-- [noticing](link://slug/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto) no link to noticing section yet -->
+The skill of noticing is the foundation of many of the other skills of exploratory testing. What you don't notice, is gone.
 
-> "The real work in noticing is to draw the moment of awakening from the retrospective into the present, closer and closer to the point at which a choice can be made." (p. 76)
+There are two aspects to this skills: external noticing and internal noticing.
 
-trick: there isn't much retrospect, how do you remember everything (/ most of) that happened during testing?
+External noticing is noticing what's going on with the thing you are testing. Do you notice everything that's there? All the elements presented to you? Or were you quickly filling in fields and clicking buttons? And do you notice everything that's happening? Did the screen just refresh in an odd way?
+
+Internal noticing is noticing what's going on with you as you test. It's being aware of your thoughts, your feelings, your decisions. Do you feel bored? Surprised? Do you feel your attention slipping? Are you aware of making a decision or did it just happen? Are you focusing and going deep? Or defocusing and going wide? Is it time to switch from the one to the other?
+
+Of course I'm not going to claim it's possible to notice everything all the time, internally and externally. Awareness of both is key to good exploratory testing, though.
+
 
 # How do you decide what to do next? {.small}
 
