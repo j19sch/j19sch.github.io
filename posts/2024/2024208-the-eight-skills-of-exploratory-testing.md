@@ -27,19 +27,27 @@ That does raise the question if the skills of exploratory testing can't be made 
 
 <!-- TEASER_END -->
 
-# The eight skills {.small}
+# The eight skills of exploratory testing
 
 1. What do you notice while testing?
+	- key element: 
 1. How do you decide what to do next?
+	- key element: 
 1. How many alternatives can you imagine?
+	- key element: 
 1. How do you model the different aspects of what you're testing?
+	- key element: 
 1. How rich an varied are the oracles you use for evaluating what you discover?
+	- key element: 
 1. How do you record what you notice and decide and do while testing?
+	- key element: 
 1. What tools do you use that support, extend and/or amplify your testing?
+	- key element: 
 1. What do you leave behind for future use?
+	- key element: 
 
 
-# What do you notice while testing? {.small}
+## What do you notice while testing?
 
 The skill of noticing is the foundation of many of the other skills of exploratory testing. What you don't notice, is gone.
 
@@ -52,14 +60,14 @@ Internal noticing is noticing what's going on with you as you test. It's being a
 Of course I'm not going to claim it's possible to notice everything all the time, internally and externally. Awareness of both is key to good exploratory testing, though.
 
 
-# How do you decide what to do next? {.small}
+## How do you decide what to do next?
 
 You can't test everything. You have to make decisions on what to explore further and what to let be (at least for now). [Heuristics](link://slug/being-intentional-about-exploratory-testing#learned-skill) are the tools to make these decisions. The trick with heuristics is that they are fallible. They're like looking for you lost keys at the last place you saw them. You might find your keys in that place, or when you get there you might remember where they are, or you might not find them at all. It's still a good thing to try, though.
 
 This means that (as with any non-trivial decision) you might make the right decision, apply a good heuristic for the situation at hand, but not get a good outcome. You are doing exploratory testing after all, you're looking for surprises. You can be looking in all the right places, but the surprises just aren't there. That's just the way it goes sometimes. Doing excellent testing and not having that much to show for it.
 
 
-# How many alternatives can you imagine? {.small}
+## How many alternatives can you imagine?
 
 There's an exercise that's sometimes used when interviewing test engineers. The interviewer shows a brick and asks the candidate: "What can you do with this?" Ideally, the candidate keeps coming up with new ideas and after a few minutes the interviewer has to stop them.
 
@@ -68,7 +76,7 @@ Coming with an endless range of alternatives is a key testing skill. Things to o
 A thing is never a single thing, it contains multitudes.
 
 
-# How do you model the different aspects of what you're testing? {.small}
+## How do you model the different aspects of what you're testing?
 
 A model is a simplified representation. It's a choice to amplify some aspects and mute others. To bring some aspects to the forefront and to hide others.
 
@@ -83,7 +91,7 @@ A key part of modeling is being able to model what you can't directly see. As yo
 
 
 
-# How rich an varied are the oracles you use for evaluating what you discover? {.small}
+## How rich an varied are the oracles you use for evaluating what you discover?
 
 Exploratory testing is not just about exploration and discovery. It's also about evaluation. You found some interesting behavior. Is it good? Is it bad? Maybe you haven't decided yet? The things we use to make this decision, are traditionally called "oracles"[^2] in testing.
 
@@ -96,7 +104,7 @@ For another and quite different list of oracles, there's the [transcript](https:
 All this to say that applying oracles to evaluate what you find as you test, is a lot more involved than checking things off a list.
 
 
-# How do you record what you notice and decide and do while testing? {.small}
+## How do you record what you notice and decide and do while testing?
 
 The only way I know how to do this and do it well, is by taking good notes. Screenshots and videos are great supporting materials, but they don't capture your thoughts, your feelings, your decisions. And if you're going to watch a narrated video of a test session, you might as well do the testing yourself.
 
@@ -107,10 +115,10 @@ Secondly, embrace that the notes are for you and just for you. If you decide to 
 
 
 
-# What tools do you use that support, extend and/or amplify your testing? {.small}
+## What tools do you use that support, extend and/or amplify your testing?
 
 
-# What do you leave behind for future use? {.small}
+## What do you leave behind for future use?
 test reports, test guides, test automation? test scripts
 
 
