@@ -30,17 +30,17 @@ That does raise the question if the skills of exploratory testing can't be made 
 # The eight skills of exploratory testing
 
 1. What do you notice while testing?
-	- key element: 
+	- key element: internal and external noticing
 1. How do you decide what to do next?
-	- key element: 
+	- key element: good decisions do not guarantee good outcomes
 1. How many alternatives can you imagine?
-	- key element: 
+	- key element: a thing is never a single thing
 1. How do you model the different aspects of what you're testing?
-	- key element: 
+	- key element: model what you can see and what you can infer
 1. How rich an varied are the oracles you use for evaluating what you discover?
-	- key element: 
+	- key element: there are many oracles besides requirements and acceptance criteria
 1. How do you record what you notice and decide and do while testing?
-	- key element: 
+	- key element: it all starts from note-taking
 1. What tools do you use that support, extend and/or amplify your testing?
 	- key element: 
 1. What do you leave behind for future use?
@@ -113,9 +113,8 @@ So how do you take good notes? Some basic markup goes a long way. Label the page
 Secondly, embrace that the notes are for you and just for you. If you decide to share your raw notes and someone finds them useful, great. If they find them inscrutable, what did they expect? Transforming your notes to something more widely useful, is a different skill.
 
 
-
-
 ## What tools do you use that support, extend and/or amplify your testing?
+
 
 
 ## What do you leave behind for future use?
