@@ -5,7 +5,7 @@
 .. category: exploratory testing
 .. tags: exploratory testing, quality engineering, software development, software testing
 .. type: text
-.. description: 
+.. description: Exploratory testing is a learned skill. Which skills? These eight!
 -->
 
 TODO:
@@ -54,7 +54,7 @@ Of course I'm not going to claim it's possible to notice everything all the time
 
 # How do you decide what to do next? {.small}
 
-You can't test everything. You have to make decisions on what to explore further and what to let be (at least for now). [Heuristics](link://slug/being-intentional-about-exploratory-testing#learned-skill) are the tools to make these decisions. The trick with heursitics is that they are fallible. They're like looking for you lost keys at the last place you saw them. You might find your keys in that place, or when you get there you might remember where they are, or you might not find them at all. It's still a good thing to try, though.
+You can't test everything. You have to make decisions on what to explore further and what to let be (at least for now). [Heuristics](link://slug/being-intentional-about-exploratory-testing#learned-skill) are the tools to make these decisions. The trick with heuristics is that they are fallible. They're like looking for you lost keys at the last place you saw them. You might find your keys in that place, or when you get there you might remember where they are, or you might not find them at all. It's still a good thing to try, though.
 
 This means that (as with any non-trivial decision) you might make the right decision, apply a good heuristic for the situation at hand, but not get a good outcome. You are doing exploratory testing after all, you're looking for surprises. You can be looking in all the right places, but the surprises just aren't there. That's just the way it goes sometimes. Doing excellent testing and not having that much to show for it.
 
@@ -85,12 +85,24 @@ A key part of modeling is being able to model what you can't directly see. As yo
 
 # How rich an varied are the oracles you use for evaluating what you discover? {.small}
 
-- [FEW HICCUPS](https://developsense.com/blog/2012/07/few-hiccupps) Michael Bolton
+Exploratory testing is not just about exploration and discovery. It's also about evaluation. You found some interesting behavior. Is it good? Is it bad? Maybe you haven't decided yet? The things we use to make this decision, are traditionally called "oracles"[^2] in testing.
+
+[^2]: "Oracle" may just be my least favorite term in testing. One day I should do some research into how we adopted this term.
+
+An excellent list of oracles is Michael Bolton's [FEW HICCUPS](https://developsense.com/blog/2012/07/few-hiccupps). It does a great job at showing if we're only testing against requirements or acceptance criteria, we'll be missing a lot.
+
+For another and quite different list of oracles, there's the [transcript](https://associationforsoftwaretesting.org/2023/01/10/the-often-overlooked-test-oracle/) of Doug Hoffman's webinar "The Often Overlooked Test Oracle".
+
+All this to say that applying oracles to evaluate what you find as you test, is a lot more involved than checking things off a list.
 
 
 # How do you record what you notice and decide and do while testing? {.small}
 
-note taking
+The only way I know how to do this and do it well, is by taking good notes. Screenshots and videos are great supporting materials, but they don't capture your thoughts, your feelings, your decisions. And if you're going to watch a narrated video of a test session, you might as well do the testing yourself.
+
+So how do you take good notes? Some basic markup goes a long way. Label the page with a title and a date. Make notes as you test. Use a system to mark things: "?" for a question, "!" for something remarkable, "B" for a bug, a light bulb for an idea for further testing, "OK" if something looks good, a "+" for something good you want to share with the developer(s). It's easy and quick to add these marks when you test. And it helps you to find the key points of your testing.
+
+Secondly, embrace that the notes are for you and just for you. If you decide to share your raw notes and someone finds them useful, great. If they find them inscrutable, what did they expect? Transforming your notes to something more widely useful, is a different skill.
 
 
 
