@@ -10,6 +10,7 @@
 
 TODO:
 
+- NINE skills
 - add link to this post on being intentional about ET post
 - check title, slug, filename
 - add description
@@ -43,6 +44,8 @@ That does raise the question if the skills of exploratory testing can't be made 
 	- key element: it all starts from note-taking
 1. What tools do you use that support, extend and/or amplify your testing?
 	- key element: 
+1. How do you communicate your test results?
+	- key element:
 1. What do you leave behind for future use?
 	- key element: 
 
@@ -115,10 +118,37 @@ Secondly, embrace that the notes are for you and just for you. If you decide to 
 
 ## What tools do you use that support, extend and/or amplify your testing?
 
+"Tools" is a broad category. Some people say their favorite testing tool is their brain. Or you could say that a pen and paper to take notes with, are a tool. Both are fair points, but here I'd like to treat those kinds of tools as a given.
+
+Rather, the question is: "Beyond sitting behind a computer with pen and paper and with your brain engaged, what more tools do you use while testing?" Tools like the dev tools in your browser, the features of your IDE, a script you wrote that does something useful, a diffing tool, some test automation, a data visualisation tool, or just a spreadsheet.
+
+Using tools, lets you do so much more and so much better than without tools. So learn to use the appropriate tools for the situation at hand. There are so many, that arguably you should always be learning.
+
+
+## How do you communicate your test results?
+
+Once you've done some testing and made notes of your testing, you still don't have much. You have information in your head and notes to support your memory. If you stop there, you might as well not have done any testing at all.
+
+So what do you do with that information? How do you report back to your team? When? In what format?
+
+test reports
+
+bug fixes
+
+pair program
+
+just bugs, also what works well, what you've tested, how you've tested, what would make testing easier?
+
+overlap with next one?
 
 
 ## What do you leave behind for future use?
-test reports, test guides, test automation? test scripts
+
+<!-- This question about future use, does not match the reporting angle. -->
+
+test automation
+test scripts
+charters, test guides
 
 
 ---
