@@ -28,7 +28,7 @@ That does raise the question if the skills of exploratory testing can't be made 
 
 <!-- TEASER_END -->
 
-# The eight skills of exploratory testing
+# The nine skills of exploratory testing
 
 1. What do you notice while testing?
 	- key element: internal and external noticing
@@ -43,11 +43,11 @@ That does raise the question if the skills of exploratory testing can't be made 
 1. How do you record what you notice and decide and do while testing?
 	- key element: it all starts from note-taking
 1. What tools do you use that support, extend and/or amplify your testing?
-	- key element: 
+	- key element: there's always more to learn, choose wisely
 1. How do you communicate your test results?
-	- key element:
+	- key element: many different opportunities, except not sharing at all
 1. What do you leave behind for future use?
-	- key element: 
+	- key element: test automation is a great thing to leave behind
 
 
 ## What do you notice while testing?
@@ -127,29 +127,24 @@ Using tools, lets you do so much more and so much better than without tools. So 
 
 ## How do you communicate your test results?
 
-Once you've done some testing and made notes of your testing, you still don't have much. You have information in your head and notes to support your memory. If you stop there, you might as well not have done any testing at all.
+Once you've done some testing and made notes of your testing, you still don't have much. You have information in your head with your notes to support your memory. If you stop there, you might as well not have done any testing at all.
 
-So what do you do with that information? How do you report back to your team? When? In what format?
+So what do you do with that information? How do you report about your testing? When? In what format?
 
-test reports
+The good (and the bad) news is that are many different ways to report on your testing. It might be a full-blown test report. It might be a message in chat. It might be some code that fixes a bug you found. Or a branch with new failing test. It might be an update in your daily standup meeting.
 
-bug fixes
-
-pair program
-
-just bugs, also what works well, what you've tested, how you've tested, what would make testing easier?
-
-overlap with next one?
+Even if your team doesn't expect much more than a list of bugs you found, it's worth it to share more. Tell the [three-part testing story](https://developsense.com/blog/2018/02/how-is-the-testing-going) of what you learned about the product, what you did to learn those things, and what made that learning easier or harder. 
 
 
-## What do you leave behind for future use?
+## What do you leave behind for the future?
 
-<!-- This question about future use, does not match the reporting angle. -->
+<!-- nor for future use, what do you leave behind that's useful in the future -->
 
-test automation
-test scripts
-charters, test guides
+Once you've done your testing and your reporting, there's still the question what do you leave behind that will be useful in the future.
 
+A lot of the useful stuff comes from your notes. If you've made a model while testing, make a cleaned-up version of the model. If you've come up with test ideas, put them in a list. If you've found a really convenient way to do something, document it. If you discovered a risky area of the application or certain bugs that keep popping up, write those down in their own document. And crucially, share these things. Don't keep them for yourself.
+
+Perhaps more useful than any of those, is leaving behind test automation. What better way to capture the important things you learned, in something that anyone on the team (and your pipeline) can run. So it's not that you're automating the (exploratory) testing. Rather it's that [test automation is an output of explorary testing](link://slug/being-intentional-about-exploratory-testing#exploratory-and-prescribed-testing).
 
 ---
 

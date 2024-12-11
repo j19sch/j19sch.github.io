@@ -74,7 +74,7 @@ Also, any way to interact with any part(s) of the application is a valid way of 
 So how can exploratory testing not be technical?
 
 
-# How does exploratory testing relate to prescribed testing?
+# How does exploratory testing relate to prescribed testing? <a id=exploratory-and-prescribed-testing />
 
 Exploratory testing is about learning and discovery. Prescribed tests (whether automated or not) are built based on that learning. Which is why in the [previous post of this series](link://slug/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery) I stated: *"The difference between a test case and a requirement is the moment of discovery."* We discover things through exploratory testing and through requirements engineering. Requirements and prescribed tests (test cases) are the outputs of those discoveries.
 
