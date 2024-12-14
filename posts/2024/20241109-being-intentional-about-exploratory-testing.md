@@ -58,6 +58,8 @@ Having these lists of heuristics is a great start, but applying them hinges on t
 
 But you can do these (noticing and deciding) rather well or rather poorly. And that's the invisible skill of exploratory testing. Invisible, because it's all in the mind of the person doing the exploratory testing. And as any other skill, exploratory testing can be practiced and refined. It's not something some people just happen to do well, while others don't.
 
+*(edit 14 December 2024)* In a follow-up post I wrote about the [nine skills of exploratory testing](link://slug//the-nine-skills-of-exploratory-testing).
+
 
 ## Exploratory testing can be as 'technical' as you want
 

@@ -1,7 +1,7 @@
 <!--
 .. title: The nine skills of exploratory testing
 .. slug: the-nine-skills-of-exploratory-testing
-.. date: 2024-12-08
+.. date: 2024-12-14
 .. category: exploratory testing
 .. tags: exploratory testing, quality engineering, software development, software testing
 .. type: text
@@ -11,12 +11,8 @@
 TODO:
 
 - NINE skills
-- add link to this post on being intentional about ET post
-- check title, slug, filename
-- add description
-- layout of list of skills can be better
-- every question should fit on a single line
-- improve phrasing of key elements
+- update date here and in edit of previous post
+- check list matches headings
 
 ---
 
@@ -33,24 +29,24 @@ That does raise the question if the skills of exploratory testing can't be made 
 
 # The nine skills of exploratory testing
 
-1. What do you notice while testing?
-	- key element: internal and external noticing
-1. How do you decide what to do next?
-	- key element: good decisions do not guarantee good outcomes
-1. How many alternatives can you imagine?
-	- key element: a thing is never a single thing
-1. How do you model the different aspects of what you're testing?
-	- key element: model what you can see and what you can infer
-1. How rich an varied are the oracles you use for evaluating what you discover?
-	- key element: there are many oracles besides requirements and acceptance criteria
-1. How do you record what you notice and decide and do while testing?
-	- key element: it all starts from note-taking
-1. What tools do you use that support, extend and/or amplify your testing?
-	- key element: there's always more to learn, choose wisely, always be learning, always on the lookout to add a new tool to your kit
-1. How do you communicate your test results?
-	- key element: many different opportunities, except not sharing at all; testing is only as valuable as its report; testing is only as good as its report
-1. What do you leave behind for future use?
-	- key element: test automation is a great thing to leave behind
+__1\. What do you notice while testing?__  
+&emsp;&emsp; *internal and external noticing*  
+__2\. How do you decide what to do next?__  
+&emsp;&emsp; *good decisions do not guarantee good outcomes*  
+__3\. How many alternatives can you imagine?__  
+&emsp;&emsp; *a thing is never a single thing*  
+__4\. How do you model the different aspects of what you're testing?__  
+&emsp;&emsp; *model what you see and what you infer*  
+__5\. How rich are the oracles you use for evaluating what you discover?__  
+&emsp;&emsp; *oracles come in many different shapes*  
+__6\. How do you record what you notice, decide and do while testing?__  
+&emsp;&emsp; *it all starts from note-taking*  
+__7\. What tools do you use that support, extend or amplify your testing?__  
+&emsp;&emsp; *be always on the lookout for a new tool*  
+__8\. How do you communicate your test results?__  
+&emsp;&emsp; *your testing is only as good as your reporting*  
+__9\. What do you leave behind for future use?__  
+&emsp;&emsp; *test automation is output of exploratory testing*  
 
 
 ## What do you notice while testing?
@@ -95,18 +91,16 @@ A key part of modeling is being able to model what you can't directly see. As yo
 
 
 
-## How rich and varied are the oracles you use for evaluating what you discover?
+## How rich are the oracles you use for evaluating what you discover?
 
-Exploratory testing is not just about exploration and discovery. It's also about evaluation. You found some interesting behavior. Is it good? Is it bad? Maybe you haven't decided yet? The things we use to make this decision, are traditionally called "oracles" in testing[^2].
-
-[^2]: "Oracle" may just be my least favorite term in testing. One day I should do some research into how we adopted this term.
+Exploratory testing is not just about exploration and discovery. It's also about evaluation. You found some interesting behavior. Is it good? Is it bad? Maybe you haven't decided yet? The things we use to make this decision, are traditionally called "oracles" in testing.
 
 An excellent list of oracles is Michael Bolton's [FEW HICCUPS](https://developsense.com/blog/2012/07/few-hiccupps). It does a great job showing that if we're only testing against requirements or acceptance criteria, we'll be missing a lot. For another and quite different list of oracles, there's the [transcript](https://associationforsoftwaretesting.org/2023/01/10/the-often-overlooked-test-oracle/) of Doug Hoffman's webinar *"The Often Overlooked Test Oracle"*.
 
 All this to say that applying oracles to evaluate what you find as you test, is a lot more involved than checking things off a list.
 
 
-## How do you record what you notice and decide and do while testing?
+## How do you record what you notice, decide and do while testing?
 
 The only way I know how to keep track of my testing and to do it well, is by taking notes. Screenshots and videos are great supporting materials, but they don't capture your thoughts, your feelings, your decisions. And if you're going to watch a narrated video of a test session, you might as well do the testing yourself.
 
@@ -115,7 +109,7 @@ So how do you take good notes? Some basic markup goes a long way. Label the page
 Secondly, embrace that the notes are for you and just for you. If you decide to share your raw notes and someone finds them useful, great. If they find them inscrutable, what did they expect? That's not their purpose. Transforming your notes to something more widely useful, is a different skill.
 
 
-## What tools do you use that support, extend and/or amplify your testing?
+## What tools do you use that support, extend or amplify your testing?
 
 "Tools" is a broad category. Some people say their favorite testing tool is their brain. Or you could say that a pen and paper to take notes with, are a tool. Both are fair points, but here I'd like to treat those kinds of tools as a given.
 
@@ -135,9 +129,7 @@ The good (and the bad) news is that are many different ways to report on your te
 Even if your team doesn't expect much more than a list of bugs you found, it's valuable to share more. Tell the [three-part testing story](https://developsense.com/blog/2018/02/how-is-the-testing-going) of what you learned about the product, what you did to learn those things, and what made that learning easier or harder.
 
 
-## What do you leave behind for the future?
-
-<!-- nor for future use, what do you leave behind that's useful in the future -->
+## What do you leave behind for future use?
 
 Once you've done your testing and your reporting, there's still the question of what you leave behind that will be useful in the future.
 
