@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Exploratory testing is a learned skill. Which skills? These nine!">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The nine skills of exploratory testing | Joep Schuurkes</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../feed.atom">
+<link rel="canonical" href="https://smallsheds.garden/blog/2024/the-nine-skills-of-exploratory-testing/">
+<link rel="icon" href="../../../assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="../../../assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../assets/favicons/favicon-96x96.png" sizes="96x96">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../being-intentional-about-exploratory-testing/" title="Being intentional about exploratory testing" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="The nine skills of exploratory testing">
+<meta property="og:url" content="https://smallsheds.garden/blog/2024/the-nine-skills-of-exploratory-testing/">
+<meta property="og:description" content="Exploratory testing is a learned skill. Which skills? These nine!">
+<meta property="og:image" content="https://smallsheds.garden/images/default-preview.jpeg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2024-12-15T00:00:00+01:00">
+<meta property="article:tag" content="exploratory testing">
+<meta property="article:tag" content="quality engineering">
+<meta property="article:tag" content="software development">
+<meta property="article:tag" content="software testing">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-projects/" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-talks/" class="nav-link">Talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../../my-lists/reading-list/" class="dropdown-item">Reading list</a>
+                    <a href="../../../my-lists/recommended-reading/" class="dropdown-item">Recommended reading</a>
+                    <a href="../../../my-lists/favorite-podcasts/" class="dropdown-item">Favorite podcasts</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../" class="dropdown-item">My blog</a>
+                    <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
+                    <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">The nine skills of exploratory&nbsp;testing</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep&nbsp;Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2024-12-15T00:00:00+01:00" itemprop="datePublished" title="15 December 2024">15 December 2024</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p>Exploratory testing is a learned skill, as I claimed in my previous post <em><a href="../being-intentional-about-exploratory-testing/">&#8220;Being intentional about exploratory testing&#8221;</a></em>. In that post I mentioned the importance of two skills: noticing what there is to notice and deciding what to do next. Turns out it&#8217;s not the first time I mentioned that pair of skills. In a post about <a href="../../2021/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto/#noticing-options-principles">how to teach Agile</a>, I quoted John Mason&#8217;s <em>&#8220;Researching Your Own Practice, The Discipline of Noticing&#8221;</em>:</p>
+<blockquote>
+<p><span class="dquo">&#8220;</span>All professional development could be described as changes in sensitivity to notice and accumulation of alternative actions to initiate.&#8221;&#8221; (p.&nbsp;147)</p>
+</blockquote>
+<p>That does raise the question if the skills of exploratory testing can&#8217;t be made a little more specific. After giving it some thought, I came up with seven additional skills, making a total of nine. For some reasons they ended up as questions rather than nouns. I like how that makes this post less of a checklist and more of a tool for self-reflection. Each skill could be its own blog post, so I&#8217;m going to focus on one key element of each&nbsp;skill.</p>
+<!-- TEASER_END -->
+
+<h2>The nine skills of exploratory&nbsp;testing</h2>
+<p>Below I&#8217;ll go into more detail on each of these, but here&#8217;s a list of the nine skills and the key element I&#8217;ll cover in this&nbsp;post.</p>
+<p><strong>1. What do you notice while testing?</strong><br>
+   <em>internal and external noticing</em><br><strong>2. How do you decide what to do next?</strong><br>
+   <em>good decisions do not guarantee good outcomes</em><br><strong>3. How many alternatives can you imagine?</strong><br>
+   <em>a thing is never a single thing</em><br><strong>4. How do you model the different aspects of what you&#8217;re testing?</strong><br>
+   <em>model what you see and what you infer</em><br><strong>5. How rich are the oracles you use for evaluating what you discover?</strong><br>
+   <em>oracles come in many different shapes</em><br><strong>6. How do you record what you notice, decide and do while testing?</strong><br>
+   <em>it starts with taking good notes</em>  <br><strong>7. What tools do you use to support, extend or amplify your testing?</strong><br>
+   <em>always be ready to pick up a new tool</em><br><strong>8. How do you communicate your test results?</strong><br>
+   <em>your testing is only as good as your reporting</em><br><strong>9. What do you leave behind for future use?</strong><br>
+   <em>test automation is output of exploratory&nbsp;testing</em>  </p>
+<h3>What do you notice while&nbsp;testing?</h3>
+<p>The skill of noticing is the foundation of many of the other skills of exploratory testing. What you don&#8217;t notice, is gone. There are two aspects to this skills: external noticing and internal&nbsp;noticing.</p>
+<p>External noticing is noticing what&#8217;s going on with the thing you are testing. Are you noticing what&#8217;s there? All the different elements presented to you? Or were you quickly filling in fields and clicking buttons? And are noticing things that happen? Did the screen just refresh in an odd&nbsp;way?</p>
+<p>Internal noticing is noticing what&#8217;s going on with you as you test. It&#8217;s being aware of your thoughts, your feelings, your decisions. Do you feel bored? Surprised? Do you feel your attention slipping? Are you aware of making a decision or did you just do a thing? Are you focusing and going deep? Or are you defocusing and going wide? Is it time to switch from one to the&nbsp;other?</p>
+<p>Of course, it is not possible to notice everything all the time, internally and externally. Awareness is key to good exploratory testing, though. You need to be paying&nbsp;attention.</p>
+<h3>How do you decide what to do&nbsp;next?</h3>
+<p>You can&#8217;t test everything. You have to make decisions on what to explore further and what to let be (at least for now). <a href="../being-intentional-about-exploratory-testing/#learned-skill">Heuristics</a> are the tools to make these decisions. The trick with heuristics is that they are fallible. They&#8217;re like looking for you lost keys at the last place you saw them. You might find your keys in that place, or when you get there you might remember where they are, or you might not find them at all. It&#8217;s still a good thing to try,&nbsp;though.</p>
+<p>This means that (as with any non-trivial decision) you might make the right decision, apply a good heuristic for the situation at hand, but not get a good outcome. You are doing exploratory testing after all, you&#8217;re looking for surprises. You can be looking in all the right places, but the surprises just aren&#8217;t there. That&#8217;s just the way it goes sometimes. You did some excellent testing, but unfortunately don&#8217;t have that much to show for&nbsp;it.</p>
+<h3>How many alternatives can you&nbsp;imagine?</h3>
+<p>There&#8217;s an exercise that&#8217;s sometimes used when interviewing test engineers. The interviewer shows a brick and asks the candidate: <em>&#8220;What can you do with this?&#8221;</em> Ideally, the candidate just does not stop coming up with new ideas, until the interviewer says that&#8217;s enough, thank&nbsp;you.</p>
+<p>Coming with an endless range of alternatives is a key testing skill. Things to observe, things to try, things that might happen. I think it&#8217;s the skill that gets testers to be called &#8220;creative&#8221;. They come at things from different angles. Some of them contradicting each other. Some of them challenging boundaries, assumptions and constrains. (For example: <em>&#8220;Does the brick need to stay whole?&#8221;</em>)</p>
+<p>A thing is never a single thing, it contains&nbsp;multitudes.</p>
+<h3>How do you model the different aspects of what you&#8217;re&nbsp;testing?</h3>
+<p>A model is a simplified representation. It&#8217;s a choice to amplify some aspects and mute others. To bring some things to the forefront and to hide&nbsp;others.</p>
+<p>A classical example of a model is a map. It hides and simplifies many things so that it can better show you what it wants you to show. Whether that&#8217;s a tourist map, a road atlas, or a map with election results. They were made with a purpose in mind and that purpose determines how useful that particular map is for certain things. (While you could use <a href="../../../images/2024/waterkaart_Rdam_klein.jpg">this map</a> to navigate the streets of Rotterdam, it&#8217;s more useful if you&#8217;re on a&nbsp;boat.)</p>
+<p>When it comes to testing, some of the basic models are input/output, state, and flowcharts. Notice that as with maps, they are not mutually exclusive. They complement each other. There are also some great collections of models, such as the &#8220;Product Factors&#8221; (<span class="caps">SFDIPOT</span>) of the <a href="https://www.satisfice.com/download/heuristic-test-strategy-model">Heuristic Test Strategy Model</a>. Or the <a href="https://thetesteye.com/posters/TheTestEye_SoftwareQualityCharacteristics.pdf">quality characteristics</a> of the <a href="https://thetesteye.com/blog/2011/09/the-little-black-book-on-test-design/">The Little Black Book on Test Design</a>.</p>
+<p>A key part of modeling is being able to model what you can&#8217;t directly see. As you explore, as you try things and notice how what you&#8217;re testing responds, you build a model of how something might work. This kind of thinking is called <a href="https://plato.stanford.edu/entries/abduction/">abduction</a> or abductive&nbsp;reasoning.</p>
+<h3>How rich are the oracles you use for evaluating what you&nbsp;discover?</h3>
+<p>Exploratory testing is not just about exploration and discovery. It&#8217;s also about evaluation. You found some interesting behavior. Is it good? Is it bad? Maybe you haven&#8217;t decided yet? The things we use to make these evaluations, are traditionally called&nbsp;&#8220;oracles&#8221;.</p>
+<p>An excellent list of oracles is Michael Bolton&#8217;s <a href="https://developsense.com/blog/2012/07/few-hiccupps"><span class="caps">FEW</span> <span class="caps">HICCUPS</span></a>. It does a great job showing that if we&#8217;re only testing against requirements or acceptance criteria, we&#8217;ll be missing a lot. For another and quite different list of oracles, there&#8217;s the <a href="https://associationforsoftwaretesting.org/2023/01/10/the-often-overlooked-test-oracle/">transcript</a> of Doug Hoffman&#8217;s webinar <em>&#8220;The Often Overlooked Test Oracle&#8221;</em>.</p>
+<p>Applying oracles to evaluate what you find as you test, is a lot more involved than checking things off a&nbsp;list.</p>
+<h3>How do you record what you notice, decide and do while&nbsp;testing?</h3>
+<p>The only way I know how to keep track of my testing and to do it well, is by taking notes. Screenshots and videos are great supporting materials, but they don&#8217;t capture your thoughts, your feelings, your decisions. And if you&#8217;re going to watch a narrated video of a test session, you might as well do the testing&nbsp;yourself.</p>
+<p>So how do you take good notes? First of all, some basic markup goes a long way. Label the page with a title and a date. Make notes as you test. Use a system to mark things: &#8220;?&#8221; for a question, &#8220;!&#8221; for something remarkable, &#8220;B&#8221; for a bug, a light bulb for an idea for further testing, a check mark if something seems to be working, a &#8220;+&#8221; for something good you want to share with the developer(s). It&#8217;s easy and quick to add these marks when you test. And it helps you a great deal when navigating your&nbsp;notes.</p>
+<p>Secondly, embrace that the notes are for you and just for you. If you decide to share your raw notes and someone finds them useful, great. If they find them inscrutable, what did they expect? That&#8217;s not their purpose. Transforming your notes to something more broadly useful, is a different&nbsp;skill.</p>
+<h3>What tools do you use to support, extend or amplify your&nbsp;testing?</h3>
+<p><span class="dquo">&#8220;</span>Tools&#8221; is a broad category. Some people say their favorite testing tool is their brain. Or you could say that a pen and paper to take notes with, are a tool. Both are fair points, but here I&#8217;d like to treat those kinds of tools as a&nbsp;given.</p>
+<p>Rather, the question is: Beyond sitting behind a computer with pen and paper and with your brain engaged, what other tools do you use while testing? Tools like the dev tools in your browser, the features of your <span class="caps">IDE</span>, a script you wrote that does something useful, a diffing tool, some test automation, a data visualization tool, or a spreadsheet (conditional formatting is&nbsp;awesome).</p>
+<p>Tools let you do so much more and better and faster. So learn to use the appropriate tools for the situation at hand. There are so many, that arguably you should always be&nbsp;learning.</p>
+<h3>How do you communicate your test&nbsp;results?</h3>
+<p>Once you&#8217;ve done some testing and made notes of your testing, you still don&#8217;t have much. You have information in your head and notes to support your memory. If you stop there, you might as well not have done any testing at&nbsp;all.</p>
+<p>So what do you do with that information? How do you report about your testing? When? In what&nbsp;format?</p>
+<p>The good (and the bad) news is that are many different ways to report on your testing. It might be a full-blown test report. It might be a message in chat. It might be a fix for the bug you found. Or a branch with a failing test. It might be an update in your daily standup&nbsp;meeting.</p>
+<p>Even if your team doesn&#8217;t expect much more than a list of bugs you found, it&#8217;s valuable to share more. Tell the <a href="https://developsense.com/blog/2018/02/how-is-the-testing-going">three-part testing story</a> of what you learned about the product, what you did to learn those things, and what made that learning easier or harder. Testing is about uncovering information, so share what you&nbsp;find.</p>
+<h3>What do you leave behind for future&nbsp;use?</h3>
+<p>Once you&#8217;ve done your testing and your reporting, there&#8217;s still the question of what you leave behind that will be useful in the&nbsp;future.</p>
+<p>A lot of the useful stuff comes from your notes. If you&#8217;ve made a model while testing, make a cleaned-up version of the model. If you&#8217;ve come up with test ideas, put them in a list. If you&#8217;ve found a really convenient way to do something, document it. If you discovered a risky area of the application or certain bugs that keep popping up, write those down somewhere. And crucially, share these things. Don&#8217;t keep them for&nbsp;yourself.</p>
+<p>Perhaps more useful than any of those, is leaving behind test automation. What better way to capture the important things you learned, in something that anyone on the team (and your pipeline) can run. Test automation does not replace (exploratory) testing by automating it away. Rather, <a href="../being-intentional-about-exploratory-testing/#exploratory-and-prescribed-testing">test automation is output of exploratory testing</a>.</p>
+<hr>
+<p>What do you think of these nine skills? Do you recognize them? Do you feel confident in all nine? Are there skills that I&nbsp;missed?</p>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/exploratory-testing/" rel="tag">exploratory&nbsp;testing</a></li>
+            <li><a class="tag p-category" href="../../../categories/quality-engineering/" rel="tag">quality&nbsp;engineering</a></li>
+            <li><a class="tag p-category" href="../../../categories/software-development/" rel="tag">software&nbsp;development</a></li>
+            <li><a class="tag p-category" href="../../../categories/software-testing/" rel="tag">software&nbsp;testing</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../being-intentional-about-exploratory-testing/" rel="prev" title="Being intentional about exploratory testing">Previous&nbsp;post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2024 
+<a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by/4.0/80x15.png"></a>
+<a href="mailto:site@joep.slmail.me">Joep Schuurkes</a> - Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a> - Analytics by <a href="https://plausible.io/" rel="nofollow" target="_blank">Plausible</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

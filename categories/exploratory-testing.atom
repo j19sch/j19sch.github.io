@@ -3,13 +3,33 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about exploratory testing)</title>
   <id>https://smallsheds.garden/categories/exploratory-testing.atom</id>
-  <updated>2024-11-25T19:19:36Z</updated>
+  <updated>2024-12-15T09:21:56Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/exploratory-testing.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/exploratory-testing/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>The nine skills of exploratory testing</title>
+    <id>https://smallsheds.garden/blog/2024/the-nine-skills-of-exploratory-testing/</id>
+    <updated>2024-12-15T00:00:00+01:00</updated>
+    <published>2024-12-15T00:00:00+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2024/the-nine-skills-of-exploratory-testing/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Exploratory testing is a learned skill, as I claimed in my previous post &lt;em&gt;&lt;a href="https://smallsheds.garden/blog/2024/being-intentional-about-exploratory-testing/"&gt;"Being intentional about exploratory testing"&lt;/a&gt;&lt;/em&gt;. In that post I mentioned the importance of two skills: noticing what there is to notice and deciding what to do next. Turns out it's not the first time I mentioned that pair of skills. In a post about &lt;a href="https://smallsheds.garden/blog/2021/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto/#noticing-options-principles"&gt;how to teach Agile&lt;/a&gt;, I quoted John Mason's &lt;em&gt;"Researching Your Own Practice, The Discipline of Noticing"&lt;/em&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"All professional development could be described as changes in sensitivity to notice and accumulation of alternative actions to initiate."" (p. 147)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That does raise the question if the skills of exploratory testing can't be made a little more specific. After giving it some thought, I came up with seven additional skills, making a total of nine. For some reasons they ended up as questions rather than nouns. I like how that makes this post less of a checklist and more of a tool for self-reflection. Each skill could be its own blog post, so I'm going to focus on one key element of each skill.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2024/the-nine-skills-of-exploratory-testing/"&gt;Read more…&lt;/a&gt; (8 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="exploratory-testing" label="exploratory testing"/>
+    <category term="quality-engineering" label="quality engineering"/>
+    <category term="software-development" label="software development"/>
+    <category term="software-testing" label="software testing"/>
+  </entry>
   <entry>
     <title>Being intentional about exploratory testing</title>
     <id>https://smallsheds.garden/blog/2024/being-intentional-about-exploratory-testing/</id>
