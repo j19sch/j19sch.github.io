@@ -32,7 +32,7 @@ Inspired by [workroomprds](https://www.workroom-productions.com/)'s [Black Box P
 <div style='margin-bottom: 1.8rem' markdown="1"></div>
 
 ## The four-hour tester
-[Helena Jeret-Mäe](https://twitter.com/helenaj_m) and I created the [four-hour tester](https://www.fourhourtester.net/), five exercises teaching five basic testing skills in four hours.
+[Helena Jeret-Mäe](https://www.linkedin.com/in/helena-jeret-m%C3%A4e-643b4339/) and I created the [four-hour tester](https://smallsheds.garden/fourhourtester/), five exercises teaching five basic testing skills in four hours.
 
 <div style='margin-bottom: 1.8rem' markdown="1"></div>
 

@@ -42,12 +42,12 @@ There are two important things missing from that picture of exploratory testing:
 - exploratory testing is a learned skill
 - exploratory testing can be as 'technical' as you want
 
-## Exploratory testing is a learned skill
+## Exploratory testing is a learned skill <a id="learned-skill" />
 
 For decades testers have been collecting heuristics that have helped them guide their testing:
 
 - [Test Heuristics Cheat Sheet](https://www.ministryoftesting.com/articles/test-heuristics-cheat-sheet) by Elisabeth Hendrickson
-- the product elements of RST's [Heuristic Test Strategy Mode](https://www.satisfice.com/download/heuristic-test-strategy-model)l
+- the product elements of RST's [Heuristic Test Strategy Model](https://www.satisfice.com/download/heuristic-test-strategy-model)
 - [FEW HICCUPS](https://developsense.com/blog/2012/07/few-hiccupps) Michael Bolton
 - [Microheuristics](https://www.schladebeck.de/microheuristics/) by Alex Schladebeck
 - Analysis, Test Design, and Test Execution Heuristics from [The Little Black Book on Test Design](http://www.thetesteye.com/papers/TheLittleBlackBookOnTestDesign.pdf)
@@ -55,6 +55,8 @@ For decades testers have been collecting heuristics that have helped them guide 
 Having these lists of heuristics is a great start, but applying them hinges on two skills: noticing what there is to notice, and choosing the right heuristic to apply. Neither can be done perfectly. You can't notice everything. You can't know upfront what the exact right heuristic is.
 
 But you can do these (noticing and deciding) rather well or rather poorly. And that's the invisible skill of exploratory testing. Invisible, because it's all in the mind of the person doing the exploratory testing. And as any other skill, exploratory testing can be practiced and refined. It's not something some people just happen to do well, while others don't.
+
+*(edit 15 December 2024)* In a follow-up post I wrote about the [nine skills of exploratory testing](link://slug//the-nine-skills-of-exploratory-testing).
 
 
 ## Exploratory testing can be as 'technical' as you want
@@ -72,7 +74,7 @@ Also, any way to interact with any part(s) of the application is a valid way of 
 So how can exploratory testing not be technical?
 
 
-# How does exploratory testing relate to prescribed testing?
+# How does exploratory testing relate to prescribed testing? <a id=exploratory-and-prescribed-testing />
 
 Exploratory testing is about learning and discovery. Prescribed tests (whether automated or not) are built based on that learning. Which is why in the [previous post of this series](link://slug/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery) I stated: *"The difference between a test case and a requirement is the moment of discovery."* We discover things through exploratory testing and through requirements engineering. Requirements and prescribed tests (test cases) are the outputs of those discoveries.
 
