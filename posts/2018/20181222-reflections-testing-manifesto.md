@@ -61,4 +61,4 @@ This cuts through all the questions about processes, procedures, roles, people, 
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2018/12/22/reflections-on-my-testing-manifesto/).*
+*This post was originally published on my old blog.*

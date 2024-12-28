@@ -42,7 +42,7 @@ Of course, reality is a little more messy than what I presented here. I've influ
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2015/09/06/two-styles-of-leadership-in-spreading-context-driven-testing-titanconf/).*
+*This post was originally published on my old blog.*
 
 [^1]: The slides can be found [here](https://j19sch.github.io/slides/TITAN_leadership_koryu.html#/).
 

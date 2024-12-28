@@ -41,6 +41,6 @@ So when you present two concepts in this way, is it really that surprising that 
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2015/11/15/why-the-testingchecking-debate-is-so-messy-a-fruit-salad-analogy/).*
+*This post was originally published on my old blog.*
 
 [^1]: Including for myself. See for instance how I'm struggling with this very problem in my blog post from August: "[What's the word for the part of testing that's not checking?](link://slug/whats-the-word-for-the-part-of-testing-thats-not-checking)"

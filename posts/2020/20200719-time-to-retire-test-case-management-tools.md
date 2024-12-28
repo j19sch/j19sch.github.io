@@ -106,4 +106,4 @@ A third advantage to documenting models and heuristics is that it gives you a wi
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2020/07/19/its-time-to-retire-our-test-case-management-tools/).*
+*This post was originally published on my old blog.*

@@ -25,4 +25,4 @@ Now quite often the list of stuff that doesn't work is a bit too long, so we hav
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2013/06/23/why-your-product-risk-analysis-isnt/).*
+*This post was originally published on my old blog.*

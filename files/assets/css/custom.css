@@ -231,9 +231,9 @@ hr {
 }
 
 .body-content h2.small {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   margin-top: 1.3rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 
 .body-content h3 {
@@ -283,7 +283,7 @@ div.presentation {
 }
 
 h5.co-presenter, p.co-presenter {
-  margin-bottom: -0.1rem;
+  margin-bottom: -0.8rem;
   font-family: 'Montserrat Italic', sans-serif;
   font-weight: 400;
   font-style: italic;

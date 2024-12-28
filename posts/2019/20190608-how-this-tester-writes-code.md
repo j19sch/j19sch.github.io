@@ -122,7 +122,7 @@ Conditional logic in setup or teardown is a different matter, by the way. For in
 Testing is investigating to evaluate a product. So you want as much information as possible - assuming it's structured well enough you can navigate it easily. So good test reports and logging are crucial. When a test fails, you want to have more information than the name of the test, the failed assert, and its assert message.
 
 
-## Tests-as-code versus tests-as-tests
+## <a id="tests-as-code-vs-tests-as-tests"></a>Tests-as-code versus tests-as-tests
 
 ### two different perspectives
 As hinted at by having a section on "writing good code" and one on "building good tests", I approach auto-tests from two different perspectives: tests-as-tests and tests-as code.
@@ -169,4 +169,4 @@ Revisiting the [definition of epistemic testability](https://www.satisfice.com/d
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2019/06/08/how-this-tester-writes-code/).*
+*This post was originally published on my old blog.*

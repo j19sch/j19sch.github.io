@@ -24,7 +24,7 @@ Change by Attraction by Esther Derby
 The Idealcast by Gene Kim  
 [https://itrevolution.com/the-idealcast-podcast/](https://itrevolution.com/the-idealcast-podcast/)
 
-Jocko Podcast by Jocko Willink  
+Jocko Podcast by Jocko Willink (up to early 2022)  
 [https://jockopodcast.com/](https://jockopodcast.com/)
 
 The Law of Raspberry Jam by Viktor Cessan and Esther Derby  

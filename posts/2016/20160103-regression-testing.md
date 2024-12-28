@@ -62,7 +62,7 @@ Does this mean that the term 'regression testing' is meaningless within this app
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2016/01/03/regression-testing-it-means-less-than-you-think/).*
+*This post was originally published on my old blog.*
 
 
 

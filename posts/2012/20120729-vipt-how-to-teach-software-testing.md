@@ -64,7 +64,7 @@ For an excellent start on the history of testing, see [http://www.testingreferen
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2012/07/29/vipt-how-to-teach-software-testing/).*
+*This post was originally published on my old blog.*
 
 [^1]: But how do you express quality in a single percentage anyhow? Perhaps ‘fairly good' would make more sens as it doesn't imply a calculation of some sort to get to the reply.
 

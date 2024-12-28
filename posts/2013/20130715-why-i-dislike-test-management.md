@@ -27,4 +27,4 @@ Of course, one could argue that the product of software testing is a test report
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2013/07/15/why-i-dislike-test-management/).*
+*This post was originally published on my old blog.*

@@ -80,7 +80,7 @@ More importantly, however, why would I want to quantify it? Quantifying learning
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2013/02/18/lessons-learned-in-some-test-automation/).*
+*This post was originally published on my old blog.*
 
 
 [^1]: And no, dear reader, the code does not refer to the current date or anything.

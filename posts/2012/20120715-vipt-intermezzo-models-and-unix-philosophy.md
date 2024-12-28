@@ -50,4 +50,4 @@ As such a model is very much a tool in the VIPT model. On its own it doesn't do 
 
 ---
 
-*This post was originally published [here](https://testingcurve.wordpress.com/2012/07/15/vipt-intermezzo-models-and-the-unix-philosophy/).*
+*This post was originally published on my old blog.*
