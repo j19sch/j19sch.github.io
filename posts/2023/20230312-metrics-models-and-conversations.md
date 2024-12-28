@@ -2,7 +2,7 @@
 .. title: Metrics, models and conversations
 .. slug: metrics-models-and-conversations
 .. date: 2023-03-12 10:11:25 UTC+01:00
-.. tags: tools, test automation, metrics, measurements
+.. tags: tools, test automation, metrics, measurements, communication
 .. category: metrics
 .. link: 
 .. description: 

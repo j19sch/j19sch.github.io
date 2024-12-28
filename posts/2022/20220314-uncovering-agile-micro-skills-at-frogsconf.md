@@ -2,7 +2,7 @@
 .. title: Uncovering Agile micro-skills at FroGS conf
 .. slug: uncovering-agile-micro-skills-at-frogsconf
 .. date: 2022-03-14 16:56:09 UTC+01:00
-.. tags: agile, skills, values, conferences
+.. tags: agile, skills, values, conferences, communication
 .. category: agile
 .. link: 
 .. description: 

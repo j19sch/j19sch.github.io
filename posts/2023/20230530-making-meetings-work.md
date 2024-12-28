@@ -2,7 +2,7 @@
 .. title: Making meetings work
 .. slug: making-meetings-work
 .. date: 2023-05-30 09:31:25 UTC+02:00
-.. tags: leadership, sociocracy 3.0, facilitation, self-organization
+.. tags: leadership, sociocracy 3.0, facilitation, self-organization, communication
 .. category: facilitation
 .. link: 
 .. description: 

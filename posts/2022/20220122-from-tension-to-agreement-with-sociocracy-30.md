@@ -2,7 +2,7 @@
 .. title: From tension to agreement with Sociocracy 3.0
 .. slug: from-tension-to-agreement-with-sociocracy-30
 .. date: 2022-01-22 11:27:13 UTC+01:00
-.. tags: sociocracy 3.0, self-organization, leadership, heuristics
+.. tags: sociocracy 3.0, self-organization, leadership, heuristics, communication
 .. category: sociocracy 3.0
 .. link: 
 .. description: 
