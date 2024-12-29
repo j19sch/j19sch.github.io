@@ -3,13 +3,30 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes</title>
   <id>https://smallsheds.garden/blog/feed.atom</id>
-  <updated>2024-12-15T09:21:56Z</updated>
+  <updated>2024-12-29T13:14:18Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/blog/feed.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Your default response should be a safe one</title>
+    <id>https://smallsheds.garden/blog/2024/your-default-response-should-be-a-safe-one/</id>
+    <updated>2024-12-29T00:00:00+01:00</updated>
+    <published>2024-12-29T00:00:00+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2024/your-default-response-should-be-a-safe-one/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;In his training DVD &lt;em&gt;"&lt;a href="https://edgeworkbooks.com/dvd-ukemi-from-the-ground-up/"&gt;Ukemi from the Ground Up&lt;/a&gt;"&lt;/em&gt;, &lt;a href="https://edgeworkbooks.com/about-ellis-amdur/"&gt;Ellis Amdur&lt;/a&gt; explains how your default response should be a safe one. In the context of the video it's about what your action should be in response to an Aikido technique like &lt;em&gt;kote gaeshi&lt;/em&gt;: Do you jump and do a breakfall? Or do you roll? The breakfall is the safe option. The roll is the comfortable one, except for the times you should have done the breakfall. Then you break your wrist...&lt;/p&gt;
+&lt;p&gt;Unfortunately, the choice between breakfall and roll is not up to you. &lt;em&gt;Kote gaeshi&lt;/em&gt; is a throw executed through a wrist lock&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2024/your-default-response-should-be-a-safe-one/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; and it's up to the person applying the technique what kind of throw it will be. Either they gently apply the wrist lock, guide you to the ground, and you can roll. Or they apply the technique more dynamically and there's no time to roll. In that case you have to jump and turn over your arm to fall safely on your side/back. That's what's called a breakfall.&lt;/p&gt;
+&lt;p&gt;As you can imagine, there's not always a lot of time to think and decide between roll and breakfall. And if there's no time to think, whatever your default response is, that's what your body will do. That's why your default response to &lt;em&gt;kote gaeshi&lt;/em&gt; should be the breakfall, the response that's safe in both circumstances. The worst case scenario is that you take a breakfall you didn't need to. While the alternative, defaulting to the role even when you should have done the breakfall, comes with significantly worse consequences.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2024/your-default-response-should-be-a-safe-one/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="communication" label="communication"/>
+    <category term="note-taking" label="note-taking"/>
+    <category term="programming" label="programming"/>
+  </entry>
   <entry>
     <title>The nine skills of exploratory testing</title>
     <id>https://smallsheds.garden/blog/2024/the-nine-skills-of-exploratory-testing/</id>
@@ -215,23 +232,5 @@
     <category term="quality-engineering" label="quality engineering"/>
     <category term="software-development" label="software development"/>
     <category term="software-testing" label="software testing"/>
-  </entry>
-  <entry>
-    <title>Tackling test automation in a new language</title>
-    <id>https://smallsheds.garden/blog/2024/tackling-test-automation-in-a-new-language/</id>
-    <updated>2024-02-11T00:00:00+01:00</updated>
-    <published>2024-02-11T00:00:00+01:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2024/tackling-test-automation-in-a-new-language/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;While there's value in learning all the ins-and-outs of one particular language, its ecosystem and its testing libraries, I think there's also a lot of value in having experience in several. Or at least, in two. If you only know one, you don't really know what's essential and what's incidental to the one set of tools you know. You don't know from experience in what ways things could be different.&lt;/p&gt;
-&lt;p&gt;Picking up a new language is not trivial though, especially if it's your second one. There will be a lot to learn. You will notice similarities between the new language and the one(s) you already know. Sometimes those similarities will help you, sometimes they will mislead you.&lt;/p&gt;
-&lt;p&gt;Also, it's more than picking up a new language. There are also the testing libraries you will use
-and the language's ecosystem (e.g. how to install those libraries&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2024/tackling-test-automation-in-a-new-language/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; or how to set up a pre-commit hook with a linter). That's quite a package.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2024/tackling-test-automation-in-a-new-language/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="agile" label="agile"/>
-    <category term="programming" label="programming"/>
-    <category term="test-automation" label="test automation"/>
   </entry>
 </feed>

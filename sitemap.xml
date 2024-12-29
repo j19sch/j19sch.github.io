@@ -123,7 +123,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/archive.html</loc>
-  <lastmod>2024-12-08T16:34:00Z</lastmod>
+  <lastmod>2024-12-28T15:04:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/</loc>
@@ -438,10 +438,6 @@
   <lastmod>2024-10-18T11:15:00Z</lastmod>
  </url>
  <url>
-  <loc>https://smallsheds.garden/blog/2024/the-eight-skills-of-exploratory-testing/</loc>
-  <lastmod>2024-12-08T16:34:00Z</lastmod>
- </url>
- <url>
   <loc>https://smallsheds.garden/blog/2024/the-fluxx-ensemble-exercise/</loc>
   <lastmod>2024-10-18T11:15:00Z</lastmod>
  </url>
@@ -456,6 +452,10 @@
  <url>
   <loc>https://smallsheds.garden/blog/2024/what-do-you-fix-when-you-fix-a-test/</loc>
   <lastmod>2024-10-18T11:15:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/blog/2024/your-default-response-should-be-a-safe-one/</loc>
+  <lastmod>2024-12-28T15:04:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/clojure/</loc>
@@ -535,7 +535,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-6.html</loc>
-  <lastmod>2024-10-18T11:15:00Z</lastmod>
+  <lastmod>2024-12-28T15:13:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-7.html</loc>
@@ -543,15 +543,15 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-8.html</loc>
-  <lastmod>2024-10-18T11:15:00Z</lastmod>
+  <lastmod>2024-12-28T15:13:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-9.html</loc>
-  <lastmod>2024-12-08T16:34:00Z</lastmod>
+  <lastmod>2024-12-28T15:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/</loc>
-  <lastmod>2024-10-18T11:15:00Z</lastmod>
+  <lastmod>2024-12-28T15:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/agile-comms/</loc>
@@ -660,6 +660,10 @@
  <url>
   <loc>https://smallsheds.garden/categories/clojure/</loc>
   <lastmod>2024-10-18T11:15:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/categories/communication/</loc>
+  <lastmod>2024-12-28T15:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/conferences/</loc>
