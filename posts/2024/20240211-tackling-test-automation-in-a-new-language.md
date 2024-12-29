@@ -3,7 +3,7 @@
 .. slug: tackling-test-automation-in-a-new-language
 .. date: 2024-02-11
 .. category: programming & test automation
-.. tags: agile, programming, test automation
+.. tags: agile, programming, test automation, communication
 .. type: text
 -->
 

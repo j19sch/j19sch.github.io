@@ -2,7 +2,7 @@
 .. title: Four skills to embody the four Agile values
 .. slug: four-skills-to-embody-the-four-agile-values
 .. date: 2022-02-06 17:04:06 UTC+01:00
-.. tags: agile, skills, values
+.. tags: agile, skills, values, communication
 .. category: agile
 .. link: 
 .. description: 
