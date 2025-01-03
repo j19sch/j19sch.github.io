@@ -22,6 +22,11 @@ hidetitle: false
 - Wiring the Winning Organization: Liberating Our Collective Greatness Through Slowification, Simplification, and Amplification - Steven J. Spear and Gene Kim
 - Breaking Things at Work: The Luddites Are Right about Why You Hate Your Job - Gavin Mueller
 - Looking for Luddites - John Hewitt
+- Into Thin Air: A Personal Account Of The Everest Disaster - Jon Krakauer
+- Exploring Requirements 2: First Steps into Design - Gerald M. Weinberg
+- Staff Engineer: Leadership Beyond the Management Track: Will Larson
+- The World Beneath Their Feet: Mountaineering, Madness, and the Deadly Race to Summit the Himalayas - Scott Ellsworth
+- The Power Broker: Robert Moses and the Fall of New York - Robert A. Caro
 
 
 ### 2023
