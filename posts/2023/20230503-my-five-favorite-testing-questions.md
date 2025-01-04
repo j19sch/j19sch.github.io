@@ -12,7 +12,7 @@
 Recently I realized there are a few testing questions I use a lot. They lie at the top of my testing toolbox, so to speak. Together they shape my testing style, making it easier for me to discover certain things, but probably also harder to find other kinds of things. So here are my five favorite testing questions, in no particular order.
 
 
-# What if there are zero, one, many, lots of this thing?
+# What if there are zero, one, many, lots of this thing?<a id="zero-ony-many-lots-oops" />
 
 Last year I expressed my surprise [on Mastodon](https://chaos.social/@joeposaurus/109427704814392787) how many times I've found bugs by asking the question: *"What if there are 0 / 1 / several / lots of this thing?"* And if you're working closely enough to the code, you should also ask about "null".
 

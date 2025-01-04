@@ -24,7 +24,7 @@ With some other fine people I organise the Friends of Good Software ([FroGS](htt
 ## Preact Counterstring
 [Preact Counterstring](https://smallsheds.garden/counterstring/) is an implementation of [PerlClip](https://www.satisfice.com/blog/archives/22)'s counterstring deployed to a static site. My goal with this project is to learn more about front-end development, using [TypeScript](https://www.typescriptlang.org/) and [Preact](https://preactjs.com/).
 
-You can find my blog posts about this project via the ["counterstring" tag](link://category/counterstring) and [the code](https://github.com/j19sch/counterstring/) on GitHub.
+You can find my blog posts about this project via the ["counterstring" tag](link://category/counterstring) and [the code](https://github.com/j19sch/counterstring/) on GitHub. I still have plenty of things to do before I'd consider it finished.
 
 <div style='margin-bottom: 1.8rem' markdown="1"></div>
 

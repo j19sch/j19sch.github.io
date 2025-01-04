@@ -1,13 +1,22 @@
 <!--
-.. title: Implementing counterstring, fake it till you make it, step-by-step, TDD, incrementally
+.. title: Using "fake it till you make it" to implement counterstring
 .. slug: counterstring
 .. date: 2025-01-04
 .. category: 
 .. tags: counterstring
 .. type: text
+.. description: 
 -->
 
-Last week I started to implement [PerlClip](https://www.satisfice.com/download/perlclip)'s [counterstring](https://www.satisfice.com/blog/archives/22) in TypeScript using [Preact](https://preactjs.com/). A counterstring is a string that tells you how long it is. For example a counterstring with length 9 looks like this: "`*3*5*7*9*`" - each number being the position of the asterisk following it. My main goal with this project is to learn more about front-end development.
+TODO:
+
+- double check the code, esp. formatting and ;
+- title, slug, etc
+- different color scheme for code, even though it worked so well for Clojure
+- ditch the quotes around the counterstrings
+- manually format the test with length 100
+
+Last week I started to implement [PerlClip](https://www.satisfice.com/download/perlclip)'s [counterstring](https://www.satisfice.com/blog/archives/22) in TypeScript using [Preact](https://preactjs.com/). A counterstring is a string that tells you how long it is. For example a counterstring with length 9 looks like this: "`*3*5*7*9*`". Each number tells you the position in the string of the asterisk following the number. My main goal with this project is to learn more about front-end development.
 
 Before I could start doing interesting front-end stuff, however, I needed to write a function that correctly generates counterstrings. Since I approached that in a way that I really enjoyed, inspired by [Llewellyn Falco](https://www.linkedin.com/in/llewellynfalco/)'s ["Fake it till you make it"](https://youtu.be/O1h9ho2G85Q?t=155), I figured it would make a good first post about this project.
 
@@ -65,7 +74,7 @@ test("counterstring length 1", () => {
     expect(result).toBe("*");
 ```
 
-*To be fair to the [historical record](https://github.com/j19sch/counterstring/commits/main/) this is not exactly how I implemented it. I did something less performant with reversing an array, because I had looked at PerlClips's source code. How that came about and what I learned from it, is for another blog post.*
+*To be fair to the [historical record](https://github.com/j19sch/counterstring/commits/main/): this is not exactly how I implemented it. I did something less performant with reversing an array, because I had looked at PerlClips's source code. How that came about and what I learned from it, is for another blog post.*
 
 
 ## Counterstring length 2 {.small}
@@ -170,12 +179,9 @@ test.each([
 
 ## What about lots and oops? {.small}
 
-zero/one/many/lots/oops
-
-lots: issue with list implementation
-oops: obvious next step, negative numbers, strings (types?), etc.
+One of my favorite heuristics is [0 / 1 / many / lots / oops](link://slug/my-five-favorite-testing-questions#zero-ony-many-lots-oops). My implementation can't deal yet with "lots", i.e. a counterstring of an extreme length. What an extreme length is, is also still an open question. And my counterstring function can't deal yet with "oops", for example a negative number or a string as argument. Although for the latter you could argue that TypeScripts type system is sufficient to deal with the latter of the two. Either would be a good next step to implement.
 
 
-## Closing thought about code walkthroughs {.small}
+## Closing thought on rubberducking {.small}
 
-Revisiting and describing my code like this, has given me several ideas for how to refactor it. Mostly to make it easier to read. Seems like a good argument for code walkthroughs, even if it's to a [rubber duck](https://en.wikipedia.org/wiki/Rubber_duck_debugging).
+Revisiting and describing my code like this, has given me several ideas for how to refactor it. Mostly to make it easier to read. Seems like a good argument for code walkthroughs, even if it's only to a [rubber duck](https://en.wikipedia.org/wiki/Rubber_duck_debugging).
