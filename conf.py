@@ -944,6 +944,7 @@ IMAGE_FOLDERS = {'images': 'images'}
 # hard to find something that works for both Clojure and TypeScript
 # https://pygments.org/styles/
 # sufficient contrast, light: bw, sas, staroffice, xcode, default
+# TODO: find color scheme that works well for Clojure and for TypeScript
 CODE_COLOR_SCHEME = 'arduino'
 
 # FAVICONS contains (name, file, size) tuples.
