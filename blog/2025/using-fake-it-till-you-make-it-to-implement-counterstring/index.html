@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Programming by taking small simple steps">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Using "fake it till you make it" to implement counterstring | Joep Schuurkes</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../feed.atom">
+<link rel="canonical" href="https://smallsheds.garden/blog/2025/using-fake-it-till-you-make-it-to-implement-counterstring/">
+<link rel="icon" href="../../../assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="../../../assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../assets/favicons/favicon-96x96.png" sizes="96x96">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../../2024/your-default-response-should-be-a-safe-one/" title="Your default response should be a safe one" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content='Using "fake it till you make it" to implement counterstring'>
+<meta property="og:url" content="https://smallsheds.garden/blog/2025/using-fake-it-till-you-make-it-to-implement-counterstring/">
+<meta property="og:description" content="Programming by taking small simple steps">
+<meta property="og:image" content="https://smallsheds.garden/images/default-preview.jpeg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2025-01-05T00:00:00+01:00">
+<meta property="article:tag" content="counterstring">
+<meta property="article:tag" content="programming">
+<meta property="article:tag" content="small steps">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-projects/" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-talks/" class="nav-link">Talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../../my-lists/reading-list/" class="dropdown-item">Reading list</a>
+                    <a href="../../../my-lists/recommended-reading/" class="dropdown-item">Recommended reading</a>
+                    <a href="../../../my-lists/favorite-podcasts/" class="dropdown-item">Favorite podcasts</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../" class="dropdown-item">My blog</a>
+                    <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
+                    <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Using &#8220;fake it till you make it&#8221; to implement&nbsp;counterstring</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep&nbsp;Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2025-01-05T00:00:00+01:00" itemprop="datePublished" title="5 January 2025">5 January 2025</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p>Last week I implemented <a href="https://www.satisfice.com/download/perlclip">PerlClip</a>&#8216;s <a href="https://www.satisfice.com/blog/archives/22">counterstring</a> in TypeScript. A counterstring is a string that tells you how long it is. For example a counterstring with length 9 looks like&nbsp;this: <code>*3*5*7*9*</code>. Each number tells you the position of the asterisk following the number. My main goal with this project is to learn more about front-end&nbsp;development.</p>
+<p>Before I could start doing any front-end stuff, however, I needed to write a function that correctly generates counterstrings. Since I approached it in a way that I really enjoyed, inspired by Llewellyn Falco <a href="https://youtu.be/O1h9ho2G85Q?t=155">&#8220;Fake it till you make it&#8221;</a>, I figured it would make a good first post about this&nbsp;project.</p>
+<p>The idea behind &#8220;fake it till you make it&#8221; is simple. Start with an implementation covering a single case (&#8220;fake it&#8221;) and then pull it apart little-by-little until it becomes an actual program (&#8220;make it&#8221;). As Llewellyn explains in the video, the value of this technique is that it&#8217;s a lot easier to start from a working example and proceed from there than it is to get complete&nbsp;requirements.</p>
+<p>I did approach counterstring from the opposite direction, though, as Llewellyn did with Fizzbuzz in the video. Llewellyn starts with FizzBuzz length 20, so a case covering all the logic. Then he refactors it using different techniques, such as separation and encapsulation. While I started with counterstring length 0, the most simple case, and then worked my way up to larger&nbsp;lengths.</p>
+<!-- TEASER_END -->
+
+<h3 class="small">Counterstring length&nbsp;0</h3>
+<p>A counterstring of length 0 is simple, it&#8217;s an empty string. So implementing it is&nbsp;easy:</p>
+<div class="code"><pre class="code literal-block"><span class="kd">function</span><span class="w"> </span><span class="nx">counterstring</span><span class="p">(</span><span class="nx">length</span><span class="o">:</span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s2">""</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>And testing it is&nbsp;too:</p>
+<div class="code"><pre class="code literal-block"><span class="nx">test</span><span class="p">(</span><span class="s2">"counterstring length 0"</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">counterstring</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">expect</span><span class="p">(</span><span class="nx">result</span><span class="p">).</span><span class="nx">toBe</span><span class="p">(</span><span class="s2">""</span><span class="p">);</span>
+<span class="p">})</span>
+</pre></div>
+
+<p>Of course that&#8217;s the only test my implementation does pass, but that&#8217;s the point. I&#8217;m still very solidly in the &#8220;faking&nbsp;it&#8221;-phase.</p>
+<h3 class="small">Counterstring length&nbsp;1</h3>
+<p>A counterstring with length 1 is just the&nbsp;asterisk:</p>
+<div class="code"><pre class="code literal-block"><span class="kd">function</span><span class="w"> </span><span class="nx">counterstring</span><span class="p">(</span><span class="nx">length</span><span class="o">:</span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nx">length</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"*"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">result</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">length</span><span class="w"> </span><span class="o">=-</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">result</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>It would have been simpler to use&nbsp;an <code>if/then/else</code> on <code>length</code> here instead of&nbsp;the <code>while</code>-loop. I was already anticipating longer&nbsp;lengths.</p>
+<p>And this also needs a&nbsp;test:</p>
+<div class="code"><pre class="code literal-block"><span class="nx">test</span><span class="p">(</span><span class="s2">"counterstring length 1"</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">counterstring</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">expect</span><span class="p">(</span><span class="nx">result</span><span class="p">).</span><span class="nx">toBe</span><span class="p">(</span><span class="s2">"*"</span><span class="p">);</span>
+</pre></div>
+
+<p>To be fair to the <a href="https://github.com/j19sch/counterstring/commits/main/">historical record</a>: this is not exactly how I implemented it. I did something less performant with reversing an array, because I had looked at PerlClips&#8217;s source code. How that came about and what I learned from it, is for another blog&nbsp;post.</p>
+<h3 class="small">Counterstring length&nbsp;2</h3>
+<p>A counterstring with length 2 looks like&nbsp;this: <code>2*</code>. So that gives us our first challenge: in&nbsp;our <code>while</code>-loop we need to decide whether the next string to add is either a number or an&nbsp;asterisk.</p>
+<p>My solution was to keep track of that&nbsp;through <code>latestTokenPosition</code>, where &#8220;token&#8221; refers to the asterisk. So&nbsp;the <code>else</code> adds the asterisk to the result and&nbsp;sets <code>latestTokenPosition</code> to the position of that asterisk.&nbsp;The <code>if</code> adds&nbsp;that <code>latestTokenPosition</code> to our result and sets it back&nbsp;to <code>null</code>.</p>
+<div class="code"><pre class="code literal-block"><span class="kd">function</span><span class="w"> </span><span class="nx">counterstring</span><span class="p">(</span><span class="nx">length</span><span class="o">:</span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">latestTokenPosition</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nx">length</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">latestTokenPosition</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">latestTokenPosition</span><span class="p">.</span><span class="nx">toString</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">result</span><span class="p">;</span>
+<span class="w">            </span><span class="nx">latestTokenPosition</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"*"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">result</span>
+<span class="w">            </span><span class="nx">latestTokenPosition</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">length</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="nx">length</span><span class="w"> </span><span class="o">=-</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">result</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>And again we add a test for this&nbsp;case:</p>
+<div class="code"><pre class="code literal-block"><span class="nx">test</span><span class="p">(</span><span class="s2">"counterstring length 2"</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">counterstring</span><span class="p">(</span><span class="mf">2</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">expect</span><span class="p">(</span><span class="nx">result</span><span class="p">).</span><span class="nx">toBe</span><span class="p">(</span><span class="s2">"2*"</span><span class="p">);</span>
+<span class="p">})</span>
+</pre></div>
+
+<h3 class="small">Let&#8217;s parametrize those&nbsp;tests</h3>
+<p>At this point I got annoyed with how I was writing the tests, so I refactored them a parametrized&nbsp;solution:</p>
+<div class="code"><pre class="code literal-block"><span class="nx">test</span><span class="p">.</span><span class="nx">each</span><span class="p">([</span>
+<span class="w">    </span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="s2">""</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="s2">"*"</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="s2">"2*"</span><span class="p">]</span>
+<span class="p">])(</span><span class="s2">"counterstring length %i"</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">length</span><span class="p">,</span><span class="w"> </span><span class="nx">expected</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">expect</span><span class="p">(</span><span class="nx">counterstring</span><span class="p">(</span><span class="nx">length</span><span class="p">)).</span><span class="nx">toBe</span><span class="p">(</span><span class="nx">expected</span><span class="p">);</span>
+<span class="p">})</span>
+</pre></div>
+
+<h3 class="small">Skipping a challenge because I anticipated&nbsp;it</h3>
+<p>Something interesting happens when you go from a counterstring of length 2&nbsp;(<code>2*</code>) to one of length 3&nbsp;(<code>*3*</code>). The length 2 counterstring starts with a number. The length 3 counterstring starts with the&nbsp;asterisk.</p>
+<p>So if you construct your counterstring from left to right, you need to figure out how to start. If you construct it from right to left, you don&#8217;t have that problem. The last character of a counterstring is always the asterisk. That&#8217;s why my implementation prepends to the result&nbsp;(e.g. <code>result = "*" + result</code>) instead of appending to it. It&#8217;s easier to start at the end and work your way back.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<p>Had I used the &#8220;fake it till you make it&#8221;-technique in the way described by Llewellyn in the video, this is also where I would have gotten into trouble. Then I would have started with a counterstring of length 20. First as a hard-coded string, then pulling it apart until it became an actual program. Most likely I would not have ended up with a program that would work for counterlength 19, since lengths 19 and 20 have the same problem as lengths 2 and&nbsp;3.</p>
+<h3 class="small">Counterstring length up to&nbsp;100</h3>
+<p>The next challenge in implementing counterstring is: what if the position takes up more than one integer? A counterstring with length 10 looks like&nbsp;this: <code>*3*5*7*10*</code>. My current implementation&nbsp;with <code>length =- 1</code> outputs something different, however. A string of length 11 that claims to be of length&nbsp;10: <code>2*4*6*8*10*</code>.</p>
+<p>So instead of&nbsp;subtracting <code>1</code> from <code>length</code>, I needed to subtract the length of the string I just added&nbsp;to <code>result</code>:</p>
+<div class="code"><pre class="code literal-block"><span class="kd">function</span><span class="w"> </span><span class="nx">counterstring</span><span class="p">(</span><span class="nx">length</span><span class="o">:</span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">latestTokenPosition</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">insertLength</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nx">length</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">latestTokenPosition</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">latestTokenPosition</span><span class="p">.</span><span class="nx">toString</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">result</span><span class="p">;</span>
+<span class="w">            </span><span class="nx">insertLength</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">latestTokenPosition</span><span class="p">.</span><span class="nx">toString</span><span class="p">().</span><span class="nx">length</span><span class="p">;</span>
+<span class="w">            </span><span class="nx">latestTokenPosition</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"*"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">result</span><span class="p">;</span>
+<span class="w">            </span><span class="nx">insertLength</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">tokenLength</span><span class="p">;</span>
+<span class="w">            </span><span class="nx">latestTokenPosition</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">length</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="nx">length</span><span class="w"> </span><span class="o">=-</span><span class="w"> </span><span class="nx">insertLength</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">result</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>I could have taken a smaller step here. First deal with lengths up&nbsp;to <code>99</code> with&nbsp;an <code>if/then/else</code> on <code>length</code> and save the general solution for the next step. Nesting&nbsp;an <code>if</code> in&nbsp;an <code>if</code> in&nbsp;a <code>while</code>-loop is getting a bit much, though. And the general solution is straightforward&nbsp;enough.</p>
+<p>With the parametrized tests, expanding them was easy. Running them is cheap too, so instead of aiming for minimal coverage, I added some additional examples to illustrate what counterstring&nbsp;does:</p>
+<div class="code"><pre class="code literal-block"><span class="nx">test</span><span class="p">.</span><span class="nx">each</span><span class="p">([</span>
+<span class="w">    </span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="s2">""</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="s2">"*"</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="s2">"2*"</span><span class="p">]</span>
+<span class="w">    </span><span class="p">[</span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="s2">"*3*"</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="s2">"2*4*"</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="mf">9</span><span class="p">,</span><span class="w"> </span><span class="s2">"*3*5*7*9*"</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="s2">"*3*5*7*10*"</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="mf">100</span><span class="p">,</span><span class="w"> </span><span class="s2">"*3*5*7*9*12*15*18*21*24*27*30*33*36*39*42*45*48*51*54*57*60*63*66*69*72*75*78*81*84*87*90*93*96*100*"</span><span class="p">]</span>
+<span class="p">])(</span><span class="s2">"counterstring length %i"</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">length</span><span class="p">,</span><span class="w"> </span><span class="nx">expected</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">expect</span><span class="p">(</span><span class="nx">counterstring</span><span class="p">(</span><span class="nx">length</span><span class="p">)).</span><span class="nx">toBe</span><span class="p">(</span><span class="nx">expected</span><span class="p">);</span>
+<span class="p">})</span>
+</pre></div>
+
+<h3 class="small">What about lots and&nbsp;oops?</h3>
+<p>One of my favorite heuristics is <a href="../../2023/my-five-favorite-testing-questions/#zero-ony-many-lots-oops">0 / 1 / many / lots / oops</a>. My implementation can&#8217;t deal yet with &#8220;lots&#8221;, i.e. a counterstring of an extreme length. What an extreme length is, is also still an open&nbsp;question.</p>
+<p>And my counterstring function can&#8217;t deal yet with &#8220;oops&#8221;, for example a negative number or a string as argument. Although for the latter you could argue that TypeScript&#8217;s type system is sufficient to deal with that. Either would be a good next step to&nbsp;implement.</p>
+<h3 class="small">Closing thought on&nbsp;rubberducking</h3>
+<p>Revisiting and describing my code like this, has given me several ideas for how to refactor it. Mostly to make it easier to read. Seems like a good argument for code walkthroughs, even if it&#8217;s only to a <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">rubber duck</a>.</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Alan Richardson (aka Evil Tester) wrote a blog post about <a href="https://www.eviltester.com/2018/05/counterstring-algorithms.html#predictive-forward-counterstrings">forward generating counterstrings</a>. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/counterstring/" rel="tag">counterstring</a></li>
+            <li><a class="tag p-category" href="../../../categories/programming/" rel="tag">programming</a></li>
+            <li><a class="tag p-category" href="../../../categories/small-steps/" rel="tag">small&nbsp;steps</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../2024/your-default-response-should-be-a-safe-one/" rel="prev" title="Your default response should be a safe one">Previous&nbsp;post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2025 
+<a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by/4.0/80x15.png"></a>
+<a href="mailto:site@joep.slmail.me">Joep Schuurkes</a> - Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a> - Analytics by <a href="https://plausible.io/" rel="nofollow" target="_blank">Plausible</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

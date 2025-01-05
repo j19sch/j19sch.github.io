@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://smallsheds.garden/</loc>
-  <lastmod>2024-10-18T11:25:00Z</lastmod>
+  <lastmod>2025-01-04T19:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/2012/</loc>
@@ -118,16 +118,20 @@
   <lastmod>2024-10-18T11:15:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/2025/</loc>
+  <lastmod>2025-01-04T19:46:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/404-page/</loc>
   <lastmod>2024-10-18T11:15:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/archive.html</loc>
-  <lastmod>2024-12-28T15:04:00Z</lastmod>
+  <lastmod>2025-01-04T19:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/</loc>
-  <lastmod>2024-10-18T11:15:00Z</lastmod>
+  <lastmod>2025-01-04T19:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/2012/dewt2-becoming-a-context-driven-tester/</loc>
@@ -458,6 +462,14 @@
   <lastmod>2024-12-28T15:04:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/blog/2025/counterstring/</loc>
+  <lastmod>2025-01-04T19:46:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/blog/2025/using-fake-it-till-you-make-it-to-implement-counterstring/</loc>
+  <lastmod>2025-01-05T09:01:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/blog/clojure/</loc>
   <lastmod>2024-10-18T11:15:00Z</lastmod>
  </url>
@@ -515,43 +527,43 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-1.html</loc>
-  <lastmod>2024-11-09T09:53:00Z</lastmod>
+  <lastmod>2025-01-04T19:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-2.html</loc>
-  <lastmod>2024-11-09T09:53:00Z</lastmod>
+  <lastmod>2025-01-04T19:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-3.html</loc>
-  <lastmod>2024-11-09T09:53:00Z</lastmod>
+  <lastmod>2025-01-04T19:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-4.html</loc>
-  <lastmod>2024-11-09T09:53:00Z</lastmod>
+  <lastmod>2025-01-04T19:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-5.html</loc>
-  <lastmod>2024-11-22T11:38:00Z</lastmod>
+  <lastmod>2025-01-04T19:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-6.html</loc>
-  <lastmod>2024-12-28T15:13:00Z</lastmod>
+  <lastmod>2025-01-04T19:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-7.html</loc>
-  <lastmod>2024-10-18T11:15:00Z</lastmod>
+  <lastmod>2025-01-04T19:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-8.html</loc>
-  <lastmod>2024-12-28T15:13:00Z</lastmod>
+  <lastmod>2025-01-04T19:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-9.html</loc>
-  <lastmod>2024-12-28T15:12:00Z</lastmod>
+  <lastmod>2025-01-04T19:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/</loc>
-  <lastmod>2024-12-28T15:12:00Z</lastmod>
+  <lastmod>2025-01-04T19:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/agile-comms/</loc>
@@ -672,6 +684,10 @@
  <url>
   <loc>https://smallsheds.garden/categories/context-driven-testing/</loc>
   <lastmod>2024-10-18T11:15:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/categories/counterstring/</loc>
+  <lastmod>2025-01-04T19:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/coverage/</loc>

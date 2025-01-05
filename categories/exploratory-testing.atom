@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about exploratory testing)</title>
   <id>https://smallsheds.garden/categories/exploratory-testing.atom</id>
-  <updated>2024-12-29T11:22:14Z</updated>
+  <updated>2025-01-04T19:46:54Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -86,7 +86,7 @@
     </author>
     <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2023/my-five-favorite-testing-questions/"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;Recently I realized there are a few testing questions I use a lot. They lie at the top of my testing toolbox, so to speak. Together they shape my testing style, making it easier for me to discover certain things, but probably also harder to find other kinds of things. So here are my five favorite testing questions, in no particular order.&lt;/p&gt;
-&lt;h2&gt;What if there are zero, one, many, lots of this thing?&lt;/h2&gt;
+&lt;h2&gt;What if there are zero, one, many, lots of this thing?&lt;a id="zero-ony-many-lots-oops"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Last year I expressed my surprise &lt;a href="https://chaos.social/@joeposaurus/109427704814392787"&gt;on Mastodon&lt;/a&gt; how many times I've found bugs by asking the question: &lt;em&gt;"What if there are 0 / 1 / several / lots of this thing?"&lt;/em&gt; And if you're working closely enough to the code, you should also ask about "null".&lt;/p&gt;
 &lt;p&gt;Quite a few people responded to my message. Turns out it's a &lt;a href="https://www.qwan.eu/2021/07/09/tdd-0-1-n.html"&gt;very&lt;/a&gt; &lt;a href="http://blog.wingman-sw.com/tdd-guided-by-zombies"&gt;common&lt;/a&gt; &lt;a href="https://mas.to/@zebulon/109428667658139893"&gt;pattern&lt;/a&gt; in TDD. And Brian Marick&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2023/my-five-favorite-testing-questions/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; remembered it &lt;a href="https://mstdn.social/@marick/109428042023981110"&gt;standing out&lt;/a&gt; when he was looking into fixed bugs in the Linux kernel they used in the '80s. Personally I learned it from Elisabeth Hendrickson's &lt;a href="https://web.archive.org/web/20150217124452/http://testobsessed.com/wp-content/uploads/2011/04/testheuristicscheatsheetv1.pdf"&gt;"Test Heuristics Cheat Sheet"&lt;/a&gt;, which found a &lt;a href="https://www.ministryoftesting.com/articles/ab1cd85c?s_id=14715206"&gt;new home&lt;/a&gt; last year at the Ministry of Testing.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2023/my-five-favorite-testing-questions/"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>

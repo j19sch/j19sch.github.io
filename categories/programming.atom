@@ -3,13 +3,31 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about programming)</title>
   <id>https://smallsheds.garden/categories/programming.atom</id>
-  <updated>2024-12-29T13:14:18Z</updated>
+  <updated>2025-01-05T09:22:52Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/programming.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/programming/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Using "fake it till you make it" to implement counterstring</title>
+    <id>https://smallsheds.garden/blog/2025/using-fake-it-till-you-make-it-to-implement-counterstring/</id>
+    <updated>2025-01-05T00:00:00+01:00</updated>
+    <published>2025-01-05T00:00:00+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2025/using-fake-it-till-you-make-it-to-implement-counterstring/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Last week I implemented &lt;a href="https://www.satisfice.com/download/perlclip"&gt;PerlClip&lt;/a&gt;'s &lt;a href="https://www.satisfice.com/blog/archives/22"&gt;counterstring&lt;/a&gt; in TypeScript. A counterstring is a string that tells you how long it is. For example a counterstring with length 9 looks like this: &lt;code&gt;*3*5*7*9*&lt;/code&gt;. Each number tells you the position of the asterisk following the number. My main goal with this project is to learn more about front-end development.&lt;/p&gt;
+&lt;p&gt;Before I could start doing any front-end stuff, however, I needed to write a function that correctly generates counterstrings. Since I approached it in a way that I really enjoyed, inspired by Llewellyn Falco &lt;a href="https://youtu.be/O1h9ho2G85Q?t=155"&gt;"Fake it till you make it"&lt;/a&gt;, I figured it would make a good first post about this project.&lt;/p&gt;
+&lt;p&gt;The idea behind "fake it till you make it" is simple. Start with an implementation covering a single case ("fake it") and then pull it apart little-by-little until it becomes an actual program ("make it"). As Llewellyn explains in the video, the value of this technique is that it's a lot easier to start from a working example and proceed from there than it is to get complete requirements.&lt;/p&gt;
+&lt;p&gt;I did approach counterstring from the opposite direction, though, as Llewellyn did with Fizzbuzz in the video. Llewellyn starts with FizzBuzz length 20, so a case covering all the logic. Then he refactors it using different techniques, such as separation and encapsulation. While I started with counterstring length 0, the most simple case, and then worked my way up to larger lengths.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2025/using-fake-it-till-you-make-it-to-implement-counterstring/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="counterstring" label="counterstring"/>
+    <category term="programming" label="programming"/>
+    <category term="small-steps" label="small steps"/>
+  </entry>
   <entry>
     <title>Your default response should be a safe one</title>
     <id>https://smallsheds.garden/blog/2024/your-default-response-should-be-a-safe-one/</id>
@@ -175,23 +193,5 @@ and the language's ecosystem (e.g. how to install those libraries&lt;sup id="fnr
     <category term="clojure" label="clojure"/>
     <category term="programming" label="programming"/>
     <category term="python" label="python"/>
-  </entry>
-  <entry>
-    <title>(clj 6) Three chapters in one year</title>
-    <id>https://smallsheds.garden/blog/clojure/2021/clj6-three-chapters-in-one-year/</id>
-    <updated>2021-05-08T10:53:25+02:00</updated>
-    <published>2021-05-08T10:53:25+02:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/clojure/2021/clj6-three-chapters-in-one-year/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;It's been a bit more than a year since I posted my &lt;a href="https://smallsheds.garden/blog/clojure/2020/clj0-diving-straight-in/"&gt;first blog post&lt;/a&gt; about learning Clojure. And it's been five months since my &lt;a href="https://smallsheds.garden/blog/clojure/2020/clj5-loop-and-recur-into-and-conj/"&gt;last blog post&lt;/a&gt; about it. So far I've made it through the first three chapters&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/clojure/2021/clj6-three-chapters-in-one-year/#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; of "&lt;a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/"&gt;Clojure for the Brave and True&lt;/a&gt;". Instead of commenting on my learning pace at the start of every post, I've decided that this pace is the pace that works for me at this time, so there's no need to keep revisiting the topic.&lt;/p&gt;
-&lt;p&gt;Something I do want to mention is that one thing that triggered me to do some more Clojure was &lt;a href="https://itrevolution.com/the-idealcast-episode-10/"&gt;this episode&lt;/a&gt; of Gene Kim's excellent &lt;a href="https://itrevolution.com/the-idealcast-podcast/"&gt;Idealcast&lt;/a&gt; podcast with &lt;a href="https://www.michaelnygard.com/"&gt;Michael Nygard&lt;/a&gt;, in which they spend some time talking about Clojure.&lt;/p&gt;
-&lt;h3&gt;Vim macros&lt;/h3&gt;
-&lt;p&gt;The exercises at the end of chapter 3 got me to try out a lot of things, so I got bored having to type in the commands to copy a line (&lt;code&gt;yy&lt;/code&gt;), paste it (&lt;code&gt;p&lt;/code&gt;), replace it by its evaluation (&lt;code&gt;c!$&lt;/code&gt;), comment it out (&lt;code&gt;gcc&lt;/code&gt;), and add a "&lt;code&gt;=&amp;gt;&lt;/code&gt;" to mark it as output. So I learned about Vim macros and recorded that sequence to run when I hit &lt;code&gt;@c&lt;/code&gt;. At the end of my &lt;a href="https://smallsheds.garden/blog/clojure/2020/clj4-learning-when-maps-closures/"&gt;(clj 4)&lt;/a&gt; post I mentioned I might have to do this. Guess that moment came sooner than I expected.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/clojure/2021/clj6-three-chapters-in-one-year/"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="brave-clojure" label="brave clojure"/>
-    <category term="clojure" label="clojure"/>
-    <category term="programming" label="programming"/>
   </entry>
 </feed>
