@@ -12,7 +12,7 @@ hidetitle: false
 <div markdown="1">
 
 ## FroGS conf
-With some other fine people I organise the Friends of Good Software ([FroGS](https://frogsconf.nl/)) conference. It's an open space conference focusing on quality and software. And it's the successor of [TestCraftCamp](https://testcraftcamp.nl/).
+With some other fine people I organise the Friends of Good Software ([FroGS](https://frogsconf.nl/)) conference. It's an open space conference focusing on quality and software.
 
 <div style='margin-bottom: 1.8rem' markdown="1"></div>
 
@@ -21,8 +21,13 @@ With some other fine people I organise the Friends of Good Software ([FroGS](htt
 
 <div style='margin-bottom: 1.8rem' markdown="1"></div>
 
+## Preact Counterstring
+[Preact Counterstring](https://smallsheds.garden/counterstring/) is an implementation of [PerlClip](https://www.satisfice.com/blog/archives/22)'s counterstring deployed to a static site. My goal with this project is to learn more about front-end development, using [TypeScript](https://www.typescriptlang.org/) and [Preact](https://preactjs.com/). You can find my blog posts about this project via the ["counterstring" tag](link://category/counterstring) and you can find [the code](https://github.com/j19sch/counterstring/) on GitHub. There are still plenty of things to do before I'd consider it finished.
+
+<div style='margin-bottom: 1.8rem' markdown="1"></div>
+
 ## Learning Clojure
-In April 2020 I decided I wanted to learn [Clojure](https://clojure.org/) (because functional programming and Lisp) and write about the process. You can find an overview page of what I've written so far [here](/my-projects/learning-clojure).
+In April 2020 I decided I wanted to learn [Clojure](https://clojure.org/) (because functional programming and Lisp) and write about the process. I've made an [overview page](/my-projects/learning-clojure) of what I've written about this project.
 
 <div style='margin-bottom: 1.8rem' markdown="1"></div>
 
