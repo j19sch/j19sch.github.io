@@ -68,8 +68,7 @@ test("counterstring length 1", () => {
     expect(result).toBe("*");
 ```
 
-To be fair to the [historical record](https://github.com/j19sch/counterstring/commits/main/): this is not exactly how I implemented it. I did something less performant with reversing an array, because I had looked at PerlClips's source code. How that came about and what I learned from it, is for another blog post.
-
+To be fair to the [historical record](https://github.com/j19sch/counterstring/commits/main/): this is not exactly how I implemented it. I did something less performant with reversing an array, because I had looked at PerlClips's source code. How that came about and what I learned from it, is for another blog post: "[Benchmarking counterstring implementations in TypeScript](link://slug/benchmarking-counterstring-implementations-in-typescript)".
 
 ## Counterstring length 2 {.small}
 
