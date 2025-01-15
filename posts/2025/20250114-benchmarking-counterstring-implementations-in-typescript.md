@@ -14,7 +14,7 @@ In my previous post "[Using "fake it till you make it" to implement counterstrin
 
 This is that blog post.
 
-As a matter of fact, I currently have [8 different implementations](https://github.com/j19sch/counterstring/blob/951548092330182355401bbae3c9cc3776b52c01/src/alt-counterstrings.ts) of counterstring in TypeScript. And there are some interesting lessons to take, both from comparing the code of the different implementations, as from comparing the differences in performance.
+As a matter of fact, I currently have [8 different implementations](https://github.com/j19sch/counterstring/blob/951548092330182355401bbae3c9cc3776b52c01/src/alt-counterstrings.ts) of counterstring in TypeScript. Including two that are not mine: one is from PerClip but translated to TypeScript, the other is EvilTester's implemenation. There are some interesting lessons to take, both from comparing the code of the different implementations, as from comparing the differences in performance.
 
 <!-- TEASER_END -->
 
@@ -41,10 +41,63 @@ And that's how I ended up with a counterstring implementation that pushes each e
 # The different choices in a counterstring implementation
 
 ## How to loop or shall we recurse?
-EvilTester mentions in coding kata post: write a recursive version
-remarkably easy after writing all the other ones
-too long a counterstring and you run out of call stack
-mostly a fun exercise
+
+### Looping up or looping down
+
+The most straightforward way to construct a counterstring is by using a decrementing `while`-loop. You take the desired length of the counterstring, add a number and an asterisk to your counterstring, then subtract the length of what you added from the desired length, rinse and repeat. At least while that desired length is larger than 0. (Or larger than 1, but that's for later in this post.)
+
+That's not what PerlClip does however. The Perl version of PerClip use an `if`-statement with [`last`](https://perldoc.perl.org/functions/last) and [`redo`](https://perldoc.perl.org/functions/redo):
+
+```Perl
+{
+	if (length($text)+length($pos)+1 > $target)
+	{
+		$text .= $pip x ($target - length($text));
+		last;
+	}
+	$text .= $pip.reverse($pos);
+	$pos -= length($pos)+1;
+	redo;
+}
+```
+
+For my translation to TypeScript I decided to refactor it a little:
+
+```TypeScript
+while (text.length + pos.toString().length + 1 <= target) {
+  text = text + pip + pos.toString().split("").reverse().join("");
+  pos = pos - (pos.toString().length + 1);
+}
+
+text = text + pip.repeat(target - text.length);
+```
+
+What I find interesting about this implemenation is the condition: comparing `text.length + pos.toString().length + 1` to `target`. This only makes sense when you realize that `pos.toString().length + 1` is the length of next element you plan to add to the counterstring. So `text.length + pos.toString().length + 1` is the length of our counterstring after adding the next element. If that's still smaller than the `target`, we add it. If it's not, we do something else, which I'll cover in a later section.
+
+I think PerlClip's way of implementing this loop is significantly harder to understand than the implemenation I describe at the start of this section. The reason for that is that the condition in the `while` (or in the `if` in the Perl version) only makes sense, once you understand the rest of the function and return to the condition. I'm not sure if this anti-pattern has a name. If not, I'd name it used-before-meaningful or something.
+
+
+### Recursion
+
+In EvilTester's blog post "[Testing Related Code Katas](https://www.eviltester.com/blog/eviltester/programming/2019-02-27-programming-katas-for-testers/)" he lists a number of programming exercises based on counterstrings. The sixht one tells you to *"find a different implementation approach e.g. if you used recursion change it to do something else, if you didn’t use recursion try that, if you were reversing strings try doing it without reversing strings"*.
+
+So I did:
+
+```TypeScript
+function recursiveFunction(length: number, counterString = "") {
+  if (length > 1) {
+    const prependThis = length.toString() + "*";
+    counterString = prependThis + counterString;
+    return recursiveFunction(length - prependThis.length, counterString);
+  } else if (length === 1) {
+    return "*" + counterString;
+  } else if (length === 0) {
+    return counterString;
+  }
+}
+````
+
+I wouldn't recommend this as a solution. If you try to generate a really long counterstring, you'll run out of call stack. It was a fun exercise, though. And I pleasantly surprised myself by getting it right immediately. I wrote the code, ran the tests, and they were all green. Having worked through all the other implemenations first, really paid off in that way.
 
 
 ## one at a time or both at once
@@ -97,7 +150,7 @@ This `if`-statement can only resolve to true at the very end of the counterstrin
 The [`substring()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring) method, when given two arguments, will return the part of the string from the start index up to and excluding the end index. So what happens in the code above is that of the `appendThis` string, i.e. `1*`, the substring is taken, starting from position 1 and ending before position 2, i.e. `*`.
 
 
-### My simpler implementation
+### My simpler implementation <a id=my-simpler-implementation>
 
 Having reasoned through all of that, because I wanted to understand both PerClip's and EvilTester's implemenation, I was able to make my own solution a lot simpler:
 
@@ -114,8 +167,28 @@ Since that's not obvious just from the code, I added the following comment:
 ``` TypeScript
 // At this point length is either 1 (the while-loop prepended 3*) or 0 ( the while-loop prepended 2*).
 // If length is 1, we need to prepend "*" to get the correct counterstring. If it's 0, we're done.
-``
+````
 
+## The implementation I ended up with
+
+```TypeScript
+function counterString(length: number) {
+  let counterString = "";
+
+  while (length > 1) {
+    const prependThis = length.toString() + "*";
+    counterString = prependThis + counterString;
+    length -= prependThis.length;
+  }
+
+  if (length === 1) {
+    counterString = "*" + counterString;
+  }
+
+  return counterString;
+}
+
+```
 
 # Performance of the different implementations
 
