@@ -5,8 +5,19 @@
 .. category: programming & test automation
 .. tags: counterstring, programming
 .. type: text
-.. description: Some things are faster than others.
+.. description: Perl was right: there's more than one way to do it.
 -->
+
+
+TODO:
+- nine implementations: added optimizedButSeparate
+- name of optimizedButSeparate
+- post title and description if no benchmark
+- next post: where does the performance difference of optimizedButSeparate come from?
+  - the extra if? the extra subtraction? the two large concats instead of a small one and a large one
+
+
+---
 
 In my previous post "[Using "fake it till you make it" to implement counterstring](link://slug/using-fake-it-till-you-make-it-to-implement-counterstring)" I mentioned the implementation I included there, wasn't my initial implementation:
 
@@ -14,7 +25,7 @@ In my previous post "[Using "fake it till you make it" to implement counterstrin
 
 This is that blog post.
 
-As a matter of fact, I currently have [8 different implementations](https://github.com/j19sch/counterstring/blob/951548092330182355401bbae3c9cc3776b52c01/src/alt-counterstrings.ts) of counterstring in TypeScript. Including two that are not mine: one is from PerClip but translated to TypeScript, the other is EvilTester's implemenation. There are some interesting lessons to take, both from comparing the code of the different implementations, as from comparing the differences in performance.
+As a matter of fact, I currently have [8 different implementations](https://github.com/j19sch/counterstring/blob/951548092330182355401bbae3c9cc3776b52c01/src/alt-counterstrings.ts) of counterstring in TypeScript. Including two that are not mine: one is from PerClip but translated to TypeScript, the other is EvilTester's implementation. There are some interesting lessons to take, both from comparing the code of the different implementations, as from comparing the differences in performance.
 
 <!-- TEASER_END -->
 
@@ -100,24 +111,68 @@ function recursiveFunction(length: number, counterString = "") {
 I wouldn't recommend this as a solution. If you try to generate a really long counterstring, you'll run out of call stack. It was a fun exercise, though. And I pleasantly surprised myself by getting it right immediately. I wrote the code, ran the tests, and they were all green. Having worked through all the other implemenations first, really paid off in that way.
 
 
-## one at a time or both at once
+## Add one at a time or both at once
 
-I did one at a time initially. Not as nice, because need to keep track of which one you're adding.
-Both at once is the better solution.
-one at a time does have the advantage you don't have the "what to do at the end"-problem described below
+In my initial implementation I used the variable `latestTokenPosition` to decide if I should add a number of an asterisk to the counterstring. If `latestTokenPosition` was `null`, I added the asterisk, i.e. "the token", and I set `latestTokenPosition` to the position of the token. If `latestTokenPosition` was not `null`, I added the value of `latestTokenPosition` to the counterstring and then set it to `null`.
 
+Then I looked at PerlClip's and EvilTester's implementation and noticed that they added the number and the asterisk at the same time. So I changed my approach to doing the same, because it saves you from introducing the `latestTokenPosition` variable that persist outside the `while`-loop and that you use to keep track what's the next thing you need to add to the counterstring.
 
-## do we actually need to reverse anything?
-
-PerlClip and EvilTester reverse the thing to be added and reverse the result at the end
-neither is necessary
-TypeScript/JavaScript reverse strings through lists -> performance!
-just concatenate the thing
-EvilTester and elegance
-but how to concatenate?
+Looking back at my initial implemenation, I do like how it captures really well how a counterstring works. You add an asterisk, then the position of that asterisk, etc. etc. You also don't run into the problem of [how to end the counterstring](link://slug/benchmarking-counterstring-implementations-in-typescript#what-to-do-at-the-end).
 
 
-## What to do at the ~end~ ~beginning~ end
+So I updated my initial implementation with the other things I've learned:
+
+```TypeScript
+function optimizedButSeparate(length: number) {
+  let counterString = "";
+
+  let latestTokenPosition: number = null;
+
+  while (length > 0) {
+    if (latestTokenPosition === null ) {
+      counterString = "*" + counterString
+      latestTokenPosition = length
+      length = length - 1
+    } else {
+      counterString = latestTokenPosition.toString() + counterString
+      length = length - latestTokenPosition.toString().length
+      latestTokenPosition = null
+      
+    }
+  }
+
+  return counterString;
+}
+```
+
+Then I ran my performance benchmarks (more on those later) and it does come with a performance cost.
+
+
+## Do we actually need to reverse anything?
+
+Both PerlClip's and EvilTester's implementation build the string in reverse order. So for a counterstring with length 9, they append `*9` to the then still empty counterstring, then they append `*7` etc., until they have `*9*7*5*3*`. Then these implementations reverse the whole string, resulting in the correct counterstring of `*3*5*7*9*`.
+
+Unfortunately in TypeScript there's no great way to reverse a string. A common way to do this - and the one used in EvilTester's implementation - is to transform the string to an array, reverse the array, and then join the array back into a string: `counterString.split("").reverse().join("")`. More on performance in the next post, but for now let's just say performance is not great. (Note that I'm not making a claim here about performance of PerlClip in Perl. Perl has `reverse()` to reverse a string, which presumably performs a lot better than the whole array-route.)
+
+Instead of reversing strings, you can concatenate them, still building up the counterstring in reverse. There are multiple ways to do this: the `+` operator, the `concat()` method, or template strings (the ones with the backticks). All of these perform better than reversing strings.
+
+So ignoring the problem of what to do at the end (see the next section), I'm very much in favor of basically building up your counterstring like this:
+
+```TypeScript
+counterString = count.toString() + "*" + counterString
+return counterString
+````
+
+over doing it like this:
+
+```TypeScript
+appendThis = "*" + count.toString().split("").reverse().join("");
+counterString = counterString + appendThis;
+return counterString.split("").reverse().join("");
+```
+
+
+## What to do at the ~end~ ~beginning~ end <a id=what-to-do-at-the-end/>
 
 The tricky bit about counterstrings is that they can start in either of two ways. So you're working your way backwards generating the counterstring. If you're lucky, you get to add `2*` and you're done. The asterisk is on the second position, as indicated by the `2` on the first position in the string. If you're not so lucky, you add `3*` and then what? If you apply the logic you've been using so far, you should add `1*` resulting in `1*3*...` as the counterstring. That would not be a correct counterstring, though, since the `1` is at the zeroth position in the string. Making the counterstring one character longer than it says it is. So instead you need to add only the `*`, resulting in the counterstring `*3*...`.
 
@@ -150,7 +205,7 @@ This `if`-statement can only resolve to true at the very end of the counterstrin
 The [`substring()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring) method, when given two arguments, will return the part of the string from the start index up to and excluding the end index. So what happens in the code above is that of the `appendThis` string, i.e. `1*`, the substring is taken, starting from position 1 and ending before position 2, i.e. `*`.
 
 
-### My simpler implementation <a id=my-simpler-implementation>
+### My simpler implementation
 
 Having reasoned through all of that, because I wanted to understand both PerClip's and EvilTester's implemenation, I was able to make my own solution a lot simpler:
 
@@ -170,6 +225,8 @@ Since that's not obvious just from the code, I added the following comment:
 ````
 
 ## The implementation I ended up with
+
+One change I'd lile to make: `length >= 2` because it better captures the intent of the code.
 
 ```TypeScript
 function counterString(length: number) {
@@ -191,5 +248,7 @@ function counterString(length: number) {
 ```
 
 # Performance of the different implementations
+
+next post?
 
 PerlClip performance does not say anything about performance in Perl.
