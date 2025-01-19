@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://smallsheds.garden/blog/feed.atom</loc>
-  <lastmod>2025-01-05T09:01:00Z</lastmod>
+  <lastmod>2025-01-19T13:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/blog/rss.xml</loc>
-  <lastmod>2025-01-05T09:01:00Z</lastmod>
+  <lastmod>2025-01-19T13:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/agile-comms.atom</loc>
@@ -151,11 +151,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_programming-test-automation.atom</loc>
-  <lastmod>2025-01-05T09:01:00Z</lastmod>
+  <lastmod>2025-01-19T13:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_programming-test-automation.xml</loc>
-  <lastmod>2025-01-05T09:01:00Z</lastmod>
+  <lastmod>2025-01-19T13:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_quality-engineering.atom</loc>
@@ -255,11 +255,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/counterstring.atom</loc>
-  <lastmod>2025-01-05T09:01:00Z</lastmod>
+  <lastmod>2025-01-19T13:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/counterstring.xml</loc>
-  <lastmod>2025-01-05T09:01:00Z</lastmod>
+  <lastmod>2025-01-19T13:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/coverage.atom</loc>
@@ -463,11 +463,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/programming.atom</loc>
-  <lastmod>2025-01-05T09:01:00Z</lastmod>
+  <lastmod>2025-01-19T13:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/programming.xml</loc>
-  <lastmod>2025-01-05T09:01:00Z</lastmod>
+  <lastmod>2025-01-19T13:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/python.atom</loc>
@@ -543,11 +543,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/small-steps.atom</loc>
-  <lastmod>2025-01-05T09:01:00Z</lastmod>
+  <lastmod>2025-01-19T13:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/small-steps.xml</loc>
-  <lastmod>2025-01-05T09:01:00Z</lastmod>
+  <lastmod>2025-01-19T13:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/sociocracy-30.atom</loc>
@@ -727,6 +727,6 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/sitemap.xml</loc>
-  <lastmod>2025-01-05T09:01:00Z</lastmod>
+  <lastmod>2025-01-19T13:21:00Z</lastmod>
  </sitemap>
 </sitemapindex>

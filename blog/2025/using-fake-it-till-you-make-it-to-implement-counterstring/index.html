@@ -19,6 +19,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <link rel="icon" href="../../../assets/favicons/favicon-96x96.png" sizes="96x96">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script><meta name="author" content="Joep Schuurkes">
 <link rel="prev" href="../../2024/your-default-response-should-be-a-safe-one/" title="Your default response should be a safe one" type="text/html">
+<link rel="next" href="../comparing-counterstring-implementations-in-typescript/" title="Comparing counterstring implementations in TypeScript" type="text/html">
 <meta property="og:site_name" content="Joep Schuurkes">
 <meta property="og:title" content='Using "fake it till you make it" to implement counterstring'>
 <meta property="og:url" content="https://smallsheds.garden/blog/2025/using-fake-it-till-you-make-it-to-implement-counterstring/">
@@ -152,6 +153,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 </pre></div>
 
 <p>To be fair to the <a href="https://github.com/j19sch/counterstring/commits/main/">historical record</a>: this is not exactly how I implemented it. I did something less performant with reversing an array, because I had looked at PerlClips&#8217;s source code. How that came about and what I learned from it, is for another blog&nbsp;post.</p>
+<p><em>(edit 19 January 2025)</em> Turns out it&#8217;s for two other blog posts. The first of the two is <a href="../comparing-counterstring-implementations-in-typescript/">&#8220;Comparing counterstring implementations in TypeScript&#8221;</a>. The second one will be about the difference in performance between all the&nbsp;implementations.</p>
 <h3 class="small">Counterstring length&nbsp;2</h3>
 <p>A counterstring with length 2 looks like&nbsp;this: <code>2*</code>. So that gives us our first challenge: in&nbsp;our <code>while</code>-loop we need to decide whether the next string to add is either a number or an&nbsp;asterisk.</p>
 <p>My solution was to keep track of that&nbsp;through <code>latestTokenPosition</code>, where &#8220;token&#8221; refers to the asterisk. So&nbsp;the <code>else</code> adds the asterisk to the result and&nbsp;sets <code>latestTokenPosition</code> to the position of that asterisk.&nbsp;The <code>if</code> adds&nbsp;that <code>latestTokenPosition</code> to our result and sets it back&nbsp;to <code>null</code>.</p>
@@ -259,6 +261,9 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <ul class="pager hidden-print">
 <li class="previous">
                 <a href="../../2024/your-default-response-should-be-a-safe-one/" rel="prev" title="Your default response should be a safe one">Previous&nbsp;post</a>
+            </li>
+            <li class="next">
+                <a href="../comparing-counterstring-implementations-in-typescript/" rel="next" title="Comparing counterstring implementations in TypeScript">Next&nbsp;post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer">
             Contents © 2025 
