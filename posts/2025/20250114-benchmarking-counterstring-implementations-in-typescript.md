@@ -83,14 +83,14 @@ while (text.length + pos.toString().length + 1 <= target) {
 text = text + pip.repeat(target - text.length);
 ```
 
-What I find interesting about this implemenation is the condition: comparing `text.length + pos.toString().length + 1` to `target`. This only makes sense when you realize that `pos.toString().length + 1` is the length of next element you plan to add to the counterstring. So `text.length + pos.toString().length + 1` is the length of our counterstring after adding the next element. If that's still smaller than the `target`, we add it. If it's not, we do something else, which I'll cover in a later section.
+What I find interesting about this implementation is the condition: comparing `text.length + pos.toString().length + 1` to `target`. This only makes sense when you realize that `pos.toString().length + 1` is the length of next element you plan to add to the counterstring. So `text.length + pos.toString().length + 1` is the length of our counterstring after adding the next element. If that's still smaller than the `target`, we add it. If it's not, we do something else, which I'll cover in a later section.
 
-I think PerlClip's way of implementing this loop is significantly harder to understand than the implemenation I describe at the start of this section. The reason for that is that the condition in the `while` (or in the `if` in the Perl version) only makes sense, once you understand the rest of the function and return to the condition. I'm not sure if this anti-pattern has a name. If not, I'd name it used-before-meaningful or something.
+I think PerlClip's way of implementing this loop is significantly harder to understand than the implementation I describe at the start of this section. The reason for that is that the condition in the `while` (or in the `if` in the Perl version) only makes sense, once you understand the rest of the function and return to the condition. I'm not sure if this anti-pattern has a name. If not, I'd name it used-before-meaningful or something.
 
 
 ### Recursion
 
-In EvilTester's blog post "[Testing Related Code Katas](https://www.eviltester.com/blog/eviltester/programming/2019-02-27-programming-katas-for-testers/)" he lists a number of programming exercises based on counterstrings. The sixht one tells you to *"find a different implementation approach e.g. if you used recursion change it to do something else, if you didn’t use recursion try that, if you were reversing strings try doing it without reversing strings"*.
+In EvilTester's blog post "[Testing Related Code Katas](https://www.eviltester.com/blog/eviltester/programming/2019-02-27-programming-katas-for-testers/)" he lists a number of programming exercises based on counterstrings. The sixth one tells you to *"find a different implementation approach e.g. if you used recursion change it to do something else, if you didn’t use recursion try that, if you were reversing strings try doing it without reversing strings"*.
 
 So I did:
 
@@ -108,7 +108,7 @@ function recursiveFunction(length: number, counterString = "") {
 }
 ````
 
-I wouldn't recommend this as a solution. If you try to generate a really long counterstring, you'll run out of call stack. It was a fun exercise, though. And I pleasantly surprised myself by getting it right immediately. I wrote the code, ran the tests, and they were all green. Having worked through all the other implemenations first, really paid off in that way.
+I wouldn't recommend this as a solution. If you try to generate a really long counterstring, you'll run out of call stack. It was a fun exercise, though. And I pleasantly surprised myself by getting it right immediately. I wrote the code, ran the tests, and they were all green. Having worked through all the other implementations first, really paid off in that way.
 
 
 ## Add one at a time or both at once
@@ -207,7 +207,7 @@ The [`substring()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 ### My simpler implementation
 
-Having reasoned through all of that, because I wanted to understand both PerClip's and EvilTester's implemenation, I was able to make my own solution a lot simpler:
+Having reasoned through all of that, because I wanted to understand both PerClip's and EvilTester's implementation, I was able to make my own solution a lot simpler:
 
 ```TypeScript
 if (count === 1) {
@@ -224,9 +224,10 @@ Since that's not obvious just from the code, I added the following comment:
 // If length is 1, we need to prepend "*" to get the correct counterstring. If it's 0, we're done.
 ````
 
+
 ## The implementation I ended up with
 
-One change I'd lile to make: `length >= 2` because it better captures the intent of the code.
+Having worked through all of these different options, I ended up with the following implementation:
 
 ```TypeScript
 function counterString(length: number) {
@@ -246,6 +247,9 @@ function counterString(length: number) {
 }
 
 ```
+
+And looking at it, makes me think there's one more change I'd like to make. Changing the condition of the `while`-loop to `length >= 2`, because it better captures the intent of the code.
+
 
 # Performance of the different implementations
 
