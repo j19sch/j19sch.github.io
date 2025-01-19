@@ -70,6 +70,8 @@ test("counterstring length 1", () => {
 
 To be fair to the [historical record](https://github.com/j19sch/counterstring/commits/main/): this is not exactly how I implemented it. I did something less performant with reversing an array, because I had looked at PerlClips's source code. How that came about and what I learned from it, is for another blog post.
 
+*(edit 19 January 2025)* Turns out it's for two other blog posts. The first of the two is ["Comparing counterstring implementations in TypeScript"](link://slug/comparing-counterstring-implementations-in-typescript). The second one will be about the difference in performance between all the implementations.
+
 
 ## Counterstring length 2 {.small}
 
