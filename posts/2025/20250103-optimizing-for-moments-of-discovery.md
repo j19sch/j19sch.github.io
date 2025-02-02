@@ -8,6 +8,58 @@
 .. description: 
 -->
 
+ToDo:
+- add link to difference etc post
+- add link to being intentional etc post
+- separate post about "designing and building and testing are all the same thing"?
+	- and lingering beliefs about waterfall
+	- also links to thin vertical slices and Zuills' maxim
+
+Last year I wrote about how the difference between a requirement and a test case is the moment of discovery. And how that means that we should be intentational about our exploratory testing. In this post I want to make a similar point, but on a larger scale: you should optimize for moments of discovery.
+
+Optimize as in:
+- right activity of discovery
+- right moment of discovery
+- right discovery / right contents of discovery
+	- is that how discovery works?
+	- skillful discovery? -> ET skills
+- right documentation of discovery
+	- Maaret: your input should be output eg issues
+	- recording of discovery, often: code
+	- use cases -> Alistair Cockburn's book
+
+
+Three ways of doing this (in addition to exploratory testing):
+- thin vertical slices
+	- elephant carpaccio
+	- requires understanding of what's built so far
+	- richness of evaluation context
+	- > "It is in the doing of the work that we discover the work that we must do. Doing exposes reality." Woody Zuill, https://agilemaxims.com/
+- just in time refinement
+	- instead of deciding/fixating early
+	- instead of front-loading all the thinking
+	- documentation as output
+- do things a little differently / small variations in how you do things
+	- add a little chaos, serendipity, confusion (cynefin)
+
+
+# toot Maaret
+https://mas.to/@maaretp/113882037108302547
+
+People have ideas about what agile is. When we worked with 'agile', we made notes of ideas that were essentially different to what others were expecting agile to mean as *process*.
+
+- No product owner - product owned by team, with shared ownership
+- Nothing changes if we change nothing - bias to moving forward to better over extensive planning
+- On-time planning - plan details just before plan is executed, but plan for themes continuously
+- Collaborating with others over individual productivity
+- Documentation as output - writing documentation at time we know the most, as things we leave behind for our future selves
+- Socialize over documenting for process - share way of working by working this way together, including all team members; follow behaviors expected over following rules.
+- Value over compliance. There is always reasons on why we have compliance rules in place. Go back to discussing the value we seek a compliance activity to create.
+- Proposed requirements become requirements at time of 1st release of them. They are a result of negotiation under constraints of design.
+
+# quote Nate
+"Which is while we like to imagine processes as linear and flowing from one point to another, our experience as testers is often more fractal and recursive - where one thing causes us to go back and refine something done before etc." - Nate Custer, https://www.linkedin.com/feed/update/urn:li:activity:7165642850334945281?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7165642850334945281%2C7165654356732723201%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7165642850334945281%2C7165706317192515584%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287165654356732723201%2Curn%3Ali%3Aactivity%3A7165642850334945281%29&dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287165706317192515584%2Curn%3Ali%3Aactivity%3A7165642850334945281%29
+
 # from previous posts
 
 TODO: read first post in series
