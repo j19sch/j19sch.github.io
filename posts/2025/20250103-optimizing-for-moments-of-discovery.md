@@ -9,13 +9,75 @@
 -->
 
 ToDo:
-- add link to difference etc post
-- add link to being intentional etc post
+- add link in difference etc post to this one
+- add link in being intentional etc post to this one
 - separate post about "designing and building and testing are all the same thing"?
 	- and lingering beliefs about waterfall
 	- also links to thin vertical slices and Zuills' maxim
 
-Last year I wrote about how the difference between a requirement and a test case is the moment of discovery. And how that means that we should be intentational about our exploratory testing. In this post I want to make a similar point, but on a larger scale: you should optimize for moments of discovery.
+Last year I wrote about how [the difference between a requirement and a test case is the moment of discovery](link://slug/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery). And how that means that [we should be intentational about our exploratory testing](link://slug/being-intentional-about-exploratory-testing). Exploratory testing is just one example of a bigger idea, however: optimizing for moments of discovery.
+
+So what does that mean, optimizing for moments of discovery? Don't those moments just happen? Isn't that what serendipity is all about? I think it's fair to say that you can't make moments of disovery happen. You *can* make them more likely to happen. That you *can* optimize.
+
+
+# Four things to optimize
+
+There are four aspects to this optimization:
+1. the activity - what
+2. the moment - when
+3. the skill - how (well)
+4. the recording - ???
+
+I'd like to illustrate these by returning to the idea that started these series of posts: the requirement and the test case.  Later in this post I'll provide some more examples of things you can do to optimize for the moment of discovery.
+
+The questions are phrased oddly, because it's easier to discuss discoveries in hindsight, because as mentioned, you can't make discoveries happen, only make them more likely to happen.
+
+
+## The activity
+
+For optimizing the activity, we can ask the question: should this be a test case or a requirement? Is this something we should figure out during design, before we have built anything? Or should we figure this out by interacting with and exploring something we have built - even if we've only built something very small?
+
+Because it does make sense to figure out some things in advance. And it's good to test and verify those things. But you can't start building from a completely blank slate. You'll have to make some decisions. Then there are things you can't figure out in advance.vAnd finally, there are things that maybe you can figure out in advance, but it's so much easier/cheaper/better to see what happens when you get there, then to figure them out in advance.
+
+So basically, choose wisely what you want to figure out in design and what you want to figure out in test. When that design-build-test loop is five minutes, don't worry too much about it. When that loop is five weeks, however, or five years...
+
+
+## The moment
+
+There is no escaping the order of the activities of design - build - test. You think of doing something, you do the something, you evaluate the something.[^1] That means that the questions "can we design earlier?" en "can we test later?" are very different questions from "can we design later?" and "can we test earlier?"
+
+[^1]: Even TDD does not escape this order. You write a test, you run the test. You run the code, you run the test. You refactor the code, you run the test. It does a great job of intermingling designing, building, and testing. But the order is still: idea - build - evaluate.
+
+Designing earlier and testing later go together very well. It's traditional waterfall with the belief it is possible to first write down all (most) of the requirements. So at the end you just have to check of what was built, meets those requirements. It's also the pattern of getting someone else to develop some piece of software for you. Budgets need to be allocated. Contracts need to be written. Writing down what you want upfront does make that part of the process easier - even if you don't end up with the software you actually need.
+
+There's also an interesting aspect to designing earlier and testing later, however. Why not design earlier? Especially if that means you can build and test earlier? Get that "walking skeleton" going. Get that first version out there. And why not test later? Why invest time and energy right now, if it's not something we need to know yet? The value of a test is in what happens after the test. Does it inform a decision? A new test? Or doesn't it do anything, and was it wasted effort?[^2]
+
+[^2]: That's not always an easy distinction to make. A very small and cheap test doesn't have to do much to have value, so it might be hard to notice.
+
+Designing later is a great approach, but it does require trust. Trust that you're heading in the right direction, doing good work, even though a lot has not been decided yet. Trust that you'll be able to spot the last responsible moment and decide no later than that moment. It is really powerful, though. Why reduce your options in the future by deciding things, fix(ating) things earlier than you need to?
+
+Testing earlier is not the same thing as getting testers involved earlier. For example, getting testers involved in writing acceptance criteria. While that is a great idea, that's not testers testing earlier. It's getting testers involved in design. Testing earlier means that you interact with and evaluate what's built, earlier. Instead of waiting until a change gets deployed to the test environment, you check out the code and play around with the unit tests.
+
+
+## The skill
+
+Skill is crucial, which is why I wrote a post last year about [the nine skills of exploratory testing](link://slug/the-nine-skills-of-exploratory-testing).
+
+Designing is also a skill, with some overlap with, but also plenty distinct from exploratory testing. Since design is not my area of expertise, I'l give one example. My current team is writing use cases following the methodology described by Alistair Cockburn in his excellent book "Writing Effective Use Cases" (2000). Writing good use cases definitely is a skill and that's even without considering the part where you get people to share the information that needs to go into the use cases.
+
+
+## The recording / What remains / What you leave behind
+
+Discovering something is great, but then what? What do you do with this information? How do you capture it? How do you share it? Documentation often is where information goes to die. Documentation needs to be a tool, something that's being used. Not just some files stored in a place where no one really looks anymore.
+
+One thing that designs and tests have in common is that the best kind is the executable kind. Not that all design and all tests need to be executable. But as far as documentation goes: the less it's a document that's created and updated and maintained as something separate from the code, the better.
+
+
+
+
+
+---
+
 
 Optimize as in:
 - right activity of discovery
@@ -27,6 +89,9 @@ Optimize as in:
 	- Maaret: your input should be output eg issues
 	- recording of discovery, often: code
 	- use cases -> Alistair Cockburn's book
+	- making it concrete
+	- solidifying?
+	- capturing, but not the moment, the discovery
 
 
 Three ways of doing this (in addition to exploratory testing):
@@ -35,6 +100,7 @@ Three ways of doing this (in addition to exploratory testing):
 	- requires understanding of what's built so far
 	- richness of evaluation context
 	- > "It is in the doing of the work that we discover the work that we must do. Doing exposes reality." Woody Zuill, https://agilemaxims.com/
+	- doing: design - build - test (feedback!) TDD mixes then so well
 - just in time refinement
 	- instead of deciding/fixating early
 	- instead of front-loading all the thinking
