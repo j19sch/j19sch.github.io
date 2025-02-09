@@ -71,11 +71,14 @@ Thin vertical slices let you design later. You do want a high-level design, have
 Thin vertical slices let you test earlier in two ways. The first way, the more obvious one, is in the "thin". If what you build is smaller, you get to test it earlier. The second way, is in the "vertical". If you build something across your whole stack, something that's supposed to deliver value to your users, you get to evaluate it in a richer context. "Did I add the correct table to the database?" is a much narrower question than "Do my users now have this extra capability?"
 
 
-## Just in time refinement
+## Just-in-time refinement
 
-jit refinement
-- design later: last responsible moment
-- test earlier: blurs distinction idea-build-test, so less three separate activities, so test earlier
+Just-in-time refinement means that you specify work at the last responsible moment. The specificity and the moment go hand-in-hand here. High-level specification might happen months in advance. It's just a list of high-level work, often called "epics". Since you're describing them so far in advance, things might change. You might want to do them differently or not at all. So it doesn't make sense to specify them in any further detail or break them up in smaller work items.
+
+Just-in-time refinement lets you design later, because that's exactly what you do. Postpone design to the latest moment where it doesn't hurt your ability to deliver.
+
+Just-in-time refinement lets you test earlier. It makes design into an incremental process that almost unnoticeable morphs into building. (As in: the only sufficiently detailed specificion of software is code.) So instead of writing some code according to some spec defined weeks ago, you're encouraged to remain mentally engaged with what you're building and how it should be designed. And with design and test being two sided of the same coin (at least in this blog post series) - only distinguished by the moment of discovery - build morphs as easily into test and design morphed into build. You're testing earlier, because design - build - test are no longer three sequential phases of delivering software.
+
 
 
 ## Early feedback and end-to-end feedback (Abacus)
