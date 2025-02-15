@@ -1,6 +1,6 @@
 <!--
 .. title: The difference between a test case and a requirement is the moment of discovery (part two)
-.. slug: the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery-part-two
+.. slug: the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery-part-two-two
 .. date: 2024-07-01
 .. category: 
 .. tags: 

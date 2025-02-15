@@ -14,14 +14,16 @@ ToDo:
 - separate post about "designing and building and testing are all the same thing"?
 	- and lingering beliefs about waterfall
 	- also links to thin vertical slices and Zuills' maxim
+	- and all the other notes
 
 
-Last year I wrote about how [the difference between a requirement and a test case is the moment of discovery](link://slug/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery). And how that means that [we should be intentational about our exploratory testing](link://slug/being-intentional-about-exploratory-testing). Exploratory testing is just one example of a bigger idea, however: optimizing for moments of discovery.
+Last year I wrote about how [the difference between a requirement and a test case is the moment of discovery](link://slug/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery). And how that means that [we should be intentional about our exploratory testing](link://slug/being-intentional-about-exploratory-testing). Exploratory testing is just one example of a bigger idea, however: optimizing for moments of discovery.
 
-So what does that mean, optimizing for moments of discovery? Don't those moments just happen? Isn't that what serendipity is all about? I think it's fair to say that you can't make moments of disovery happen. You *can* make them more likely to happen, though. That you *can* optimize.
+So what does that mean, optimizing for moments of discovery? Don't those moments just happen? Isn't that what serendipity is all about? I think it's fair to say that you can't make moments of discovery happen. You *can* make them more likely to happen, though. That you *can* optimize.
 
-Before I go into two practices and a habit to optimize for moments of discovery, I want to discuss moving the moment of discovery either earlier or later, for both requirements and test cases, i.e. for design and test. Because the two practices will do exactly that: moving the moment of discovery.
+Before I go into two practices to optimize for moments of discovery, I want to talk about moving the moment of discovery, either earlier or later, for both requirements and test cases, i.e. for design and test. Because the two practices will do exactly that: moving the moment of discovery.
 
+<!-- TEASER_END -->
 
 # Moving the moment of discovery
 
@@ -35,18 +37,17 @@ That means that the questions "Can we design earlier?" and "Can we test later?" 
 
 ## Designing later
 
-<!-- Needs more words because there's fewer words above. -->
+Designing later means making decisions later. How late depends on how large the decision is. The smaller the decision, the closer you want to make it to when the actual code is written. Basically you don't want to reduce your options earlier than you really have to. That does require trust. Trust that you're heading in the right direction. That you're doing good work, even though a lot has not been decided yet. That you'll correctly spot that last responsible moment to make those decisions.
 
-Designing later is a great approach, but it does require trust. Trust that you're heading in the right direction, that you're doing good work, even though a lot has not been decided yet. Trust that you'll be able to spot the last responsible moment and decide no later than that moment. It is really powerful, though. Why reduce your options in the future by deciding things, fix(ating) things earlier than you need to?
 
 ## Testing earlier
 
-Testing earlier is not the same thing as getting testers involved earlier, like getting testers involved in writing acceptance criteria. While that is a great idea, that's not testers testing earlier. It's getting testers involved in design. Testing earlier means that you interact with and evaluate what's built, earlier. Instead of waiting until a change gets deployed to the test environment, you check out the code and play around with the unit tests. Or you make the change smaller, so you can test it sooner.
+Testing earlier is not the same thing as getting testers involved earlier, like getting testers involved in writing acceptance criteria. While that is a great idea, that's not testers testing earlier. It's getting testers involved in design. Testing earlier means that you interact with and evaluate what's built, earlier. Instead of waiting until a change gets deployed to the test environment, you check out the code and play around with the unit tests. Or you make the change smaller, so you can test it earlier.
 
 
 # Two practices for designing later and testing earlier
 
-Two of my favorite practices that allow you to design later and test earlier are working in thin vertical slices and pracitcing just-in-time refinement.
+Two of my favorite practices that allow you to design later and test earlier are working in thin vertical slices and practicing just-in-time refinement.
 
 
 ## Thin vertical slices
@@ -55,7 +56,7 @@ Working in thin vertical slices means [your default](link://slug/your-default-re
 
 Next to making your slices of work vertical, you want to make them as thin (small) as possible. You're going to deliver something of value, and the sooner the better. And the only sustainable way to do that, is not to cut corners, or to do overtime, but to reduce scope. Build the smallest thing possible that delivers some value. And if you want an example of how far you can take that, see the ["Elephant Carpaccio"-exercise](link://slug/how-to-run-a-remote-elephant-carpaccio).
 
-Thin vertical slices let you design later. You do want a high-level design, have a direction you're moving in. But the lower-level design, you only need that for the next vertical slice. Or ss Dan North puts it: you want the ["Best Simple System for Now"](https://dannorth.net/best-simple-system-for-now/).
+Thin vertical slices let you design later. You do want a high-level design, have a direction you're moving in. But the lower-level design, you only need that for the next vertical slice. Or as Dan North puts it: you want the ["Best Simple System for Now"](https://dannorth.net/best-simple-system-for-now/).
 
 Thin vertical slices let you test earlier in two ways. The first way, the more obvious one, is in the "thin". If what you build is smaller, you get to test it earlier. The second way, is in the "vertical". If you build something across your whole stack, something that's supposed to deliver value to your users, you get to evaluate it in a richer context. "Did I add the correct table to the database?" is a much narrower question than "Do my users now have this extra capability?" Instead of only testing part of a solution, you get to test the solution as a whole.
 
@@ -67,6 +68,13 @@ Just-in-time refinement means that you specify work at the last responsible mome
 Just-in-time refinement lets you design later, because that's exactly what you do. Postpone design to the latest moment where it doesn't hurt your ability to deliver. What that last responsible moment is, depends on your context, but I suspect in most cases it's later than you think it is.
 
 Just-in-time refinement lets you test earlier. It makes design into an incremental process that almost unnoticeable morphs into building. (As in: the only sufficiently detailed specification of software is code.) So instead of writing some code according to some spec defined weeks ago, you're encouraged to remain mentally engaged with what you're building and how it should be designed. And with design and test being two sides of the same coin - only distinguished by the moment of discovery (at least in this blog post series)- build morphs as easily into test as design morphed into build. You're testing earlier, because design - build - test are no longer three sequential phases of delivering software.
+
+---
+
+What do you do to optimize for moments of discovery? Do you see risks of these two practices and one habit backfiring? Are there contexts where you would not want to optimize for moments of discovery?
+
+
+---
 
 
 
@@ -93,17 +101,12 @@ epics en issues, soms spikes (spike solutions)
 
 # A good habit: inviting serendipity in
 
+
+
 mix things up for serendipity
 refer back to intro: can you make more moments of discovery happen?
 
 
----
-
-What do you do to optimize for moments of discovery? Do you see risks of these two practices and one habit backfiring? Are there context where you would not want to optimize for moments of discovery?
-
-
-
----
 
 
 Optimize as in:
