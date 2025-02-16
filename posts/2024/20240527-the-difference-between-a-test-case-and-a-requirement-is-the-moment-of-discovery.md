@@ -23,6 +23,8 @@ In this post I want to explore the meaning of that statement. In the next post I
 
 *(edit 22 November 2024)* The second post ended up covering [being intentional about exploratory testing](link://slug/being-intentional-about-exploratory-testing). I intend to write a third one for the series about optimizing for moments of discovery.
 
+*(edit 16 February 2025)* I've published the third post about [optimizing for moments of discover](link://slug/optimizing-for-moments-of-discovery) through thin vertical slices and just-in-time refinement.
+
 
 # About requirements and test cases
 
