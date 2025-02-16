@@ -127,7 +127,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/archive.html</loc>
-  <lastmod>2025-01-19T13:21:00Z</lastmod>
+  <lastmod>2025-02-16T13:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/</loc>
@@ -462,8 +462,28 @@
   <lastmod>2024-12-28T15:04:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/blog/2025/being-intentional-about-exploratory-testing/</loc>
+  <lastmod>2025-02-15T19:12:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/blog/2025/comparing-counterstring-implementations-in-typescript/</loc>
   <lastmod>2025-01-19T13:21:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/blog/2025/optimizing-for-moments-of-discovery/</loc>
+  <lastmod>2025-02-15T19:12:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/blog/2025/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery-part-one/</loc>
+  <lastmod>2025-02-15T19:12:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/blog/2025/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery-part-two-two/</loc>
+  <lastmod>2025-02-15T19:12:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://smallsheds.garden/blog/2025/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery-part-two/</loc>
+  <lastmod>2025-02-15T19:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/2025/using-fake-it-till-you-make-it-to-implement-counterstring/</loc>
@@ -555,11 +575,11 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-8.html</loc>
-  <lastmod>2025-01-04T19:46:00Z</lastmod>
+  <lastmod>2025-02-16T13:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-9.html</loc>
-  <lastmod>2025-01-19T13:21:00Z</lastmod>
+  <lastmod>2025-02-16T13:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/</loc>

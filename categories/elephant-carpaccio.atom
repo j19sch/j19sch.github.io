@@ -3,13 +3,33 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about elephant carpaccio)</title>
   <id>https://smallsheds.garden/categories/elephant-carpaccio.atom</id>
-  <updated>2024-10-18T11:15:53Z</updated>
+  <updated>2025-02-16T13:57:01Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/elephant-carpaccio.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/elephant-carpaccio/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Optimizing for moments of discovery</title>
+    <id>https://smallsheds.garden/blog/2025/optimizing-for-moments-of-discovery/</id>
+    <updated>2025-02-16T00:00:00+01:00</updated>
+    <published>2025-02-16T00:00:00+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2025/optimizing-for-moments-of-discovery/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;&lt;em&gt;This is the third post in a three-part series about my statement "The difference between a test case and a requirement is the moment of discovery."&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Last year I wrote about how &lt;a href="https://smallsheds.garden/blog/2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery/"&gt;the difference between a requirement and a test case is the moment of discovery&lt;/a&gt;. And how that means that we should &lt;a href="https://smallsheds.garden/blog/2024/being-intentional-about-exploratory-testing/"&gt;be intentional about our exploratory testing&lt;/a&gt;. Exploratory testing is just one example of a bigger idea, though: optimizing for moments of discovery.&lt;/p&gt;
+&lt;p&gt;So what does that mean, optimizing for moments of discovery? Don't those moments just happen? Isn't that what serendipity is all about? I think it's fair to say that you can't make moments of discovery happen. You &lt;em&gt;can&lt;/em&gt; make them more likely to happen. That you &lt;em&gt;can&lt;/em&gt; optimize for.&lt;/p&gt;
+&lt;p&gt;Before I go into two practices to optimize for these moments of discovery, I want to talk more generally about moving the moment of discovery, either earlier or later, for both requirements and test cases, i.e. for design and test. Because the two practices will do exactly that: moving the moment of discovery.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2025/optimizing-for-moments-of-discovery/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="agile" label="agile"/>
+    <category term="elephant-carpaccio" label="elephant carpaccio"/>
+    <category term="quality-engineering" label="quality engineering"/>
+    <category term="software-development" label="software development"/>
+    <category term="software-testing" label="software testing"/>
+  </entry>
   <entry>
     <title>How to run a remote Elephant Carpaccio</title>
     <id>https://smallsheds.garden/blog/2021/how-to-run-a-remote-elephant-carpaccio/</id>
