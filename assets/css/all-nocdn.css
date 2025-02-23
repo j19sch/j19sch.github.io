@@ -1410,6 +1410,10 @@ code {
   color: #e05a29;
 }
 
+pre.code {
+  white-space: pre;
+}
+
 a.footnote-ref {
   font-weight: 600;
   font-style: normal;

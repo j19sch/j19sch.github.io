@@ -3,13 +3,30 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about programming)</title>
   <id>https://smallsheds.garden/categories/programming.atom</id>
-  <updated>2025-02-16T13:58:58Z</updated>
+  <updated>2025-02-23T14:45:42Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/programming.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/programming/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Benchmarking counterstring implementations in TypeScript</title>
+    <id>https://smallsheds.garden/blog/2025/benchmarking-counterstring-implementations-in-typescript/</id>
+    <updated>2025-02-23T00:00:00+01:00</updated>
+    <published>2025-02-23T00:00:00+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2025/benchmarking-counterstring-implementations-in-typescript/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Earlier this year I posted about how I &lt;a href="https://smallsheds.garden/blog/2025/using-fake-it-till-you-make-it-to-implement-counterstring/"&gt;implemented a counterstring function&lt;/a&gt; using "fake it till you make it". I also posted about &lt;a href="https://smallsheds.garden/blog/2025/comparing-counterstring-implementations-in-typescript/"&gt;different ways&lt;/a&gt; to implement counterstrings. In this post, I want to share how those different implementations compare performance-wise.&lt;/p&gt;
+&lt;p&gt;To do this, I used both &lt;a href="https://github.com/tinylibs/tinybench"&gt;Tinybench&lt;/a&gt; and &lt;a href="https://vitest.dev/guide/features.html#benchmarking"&gt;vitest bench&lt;/a&gt; (which uses Tinybench). The results are basically the same, but their default output is slightly different.&lt;/p&gt;
+&lt;h2&gt;The nine implementations&lt;/h2&gt;
+&lt;p&gt;Before I present the results, I should describe the different implementations and how they differ from each other. The &lt;a href="https://github.com/j19sch/counterstring/blob/04883b7bb2f3e99f7be81ffa58e4ac5f934d276b/src/alt-counterstrings.ts"&gt;actual code of each implementation&lt;/a&gt; is available on GitHub. Here I'll only mention what makes each implementation interesting compared to the others:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2025/benchmarking-counterstring-implementations-in-typescript/"&gt;Read more…&lt;/a&gt; (8 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="counterstring" label="counterstring"/>
+    <category term="programming" label="programming"/>
+  </entry>
   <entry>
     <title>Comparing counterstring implementations in TypeScript</title>
     <id>https://smallsheds.garden/blog/2025/comparing-counterstring-implementations-in-typescript/</id>
@@ -24,7 +41,7 @@
 &lt;p&gt;I did something less performant with reversing an array, because I had looked at PerlClips's source code. How that came about and what I learned from it, is for another blog post.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;This is that blog post.&lt;/p&gt;
-&lt;p&gt;As a matter of fact, I currently have &lt;a href="https://github.com/j19sch/counterstring/blob/04883b7bb2f3e99f7be81ffa58e4ac5f934d276b/src/alt-counterstrings.ts"&gt;9 different implementations&lt;/a&gt; of counterstring in TypeScript. Including two that are not mine: one is from &lt;a href="https://www.satisfice.com/download/perlclip"&gt;PerClip&lt;/a&gt; but translated to TypeScript by me, the other is &lt;a href="https://www.eviltester.com/blog/eviltester/chrome-extensions/2019-02-19-counterstring-snippets/#counterstring-generation-function"&gt;EvilTester's implementation&lt;/a&gt;. There are some interesting lessons to take, both from comparing the code of the different implementations, as from comparing the differences in performance. The performance-part of the comparison will have to wait for my next post, though.&lt;/p&gt;
+&lt;p&gt;As a matter of fact, I currently have &lt;a href="https://github.com/j19sch/counterstring/blob/04883b7bb2f3e99f7be81ffa58e4ac5f934d276b/src/alt-counterstrings.ts"&gt;9 different implementations&lt;/a&gt; of counterstring in TypeScript. Including two that are not mine: one is from &lt;a href="https://www.satisfice.com/download/perlclip"&gt;PerClip&lt;/a&gt; but translated to TypeScript by me, the other is &lt;a href="https://www.eviltester.com/blog/eviltester/chrome-extensions/2019-02-19-counterstring-snippets/#counterstring-generation-function"&gt;EvilTester's implementation&lt;/a&gt;. There are some interesting lessons to take, both from comparing the code of the different implementations, as from comparing the differences in performance. The &lt;a href="https://smallsheds.garden/blog/2025/benchmarking-counterstring-implementations-in-typescript/"&gt;performance-part of the comparison&lt;/a&gt; will have to wait for my next post, though.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2025/comparing-counterstring-implementations-in-typescript/"&gt;Read more…&lt;/a&gt; (10 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="counterstring" label="counterstring"/>
     <category term="programming" label="programming"/>
@@ -169,24 +186,6 @@ and the language's ecosystem (e.g. how to install those libraries&lt;sup id="fnr
     <summary type="html">&lt;div&gt;&lt;p&gt;Chapter 4 of "&lt;a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/"&gt;Clojure for the Brave and True&lt;/a&gt;" concludes with a &lt;em&gt;Vampire Data Analysis Program&lt;/em&gt;, serving as a summary of the chapter. The book shows some code, explains it, moves on to the next bit of code, etc. I'm not sure why, but I decided I wanted to figure out the code on my own and then read the explanation to see if I got it right. Afterwards I realized it might make a good blog post: both explaining what the program does and what techniques (for lack of a better word) I used to figure it out.&lt;/p&gt;
 &lt;p&gt;With most of the work in the program being done by a function called &lt;code&gt;mapify&lt;/code&gt;, this blog post will focus on that single function. As it turns out, it took me more than 2000 words (footnotes not included) to describe what this function consisting of only 9 lines does. So feel free to read all of it, skim through it, or skip straight ahead to the &lt;a href="https://smallsheds.garden/blog/clojure/2022/clj-9-how-to-figure-out-what-a-function-does/#techniques"&gt;techniques&lt;/a&gt; and some &lt;a href="https://smallsheds.garden/blog/clojure/2022/clj-9-how-to-figure-out-what-a-function-does/#reflections"&gt;reflections&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/clojure/2022/clj-9-how-to-figure-out-what-a-function-does/"&gt;Read more…&lt;/a&gt; (16 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="brave-clojure" label="brave clojure"/>
-    <category term="clojure" label="clojure"/>
-    <category term="programming" label="programming"/>
-    <category term="python" label="python"/>
-  </entry>
-  <entry>
-    <title>(clj 8) Some notes on lazy sequences and function parameters</title>
-    <id>https://smallsheds.garden/blog/clojure/2022/clj-8-some-notes-on-lazy-sequences-and-function-parameters/</id>
-    <updated>2022-04-18T14:16:36+02:00</updated>
-    <published>2022-04-18T14:16:36+02:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/clojure/2022/clj-8-some-notes-on-lazy-sequences-and-function-parameters/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;Almost done with the chapter 4 &lt;em&gt;"Core Functions in Depth"&lt;/em&gt; of "&lt;a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/"&gt;Clojure for the Brave and True&lt;/a&gt;"! Before wrapping up the chapter with a longer example, a summary, and some exercises, the book goes into lazy sequences, the collection abstraction, and function functions. In this post I will share some notes on infinite lazy sequences and function parameters, making comparisons between Clojure and Python.&lt;/p&gt;
-&lt;h2&gt;Infinite lazy sequences&lt;/h2&gt;
-&lt;p&gt;A lazy sequence is a sequence whose members aren't computed until you try to access them. One advantage is that it's more efficient: the whole sequence doesn't have to be calculated and kept in memory from the start. Another advantage is that it allows you to create infinite sequences. Do that with a normal sequence and your program would never want to stop calculating.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/clojure/2022/clj-8-some-notes-on-lazy-sequences-and-function-parameters/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="brave-clojure" label="brave clojure"/>
     <category term="clojure" label="clojure"/>
     <category term="programming" label="programming"/>

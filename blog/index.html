@@ -88,7 +88,26 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025/optimizing-for-moments-of-discovery/" class="u-url">Optimizing for moments of&nbsp;discovery</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025/benchmarking-counterstring-implementations-in-typescript/" class="u-url">Benchmarking counterstring implementations in&nbsp;TypeScript</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep&nbsp;Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2025/benchmarking-counterstring-implementations-in-typescript/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-02-23T00:00:00+01:00" itemprop="datePublished" title="23 February 2025">23 February 2025</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Earlier this year I posted about how I <a href="2025/using-fake-it-till-you-make-it-to-implement-counterstring/">implemented a counterstring function</a> using &#8220;fake it till you make it&#8221;. I also posted about <a href="2025/comparing-counterstring-implementations-in-typescript/">different ways</a> to implement counterstrings. In this post, I want to share how those different implementations compare&nbsp;performance-wise.</p>
+<p>To do this, I used both <a href="https://github.com/tinylibs/tinybench">Tinybench</a> and <a href="https://vitest.dev/guide/features.html#benchmarking">vitest bench</a> (which uses Tinybench). The results are basically the same, but their default output is slightly&nbsp;different.</p>
+<h2>The nine&nbsp;implementations</h2>
+<p>Before I present the results, I should describe the different implementations and how they differ from each other. The <a href="https://github.com/j19sch/counterstring/blob/04883b7bb2f3e99f7be81ffa58e4ac5f934d276b/src/alt-counterstrings.ts">actual code of each implementation</a> is available on GitHub. Here I&#8217;ll only mention what makes each implementation interesting compared to the&nbsp;others:</p>
+<p class="more"><a href="2025/benchmarking-counterstring-implementations-in-typescript/">Read&nbsp;more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025/optimizing-for-moments-of-discovery/" class="u-url">Optimizing for moments of&nbsp;discovery</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep&nbsp;Schuurkes
@@ -124,7 +143,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <p>I did something less performant with reversing an array, because I had looked at PerlClips&#8217;s source code. How that came about and what I learned from it, is for another blog&nbsp;post.</p>
 </blockquote>
 <p>This is that blog&nbsp;post.</p>
-<p>As a matter of fact, I currently have <a href="https://github.com/j19sch/counterstring/blob/04883b7bb2f3e99f7be81ffa58e4ac5f934d276b/src/alt-counterstrings.ts">9 different implementations</a> of counterstring in TypeScript. Including two that are not mine: one is from <a href="https://www.satisfice.com/download/perlclip">PerClip</a> but translated to TypeScript by me, the other is <a href="https://www.eviltester.com/blog/eviltester/chrome-extensions/2019-02-19-counterstring-snippets/#counterstring-generation-function">EvilTester&#8217;s implementation</a>. There are some interesting lessons to take, both from comparing the code of the different implementations, as from comparing the differences in performance. The performance-part of the comparison will have to wait for my next post,&nbsp;though.</p>
+<p>As a matter of fact, I currently have <a href="https://github.com/j19sch/counterstring/blob/04883b7bb2f3e99f7be81ffa58e4ac5f934d276b/src/alt-counterstrings.ts">9 different implementations</a> of counterstring in TypeScript. Including two that are not mine: one is from <a href="https://www.satisfice.com/download/perlclip">PerClip</a> but translated to TypeScript by me, the other is <a href="https://www.eviltester.com/blog/eviltester/chrome-extensions/2019-02-19-counterstring-snippets/#counterstring-generation-function">EvilTester&#8217;s implementation</a>. There are some interesting lessons to take, both from comparing the code of the different implementations, as from comparing the differences in performance. The <a href="2025/benchmarking-counterstring-implementations-in-typescript/">performance-part of the comparison</a> will have to wait for my next post,&nbsp;though.</p>
 <p class="more"><a href="2025/comparing-counterstring-implementations-in-typescript/">Read&nbsp;more…</a></p>
 </div>
                 </div>
@@ -274,30 +293,6 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <p class="more"><a href="2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery/">Read&nbsp;more…</a></p>
 </div>
                 </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024/two-short-checklists-for-scrum/" class="u-url">Two short checklists for&nbsp;Scrum</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep&nbsp;Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2024/two-short-checklists-for-scrum/" rel="bookmark">
-            <time class="published dt-published" datetime="2024-05-09T00:00:00+02:00" itemprop="datePublished" title="9 May 2024">9 May 2024</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <h2 class="small">checklist&nbsp;no.1</h2>
-<ul>
-<li>Do you add acceptance criteria and story points to each ticket before&nbsp;planning?</li>
-<li>Do you have daily team meetings where people provide updates on their&nbsp;progress?</li>
-<li>After each iteration, do you report to stakeholders what work was done and what will be planned&nbsp;next?</li>
-</ul>
-<h2 class="small">checklist&nbsp;no.2</h2>
-<ul>
-<li>Is the team protected during the sprint from stakeholders trying to&nbsp;interfere?</li>
-<li>Is a sprint focused on achieving a goal and is how that goal is achieved, left sufficiently&nbsp;open?</li>
-<li>Does the team address impediments as soon as they are&nbsp;discovered?</li>
-</ul>
-</div>
             </article>
 </div>
             <ul class="pager postindexpager clearfix">
