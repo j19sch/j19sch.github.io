@@ -13,14 +13,15 @@ TODO:
 
 Earlier this year I posted about how I implemented a counterstring function using "fake it till you make it". I also posted about different ways to implement counterstrings. In this post, I want to share how those different implementations compare performance-wise.
 
-To do this, I used both [tinybench](https://github.com/tinylibs/tinybench) and [vitest bench](https://vitest.dev/guide/features.html#benchmarking) (which uses tinybench). The results are basically the same, but their default output is slightly different.
+To do this, I used both [Tinybench](https://github.com/tinylibs/tinybench) and [vitest bench](https://vitest.dev/guide/features.html#benchmarking) (which uses Tinybench). The results are basically the same, but their default output is slightly different.
 
 Before I present the results, I should describe the different implementations and how they differ from each other.
 
 
 <!-- TEASER_END -->
 
-# The nine implementations {.small}
+
+# The nine implementations
 
 The [actual code of each implementation](https://github.com/j19sch/counterstring/blob/04883b7bb2f3e99f7be81ffa58e4ac5f934d276b/src/alt-counterstrings.ts) is available on GitHub. In this post I'll only mention what makes each implementation interesting:
 
@@ -35,41 +36,52 @@ The [actual code of each implementation](https://github.com/j19sch/counterstring
 - `whileAndIfWithTemplateString`: prepends to a string, adding token and number in the same operation, uses template strings for string concatenation
 
 
-# The results {.small}
+# The results
 
-```
-counterstring length 10.000
-┌─────────┬────────────────────────────────────┬──────────────────┬────────────────────┬────────────────────────┬────────────────────────┬─────────┐
-│ (index) │ Task name                          │ Latency avg (ns) │ Latency med (ns)   │ Throughput avg (ops/s) │ Throughput med (ops/s) │ Samples │
-├─────────┼────────────────────────────────────┼──────────────────┼────────────────────┼────────────────────────┼────────────────────────┼─────────┤
-│ 0       │ 'createListAndReverseIt'           │ '91218 ± 1.40%'  │ '87906 ± 1496.00'  │ '11186 ± 0.54%'        │ '11376 ± 194'          │ 1097    │
-│ 1       │ 'evilTester'                       │ '353526 ± 1.35%' │ '342284 ± 3029.00' │ '2853 ± 0.90%'         │ '2922 ± 26'            │ 283     │
-│ 2       │ 'evilTesterCreateListAndReverseIt' │ '58369 ± 1.59%'  │ '56225 ± 1104.50'  │ '17577 ± 0.39%'        │ '17786 ± 349'          │ 1714    │
-│ 3       │ 'perClipInTS'                      │ '374922 ± 1.97%' │ '356913 ± 3836.00' │ '2710 ± 1.18%'         │ '2802 ± 30'            │ 267     │
-│ 4       │ 'recursive'                        │ '49254 ± 1.46%'  │ '44673 ± 1033.00'  │ '21210 ± 0.66%'        │ '22385 ± 525'          │ 2031    │
-│ 5       │ 'whileAndIfButSeparate'            │ '37028 ± 1.59%'  │ '35370 ± 687.00'   │ '27888 ± 0.33%'        │ '28273 ± 548'          │ 2701    │
-│ 6       │ 'whileAndIfWithConcat'             │ '27399 ± 1.17%'  │ '26329 ± 725.00'   │ '37465 ± 0.27%'        │ '37980 ± 1055'         │ 3650    │
-│ 7       │ 'whileAndIfWithTemplateString'     │ '28903 ± 1.23%'  │ '27701 ± 326.00'   │ '35552 ± 0.28%'        │ '36100 ± 427'          │ 3464    │
-│ 8       │ 'whileAndIfWithPlus'               │ '27434 ± 1.66%'  │ '26163 ± 642.50'   │ '37776 ± 0.28%'        │ '38222 ± 947'          │ 3646    │
-└─────────┴────────────────────────────────────┴──────────────────┴────────────────────┴────────────────────────┴────────────────────────┴─────────┘
-```
+Below are the results of running benchmarks on those nine implemenations. Since it's a measurement over a number of samples, I ran the benchmarks twice with each of the two tools, Tinybench and Vitest bench. This way you can see for yourself what variations there are and decide how meaningful they are.
+
+All benchmarks were run for a counterstring with length 1.000. 
+
+
+## Tinybench
 
 ```
 ┌─────────┬────────────────────────────────────┬──────────────────┬────────────────────┬────────────────────────┬────────────────────────┬─────────┐
 │ (index) │ Task name                          │ Latency avg (ns) │ Latency med (ns)   │ Throughput avg (ops/s) │ Throughput med (ops/s) │ Samples │
 ├─────────┼────────────────────────────────────┼──────────────────┼────────────────────┼────────────────────────┼────────────────────────┼─────────┤
-│ 0       │ 'createListAndReverseIt'           │ '90821 ± 1.34%'  │ '87773 ± 1365.50'  │ '11223 ± 0.52%'        │ '11393 ± 178'          │ 1102    │
-│ 1       │ 'evilTester'                       │ '354971 ± 1.42%' │ '345634 ± 2522.00' │ '2844 ± 0.90%'         │ '2893 ± 21'            │ 282     │
-│ 2       │ 'evilTesterCreateListAndReverseIt' │ '58630 ± 1.63%'  │ '56269 ± 1117.00'  │ '17527 ± 0.41%'        │ '17772 ± 352'          │ 1706    │
-│ 3       │ 'perClipInTS'                      │ '368610 ± 1.99%' │ '356006 ± 3031.50' │ '2751 ± 1.04%'         │ '2809 ± 24'            │ 272     │
-│ 4       │ 'recursive'                        │ '46438 ± 1.99%'  │ '44419 ± 773.00'   │ '22288 ± 0.36%'        │ '22513 ± 391'          │ 2154    │
-│ 5       │ 'whileAndIfButSeparate'            │ '36642 ± 1.37%'  │ '35335 ± 653.50'   │ '28037 ± 0.30%'        │ '28301 ± 523'          │ 2730    │
-│ 6       │ 'whileAndIfWithConcat'             │ '27512 ± 1.49%'  │ '26121 ± 552.00'   │ '37679 ± 0.31%'        │ '38283 ± 810'          │ 3635    │
-│ 7       │ 'whileAndIfWithTemplateString'     │ '31571 ± 1.90%'  │ '27996 ± 487.00'   │ '33756 ± 0.54%'        │ '35720 ± 626'          │ 3168    │
-│ 8       │ 'whileAndIfWithPlus'               │ '27376 ± 1.63%'  │ '26058 ± 564.00'   │ '37910 ± 0.28%'        │ '38376 ± 834'          │ 3653    │
+│ 0       │ 'createListAndReverseIt'           │ '89422 ± 1.04%'  │ '87715 ± 1254.00'  │ '11307 ± 0.39%'        │ '11401 ± 164'          │ 1119    │
+│ 1       │ 'evilTester'                       │ '354031 ± 1.65%' │ '341984 ± 2804.00' │ '2859 ± 1.02%'         │ '2924 ± 24'            │ 283     │
+│ 2       │ 'evilTesterCreateListAndReverseIt' │ '58279 ± 1.34%'  │ '56386 ± 1068.50'  │ '17523 ± 0.39%'        │ '17735 ± 335'          │ 1716    │
+│ 3       │ 'perClipInTS'                      │ '362797 ± 0.83%' │ '355694 ± 2303.50' │ '2767 ± 0.64%'         │ '2811 ± 18'            │ 276     │
+│ 4       │ 'recursive'                        │ '45464 ± 1.31%'  │ '44154 ± 774.00'   │ '22457 ± 0.32%'        │ '22648 ± 393'          │ 2200    │
+│ 5       │ 'whileAndIfButSeparate'            │ '36134 ± 1.15%'  │ '34983 ± 613.00'   │ '28304 ± 0.28%'        │ '28586 ± 501'          │ 2768    │
+│ 6       │ 'whileAndIfWithConcat'             │ '27716 ± 1.72%'  │ '26323 ± 662.00'   │ '37452 ± 0.29%'        │ '37990 ± 951'          │ 3609    │
+│ 7       │ 'whileAndIfWithTemplateString'     │ '28945 ± 1.57%'  │ '27704 ± 305.00'   │ '35656 ± 0.26%'        │ '36096 ± 399'          │ 3455    │
+│ 8       │ 'whileAndIfWithPlus'               │ '27142 ± 1.44%'  │ '26099 ± 552.00'   │ '37953 ± 0.25%'        │ '38316 ± 812'          │ 3685    │
 └─────────┴────────────────────────────────────┴──────────────────┴────────────────────┴────────────────────────┴────────────────────────┴─────────┘
+
 ```
 
+```
+
+┌─────────┬────────────────────────────────────┬──────────────────┬────────────────────┬────────────────────────┬────────────────────────┬─────────┐
+│ (index) │ Task name                          │ Latency avg (ns) │ Latency med (ns)   │ Throughput avg (ops/s) │ Throughput med (ops/s) │ Samples │
+├─────────┼────────────────────────────────────┼──────────────────┼────────────────────┼────────────────────────┼────────────────────────┼─────────┤
+│ 0       │ 'createListAndReverseIt'           │ '89954 ± 1.49%'  │ '87752 ± 1141.50'  │ '11308 ± 0.42%'        │ '11396 ± 148'          │ 1112    │
+│ 1       │ 'evilTester'                       │ '352842 ± 1.61%' │ '342107 ± 2563.00' │ '2867 ± 0.98%'         │ '2923 ± 22'            │ 285     │
+│ 2       │ 'evilTesterCreateListAndReverseIt' │ '58529 ± 1.69%'  │ '56206 ± 1137.00'  │ '17566 ± 0.41%'        │ '17792 ± 361'          │ 1709    │
+│ 3       │ 'perClipInTS'                      │ '365456 ± 0.90%' │ '357899 ± 3029.50' │ '2748 ± 0.69%'         │ '2794 ± 24'            │ 274     │
+│ 4       │ 'recursive'                        │ '45562 ± 1.41%'  │ '44280 ± 781.00'   │ '22420 ± 0.31%'        │ '22584 ± 400'          │ 2195    │
+│ 5       │ 'whileAndIfButSeparate'            │ '36294 ± 1.14%'  │ '35100 ± 602.50'   │ '28199 ± 0.30%'        │ '28490 ± 489'          │ 2756    │
+│ 6       │ 'whileAndIfWithConcat'             │ '27504 ± 1.70%'  │ '26254 ± 631.00'   │ '37615 ± 0.27%'        │ '38089 ± 917'          │ 3636    │
+│ 7       │ 'whileAndIfWithTemplateString'     │ '29045 ± 1.76%'  │ '27712 ± 331.00'   │ '35663 ± 0.26%'        │ '36085 ± 432'          │ 3443    │
+│ 8       │ 'whileAndIfWithPlus'               │ '27438 ± 1.55%'  │ '26266 ± 587.00'   │ '37657 ± 0.27%'        │ '38072 ± 852'          │ 3645    │
+└─────────┴────────────────────────────────────┴──────────────────┴────────────────────┴────────────────────────┴────────────────────────┴─────────┘
+
+```
+
+
+## Vitest bench
 
 
 ```
@@ -124,4 +136,44 @@ counterstring length 10.000
     11.38x faster than perClipInTS
 ```
 
-# My thoughts on the results {.small}
+## The ranking
+
+If we use these results to rank the implementation from slowest to fastest, we get:
+
+1. `perClipInTS`
+1. `evilTester`
+1. `createListAndReverseIt`
+1. `evilTesterCreateListAndReverseIt`
+1. `recursiveFunction`
+1. `whileAndIfButSeparate`
+1. `whileAndIfWithTemplateString`
+1. `whileAndIfWithConcat and whileAndIfWithPlus`
+
+
+# My thoughts on the results
+
+## Don't reverse a string in TypeScript if you don't have to
+
+The four slowest implementations all involve reversing either lists or strings. The slowest ones by far, `perClipInTS` and `evilTester`, reverse strings in two places: when creating the string to add to the intermediate result and right before returning the complete string.
+
+The reason for the slowness is that there isn't an optimized way to reverse a string in TypeScript (or JavaScript). So you end up doing this `.split("").reverse().join("")`: splitting the string into an array, reversing the array, and joining the array into a string again. A quick search shows there are plenty of other ways to do this, but the fact there is a discussion at all, with different ways performing differently on different browsers, is enough reason for me to conclude: If you don't have to reverse a string in TypeScript/JavaScript, then don't.
+
+This is demonstrated by the performance of the next two slowest implementations, `createListAndReverseIt` and `evilTesterCreateListAndReverseIt`. The difference between the latter one and the original `evilTester` one is that it pushed each sub-string to a list, then reverses the list, and joins it into a string. Because of that we also no longer have to reverse each sub-string. The result is an implemenation that's about six times faster.
+
+## Recursion performs ok untill you run out of stack
+
+The recursive implementation is not the fastest, but it doesn't perform horribly. Untill you try to run the benchmark creating a counterstring of length 100.000, that is, and you run out of stack:
+
+Tinybench drops a `'Maximum call stack size exceeded'` and a `'RangeError: Maximum call stack size exceeded\n    at Number.toString (<anonymous>)\n ...'` in the output. Vitest bench omits the table with results, only giving you the comparison, with the fastest implementation being 
+`NaNx faster than recursiveFunction`.
+
+## Less is more
+
+The four fastest implementations are the `whileAndIf`-variations. The main thing they have in common is that they don't reverse any lists or strings. They still construct the counterstring starting at the end and working backwards. But they do this by simply prepending each sub-string to the intermediate result.
+
+Of these four, `whileAndIfButSeparate` is the slowest. That makes sense. It prepends the token and the number seperately to the result string, so it has to go through the `while`-loop for every token and number instead of for every combined token and number.
+
+Prepending the token and the number together makes the other three `whileAndIf`-variations almost a third faster. The difference in implemenation between these three is in how the token and the number are concatenated: by a template string, with the `+` operator, or by using `concat()`. Here the results show that template string is slower than the other two, but that there isn't a real difference between the the `+` operator and `concat()`.
+
+
+# Closing thoughts
