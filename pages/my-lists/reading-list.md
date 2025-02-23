@@ -8,6 +8,11 @@ hidetitle: false
 
 # Reading list
 
+
+### 2025
+- The Mark Inside: A Perfect Swindle, a Cunning Revenge, and a Small History of the Big Con - Amy Reading
+
+
 ### 2024
 - Blood in the Machine: The Origins of the Rebellion Against Big Tech - Brian Merchant
 - Revolusi: Indonesië en het ontstaan van de moderne wereld - David Van Reybrouck
@@ -27,6 +32,8 @@ hidetitle: false
 - Staff Engineer: Leadership Beyond the Management Track: Will Larson
 - The World Beneath Their Feet: Mountaineering, Madness, and the Deadly Race to Summit the Himalayas - Scott Ellsworth
 - The Power Broker: Robert Moses and the Fall of New York - Robert A. Caro
+- Peirce's Theory of Abduction - KT Fann 
+- Hope Without Optimism - Terry Eagleton 
 
 
 ### 2023
