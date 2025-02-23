@@ -5,40 +5,34 @@
 .. category: programming & test automation
 .. tags: counterstring, programming
 .. type: text
-.. description:
+.. description: You can concatenate faster than you can reverse.
 -->
 
-TODO:
-- add links to the other two posts pointing to this one
-
-Earlier this year I posted about how I implemented a counterstring function using "fake it till you make it". I also posted about different ways to implement counterstrings. In this post, I want to share how those different implementations compare performance-wise.
+Earlier this year I posted about how I [implemented a counterstring function](link://slug/using-fake-it-till-you-make-it-to-implement-counterstring) using "fake it till you make it". I also posted about [different ways](link://slug/comparing-counterstring-implementations-in-typescript) to implement counterstrings. In this post, I want to share how those different implementations compare performance-wise.
 
 To do this, I used both [Tinybench](https://github.com/tinylibs/tinybench) and [vitest bench](https://vitest.dev/guide/features.html#benchmarking) (which uses Tinybench). The results are basically the same, but their default output is slightly different.
-
-Before I present the results, I should describe the different implementations and how they differ from each other.
-
-
-<!-- TEASER_END -->
 
 
 # The nine implementations
 
-The [actual code of each implementation](https://github.com/j19sch/counterstring/blob/04883b7bb2f3e99f7be81ffa58e4ac5f934d276b/src/alt-counterstrings.ts) is available on GitHub. In this post I'll only mention what makes each implementation interesting:
+Before I present the results, I should describe the different implementations and how they differ from each other. The [actual code of each implementation](https://github.com/j19sch/counterstring/blob/04883b7bb2f3e99f7be81ffa58e4ac5f934d276b/src/alt-counterstrings.ts) is available on GitHub. Here I'll only mention what makes each implementation interesting compared to the others:
 
-- `createListAndReverseIt`: creates the counterstring as a list starting at the end of the string with the token and the numbers as separate elements, then reverses the list and turns it into a string
-- `evilTester`: creates the counterstring as a string, but backwards, adding token and number in the same operation, then reverses the whole string, copied from [EvilTester's blog post](https://www.eviltester.com/blog/eviltester/chrome-extensions/2019-02-19-counterstring-snippets/#counterstring-generation-function) about his counterstring Chrome extension
-- `evilTesterCreateListAndReverseIt`: creates the counterstring as a list, starting at the end, adding token and number in the same opereation, then reverses the list and turns it into a string
-- `perClipInTS`: essentially the same as `evilTester`, translated from [the original Perl](https://www.satisfice.com/download/perlclip) to TypeScript by me
-- `recursiveFunction`: completely different from all other implementation, because recursion, runs out of stack for long counterstrings
-- `whileAndIfButSeparate`: prepends to a string instead of having to reverse a list, but adds token and number separately
-- `whileAndIfWithPlus`: prepends to a string, adding token and number in the same operation, uses `+` for string concatenation
-- `whileAndIfWithConcat`: prepends to a string, adding token and number in the same operation, uses `concat()` for string concatenation
-- `whileAndIfWithTemplateString`: prepends to a string, adding token and number in the same operation, uses template strings for string concatenation
+<!-- TEASER_END -->
+
+- `createListAndReverseIt`: creates the counterstring as a list, starting at the end of the string, appending the token and the numbers as separate element, then reverses the list and turns it into a string.
+- `evilTester`: creates the counterstring as a string, but backwards, adding token and number in the same operation, then reverses the whole string. This version is copied from [EvilTester's blog post](https://www.eviltester.com/blog/eviltester/chrome-extensions/2019-02-19-counterstring-snippets/#counterstring-generation-function) about his counterstring Chrome extension.
+- `evilTesterCreateListAndReverseIt`: creates the counterstring as a list instead of a string, starting at the end, adding token and number in the same operation, then reverses the list and turns it into a string.
+- `perClipInTS`: essentially the same as `evilTester`, translated by me from [the original Perl](https://www.satisfice.com/download/perlclip) to TypeScript.
+- `recursiveFunction`: completely different from all other implementation, because recursion, runs out of stack for long counterstrings.
+- `whileAndIfButSeparate`: prepends to a string instead of reversing a list, but adds token and number separately.
+- `whileAndIfWithPlus`: prepends to a string, adding token and number in the same operation, uses `+` for string concatenation.
+- `whileAndIfWithConcat`: prepends to a string, adding token and number in the same operation, uses `concat()` for string concatenation.
+- `whileAndIfWithTemplateString`: prepends to a string, adding token and number in the same operation, uses template strings for string concatenation.
 
 
 # The results
 
-Below are the results of running benchmarks on those nine implemenations. Since it's a measurement over a number of samples, I ran the benchmarks twice with each of the two tools, Tinybench and Vitest bench. This way you can see for yourself what variations there are and decide how meaningful they are.
+Below are the results of running benchmarks on those nine implementations. Since it's a measurement over a number of samples, I ran the benchmarks twice with each of the two tools, Tinybench and Vitest bench. This way you can see for yourself what variations there are and how meaningful they are.
 
 All benchmarks were run for a counterstring with length 1.000. 
 
@@ -138,7 +132,7 @@ All benchmarks were run for a counterstring with length 1.000.
 
 ## The ranking
 
-If we use these results to rank the implementation from slowest to fastest, we get:
+If we use these results to rank the implementations from slowest to fastest, we get:
 
 1. `perClipInTS`
 1. `evilTester`
@@ -150,30 +144,54 @@ If we use these results to rank the implementation from slowest to fastest, we g
 1. `whileAndIfWithConcat and whileAndIfWithPlus`
 
 
-# My thoughts on the results
+# My reflections on the results
 
-## Don't reverse a string in TypeScript if you don't have to
+## Don't reverse a string if you don't have to
 
 The four slowest implementations all involve reversing either lists or strings. The slowest ones by far, `perClipInTS` and `evilTester`, reverse strings in two places: when creating the string to add to the intermediate result and right before returning the complete string.
 
-The reason for the slowness is that there isn't an optimized way to reverse a string in TypeScript (or JavaScript). So you end up doing this `.split("").reverse().join("")`: splitting the string into an array, reversing the array, and joining the array into a string again. A quick search shows there are plenty of other ways to do this, but the fact there is a discussion at all, with different ways performing differently on different browsers, is enough reason for me to conclude: If you don't have to reverse a string in TypeScript/JavaScript, then don't.
+The reason for the slowness is that there isn't an optimized way to reverse a string in TypeScript (or JavaScript). So you end up doing this: `.split("").reverse().join("")`. You split the string into an array, reverse the array, and join the array into a string again. A quick search shows there are plenty of other ways to do this, but the fact there is a discussion at all, with differences in performance across browsers, is enough reason for me to conclude: If you don't have to reverse a string in TypeScript/JavaScript, then don't.
 
-This is demonstrated by the performance of the next two slowest implementations, `createListAndReverseIt` and `evilTesterCreateListAndReverseIt`. The difference between the latter one and the original `evilTester` one is that it pushed each sub-string to a list, then reverses the list, and joins it into a string. Because of that we also no longer have to reverse each sub-string. The result is an implemenation that's about six times faster.
+This is demonstrated by the performance of the next two slowest implementations, `createListAndReverseIt` and `evilTesterCreateListAndReverseIt`. The only difference between the latter one and the original `evilTester` one is that it pushes each sub-string directly to a list, then reverses the list, and joins it into a string. Because of that we also no longer have to reverse each sub-string. The result is an implementation that's about six times faster.
 
-## Recursion performs ok untill you run out of stack
+## Recursion performs ok until you run out of stack
 
-The recursive implementation is not the fastest, but it doesn't perform horribly. Untill you try to run the benchmark creating a counterstring of length 100.000, that is, and you run out of stack:
+The recursive implementation is not the fastest, but it doesn't perform horribly. Until you try to run the benchmark creating a counterstring of length 100.000. That is, untill you run out of stack.
 
-Tinybench drops a `'Maximum call stack size exceeded'` and a `'RangeError: Maximum call stack size exceeded\n    at Number.toString (<anonymous>)\n ...'` in the output. Vitest bench omits the table with results, only giving you the comparison, with the fastest implementation being 
-`NaNx faster than recursiveFunction`.
+Tinybench drops a `'Maximum call stack size exceeded'` and a `'RangeError: Maximum call stack size exceeded\n    at Number.toString (<anonymous>)\n ...'` in the output. Vitest bench omits the table with results, only giving you the comparisons, with the fastest implementation being `NaNx faster than recursiveFunction`.
 
 ## Less is more
 
-The four fastest implementations are the `whileAndIf`-variations. The main thing they have in common is that they don't reverse any lists or strings. They still construct the counterstring starting at the end and working backwards. But they do this by simply prepending each sub-string to the intermediate result.
+The four fastest implementations are the `whileAndIf`-variations. The main thing they have in common is that they don't reverse any lists or strings. They still construct the counterstring starting at the end and working backwards. But they do this by prepending each sub-string to the intermediate result.
 
-Of these four, `whileAndIfButSeparate` is the slowest. That makes sense. It prepends the token and the number seperately to the result string, so it has to go through the `while`-loop for every token and number instead of for every combined token and number.
+Of these four, `whileAndIfButSeparate` is the slowest. That makes sense. It prepends the token and the number separately to the intermediate result, so it has to go through the `while`-loop for every token and every number instead of for every combined token and number. Prepending the token and the number together makes the other three `whileAndIf`-variations almost a third faster than `whileAndIfButSeparate`.
 
-Prepending the token and the number together makes the other three `whileAndIf`-variations almost a third faster. The difference in implemenation between these three is in how the token and the number are concatenated: by a template string, with the `+` operator, or by using `concat()`. Here the results show that template string is slower than the other two, but that there isn't a real difference between the the `+` operator and `concat()`.
+The difference between the three fastest implementations is in how the token and the number are concatenated: by a template string, with the `+` operator, or by using `concat()`. Here the results show that template string is slower than the other two, but that there isn't a real difference between the the `+` operator and `concat()`.
 
 
 # Closing thoughts
+
+I really enjoyed [figuring out these different implementations](link://slug/comparing-counterstring-implementations-in-typescript) and seeing the significant difference in performance between (some of) them.
+
+And I'm quite happy that the most performant version, also scores well on readability:
+
+
+```TypeScript
+export function counterstring(length: number) {
+  let counterString = "";
+
+  while (length > 1) {
+    const prependThis = length.toString() + "*";
+    counterString = prependThis + counterString;
+    length -= prependThis.length;
+  }
+
+  // At this point length is either 1 (the while-loop prepended 3*) or 0 ( the while-loop prepended 2*).
+  // If length is 1, we need to prepend "*" to get the correct counterstring. If it's 0, we're done.
+  if (length === 1) {
+    counterString = "*" + counterString;
+  }
+
+  return counterString;
+}
+```

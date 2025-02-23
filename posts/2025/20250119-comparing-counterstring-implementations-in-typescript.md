@@ -14,7 +14,7 @@ In my previous post ["Using 'fake it till you make it' to implement counterstrin
 
 This is that blog post.
 
-As a matter of fact, I currently have [9 different implementations](https://github.com/j19sch/counterstring/blob/04883b7bb2f3e99f7be81ffa58e4ac5f934d276b/src/alt-counterstrings.ts) of counterstring in TypeScript. Including two that are not mine: one is from [PerClip](https://www.satisfice.com/download/perlclip) but translated to TypeScript by me, the other is [EvilTester's implementation](https://www.eviltester.com/blog/eviltester/chrome-extensions/2019-02-19-counterstring-snippets/#counterstring-generation-function). There are some interesting lessons to take, both from comparing the code of the different implementations, as from comparing the differences in performance. The performance-part of the comparison will have to wait for my next post, though.
+As a matter of fact, I currently have [9 different implementations](https://github.com/j19sch/counterstring/blob/04883b7bb2f3e99f7be81ffa58e4ac5f934d276b/src/alt-counterstrings.ts) of counterstring in TypeScript. Including two that are not mine: one is from [PerClip](https://www.satisfice.com/download/perlclip) but translated to TypeScript by me, the other is [EvilTester's implementation](https://www.eviltester.com/blog/eviltester/chrome-extensions/2019-02-19-counterstring-snippets/#counterstring-generation-function). There are some interesting lessons to take, both from comparing the code of the different implementations, as from comparing the differences in performance. The [performance-part of the comparison](link://slug/benchmarking-counterstring-implementations-in-typescript) will have to wait for my next post, though.
 
 <!-- TEASER_END -->
 

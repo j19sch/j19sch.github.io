@@ -72,6 +72,8 @@ To be fair to the [historical record](https://github.com/j19sch/counterstring/co
 
 *(edit 19 January 2025)* Turns out it's for two other blog posts. The first of the two is ["Comparing counterstring implementations in TypeScript"](link://slug/comparing-counterstring-implementations-in-typescript). The second one will be about the difference in performance between all the implementations.
 
+*(edit 23 February 2025)* I posted the one about the [differences in performance](link://slug/benchmarking-counterstring-implementations-in-typescript).
+
 
 ## Counterstring length 2 {.small}
 
