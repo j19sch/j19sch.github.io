@@ -245,6 +245,10 @@ It’s very hard to support others testing without doing any testing yourself. Y
 
 So even though your official job description puts you clearly on one end of each axis - for example my quality engineering role was supporting testing by others, being embedded in a team, and doing my job -, you can only make that work by constantly observing and adjusting your actual position on these three axes. You need to work as much inside the existing structures, as around them. That makes these roles challenging and interesting, but often enough also frustrating. And yet, I wouldn’t want it any other way.
 
+*(edit 12 April 2025)*: I wrote more about these three axes in the `"Three axes to move around on"`_-section of my blog post `"A good tester is all over the place"`_.
+
+.. _"Three axes to move around on": link://slug/a-good-tester-is-all-over-the-place#three-axes-to-move-around-on
+.. _"A good tester is all over the place": link://slug/a-good-tester-is-all-over-the-place
 
 
 5. Acknowledgements

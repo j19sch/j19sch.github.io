@@ -11,6 +11,10 @@ hidetitle: false
 
 ### 2025
 - The Mark Inside: A Perfect Swindle, a Cunning Revenge, and a Small History of the Big Con - Amy Reading
+- The Dawn of Everything: A New History of Humanity - David Graeber and David Wengrow 
+- Kill It with Fire: Manage Aging Computer Systems (and Future Proof Modern Ones) - Marianne Bellotti (book club)
+- What Did You Say?: The Art of Giving and Receiving Feedback - Charles N. Seashore, Edith Whitfield Seashore, Gerald M. Weinberg (reread)
+- Design and Reality: Essays on Software Design - Rebecca Wirfs-Brock and Mathias Verraes 
 
 
 ### 2024
