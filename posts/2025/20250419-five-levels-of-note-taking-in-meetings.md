@@ -24,6 +24,8 @@ host: six roles - initiator, inviter, space creator, gatekeeper, connector, co-p
 
 Few things confuse me as much as being a meeting with no one taking notes. Is everyone's memory so much better than my own that they'll remember everything? Is what's being said just not that important? Are people fine with only retaining a few high-level items and none of the context?
 
+<!-- TEASER_END -->
+
 Luckily [Johanna Rothman](https://www.jrothman.com/) seems to agree with me, at least for __essential__ meetings[^1]:
 
 > *If a meeting is essential, it will have an agenda. It will have minutes. It will have a list of action items, and someone will manage them so that people are accountable for their action items.*  
@@ -76,14 +78,16 @@ That's not to say everyone should equally contribute to the notes. Some people m
 
 ## level 5: note-taking is part of the meeting structure
 
+The difference between this level and the previous one can be subtle, but it is there. At this level the not-taking is an integral part of how the meeting works. Basically think of writing post-its, either of the physical or the virtual kind. Or of several people collaborating at a whiteboard.
+
+The notes become more than a tool for recording what was said, they become a tool to structure the meeting. They become part of what's being said and how. That does mean that sometimes it'll take some effort to turn these notes into something that's useful long-term. To me, that's worth it, because the more a meeting looks like a workshop, the better the meeting tends to be.
 
 
-sharing after may need some work
 
-
-# the meta-level of the work is part of the work
+# facilitating the work is part of the work
 
 facilitating the work is part of the work
+the meta-level of the work is part of the work
 
 consumer versus participant
 	"from mere attendants at a meeting into vibrant participants in an evolving endeavor." - Orbiting The Giant Hairball, Gordon Mackenzie
@@ -97,3 +101,11 @@ making meetings work
 synchronous collaboration with a purpose
 artful participation
 leadership (Weinberg): creating an environment where everyone can contribute to solving the problem
+
+The Mental Load of One Meeting
+https://elizabethzagroba.com/posts/2021/the_mental_load_of_one_meeting/
+"a lot of work is the work of noticing what work needs doing"
+mental load
+
+if there's someone you can learn how to take notes from, it's Elizabeth
+which considering her blog post is 
