@@ -2,110 +2,79 @@
 .. title: Five levels of note-taking in meetings
 .. slug: five-levels-of-note-taking-in-meetings
 .. date: 2025-04-19
-.. category: 
-.. tags: 
+.. category: facilitation
+.. tags: note-taking, leadership, facilitation, leadership, self-organization, skills
 .. type: text
 .. description: Facilitating the work is part of the work.
 -->
 
-2023 my-note-taking-system-for-work
-2023 making-meetings-work
+# level 0: no one takes notes
 
-host: six roles - initiator, inviter, space creator, gatekeeper, connector, co-participator; space creator!
+Few things confuse me as much as being a meeting with no one taking notes. Is everyone's memory so much better than my own? Is what's being said just not that important? Are people fine with only retaining a things and nothing else?
 
----
-
-*This post is about note-taking during meetings. If you want to know how I take notes to structure my day-to-day work, see ["My note-taking system for work"](link://slug/my-note-taking-system-for-work).*
-
-
-# The five levels
-
-## level 0: no one takes notes
-
-Few things confuse me as much as being a meeting with no one taking notes. Is everyone's memory so much better than my own that they'll remember everything? Is what's being said just not that important? Are people fine with only retaining a few high-level items and none of the context?
-
-<!-- TEASER_END -->
-
-Luckily [Johanna Rothman](https://www.jrothman.com/) seems to agree with me, at least for __essential__ meetings[^1]:
+Luckily I'm not alone. Johanna Rothman seems to agree with me, at least for *essential* meetings:[^1]
 
 > *If a meeting is essential, it will have an agenda. It will have minutes. It will have a list of action items, and someone will manage them so that people are accountable for their action items.*  
-- [Modern Management Made Easy](https://leanpub.com/b/modernmanagementmadeeasy) by [Johanna Rothman](https://www.jrothman.com/)
+- *[Modern Management Made Easy](https://leanpub.com/b/modernmanagementmadeeasy) by [Johanna Rothman](https://www.jrothman.com/)*
 
 [^1]: Tip: If a meeting is not essential, politely decline and go do something else. Get some work done, take some time to reflect, go out for a walk.
 
-And there's no reason to ever be at this level. Borrow some pen and paper, use your phone, at least take notes for yourself.
+That's why it's level 0. There's no reason to ever be at this level. Borrow some pen and paper. use your phone. The least you can do is take notes for yourself.
+
+<!-- TEASER_END -->
 
 
-## level 1: take notes for yourself
+# level 1: take notes for yourself
 
-There are multiple reasons I like to take notes (at least) for myself during meetings. Often enough I have trouble staying focused during a meeting. Taking notes helps my mind not to wander off.
+There are multiple reasons I like to take notes for myself during meetings. Often enough I have trouble staying focused during a meeting. Taking notes helps my mind not to wander off.
 
-Taking notes also helps me remember what important things where said during a meeting. I know my memory on its own is not good enough to remember it all. Taking notes helps with remembering in two ways. First of all, I can refer to my notes both during and after the meeting. Secondly, taking notes helps me with remembering / storing into memory.
+Taking notes also helps me remember what important things where said during a meeting. I have learned from experience that relying only my memory won't be enough. Taking notes helps with remembering in two ways. First of all, the act of taking notes helps my memory - even if I never return to my notes again. Secondly, for what I don't remember, I can refer to my notes both during and after the meeting.
 
-Which brings us to a key skill for note-taking. The ability to listen to being said, while identifying what's of importance and then writing that down. I first noticed I was able to do this in a class at university. I was taking notes and noticed that while I was listening to what the professor was saying, my hand was writing down the essence of what he had just said. It was a weird sensation, more about letting my mind and body do this, then being actively involved in actually doing it. Without this skill, taking notes is near impossible. You can't ask participants to wait a few seconds every time they've said something, so you can take notes.
+Which brings us to a key skill for note-taking. The ability to listen to being what's being said, to identify what's of importance and then to write that down. And then to do that in parallel, because people are not going to stop talking, just for you take your notes. It's an interesting thing to notice yourself doing. It's more about letting your mind and body take care of things, than of actively being involved in doing it.
 
-The main benefit I experience from taking notes for myself is that it helps me to listen to understand, more than listen to respond. I need to understand what someone is saying to be able to take note(s) of what they just said. I also don't need to keep track in my head of all the things I wanted to say. The things I want to respond to, are in my notes. And if needed, I can make a quick note on what I want to say in response to something.
+Another benefit I experience from taking notes for myself is that it helps me to listen to understand, rather than listen to respond. I need to understand what someone is saying to be able to take note(s) of what they just said. I also don't need to keep track in my head of all the things I wanted to say. The things I want to respond to, are in my notes. So I can just mark those or even add a few words to my notes as a reminder.
 
-So in short, taking notes for myself allows me to engage more fully in the meeting. I can participate in the moment, because there's a lot less I need to keep track of in my head.
+So in short, taking notes for myself allows me to engage more fully in the meeting. I can participate in the moment, because there's a lot less I need to consciously keep track of.
 
 
-## level 2: one person takes notes and shares afterwards
+# level 2: one person takes notes and shares afterwards
 
 One step up from taking notes for yourself is one person taking notes and sharing those with the other participants afterwards. It's far from great, though, because of the power dynamics it creates.
 
-Note-taking tends to be seen as a low-status job. It's what important men hire women they call personal assistants, for to do it for them. So being the person who takes notes, makes you the least important person in the room. You're no longer participating in the meeting, you're serving the meeting. And thus the people in it. So if you ask who wants to take notes, you're asking if someone wants to reduce their status in the meeting. And if you volunteer to take notes...
+Note-taking tends to be seen as a low-status job. It's what important men hire women for to do for them. So being the person who takes notes, makes you the least important person in the room. You're no longer participating in the meeting, you're serving the meeting - and thus the people in it. So if you ask who wants to take notes, you're asking if someone wants to reduce their status in the meeting. And if you volunteer to take notes...
 
-As someone who ticks almost every privilege checkbox[^2], I'm not the best person to speak to this topic or share experiences. In most situations I can afford to be the person taking notes. And if I want to be a good ally, I have two options. Volunteer to take notes and try to give it more status. Or change how the meeting is run and move the note-taking to one of the levels I describe below.
+As someone who ticks almost every privilege checkbox out there, I'm not the best person to speak to this topic or share experiences. In most situations I can afford to be the person taking notes. And if I want to be a good ally, I have two options. Volunteer to take notes and try to give it more status. Or change how the meeting is run and move the note-taking to one of the levels I describe below.
 
-[^2]: For Dutch-speaking people: check out Joris Luyendijk's [zeven vinkjes](https://www.jorisluyendijk.nl/index_p_4147.html). I score seven out of seven.
-
-You might say that with note-taking comes a certain kind of power. Deciding what gets recorded and how. While that's definitely true, I don't think it offsets the low status of note-taking at this level. Rather, the power in note-taking is part of the power of facilitating the meeting. Which is something that happens in the next levels.
+Now you might say that with note-taking comes a certain kind of power. Deciding what gets recorded and how. While that's definitely true, I don't think it offsets the low status of note-taking at this level. Rather, the power in note-taking is part of the power of facilitating the meeting. Which is something that happens in the next levels, but not really on this one.
 
 
-## level 3: one person takes notes and shares during
+# level 3: one person takes notes and shares during
 
-Another thing that confuses me in meeting is when people don't share things. Instead of using a whiteboard, they talk about what they see in their head. Instead of sharing their screen, they talk about what they see on their screen. Instead of sharing the notes as they make them, they keep them to themself until after the meeting. It doesn't have to be this way.
+Another thing that confuses me in meeting is when people don't share things. Instead of using a whiteboard, they talk about what they see in their head. Instead of sharing their screen, they talk about what they see on their screen. Instead of sharing the notes as they make them, they keep them to themselves until after the meeting. It doesn't have to be that way.
 
-At this level the notes become a shared tool that's part of the meeting. Participants can see how the notes are taking shape. They can ask to include or exclude certain things. For something to be phrased differently. They can refer to the notes, when they want to say something.
-
-
-## level 4: collaborative note-taking
-
-A small but significant step up from the previous level, is taking the notes in a collaborative tool all the participants have access to. It turns the notes into a shared responsibility. It's something you work on together as part of the meeting.
-
-That's not to say everyone should equally contribute to the notes. Some people might not be comfortable doing so. Perhaps they can't type that fast. Perhaps they're dyslexic. Perhaps they have bad experiences with being volunteered to take notes. The reason doesn't matter. As long as there are several people involved in taking the notes. So that if you're taking notes and want to say something, you can rely on someone else taking over the note-taking.
+If you share your notes as you're making them, they become a shared tool. They become an active part of the meeting. Participants can see how the notes are taking shape. They can ask to include or exclude certain things. They can ask for something to be phrased differently. They can refer to the notes, when they want to comment on something.
 
 
-## level 5: note-taking is part of the meeting structure
+# level 4: collaborative note-taking
 
-The difference between this level and the previous one can be subtle, but it is there. At this level the not-taking is an integral part of how the meeting works. Basically think of writing post-its, either of the physical or the virtual kind. Or of several people collaborating at a whiteboard.
+A small but significant step up from the previous level, is taking the notes in a collaborative tool all the participants have access to. It turns the notes into a shared responsibility. The notes become something you work on together as part of the meeting.
 
-The notes become more than a tool for recording what was said, they become a tool to structure the meeting. They become part of what's being said and how. That does mean that sometimes it'll take some effort to turn these notes into something that's useful long-term. To me, that's worth it, because the more a meeting looks like a workshop, the better the meeting tends to be.
+That's not to say everyone should equally contribute to the notes. Some people might not be comfortable doing so. Perhaps they can't type that fast or accurately, especially in public. Perhaps they're dyslexic. Perhaps they have bad experiences with being volunteered to take notes. The reason doesn't matter. As long as there are several people involved in taking the notes. The test for this level is that when you're taking notes and then start to say something, someone else takes over taking notes.
 
 
+# level 5: note-taking is part of the meeting
 
-# facilitating the work is part of the work
+The difference between this level and the previous one can be subtle, but it is there. At this level the note-taking is an integral part of how the meeting works. Think of writing post-its, either of the physical or the virtual kind. Or of several people collaborating at a whiteboard.
 
-facilitating the work is part of the work
-the meta-level of the work is part of the work
+The notes become more than a tool for recording what was said, they become a tool to structure the meeting. They aid in giving shape to what's being said and how. That does mean that sometimes it'll take some effort to turn these notes into something that's useful long-term. To me, that's worth it, because the more a meeting resembles a workshop, the better the meeting usually is.
 
-consumer versus participant
-	"from mere attendants at a meeting into vibrant participants in an evolving endeavor." - Orbiting The Giant Hairball, Gordon Mackenzie
-generative work versus productive work (Maaret) -> https://visible-quality.blogspot.com/search?q=generative
 
-> In thinking of the way I track my balance, I realized I have two dimension I think in. The first dimension is in where the results of my work show: are my results productive in nature (I do something) or generative in nature (others do something better because of me). The second dimension is the payback time, when the benefits are available: right about now or next week (short-term) or later in life (long-term). The long term in the context of a company is a year or two, and in life decades, but thinking around using my work hours, I'm quite aware of looking of reaping the benefits for this company.
+# Facilitating the work is part of the work
 
-links to making meetings work
+In her post [*"The Mental Load of One Meeting"*](https://elizabethzagroba.com/posts/2021/the_mental_load_of_one_meeting/) Elizabeth Zagroba[^2] wrote:
 
-making meetings work
-synchronous collaboration with a purpose
-artful participation
-leadership (Weinberg): creating an environment where everyone can contribute to solving the problem
+> a lot of work is the work of noticing what work needs doing.
 
-The Mental Load of One Meeting
-https://elizabethzagroba.com/posts/2021/the_mental_load_of_one_meeting/
-"a lot of work is the work of noticing what work needs doing"
-mental load
+[^2]: As you may deduce from her post, Elizabeth is an excellent note-taker. So if you find yourself in a meeting with her, don't ask her to take notes. Take notes yourself and ask her for feedback.
 
-if there's someone you can learn how to take notes from, it's Elizabeth
-which considering her blog post is 
+Showing up to a meeting ready to say things, is not sufficient. That's not noticing a lot of the work that goes into a [good meeting](link://slug/making-meetings-work). That's not engaging with the meta-level of the work. And you should, because facilitating the work *is* part of the work.
