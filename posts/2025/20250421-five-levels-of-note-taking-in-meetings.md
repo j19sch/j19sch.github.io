@@ -1,7 +1,7 @@
 <!--
 .. title: Five levels of note-taking in meetings
 .. slug: five-levels-of-note-taking-in-meetings
-.. date: 2025-04-19
+.. date: 2025-04-21
 .. category: facilitation
 .. tags: note-taking, leadership, facilitation, leadership, self-organization, skills
 .. type: text
@@ -71,10 +71,10 @@ The notes become more than a tool for recording what was said, they become a too
 
 # Facilitating the work is part of the work
 
-In her post [*"The Mental Load of One Meeting"*](https://elizabethzagroba.com/posts/2021/the_mental_load_of_one_meeting/) Elizabeth Zagroba[^2] wrote:
+In her post ["The Mental Load of One Meeting"](https://elizabethzagroba.com/posts/2021/the_mental_load_of_one_meeting/) Elizabeth Zagroba[^2] writes:
 
 > a lot of work is the work of noticing what work needs doing.
 
 [^2]: As you may deduce from her post, Elizabeth is an excellent note-taker. So if you find yourself in a meeting with her, don't ask her to take notes. Take notes yourself and ask her for feedback.
 
-Showing up to a meeting ready to say things, is not sufficient. That's not noticing a lot of the work that goes into a [good meeting](link://slug/making-meetings-work). That's not engaging with the meta-level of the work. And you should, because facilitating the work *is* part of the work.
+Showing up to a meeting ready to say things, is not enough. That's not noticing a lot of the work that goes into a [good meeting](link://slug/making-meetings-work). Tending to the environment in which the work takes place - facilitating the work - *is* part of the work.
