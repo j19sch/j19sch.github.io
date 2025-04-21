@@ -10,7 +10,7 @@
 
 # level 0: no one takes notes
 
-Few things confuse me as much as being a meeting with no one taking notes. Is everyone's memory so much better than my own? Is what's being said just not that important? Are people fine with only retaining a things and nothing else?
+Few things confuse me as much as being a meeting with no one taking notes. Is everyone's memory so much better than my own? Is what's being said just not that important? Are people fine with only retaining a few things and nothing else?
 
 Luckily I'm not alone. Johanna Rothman seems to agree with me, at least for *essential* meetings:[^1]
 
