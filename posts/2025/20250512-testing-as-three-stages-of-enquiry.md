@@ -45,34 +45,49 @@ Or as K.T. Fann summarizes in the Introduction of their book:
 
 At a surface-level there's a clear similarity between the three stages of inquiry and testing. Abduction is coming up with test ideas, with things you want to test. Deduction is coming up with the actual tests informed by those test ideas. And induction is when you execute those tests.
 
-While I agree with that similarity, it's not very informative. To get somewher interesting, we need to dig a little deeper.
+While I agree with that similarity, it's not very informative. To get somewhere interesting, we need to dig a little deeper.
 
 
-## Abduction
-
-Testing includes looking for surprisings facts.
-
+## Surprising facts versus requirements
+In testing we have multiple sources of facts. No, we have one, the application. The rest is consequences, hence deduced before the fact.
 In testing you have the written requirements.
 
+Do test ideas based on requirements count?
 
-## Deduction
+requirements do some (most? all?) of the deduction for us
 
+If I could tell you in detail what and how I would test upfront, I'd add those as requirements / acceptance criteria from the start. Then you could build it right/correct from the start, instead of having me test it afterwards. // if I can tell you what to test without exploring, it could have been a requirement
+if there would be no need for exploration/abduction, there would be no test engineers, only requirement engineers
 
-how many experiments/observations are needed? in testing often one or lots
+requirements are input for abduction, just like observation
 
-## Then what
-
-
-
-## Summary of the three stages
-
-In the Introduction Fann describes the three stages of inquiry as follows:
+it's not because it's in the requirements, that's how the software works
 
 
+does abduction count when looking at requirements? yes, but is not software testing
+
+
+## How many experiments do you need?
+how many and how varied?
+how many / how often relates to human versus machine execution
+
+test automation is running pre-defined induction, so limited, so powerful
+
+
+## misc notes
+
+Testing includes looking for surprisings facts. So does inquiry, because it assumes doing science.
+
+Noticing is key for induction.
+
+Deduction -> my epistemological deconstruction; my presentation about philosophy of science
+
+deduction and test design: idea: ?? importance of understanding software/hardware/people/... ?? => affinity thing?
 
 
 # Optimizing for moments of discovery
 
+only abduction results in new ideas
 
 A (the?) key aspect of abduction is that it's only one of the three stages that 
 synthetic
