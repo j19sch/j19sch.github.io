@@ -43,10 +43,88 @@ Or as K.T. Fann summarizes in the Introduction of their book:
 
 # The three stages and testing
 
-At a surface-level there's a clear similarity between the three stages of inquiry and testing. Abduction is coming up with test ideas, with things you want to test. Deduction is coming up with the actual tests informed by those test ideas. And induction is when you execute those tests.
+At a surface-level there's a clear similarity between the three stages of inquiry and testing. Abduction is coming up with test ideas, with things you want to test. Deduction is coming up with the actual tests informed by those test ideas. And induction is when you execute those tests. Or when a pipeline does it for you.
+
 
 While I agree with that similarity, it's not very informative. To get somewhere interesting, we need to dig a little deeper.
 
+The things:
+- only exploratory testing counts as abduction
+	- requirements engineering is abduction (arguably) -> my comment on shift left
+- we don't have facts, we have behavior based on requirements
+- how often do we need to run experiments? how many is enough?
+- manual vs automated execution and the need for someone to look at the results (extended cognition)
+	- Maaret said something about this: manual automation if someone has to run it -> Workflowy link
+	- have said this (look at results) somewhere before, but where?
+	- reflections on manifesto mentions extended cognition
+	- test automation that needs to be run manually vs automated in a pipeline -> how often experiments
+- affinity between man and nature -> affinity between tester and software behavior
+
+
+## Only exploratory testing counts as abduction
+
+Creating test cases based on requirements does not count as abduction. It's deduction. The hypothesis is already formed: the application behaves as per the requirement. So the steps left are deduction and induction. Deducing what you expect to be true if the hypothesis holds and inducing if it truly holds.
+
+(Note that there's a difference between an expection being true and something happening. You might expect something to happen or expect something not to happen. Either can be tested if they hold to be true, if they result in something that can be observed.)
+
+This is something I covered 10 years ago in ["The test case - an epistemological deconstruction".](link://slug/the-test-case-an-epistemological-deconstruction). There I warned against splitting strategy, tactics and operations in testing too far apart. Which is not dissimilar from abduction - deduction - induction. And I warned against how test cases break up the OODA-loop in testing. Even worse, it's often not a loop at all when using test cases. (OODA stands for Observe - Orient - Decide - Act, it's a model created by John Boyd.)
+
+To re-iterate, when using test cases based on requirements, there is no abduction. There is no surprising fact leading to the need to form a hypothesis. We're not trying to understand the universe after it's been created. We have the universe and we have the blueprints. All that's left is verifying that the universe matches the blueprints. Any surprising fact we discover, is a bug. Something that does not meet requirements. (more on this later)
+
+Now what if you identify a missing requirement? I'd say that that is abduction. You identified an additional thing about the behavior. It's not testing, though, as I argued in my post ... (which one? or was it a note?), it's requirements engineering. We can also see how the similarity with the three stages of inquire breaks down here. Inquiry starts from observing some behavior in the world. Requirements engineering is specifying how something should behave. So for the similarity to work, to be at least informative, abduction is more "are we discovering something new - even if it's only tentatively?" versus "are we encountering a surprising fact?"
+
+
+## We don't have facts we have behavior based on requirements
+
+The largest way the similarity breaks down is that we don't just have access to the behavior. We have access to information about the intended behavior. Both to the documents describing it and to the people implementing it. (Actually, we are some of the people implementing the behavior.) However, experience has shown that's not enough.
+
+It is not possible to create the perfect requirements, implement those perfectly, and know with absolute certainty you have implemented it perfectly. And that's ignoring the whole platform you are relying on to do those things.
+
+> Any sufficiently complex system is either incomplete or self-contradictory. (?) Gödel
+
+That 'last' one is a funny one. Being able to specify and implement requirements perfectly, without the ability to know if you did so, is in a sense no better than not being able to do these things perfectly. Or is the knowing implicit in the perfection?
+
+So again the breaks up our testing in two types, as I described in "Being intentional about exploratory testing". There's tests that look for value and there's tests that look for risk.
+
+Limiting yourself to tests that look for value, that are based on deduction and induction, but skip the abduction, "because we have the requirements" is incredibly (epistemologically) naïve.
+
+Ignoring or skipping the tests based on requirements is equally naïve though. While few people will set up things on purpose, there are still plenty of teams that work this way. (information debt!) Testers are not allowed access to the source code. Testers are not included in design meetings. Testers operate one sprint behind, making interaction with the programmers harder. ~~Or they automate one sprint behind.~~ Or testers are in a separate team all together.
+
+The reverse happens as well by they way. Testers having specified their tests, but not wanting to share them with the programmers, "because then they'll just build something that passes the tests".
+
+!!! Is requirements-based testing like reproducing earlier experiments?
+
+So the trick in testing seems to be to decide well when and how much to do of each kind of testing. To switch between verifying expected facts and discovering new facts.
+
+And not to separate the two. To not go: we'll first test for all the requirements and do some exploration at the end, if there's time, as the cherry on top.
+
+This is one of the strengths of contemporary exploratory testing (Maaret!). You take the requirements, and the code, and the existing (automated) tests, and your domain knowledge, etc. and you go look for what's missing. Gaps in what's been tested already. Gaps in the understanding of what needs to be built and what has been built. Surprising new facts about what's been built. And this results in fixes and improvements. And in automated induction: increased test coverage running in a pipeline.
+
+
+## Running experiments - how often, how many?
+
+I remember the days when getting a new release meant first doing some smoke and regression testing, manually. How much always was an interesting question. You would have no insight in what had been changed, beside a list of the work items that have been implemented in the release. You also had no idea what exactly had been tested. So yeah, that's about as black box as it gets. And this was custom work. So the guarantees by the supplier only went so far. "We've built this the way we think you've asked us to. But do check for yourselves. And once you accept the release, there are no more bugs, only change requests." As one of my old project managers used to say: "The question is not whether it will be fixed or not. The question is who is going to pay for it."
+
+Contrast this with a modern development team. Hopefully each programmer makes small changes, which then go through a pipeline with a sufficient level of test coverage. That's a lot of induction happening right there, and it takes zero effort to run. (It does take effort to add additional tests, of course.) And while it has its limitations, I don't think I ever want to go back to a team that does not have this. Every test is a hypothesis that once held true. And we can re-verify each of them automatically. How great!
+
+This is why some people call automated tests change detectors. They tell you if a hypothesis no longer holds true. That might be a bad thing (most of the time it is), but that might also be a good thing (hypothesis no longer should be true), or an interesting thing (we learn something new). But it's definitely a good thing that you know about it.
+
+Tests as hypothesis is a cool angle for TDD. Because you first falsify the hypothesis by running the test before having written the code. Then you write the code that should make the hypothesis true. Then you verify.
+
+### How often - problem of induction
+
+A tricky question is: how often do you have to run the same test to trust its results? And I'm talking about running the same test on exactly the same code under (presumably) the same circumstances. If you've seen something once, has it been tested? How well do you control and have insight on the circumstances?
+
+Is it possible to ~~step into the same river~~ execute the same test twice? Arguably not, because you are not the same. What about automated? How do we know everything is still exactly the same? And doesn't an automated test need a human somewhere in the loop, so in that sense it's not the same test? Unless they're amnesiac?
+
+This question is the most relevant when testing bug fixes. "If I do A, the application should do B, but it does C." "I fixed it." "I do A, the application does B. Bug closed!" That seems like a very lazy way of testing. It's very lazy deduction. Only focusing on the one explicit hypothesis of the bug report. Not looking into side effects - either intended or unintended (???) of the bug fix.
+
+
+
+
+---
+
+---
 
 ## Surprising facts versus requirements
 In testing we have multiple sources of facts. No, we have one, the application. The rest is consequences, hence deduced before the fact.
@@ -59,12 +137,14 @@ requirements do some (most? all?) of the deduction for us
 If I could tell you in detail what and how I would test upfront, I'd add those as requirements / acceptance criteria from the start. Then you could build it right/correct from the start, instead of having me test it afterwards. // if I can tell you what to test without exploring, it could have been a requirement
 if there would be no need for exploration/abduction, there would be no test engineers, only requirement engineers
 
-requirements are input for abduction, just like observation
+requirements are input for abduction, just like observation, or not
 
 it's not because it's in the requirements, that's how the software works
+ start with behavior or start with code
 
 
-does abduction count when looking at requirements? yes, but is not software testing
+does abduction count when looking at requirements? yes, but is not software testing; it's requirements engineering?
+
 
 
 ## How many experiments do you need?
