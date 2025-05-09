@@ -59,6 +59,7 @@ The things:
 	- reflections on manifesto mentions extended cognition
 	- test automation that needs to be run manually vs automated in a pipeline -> how often experiments
 - affinity between man and nature -> affinity between tester and software behavior
+- it's weird that we usually talk about test design and execution, so deduction and induction, but skip the abduction
 
 
 ## Only exploratory testing counts as abduction
@@ -119,7 +120,47 @@ Is it possible to ~~step into the same river~~ execute the same test twice? Argu
 
 This question is the most relevant when testing bug fixes. "If I do A, the application should do B, but it does C." "I fixed it." "I do A, the application does B. Bug closed!" That seems like a very lazy way of testing. It's very lazy deduction. Only focusing on the one explicit hypothesis of the bug report. Not looking into side effects - either intended or unintended (???) of the bug fix.
 
+### How often - manually or automatically
 
+A curious thing about software compared to the universe, is that it keeps changing. While it's certainly possibly to discover new things about an existing piece of software, it's when we change things in the software, that we do testing.
+
+In science you want to rerun an experiment to check the validity of the experiment. If the part of the universe you're running your experiment on, has changed since you (or someone else) did the experiment last, that's a problem with the experiment, not the universe.
+
+If you rerun a test on some software, it can go either way. Perhaps the software changed as intended, but the test did not. Or the software shouldn't have changed, but luckily the test detected it. Or the software changed but the test fails to detect the change. Or the test was changed (incorrectly), and not the software.
+
+So reproducing an experiment is a different game. There is a similarity: we do want our tests to produce the same results on everyone's machine and on the CI/CD server. I've often used it as a test for test automation. It runs on my machine, does this run on yours too? Especially when I was in a team where we had three different OS-es across the team members, this was an important thing to test.
+
+The reason it's a different game is because as we change the software, we want to rerun the same tests. Use them as change detectors. (mentioned above as well, and in regression-testing-it-means-less-than-you-think) We might be experimenting against a different universe.
+
+That also means that you want to run these tests whenever you suspect something might have changed. Which brings us to the importance of running these tests automatically:
+
+> Without a pipeline, you have *manual* test automation. Pipelines transform programs from their writing form to their running form.
+> - Maaret Pyhäjärvi on [LinkedIn](https://www.linkedin.com/posts/maaret_i-know-it-is-silly-to-quote-yourself-but-activity-7323961095969292289-0dRw/)
+
+Not that running tests in a pipeline is the whole story. If no desicions are informed by the pipeline going either green or red, you might as well not have bothered.
+
+
+
+?? the problem of reproducibility in software
+
+- have said this (look at results) somewhere before, but where?
+	- reflections on manifesto mentions extended cognition but for tools
+- test automation that needs to be run manually vs automated in a pipeline -> how often experiments
+
+
+## Automating tests is not the way
+
+A still common approach to testing is to first design a bunch of test cases, execute them, and then automate the most important ones (sometimes only in the next sprint). There are several issues with that.
+
+First of all, there's either no abduction or a very poor form of it. No abduction if you design your test cases based on the requirements. A very poor form of it if you do some exploration, but as actual testing, but merely to collect (additional) information to design your test cases with.
+
+Secondly, for the automation part, splitting the designing, executing and automating in three seprate phases is a very inefficient way of doing things. Both the manual execution and the automation can and should inform your design. But they have different constraints, not everything that's done (easily) manually can be automated and not everything that's done automated can be done (easily) manually.[^3] Thirdly, as you automate, you'll have to execute again, so it's an additional execution, but you don't really care about the results at that point in time. Fourthly, a lot of the value of the automation is to run it often, cheaply. After you have executed your tests manually, but before you have automated them, there's a gap. And in that gap lives risk. Because it's not very enticing to manually execute a test, that passed recently, and is really close to being automated.
+
+[^3]: This has been the problem of the field of AI since it's inception. What's easy for a human to do, e.g. identify things and their location in space through sight, can be very hard for a machine to do - and vice-versa.
+
+
+
+## affinity between man and nature -> affinity between tester and software behavior
 
 
 ---
