@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="It's probably a bit of a Schrödinger-like situation...">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How essential are your testers? | Joep Schuurkes</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../feed.atom">
+<link rel="canonical" href="https://smallsheds.garden/blog/2025/how-essential-are-your-testers/">
+<link rel="icon" href="../../../assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="../../../assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../assets/favicons/favicon-96x96.png" sizes="96x96">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../five-levels-of-note-taking-in-meetings/" title="Five levels of note-taking in meetings" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="How essential are your testers?">
+<meta property="og:url" content="https://smallsheds.garden/blog/2025/how-essential-are-your-testers/">
+<meta property="og:description" content="It's probably a bit of a Schrödinger-like situation...">
+<meta property="og:image" content="https://smallsheds.garden/images/default-preview.jpeg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2025-05-21T00:00:00+02:00">
+<meta property="article:tag" content="career">
+<meta property="article:tag" content="management">
+<meta property="article:tag" content="quality engineering">
+<meta property="article:tag" content="software testing">
+<meta property="article:tag" content="teaching">
+<meta property="article:tag" content="test management">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../index.html" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-projects/" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-talks/" class="nav-link">Talks</a>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lists</a>
+            <div class="dropdown-menu">
+                    <a href="../../../my-lists/reading-list/" class="dropdown-item">Reading list</a>
+                    <a href="../../../my-lists/recommended-reading/" class="dropdown-item">Recommended reading</a>
+                    <a href="../../../my-lists/favorite-podcasts/" class="dropdown-item">Favorite podcasts</a>
+            </div>
+            </li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../" class="dropdown-item">My blog</a>
+                    <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
+                    <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">How essential are your&nbsp;testers?</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep&nbsp;Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2025-05-21T00:00:00+02:00" itemprop="datePublished" title="21 May 2025">21 May 2025</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p>A question I don&#8217;t seem to be able to let go of is: where does a tester fit into a software development team? More specifically, how essential are testers to the&nbsp;team?</p>
+<p>I think that there are basically three&nbsp;options:</p>
+<ol>
+<li>Your testers do not add something&nbsp;essential.</li>
+<li>It&#8217;s not clear if your testers add something&nbsp;essential.</li>
+<li>Your testers do add something&nbsp;essential.</li>
+</ol>
+<h2 class="small">Your testers do not add something&nbsp;essential</h2>
+<p>I suspect this is becoming more and more common. Thanks to Agile, <span class="caps">CI</span>/<span class="caps">CD</span>, DevOps, improved tooling and changing expectations, you should not have testers that find the dumb bugs I was expected to find at the start of my career. If a programmer wrote&nbsp;a <code>&gt;</code> where it should have been&nbsp;a <code>&gt;=</code>, we should expect a unit test and not a tester to catch&nbsp;it.</p>
+<!-- TEASER_END -->
+
+<p>However, as William Gibson said: <em>&#8220;The future is already here - it&#8217;s just not very evenly distributed.&#8221;</em><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> If you do find that you need to employ testers to verify requirements, I&#8217;m sorry to say, but you have a quality problem. <a href="https://curiousduck.io/assets/pdfs/btwq.pdf" target="_blank">You don&#8217;t need more testers or better testing.</a> You need your programmers to engage with what they build in more varied and rich&nbsp;ways.</p>
+<p>There&#8217;s a different aspect to this, though. A lot of testers have never learned to do better than this, than what&#8217;s expected of them in these kinds of environments. These testers do not do anything that a (junior) programmer, a product owner, a business analyst, or a <span class="caps">UX</span> designer couldn&#8217;t do equally well. They are supposed to be a testing expert, but have no actual testing expertise to distinguish themselves with from those other&nbsp;roles.</p>
+<p>And the sad thing - and an important point of this post - is that we can&#8217;t blame these testers. Where should they have learned these testing skills? And for what reason, if there&#8217;s no expectation to have them? And this sadness extends to the programmers. They too are stuck in an environment that will never expect them to develop into a well-rounded&nbsp;professional.</p>
+<h2 class="small">It&#8217;s not clear if your testers add something&nbsp;essential</h2>
+<p>I suspect that this is the most common position of good testers: <em>&#8220;We don&#8217;t know exactly what they do, but we do know we don&#8217;t want them to stop doing it.&#8221;</em> A lot of organizations are not set up to support good testing, so good testers do their best with what they have. They shape their role. They try to <a href="../../2023/a-good-tester-is-all-over-the-place/#doing-your-job-vs-improving-the-system">shape their organization in addition to doing their job</a>. And they shape themselves to fill whatever quality gaps they&nbsp;find.</p>
+<p>Which raises the question: what is a good&nbsp;tester?</p>
+<p>In short: they explore changes in the domain, in the code (production and test), and in the environment (infra, libraries, etc.). They do so in order to evaluate the software. They use a diverse set of tools. They are able to share what they find both as information and as&nbsp;code.</p>
+<p>However, since the organization doesn&#8217;t truly understand testing, they have trouble clearly seeing the value these testers bring. They can&#8217;t tell if all of the testers bring this value, or only some of them do. So the question how essential these testers are, becomes rather moot. As does the question how the organization could get so much more value from their testers, if these testers didn&#8217;t have to spend as much time shaping their role and their&nbsp;organization.</p>
+<h2 class="small">Your testers do add something&nbsp;essential</h2>
+<p>Awesome! Take a moment to appreciate it. And please share your experiences.&nbsp;:-)</p>
+<hr>
+<h2 class="small">Which of those three is&nbsp;you?</h2>
+<p>So if you&#8217;re not sure which of these three situation you are in, how can you&nbsp;tell?</p>
+<p>The simplest heuristic is to look at what happens when a tester goes on vacation for a few&nbsp;weeks.</p>
+<p>If work starts piling up in the &#8220;to test&#8221;-column, that&#8217;s not a good sign.<br>
+If everything proceeds exactly as normal, that&#8217;s not a good sign.<br>
+If you prefer not to think too hard about it, that&#8217;s not a good&nbsp;sign.</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://quoteinvestigator.com/2012/01/24/future-has-arrived/" target="_blank">https://quoteinvestigator.com/2012/01/24/future-has-arrived/</a> <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/career/" rel="tag">career</a></li>
+            <li><a class="tag p-category" href="../../../categories/management/" rel="tag">management</a></li>
+            <li><a class="tag p-category" href="../../../categories/quality-engineering/" rel="tag">quality&nbsp;engineering</a></li>
+            <li><a class="tag p-category" href="../../../categories/software-testing/" rel="tag">software&nbsp;testing</a></li>
+            <li><a class="tag p-category" href="../../../categories/teaching/" rel="tag">teaching</a></li>
+            <li><a class="tag p-category" href="../../../categories/test-management/" rel="tag">test&nbsp;management</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../five-levels-of-note-taking-in-meetings/" rel="prev" title="Five levels of note-taking in meetings">Previous&nbsp;post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2025 
+<a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank">
+<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by/4.0/80x15.png"></a>
+<a href="mailto:site@joep.slmail.me">Joep Schuurkes</a> - Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a> - Analytics by <a href="https://plausible.io/" rel="nofollow" target="_blank">Plausible</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>
