@@ -23,9 +23,9 @@ I suspect this is becoming more and more common. Thanks to Agile, CI/CD, DevOps,
 
 <!-- TEASER_END -->
 
-However, as William Gibson said: *"The future is already here - it's just not very evenly distributed."*[^1] If you do find that you need to employ testers to verify requirements, I'm sorry to say, but you have a quality problem. [You don't need more testers or better testing](https://curiousduck.io/assets/pdfs/btwq.pdf). You need your programmers to engage with what they build in more varied and rich ways.
+However, as William Gibson said: *"The future is already here - it's just not very evenly distributed."*[^1] If you do find that you need to employ testers to verify requirements, I'm sorry to say, but you have a quality problem. <a href="https://curiousduck.io/assets/pdfs/btwq.pdf" target="_blank">You don't need more testers or better testing.</a> You need your programmers to engage with what they build in more varied and rich ways.
 
-[^1]: [https://quoteinvestigator.com/2012/01/24/future-has-arrived/](https://quoteinvestigator.com/2012/01/24/future-has-arrived/)
+[^1]: <a href="https://quoteinvestigator.com/2012/01/24/future-has-arrived/" target="_blank">https://quoteinvestigator.com/2012/01/24/future-has-arrived/</a>
 
 
 There's a different aspect to this, though. A lot of testers have never learned to do better than this, than what's expected of them in these kinds of environments. These testers do not do anything that a (junior) programmer, a product owner, a business analyst, or a UX designer couldn't do equally well. They are supposed to be a testing expert, but have no actual testing expertise to distinguish themselves with from those other roles.
@@ -44,7 +44,7 @@ However, since the organization doesn't truly understand testing, they have trou
 
 
 # Your testers do add something essential {.small}
-Awesome! Take a moment to appreciate it. And please share your story. :-)
+Awesome! Take a moment to appreciate it. And please share your experiences. :-)
 
 ---
 
