@@ -64,7 +64,7 @@ I also noticed two things unrelated to the airgap feature.
 
 4) Our `index.html` contains a favicon link, but in the browser no favicon is displayed. It looks like the link points to a non-existing location. I honestly don't remember if this was working fine before my vacation or not.
 
-5) At one point the application makes two duplicate POST calls. Luckily the call is idempotent. I suspect this was caused by a recent refactor in this area.
+5) At one point the application makes two duplicate POST calls. Luckily the call is idempotent. This may be caused by a recent refactor in this area, but it might also be because I was running the application with React's [`StrictMode`](https://react.dev/reference/react/StrictMode) enabled.
 
 These two findings show the importance of the [skill of noticing](link://slug/the-nine-skills-of-exploratory-testing#noticing). It's not because your focus is on a specific feature, you need to be blind to everything else. While it's hard to claim serendipity is a skill, I do feel you can increase the chances of moments of serendipity happening.
 
