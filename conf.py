@@ -990,8 +990,8 @@ FEED_LINKS_APPEND_QUERY = False
 # A HTML fragment describing the license, for the sidebar.
 # (translatable)
 LICENSE = """
-<a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank">
-<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by/4.0/80x15.png" />
+<a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="nofollow" target="_blank">
+<img alt="Creative Commons BY-NC License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by-nc/4.0/80x15.png" />
 </a>
 """
 # I recommend using the Creative Commons' wizard:
