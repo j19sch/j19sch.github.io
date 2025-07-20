@@ -76,4 +76,6 @@ These two findings show the importance of the [skill of noticing](link://slug/th
 
 # (extra) Reviewing the job description for an agile test engineer {.small}
 
-Later this year a new team will start at my organization, building a new application for the nomination-part of the elections ("kandidaatstelling" in Dutch). We will be hiring a test engineer for that team and my manager asked my to review the job description. So if you're interested in becoming that test engineer, doing work similar to what I've described here, and your Dutch is at least at B2-level, drop me line!
+Later this year a new team will start at my organization, building a new application for the nomination-part of the elections ("kandidaatstelling" in Dutch). We will be hiring a test engineer for that team and my manager asked me to review the job description. So if you're interested in becoming that test engineer, doing work similar to what I've described here, and your Dutch is at least at B2-level, drop me line!
+
+*(edit 20 July 2025)* The ~~dead~~sadline for applying has passed, so it's no longer possible to apply.
