@@ -313,3 +313,104 @@ p.note {
 span.note {
   font-size: 0.9rem;
 }
+
+/* flexsearch plugin */
+/* Basic overlay structure */
+#search_overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#search_content {
+    background: white;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    max-height: 85vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+/* Header */
+#search_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.search-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: lightgray;
+}
+
+.close-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Results area */
+#search_results {
+    padding: 10px 20px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Type badge styling */
+.badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    background-color: #e9ecef;
+    color: #495057;
+    margin-right: 8px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+    #search_content {
+        width: 95%;
+        margin-top: 20px;
+        max-height: 90vh;
+    }
+    
+    a {
+        text-wrap: auto !important;
+    }
+}
