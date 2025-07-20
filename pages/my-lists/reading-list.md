@@ -8,6 +8,7 @@ hidetitle: false
 
 # Reading list
 
+*(edit 20 July 2025)* I am no longer updating this page.
 
 ### 2025
 - The Mark Inside: A Perfect Swindle, a Cunning Revenge, and a Small History of the Big Con - Amy Reading
