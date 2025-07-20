@@ -58,7 +58,16 @@
             </ul>
         </div><!-- /.navbar-collapse -->
         <div class="search-container">
-            <input type="text" id="search_input" placeholder="Search...">
+            <!-- DuckDuckGo custom search -->
+            <form method="get" id="search" target="_blank" action="https://duckduckgo.com/" class="navbar-form pull-left">
+                <input type="hidden" name="sites" value="https://smallsheds.garden/">
+                <input type="hidden" name="k8" value="#444444">
+                <input type="hidden" name="k9" value="#D51920">
+                <input type="hidden" name="kt" value="h">
+                <input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;">
+                <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+            </form>
+            <!-- <input type="text" id="search_input" placeholder="Search...">
             <button id="search_button">Search</button>
 
             <div id="search_overlay">
@@ -69,7 +78,7 @@
                     </div>
                     <div id="search_results"></div>
                 </div>
-            </div>
+            </div> -->
             <!-- <input type="text" id="search_input">
             <button id="search_button">Search</button>
             <div id="search_results"></div> -->
