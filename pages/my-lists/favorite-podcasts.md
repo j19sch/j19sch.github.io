@@ -6,8 +6,9 @@ description:
 type: text
 hidetitle: false
 
-
 # Favorite podcasts
+
+*(edit 20 July 2025)* I am no longer updating this page.
 
 Oddly Influenced by Brian Marick  
 [https://podcast.oddly-influenced.dev/](https://podcast.oddly-influenced.dev/)
