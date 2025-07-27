@@ -60,6 +60,22 @@ induction seems to be: interact - observe/measure - evaluate; setting up experim
 
 ---
 
+The things v2:
+- when is abduction relevant?
+	- exploratory testing, external imagination, being intentional about ...
+	- not when using requirements, acceptance criteria, epistemological deconstruction
+	- we don't only have facts, we also have behavior based on requirements
+- can induction be automated?
+	- yes! pipelines
+	- no! someone needs to check if it's green
+	- automation you have to run manually is dumb
+	- automating tests is not the way: optimize for abduction (moments of discovery)
+- The problem of lazy induction and lazy deduction
+- affinity between man and nature -> man and software behavior
+- we should talk more about abduction
+	- there's more than test cases or clicking around
+	- nine skills of exploratory testing: which ones are relevant?
+
 The things:
 - only exploratory testing counts as abduction
 	- requirements engineering is abduction (arguably) -> my comment on shift left
