@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about values)</title>
   <id>https://smallsheds.garden/categories/values.atom</id>
-  <updated>2024-10-18T11:15:50Z</updated>
+  <updated>2025-07-20T14:52:42Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -48,6 +48,7 @@
 &lt;p&gt;I opened the session with asking people to add stickies to the board of things they valued in Agile software development. When was I preparing the Miro board before the session, I labeled this part of the board "values". Then I remembered I had decided earlier to label it "what we value", so as to avoid the discussion about what values are and aren't. The topic did come up (i.e. the relation between values, ethics and morals), so I was glad I could respond by saying it's a great topic, but not for this session.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2022/uncovering-agile-micro-skills-at-frogsconf/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="agile" label="agile"/>
+    <category term="communication" label="communication"/>
     <category term="conferences" label="conferences"/>
     <category term="skills" label="skills"/>
     <category term="values" label="values"/>
@@ -71,6 +72,7 @@
 &lt;p&gt;Recently this made me wonder: how do you apply these values? How do you live them? What skills do you need to embody them? In this post I won't be sharing any definitive or complete answers, but as a starting point I have identified four skills needed to embody the four Agile values.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2022/four-skills-to-embody-the-four-agile-values/"&gt;Read more…&lt;/a&gt; (9 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="agile" label="agile"/>
+    <category term="communication" label="communication"/>
     <category term="skills" label="skills"/>
     <category term="values" label="values"/>
   </entry>

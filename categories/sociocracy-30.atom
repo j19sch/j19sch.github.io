@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about sociocracy 3.0)</title>
   <id>https://smallsheds.garden/categories/sociocracy-30.atom</id>
-  <updated>2024-10-18T11:15:52Z</updated>
+  <updated>2025-07-20T14:52:43Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -39,6 +39,7 @@
 &lt;/div&gt;
 
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2023/making-meetings-work/"&gt;Read more…&lt;/a&gt; (9 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="communication" label="communication"/>
     <category term="facilitation" label="facilitation"/>
     <category term="leadership" label="leadership"/>
     <category term="self-organization" label="self-organization"/>
@@ -57,6 +58,7 @@
 &lt;p&gt;The reactions to my proposal about how to come to agreements, were mostly positive. One person asked a very good question though: &lt;em&gt;"Is this solving a problem we are having? Or is this a solution looking for a problem? What would be the reasons for adopting this?"&lt;/em&gt; In response I expanded on my reasons for wanting this and we decided to give it a try. My dual proposal helped here: let's try the S3 patterns I shared on the improvement I proposed.&lt;/p&gt;
 &lt;p&gt;Looking back, I'm happy with my reply to those questions and I also feel I can do better. Which makes this the perfect opportunity for my first blog post of 2022. I'll start with a brief introduction on Sociocracy 3.0, then I'll share the proposal I made based on S3, and finally I'll talk about why I like this form of decision-making.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2022/from-tension-to-agreement-with-sociocracy-30/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="communication" label="communication"/>
     <category term="heuristics" label="heuristics"/>
     <category term="leadership" label="leadership"/>
     <category term="self-organization" label="self-organization"/>
