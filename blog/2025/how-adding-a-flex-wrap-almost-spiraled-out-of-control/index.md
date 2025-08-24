@@ -1,12 +1,12 @@
 <!--
 .. title: How adding a flex-wrap almost spiraled out of control
-.. slug: how-adding-a-flew-wrap-almost-spiraled-out-of-control
+.. slug: how-adding-a-flex-wrap-almost-spiraled-out-of-control
 .. date: 2025-08-24
 .. category: misc
 .. tags: agile, bugs, programming, software development
 .. type: text
-.. description: The thin line between value and distraction
 .. previewimage: /images/2025/flex-wrap/cards-before.png
+.. description: The thin line between value and distraction
 -->
 
 > *How does a project get to be a year behind schedule?*  
