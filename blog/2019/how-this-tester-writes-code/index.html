@@ -108,7 +108,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>A long time ago (March 2015) I wrote a post titled &#8220;<a href="../../2015/test-automation-five-questions-leading-to-five-heuristics/">Test automation - five questions leading to five heuristics</a>&#8220;. Later that year <a href="https://twitter.com/richrtesting">Rich Rogers</a> asked for a follow-up. To which I replied I should do a follow-up post (ahum) &#8220;soon&#8221;.
+    <p>A long time ago (March 2015) I wrote a post titled &#8220;<a href="../../2015/test-automation-five-questions-leading-to-five-heuristics/">Test automation - five questions leading to five heuristics</a>&#8221;. Later that year <a href="https://twitter.com/richrtesting">Rich Rogers</a> asked for a follow-up. To which I replied I should do a follow-up post (ahum) &#8220;soon&#8221;.
 Then last Wednesday <a href="https://twitter.com/noahsussman">Noah Sussman</a> said on <a href="https://twitter.com/noahsussman/status/1136288062651142149">twitter</a>: <em>&#8216;I don&#8217;t know that I&#8217;ve *ever* seen &#8220;this is how testers write code&#8221;&#8217;</em>. To which I replied &#8220;challenge accepted&#8221;, so now here we are, me writing a blog post about how I as a tester write&nbsp;code.</p>
 <p>The format of this post turned out to be advice based on my experiences, so the usual disclaimers apply. And feel free to leave a comment if you have any&nbsp;feedback!</p>
 <h3>The&nbsp;basics</h3>
@@ -199,16 +199,16 @@ First of all, a <span class="caps">DSL</span> is limited to its domain. If you w
 Secondly, I think there&#8217;s value for anyone who&#8217;s part of software development, to have a basic understanding of programming. The best way to do that is to do things in code on a a regular basis - preferably as part of your job. Building tests is a great way for non-programmers to have that&nbsp;experience.</p>
 <h3>Revisiting my blogpost from 2015 <a id="revisiting-my-blogpost-from-2105"></a>
 </h3>
-<p>As mentioned in the introduction, in 2015 I wrote a blogpost with the title &#8220;<a href="../../2015/test-automation-five-questions-leading-to-five-heuristics/">Test automation - five questions leading to five heuristics</a>&#8220;. So let&#8217;s see revisit those heuristics more than four years&nbsp;later.</p>
+<p>As mentioned in the introduction, in 2015 I wrote a blogpost with the title &#8220;<a href="../../2015/test-automation-five-questions-leading-to-five-heuristics/">Test automation - five questions leading to five heuristics</a>&#8221;. So let&#8217;s see revisit those heuristics more than four years&nbsp;later.</p>
 <p><strong>Heuristic 0: Don&#8217;t call it test automation.</strong><br>
 I don&#8217;t think I ever stopped calling it test automation. When I wrote the post, I was stricter in using the best possible words. Currently, my position is that if communication is happening, the words we are using are good enough. I do prefer the term &#8220;auto-tests&#8221; over &#8220;automated tests&#8221;, since the latter still suggests to me that perhaps we might be able to &#8220;automate all the testing&#8221;.
 (And yes, I snuck six heuristics in my original post by starting with&nbsp;0.)</p>
 <p><strong>Heuristic 1: Never trust a test you haven&#8217;t seen fail.</strong><br>
-Yep, see &#8220;<a href="#write-tests-for-tests">Do you have to write tests for your tests?</a>&#8220;.</p>
+Yep, see &#8220;<a href="#write-tests-for-tests">Do you have to write tests for your tests?</a>&#8221;.</p>
 <p><strong>Heuristic 2: Each test should test only one thing.</strong><br>
-Yep, see &#8220;<a href="#test-should-do-one-thing">A test should do one thing and one thing only</a>&#8220;.</p>
+Yep, see &#8220;<a href="#test-should-do-one-thing">A test should do one thing and one thing only</a>&#8221;.</p>
 <p><strong>Heuristic 3: It&#8217;s better to have reliable information that doesn&#8217;t exactly tell you what you want to know, than unreliable information that does.</strong><br>
-Not covered in this post, although it is related to having deterministic tests (&#8220;<a href="#ok-to-have-conditional-logic">Is it ok to have conditional logic in your tests?</a>&#8220;). And I still agree: I&#8217;d rather have a reliable test that doesn&#8217;t entirely test what I want to test, than an unreliable test that does (or more precise: tries&nbsp;to).</p>
+Not covered in this post, although it is related to having deterministic tests (&#8220;<a href="#ok-to-have-conditional-logic">Is it ok to have conditional logic in your tests?</a>&#8221;). And I still agree: I&#8217;d rather have a reliable test that doesn&#8217;t entirely test what I want to test, than an unreliable test that does (or more precise: tries&nbsp;to).</p>
 <p><strong>Heuristic 4: Every minute spent debugging test automation code is wasted, because you learn nothing.</strong><br>
 I was quite amused reading this, since it seems I was finding no joy at all in writing and debugging code. I don&#8217;t think that was actually the case, but it is true that I enjoy programming more now than I did back then in 2015. The reason is quite simple: I&#8217;ve gotten better at it.
 Setting aside the tone of that paragraph, I do see a link with what I have written above about tests-as-tests and tests-as-code, and about how being forced to switch between them&nbsp;sucks.</p>

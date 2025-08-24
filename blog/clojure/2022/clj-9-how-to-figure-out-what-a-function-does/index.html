@@ -273,7 +273,7 @@ Carlisle Cullen,6
 
 <p>Where we know&nbsp;that <code>do-stuff</code> changes the rows into maps with&nbsp;keys <code>:name</code> and <code>:glitter-index</code> and that it converts the value of&nbsp;the <code>:glitter-index</code> from a string to an integer. Looking at the function fully written out, we&#8217;ll probably remember that&nbsp;the <code>(map vector vamp-keys unmapped-row)</code> does the former and that the function of&nbsp;the <code>reduce</code> does the latter. And if we want to know how exactly it does these things, we&#8217;ll have to re-figure it out. Or scroll back up a bit and read it&nbsp;there.</p>
 <p>Having done all this work (and writing) I can&#8217;t help but feel a bit disappointed. In the end, the function does not seem to do a lot. To illustrate, in Python you&#8217;d write this to do basically<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup> the same&nbsp;thing:</p>
-<div class="code"><pre class="code literal-block"><span class="k">def</span> <span class="nf">mapify</span><span class="p">(</span><span class="n">rows</span><span class="p">):</span>
+<div class="code"><pre class="code literal-block"><span class="k">def</span><span class="w"> </span><span class="nf">mapify</span><span class="p">(</span><span class="n">rows</span><span class="p">):</span>
   <span class="k">return</span> <span class="p">[</span>
     <span class="p">{</span>
       <span class="n">vamp_keys</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>

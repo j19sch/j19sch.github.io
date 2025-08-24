@@ -107,7 +107,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>Almost done with the chapter 4 <em>&#8220;Core Functions in Depth&#8221;</em> of &#8220;<a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">Clojure for the Brave and True</a>&#8220;! Before wrapping up the chapter with a longer example, a summary, and some exercises, the book goes into lazy sequences, the collection abstraction, and function functions. In this post I will share some notes on infinite lazy sequences and function parameters, making comparisons between Clojure and&nbsp;Python.</p>
+    <p>Almost done with the chapter 4 <em>&#8220;Core Functions in Depth&#8221;</em> of &#8220;<a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">Clojure for the Brave and True</a>&#8221;! Before wrapping up the chapter with a longer example, a summary, and some exercises, the book goes into lazy sequences, the collection abstraction, and function functions. In this post I will share some notes on infinite lazy sequences and function parameters, making comparisons between Clojure and&nbsp;Python.</p>
 <h2>Infinite lazy&nbsp;sequences</h2>
 <p>A lazy sequence is a sequence whose members aren&#8217;t computed until you try to access them. One advantage is that it&#8217;s more efficient: the whole sequence doesn&#8217;t have to be calculated and kept in memory from the start. Another advantage is that it allows you to create infinite sequences. Do that with a normal sequence and your program would never want to stop&nbsp;calculating.</p>
 <!-- TEASER_END -->
@@ -123,7 +123,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 </pre></div>
 
 <p>I wondered how to do the same in Python and with <a href="https://stackoverflow.com/questions/51858765/generating-an-infinite-list/51859030#51859030">some help from stackoverflow</a>, I&nbsp;got:</p>
-<div class="code"><pre class="code literal-block"><span class="k">def</span> <span class="nf">even_numbers</span><span class="p">(</span><span class="n">numb</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="code"><pre class="code literal-block"><span class="k">def</span><span class="w"> </span><span class="nf">even_numbers</span><span class="p">(</span><span class="n">numb</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
   <span class="n">numb</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">numb</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">numb</span>
 
   <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
@@ -184,7 +184,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 </pre></div>
 
 <p>My first thought was that Python does not have such a thing as rest parameters, but then I&nbsp;remembered <code>*args</code>. And looking it up, I found out <a href="https://docs.python.org/3/glossary.html#term-parameter">you don&#8217;t even need to name the rest&nbsp;parameter <code>args</code></a>!</p>
-<div class="code"><pre class="code literal-block"><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">favorite_things</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="o">*</span><span class="n">things</span><span class="p">):</span>
+<div class="code"><pre class="code literal-block"><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span><span class="w"> </span><span class="nf">favorite_things</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="o">*</span><span class="n">things</span><span class="p">):</span>
 <span class="o">...</span>     <span class="k">return</span> <span class="sa">f</span><span class="s2">"Hi, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">, here are my favorite things: </span><span class="si">{</span><span class="s1">', '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">things</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span>
 <span class="o">...</span> 
 <span class="o">&gt;&gt;&gt;</span> <span class="n">favorite_things</span><span class="p">(</span><span class="s2">"Doreen"</span><span class="p">,</span> <span class="s2">"gum"</span><span class="p">,</span> <span class="s2">"shoes"</span><span class="p">,</span> <span class="s2">"kara-te"</span><span class="p">)</span>
