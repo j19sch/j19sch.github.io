@@ -6,6 +6,7 @@
 .. tags: agile, bugs, programming, software development
 .. type: text
 .. description: The thin line between value and distraction
+.. previewimage: /images/2025/flex-wrap/cards-before.png
 -->
 
 > *How does a project get to be a year behind schedule?*  
