@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about agile)</title>
   <id>https://smallsheds.garden/categories/agile.atom</id>
-  <updated>2025-08-24T15:13:51Z</updated>
+  <updated>2025-08-25T04:21:56Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -12,21 +12,21 @@
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
     <title>How adding a flex-wrap almost spiraled out of control</title>
-    <id>https://smallsheds.garden/blog/2025/how-adding-a-flew-wrap-almost-spiraled-out-of-control/</id>
+    <id>https://smallsheds.garden/blog/2025/how-adding-a-flex-wrap-almost-spiraled-out-of-control/</id>
     <updated>2025-08-24T00:00:00+02:00</updated>
     <published>2025-08-24T00:00:00+02:00</published>
     <author>
       <name>Joep Schuurkes</name>
     </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2025/how-adding-a-flew-wrap-almost-spiraled-out-of-control/"/>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2025/how-adding-a-flex-wrap-almost-spiraled-out-of-control/"/>
     <summary type="html">&lt;div&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;How does a project get to be a year behind schedule?&lt;/em&gt;&lt;br&gt;
+&lt;p&gt;&lt;em&gt;How does a project get to be a year late?&lt;/em&gt;&lt;br&gt;
 &lt;em&gt;...One day at a time.&lt;/em&gt;&lt;br&gt;
 - The Mythical Man-Month (anniversary edition), Frederick P. Brooks Jr., p. 153&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Last week I found a minor bug in the &lt;a href="https://github.com/kiesraad/abacus"&gt;application&lt;/a&gt; my team is building. For every election committee, we have a page showing all sessions of that committee. These sessions are shown as a row of cards. Playing around with the number of sessions, I discovered that the row keeps on growing, resulting in a horizontal scroll bar:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="screenshot showing five committee session cards in a row, with the last one, all the way to the right, having only a small part of its left side visible" src="https://smallsheds.garden/images/2025/flex-wrap/cards-before.png"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2025/how-adding-a-flew-wrap-almost-spiraled-out-of-control/"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2025/how-adding-a-flex-wrap-almost-spiraled-out-of-control/"&gt;Read more…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="agile" label="agile"/>
     <category term="bugs" label="bugs"/>
     <category term="programming" label="programming"/>

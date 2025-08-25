@@ -9,7 +9,7 @@
 .. description: The thin line between value and distraction
 -->
 
-> *How does a project get to be a year behind schedule?*  
+> *How does a project get to be a year late?*  
 > *...One day at a time.*  
 > - The Mythical Man-Month (anniversary edition), Frederick P. Brooks Jr., p. 153
 
