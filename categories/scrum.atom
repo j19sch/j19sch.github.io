@@ -3,13 +3,39 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about scrum)</title>
   <id>https://smallsheds.garden/categories/scrum.atom</id>
-  <updated>2025-08-10T13:24:26Z</updated>
+  <updated>2025-11-02T21:24:34Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/scrum.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/scrum/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>The five areas of Agile</title>
+    <id>https://smallsheds.garden/blog/2025/the-five-areas-of-agile/</id>
+    <updated>2025-11-02T00:00:00+01:00</updated>
+    <published>2025-11-02T00:00:00+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2025/the-five-areas-of-agile/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;In &lt;a href="https://smallsheds.garden/blog/2021/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto/#noticing-options-principles"&gt;a previous post&lt;/a&gt; I claimed that any set of principles (or methodology for that matter) for good software development should cover these five areas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;collaboration&lt;/li&gt;
+&lt;li&gt;software engineering&lt;/li&gt;
+&lt;li&gt;work management&lt;/li&gt;
+&lt;li&gt;product&lt;/li&gt;
+&lt;li&gt;reflect &amp;amp; experiment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I mentioned these five again in my post &lt;a href="https://smallsheds.garden/blog/2023/what-is-a-scrum-master/"&gt;"What is a scrum master?"&lt;/a&gt;, but that's all I've said about them. That changes with this post. I will provide a brief description for each of the five areas. I'll share some ideas how a list of the five areas of Agile might be useful. And I'll reflect on the question: Are they the five areas of good software development or of Agile software development?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2025/the-five-areas-of-agile/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="agile" label="agile"/>
+    <category term="heuristics" label="heuristics"/>
+    <category term="maturity" label="maturity"/>
+    <category term="models" label="models"/>
+    <category term="scrum" label="scrum"/>
+    <category term="software-development" label="software development"/>
+  </entry>
   <entry>
     <title>Two short checklists for Scrum</title>
     <id>https://smallsheds.garden/blog/2024/two-short-checklists-for-scrum/</id>

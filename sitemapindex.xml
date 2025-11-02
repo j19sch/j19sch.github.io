@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://smallsheds.garden/blog/feed.atom</loc>
-  <lastmod>2025-08-25T04:21:00Z</lastmod>
+  <lastmod>2025-11-02T21:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/blog/rss.xml</loc>
-  <lastmod>2025-08-25T04:21:00Z</lastmod>
+  <lastmod>2025-11-02T21:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/agile-comms.atom</loc>
@@ -31,11 +31,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/agile.atom</loc>
-  <lastmod>2025-08-25T04:21:00Z</lastmod>
+  <lastmod>2025-11-02T21:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/agile.xml</loc>
-  <lastmod>2025-08-25T04:21:00Z</lastmod>
+  <lastmod>2025-11-02T21:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/black-box-puzzle.atom</loc>
@@ -79,11 +79,11 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_agile.atom</loc>
-  <lastmod>2025-08-10T13:24:00Z</lastmod>
+  <lastmod>2025-11-02T21:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_agile.xml</loc>
-  <lastmod>2025-08-10T13:24:00Z</lastmod>
+  <lastmod>2025-11-02T21:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/categories/cat_cicd.atom</loc>
@@ -727,6 +727,6 @@
  </sitemap>
  <sitemap>
   <loc>https://smallsheds.garden/sitemap.xml</loc>
-  <lastmod>2025-08-25T04:21:00Z</lastmod>
+  <lastmod>2025-11-02T21:03:00Z</lastmod>
  </sitemap>
 </sitemapindex>

@@ -3,7 +3,16 @@
 &lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="nofollow" target="_blank"&gt;
 &lt;img alt="Creative Commons BY-NC License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by-nc/4.0/80x15.png" /&gt;
 &lt;/a&gt;
-</copyright><lastBuildDate>Sun, 10 Aug 2025 13:24:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Two short checklists for Scrum</title><link>https://smallsheds.garden/blog/2024/two-short-checklists-for-scrum/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;h2 class="small"&gt;checklist no.1&lt;/h2&gt;
+</copyright><lastBuildDate>Sun, 02 Nov 2025 21:24:34 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The five areas of Agile</title><link>https://smallsheds.garden/blog/2025/the-five-areas-of-agile/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;div&gt;&lt;p&gt;In &lt;a href="https://smallsheds.garden/blog/2021/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto/#noticing-options-principles"&gt;a previous post&lt;/a&gt; I claimed that any set of principles (or methodology for that matter) for good software development should cover these five areas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;collaboration&lt;/li&gt;
+&lt;li&gt;software engineering&lt;/li&gt;
+&lt;li&gt;work management&lt;/li&gt;
+&lt;li&gt;product&lt;/li&gt;
+&lt;li&gt;reflect &amp;amp; experiment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I mentioned these five again in my post &lt;a href="https://smallsheds.garden/blog/2023/what-is-a-scrum-master/"&gt;"What is a scrum master?"&lt;/a&gt;, but that's all I've said about them. That changes with this post. I will provide a brief description for each of the five areas. I'll share some ideas how a list of the five areas of Agile might be useful. And I'll reflect on the question: Are they the five areas of good software development or of Agile software development?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2025/the-five-areas-of-agile/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>agile</category><category>heuristics</category><category>maturity</category><category>models</category><category>scrum</category><category>software development</category><guid>https://smallsheds.garden/blog/2025/the-five-areas-of-agile/</guid><pubDate>Sat, 01 Nov 2025 23:00:00 GMT</pubDate></item><item><title>Two short checklists for Scrum</title><link>https://smallsheds.garden/blog/2024/two-short-checklists-for-scrum/</link><dc:creator>Joep Schuurkes</dc:creator><description>&lt;h2 class="small"&gt;checklist no.1&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Do you add acceptance criteria and story points to each ticket before planning?&lt;/li&gt;
 &lt;li&gt;Do you have daily team meetings where people provide updates on their progress?&lt;/li&gt;
