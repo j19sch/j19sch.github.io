@@ -1,7 +1,7 @@
 <!--
 .. title: The five areas of Agile
 .. slug: the-five-areas-of-agile
-.. date: 2025-11-01
+.. date: 2025-11-02
 .. category: agile
 .. tags: agile, heuristics, maturity, models, scrum, software development
 .. type: text
