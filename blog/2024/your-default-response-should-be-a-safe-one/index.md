@@ -18,7 +18,7 @@ As you can imagine, there's not always a lot of time to think and decide between
 
 <!-- TEASER_END -->
 
-<div style="margin-top: 1.7rem;" />
+<div class="spacer" />
 
 
 In software development we luckily don't have to make many decisions that might result in harm to our own bodies. (There's plenty of other harm done in and through software development, though.) So arguably there's always time to think. The problem, however, is that there's rather too many things to think about. You want to be thinking about the important parts of the problem and do the rest on auto-pilot, i.e. have your default responses deal with them. And if we're going to rely on our defaults, we better make sure that they are safe ones. So below I'll share three of my defaults.

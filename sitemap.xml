@@ -127,7 +127,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/archive.html</loc>
-  <lastmod>2025-11-16T11:27:00Z</lastmod>
+  <lastmod>2025-11-16T13:02:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/</loc>
@@ -498,8 +498,12 @@
   <lastmod>2025-08-10T13:24:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/blog/2025/we-do-not-all-have-the-same-job/</loc>
+  <lastmod>2025-11-16T13:39:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/blog/2025/we-do-not-have-the-same-job/</loc>
-  <lastmod>2025-11-16T11:24:00Z</lastmod>
+  <lastmod>2025-11-16T13:02:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/clojure/</loc>
@@ -563,7 +567,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-10.html</loc>
-  <lastmod>2025-11-16T11:27:00Z</lastmod>
+  <lastmod>2025-11-16T13:33:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-2.html</loc>
@@ -583,11 +587,11 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-6.html</loc>
-  <lastmod>2025-08-10T13:24:00Z</lastmod>
+  <lastmod>2025-11-16T13:33:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-7.html</loc>
-  <lastmod>2025-08-10T13:24:00Z</lastmod>
+  <lastmod>2025-11-16T13:33:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-8.html</loc>
@@ -595,7 +599,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-9.html</loc>
-  <lastmod>2025-08-10T13:24:00Z</lastmod>
+  <lastmod>2025-11-16T13:33:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/categories/</loc>

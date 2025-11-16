@@ -21,7 +21,7 @@ When I talk about testing, I do think of quality as "value to someone who matter
 
 The reason for this difference is that these definitions serve different purposes. When I'm testing, I'm assessing quality. So I need a definition that helps me to decide what quality is. When my concern is software development, I need a definition that helps me to decide how to deliver quality. And if I were a manager, I'd need a third definition of quality. And if my focus would be running a successful business, I'd need yet another one. And so on.
 
-<div style="margin-top: 1.7rem;" />
+<div class="spacer" />
 
 In general, I think this is a good question to ask of any definition (or model): what kinds of decisions does this definition allow you to make?
 

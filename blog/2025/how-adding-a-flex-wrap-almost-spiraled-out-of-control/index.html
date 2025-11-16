@@ -165,7 +165,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <p>I&#8217;m happy with the first two decisions. It made sense to check how easy it was to fix the bug and once I had determined it was trivial, to implement the&nbsp;fix.</p>
 <p>The third decision was fine as such, except that it made some of the tests fail. At this point, I could have made the decision to abandon updating the mock data. Revert the change and be done with it. Because how important is it that the mock data contains a quite unrealistic number of committee sessions? At this point, however, I wasn&#8217;t making any conscious decisions, so I moved on to fixing the&nbsp;tests.</p>
 <p>The fourth decision to switch to ids for the query was a good one, although a little late. Arguably, it&#8217;s also the better solution. The id will return the card, making it easy to query for anything in the card. The other solution will only return the title of the card, making it hard to query anything else in the card based on the title. While in general I prefer to query on things a user would see, this case seems a good example of where querying by id is the better&nbsp;approach.</p>
-<div style="margin-top: 2.2rem;"></div>
+<div class="spacer-l"></div>
 
 <p>Now what did these decisions get&nbsp;me?</p>
 <p>A fixed bug. Mock data that&#8217;s sorted the same way as the real <span class="caps">API</span> response. I worked with a (to me) new part of the codebase. I learned a few things about Testing Library&#8217;s queries. The session cards are now easier to query in tests and the related tests are more robust. And it meant I was asking my team mates to review a significantly larger pull request with 72 lined added and 28 deleted, instead of one single line&nbsp;added.</p>

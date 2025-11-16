@@ -30,7 +30,7 @@ What if you had negotiated in impediments? *"Presumably you want this sooner rat
 # Curiosity {.small}
 What if you had responded with curiosity? (Something I struggle with. If you ask me a question, my natural response is to reply to the question you asked.) Before answering, ask them what a reasonable delivery date would be. And why that date is important to them. Perhaps they don't know and they're only acting as a proxy. Perhaps they have a goal they want to achieve, and there's something better you can do than delivering a chunk of work under a tight deadline. Instead of being an estimation answering machine, you take the conversation one level up and have a conversation about the purpose of the estimate itself.
 
-<div style="margin-top: 2.0rem" />
+<div class="spacer-l" />
 
 # Negotiation or dialogue? {.small}
 Now you may ask: why is it a negotiation at all? Perhaps negotiation is too strong a word. It's not a hostage negotiation like in the movies, let alone like one in real life. It is a situation, however, in which someone wants something of you, i.e. a sufficient guarantee on a delivery date, you may or not may be able to meet. If there's plenty of time, great! If not, something will have to give.

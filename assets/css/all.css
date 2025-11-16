@@ -1370,6 +1370,19 @@ hr {
   border-top: 1px solid rgba(0,0,0,.2);
 }
 
+hr.taller {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.body-content div.spacer {
+  margin-top: 1.7rem;
+}
+
+.body-content div.spacer-l {
+  margin-top: 2.2rem;
+}
+
 .body-content h2 {
   font-size: 2.0rem;
   margin-top: 1.8rem;

@@ -3,13 +3,35 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about semantics)</title>
   <id>https://smallsheds.garden/categories/semantics.atom</id>
-  <updated>2025-08-10T13:24:28Z</updated>
+  <updated>2025-11-16T13:43:24Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/semantics.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/semantics/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>We do not all have the same job</title>
+    <id>https://smallsheds.garden/blog/2025/we-do-not-all-have-the-same-job/</id>
+    <updated>2025-11-16T00:00:00+01:00</updated>
+    <published>2025-11-16T00:00:00+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2025/we-do-not-all-have-the-same-job/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;At the first conference I ever attended - or I think it was the first, in any case it was &lt;a href="https://smallsheds.garden/blog/2012/lets-test-2012-time-travel-advice/"&gt;Let's Test in 2012&lt;/a&gt; -, I asked someone &lt;em&gt;"So what kind of applications do you test?"&lt;/em&gt; And the reply was: &lt;em&gt;"One of the onboard computers of a Saab fighter plane."&lt;/em&gt; While at that time I was the test lead for an enterprise service bus.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;We do not all have the same job.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="spacer"&gt;&lt;/div&gt;
+
+&lt;p&gt;In a recent episode of the &lt;a href="https://qualityremarks.com/qr-podcast/"&gt;Quality Remarks podcast&lt;/a&gt; hosted by Keith Klain, Paul Holland told the story of an organization where running the test automation took 13 people two weeks. And no, I'm sorry, they didn't go into any detail about what happened in those two weeks. In my current project our pipeline takes 0 people about 17 minutes to run.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;We do not all have the same job.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2025/we-do-not-all-have-the-same-job/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="career" label="career"/>
+    <category term="conferences" label="conferences"/>
+    <category term="paradigms" label="paradigms"/>
+    <category term="semantics" label="semantics"/>
+    <category term="software-testing" label="software testing"/>
+  </entry>
   <entry>
     <title>The difference between a test case and a requirement is the moment of discovery</title>
     <id>https://smallsheds.garden/blog/2024/the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery/</id>
@@ -209,24 +231,5 @@ So after giving it some thought, I present you with three arguments against the 
     <category term="exploratory-testing" label="exploratory testing"/>
     <category term="semantics" label="semantics"/>
     <category term="verification-and-validation" label="verification and validation"/>
-  </entry>
-  <entry>
-    <title>Five leftover thoughts on software testing</title>
-    <id>https://smallsheds.garden/blog/2013/five-leftover-thoughts-on-software-testing/</id>
-    <updated>2013-08-03T12:28:32+02:00</updated>
-    <published>2013-08-03T12:28:32+02:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2013/five-leftover-thoughts-on-software-testing/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;Defect severity 'Skynet': If this gets to production, we're screwed. Really screwed.&lt;/p&gt;
-&lt;p&gt;The problem with templates is that the people who need them shouldn't be writing the document in the first place and that the people who don't need them, have trouble shaking off the vague sense of obligation to adhere to them.&lt;/p&gt;
-&lt;p&gt;Happy path application: application that works perfectly fine as long as you stick to the beaten path with your eyes half-closed.&lt;/p&gt;
-&lt;p&gt;The contents of a test plan can be divided into the following four categories: good stuff, cover your ass, bullshit, trivialities.&lt;/p&gt;
-&lt;p&gt;Buddhist software development: there is no progress, only a never-ending cycle of suffering.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2013/five-leftover-thoughts-on-software-testing/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="semantics" label="semantics"/>
-    <category term="software-testing" label="software testing"/>
-    <category term="test-management" label="test management"/>
   </entry>
 </feed>
