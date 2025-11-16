@@ -106,7 +106,7 @@ The third decision was fine as such, except that it made some of the tests fail.
 
 The fourth decision to switch to ids for the query was a good one, although a little late. Arguably, it's also the better solution. The id will return the card, making it easy to query for anything in the card. The other solution will only return the title of the card, making it hard to query anything else in the card based on the title. While in general I prefer to query on things a user would see, this case seems a good example of where querying by id is the better approach.
 
-<div style="margin-top: 2.2rem;" />
+<div class="spacer-l" />
 
 Now what did these decisions get me?
 
