@@ -1,7 +1,7 @@
 <!--
 .. title: Testing as three stages of enquiry
 .. slug: 
-.. date: 2025-05-12
+.. date: 2025-11-21
 .. category: 
 .. tags: 
 .. type: text
@@ -16,11 +16,11 @@ In my post ["The nine skills of exploratory testing"](link://slug/the-nine-skill
 
 If you follow that link, you'll notice that it covers *"abduction in the modern sense"*, but that there's also a historical sense *"which had its origin in the work of Charles Sanders Peirce"*.
 
-This historical sense is described in the supplement ["Peirce on Abduction"](https://plato.stanford.edu/entries/abduction/peirce.html), which refers to Fann 1970 for a *"a concise yet thorough account of the development of Peirce’s thoughts about abduction"*. So of course I bought that book, i.e. "Peirce's Theory of Abduction" by K. T. Fann. (I really like that this 63-page book that's over a 50 years old, apparantly is __the__ reference on this topic.)
+This historical sense is described in the supplement ["Peirce on Abduction"](https://plato.stanford.edu/entries/abduction/peirce.html), which refers to Fann 1970 for a *"a concise yet thorough account of the development of Peirce’s thoughts about abduction"*. So of course I bought that book, i.e. *"Peirce's Theory of Abduction"* by K. T. Fann. (I really like that this 63-page book that's over a 50 years old, apparantly is __the__ reference on this topic.)
 
-And in that book I found something more interesting than just abduction: Peirce's three stages of inquiry. Or how - according to Peirce - the three phases of the methodology of science are abduction - deduction - induction. And it seem to me that testing works in a very similar way.[^1]
+And in that book I found something more interesting than just abduction: Peirce's three stages of inquiry. Or how - according to Peirce - the three phases of the methodology of science are abduction - deduction - induction. And it seems to me that testing works in a very similar way.[^1]
 
-[^1]: I very deliberately wrote "in a very similar way". Because this blog post is no more than that: noticing an interesting similarity between what I understand of Peirce's thoughts based on Fann's book and what I believe about testing. If I'd want to make a stronger claim, e.g. about the similarities between testing and science, or about Peirce correctly describing the scientific method, I'd have to do a lot more reading and studying.
+[^1]: I very deliberately wrote "in a very similar way". Because this blog post is no more than that: noticing an interesting similarity between what I understand of Peirce's thoughts based on Fann's book and what I believe about testing. If I'd want to make a stronger claim, e.g. about the similarities between testing and science, or about Peirce correctly describing the scientific method, I'd have to do a lot more research.
 
 
 <!-- TEASER_END -->
@@ -32,7 +32,7 @@ Let's look at each three of these in a little more detail and then in the next s
 
 The first stage of inquiry, abduction, starts with noticing a surprising fact. Now an explanation is required. So we adopt a hypothesis as suggested by the facts. This hypothesis should be able to explain the observed facts. Nota that we adopt it on probation only. It must be tested.
 
-Then we move on to the second stage, deduction. What are the necessary and probable consequences of the hypothesis? If our hypothesis is true, what else has to be true as well? Since we want to test our hypothesis, at least some of these consequences must be testable. (The hypothesis itself is not testable, since it's an explanation, an interpretation.)
+Then we move on to the second stage, deduction. What are the necessary and probable consequences of the hypothesis? If our hypothesis is true, what else has to be true as well? If we want to be able test our hypothesis, at least some of these consequences must be testable. (The hypothesis itself is not testable, since it's an explanation, an interpretation.)
 
 Finally, we proceed to the third and last stage, induction. We test our hypothesis by running experiments. Either the consequences we deduced hold true, supporting our hypothesis. In that case we can either decide we're done or deduce additional consequences to test. Or, the consequences do not hold true, invalidating our hypothesis. In that case we return to the abduction stage, trying to come up with a new hypothesis.
 
@@ -49,45 +49,62 @@ While I agree with that similarity, it's not very informative. To get somewhere 
 
 ---
 
-Can I split the follow-ups in abduction, deduction, induction?
+good until here, what next?
 
-When does testing go from
-deduction (explicating hypothesis, deduce/evolve necessary consequences which may be tested)
-to
-induction (process of testing hypotheses, determining a value)
+- when is abduction relevant?
+	- not all testing is abduction
+	- only ET counts as abduction
+		- exploratory testing, external imagination, being intentional about ...
+		- not when using requirements, acceptance criteria, epistemological deconstruction
+		- requirements engineering is abduction (arguably) -> my comment on shift left
+	- we don't only have facts, we have behavior based on requirements
+		- not all testing has to be abduction
+	- if abduction is not needed, we could do waterfall
+	- importance of noticing for abduction
 
-induction seems to be: interact - observe/measure - evaluate; setting up experimental environment
+
+- affinity between man and nature -> affinity between tester and software behavior
+	- what is this affinity?
+	- is it a skill?
+	- model what's under the surface
+
+- how come we so rarely speak about abduction, e.g. generating test ideas
+	- there's more than test cases or clicking around
+	- nine skills of exploratory testing: which ones are relevant?
+	- it's weird that we usually talk about test design and execution, so deduction and induction, but skip the abduction
+
+
+---
+
+abduction: surprise and hypothesis
+deduction: implications of hypothesis
+induction: testing, experimentingh
 
 ---
 
 The things v2:
-- when is abduction relevant?
-	- exploratory testing, external imagination, being intentional about ...
-	- not when using requirements, acceptance criteria, epistemological deconstruction
-	- we don't only have facts, we also have behavior based on requirements
-- can induction be automated?
-	- yes! pipelines
-	- no! someone needs to check if it's green
-	- automation you have to run manually is dumb
-	- automating tests is not the way: optimize for abduction (moments of discovery)
-- The problem of lazy induction and lazy deduction
-- affinity between man and nature -> man and software behavior
-- we should talk more about abduction
-	- there's more than test cases or clicking around
-	- nine skills of exploratory testing: which ones are relevant?
 
-The things:
-- only exploratory testing counts as abduction
-	- requirements engineering is abduction (arguably) -> my comment on shift left
-- we don't have facts, we have behavior based on requirements
+
 - how often do we need to run experiments? how many is enough?
-- manual vs automated execution and the need for someone to look at the results (extended cognition)
-	- Maaret said something about this: manual automation if someone has to run it -> Workflowy link
-	- have said this (look at results) somewhere before, but where?
+	- pipeline as continuous induction: does the pipeline still hold true
+	- TDD: tests as hypothesis
+	- The problem of lazy induction and lazy deduction
+		- when is something the same test? (relevance?)
+		- only focusing on the one explicit hypothesis of the bug report
+	- how often - manually or automatically
+		- reproducibility of experiments
+		- run the same in pipeline(s) on different dev machines
+		- difference: our universe changes, intentionally and unintentionally
+
+- automating tests is not the way
+	- don't automate your manual tests
+	- Maaret quote earlier section: requires pipeline
+	- gap between manial execution and hadving automated it
+	- the induction of manual vs automated are different; this has consequences
+	- automating tests is not the way: optimize for abduction (moments of discovery)
 	- reflections on manifesto mentions extended cognition
-	- test automation that needs to be run manually vs automated in a pipeline -> how often experiments
-- affinity between man and nature -> affinity between tester and software behavior
-- it's weird that we usually talk about test design and execution, so deduction and induction, but skip the abduction
+
+
 
 ---
 
@@ -99,9 +116,15 @@ Creating test cases based on requirements does not count as abduction. It's dedu
 
 => footnote This is something I covered 10 years ago in ["The test case - an epistemological deconstruction".](link://slug/the-test-case-an-epistemological-deconstruction). There I warned against separating strategy, tactics and operations in testing too far apart. Those three levels are not dissimilar from abduction - deduction - induction. And I warned against how test cases break up the OODA-loop in testing. Even worse, it's often not a loop at all when using test cases. (OODA stands for Observe - Orient - Decide - Act, it's a model created by John Boyd.)
 
-To re-iterate, when using test cases based on requirements, there is no abduction. There is no surprising fact leading to the need for a hypothesis. We're not trying to understand the universe after it's been created. We have the universe and we have the blueprints. All that's left is verifying that the universe matches the blueprints, i.e. deduction and induction. Any surprising fact we discover, is a bug. Something that does not meet requirements. (more on this later)
+To re-iterate, when using test cases based on requirements, there is no abduction. There is no surprising fact leading to the need for a hypothesis. We're not trying to understand the universe after it's been created. We have the universe and we have the blueprints. All that's left is verifying that the universe matches the blueprints, i.e. deduction and induction. Anything we discover where they don't match, is a bug. A failure to meet requirements. (more on this later)
 
-Abduction only happens when you engage in exploratory testing. You explore the application. Something surprises you. So you form a hypothesis and explore further based on that hypothesis. It only happens when - as Maaret says - you use the application as your external imagination.
+Abduction only happens when you engage in exploratory testing. You explore the application. Something surprises you. So you form a hypothesis and explore further based on that hypothesis. It only happens when - as [Maaret Pyhäjärvi](https://maaretp.com/) says - you use the application as your external imagination.
+
+---
+
+Now what if you identify a missing requirement? I'd say that that is abduction. You identified an additional thing about the behavior. It's not testing, though, as I argued in my post [*"The difference between a test case and a requirement is the moment of discovery"*](the-difference-between-a-test-case-and-a-requirement-is-the-moment-of-discovery), it's requirements engineering.
+
+??? We can also see how the similarity with the three stages of inquire breaks down here. Inquiry starts from observing some behavior in the world. Requirements engineering is specifying how something should behave. So for the similarity to work, to be at least informative, abduction is more "are we discovering something new - even if it's only tentatively?" versus "are we encountering a surprising fact?"
 
 
 ---
@@ -123,7 +146,7 @@ What if you come up with test ideas upfront? What is that? Speculative requireme
 ---
 
 
-Now what if you identify a missing requirement? I'd say that that is abduction. You identified an additional thing about the behavior. It's not testing, though, as I argued in my post ... (which one? or was it a note?), it's requirements engineering. We can also see how the similarity with the three stages of inquire breaks down here. Inquiry starts from observing some behavior in the world. Requirements engineering is specifying how something should behave. So for the similarity to work, to be at least informative, abduction is more "are we discovering something new - even if it's only tentatively?" versus "are we encountering a surprising fact?"
+
 
 
 ## We don't have facts, we have behavior based on requirements
@@ -158,13 +181,14 @@ This is one of the strengths of contemporary exploratory testing (Maaret!). You 
 
 ## Running experiments - how often, how many?
 
-I remember the days when getting a new release meant first doing some smoke and regression testing, manually. How much of it to do always was an interesting question. You would have no insight in what had been changed, beside a list of the work items that have been implemented in the release. You also had no idea what exactly had been tested. So yeah, that's about as black box as it gets. And this was custom work. So the guarantees by the supplier only went so far. "We've built this the way we think you've asked us to. But do check for yourselves. And once you accept the release, there are no more bugs, only change requests." As one of my old project managers used to say: "The question is not whether it will be fixed or not. The question is who is going to pay for it."
+I remember the days when getting a new release meant first doing some smoke and regression testing, manually. How much of it to do always was an interesting question. You would have no insight in what had been changed, beside a list of the work items that have been implemented in the release. You also had no idea what exactly had been tested. So yeah, that's about as black box as it gets. And this was custom work. So the guarantees by the supplier only went so far. *"We've built this the way we think you've asked us to. But do check for yourselves. And once you accept the release, there are no more bugs, only change requests."* As one of my old project managers used to say: *"The question is not whether it will be fixed or not. The question is who is going to pay for it."*
 
-Contrast this with a modern development team. Hopefully each programmer makes small changes, which then go through a pipeline with a sufficient level of test coverage. That's a lot of induction happening right there, and it takes zero effort to run. (It does take effort to add additional tests, of course.) And while it's not the be-all-end-all of quality, I don't think I ever want to go back to a team that does not have this. Every test is a small hypothesis that once held true. And we can re-verify each of them automatically. How great!
+Contrast this with a modern development team. Hopefully each programmer makes small changes, which then go through a pipeline with a sufficient level of test coverage. That's a lot of induction happening right there, and it takes zero effort to run. (It does take effort to add additional tests, of course.) And while it's not the be-all-end-all of quality, I don't think I ever want to go back to a team that does not have this. Every test is a small hypothesis that once held true. And we can re-verify each of them automatically for every change. Awesome!
 
-This is why some people call automated tests change detectors. They tell you if a hypothesis no longer holds true. That might be a bad thing (most of the time it is), but that might also be a good thing (hypothesis no longer should be true), or an interesting thing (we learn something new). But it's definitely a good thing that you know about it.
+This is why some people call automated tests change detectors. They tell you if a hypothesis no longer holds true. That might be a bad thing (most of the time it is), but that might also be a good thing (hypothesis no longer should be true), or an interesting thing (we learn something new). But it's definitely a good thing that you know something happened.
 
 Tests as hypothesis is a cool angle for TDD. Because you first falsify the hypothesis by running the test before having written the code. Then you write the code that should make the hypothesis true. Then you verify.
+
 
 ### The problem of lazy induction and lazy deduction
 
@@ -180,11 +204,11 @@ A curious thing about software compared to the universe, is that it keeps changi
 
 In science you want to rerun an experiment to check the validity of the experiment. If the part of the universe you're running your experiment on, has changed since you (or someone else) did the experiment last, that's a problem with the experiment, not the universe.
 
-If you rerun a test on some software, there's quite a few options. Perhaps the software changed as intended, but the test did not. Or the software shouldn't have changed, but luckily the test detected it. Or the software changed but the test fails to detect the change. Or the test was changed (incorrectly), and not the software.
+If you rerun a test on some software, there's quite a few options. Perhaps the software changed as intended, but the test did not. Or the software shouldn't have changed, but luckily the test detected it. Or the software changed but the test fails to detect the change. Or the test was changed (incorrectly), and not the software. (or the platform/environment changed, see what do you fix if a test fails post)
 
 So reproducing an experiment is a different game. There is a similarity: we do want our tests to produce the same results on everyone's machine and on the CI/CD server. I've often used it as a test for test automation. It runs on my machine, does this run on yours too? Especially when I was in a team where we had three different OS-es across the team members, this was an important thing to test.
 
-The reason it's a different game is because as we change the software, we want to rerun the same tests. Use them as change detectors. Check the we only changed what we intended to change. (mentioned above as well, and in regression-testing-it-means-less-than-you-think) We might be experimenting against a different universe.
+The reason it's a different game is because as we change the software, we want to rerun the same tests. Use them as change detectors. Check we only changed what we intended to change. (mentioned above as well, and in regression-testing-it-means-less-than-you-think) We might be experimenting against a different universe.
 
 That also means that you want to run these tests whenever you suspect something might have changed. Which brings us to the importance of running these tests automatically:
 
@@ -233,6 +257,9 @@ exercise Rikard Edgren
 ---
 
 ---
+
+
+ignore anything below here
 
 ## Surprising facts versus requirements
 In testing we have multiple sources of facts. No, we have one, the application. The rest is consequences, hence deduced before the fact.
