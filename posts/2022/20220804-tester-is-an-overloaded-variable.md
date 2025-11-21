@@ -67,7 +67,7 @@ For this reason I think that this setup is in many ways the same as having a sep
 [^9]: They are not the same for activities that don't fit in the "testing" column. A tester inside the team, even if it's a for-the-team tester, will have more opportunities to participate in other team activities than a tester who's in a separate testing team.
 
 
-<div style="margin-top: 2.7rem" />
+<div class="spacer-l" />
 
 
 So all of this to say what exactly? I guess nothing more than this: if you say that you have testers or that you don't have testers, that does not tell me a lot. So I'd be curious to hear more about how you do software.

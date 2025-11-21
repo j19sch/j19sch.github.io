@@ -8,6 +8,7 @@ hidetitle: false
 
 # Reading list
 
+*(edit 20 July 2025)* I am no longer updating this page.
 
 ### 2025
 - The Mark Inside: A Perfect Swindle, a Cunning Revenge, and a Small History of the Big Con - Amy Reading
@@ -15,7 +16,8 @@ hidetitle: false
 - Kill It with Fire: Manage Aging Computer Systems (and Future Proof Modern Ones) - Marianne Bellotti (book club)
 - What Did You Say?: The Art of Giving and Receiving Feedback - Charles N. Seashore, Edith Whitfield Seashore, Gerald M. Weinberg (reread)
 - Design and Reality: Essays on Software Design - Rebecca Wirfs-Brock and Mathias Verraes 
-
+- The Places In Between - Rory Stewart
+- Why Read Hannah Arendt Now? - Richard J. Bernstein
 
 ### 2024
 - Blood in the Machine: The Origins of the Rebellion Against Big Tech - Brian Merchant

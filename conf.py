@@ -139,17 +139,6 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/index.html", "Home"),
-        ("/my-projects/", "Projects"),
-        ("/my-talks/", "Talks"),
-        (
-            (
-                ("/my-lists/reading-list/", "Reading list"),
-                ("/my-lists/recommended-reading/", "Recommended reading"),
-                ("/my-lists/favorite-podcasts/", "Favorite podcasts"),
-            ),
-            "Lists"
-        ),
         (
             (
                 ("/blog/", "My blog"),
@@ -160,6 +149,17 @@ NAVIGATION_LINKS = {
             ),
             "Blog"
         ),
+        ("/my-projects/", "Projects"),
+        ("/my-talks/", "Talks"),
+        ("/index.html", "About me"),
+        # (
+        #     (
+        #         ("/my-lists/reading-list/", "Reading list"),
+        #         ("/my-lists/recommended-reading/", "Recommended reading"),
+        #         ("/my-lists/favorite-podcasts/", "Favorite podcasts"),
+        #     ),
+        #     "Lists"
+        # ),
     ),
 }
 
@@ -990,8 +990,8 @@ FEED_LINKS_APPEND_QUERY = False
 # A HTML fragment describing the license, for the sidebar.
 # (translatable)
 LICENSE = """
-<a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow" target="_blank">
-<img alt="Creative Commons License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by/4.0/80x15.png" />
+<a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="nofollow" target="_blank">
+<img alt="Creative Commons BY-NC License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by-nc/4.0/80x15.png" />
 </a>
 """
 # I recommend using the Creative Commons' wizard:
@@ -1233,6 +1233,7 @@ GENERATE_ATOM = True
 # This search form works for any site and looks good in the "site" theme where
 # it appears on the navigation bar:
 #
+# added to base.tmpl because location
 # SEARCH_FORM = """
 # <!-- DuckDuckGo custom search -->
 # <form method="get" id="search" action="https://duckduckgo.com/"

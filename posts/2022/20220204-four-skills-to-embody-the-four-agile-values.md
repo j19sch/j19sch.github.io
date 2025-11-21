@@ -37,7 +37,7 @@ Followed by two paragraphs describing what that would look like. It never gets s
 
 Unfortunately, neither Scrum or XP provided me with what I was looking for. Both of them recognize for example courage as a value, but provide no guidance on how to be courageous[^4]. And that's the thing I'm curious about, although with respect to the values of the Agile Manifesto. What skills do I need to value individuals and interactions over processes and tools? How should my mind work? How can I practice the skill(s) that will allow me to bring that value to life?
 
-<div style="margin-top: 1.7rem;" />
+<div class="spacer" />
 
 This left me to my own devices. After some thought I came up with the following four skills to support embodying the four Agile values:
 

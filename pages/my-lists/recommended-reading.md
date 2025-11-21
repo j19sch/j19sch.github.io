@@ -9,6 +9,8 @@ hidetitle: false
 
 # Recommended reading
 
+*(edit 20 July 2025)* I am no longer updating this page.
+
 ### Non-fiction
 - 7 rules for positive, productive change: Micro shifts, macro results - Esther Derby
 - Becoming a technical leader: An organic problem-solving approach - Jerry Weinberg

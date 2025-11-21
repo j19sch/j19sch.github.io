@@ -43,7 +43,7 @@ __9\. What do you leave behind for future use?__
 &emsp;&emsp; *test automation is output of exploratory testing*  
 
 
-## What do you notice while testing?
+## What do you notice while testing? <a id="noticing"></a>
 
 The skill of noticing is the foundation of many of the other skills of exploratory testing. What you don't notice, is gone. There are two aspects to this skills: external noticing and internal noticing.
 
