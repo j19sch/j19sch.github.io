@@ -10,7 +10,7 @@ hidetitle: true
 <h1>About me</h1>
 
 <div class="d-flex flex-wrap justify-content-between">
-	<div style="max-width:70%" class="mr-5">
+	<div style="max-width:70%" class="mr-3">
 		<p>Joep wandered into software testing in 2006. Two years later, he discovered context-driven testing and realized that testing is actually a good fit for someone with a degree in philosophy. Later he explored his technical interests further by building test automation and tooling.</p>
 		<p>However, after a decade in testing, Joep's focus shifted towards a bigger question: how can teams and organizations build and deliver good software? To answer that question, he has been exploring topics such as technical leadership, agile coaching, and software methodologies. You can see this development reflected in <a href="/blog/" target="_blank">his blog posts</a>.</p>
 		<p>Joep has given <a href="/my-talks/" target="_blank">talks and workshops</a> at conferences throughout Europe. He's also one of the organizers of the <a href="https://frogsconf.nl/" target="_blank">Friends of Good Software</a> unconference. He likes to drink coffee and write with a fountain pen.</p>
@@ -22,7 +22,7 @@ hidetitle: true
 			<li><a href="https://github.com/j19sch" target="_blank">GitHub</a></li>
 		</ul>
 	</div>
-	<div style="max-width:200px">
-		<img src="/images/joep-coffee.jpg" alt="Joep drinking coffee" style="margin-top:0px;" />
+	<div style="max-width:205px">
+		<img src="/images/joep-brewtcon25.jpg" alt="me at BrewtCon25" style="margin-top:0px;" />
 	</div>
 </div>
