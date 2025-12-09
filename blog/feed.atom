@@ -3,13 +3,32 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes</title>
   <id>https://smallsheds.garden/blog/feed.atom</id>
-  <updated>2025-12-07T18:53:16Z</updated>
+  <updated>2025-12-09T11:08:15Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/blog/feed.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Testing types - beyond definitions</title>
+    <id>https://smallsheds.garden/blog/2025/testing-types-beyond-definitions/</id>
+    <updated>2025-12-09T00:00:00+01:00</updated>
+    <published>2025-12-09T00:00:00+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2025/testing-types-beyond-definitions/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Testing types in software testing are a mess. It's not just &lt;a href="https://smallsheds.garden/blog/2016/regression-testing-it-means-less-than-you-think/"&gt;"regression testing"&lt;/a&gt; that can mean more things than there are people in the room. It's true for basically all of them.&lt;/p&gt;
+&lt;p&gt;Just last week a teammate said &lt;em&gt;"We should also do integration testing."&lt;/em&gt; So I asked &lt;em&gt;"What do you mean by integration testing?"&lt;/em&gt;. And the reply was: &lt;em&gt;"Testing the frontend and backend together using Playwright."&lt;/em&gt; Which made me think &lt;em&gt;"I see what you mean, but I would never call that integration testing."&lt;/em&gt; and made me reply: &lt;em&gt;"Yeah, we should."&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The typical solution to this problem is to start defining the different testing types. To me, that's just one approach of many to make sense of testing types. So far I've come up with an additional five.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2025/testing-types-beyond-definitions/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="communication" label="communication"/>
+    <category term="heuristics" label="heuristics"/>
+    <category term="semantics" label="semantics"/>
+    <category term="software-testing" label="software testing"/>
+    <category term="test-management" label="test management"/>
+  </entry>
   <entry>
     <title>We do not all have the same job</title>
     <id>https://smallsheds.garden/blog/2025/we-do-not-all-have-the-same-job/</id>
@@ -204,23 +223,5 @@
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2025/comparing-counterstring-implementations-in-typescript/"&gt;Read more…&lt;/a&gt; (10 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="counterstring" label="counterstring"/>
     <category term="programming" label="programming"/>
-  </entry>
-  <entry>
-    <title>Using "fake it till you make it" to implement counterstring</title>
-    <id>https://smallsheds.garden/blog/2025/using-fake-it-till-you-make-it-to-implement-counterstring/</id>
-    <updated>2025-01-05T00:00:00+01:00</updated>
-    <published>2025-01-05T00:00:00+01:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2025/using-fake-it-till-you-make-it-to-implement-counterstring/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;Last week I implemented &lt;a href="https://www.satisfice.com/download/perlclip"&gt;PerlClip&lt;/a&gt;'s &lt;a href="https://www.satisfice.com/blog/archives/22"&gt;counterstring&lt;/a&gt; in TypeScript. A counterstring is a string that tells you how long it is. For example a counterstring with length 9 looks like this: &lt;code&gt;*3*5*7*9*&lt;/code&gt;. Each number tells you the position of the asterisk following the number. My main goal with this project is to learn more about front-end development.&lt;/p&gt;
-&lt;p&gt;Before I could start doing any front-end stuff, however, I needed to write a function that correctly generates counterstrings. Since I approached it in a way that I really enjoyed, inspired by Llewellyn Falco &lt;a href="https://youtu.be/O1h9ho2G85Q?t=155"&gt;"Fake it till you make it"&lt;/a&gt;, I figured it would make a good first post about this project.&lt;/p&gt;
-&lt;p&gt;The idea behind "fake it till you make it" is simple. Start with an implementation covering a single case ("fake it") and then pull it apart little-by-little until it becomes an actual program ("make it"). As Llewellyn explains in the video, the value of this technique is that it's a lot easier to start from a working example and proceed from there than it is to get complete requirements.&lt;/p&gt;
-&lt;p&gt;I did approach counterstring from the opposite direction, though, as Llewellyn did with Fizzbuzz in the video. Llewellyn starts with FizzBuzz length 20, so a case covering all the logic. Then he refactors it using different techniques, such as separation and encapsulation. While I started with counterstring length 0, the most simple case, and then worked my way up to larger lengths.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2025/using-fake-it-till-you-make-it-to-implement-counterstring/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="counterstring" label="counterstring"/>
-    <category term="programming" label="programming"/>
-    <category term="small-steps" label="small steps"/>
   </entry>
 </feed>

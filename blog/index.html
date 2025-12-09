@@ -85,7 +85,25 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025/we-do-not-all-have-the-same-job/" class="u-url">We do not all have the same&nbsp;job</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025/testing-types-beyond-definitions/" class="u-url">Testing types - beyond&nbsp;definitions</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep&nbsp;Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2025/testing-types-beyond-definitions/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-12-09T00:00:00+01:00" itemprop="datePublished" title="9 December 2025">9 December 2025</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Testing types in software testing are a mess. It&#8217;s not just <a href="2016/regression-testing-it-means-less-than-you-think/">&#8220;regression testing&#8221;</a> that can mean more things than there are people in the room. It&#8217;s true for basically all of&nbsp;them.</p>
+<p>Just last week a teammate said <em>&#8220;We should also do integration testing.&#8221;</em> So I asked <em>&#8220;What do you mean by integration testing?&#8221;</em>. And the reply was: <em>&#8220;Testing the frontend and backend together using Playwright.&#8221;</em> Which made me think <em>&#8220;I see what you mean, but I would never call that integration testing.&#8221;</em> and made me reply: <em>&#8220;Yeah, we&nbsp;should.&#8221;</em></p>
+<p>The typical solution to this problem is to start defining the different testing types. To me, that&#8217;s just one approach of many to make sense of testing types. So far I&#8217;ve come up with an additional&nbsp;five.</p>
+<p class="more"><a href="2025/testing-types-beyond-definitions/">Read&nbsp;more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025/we-do-not-all-have-the-same-job/" class="u-url">We do not all have the same&nbsp;job</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep&nbsp;Schuurkes
@@ -274,25 +292,6 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <p>This is that blog&nbsp;post.</p>
 <p>As a matter of fact, I currently have <a href="https://github.com/j19sch/counterstring/blob/04883b7bb2f3e99f7be81ffa58e4ac5f934d276b/src/alt-counterstrings.ts">9 different implementations</a> of counterstring in TypeScript. Including two that are not mine: one is from <a href="https://www.satisfice.com/download/perlclip">PerClip</a> but translated to TypeScript by me, the other is <a href="https://www.eviltester.com/blog/eviltester/chrome-extensions/2019-02-19-counterstring-snippets/#counterstring-generation-function">EvilTester&#8217;s implementation</a>. There are some interesting lessons to take, both from comparing the code of the different implementations, as from comparing the differences in performance. The <a href="2025/benchmarking-counterstring-implementations-in-typescript/">performance-part of the comparison</a> will have to wait for my next post,&nbsp;though.</p>
 <p class="more"><a href="2025/comparing-counterstring-implementations-in-typescript/">Read&nbsp;more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025/using-fake-it-till-you-make-it-to-implement-counterstring/" class="u-url">Using &#8220;fake it till you make it&#8221; to implement&nbsp;counterstring</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep&nbsp;Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2025/using-fake-it-till-you-make-it-to-implement-counterstring/" rel="bookmark">
-            <time class="published dt-published" datetime="2025-01-05T00:00:00+01:00" itemprop="datePublished" title="5 January 2025">5 January 2025</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>Last week I implemented <a href="https://www.satisfice.com/download/perlclip">PerlClip</a>&#8216;s <a href="https://www.satisfice.com/blog/archives/22">counterstring</a> in TypeScript. A counterstring is a string that tells you how long it is. For example a counterstring with length 9 looks like&nbsp;this: <code>*3*5*7*9*</code>. Each number tells you the position of the asterisk following the number. My main goal with this project is to learn more about front-end&nbsp;development.</p>
-<p>Before I could start doing any front-end stuff, however, I needed to write a function that correctly generates counterstrings. Since I approached it in a way that I really enjoyed, inspired by Llewellyn Falco <a href="https://youtu.be/O1h9ho2G85Q?t=155">&#8220;Fake it till you make it&#8221;</a>, I figured it would make a good first post about this&nbsp;project.</p>
-<p>The idea behind &#8220;fake it till you make it&#8221; is simple. Start with an implementation covering a single case (&#8220;fake it&#8221;) and then pull it apart little-by-little until it becomes an actual program (&#8220;make it&#8221;). As Llewellyn explains in the video, the value of this technique is that it&#8217;s a lot easier to start from a working example and proceed from there than it is to get complete&nbsp;requirements.</p>
-<p>I did approach counterstring from the opposite direction, though, as Llewellyn did with Fizzbuzz in the video. Llewellyn starts with FizzBuzz length 20, so a case covering all the logic. Then he refactors it using different techniques, such as separation and encapsulation. While I started with counterstring length 0, the most simple case, and then worked my way up to larger&nbsp;lengths.</p>
-<p class="more"><a href="2025/using-fake-it-till-you-make-it-to-implement-counterstring/">Read&nbsp;more…</a></p>
 </div>
                 </div>
             </article>

@@ -86,7 +86,26 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024/your-default-response-should-be-a-safe-one/" class="u-url">Your default response should be a safe&nbsp;one</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025/using-fake-it-till-you-make-it-to-implement-counterstring/" class="u-url">Using &#8220;fake it till you make it&#8221; to implement&nbsp;counterstring</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep&nbsp;Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2025/using-fake-it-till-you-make-it-to-implement-counterstring/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-01-05T00:00:00+01:00" itemprop="datePublished" title="5 January 2025">5 January 2025</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Last week I implemented <a href="https://www.satisfice.com/download/perlclip">PerlClip</a>&#8216;s <a href="https://www.satisfice.com/blog/archives/22">counterstring</a> in TypeScript. A counterstring is a string that tells you how long it is. For example a counterstring with length 9 looks like&nbsp;this: <code>*3*5*7*9*</code>. Each number tells you the position of the asterisk following the number. My main goal with this project is to learn more about front-end&nbsp;development.</p>
+<p>Before I could start doing any front-end stuff, however, I needed to write a function that correctly generates counterstrings. Since I approached it in a way that I really enjoyed, inspired by Llewellyn Falco <a href="https://youtu.be/O1h9ho2G85Q?t=155">&#8220;Fake it till you make it&#8221;</a>, I figured it would make a good first post about this&nbsp;project.</p>
+<p>The idea behind &#8220;fake it till you make it&#8221; is simple. Start with an implementation covering a single case (&#8220;fake it&#8221;) and then pull it apart little-by-little until it becomes an actual program (&#8220;make it&#8221;). As Llewellyn explains in the video, the value of this technique is that it&#8217;s a lot easier to start from a working example and proceed from there than it is to get complete&nbsp;requirements.</p>
+<p>I did approach counterstring from the opposite direction, though, as Llewellyn did with Fizzbuzz in the video. Llewellyn starts with FizzBuzz length 20, so a case covering all the logic. Then he refactors it using different techniques, such as separation and encapsulation. While I started with counterstring length 0, the most simple case, and then worked my way up to larger&nbsp;lengths.</p>
+<p class="more"><a href="2025/using-fake-it-till-you-make-it-to-implement-counterstring/">Read&nbsp;more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2024/your-default-response-should-be-a-safe-one/" class="u-url">Your default response should be a safe&nbsp;one</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep&nbsp;Schuurkes
