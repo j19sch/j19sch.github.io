@@ -11,7 +11,7 @@
 
 Exploratory testing is a learned skill, as I claimed in my previous post *["Being intentional about exploratory testing"](link://slug/being-intentional-about-exploratory-testing)*. In that post I mentioned the importance of two skills: noticing what there is to notice and deciding what to do next. Turns out it's not the first time I mentioned that pair of skills. In a post about [how to teach Agile](link://slug/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto#noticing-options-principles), I quoted John Mason's *"Researching Your Own Practice, The Discipline of Noticing"*:
 
-> "All professional development could be described as changes in sensitivity to notice and accumulation of alternative actions to initiate."" (p. 147)
+> "All professional development could be described as changes in sensitivity to notice and accumulation of alternative actions to initiate." (p. 147)
 
 That does raise the question if the skills of exploratory testing can't be made a little more specific. After giving it some thought, I came up with seven additional skills, making a total of nine. For some reasons they ended up as questions rather than nouns. I like how that makes this post less of a checklist and more of a tool for self-reflection. Each skill could be its own blog post, so I'm going to focus on one key element of each skill.
 

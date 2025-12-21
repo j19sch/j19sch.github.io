@@ -2,7 +2,7 @@
 .. title: Three thoughts on risk-based testing
 .. slug: three-thoughts-on-risk-based-testing
 .. date: 2022-07-17 11:56:30 UTC+02:00
-.. tags: coverage, software testing, test management, test strategy
+.. tags: coverage, software testing, test management, test strategy, risk
 .. category: test strategy
 .. link: 
 .. description: 
