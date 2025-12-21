@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="CI/CD is about risk, not speed.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Not continuous everything! | Joep Schuurkes</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" hreflang="en" href="../../feed.atom">
+<link rel="canonical" href="https://smallsheds.garden/blog/2025/not-continuous-everything/">
+<link rel="icon" href="../../../assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="../../../assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../assets/favicons/favicon-96x96.png" sizes="96x96">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script><meta name="author" content="Joep Schuurkes">
+<link rel="prev" href="../testing-types-beyond-definitions/" title="Testing types - beyond definitions" type="text/html">
+<meta property="og:site_name" content="Joep Schuurkes">
+<meta property="og:title" content="Not continuous everything!">
+<meta property="og:url" content="https://smallsheds.garden/blog/2025/not-continuous-everything/">
+<meta property="og:description" content="CI/CD is about risk, not speed.">
+<meta property="og:image" content="https://smallsheds.garden/images/default-preview.jpeg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2025-12-21T00:00:00+01:00">
+<meta property="article:tag" content="ci/cd">
+<meta property="article:tag" content="quality engineering">
+<meta property="article:tag" content="risk">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="../../../">
+
+            <span id="blog-title">Joep Schuurkes</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../" class="dropdown-item">My blog</a>
+                    <a href="../../../categories/" class="dropdown-item">Categories and tags</a>
+                    <a href="../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../rss.xml" class="dropdown-item"><span class="caps">RSS</span> feed</a>
+                    <a href="../../feed.atom" class="dropdown-item">Atom feed</a>
+            </div>
+                </li>
+<li class="nav-item">
+<a href="../../../my-projects/" class="nav-link">Projects</a>
+                </li>
+<li class="nav-item">
+<a href="../../../my-talks/" class="nav-link">Talks</a>
+                </li>
+<li class="nav-item">
+<a href="../../../index.html" class="nav-link">About&nbsp;me</a>
+
+                
+            </li>
+</ul>
+<div id="search" style="text-align: center;margin-left: 40px; margin-right: 40px">
+                <form method="get" id="search" target="_blank" action="https://noai.duckduckgo.com/">
+                    <input type="hidden" name="sites" value="https://smallsheds.garden/"><input type="hidden" name="k8" value="#444444"><!-- text color code --><input type="hidden" name="k9" value="#D51920"><!-- links color code --><input type="hidden" name="kt" value="h"><!-- text font --><input type="text" name="q" size="14" maxlength="255" placeholder="Search..." arial-label="search this site" class="span2" style="margin-top: 4px;"><input type="submit" value="DuckDuckGo Search" style="display:none;">
+</form>
+            </div>
+        </div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Not continuous&nbsp;everything!</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Joep&nbsp;Schuurkes
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2025-12-21T00:00:00+01:00" itemprop="datePublished" title="21 December 2025">21 December 2025</time></a>
+            </p>
+            
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p>In Chapter 18 of &#8220;Taking Testing Seriously&#8221; (I skipped ahead, sue me), <a href="https://qualityremarks.com/">Keith Klain</a>&nbsp;says:</p>
+<blockquote>
+<p>So much today is about &#8220;continuous everything&#8221; - continuous deployment, continuous integration - and speed. The pace at which people are doing things is really, really disruptive to thinking deeply about problems. Then the goal gets displaced from getting good products and services to customers quickly, and turns into, &#8220;How do we back something out quickly when we inevitably screw up?&#8221; It&#8217;s continuous everything - except continuous thinking.<br><em>- Taking Testing Seriously, James Bach, Michael Bolton et al., 2025, p.&nbsp;424</em></p>
+</blockquote>
+<p>He has a point. But I got there by first kind of disagreeing with what he said. Because &#8220;continuous everything&#8221; is not about speed. It&#8217;s about risk. Or rather, about managing certain risks: the risk of (code) integration and the risks of delivery/deployment. And how fast you go, should not just be determined by those two specific risks. (Or even worse, by the fact that you just think it&#8217;s really cool that you can release every commit to your users.) It should be determined by your overall risk appetite, which is a much broader&nbsp;perspective.</p>
+<!-- TEASER_END -->
+
+<h2>Not all software is the&nbsp;same</h2>
+<p>Not all software is created equally. <a href="../we-do-not-all-have-the-same-job/">We do not all have the same job.</a> Building a medical device is not quite the same as building a web app for your startup. Building a unified front-end across several backend systems, including a 40-year-old mainframe with life insurance policies, is different from building a video&nbsp;game.</p>
+<p>The required level of safety is different. The complexity of the domain is different. The number and types of systems you need to integrate with is different. So are the types of systems and devices. The amount of experience within your team with the domain, the technologies, etc. probably is also different. The pressure from the market to release often is different. And so on and so&nbsp;on.</p>
+<p>So many differences, all leading to different kinds of risk and different levels of risk. And to different levels of risk appetite. That risk appetite is what should inform how fast you&#8217;re comfortable to go, not your technical&nbsp;capabilities.</p>
+<p>Before elaborating further, however, I should probably clarify what I mean by &#8220;continuous integration&#8221; and&nbsp;friends.</p>
+<h2>What is&nbsp;<span class="caps">CI</span>/<span class="caps">CD</span>?</h2>
+<p><strong>Continuous integration</strong> is developers integrating their code at least once a day. (Because merge conflicts are the worst.)<br><strong>Continuous delivery</strong> is building the thing you will deploy with every (code) integration. (And do test the thing by deploying it somewhere.)<br><strong>Continuous deployment</strong> is deploying the thing to production with every (code) integration. (A deploy doesn&#8217;t also have to be a release.)<br><strong>Releasing</strong> is making a piece of functionality available to your users. (Big bang or in steps, your&nbsp;choice.)</p>
+<p>Continuous integration is at least as old as Extreme Programming (<span class="caps">XP</span>), where it is one of the primary practices. There it does include continuous delivery,&nbsp;though:</p>
+<blockquote>
+<p>Integrate and build a complete product. If the goal is to burn a <span class="caps">CD</span>, burn a <span class="caps">CD</span>. If the goal is to deploy a web site, deploy a web site, even if it is to a test environment. Continuous integration should be complete enough that the eventual first deployment of the system is no big deal.<br><em>- Extreme Programming Explained 2nd ed., Kent Beck with Cynthia Andres, 2005, p.&nbsp;50</em></p>
+</blockquote>
+<p>David Farley and Jez Humble extended that line of thought to&nbsp;deployment:</p>
+<blockquote>
+<p>Following the motto of Extreme Programming - if it hurts, do it more often - the logical extreme is to deploy every change that passes your automated tests to production. This technique is known as continuous deployment, <a href="http://timothyfitz.com/2009/02/08/continuous-deployment/">a term popularized by Timothy Fitz</a>. Of course it&#8217;s not just continuous deployment (I can continuously deploy to <span class="caps">UAT</span> all I like: no big deal). The crucial point is that it is continuous deployment <em>to production</em>.<br><em>- Continuous Delivery, Jez Humble and David Farley, 2011,&nbsp;p.266</em></p>
+</blockquote>
+<p>It&#8217;s worth to note here that Timothy Fitz frames his blog post with a fictional story inspired by what he sees at <em>&#8220;most startups I know&#8221;</em>. As said previously, not all software is the same. And Humble and Farley are aware of this. They include <em>&#8220;manual test stages&#8221;</em> in their description of a deployment pipeline: <em>&#8220;These [manual test] stages might typically include exploratory testing environments, integration environments, and <span class="caps">UAT</span> (user acceptance testing).&#8221; (p. 110)</em> The goal is not to automate the whole process, but that <em>&#8220;error-prone and complex steps [to deliver software] are automated, reliable, and repeatable in execution.&#8221; (p.&nbsp;110)</em></p>
+<h2>So <span class="caps">CI</span>/<span class="caps">CD</span> does imply&nbsp;speed&#8230;</h2>
+<p>Doing both continuous integration and continuous deployment does imply speed. If developers integrate their changes on a shared branch at least once a day, and if every commit on that branch gets either deployed or reverted based on the quality gates in the <span class="caps">CI</span>/<span class="caps">CD</span>-pipeline, you are moving fast. <a href="https://charity.wtf/">Charity Majors</a> has described this as: you write code in the morning and observe its behavior on production in the afternoon.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<p>That might sound scary and that&#8217;s fine, because continuous deployment is not always the right&nbsp;choice:</p>
+<blockquote>
+<p>Continuous deployment isn&#8217;t for everyone. Sometimes, you don&#8217;t want to release new features into production immediately. In companies with constraints on compliance, approvals are required for deployments to production. Product companies usually have to support every release they put out. However, it certainly has the potential to work in a great many places.<br><em>- Continuous Delivery, Jez Humble and David Farley, 2011,&nbsp;p.267</em></p>
+</blockquote>
+<p>So what if we just did continuous integration and continuous delivery? We integrate code often, because the longer we wait with that, the riskier it gets. And when we integrate, we deploy to a test environment, because just as you&#8217;re releasing a hotfix, is not the time you want to find out your deployments are horribly broken. That sounds sensible rather than scary,&nbsp;no?</p>
+<p>And it moves the focus of &#8220;continuous everything&#8221; away from speed and towards risk&nbsp;again.</p>
+<h2>but the main point is&nbsp;risk</h2>
+<p>Framing <span class="caps">CI</span>/<span class="caps">CD</span> in terms of risk instead of speed, is also exactly what James Shore does in his book &#8220;The Art of Agile Development&#8221; (note that he uses &#8220;continuous integration&#8221; in the <span class="caps">XP</span>-sense of including&nbsp;delivery):</p>
+<blockquote>
+<p>The ultimate goal of continuous integration is to make releasing a <em>business</em> decision, not a <em>technical</em> decision. When on-site customers are ready to release, you push a button and release.
+<em>- The Art of Agile Development 2nd ed., James Shore, 2021, p.&nbsp;344</em></p>
+</blockquote>
+<p>It&#8217;s the development team saying: <em>&#8220;We can release what we have built at any time. Do you want us to?&#8221;</em> It&#8217;s about mitigating as much of the technical risks as possible, leaving the business risks. Hence it&#8217;s the &#8220;on-site customer&#8221; that gets to decide if they&#8217;re ready to release. And that way <span class="caps">CI</span>/<span class="caps">CD</span> does become a valuable tool for (in Keith&#8217;s words) <em>&#8220;getting good products and services to customers quickly&#8221;</em>.</p>
+<hr>
+<h2 class="small">Postscript</h2>
+<p>Originally I was planning to also address the &#8220;continuous thinking&#8221; Keith mentions, but it became a distraction from the main point. I can&#8217;t help dropping some brief notes here,&nbsp;though.</p>
+<p>The wonderful Thierry de Pauw has identified <a href="https://thinkinglabs.io/articles/2022/06/14/the-practices-that-make-continuous-integration.html">16 practices that make continuous integration</a>. And the book &#8220;Continuous Delivery&#8221; by Jez Humble and David Farley is over 400 pages long. So yeah, one does not simply do&nbsp;<span class="caps">CI</span>/<span class="caps">CD</span>.</p>
+<p>There&#8217;s more to it than that, though. As <a href="https://thinkinglabs.io/articles/2024/09/15/the-practices-that-make-continuous-integration-make-the-build-self-testing.html">Thierry points out</a>:</p>
+<blockquote>
+<p>Note, that I say those automated tests prevent regressions, not bugs. <strong>Tests do not prove the absence of bugs.</strong> In the end, those automated tests are only checks. They check the things we know about our <span class="caps">IT</span> systems. They do not tell us anything about the things we do not know. The <strong>bugs lie in the unknowns.</strong> We can try to find them with Exploratory Testing in a staging environment or better in production with features turned off for&nbsp;users.</p>
+</blockquote>
+<p>And Humble and Farley agree, mentioning exploratory testing as part of establishing effective feedback loops for the naturally iterative process that is software development.&nbsp;(p.89-90)</p>
+<p>So there has to be thinking at or near the end of your <span class="caps">CI</span>/<span class="caps">CD</span> pipeline. Through exploratory testing and through other&nbsp;means.</p>
+<p>However, and I feel this rarely gets mentioned, there also needs to be thinking before your <span class="caps">CI</span>/<span class="caps">CD</span> pipeline. A development team that understands the domain, their mission, and how their current work contributes to that mission, will be delivering a lot more value than a team that continuously deploys to production just to see what&nbsp;sticks.</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>If anyone has a source for this, I&#8217;ll take it. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/cicd/" rel="tag">ci/cd</a></li>
+            <li><a class="tag p-category" href="../../../categories/quality-engineering/" rel="tag">quality&nbsp;engineering</a></li>
+            <li><a class="tag p-category" href="../../../categories/risk/" rel="tag">risk</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../testing-types-beyond-definitions/" rel="prev" title="Testing types - beyond definitions">Previous&nbsp;post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2025 
+<a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="nofollow" target="_blank">
+<img alt="Creative Commons BY-NC License" style="border-width:0;margin: 0px 0px 0px 0px" src="https://licensebuttons.net/l/by-nc/4.0/80x15.png"></a>
+<a href="mailto:site@joep.slmail.me">Joep Schuurkes</a> - Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a> - Analytics by <a href="https://plausible.io/" rel="nofollow" target="_blank">Plausible</a>
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

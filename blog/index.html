@@ -85,7 +85,27 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025/testing-types-beyond-definitions/" class="u-url">Testing types - beyond&nbsp;definitions</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025/not-continuous-everything/" class="u-url">Not continuous&nbsp;everything!</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep&nbsp;Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2025/not-continuous-everything/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-12-21T00:00:00+01:00" itemprop="datePublished" title="21 December 2025">21 December 2025</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>In Chapter 18 of &#8220;Taking Testing Seriously&#8221; (I skipped ahead, sue me), <a href="https://qualityremarks.com/">Keith Klain</a>&nbsp;says:</p>
+<blockquote>
+<p>So much today is about &#8220;continuous everything&#8221; - continuous deployment, continuous integration - and speed. The pace at which people are doing things is really, really disruptive to thinking deeply about problems. Then the goal gets displaced from getting good products and services to customers quickly, and turns into, &#8220;How do we back something out quickly when we inevitably screw up?&#8221; It&#8217;s continuous everything - except continuous thinking.<br><em>- Taking Testing Seriously, James Bach, Michael Bolton et al., 2025, p.&nbsp;424</em></p>
+</blockquote>
+<p>He has a point. But I got there by first kind of disagreeing with what he said. Because &#8220;continuous everything&#8221; is not about speed. It&#8217;s about risk. Or rather, about managing certain risks: the risk of (code) integration and the risks of delivery/deployment. And how fast you go, should not just be determined by those two specific risks. (Or even worse, by the fact that you just think it&#8217;s really cool that you can release every commit to your users.) It should be determined by your overall risk appetite, which is a much broader&nbsp;perspective.</p>
+<p class="more"><a href="2025/not-continuous-everything/">Read&nbsp;more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025/testing-types-beyond-definitions/" class="u-url">Testing types - beyond&nbsp;definitions</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep&nbsp;Schuurkes
@@ -271,27 +291,6 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <p>So what does that mean, optimizing for moments of discovery? Don&#8217;t those moments just happen? Isn&#8217;t that what serendipity is all about? I think it&#8217;s fair to say that you can&#8217;t make moments of discovery happen. You <em>can</em> make them more likely to happen. That you <em>can</em> optimize&nbsp;for.</p>
 <p>Before I go into two practices to optimize for these moments of discovery, I want to talk more generally about moving the moment of discovery, either earlier or later, for both requirements and test cases, i.e. for design and test. Because the two practices will do exactly that: moving the moment of&nbsp;discovery.</p>
 <p class="more"><a href="2025/optimizing-for-moments-of-discovery/">Read&nbsp;more…</a></p>
-</div>
-                </div>
-            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025/comparing-counterstring-implementations-in-typescript/" class="u-url">Comparing counterstring implementations in&nbsp;TypeScript</a></h1>
-                <div class="metadata">
-                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                        Joep&nbsp;Schuurkes
-                    </span></p>
-            <p class="dateline">
-            <a href="2025/comparing-counterstring-implementations-in-typescript/" rel="bookmark">
-            <time class="published dt-published" datetime="2025-01-19T00:00:00+01:00" itemprop="datePublished" title="19 January 2025">19 January 2025</time></a>
-            </p>
-                </div>
-            </header><div class="p-summary entry-summary">
-                    <div>
-<p>In my previous post <a href="2025/using-fake-it-till-you-make-it-to-implement-counterstring/">&#8220;Using &#8216;fake it till you make it&#8217; to implement counterstring&#8221;</a> I mentioned the implementation I included there, wasn&#8217;t my initial&nbsp;implementation:</p>
-<blockquote>
-<p>I did something less performant with reversing an array, because I had looked at PerlClips&#8217;s source code. How that came about and what I learned from it, is for another blog&nbsp;post.</p>
-</blockquote>
-<p>This is that blog&nbsp;post.</p>
-<p>As a matter of fact, I currently have <a href="https://github.com/j19sch/counterstring/blob/04883b7bb2f3e99f7be81ffa58e4ac5f934d276b/src/alt-counterstrings.ts">9 different implementations</a> of counterstring in TypeScript. Including two that are not mine: one is from <a href="https://www.satisfice.com/download/perlclip">PerClip</a> but translated to TypeScript by me, the other is <a href="https://www.eviltester.com/blog/eviltester/chrome-extensions/2019-02-19-counterstring-snippets/#counterstring-generation-function">EvilTester&#8217;s implementation</a>. There are some interesting lessons to take, both from comparing the code of the different implementations, as from comparing the differences in performance. The <a href="2025/benchmarking-counterstring-implementations-in-typescript/">performance-part of the comparison</a> will have to wait for my next post,&nbsp;though.</p>
-<p class="more"><a href="2025/comparing-counterstring-implementations-in-typescript/">Read&nbsp;more…</a></p>
 </div>
                 </div>
             </article>

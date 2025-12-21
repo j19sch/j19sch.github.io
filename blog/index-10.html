@@ -86,7 +86,28 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025/using-fake-it-till-you-make-it-to-implement-counterstring/" class="u-url">Using &#8220;fake it till you make it&#8221; to implement&nbsp;counterstring</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025/comparing-counterstring-implementations-in-typescript/" class="u-url">Comparing counterstring implementations in&nbsp;TypeScript</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep&nbsp;Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2025/comparing-counterstring-implementations-in-typescript/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-01-19T00:00:00+01:00" itemprop="datePublished" title="19 January 2025">19 January 2025</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>In my previous post <a href="2025/using-fake-it-till-you-make-it-to-implement-counterstring/">&#8220;Using &#8216;fake it till you make it&#8217; to implement counterstring&#8221;</a> I mentioned the implementation I included there, wasn&#8217;t my initial&nbsp;implementation:</p>
+<blockquote>
+<p>I did something less performant with reversing an array, because I had looked at PerlClips&#8217;s source code. How that came about and what I learned from it, is for another blog&nbsp;post.</p>
+</blockquote>
+<p>This is that blog&nbsp;post.</p>
+<p>As a matter of fact, I currently have <a href="https://github.com/j19sch/counterstring/blob/04883b7bb2f3e99f7be81ffa58e4ac5f934d276b/src/alt-counterstrings.ts">9 different implementations</a> of counterstring in TypeScript. Including two that are not mine: one is from <a href="https://www.satisfice.com/download/perlclip">PerClip</a> but translated to TypeScript by me, the other is <a href="https://www.eviltester.com/blog/eviltester/chrome-extensions/2019-02-19-counterstring-snippets/#counterstring-generation-function">EvilTester&#8217;s implementation</a>. There are some interesting lessons to take, both from comparing the code of the different implementations, as from comparing the differences in performance. The <a href="2025/benchmarking-counterstring-implementations-in-typescript/">performance-part of the comparison</a> will have to wait for my next post,&nbsp;though.</p>
+<p class="more"><a href="2025/comparing-counterstring-implementations-in-typescript/">Read&nbsp;more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025/using-fake-it-till-you-make-it-to-implement-counterstring/" class="u-url">Using &#8220;fake it till you make it&#8221; to implement&nbsp;counterstring</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep&nbsp;Schuurkes
@@ -137,7 +158,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
                     <div>
 <p>Exploratory testing is a learned skill, as I claimed in my previous post <em><a href="2024/being-intentional-about-exploratory-testing/">&#8220;Being intentional about exploratory testing&#8221;</a></em>. In that post I mentioned the importance of two skills: noticing what there is to notice and deciding what to do next. Turns out it&#8217;s not the first time I mentioned that pair of skills. In a post about <a href="2021/an-approach-to-teaching-agile-20-years-after-the-agile-manifesto/#noticing-options-principles">how to teach Agile</a>, I quoted John Mason&#8217;s <em>&#8220;Researching Your Own Practice, The Discipline of Noticing&#8221;</em>:</p>
 <blockquote>
-<p><span class="dquo">&#8220;</span>All professional development could be described as changes in sensitivity to notice and accumulation of alternative actions to initiate.&#8221;&#8221; (p.&nbsp;147)</p>
+<p><span class="dquo">&#8220;</span>All professional development could be described as changes in sensitivity to notice and accumulation of alternative actions to initiate.&#8221; (p.&nbsp;147)</p>
 </blockquote>
 <p>That does raise the question if the skills of exploratory testing can&#8217;t be made a little more specific. After giving it some thought, I came up with seven additional skills, making a total of nine. For some reasons they ended up as questions rather than nouns. I like how that makes this post less of a checklist and more of a tool for self-reflection. Each skill could be its own blog post, so I&#8217;m going to focus on one key element of each&nbsp;skill.</p>
 <p class="more"><a href="2024/the-nine-skills-of-exploratory-testing/">Read&nbsp;more…</a></p>

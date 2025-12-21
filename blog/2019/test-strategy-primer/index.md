@@ -2,7 +2,7 @@
 .. title: Test strategy primer
 .. slug: test-strategy-primer
 .. date: 2019-01-29 21:34:19 UTC+01:00
-.. tags: test strategy, test management, context-driven testing
+.. tags: test strategy, test management, context-driven testing, risk
 .. category: test strategy
 .. link: 
 .. description:
