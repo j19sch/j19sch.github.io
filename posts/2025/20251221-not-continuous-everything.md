@@ -11,7 +11,7 @@
 In Chapter 18 of "Taking Testing Seriously" (I skipped ahead, sue me), [Keith Klain](https://qualityremarks.com/) says:
 
 > So much today is about "continuous everything" - continuous deployment, continuous integration - and speed. The pace at which people are doing things is really, really disruptive to thinking deeply about problems. Then the goal gets displaced from getting good products and services to customers quickly, and turns into, "How do we back something out quickly when we inevitably screw up?" It's continuous everything - except continuous thinking.  
-> *- Taking Testing Seriously, Bach, Bolton et al., 2025, p. 424*
+> *- Taking Testing Seriously, James Bach, Michael Bolton et al., 2025, p. 424*
 
 He has a point. But I got there by first kind of disagreeing with what he said. Because "continuous everything" is not about speed. It's about risk. Or rather, about managing certain risks: the risk of (code) integration and the risks of delivery/deployment. And how fast you go, should not just be determined by those two specific risks. (Or even worse, by the fact that you just think it's really cool that you can release every commit to your users.) It should be determined by your overall risk appetite, which is a much broader perspective.
 
