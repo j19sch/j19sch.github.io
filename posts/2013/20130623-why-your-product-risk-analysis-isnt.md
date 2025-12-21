@@ -2,7 +2,7 @@
 .. title: Why your Product Risk Analysis isn't
 .. slug: why-your-product-risk-analysis-isnt
 .. date: 2013-06-23 14:34:36 UTC+02:00
-.. tags: test management, test reporting, test strategy
+.. tags: test management, test reporting, test strategy, risk
 .. category: test strategy
 .. link: 
 .. description:

@@ -3,7 +3,7 @@
 .. slug: being-intentional-about-exploratory-testing
 .. date: 2024-11-09
 .. category: exploratory testing
-.. tags: exploratory testing, quality engineering, software development, software testing,
+.. tags: exploratory testing, quality engineering, software development, software testing, risk
 .. type: text
 .. description: Being intentional about exploratory testing, i.e. exploring and evaluating what you are building and what you have built throughout the development process, is a key skill in a high-performing team.
 -->
