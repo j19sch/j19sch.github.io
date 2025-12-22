@@ -9,4 +9,6 @@ hidetitle: true
 
 <div style='margin-bottom: 1.5rem' markdown="1"></div>
 
-If you got here through a redirect from my old site, you can use the [Archive](link://archive/) page or [Categories and tags](link://category_index) page to find the post you were looking for.
+To find the page you're looking for, you can use the [Archive](link://archive/) page or the [Categories and tags](link://category_index) page.
+
+Or you can use the search box in the nav bar.
