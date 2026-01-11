@@ -1282,7 +1282,12 @@ GENERATE_ATOM = True
 # before </head>
 # (translatable)
 EXTRA_HEAD_DATA = """
-<script defer data-domain="j19sch.github.io" src="https://plausible.io/js/plausible.js"></script>
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-QXPguu2aya7fgEtw5-p4P.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
 """
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
