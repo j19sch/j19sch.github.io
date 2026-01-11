@@ -665,20 +665,6 @@ ATOM_FILENAME_BASE = "feed"
 REDIRECTIONS = [
     ("404.html", "/404-page/"),
     ("blog/clojure/", "/my-projects/learning-clojure/"),
-    ("2020/05/17/learning-clojure-a-blog-post-series/", "/my-projects/learning-clojure/"),
-    ("2019/04/28/solving-black-box-puzzle-31-with-data-analysis/", "/blog/2019/solving-black-box-puzzle-31-with-data-analysis/"),
-    ("2019/08/05/your-ci-cd-pipeline-does-not-run-regression-tests/", "/blog/2019/your-ci-cd-pipeline-does-not-run-regression-tests/"),
-    ("2020/07/19/its-time-to-retire-our-test-case-management-tools/", "/blog/2020/its-time-to-retire-our-test-case-management-tools/"),
-    ("2013/07/06/test-cases-cant-do-m-no-more/", "/blog/2013/test-cases-cant-do-m-no-more/"),
-    ("2017/02/05/testing-maturity-in-an-agilecdt-context/", "/blog/2017/testing-maturity-in-an-agilecdt-context/"),
-    ("2012/07/29/vipt-how-to-teach-software-testing/", "/blog/2012/vipt-how-to-teach-software-testing/"),
-    ("2019/01/29/test-strategy-primer/", "/blog/2019/test-strategy-primer/"),
-    ("2015/03/24/test-automation-five-questions-leading-to-five-heuristics/", "/blog/2015/test-automation-five-questions-leading-to-five-heuristics/"),
-    ("2019/06/08/how-this-tester-writes-code/", "/blog/2019/how-this-tester-writes-code/"),
-    ("2016/01/03/regression-testing-it-means-less-than-you-think/", "/blog/2016/regression-testing-it-means-less-than-you-think/"),
-    ("2015/02/01/the-test-case-an-epistemological-deconstruction/", "/blog/2015/the-test-case-an-epistemological-deconstruction/"),
-    ("2018/12/04/manifesto-for-software-testing/","/blog/2018/manifesto-for-software-testing/"),
-    ("2018/12/22/reflections-on-my-testing-manifesto/", "/blog/2018/reflections-on-my-testing-manifesto/"),
 ]
 
 # Presets of commands to execute to deploy. Can be anything, for
