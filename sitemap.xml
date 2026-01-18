@@ -7,22 +7,14 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://smallsheds.garden/</loc>
-  <lastmod>2025-08-10T13:24:00Z</lastmod>
+  <lastmod>2026-01-18T13:41:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/2012/</loc>
   <lastmod>2025-08-10T13:24:00Z</lastmod>
  </url>
  <url>
-  <loc>https://smallsheds.garden/2012/07/29/vipt-how-to-teach-software-testing/</loc>
-  <lastmod>2025-08-10T13:24:00Z</lastmod>
- </url>
- <url>
   <loc>https://smallsheds.garden/2013/</loc>
-  <lastmod>2025-08-10T13:24:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/2013/07/06/test-cases-cant-do-m-no-more/</loc>
   <lastmod>2025-08-10T13:24:00Z</lastmod>
  </url>
  <url>
@@ -34,19 +26,7 @@
   <lastmod>2025-08-10T13:24:00Z</lastmod>
  </url>
  <url>
-  <loc>https://smallsheds.garden/2015/02/01/the-test-case-an-epistemological-deconstruction/</loc>
-  <lastmod>2025-08-10T13:24:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/2015/03/24/test-automation-five-questions-leading-to-five-heuristics/</loc>
-  <lastmod>2025-08-10T13:24:00Z</lastmod>
- </url>
- <url>
   <loc>https://smallsheds.garden/2016/</loc>
-  <lastmod>2025-08-10T13:24:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/2016/01/03/regression-testing-it-means-less-than-you-think/</loc>
   <lastmod>2025-08-10T13:24:00Z</lastmod>
  </url>
  <url>
@@ -54,19 +34,7 @@
   <lastmod>2025-08-10T13:24:00Z</lastmod>
  </url>
  <url>
-  <loc>https://smallsheds.garden/2017/02/05/testing-maturity-in-an-agilecdt-context/</loc>
-  <lastmod>2025-08-10T13:24:00Z</lastmod>
- </url>
- <url>
   <loc>https://smallsheds.garden/2018/</loc>
-  <lastmod>2025-08-10T13:24:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/2018/12/04/manifesto-for-software-testing/</loc>
-  <lastmod>2025-08-10T13:24:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/2018/12/22/reflections-on-my-testing-manifesto/</loc>
   <lastmod>2025-08-10T13:24:00Z</lastmod>
  </url>
  <url>
@@ -74,31 +42,7 @@
   <lastmod>2025-08-10T13:24:00Z</lastmod>
  </url>
  <url>
-  <loc>https://smallsheds.garden/2019/01/29/test-strategy-primer/</loc>
-  <lastmod>2025-08-10T13:24:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/2019/04/28/solving-black-box-puzzle-31-with-data-analysis/</loc>
-  <lastmod>2025-08-10T13:24:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/2019/06/08/how-this-tester-writes-code/</loc>
-  <lastmod>2025-08-10T13:24:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/2019/08/05/your-ci-cd-pipeline-does-not-run-regression-tests/</loc>
-  <lastmod>2025-08-10T13:24:00Z</lastmod>
- </url>
- <url>
   <loc>https://smallsheds.garden/2020/</loc>
-  <lastmod>2025-08-10T13:24:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/2020/05/17/learning-clojure-a-blog-post-series/</loc>
-  <lastmod>2025-08-10T13:24:00Z</lastmod>
- </url>
- <url>
-  <loc>https://smallsheds.garden/2020/07/19/its-time-to-retire-our-test-case-management-tools/</loc>
   <lastmod>2025-08-10T13:24:00Z</lastmod>
  </url>
  <url>
@@ -122,16 +66,20 @@
   <lastmod>2025-08-10T13:24:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/2026/</loc>
+  <lastmod>2026-01-18T13:41:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/404-page/</loc>
   <lastmod>2025-08-10T13:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/archive.html</loc>
-  <lastmod>2026-01-11T14:01:00Z</lastmod>
+  <lastmod>2026-01-18T13:41:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/</loc>
-  <lastmod>2025-08-10T13:24:00Z</lastmod>
+  <lastmod>2026-01-18T13:41:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/2012/dewt2-becoming-a-context-driven-tester/</loc>
@@ -510,6 +458,10 @@
   <lastmod>2025-11-16T13:39:00Z</lastmod>
  </url>
  <url>
+  <loc>https://smallsheds.garden/blog/2026/three-basic-truths-about-planning/</loc>
+  <lastmod>2026-01-18T13:41:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://smallsheds.garden/blog/clojure/</loc>
   <lastmod>2025-08-10T13:24:00Z</lastmod>
  </url>
@@ -571,7 +523,7 @@
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-10.html</loc>
-  <lastmod>2026-01-11T14:01:00Z</lastmod>
+  <lastmod>2026-01-18T13:41:00Z</lastmod>
  </url>
  <url>
   <loc>https://smallsheds.garden/blog/index-2.html</loc>
