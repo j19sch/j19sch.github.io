@@ -19,6 +19,7 @@ hidetitle: true
 		<ul>
 			<li><a href="https://chaos.social/@joeposaurus" target="_blank" rel="me">Mastodon</a></li>
 			<li><a href="https://www.linkedin.com/in/joepschuurkes/" target="_blank">LinkedIn</a></li>
+			<li><a href="https://codeberg.org/joeposaurus" target="_blank">Codeberg</a></li>
 			<li><a href="https://github.com/j19sch" target="_blank">GitHub</a></li>
 		</ul>
 	</div>
