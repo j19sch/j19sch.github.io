@@ -3,13 +3,32 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about communication)</title>
   <id>https://smallsheds.garden/categories/communication.atom</id>
-  <updated>2025-12-21T13:35:51Z</updated>
+  <updated>2026-02-08T16:37:22Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/communication.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/communication/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Reflections after writing a release advice</title>
+    <id>https://smallsheds.garden/blog/2026/reflections-after-writing-a-release-advice/</id>
+    <updated>2026-02-08T00:00:00+01:00</updated>
+    <published>2026-02-08T00:00:00+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2026/reflections-after-writing-a-release-advice/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Recently I had to write a release advice. My first thought was: &lt;em&gt;"I have close to two decades of experience in testing. I got this!"&lt;/em&gt; My second thought was: &lt;em&gt;"I haven't written a release advice in over ten years, how do I do this again?"&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Luckily the first thought reflected reality a lot better than the second one. And after reviews by my team members, my project lead, and our manager, I'm proud of the end result. Even though in some ways the document has ended up more like a release decision, than a release advice. (More on that later.)&lt;/p&gt;
+&lt;h2 class="small"&gt;Lead with the actual advice&lt;/h2&gt;
+&lt;p&gt;Initially I was going to start the document with a management summary, then an introduction, an overview of the testing that was done, the relevant known issues and remaining risks, then the actual release advice and finally some ideas on how to improve our testing further. Quite soon I realized that didn't make sense.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2026/reflections-after-writing-a-release-advice/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="communication" label="communication"/>
+    <category term="software-testing" label="software testing"/>
+    <category term="test-management" label="test management"/>
+    <category term="test-reporting" label="test reporting"/>
+  </entry>
   <entry>
     <title>Testing types - beyond definitions</title>
     <id>https://smallsheds.garden/blog/2025/testing-types-beyond-definitions/</id>
@@ -196,24 +215,5 @@ and the language's ecosystem (e.g. how to install those libraries&lt;sup id="fnr
     <category term="communication" label="communication"/>
     <category term="skills" label="skills"/>
     <category term="values" label="values"/>
-  </entry>
-  <entry>
-    <title>From tension to agreement with Sociocracy 3.0</title>
-    <id>https://smallsheds.garden/blog/2022/from-tension-to-agreement-with-sociocracy-30/</id>
-    <updated>2022-01-22T11:27:13+01:00</updated>
-    <published>2022-01-22T11:27:13+01:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2022/from-tension-to-agreement-with-sociocracy-30/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;Earlier this month I started my new job at a small consultancy. During my onboarding I noticed something that I thought could be improved. So I figured I should come up with a proposal to address that. It also made me wonder how me proposing this improvement would go over with my new colleagues. And then I remembered I learned about a good way of doing this in a workshop&lt;sup id="fnref:6"&gt;&lt;a class="footnote-ref" href="https://smallsheds.garden/blog/2022/from-tension-to-agreement-with-sociocracy-30/#fn:6"&gt;1&lt;/a&gt;&lt;/sup&gt; at the 2016 &lt;a href="https://xpdaysbenelux.nl/"&gt;XP Days Benelux&lt;/a&gt; conference. That workshop was about &lt;a href="https://sociocracy30.org/"&gt;Sociocracy 3.0&lt;/a&gt; (S3 for short). So I ended up proposing two things in the meeting: my improvement, but also a way to come to an agreement about my proposal.&lt;/p&gt;
-&lt;p&gt;The reactions to my proposal about how to come to agreements, were mostly positive. One person asked a very good question though: &lt;em&gt;"Is this solving a problem we are having? Or is this a solution looking for a problem? What would be the reasons for adopting this?"&lt;/em&gt; In response I expanded on my reasons for wanting this and we decided to give it a try. My dual proposal helped here: let's try the S3 patterns I shared on the improvement I proposed.&lt;/p&gt;
-&lt;p&gt;Looking back, I'm happy with my reply to those questions and I also feel I can do better. Which makes this the perfect opportunity for my first blog post of 2022. I'll start with a brief introduction on Sociocracy 3.0, then I'll share the proposal I made based on S3, and finally I'll talk about why I like this form of decision-making.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2022/from-tension-to-agreement-with-sociocracy-30/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="communication" label="communication"/>
-    <category term="heuristics" label="heuristics"/>
-    <category term="leadership" label="leadership"/>
-    <category term="self-organization" label="self-organization"/>
-    <category term="sociocracy-30" label="sociocracy 3.0"/>
   </entry>
 </feed>

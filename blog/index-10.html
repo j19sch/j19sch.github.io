@@ -89,7 +89,26 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
         
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025/optimizing-for-moments-of-discovery/" class="u-url">Optimizing for moments of&nbsp;discovery</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025/benchmarking-counterstring-implementations-in-typescript/" class="u-url">Benchmarking counterstring implementations in&nbsp;TypeScript</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Joep&nbsp;Schuurkes
+                    </span></p>
+            <p class="dateline">
+            <a href="2025/benchmarking-counterstring-implementations-in-typescript/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-02-23T00:00:00+01:00" itemprop="datePublished" title="23 February 2025">23 February 2025</time></a>
+            </p>
+                </div>
+            </header><div class="p-summary entry-summary">
+                    <div>
+<p>Earlier this year I posted about how I <a href="2025/using-fake-it-till-you-make-it-to-implement-counterstring/">implemented a counterstring function</a> using &#8220;fake it till you make it&#8221;. I also posted about <a href="2025/comparing-counterstring-implementations-in-typescript/">different ways</a> to implement counterstrings. In this post, I want to share how those different implementations compare&nbsp;performance-wise.</p>
+<p>To do this, I used both <a href="https://github.com/tinylibs/tinybench">Tinybench</a> and <a href="https://vitest.dev/guide/features.html#benchmarking">vitest bench</a> (which uses Tinybench). The results are basically the same, but their default output is slightly&nbsp;different.</p>
+<h2>The nine&nbsp;implementations</h2>
+<p>Before I present the results, I should describe the different implementations and how they differ from each other. The <a href="https://github.com/j19sch/counterstring/blob/04883b7bb2f3e99f7be81ffa58e4ac5f934d276b/src/alt-counterstrings.ts">actual code of each implementation</a> is available on GitHub. Here I&#8217;ll only mention what makes each implementation interesting compared to the&nbsp;others:</p>
+<p class="more"><a href="2025/benchmarking-counterstring-implementations-in-typescript/">Read&nbsp;more…</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="2025/optimizing-for-moments-of-discovery/" class="u-url">Optimizing for moments of&nbsp;discovery</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Joep&nbsp;Schuurkes

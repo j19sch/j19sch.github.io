@@ -3,13 +3,32 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about software testing)</title>
   <id>https://smallsheds.garden/categories/cat_software-testing.atom</id>
-  <updated>2025-12-21T13:35:50Z</updated>
+  <updated>2026-02-08T16:37:22Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
   <link rel="self" type="application/atom+xml" href="https://smallsheds.garden/categories/cat_software-testing.atom"/>
   <link rel="alternate" type="text/html" href="https://smallsheds.garden/categories/cat_software-testing/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Reflections after writing a release advice</title>
+    <id>https://smallsheds.garden/blog/2026/reflections-after-writing-a-release-advice/</id>
+    <updated>2026-02-08T00:00:00+01:00</updated>
+    <published>2026-02-08T00:00:00+01:00</published>
+    <author>
+      <name>Joep Schuurkes</name>
+    </author>
+    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2026/reflections-after-writing-a-release-advice/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Recently I had to write a release advice. My first thought was: &lt;em&gt;"I have close to two decades of experience in testing. I got this!"&lt;/em&gt; My second thought was: &lt;em&gt;"I haven't written a release advice in over ten years, how do I do this again?"&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Luckily the first thought reflected reality a lot better than the second one. And after reviews by my team members, my project lead, and our manager, I'm proud of the end result. Even though in some ways the document has ended up more like a release decision, than a release advice. (More on that later.)&lt;/p&gt;
+&lt;h2 class="small"&gt;Lead with the actual advice&lt;/h2&gt;
+&lt;p&gt;Initially I was going to start the document with a management summary, then an introduction, an overview of the testing that was done, the relevant known issues and remaining risks, then the actual release advice and finally some ideas on how to improve our testing further. Quite soon I realized that didn't make sense.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2026/reflections-after-writing-a-release-advice/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="communication" label="communication"/>
+    <category term="software-testing" label="software testing"/>
+    <category term="test-management" label="test management"/>
+    <category term="test-reporting" label="test reporting"/>
+  </entry>
   <entry>
     <title>Testing types - beyond definitions</title>
     <id>https://smallsheds.garden/blog/2025/testing-types-beyond-definitions/</id>
@@ -186,26 +205,6 @@
 &lt;h5&gt;1. Testing is investigating in order to evaluate a product.&lt;/h5&gt;
 &lt;p&gt;This definition is clearly influenced by James Bach's "questioning a product in order to evaluate it". I'm not sure at which point I started misremembering his definition as "investigating a product...", but it works well with a change I did make intentionally: moving "a product" to the second part of the definition. As explained in 6. I believe that in order to evaluate the product, we need to investigate a number of different things, not only the product.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2018/reflections-on-my-testing-manifesto/"&gt;Read more…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
-    <category term="agile" label="agile"/>
-    <category term="context-driven-testing" label="context-driven testing"/>
-    <category term="devops" label="devops"/>
-    <category term="manifesto" label="manifesto"/>
-    <category term="software-testing" label="software testing"/>
-  </entry>
-  <entry>
-    <title>Manifesto for software testing</title>
-    <id>https://smallsheds.garden/blog/2018/manifesto-for-software-testing/</id>
-    <updated>2018-12-04T20:44:51+01:00</updated>
-    <published>2018-12-04T20:44:51+01:00</published>
-    <author>
-      <name>Joep Schuurkes</name>
-    </author>
-    <link rel="alternate" type="text/html" href="https://smallsheds.garden/blog/2018/manifesto-for-software-testing/"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;1. Testing is investigating in order to evaluate a product.&lt;/p&gt;
-&lt;p&gt;2. An evaluation is a judgement about quality – quality being value to persons who matter.&lt;/p&gt;
-&lt;p&gt;3. This makes testing a fundamentally human and contextual activity.&lt;/p&gt;
-&lt;p&gt;4. As such, testing is an exploratory and open-ended activity, requiring continuous evaluation of and experimentation with our practices.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2018/manifesto-for-software-testing/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="agile" label="agile"/>
     <category term="context-driven-testing" label="context-driven testing"/>
     <category term="devops" label="devops"/>
