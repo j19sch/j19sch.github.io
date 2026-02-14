@@ -46,7 +46,7 @@ The result of all of this was a document that was more like *"We intend to relea
 
 The release advice does not report any numbers. Not number of defects found, not number of test cases executed, not percentage of code coverage. The first two numbers, defects and tests cases, we don't even track[^2]. And while we do track code coverage, providing enough context to make it a meaningful number, would take up more space in the release advice than that piece of information is worth.
 
-[^2]: We have a [zero ~~defect~~ bug policy](https://smallsheds.garden/slides/testbash25-peculiar-quality.html#/24), so what exactly would we be counting? Our testing is either exploratory or through test automation, so again, what would we be counting?
+[^2]: We have a [zero ~~defect~~ bug policy](https://slides.smallsheds.garden/testbash25-peculiar-quality.html#/24), so what exactly would we be counting? Our testing is either exploratory or through test automation, so again, what would we be counting?
 
 When people do ask for these kinds of numbers, my favorite heuristic is: *"If I gave you a randomly generated number, would you be able to tell?"* In practice I prefer to use kinder versions: *"What ranges would you expect these numbers to be in?"* or *"What kinds of decisions would these numbers inform for you?"* Because I do believe there is a valid, genuine need behind the request for these kinds of numbers. I just don't believe that in most cases these numbers are the best way to satisfy that need.
 

@@ -229,5 +229,5 @@ Something I strongly believe about change is that small things done consistently
 
 ---
 
-*This post is based on my AgileTD 2020 talk ["Making meetings work"](https://smallsheds.garden/slides/atd2020-making-meetings-work.html#/).*
+*This post is based on my AgileTD 2020 talk ["Making meetings work"](https://slides.smallsheds.garden/atd2020-making-meetings-work.html#/).*
 
