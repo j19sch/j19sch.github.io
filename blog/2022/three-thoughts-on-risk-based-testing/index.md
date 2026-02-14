@@ -21,7 +21,7 @@ Requirements-based? I'd argue that's a subset of risk-based.
 Unguided? That's either a bad idea ("we hope to get lucky") or aimed at the risk of unknown unknowns.  
 Any other options? Because something about the term is bothering me.
 
-My question was inspired by the ["opposite" heuristic](https://smallsheds.garden/slides/rtc2019-testing-types.html#/15/0/1) from my talk about [testing types](https://smallsheds.garden/slides/rtc2019-testing-types.html#/): if we have some kind of category, what's the name for the things not in that category? Applied to risk-based testing: what's the name for testing that's not risk-based?
+My question was inspired by the ["opposite" heuristic](https://slides.smallsheds.garden/rtc2019-testing-types.html#/15/0/1) from my talk about [testing types](https://slides.smallsheds.garden/rtc2019-testing-types.html#/): if we have some kind of category, what's the name for the things not in that category? Applied to risk-based testing: what's the name for testing that's not risk-based?
 
 <!-- TEASER_END -->
 

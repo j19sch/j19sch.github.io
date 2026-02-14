@@ -11,7 +11,7 @@ This post is a slightly edited version of the experience report I presented_ at 
 
 My main finding is that for a quality engineering role to work well, certain structures need to be in place. The most important one is that the impact the quality engineer is expected to have, is clear to both the quality engineer and the team(s) they are supporting. However, regardless of which structures you put in place, a quality engineer will also need to work around those structures to be fully effective. 
 
-.. _presented: https://smallsheds.garden/slides/xp2023-quality-engineer.html
+.. _presented: https://slides.smallsheds.garden/xp2023-quality-engineer.html
 
 .. _xp2023: https://www.agilealliance.org/xp2023/
 

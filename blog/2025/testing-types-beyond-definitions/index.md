@@ -87,4 +87,4 @@ So if someone mentions a testing type in a way that puzzles you, explore what th
 
 ---
 
-*This is an abridged and edited version of a talk I did at the Romanian Testing Conference in 2019: ["Testing our testing types."](https://smallsheds.garden/slides/rtc2019-testing-types.html) Basically, I left out most of the Wittgenstein stuff.*
+*This is an abridged and edited version of a talk I did at the Romanian Testing Conference in 2019: ["Testing our testing types."](https://slides.smallsheds.garden/rtc2019-testing-types.html) Basically, I left out most of the Wittgenstein stuff.*

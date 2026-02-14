@@ -44,7 +44,7 @@ Of course, reality is a little more messy than what I presented here. I've influ
 
 *This post was originally published on my old blog.*
 
-[^1]: The slides can be found [here](https://j19sch.github.io/slides/TITAN_leadership_koryu.html#/).
+[^1]: The slides can be found [here](https://slides.smallsheds.garden/TITAN_leadership_koryu.html#/).
 
 [^2]: Do let me know if I'm mistaken here.
 

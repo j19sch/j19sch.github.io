@@ -44,7 +44,7 @@ That's not what I did.
 
 I increased the number of committee sessions in the mock data to four. And something in those changes caused some component tests[^1] to fail. (While at it, I also changed the order of the committee sessions in the mock data, to match the order they would be returned in by the back end.)
 
-[^1]: Testing types are [a hot mess](https://smallsheds.garden/slides/rtc2019-testing-types.html#/). The failing tests in question cover the React component showing (among other things) the session cards. They use [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) and [Mock Service Worker](https://mswjs.io/).
+[^1]: Testing types are [a hot mess](https://slides.smallsheds.garden/rtc2019-testing-types.html#/). The failing tests in question cover the React component showing (among other things) the session cards. They use [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) and [Mock Service Worker](https://mswjs.io/).
 
 
 # Fixing the tests
