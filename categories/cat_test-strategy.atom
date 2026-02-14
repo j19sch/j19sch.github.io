@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Joep Schuurkes (Posts about test strategy)</title>
   <id>https://smallsheds.garden/categories/cat_test-strategy.atom</id>
-  <updated>2025-08-10T13:24:28Z</updated>
+  <updated>2026-02-13T14:10:04Z</updated>
   <author>
     <name>Joep Schuurkes</name>
   </author>
@@ -31,6 +31,7 @@ Any other options? Because something about the term is bothering me.&lt;/p&gt;
 &lt;p&gt;My question was inspired by the &lt;a href="https://smallsheds.garden/slides/rtc2019-testing-types.html#/15/0/1"&gt;"opposite" heuristic&lt;/a&gt; from my talk about &lt;a href="https://smallsheds.garden/slides/rtc2019-testing-types.html#/"&gt;testing types&lt;/a&gt;: if we have some kind of category, what's the name for the things not in that category? Applied to risk-based testing: what's the name for testing that's not risk-based?&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2022/three-thoughts-on-risk-based-testing/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="coverage" label="coverage"/>
+    <category term="risk" label="risk"/>
     <category term="software-testing" label="software testing"/>
     <category term="test-management" label="test management"/>
     <category term="test-strategy" label="test strategy"/>
@@ -57,6 +58,7 @@ Any other options? Because something about the term is bothering me.&lt;/p&gt;
 &lt;p&gt;The purpose of a test strategy is to answer the question: "How do we know that what we are building, is good enough?" As such, every team has a test strategy, even if it's only implicitly defined through the actions of the team members.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2019/test-strategy-primer/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="context-driven-testing" label="context-driven testing"/>
+    <category term="risk" label="risk"/>
     <category term="test-management" label="test management"/>
     <category term="test-strategy" label="test strategy"/>
   </entry>
@@ -90,6 +92,7 @@ Any other options? Because something about the term is bothering me.&lt;/p&gt;
 &lt;p&gt;Typical test advice is to do a Product Risk Analysis (PRA, mind the capitalisation!) and based on that you decide what to test and how thoroughly. The most common way to do a PRA is with a workshop. Put some people in a room with a lot of stickies, let them list all the risks they can think of and then have them score them. Et voilà, Product Risk Analysis is done!&lt;/p&gt;
 &lt;p&gt;But that doesn't really make sense, now does it? If someone were to give you an object and asked you "What could possibly go wrong with this?", what would you do? Gather a bunch of people with some knowledge of the object, yet no actual experience with it and do a workshop imagining things that could go wrong? That's not an Analysis (capital A!), that's a SWAG – a scientific wild ass guess.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://smallsheds.garden/blog/2013/why-your-product-risk-analysis-isnt/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="risk" label="risk"/>
     <category term="test-management" label="test management"/>
     <category term="test-reporting" label="test reporting"/>
     <category term="test-strategy" label="test strategy"/>
